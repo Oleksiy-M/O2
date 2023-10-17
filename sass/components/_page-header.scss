@@ -4,7 +4,7 @@
 background-image: 
 url("../img/background/background-desktop-mobil.jpg");
 	// width: 1100px;
-	height: 865px;
+	height: 920px;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -17,7 +17,7 @@ url("../img/background/background-desktop-mobil.jpg");
 
 	@media screen and (min-width: 480px) {
 			// max-width: 768px;
-			height: 780px;
+			height: 810px;
 			background-image:
 url("../img/background/background-desktop-mobil@2x.jpg");
 	// height: 1200px;
@@ -33,7 +33,7 @@ url("../img/background/background-desktop-mobil@2x.jpg");
 
 	@media screen and (min-width: 768px) and (max-width: 920px){
 	// max-width: 768px;
-	height: 1320px;
+	height: 1370px;
 	background-image:
 	url("../img/background/background-desktop-tablet.jpg");
 	}
@@ -47,7 +47,7 @@ url("../img/background/background-desktop-mobil@2x.jpg");
 		
 	@media screen and (min-width: 1200px) {
 	max-width: 1900px;
-	height: 750px;
+	height: 850px;
 	background-image:
 	url("../img/background/background-desktop.jpg");
 	// padding-top: 200px;
