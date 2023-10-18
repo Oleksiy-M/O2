@@ -1,25 +1,22 @@
 // < !-- Water -->
+
+
 .hero {
-	margin-top: 180px;
 
-	@media screen and (min-width: 768px) {
-	margin-top: 160px;
-	}
-
-	@media screen and (min-width: 1200px) {
-	margin-top: 80px;
-	}
-
-		// border: 2px dashed tomato;
-	// transform: translateX(1%);
-}
-
-.hero__item {
-	// @media screen and (min-width: 768px) {
+		margin-top: 180px;
+		padding: 0;
 		display: flex;
 		justify-content: center;
-	padding: 0;
-	margin: 0;
+
+			@media screen and (min-width: 768px) {
+				margin-top: 160px;
+			}
+		
+			@media screen and (min-width: 1200px) {
+				margin-top: 80px;
+			}
+			// border: 2px dashed tomato;
+			// transform: translateX(1%);
 }
 
 .hero__link {
@@ -47,6 +44,8 @@
 	// display: block;
 	// position: absolute;
 	margin-top: 40px;
+
+	padding: 0;
 	// top: 0;
 	// left: 0;
 	width: 100%;
@@ -66,8 +65,9 @@
 .logo {
 	display:flex;
 	justify-content: center;
-	padding-bottom: 40px;
-	transform: translateX(-7%);
+	margin-bottom: 40px;
+	padding: 0;
+	// transform: translateX(-7%);
 }
 
 
@@ -75,9 +75,11 @@
 	@media screen and (min-width: 768px) {
 			margin-right: 100px;
 			
+			// position: absolute;
 			text-align: right;
-				margin-top: 500px;
-				margin-right: 20px;
+				margin-top: 600px;
+
+				margin-right: 40px;
 				font-weight: 600;
 				font-size: 20px;
 				line-height: 1.86;

@@ -47,7 +47,7 @@ body {
 }
 @media screen and (min-width: 480px) {
   .page-header {
-    height: 810px;
+    height: 850px;
     background-image: url("../img/background/background-desktop-mobil@2x.jpg");
   }
 }
@@ -153,6 +153,9 @@ body {
 
 .hero {
   margin-top: 180px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -163,13 +166,6 @@ body {
   .hero {
     margin-top: 80px;
   }
-}
-
-.hero__item {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
 }
 
 .hero__link {
@@ -190,6 +186,7 @@ body {
 
 .hero__overlay {
   margin-top: 40px;
+  padding: 0;
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -204,8 +201,8 @@ body {
 .logo {
   display: flex;
   justify-content: center;
-  padding-bottom: 40px;
-  transform: translateX(-7%);
+  margin-bottom: 40px;
+  padding: 0;
 }
 
 .title {
@@ -222,8 +219,8 @@ body {
   .title {
     margin-right: 100px;
     text-align: right;
-    margin-top: 500px;
-    margin-right: 20px;
+    margin-top: 600px;
+    margin-right: 40px;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.86;
