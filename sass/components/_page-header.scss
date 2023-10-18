@@ -3,7 +3,6 @@
 
 background-image: 
 url("../img/background/background-desktop-mobil.jpg");
-	// width: 1100px;
 	height: 920px;
 	background-size: cover;
 	background-position: center;
@@ -40,6 +39,7 @@ url("../img/background/background-desktop-mobil.jpg");
 	(min-resolution: 2dppx) and (min-width: 768px) {
 	background-image:
 	url("../img/background/background-desktop-tablet@2x.jpg");
+	padding-top: 30px;
 	}
 		
 	@media screen and (min-width: 1200px) {
