@@ -12,39 +12,30 @@ url("../img/background/background-desktop-mobil.jpg");
 	padding-top: 50px;
 	// border: 2px dashed tomato;
 
-
-	@media screen and (min-width: 480px) {
-			// max-width: 768px;
-			height: 850px;
-			background-image:
-	url("../img/background/background-desktop-mobil@2x.jpg");
 	
+	@media (min-device-pixel-ratio: 2) and (min-width: 650px),
+	(min-resolution: 192dpi) and (min-width: 650px),
+	(min-resolution: 2dppx) and (min-width: 650px) {
+	background-image:
+	url("../img/background/background-desktop-tablet@2x.jpg");
+	padding-top: 20px;
 	}
-@media (min-device-pixel-ratio: 2) and (max-width: 767px),
-	(min-resolution: 192dpi) and (max-width: 767px),
-	(min-resolution: 2dppx) and (max-width: 767px) {
-	background-image: 
-	url("../img/background/background-desktop-mobil@2x.jpg");
-	}
+
+
 
 	@media screen and (min-width: 768px) and (max-width: 920px){
-	// max-width: 768px;
 	height: 1370px;
+	
 	background-image:
 	url("../img/background/background-desktop-tablet.jpg");
 	}
 
-	@media (min-device-pixel-ratio: 2) and (min-width: 768px),
-	(min-resolution: 192dpi) and (min-width: 768px),
-	(min-resolution: 2dppx) and (min-width: 768px) {
-	background-image:
-	url("../img/background/background-desktop-tablet@2x.jpg");
-	padding-top: 30px;
-	}
+
 		
-	@media screen and (min-width: 1200px) {
+	@media screen and (min-width: 1000px) {
 	max-width: 1900px;
-	height: 850px;
+	height: 800px;
+	padding-top: 50px;
 	background-image:
 	url("../img/background/background-desktop.jpg");
 	}
@@ -52,7 +43,7 @@ url("../img/background/background-desktop-mobil.jpg");
 	@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
 	(min-resolution: 192dpi) and (min-width: 1200px),
 	(min-resolution: 2dppx) and (min-width: 1200px) {
-		// height: 600px;
+		height: 1370px;
 	background-image:
 	url("../img/background/background-desktop@2x.jpg");
 	}
@@ -61,18 +52,15 @@ url("../img/background/background-desktop-mobil.jpg");
 
 
 .page-header__nav {
-	@media screen and (min-width: 768px) {
-	display: flex;
-	align-items: center;
+	@media screen and (min-width: 650px) {
 	margin-left: 100px;
 	}
 
-	@media screen and (max-width: 300px) {
-	margin-left: 10px;
-	
+	@media screen and (max-width: 649px) {
+	margin-left: 15px;
 	}
 		position: fixed;
-		margin-left: 40px;
+	
 // border: 2px dashed tomato;
 
 }
