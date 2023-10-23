@@ -48,7 +48,7 @@ body {
 @media (min-device-pixel-ratio: 2) and (min-width: 650px) and (max-width: 999px), (min-resolution: 192dpi) and (min-width: 650px) and (max-width: 999px), (min-resolution: 2dppx) and (min-width: 650px) and (max-width: 999px) {
   .page-header {
     padding-top: 18px;
-    height: 200px;
+    height: 1000px;
     background-image: url("../img/background/background-desktop-mobil@2x.jpg");
   }
 }
@@ -61,20 +61,21 @@ body {
 @media screen and (min-width: 1000px) {
   .page-header {
     max-width: 1900px;
-    height: 800px;
+    height: 820px;
     padding-top: 50px;
     background-image: url("../img/background/background-desktop.jpg");
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .page-header {
-    height: 1370px;
+    height: 1180px;
     background-image: url("../img/background/background-desktop@2x.jpg");
   }
 }
 
 .page-header__nav {
   position: fixed;
+  z-index: 1;
 }
 @media screen and (min-width: 650px) {
   .page-header__nav {
@@ -178,9 +179,9 @@ body {
   padding-right: 10px;
   transform: translateX(1%);
 }
-@media screen and (max-width: 660px) {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 999px), (min-resolution: 192dpi) and (max-width: 999px), (min-resolution: 2dppx) and (max-width: 999px) {
   .water {
-    max-width: 400px;
+    max-width: 500px;
   }
 }
 
@@ -198,12 +199,8 @@ body {
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 650px), (min-resolution: 192dpi) and (min-width: 650px), (min-resolution: 2dppx) and (min-width: 650px) {
   .hero__overlay {
-    margin-top: 0px;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .hero__overlay {
-    margin-top: 50px;
+    margin-top: 10px;
+    margin-bottom: 5px;
   }
 }
 .hero__link:hover .hero__overlay, .hero__link:focus .hero__overlay {
@@ -212,19 +209,30 @@ body {
 }
 
 .logo {
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
   padding: 0;
 }
+
+.oxy {
+  margin-top: 230px;
+  position: fixed;
+}
 @media (min-device-pixel-ratio: 2) and (min-width: 650px), (min-resolution: 192dpi) and (min-width: 650px), (min-resolution: 2dppx) and (min-width: 650px) {
-  .logo {
-    margin-bottom: 5px;
+  .oxy {
+    margin-top: 195px;
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 660px) and (max-width: 999px), (min-resolution: 192dpi) and (min-width: 660px) and (max-width: 999px), (min-resolution: 2dppx) and (min-width: 660px) and (max-width: 999px) {
+  .oxy {
+    margin-top: 250px;
   }
 }
 @media screen and (min-width: 1000px) {
-  .logo {
-    margin-bottom: 30px;
+  .oxy {
+    margin-top: 350px;
   }
 }
 
@@ -242,7 +250,7 @@ body {
   .title {
     margin-right: 100px;
     text-align: right;
-    margin-top: 600px;
+    margin-top: 400px;
     margin-right: 40px;
     font-weight: 600;
     font-size: 20px;
