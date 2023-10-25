@@ -45,7 +45,14 @@ body {
   margin-right: auto;
   padding-top: 50px;
 }
-@media (min-device-pixel-ratio: 2) and (min-width: 650px) and (max-width: 999px), (min-resolution: 192dpi) and (min-width: 650px) and (max-width: 999px), (min-resolution: 2dppx) and (min-width: 650px) and (max-width: 999px) {
+@media (min-device-pixel-ratio: 2) and (min-width: 650px), (min-resolution: 192dpi) and (min-width: 650px), (min-resolution: 2dppx) and (min-width: 650px) {
+  .page-header {
+    padding-top: 10px;
+    height: 1000px;
+    background-image: url("../img/background/background-desktop-mobil@2x.jpg");
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 661px) and (max-width: 999px), (min-resolution: 192dpi) and (min-width: 661px) and (max-width: 999px), (min-resolution: 2dppx) and (min-width: 661px) and (max-width: 999px) {
   .page-header {
     padding-top: 18px;
     height: 1000px;
@@ -153,11 +160,16 @@ body {
 
 .hero {
   margin-top: 140px;
-  padding: 0;
+  padding: 0px;
   display: flex;
   justify-content: center;
 }
-@media (min-device-pixel-ratio: 2) and (min-width: 650px) and (max-width: 999px), (min-resolution: 192dpi) and (min-width: 650px) and (max-width: 999px), (min-resolution: 2dppx) and (min-width: 650px) and (max-width: 999px) {
+@media (min-device-pixel-ratio: 2) and (min-width: 650px), (min-resolution: 192dpi) and (min-width: 650px), (min-resolution: 2dppx) and (min-width: 650px) {
+  .hero {
+    margin-top: 10px;
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 661px) and (max-width: 999px), (min-resolution: 192dpi) and (min-width: 661px) and (max-width: 999px), (min-resolution: 2dppx) and (min-width: 661px) and (max-width: 999px) {
   .hero {
     margin-top: 20px;
   }
@@ -199,6 +211,11 @@ body {
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 650px), (min-resolution: 192dpi) and (min-width: 650px), (min-resolution: 2dppx) and (min-width: 650px) {
   .hero__overlay {
+    margin-top: 0px;
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 661px), (min-resolution: 192dpi) and (min-width: 661px), (min-resolution: 2dppx) and (min-width: 661px) {
+  .hero__overlay {
     margin-top: 5px;
   }
 }
@@ -214,22 +231,22 @@ body {
 }
 
 .logo {
-  width: 100%;
   display: flex;
   justify-content: center;
   padding: 0;
 }
 
 .oxy {
-  margin-top: 280px;
+  margin-top: 230px;
   position: fixed;
+  display: block;
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 650px), (min-resolution: 192dpi) and (min-width: 650px), (min-resolution: 2dppx) and (min-width: 650px) {
   .oxy {
-    margin-top: 185px;
+    margin-top: 175px;
   }
 }
-@media (min-device-pixel-ratio: 2) and (min-width: 660px) and (max-width: 999px), (min-resolution: 192dpi) and (min-width: 660px) and (max-width: 999px), (min-resolution: 2dppx) and (min-width: 660px) and (max-width: 999px) {
+@media (min-device-pixel-ratio: 2) and (min-width: 661px) and (max-width: 999px), (min-resolution: 192dpi) and (min-width: 661px) and (max-width: 999px), (min-resolution: 2dppx) and (min-width: 661px) and (max-width: 999px) {
   .oxy {
     margin-top: 220px;
   }
@@ -240,26 +257,44 @@ body {
   }
 }
 
-.title {
+.hero__title {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 50px;
   text-align: right;
-  margin-top: 500px;
-  margin-right: 20px;
+  position: inherit;
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 650px), (min-resolution: 192dpi) and (min-width: 650px), (min-resolution: 2dppx) and (min-width: 650px) {
+  .hero__title {
+    margin-top: 0px;
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 661px), (min-resolution: 192dpi) and (min-width: 661px), (min-resolution: 2dppx) and (min-width: 661px) {
+  .hero__title {
+    margin-top: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: 0px;
+    text-align: right;
+  }
+}
+
+.title {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.86;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: #FF8230;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 661px) {
   .title {
-    margin-right: 100px;
-    text-align: right;
-    margin-top: 400px;
-    margin-right: 40px;
+    min-width: 390px;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.86;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
     color: #FF8230;
   }
 }/*# sourceMappingURL=mine.css.map */
