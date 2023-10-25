@@ -157,7 +157,7 @@ body {
   display: flex;
   justify-content: center;
 }
-@media screen and (min-width: 650px) {
+@media (min-device-pixel-ratio: 2) and (min-width: 650px) and (max-width: 999px), (min-resolution: 192dpi) and (min-width: 650px) and (max-width: 999px), (min-resolution: 2dppx) and (min-width: 650px) and (max-width: 999px) {
   .hero {
     margin-top: 20px;
   }
@@ -199,8 +199,13 @@ body {
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 650px), (min-resolution: 192dpi) and (min-width: 650px), (min-resolution: 2dppx) and (min-width: 650px) {
   .hero__overlay {
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .hero__overlay {
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
 }
 .hero__link:hover .hero__overlay, .hero__link:focus .hero__overlay {
@@ -212,22 +217,21 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
   padding: 0;
 }
 
 .oxy {
-  margin-top: 230px;
+  margin-top: 280px;
   position: fixed;
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 650px), (min-resolution: 192dpi) and (min-width: 650px), (min-resolution: 2dppx) and (min-width: 650px) {
   .oxy {
-    margin-top: 195px;
+    margin-top: 185px;
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 660px) and (max-width: 999px), (min-resolution: 192dpi) and (min-width: 660px) and (max-width: 999px), (min-resolution: 2dppx) and (min-width: 660px) and (max-width: 999px) {
   .oxy {
-    margin-top: 250px;
+    margin-top: 220px;
   }
 }
 @media screen and (min-width: 1000px) {
