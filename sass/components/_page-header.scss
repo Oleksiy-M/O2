@@ -16,29 +16,29 @@ url("../img/background/background-desktop-mobil.jpg");
 	(min-resolution: 192dpi) and (min-width: 650px),
 	(min-resolution: 2dppx) and (min-width: 650px) {
 	padding-top: 10px;
-	height: 1000px;
+	height: 400px;
 	background-image:
 	url("../img/background/background-desktop-mobil@2x.jpg");
 	}
 
 	@media
-	(min-device-pixel-ratio: 2) and (min-width: 661px) and (max-width: 999px),
-	(min-resolution: 192dpi) and (min-width: 661px) and (max-width: 999px),
-	(min-resolution: 2dppx) and (min-width: 661px) and (max-width: 999px){
+	(min-device-pixel-ratio: 2) and (min-width: 661px) and (max-width: 920px),
+	(min-resolution: 192dpi) and (min-width: 661px) and (max-width: 920px),
+	(min-resolution: 2dppx) and (min-width: 661px) and (max-width: 920px){
 	padding-top: 18px;
-	height: 1000px;
+	height: 400px;
 	background-image:
-	url("../img/background/background-desktop-mobil@2x.jpg");
+	url("../img/background/background-desktop-tablet.jpg");
 	}
 
-	@media screen and (min-width: 650px) and (max-width: 999px)
+	@media screen and (min-width: 650px) and (max-width: 920px)
 	{
 	height: 1370px;
 	background-image:
 	url("../img/background/background-desktop-tablet.jpg");
 	}
 
-	@media screen and (min-width: 1000px) {
+	@media screen and (min-width: 921px) {
 	max-width: 1900px;
 	height: 820px;
 	padding-top: 50px;
@@ -56,9 +56,9 @@ url("../img/background/background-desktop-mobil.jpg");
 }
 
 .page-header__nav {
-	@media screen and (min-width: 480px) {
-			margin-left: 80px;
-		}
+	// @media screen and (min-width: 480px) {
+	// 		margin-left: 80px;
+	// 	}
 
 	@media screen and (min-width: 650px) {
 	margin-left: 100px;

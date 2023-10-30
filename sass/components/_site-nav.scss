@@ -1,36 +1,37 @@
 /* =================SITE-NAV  ================= */
 .site-nav {
-@media screen and (min-width: 480px) {
 	display: flex;
-	font-weight: 500;
-	font-size: 14px;
+	font-weight: 400;
+	font-size: 12px;
 	line-height: 1.94;
 	letter-spacing: 0.03em;
-}
 
-@media screen and (min-width: 767px) {
-	display: flex;
+// @media screen and (min-width: 480px) {
+
+// 	font-weight: 500;
+// 	font-size: 14px;
+// 	line-height: 1.94;
+// 	letter-spacing: 0.03em;
+// }
+
+	@media (min-device-pixel-ratio: 2) and (min-width: 650px),
+		(min-resolution: 192dpi) and (min-width: 650px),
+		(min-resolution: 2dppx) and (min-width: 650px) {
+	
+		font-weight: 400;
+		font-size: 10px;
+		line-height: 1.94;
+		letter-spacing: 0.03em;
+		}
+		
+@media screen and (min-width: 920px) {
+
 		font-weight: 600;
 		font-size: 18px;
 		line-height: 1.94;
 		letter-spacing: 0.03em;
 	}
 
-	@media (min-device-pixel-ratio: 2) and (min-width: 650px),
-		(min-resolution: 192dpi) and (min-width: 650px),
-		(min-resolution: 2dppx) and (min-width: 650px) {
-	display: flex;
-		font-weight: 400;
-		font-size: 12px;
-		line-height: 1.94;
-		letter-spacing: 0.03em;
-		}
-	display: flex;
-	font-weight: 400;
-	font-size: 12px;
-	line-height: 1.94;
-	letter-spacing: 0.03em;
-	
 }
 
 
@@ -53,7 +54,7 @@
 }
 
 .site-nav__item {
-	@media screen and (min-width: 480px) {
+	@media screen and (min-width: 650px) {
 	margin-right: 50px;
 	}
 	margin-right: 15px;
