@@ -56,15 +56,7 @@ url("../img/background/background-desktop-mobil.jpg");
 }
 
 .page-header__nav {
-	// @media screen and (min-width: 480px) {
-	// 		margin-left: 80px;
-	// 	}
-
-	@media screen and (min-width: 650px) {
-	margin-left: 100px;
-	}
-
-	margin-left: 15px;
+	margin-left: 8%;
 		position: fixed;
 		z-index: 1;
 // border: 2px dashed tomato;

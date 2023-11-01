@@ -21,7 +21,9 @@
 	@media screen and (min-width: 921px) {
 		margin-top: 60px;
 	}
-	// border: 2px dashed tomato;
+	@media screen and (min-width: 1200px) {
+	margin-top: 100px;
+	}
 }
 
 .hero__link {
@@ -31,7 +33,6 @@
 }
 
 .water {
-
 	padding-left: 10px;
 	padding-right: 10px;
 	transform: translateX(1%);
@@ -61,7 +62,7 @@
 
 	display: flex;
 	justify-content: center;
-	margin-top: 100px;
+	margin-top: 160px;
 	
 	padding: 0px;
 	opacity: 0;
@@ -78,7 +79,7 @@
 }
 
 .oxy {
-	margin-top: 380px;
+	margin-top: 360px;
 	position: fixed;	
 
 	@media (min-device-pixel-ratio: 2) and (min-width: 650px),
@@ -90,7 +91,7 @@
 	@media (min-device-pixel-ratio: 2) and (min-width: 660px) and (max-width: 920px),
 	(min-resolution: 192dpi) and (min-width: 660px) and (max-width: 920px),
 	(min-resolution: 2dppx) and (min-width: 660px) and (max-width: 920px) {
-		margin-top: 245px;
+		margin-top: 230px;
 	}
 
 	@media screen and (min-width: 921px) {
@@ -99,11 +100,16 @@
 }
 
 .hero__title {
-	width: 55%;
+	
 	text-align: right;
 	position: inherit;
-}
+	margin-top: 60px;
 
+		@media screen and (min-width: 650px) {
+	margin-top: 0px;
+	width: 55%;
+	}
+}
 
 .title {
 	@media screen and (min-width: 921px) {
@@ -115,7 +121,7 @@
 	letter-spacing: 0.06em;
 	}
 @media screen and (max-width: 650px) {
-	transform: translateX(-26%);
+	transform: translateX(-31%);
 }
 	min-width: 280px;
 	font-weight: 500;
