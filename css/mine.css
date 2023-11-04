@@ -48,7 +48,6 @@ body {
 @media (min-device-pixel-ratio: 2) and (min-width: 650px), (min-resolution: 192dpi) and (min-width: 650px), (min-resolution: 2dppx) and (min-width: 650px) {
   .page-header {
     padding-top: 10px;
-    height: 400px;
     background-image: url("../img/background/background-desktop-mobil@2x.jpg");
   }
 }
@@ -58,11 +57,11 @@ body {
     background-image: url("../img/background/background-desktop-tablet.jpg");
   }
 }
-@media (min-device-pixel-ratio: 2) and (min-width: 661px) and (max-width: 1050px), (min-resolution: 192dpi) and (min-width: 661px) and (max-width: 1050px), (min-resolution: 2dppx) and (min-width: 661px) and (max-width: 1050px) {
+@media (min-device-pixel-ratio: 2) and (min-width: 661px), (min-resolution: 192dpi) and (min-width: 661px), (min-resolution: 2dppx) and (min-width: 661px) {
   .page-header {
     padding-top: 18px;
     height: 1370px;
-    background-image: url("../img/background/background-desktop-tablet.jpg");
+    background-image: url("../img/background/background-desktop.jpg");
   }
 }
 @media screen and (min-width: 1051px) {
@@ -139,19 +138,9 @@ body {
   display: flex;
   justify-content: center;
 }
-@media screen and (min-width: 650px) {
-  .hero {
-    margin-top: 260px;
-  }
-}
 @media (min-device-pixel-ratio: 2) and (min-width: 650px), (min-resolution: 192dpi) and (min-width: 650px), (min-resolution: 2dppx) and (min-width: 650px) {
   .hero {
     margin-top: 20px;
-  }
-}
-@media screen and (min-width: 661px) {
-  .hero {
-    margin-top: 390px;
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 661px), (min-resolution: 192dpi) and (min-width: 661px), (min-resolution: 2dppx) and (min-width: 661px) {
@@ -161,12 +150,12 @@ body {
 }
 @media screen and (min-width: 936px) {
   .hero {
-    margin-top: 80px;
+    margin-top: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    margin-top: 100px;
+    margin-top: 60px;
   }
 }
 
@@ -208,7 +197,7 @@ body {
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 660px), (min-resolution: 192dpi) and (min-width: 660px), (min-resolution: 2dppx) and (min-width: 660px) {
   .hero__overlay {
-    margin-top: 60px;
+    margin-top: 50px;
   }
 }
 @media screen and (min-width: 936px) {
