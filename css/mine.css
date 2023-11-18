@@ -150,7 +150,7 @@ body {
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 661px), (min-resolution: 192dpi) and (min-width: 661px), (min-resolution: 2dppx) and (min-width: 661px) {
   .hero {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 936px) {
