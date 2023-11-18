@@ -20,6 +20,11 @@ p {
   margin-bottom: 0;
 }
 
+.heading {
+  overflow: hidden;
+  width: 0;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -45,28 +50,28 @@ body {
   margin-right: auto;
   padding-top: 50px;
 }
-@media (min-device-pixel-ratio: 2) and (min-width: 650px), (min-resolution: 192dpi) and (min-width: 650px), (min-resolution: 2dppx) and (min-width: 650px) {
+@media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
   .page-header {
-    padding-top: 10px;
+    padding-top: 20px;
     background-image: url("../img/background/background-desktop-mobil@2x.jpg");
   }
 }
-@media screen and (min-width: 661px) and (max-width: 1050px) {
+@media screen and (min-width: 768px) {
   .page-header {
     height: 1370px;
     background-image: url("../img/background/background-desktop-tablet.jpg");
   }
 }
-@media (min-device-pixel-ratio: 2) and (min-width: 661px), (min-resolution: 192dpi) and (min-width: 661px), (min-resolution: 2dppx) and (min-width: 661px) {
+@media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
   .page-header {
     padding-top: 18px;
     height: 1370px;
-    background-image: url("../img/background/background-desktop.jpg");
+    background-image: url("../img/background/background-desktop-tablet@2x.jpg");
   }
 }
-@media screen and (min-width: 1051px) {
+@media screen and (min-width: 1200px) {
   .page-header {
-    max-width: 1900px;
+    max-width: 1600px;
     height: 820px;
     padding-top: 30px;
     background-image: url("../img/background/background-desktop.jpg");
@@ -93,7 +98,7 @@ body {
   line-height: 1.94;
   letter-spacing: 0.03em;
 }
-@media (min-device-pixel-ratio: 2) and (min-width: 650px), (min-resolution: 192dpi) and (min-width: 650px), (min-resolution: 2dppx) and (min-width: 650px) {
+@media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
   .site-nav {
     font-weight: 400;
     font-size: 10px;
@@ -101,7 +106,7 @@ body {
     letter-spacing: 0.03em;
   }
 }
-@media screen and (min-width: 935px) {
+@media screen and (min-width: 1200px) {
   .site-nav {
     font-weight: 600;
     font-size: 18px;
@@ -126,7 +131,7 @@ body {
 .site-nav__item {
   margin-right: 15px;
 }
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 768px) {
   .site-nav__item {
     margin-right: 50px;
   }
@@ -145,7 +150,7 @@ body {
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 661px), (min-resolution: 192dpi) and (min-width: 661px), (min-resolution: 2dppx) and (min-width: 661px) {
   .hero {
-    margin-top: 25px;
+    margin-top: 40px;
   }
 }
 @media screen and (min-width: 936px) {
@@ -165,102 +170,111 @@ body {
   display: block;
 }
 
-.water {
-  padding-left: 10px;
-  padding-right: 10px;
-  transform: translateX(1%);
-}
-
 .hero__thumb {
   position: relative;
   overflow: hidden;
 }
 
+.water {
+  overflow: visible;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .hero__overlay {
   display: flex;
   justify-content: center;
-  margin-top: 160px;
   padding: 0px;
   opacity: 0;
   transform: translateY(50%);
   transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1), opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 650px) {
-  .hero__overlay {
-    margin-top: 60px;
-  }
-}
-@media (min-device-pixel-ratio: 2) and (min-width: 650px), (min-resolution: 192dpi) and (min-width: 650px), (min-resolution: 2dppx) and (min-width: 650px) {
-  .hero__overlay {
-    margin-top: 0px;
-  }
-}
-@media (min-device-pixel-ratio: 2) and (min-width: 660px), (min-resolution: 192dpi) and (min-width: 660px), (min-resolution: 2dppx) and (min-width: 660px) {
-  .hero__overlay {
-    margin-top: 50px;
-  }
-}
-@media screen and (min-width: 936px) {
-  .hero__overlay {
-    margin-top: 90px;
-  }
 }
 .hero__link:hover .hero__overlay, .hero__link:focus .hero__overlay {
   transform: translateX(0);
   opacity: 1;
 }
 
-.oxy {
-  margin-top: 360px;
-  position: fixed;
+.logo {
+  width: 90px;
+  height: 90px;
+  margin-top: -230px;
+}
+@media screen and (min-width: 650px) {
+  .logo {
+    margin-top: -150px;
+  }
+}
+@media screen and (min-width: 660px) {
+  .logo {
+    margin-top: -180px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 110px;
+    height: 110px;
+    margin-top: -190px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    width: 150px;
+    height: 150px;
+    margin-top: -250px;
+  }
+}
+
+.oxy_container {
+  margin-top: 300px;
+}
+@media screen and (min-width: 380px) {
+  .oxy_container {
+    margin-top: 400px;
+  }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 650px), (min-resolution: 192dpi) and (min-width: 650px), (min-resolution: 2dppx) and (min-width: 650px) {
-  .oxy {
-    margin-top: 165px;
+  .oxy_container {
+    margin-top: 90px;
   }
 }
-@media (min-device-pixel-ratio: 2) and (min-width: 660px) and (max-width: 935px), (min-resolution: 192dpi) and (min-width: 660px) and (max-width: 935px), (min-resolution: 2dppx) and (min-width: 660px) and (max-width: 935px) {
-  .oxy {
-    margin-top: 240px;
+@media (min-device-pixel-ratio: 2) and (min-width: 660px), (min-resolution: 192dpi) and (min-width: 660px), (min-resolution: 2dppx) and (min-width: 660px) {
+  .oxy_container {
+    margin-top: 140px;
   }
 }
-@media screen and (min-width: 936px) {
-  .oxy {
-    margin-top: 385px;
+@media screen and (min-width: 1200px) {
+  .oxy_container {
+    margin-top: 300px;
   }
+}
+
+.oxygen {
+  display: flex;
+  justify-content: center;
 }
 
 .hero__title {
-  text-align: right;
-  position: inherit;
-  margin-top: 60px;
+  text-align: center;
 }
-@media screen and (min-width: 650px) {
-  .hero__title {
-    margin-top: 0px;
-    width: 55%;
-  }
-}
-
-.title {
-  min-width: 280px;
+.hero__title .title {
+  text-shadow: 2px 1px 2px black;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.06em;
   color: aqua;
 }
-@media screen and (min-width: 936px) {
-  .title {
-    min-width: 390px;
+@media screen and (min-width: 1000px) {
+  .hero__title .title {
+    text-align: right;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.86;
     letter-spacing: 0.06em;
-  }
-}
-@media screen and (max-width: 650px) {
-  .title {
-    transform: translateX(-31%);
+    position: fixed;
+    margin-top: 0px;
+    width: 60%;
+    margin-left: 10%;
   }
 }/*# sourceMappingURL=mine.css.map */

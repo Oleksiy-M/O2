@@ -31,56 +31,57 @@
 <main>
 <!-- Water -->
 <section class="hero">
-
+<h1 class="heading">heading</h1>
 <a class="hero__link link" href="./index.html">
-<div class="hero__thumb">
+<ul class="hero__thumb list ">
 
-	<div class="water">
+	<li class="water">
 		<picture >
-		<source srcset="./img/water/water-mobil.webp" media="(max-width: 935px)" type="img/webp">
-		<source srcset="./img/water/water-mobil.png" media="(max-width: 935px)">
+		<source srcset="./img/water/water.webp 1x, ./img/water/water@2x.webp 2x"  media="(min-width: 1200px)" type="img/webp">
+		<source srcset="./img/water/water.png 1x, ./img/water/water@2x.png 2x" media="(min-width: 1200px)">		
 
-		<!-- <source srcset="./img/water/water-tablet.webp" media="(max-width: 1020px)" type="img/webp">
-		<source srcset="./img/water/water-tablet.png" media="(max-width: 1020px)"> -->
+		<source srcset="./img/water/water-tablet.webp 1x, ./img/water/water-tablet@2x.webp 2x" media="(min-width: 768px)" type="img/webp">
+		<source srcset="./img/water/water-tablet.png 1x, ./img/water/water-tablet@2x.png 2x" media="(min-width: 768px)">
 
-		<source srcset="./img/water/water.webp"  media="(min-width: 936px)" type="img/webp">
-		<source srcset="./img/water/water.png" media="(min-width: 936px)">
+		<source srcset="./img/water/water-mobil.webp 1x, ./img/water/water-mobil@2x.webp 2x" media="(max-width: 767px)" type="img/webp">
+		<source srcset="./img/water/water-mobil.png 1x, ./img/water/water-mobil@2x.png 2x" media="(max-width: 767px)">
 
 		<img src="./img/water/water.png" alt="the word water from water">
 		</picture>
-	</div>
 
-<!-- Logo -->
-	<div class="hero__overlay"><picture>
+		<!-- Oxy -->
+			<ul class="oxy_container list">
 
-		<source srcset="./img/o/logo-mobil.webp" media="(max-width: 935px)" type="img/webp">
-		<source srcset="./img/o/logo-mobil.png," media="(max-width: 935px)">
-<!-- 
-		<source srcset="./img/o/logo-tablet.webp" media="(max-width: 1020px)" type="img/webp">
-		<source srcset="./img/o/logo-tablet.png" media="(max-width: 1020px)"> -->
+				<li class="oxygen">
+					<picture>
+						<source srcset="./img/oxy/oxygen.webp 1x, ./img/oxy/oxygen@2x.webp 2x" media="(min-width: 1200px)" type="png/webp">
+						<source srcset="./img/oxy/oxygen.png 1x, ./img/oxy/oxygen@2x.png 2x" media="(min-width: 1200px)">
 
-		<source srcset="./img/o/logo.webp" media="(min-width: 936px)" type="img/webp">
-		<source srcset="./img/o/logo.png" media="(min-width: 936px)">
-		<img src="./img/o/logo.png" alt="logotyp leter O">
+						<source srcset="./img/oxy/oxy-tablet.webp 1x, ./img/oxy/oxy-tablet@2x.webp 2x" media="(min-width: 768px)" type="png/webp">
+						<source srcset="./img/oxy/oxy-tablet.png 1x, ./img/oxy/oxy-tablet@2x.png 2x" media="(min-width: 768px)">
 
-	</picture></div>
-</div>
+						<source srcset="./img/oxy/oxy-mobil.webp 1x, ./img/oxy/oxy-mobil@2x.webp 2x" media="(max-width: 767px)" type="png/webp">
+						<source srcset="./img/oxy/oxy-mobil.png 1x, ./img/oxy/oxy-mobil@2x.png 2x" media="(max-width: 767px)">
+						<img src="./img/oxy/oxygen.png" alt="word oxygen">
+					</picture>
+				</li>
+				<li class="hero__title"><h2 class="title">Water enriched with oxygen No.1</h2></li>
+
+			</ul>	
+
+	</li>
+
+	<!-- Logo -->
+	<li class="hero__overlay">
+		<svg class="logo">
+			<use href="./img/o/sprite.svg#logo"></use>
+		</svg>
+	</li>
+</ul>
 </a>
 
-<!-- Oxy -->
-	<div class="oxy"><picture>
-		<source srcset="./img/oxy/oxy-mobil.webp" media="(max-width: 660px)" type="img/webp">
-		<source srcset="./img/oxy/oxy-mobil.png " media="(max-width: 660px)">
 
-		<source srcset="./img/oxy/oxy-tablet.webp" media="(max-width: 935px)" type="img/webp">
-		<source srcset="./img/oxy/oxy-tablet.png" media="(max-width: 935px)">
 
-		<source srcset="./img/oxy/oxygen.webp"  media="(min-width: 936px)" type="img/webp">
-		<source srcset="./img/oxy/oxygen.png" media="(min-width: 936px)">
-		<img src="./img/oxy/oxygen.png" alt="word oxygen"></picture>
-
-	<div class="hero__title"><h2 class="title">Water enriched with oxygen No.1</h2></div>
-	</div>
 
 </section>
 
