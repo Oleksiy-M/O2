@@ -1,73 +1,62 @@
 // < !-- Water -->
 
 .hero {
-margin-top: 100px;
+
 padding: 0px;
 display: flex;
 justify-content: center;
-
-	@media (min-device-pixel-ratio: 2) and (min-width: 650px),
-	(min-resolution: 192dpi) and (min-width: 650px),
-	(min-resolution: 2dppx) and (min-width: 650px) {
-		margin-top: 20px;
-	}
-
-	@media (min-device-pixel-ratio: 2) and (min-width: 661px) ,
-	(min-resolution: 192dpi) and (min-width: 661px) ,
-	(min-resolution: 2dppx) and (min-width: 661px) {
-		margin-top: 30px;
-	}
-
-	@media screen and (min-width: 936px) {
-		margin-top: 40px;
-	}
-	@media screen and (min-width: 1200px) {
-	margin-top: 60px;
-	}
 }
 
-
 .hero__link {
-position: fixed;
-text-decoration: none;
-display: block;
-
+	position: fixed;
+	text-decoration: none;
+	display: block;
 }
 
 .hero__thumb {
-position: relative;
-overflow: hidden;
+	position: relative;
+	overflow: hidden;
 }
 
-.water {
-	overflow: visible;
-margin: 0;
+.hero__water {
+	z-index: 2;
+margin-top: 100px;
+
+	@media screen and (min-width: 650px) {
+		margin-top: 35px;
+	}
+	
+	@media screen and (min-width: 661px){
+		margin-top: 40px;
+	}
+	
+@media screen and (min-width: 1200px) {
+	margin-top: 120px;
+	}	
 padding-left: 10px;
 padding-right: 10px;
-// transform: translateX(1%);
+
 }
 
+// < !-- Logo -->
 
-// logo
-
-.hero__overlay {
+.logo__overlay {
 display: flex;
 justify-content: center;
 // margin-top: 160px;	
 padding: 0px;
 opacity: 0;
-transform: translateY(50%);
+// transform: translateY(50%);
 transition: transform $animation,
 opacity $animation;
 
 .hero__link:hover &,
 .hero__link:focus & {
-transform: translateX(0);
 opacity: 1;
 }
 }	
 
-.logo {
+.hero-logo {
 		width: 90px;
 		height: 90px;
 		margin-top: -230px;
@@ -91,73 +80,55 @@ opacity: 1;
 	}
 }
 
-.oxy_container {
+.oxy-container {
 	margin-top: 300px;
 
 	@media screen and (min-width: 380px) {
 		margin-top: 400px;
 	}
 
-	@media (min-device-pixel-ratio: 2) and (min-width: 650px),
-	(min-resolution: 192dpi) and (min-width: 650px),
-	(min-resolution: 2dppx) and (min-width: 650px) {
+	@media screen and (min-width: 650px){
 		margin-top: 90px;
-
 	}
 
-	@media (min-device-pixel-ratio: 2) and (min-width: 660px),
-	(min-resolution: 192dpi) and (min-width: 660px),
-	(min-resolution: 2dppx) and (min-width: 660px) {
+	@media screen and (min-width: 660px) {
 		margin-top: 140px;
-
 	}
 
 	@media screen and (min-width: 1200px) {
 		margin-top: 300px;
-
 	}
 }
 
-.oxygen {
+.oxy {
 	display: flex;
 	justify-content: center;
 }
 
-
 .hero__title {
 	text-align: center;
-	// position: inherit;
-// 	@media screen and (min-width: 768px) {
-
-// }
+}
 
 .title {
-	text-shadow: 2px 1px 2px black;
-
-	// min-width: 280px;
+	text-shadow: 2px 1px 10px black;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.86;
-	letter-spacing: 0.06em;
+	letter-spacing: 0.25em;
 	// text-transform: uppercase;
-	color: aqua;
+	color: $primary-text-color;
 
+	@media screen and (min-width: 1200px) {
+font-weight: 600;
+font-size: 20px;
+line-height: 1.86;
+letter-spacing: 0.26em;	
 
-	// 	@media screen and (max-width: 767px) {
-	// transform: translateX(11%);
-	// }
-	@media screen and (min-width: 1000px) {
 		text-align: right;
-		// min-width: 390px;
-		font-weight: 600;
-		font-size: 20px;
-		line-height: 1.86;
-		letter-spacing: 0.06em;
-				position: fixed;
+		position: fixed;
 		margin-top: 0px;
+		margin-left: 12%;
 		width: 60%;
-		margin-left: 10%;
-	}
 	}
 
 }

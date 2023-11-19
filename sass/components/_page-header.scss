@@ -9,14 +9,14 @@ url("../img/background/background-desktop-mobil.jpg");
 	background-attachment: fixed;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 50px;
+	// padding-top: 50px;
 	// border: 2px dashed tomato;
 	
 
 	@media (min-device-pixel-ratio: 2) and (max-width: 767px),
 	(min-resolution: 192dpi) and (max-width: 767px),
 	(min-resolution: 2dppx) and (max-width: 767px) {
-	padding-top: 20px;
+	// padding-top: 20px;
 	background-image:
 	url("../img/background/background-desktop-mobil@2x.jpg");
 	}
@@ -31,7 +31,7 @@ url("../img/background/background-desktop-mobil.jpg");
 	(min-device-pixel-ratio: 2) and (min-width: 768px),
 	(min-resolution: 192dpi) and (min-width: 768px),
 	(min-resolution: 2dppx) and (min-width: 768px){
-	padding-top: 18px;
+
 	height: 1370px;
 	background-image:
 	url("../img/background/background-desktop-tablet@2x.jpg");
@@ -42,7 +42,6 @@ url("../img/background/background-desktop-mobil.jpg");
 	@media screen and (min-width: 1200px) {
 	max-width: 1600px;
 	height: 820px;
-	padding-top: 30px;
 	background-image:
 	url("../img/background/background-desktop.jpg");
 	}
@@ -56,9 +55,3 @@ url("../img/background/background-desktop-mobil.jpg");
 	}
 }
 
-.page-header__nav {
-	margin-left: 8%;
-		position: fixed;
-		z-index: 1;
-// border: 2px dashed tomato;
-}

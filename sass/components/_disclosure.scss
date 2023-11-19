@@ -1,0 +1,58 @@
+// < !-- disclosure -->
+
+.discl-bg{
+   background-size:cover;
+   background-position: center;
+   background-attachment:scroll;
+   background-image: linear-gradient(to right, rgba(36, 40, 46, 0.753),
+         rgba(23, 44, 59, 0.801)),
+   url("../img/bg-discl/bg.jpg");
+
+   display:fle;
+   max-width: 1600px;
+   height: 2650px;
+   
+   margin-left: auto;
+   margin-right: auto;
+   // margin-top: 50px;
+
+}
+
+// .discl-hero{
+//    display:block;
+// }
+
+
+.heading{
+   padding-top: 250px;
+}
+.discl-heading{
+   text-align: center;
+   text-transform: uppercase;
+    
+   font-weight: 600;
+      font-size: 20px;
+      line-height: 1.86;
+      letter-spacing: 0.26em;
+         text-shadow: 2px 1px 10px black;
+            color: $svg-color;
+}
+
+.hand-hero{
+   margin-right: 50px;
+   margin-top: 185px;
+   display: flex;
+   justify-content: right;
+
+}
+
+.border{
+   border: 3px solid #0000FF;
+box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.5);
+box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.5);
+
+   &:hover,
+      &:focus {
+      border: 3px solid $primary-text-color;
+      }
+}

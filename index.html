@@ -11,31 +11,35 @@
 	<link rel="stylesheet" href="./css/mine.min.css">
 </head>
 
-<body>
+<body class="page-header">
 
 	<!--  PAGE-HEADER -->
-<header class="page-header">
+<header>
 
-<nav class="page-header__nav">
+<nav class="page__nav">
 
 <!-- SITE-NAV -->
 <ul class="site-nav list">
-	<li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--current">Page1</a></li>
-	<li class="site-nav__item"><a href="./index.html" class="site-nav__link">Page2</a></li>
+	<li class="site-nav__item discl-logo"><a href="./index.html" class="site-nav__link"><svg width="60" height="60" class="site-nav__item"><use href="./img/o/sprite.svg#logo"></use></svg></a></li>
+	<li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--current">Water</a></li>
+	<li class="site-nav__item"><a href="./disclosure.html" class="site-nav__link">Disclosure</a></li>
 	<li class="site-nav__item"><a href="./index.html" class="site-nav__link">Page3</a></li>
 	<li class="site-nav__item"><a href="./index.html" class="site-nav__link">Page4</a></li>
 </ul>
 
 </nav>
+</header>
 
 <main>
 <!-- Water -->
 <section class="hero">
-<h1 class="heading">heading</h1>
-<a class="hero__link link" href="./index.html">
-<ul class="hero__thumb list ">
 
-	<li class="water">
+<h1 class="visually-hidden">heading</h1>
+
+<a class="hero__link link" href="./index.html">
+<ul class="hero__thumb list">
+
+	<li class="hero__water">
 		<picture >
 		<source srcset="./img/water/water.webp 1x, ./img/water/water@2x.webp 2x"  media="(min-width: 1200px)" type="img/webp">
 		<source srcset="./img/water/water.png 1x, ./img/water/water@2x.png 2x" media="(min-width: 1200px)">		
@@ -50,9 +54,9 @@
 		</picture>
 
 		<!-- Oxy -->
-			<ul class="oxy_container list">
+			<ul class="oxy-container list">
 
-				<li class="oxygen">
+				<li class="oxy">
 					<picture>
 						<source srcset="./img/oxy/oxygen.webp 1x, ./img/oxy/oxygen@2x.webp 2x" media="(min-width: 1200px)" type="png/webp">
 						<source srcset="./img/oxy/oxygen.png 1x, ./img/oxy/oxygen@2x.png 2x" media="(min-width: 1200px)">
@@ -72,8 +76,8 @@
 	</li>
 
 	<!-- Logo -->
-	<li class="hero__overlay">
-		<svg class="logo">
+	<li class="logo__overlay">
+		<svg class="hero-logo">
 			<use href="./img/o/sprite.svg#logo"></use>
 		</svg>
 	</li>
@@ -86,7 +90,7 @@
 </section>
 
 </main>
-</header>
+
 
 </body>
 </html>

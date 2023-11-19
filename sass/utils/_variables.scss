@@ -1,9 +1,9 @@
-$primary-text-color: #212121;
+$primary-text-color: rgb(0,255,255);
 $Secondary-text-color: #757575;
 $Accent: #FF8230;
 $White-color: #FFFFFF;
-$svg-color: #afb1b8;
-$animation: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+$svg-color: #33FF99;
+$animation: 2000ms cubic-bezier(0.4, 0, 0.2, 1);
 
 /* ==========Utils========= */
 
@@ -28,7 +28,7 @@ p {
 	margin-bottom: 0;
 }
 
-.heading {
+.visually-hidden {
 	overflow: hidden;
 	width: 0;
 }
