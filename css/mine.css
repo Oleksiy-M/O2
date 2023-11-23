@@ -32,7 +32,7 @@ img {
 }
 
 body {
-  background-color: #9ee8d5;
+  background-color: #6f727b;
   color: rgb(0, 255, 255);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -90,21 +90,20 @@ body {
 @media screen and (min-width: 1200px) {
   .page__nav {
     margin-top: 30px;
+    margin-left: 6%;
   }
 }
 
 .bg-nav {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background-color: #5782f7;
+  padding-top: 35px;
+  padding-bottom: 15px;
+  background-color: #adb2c1;
   width: 1200px;
 }
 
 .site-nav {
   text-shadow: 1px 1px 1px black;
+  align-items: center;
   display: flex;
   flex-direction: row;
   font-weight: 400;
@@ -143,8 +142,6 @@ body {
 }
 
 .site-nav__item {
-  display: flex;
-  align-items: end;
   margin-right: 15px;
 }
 @media screen and (min-width: 768px) {
@@ -159,7 +156,6 @@ body {
 @media screen and (min-width: 1200px) {
   .discl-logo {
     margin-left: 30px;
-    margin-right: 20px;
     opacity: 0;
     display: flex;
     transition: transform 2000ms cubic-bezier(0.4, 0, 0.2, 1), opacity 2000ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -305,6 +301,7 @@ body {
 }
 
 .discl {
+  display: flexbox;
   background-size: contain;
   background-position: center;
   background-attachment: scroll;
@@ -318,8 +315,8 @@ body {
 .discl-hero__heading {
   text-align: center;
   text-transform: uppercase;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 150px;
+  padding-bottom: 150px;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.86;
@@ -328,63 +325,96 @@ body {
   color: #33FF99;
 }
 
-.hand-hero {
-  margin-right: 40px;
-  display: flex;
-  justify-content: right;
-}
-
-.hand-hero__border {
-  border: 3px solid #0000FF;
-  box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.5);
-  box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.5);
-  max-height: 220px;
-}
-.hand-hero__border:hover, .hand-hero__border:focus {
-  border: 3px solid rgb(0, 255, 255);
+.develo-eco {
+  margin-left: auto;
+  margin-right: auto;
+  display: flexbox;
+  width: 1120px;
 }
 
 .develo-eco__title {
-  margin-right: 160px;
-  margin-bottom: 270px;
+  text-align: left;
+  margin-right: 140px;
+  margin-bottom: 250px;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.86;
   letter-spacing: 0.26em;
 }
 
-.develo-eco__list {
-  padding-bottom: 0;
+.hand-hero {
+  margin-bottom: 50px;
+  padding: 0;
+  display: flex;
+  justify-content: right;
+  max-height: 220px;
+  z-index: 1;
+}
+
+.hand-hero__border {
+  border: 3px solid #0000FF;
+  box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.5);
+  box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.5);
+}
+.hand-hero__border:hover, .hand-hero__border:focus {
+  border: 3px solid rgb(0, 255, 255);
+}
+
+.impact-title {
+  text-align: right;
+  margin-right: 160px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.26em;
 }
 
 .develo-eco___card {
-  max-width: 450px;
+  margin-bottom: 0px;
+  display: flexbox;
 }
 
 .develo-eco__content {
-  display: flexbox;
-  max-width: 435px;
-  margin-left: 40px;
+  z-index: 2;
+  max-width: 410px;
+  max-height: 90px;
+  margin-left: 0px;
+}
+
+.impact__content {
+  margin-top: 160px;
+  max-width: 600px;
+  margin-left: 490px;
+  margin-bottom: 0px;
 }
 
 .develo-eco__svg {
   margin-left: 150px;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .develo-eco__content:hover .develo-eco__svg, .develo-eco__content:focus .develo-eco__svg {
   transform: translateY(-250%);
 }
 
+.impact__svg {
+  margin-left: 290px;
+  margin-bottom: 5px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.impact__content:hover .impact__svg, .impact__content:focus .impact__svg {
+  transform: translateY(-250%);
+}
+
 .develo-eco__art {
   position: fixed;
   max-width: 400px;
-  max-height: 300px;
   opacity: 0;
   overflow: hidden;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
   color: #3FA9F5;
+  white-space: pre-wrap;
   font-weight: 500;
   font-size: 13px;
   line-height: 1.5;
@@ -394,11 +424,33 @@ body {
   opacity: 1;
   transform: translateY(0);
   position: absolute;
-  margin-top: 110px;
+  margin-top: -145px;
+}
+
+.impact__art {
+  position: fixed;
+  max-width: 470px;
+  margin-left: 130px;
+  opacity: 0;
+  overflow: hidden;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
+  color: #3FA9F5;
+  white-space: pre-wrap;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.develo-eco___line:hover .impact__art, .develo-eco___line:focus .impact__art, .impact__content:hover .impact__art, .impact__content:focus .impact__art {
+  opacity: 1;
+  transform: translateY(0);
+  position: absolute;
+  margin-top: -130px;
 }
 
 .develo-eco___line {
-  display: block;
+  display: flexbox;
 }
 
 .develo-eco___decor1 {
@@ -406,29 +458,120 @@ body {
   width: 415px;
   border: 1px solid #0000FF;
 }
-.develo-eco___card:hover .develo-eco___decor1, .develo-eco___card:focus .develo-eco___decor1 {
+.develo-eco__content:hover .develo-eco___decor1, .develo-eco__content:focus .develo-eco___decor1 {
   border: 1px solid rgb(0, 255, 255);
 }
 
 .develo-eco___decor2 {
-  margin-top: -260px;
+  margin-top: -235px;
   margin-left: 405px;
-  height: 260px;
+  height: 235px;
   width: 1px;
   border: 1px solid #0000FF;
 }
-.develo-eco___card:hover .develo-eco___decor2, .develo-eco___card:focus .develo-eco___decor2 {
+.develo-eco__content:hover .develo-eco___decor2, .develo-eco__content:focus .develo-eco___decor2 {
   border: 1px solid rgb(0, 255, 255);
 }
 
 .develo-eco___decor3 {
-  margin-top: -260px;
+  margin-top: -235px;
   min-width: 160px;
   max-width: 240px;
   margin-left: 405px;
   border: 1px solid #0000FF;
 }
-.develo-eco___card:hover .develo-eco___decor3, .develo-eco___card:focus .develo-eco___decor3 {
+.develo-eco__content:hover .develo-eco___decor3, .develo-eco__content:focus .develo-eco___decor3 {
+  border: 1px solid rgb(0, 255, 255);
+}
+
+.develo-eco___decor4 {
+  margin-left: -10px;
+  width: 430px;
+  border: 1px solid #0000FF;
+}
+.develo-eco__content:hover .develo-eco___decor4, .develo-eco__content:focus .develo-eco___decor4 {
+  border: 1px solid rgb(0, 255, 255);
+}
+
+.develo-eco___decor5 {
+  margin-top: -525px;
+  margin-left: 420px;
+  height: 525px;
+  width: 1px;
+  border: 1px solid #0000FF;
+}
+.develo-eco__content:hover .develo-eco___decor5, .develo-eco__content:focus .develo-eco___decor5 {
+  border: 1px solid rgb(0, 255, 255);
+}
+
+.develo-eco___decor6 {
+  margin-top: -524px;
+  min-width: 160px;
+  max-width: 240px;
+  margin-left: 420px;
+  border: 1px solid #0000FF;
+}
+.develo-eco__content:hover .develo-eco___decor6, .develo-eco__content:focus .develo-eco___decor6 {
+  border: 1px solid rgb(0, 255, 255);
+}
+
+.develo-eco___decor7 {
+  width: 610px;
+  border: 1px solid #0000FF;
+}
+.impact__content:hover .develo-eco___decor7, .impact__content:focus .develo-eco___decor7 {
+  border: 1px solid rgb(0, 255, 255);
+}
+
+.develo-eco___decor8 {
+  margin-top: -425px;
+  height: 425px;
+  width: 1px;
+  border: 1px solid #0000FF;
+}
+.impact__content:hover .develo-eco___decor8, .impact__content:focus .develo-eco___decor8 {
+  border: 1px solid rgb(0, 255, 255);
+}
+
+.develo-eco___decor9 {
+  margin-top: -425px;
+  min-width: 40px;
+  max-width: 75px;
+  margin-left: 0px;
+  border: 1px solid #0000FF;
+}
+.impact__content:hover .develo-eco___decor9, .impact__content:focus .develo-eco___decor9 {
+  border: 1px solid rgb(0, 255, 255);
+}
+
+.develo-eco___decor10 {
+  margin-left: -10px;
+  width: 610px;
+  border: 1px solid #0000FF;
+}
+.impact__content:hover .develo-eco___decor10, .impact__content:focus .develo-eco___decor10 {
+  border: 1px solid rgb(0, 255, 255);
+}
+
+.develo-eco___decor11 {
+  margin-left: -10px;
+  margin-top: -730px;
+  height: 730px;
+  width: 1px;
+  border: 1px solid #0000FF;
+}
+.impact__content:hover .develo-eco___decor11, .impact__content:focus .develo-eco___decor11 {
+  border: 1px solid rgb(0, 255, 255);
+}
+
+.develo-eco___decor12 {
+  margin-left: -10px;
+  margin-top: -730px;
+  min-width: 80px;
+  max-width: 95px;
+  border: 1px solid #0000FF;
+}
+.impact__content:hover .develo-eco___decor12, .impact__content:focus .develo-eco___decor12 {
   border: 1px solid rgb(0, 255, 255);
 }
 
