@@ -1,11 +1,31 @@
 .develo-eco___line {
    display: flexbox;
    margin-top: 85px;
+   z-index: 2;
 }
 
 .impact___line {
    display: flexbox;
-   margin-top: 105px;
+   margin-top: 55px;
+      z-index: 2;
+}
+
+.impact___line4{
+   display: flexbox;
+   margin-top: 65px;
+      z-index: 2;
+}
+
+.impact___line2{
+      display: flexbox;
+         margin-top: 45px;
+         z-index: 2;
+}
+
+.impact___line3{
+   display: flexbox;
+      margin-top: 100px;
+      z-index: 2;
 }
 
 .develo-eco___decor1 {
@@ -61,9 +81,9 @@
 }
 
 .develo-eco___decor5 {
-   margin-top: -563px;
+   margin-top: -523px;
    margin-left: 430px;
-   height: 563px;
+   height: 523px;
    width: 1px;
    border: 1px solid $line-color;
 
@@ -74,7 +94,7 @@
 }
 
 .develo-eco___decor6 {
-   margin-top: -563px;
+   margin-top: -523px;
    width: 155px;
    
    margin-left: 430px;
@@ -86,7 +106,7 @@
    }
 }
 
-// // < !-- oil -->
+// < !-- oil -->
 
 .develo-eco___decor7 {
    width: 610px;
@@ -99,8 +119,8 @@
 }
 
 .develo-eco___decor8 {
-   margin-top: -440px;
-   height: 440px;
+   margin-top: -402px;
+   height: 402px;
    width: 1px;
    border: 1px solid $line-color;
 
@@ -111,8 +131,8 @@
 }
 
 .develo-eco___decor9 {
-   margin-top: -440px;
-   width: 85px;
+   margin-top: -402px;
+   width: 70px;
    margin-left: 0px;
    border: 1px solid $line-color;
 
@@ -122,139 +142,187 @@
    }
 }
 
-// // < !-- ocean -->
+// < !-- ocean -->
 
-// .develo-eco___decor10 {
-//    width: 500px;
-//    border: 1px solid $line-color;
+.develo-eco___decor10 {
+   width: 500px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-// .develo-eco___decor11 {
-//    margin-top: -730px;
-//    height: 730px;
-//    width: 1px;
-//    border: 1px solid $line-color;
+.develo-eco___decor11 {
+   margin-top: -689px;
+   height: 689px;
+   width: 1px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-// .develo-eco___decor12 {
-//    margin-top: -730px;
-//   width: 95px;
-//    border: 1px solid $line-color;
+.develo-eco___decor12 {
+   margin-top: -689px;
+   width: 95px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-//       // < !-- factory -->
+      // < !-- factory -->
 
-// .develo-eco___decor14 {
-//    margin-top: -350px;
-//    height: 350px;
-//    width: 1px;
-//    border: 1px solid $line-color;
+.develo-eco___decor14 {
+   margin-top: -350px;
+   height: 350px;
+   width: 1px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-// .develo-eco___decor15 {
-//    margin-top: -350px;
-//    width: 120px;
-//    border: 1px solid $line-color;
+.develo-eco___decor15 {
+   margin-top: -350px;
+   width: 133px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-// .develo-eco___decor16 {
-//    margin-left: 120px;
-//    margin-top: -687px;
-//    height: 687px;
-//    width: 1px;
-//    border: 1px solid $line-color;
+.develo-eco___decor16 {
+   margin-left: 133px;
+   margin-top: -647px;
+   height: 647px;
+   width: 1px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-// .develo-eco___decor17 {
-//    margin-left: 120px;
-//    margin-top: -687px;
-//    width: 115px;
-//    border: 1px solid $line-color;
+.develo-eco___decor17 {
+   margin-left: 133px;
+   margin-top: -647px;
+   width: 115px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-//       //  < !-- earth -->
+      //  < !-- earth -->
 
+.develo-eco___decor18 {
+   margin-top: -660px;
+   height: 660px;
+   width: 1px;
+   border: 1px solid $line-color;
 
-// .develo-eco___decor19 {
-//    margin-top: -700px;
-//    height: 700px;
-//    width: 1px;
-//    border: 1px solid $line-color;
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+.develo-eco___decor19 {
+   margin-top: -660px;
+   width: 249px;
+   border: 1px solid $line-color;
 
-// .develo-eco___decor20 {
-//    margin-top: -700px;
-//    width: 120px;
-//    border: 1px solid $line-color;
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+.develo-eco___decor20 {
+   margin-left: 249px;
+   margin-top: -605px;
+   height: 605px;
+   width: 1px;
+   border: 1px solid $line-color;
 
-// .develo-eco___decor21 {
-//    margin-left: 105px;
-//    margin-top: -687px;
-//    height: 687px;
-//    width: 1px;
-//    border: 1px solid $line-color;
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+.develo-eco___decor21 {
+   margin-left: 249px;
+   margin-top: -605px;
+   width: 150px;
+   border: 1px solid $line-color;
 
-// .develo-eco___decor22 {
-//    margin-left: 105px;
-//    margin-top: -687px;
-//    width: 115px;
-//    border: 1px solid $line-color;
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+//   < !-- man -1023 876
 
+.develo-eco___decor22 {
+   margin-top: -1023px;
+   height: 1023px;
+   width: 1px;
+   border: 1px solid $line-color;
+
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
+
+.develo-eco___decor23 {
+   margin-top: -1023px;
+   width: 389px;
+   border: 1px solid $line-color;
+
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
+
+.develo-eco___decor24 {
+   margin-left: 389px;
+   margin-top: -564px;
+   height: 564px;
+   width: 1px;
+   border: 1px solid $line-color;
+
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
+
+.develo-eco___decor25 {
+   margin-left: 389px;
+   margin-top: -564px;
+   width: 155px;
+   border: 1px solid $line-color;
+
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}

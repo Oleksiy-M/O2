@@ -302,12 +302,20 @@ body {
 
 .discl {
   display: flexbox;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-attachment: scroll;
   background-image: linear-gradient(to right, rgba(16, 27, 38, 0.914), rgba(1, 29, 31, 0.923)), url("../img/bg-discl/bg.jpg");
   max-width: 1200px;
-  height: 1990px;
+  height: 2250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.discl-hero {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -315,8 +323,8 @@ body {
 .discl-hero__heading {
   text-align: center;
   text-transform: uppercase;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding: 5px;
+  height: 50px;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.86;
@@ -334,6 +342,9 @@ body {
 }
 
 .develo-eco__title {
+  height: 40px;
+  padding: 5px;
+  margin-right: 715px;
   margin-left: 55px;
   margin-bottom: 220px;
   font-weight: 600;
@@ -343,11 +354,11 @@ body {
 }
 
 .hand-hero {
-  margin-top: -220px;
+  margin-top: -219px;
   margin-left: 145px;
   display: flexbox;
   justify-content: right;
-  max-height: 210px;
+  height: 210px;
   max-width: 550px;
   z-index: 1;
   border: 3px solid #0000FF;
@@ -376,20 +387,50 @@ body {
 }
 
 .develo-eco__content {
-  width: 425px;
+  width: 420px;
   height: 150px;
   position: relative;
 }
 
 .develo-eco__content2 {
   margin-top: -65px;
+  width: 435px;
 }
 
 .impact__content {
-  margin-top: 75px;
   width: 600px;
-  height: 170px;
-  margin-left: 490px;
+  height: 130px;
+  margin-left: 501px;
+  margin-top: 75px;
+}
+
+.impact__content2 {
+  height: 130px;
+  width: 500px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding-left: 0px;
+  margin-left: 52px;
+}
+
+.impact__content3 {
+  margin-left: 340px;
+  margin-bottom: 150px;
+  width: 500px;
+}
+
+.impact__content4 {
+  margin-left: 210px;
+  width: 500px;
+  height: 110px;
+  margin-bottom: 150px;
+}
+
+.impact__content5 {
+  margin-left: 55px;
+  width: 500px;
+  height: 165px;
+  margin-bottom: 150px;
 }
 
 .develo-eco__svg {
@@ -401,8 +442,11 @@ body {
 }
 
 .impact__svg {
-  max-height: 90px;
-  margin-left: 260px;
+  margin-left: 290px;
+}
+
+.impact__svg2 {
+  margin-left: 175px;
 }
 
 .cards__overlay {
@@ -416,7 +460,6 @@ body {
   opacity: 0;
   transform: translateY(10%);
   transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1), opacity 400ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: rgba(2, 172, 206, 0.463);
 }
 .develo-eco__content:hover .cards__overlay, .develo-eco__content:focus .cards__overlay {
   transform: translateY(0);
@@ -433,8 +476,14 @@ body {
 }
 
 .impact__art {
-  width: 470px;
+  max-width: 470px;
   margin-left: 130px;
+}
+
+.impact__art2 {
+  max-width: 470px;
+  margin-left: 0px;
+  padding-left: 30px;
 }
 
 /* ===================== CONTAINER ==================== */
@@ -462,11 +511,31 @@ body {
 .develo-eco___line {
   display: flexbox;
   margin-top: 85px;
+  z-index: 2;
 }
 
 .impact___line {
   display: flexbox;
-  margin-top: 105px;
+  margin-top: 55px;
+  z-index: 2;
+}
+
+.impact___line4 {
+  display: flexbox;
+  margin-top: 65px;
+  z-index: 2;
+}
+
+.impact___line2 {
+  display: flexbox;
+  margin-top: 45px;
+  z-index: 2;
+}
+
+.impact___line3 {
+  display: flexbox;
+  margin-top: 100px;
+  z-index: 2;
 }
 
 .develo-eco___decor1 {
@@ -510,9 +579,9 @@ body {
 }
 
 .develo-eco___decor5 {
-  margin-top: -563px;
+  margin-top: -523px;
   margin-left: 430px;
-  height: 563px;
+  height: 523px;
   width: 1px;
   border: 1px solid #0000FF;
 }
@@ -521,7 +590,7 @@ body {
 }
 
 .develo-eco___decor6 {
-  margin-top: -563px;
+  margin-top: -523px;
   width: 155px;
   margin-left: 430px;
   border: 1px solid #0000FF;
@@ -539,8 +608,8 @@ body {
 }
 
 .develo-eco___decor8 {
-  margin-top: -440px;
-  height: 440px;
+  margin-top: -402px;
+  height: 402px;
   width: 1px;
   border: 1px solid #0000FF;
 }
@@ -549,11 +618,158 @@ body {
 }
 
 .develo-eco___decor9 {
-  margin-top: -440px;
-  width: 85px;
+  margin-top: -402px;
+  width: 70px;
   margin-left: 0px;
   border: 1px solid #0000FF;
 }
 .develo-eco__content:hover .develo-eco___decor9, .develo-eco__content:focus .develo-eco___decor9 {
+  border: 1px solid rgb(0, 255, 255);
+}
+
+.develo-eco___decor10 {
+  width: 500px;
+  border: 1px solid #0000FF;
+}
+.develo-eco__content:hover .develo-eco___decor10, .develo-eco__content:focus .develo-eco___decor10 {
+  border: 1px solid rgb(0, 255, 255);
+}
+
+.develo-eco___decor11 {
+  margin-top: -689px;
+  height: 689px;
+  width: 1px;
+  border: 1px solid #0000FF;
+}
+.develo-eco__content:hover .develo-eco___decor11, .develo-eco__content:focus .develo-eco___decor11 {
+  border: 1px solid rgb(0, 255, 255);
+}
+
+.develo-eco___decor12 {
+  margin-top: -689px;
+  width: 95px;
+  border: 1px solid #0000FF;
+}
+.develo-eco__content:hover .develo-eco___decor12, .develo-eco__content:focus .develo-eco___decor12 {
+  border: 1px solid rgb(0, 255, 255);
+}
+
+.develo-eco___decor14 {
+  margin-top: -350px;
+  height: 350px;
+  width: 1px;
+  border: 1px solid #0000FF;
+}
+.develo-eco__content:hover .develo-eco___decor14, .develo-eco__content:focus .develo-eco___decor14 {
+  border: 1px solid rgb(0, 255, 255);
+}
+
+.develo-eco___decor15 {
+  margin-top: -350px;
+  width: 133px;
+  border: 1px solid #0000FF;
+}
+.develo-eco__content:hover .develo-eco___decor15, .develo-eco__content:focus .develo-eco___decor15 {
+  border: 1px solid rgb(0, 255, 255);
+}
+
+.develo-eco___decor16 {
+  margin-left: 133px;
+  margin-top: -647px;
+  height: 647px;
+  width: 1px;
+  border: 1px solid #0000FF;
+}
+.develo-eco__content:hover .develo-eco___decor16, .develo-eco__content:focus .develo-eco___decor16 {
+  border: 1px solid rgb(0, 255, 255);
+}
+
+.develo-eco___decor17 {
+  margin-left: 133px;
+  margin-top: -647px;
+  width: 115px;
+  border: 1px solid #0000FF;
+}
+.develo-eco__content:hover .develo-eco___decor17, .develo-eco__content:focus .develo-eco___decor17 {
+  border: 1px solid rgb(0, 255, 255);
+}
+
+.develo-eco___decor18 {
+  margin-top: -660px;
+  height: 660px;
+  width: 1px;
+  border: 1px solid #0000FF;
+}
+.develo-eco__content:hover .develo-eco___decor18, .develo-eco__content:focus .develo-eco___decor18 {
+  border: 1px solid rgb(0, 255, 255);
+}
+
+.develo-eco___decor19 {
+  margin-top: -660px;
+  width: 249px;
+  border: 1px solid #0000FF;
+}
+.develo-eco__content:hover .develo-eco___decor19, .develo-eco__content:focus .develo-eco___decor19 {
+  border: 1px solid rgb(0, 255, 255);
+}
+
+.develo-eco___decor20 {
+  margin-left: 249px;
+  margin-top: -605px;
+  height: 605px;
+  width: 1px;
+  border: 1px solid #0000FF;
+}
+.develo-eco__content:hover .develo-eco___decor20, .develo-eco__content:focus .develo-eco___decor20 {
+  border: 1px solid rgb(0, 255, 255);
+}
+
+.develo-eco___decor21 {
+  margin-left: 249px;
+  margin-top: -605px;
+  width: 150px;
+  border: 1px solid #0000FF;
+}
+.develo-eco__content:hover .develo-eco___decor21, .develo-eco__content:focus .develo-eco___decor21 {
+  border: 1px solid rgb(0, 255, 255);
+}
+
+.develo-eco___decor22 {
+  margin-top: -1023px;
+  height: 1023px;
+  width: 1px;
+  border: 1px solid #0000FF;
+}
+.develo-eco__content:hover .develo-eco___decor22, .develo-eco__content:focus .develo-eco___decor22 {
+  border: 1px solid rgb(0, 255, 255);
+}
+
+.develo-eco___decor23 {
+  margin-top: -1023px;
+  width: 389px;
+  border: 1px solid #0000FF;
+}
+.develo-eco__content:hover .develo-eco___decor23, .develo-eco__content:focus .develo-eco___decor23 {
+  border: 1px solid rgb(0, 255, 255);
+}
+
+.develo-eco___decor24 {
+  margin-left: 389px;
+  margin-top: -564px;
+  height: 564px;
+  width: 1px;
+  border: 1px solid #0000FF;
+}
+.develo-eco__content:hover .develo-eco___decor24, .develo-eco__content:focus .develo-eco___decor24 {
+  border: 1px solid rgb(0, 255, 255);
+}
+
+.develo-eco___decor25 {
+  margin-left: 389px;
+  margin-top: -564px;
+  width: 155px;
+  border: 1px solid #0000FF;
+}
+.develo-eco__content:hover .develo-eco___decor25, .develo-eco__content:focus .develo-eco___decor25 {
   border: 1px solid rgb(0, 255, 255);
 }/*# sourceMappingURL=mine.css.map */
