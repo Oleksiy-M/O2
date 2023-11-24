@@ -5,12 +5,13 @@
    background-size:cover;
    background-position: center;
    background-attachment:scroll;
-   background-image: linear-gradient(to right, rgba(16, 27, 38, 0.914),
-         rgba(1, 29, 31, 0.923)),
+   background-image: 
+   linear-gradient(to right, rgba(16, 27, 38, 0.708),
+         rgba(1, 29, 31, 0.636)),
    url("../img/bg-discl/bg.jpg");
 
-   max-width: 1200px;
-   height: 2250px;
+   max-width: 1600px;
+   height: 2450px;
    margin-left: auto;
    margin-right: auto;
  
@@ -36,12 +37,6 @@ letter-spacing: 0.26em;
 text-shadow: 2px 1px 10px black;
 color: $svg-color;
 
-// &:hover,
-// &:focus{
-//       font-size: 21px;
-//       // border: 1px solid $primary-text-color;
-// }
-
 }
 
       // < !--dev-eco-->
@@ -57,19 +52,14 @@ color: $svg-color;
 .develo-eco__title {
    height: 40px;
    padding: 5px;
-   margin-right: 715px;
-   margin-left: 55px;
+   margin-right: 0px;
+   margin-left: 10px;
    margin-bottom: 220px;
    font-weight: 600;
    font-size: 16px;
    line-height: 1.86;
    letter-spacing: 0.26em;
 
-//    &:hover,
-//       &:focus {
-//          font-size: 18px;
-//          // border: 1px solid $primary-text-color;
-//       }
 }
 
 .hand-hero{
@@ -91,8 +81,6 @@ box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.5);
          box-shadow: 0px 0px 3px 3px rgba(109, 206, 239, 0.5);
       }
 }
-
-
 
 .impact-title {
 margin-top: 50px;
@@ -152,10 +140,10 @@ margin-bottom: 150px;
 }
 
 .impact__content5 {
-   margin-left: 55px;
+   margin-left: 75px;
    width: 500px;
    height: 165px;
-   margin-bottom: 150px;
+   margin-bottom: 50px;
 }
 
 
@@ -201,7 +189,6 @@ margin-bottom: 150px;
    max-width: 385px;
          color: $Secondary-text-color;
          white-space: pre-wrap;
-         // font-weight: 500;
          font-size: 13px;
          line-height: 1.5;
          letter-spacing: 0.02em;
@@ -215,7 +202,20 @@ max-width: 470px;
 .impact__art2{
    max-width: 470px;
    margin-left: 0px;
-   padding-left:30px;
+   padding-left: 30px;
 
 }    
 
+.impact-title2 {
+white-space: pre-wrap;
+text-align: right;
+padding: 5px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   margin-left: 220px;
+   
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 1.86;
+   letter-spacing: 0.26em;
+}

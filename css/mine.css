@@ -32,7 +32,7 @@ img {
 }
 
 body {
-  background-color: #6f727b;
+  background-color: rgba(1, 5, 40, 0.8941176471);
   color: rgb(0, 255, 255);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -97,8 +97,7 @@ body {
 .bg-nav {
   padding-top: 35px;
   padding-bottom: 15px;
-  background-color: #adb2c1;
-  width: 1200px;
+  width: 1600px;
 }
 
 .site-nav {
@@ -305,9 +304,9 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
-  background-image: linear-gradient(to right, rgba(16, 27, 38, 0.914), rgba(1, 29, 31, 0.923)), url("../img/bg-discl/bg.jpg");
-  max-width: 1200px;
-  height: 2250px;
+  background-image: linear-gradient(to right, rgba(16, 27, 38, 0.708), rgba(1, 29, 31, 0.636)), url("../img/bg-discl/bg.jpg");
+  max-width: 1600px;
+  height: 2450px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -344,8 +343,8 @@ body {
 .develo-eco__title {
   height: 40px;
   padding: 5px;
-  margin-right: 715px;
-  margin-left: 55px;
+  margin-right: 0px;
+  margin-left: 10px;
   margin-bottom: 220px;
   font-weight: 600;
   font-size: 16px;
@@ -427,10 +426,10 @@ body {
 }
 
 .impact__content5 {
-  margin-left: 55px;
+  margin-left: 75px;
   width: 500px;
   height: 165px;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 
 .develo-eco__svg {
@@ -486,6 +485,19 @@ body {
   padding-left: 30px;
 }
 
+.impact-title2 {
+  white-space: pre-wrap;
+  text-align: right;
+  padding: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 220px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.26em;
+}
+
 /* ===================== CONTAINER ==================== */
 .container {
   padding-left: 15px;
@@ -504,7 +516,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 1600px;
   }
 }
 
@@ -735,8 +747,8 @@ body {
 }
 
 .develo-eco___decor22 {
-  margin-top: -1023px;
-  height: 1023px;
+  margin-top: -1028px;
+  height: 1028px;
   width: 1px;
   border: 1px solid #0000FF;
 }
@@ -745,8 +757,8 @@ body {
 }
 
 .develo-eco___decor23 {
-  margin-top: -1023px;
-  width: 389px;
+  margin-top: -1028px;
+  width: 369px;
   border: 1px solid #0000FF;
 }
 .develo-eco__content:hover .develo-eco___decor23, .develo-eco__content:focus .develo-eco___decor23 {
@@ -754,7 +766,7 @@ body {
 }
 
 .develo-eco___decor24 {
-  margin-left: 389px;
+  margin-left: 369px;
   margin-top: -564px;
   height: 564px;
   width: 1px;
@@ -765,11 +777,24 @@ body {
 }
 
 .develo-eco___decor25 {
-  margin-left: 389px;
+  margin-left: 369px;
   margin-top: -564px;
   width: 155px;
   border: 1px solid #0000FF;
 }
 .develo-eco__content:hover .develo-eco___decor25, .develo-eco__content:focus .develo-eco___decor25 {
   border: 1px solid rgb(0, 255, 255);
+}
+
+/* =================== FOOTER =================== */
+.page-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-logo {
+  margin-left: 40px;
 }/*# sourceMappingURL=mine.css.map */
