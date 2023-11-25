@@ -52,13 +52,25 @@ color: $svg-color;
 .develo-eco__title {
    height: 40px;
    padding: 5px;
-   margin-right: 0px;
+   // margin-right: 680px;
    margin-left: 10px;
    margin-bottom: 220px;
    font-weight: 600;
    font-size: 16px;
    line-height: 1.86;
    letter-spacing: 0.26em;
+&:hover,
+&:focus{
+      margin-left: 0px;
+      font-size: 18px;
+   border-radius: 5px;
+      // color: $White-color;
+      background-color: transparent;
+      box-shadow: 2px 2px 0px 0px #c2e6b026;
+      box-shadow: 0px 0px 2px 2px #c2e6b026;
+      border: 1px solid #0ee21572
+
+}
 
 }
 
@@ -66,7 +78,7 @@ color: $svg-color;
    margin-top: -219px;
    margin-left: 145px;
    display: flexbox;
-   justify-content: right;
+   justify-content: center;
   height: 210px;
    max-width: 550px;
    z-index: 1;
@@ -84,12 +96,23 @@ box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.5);
 
 .impact-title {
 margin-top: 50px;
-margin-right: 80px;
+// margin-right: 60px;
    text-align: center;
    font-weight: 600;
    font-size: 16px;
    line-height: 1.86;
    letter-spacing: 0.26em;
+   &:hover,
+      &:focus {
+         // margin-right: 40px;
+         font-size: 18px;
+         border-radius: 5px;
+         // color: $White-color;
+         background-color: transparent;
+         box-shadow: 2px 2px 0px 0px #c2e6b026;
+         box-shadow: 0px 0px 2px 2px #c2e6b026;
+         border: 1px solid #0ee21572
+      }
 }
 
 
@@ -102,6 +125,7 @@ margin-right: 80px;
    width: 420px;
    height: 150px;
    position: relative;
+
 }
 
 .develo-eco__content2{
@@ -136,7 +160,7 @@ width: 500px;
    margin-left: 210px;
    width: 500px;
    height: 110px;
-margin-bottom: 150px;
+margin-bottom: 160px;
 }
 
 .impact__content5 {
@@ -150,14 +174,18 @@ margin-bottom: 150px;
 .develo-eco__svg {
    margin-left: 150px;
    transition: transform $animation-card, opacity $animation-card;
-   .develo-eco__content:hover &,
-   .develo-eco__content:focus &{
+   .develo-eco:hover &,
+   .develo-eco:focus &{
       transform: translateY(-150%);
    }
 }
 
 .impact__svg {
    margin-left: 290px;
+   .develo-eco:hover &,
+      .develo-eco:focus & {
+         transform: translateY(-140%);
+      }
 }
 
 .impact__svg2 {
@@ -175,23 +203,34 @@ margin-bottom: 150px;
    opacity: 0;
    transform: translateY(10%);
    transition: transform $animation-card, opacity $animation-card;
-   // background-color: rgba(23, 207, 97, 0.553);
-      // .develo-eco___line:hover &,
-      // .develo-eco___line:focus &,
-      .develo-eco__content:hover &,
-      .develo-eco__content:focus &{
+  
+
+      // .develo-eco__content:hover &,
+      // .develo-eco__content:focus &
+
+//    .develo-eco__art:hover &,
+//    .develo-eco__art:focus &
+      .develo-eco:hover &,
+      .develo-eco:focus &
+      {
       transform: translateY(0);
       opacity: 1;
+  color:black
    }
 }
 
 .develo-eco__art{
    max-width: 385px;
-         color: $Secondary-text-color;
+       color: black;
          white-space: pre-wrap;
          font-size: 13px;
          line-height: 1.5;
          letter-spacing: 0.02em;
+      .develo-eco__content:hover &,
+      .develo-eco__content:focus & {
+      color: $Secondary-text-color;
+      //  background-color: rgba(207, 149, 23, 0.553);
+   }
       }    
       
 .impact__art{

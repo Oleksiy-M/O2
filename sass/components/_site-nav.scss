@@ -1,21 +1,22 @@
 /* =================SITE-NAV  ================= */
 .page__nav {
-	margin-left: 8%;
+			margin-left: 8%;
 	margin-top: 20px;
 	z-index: 1;
 	position: fixed;
 		@media screen and (min-width: 1200px) {
-			margin-top: 30px;
-				margin-left: 6%;
+		margin-top: 20px;
+		margin-left: 0px;		
 		}
 }
 
 .bg-nav{
-	
 	padding-top: 35px;	
 	padding-bottom: 15px;
 	// background-color: #07116b;	
-	width: 1600px;
+	width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
 }
 
 .site-nav {
@@ -37,7 +38,7 @@ text-shadow: 1px 1px 1px black;
 		
 @media screen and (min-width: 1200px) {
 
-		font-weight: 600;
+		font-weight: 500;
 		font-size: 18px;
 		line-height: 1.94;
 		letter-spacing: 0.03em;
@@ -72,16 +73,16 @@ text-shadow: 1px 1px 1px black;
 .discl-logo{
 	display: none;
 @media screen and (min-width: 1200px) {
-	margin-left: 30px;
-	
-				opacity: 0;
-				display: flex;
-				transition: transform $animation,
-				opacity $animation;
-				.site-nav:hover &,
-				.site-nav:focus &{
-					opacity: 1;
-				}
+	// margin-left: 30px;
+	display: table;
+				// opacity: 0;
+				// display: flex;
+				// transition: transform $animation,
+				// opacity $animation;
+				// .site-nav:hover &,
+				// .site-nav:focus &{
+				// 	opacity: 1;
+				// }
 			}
 
 }
