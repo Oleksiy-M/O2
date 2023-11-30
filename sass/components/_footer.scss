@@ -1,5 +1,10 @@
 /* =================== FOOTER =================== */
 .page-footer {
+
+      display: block;
+      height: 500px;
+      padding: 5px;
+         @media screen and (min-width: 1200px) {
 display: flex;
 
 align-items:center;
@@ -9,6 +14,7 @@ align-items:center;
   width: 1200px;
   height: 300px;
   margin: auto;
+  }
 
 }
 
@@ -22,18 +28,23 @@ padding-left: 40px;
 }
 
 .page-footer__contacts {
-   font-style: normal;
-   font-size: 16px;
-   line-height: 1.71;
-   text-decoration: none;
-   color: rgba(255, 255, 255, 0.6);
+ font-style: normal;
+   font-size: 12px;
+ text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
    transition: color $animation-card;
 
    &:hover,
    &:focus {
       color: $Accent;
    }
-}
+   @media screen and (min-width: 1200px) {
+  
+   font-size: 16px;
+   line-height: 1.71;
+  
+ 
+}}
 
 .page-footer__contacts--city {
    color: $White-color;
@@ -60,7 +71,7 @@ padding-left: 40px;
 .join__title {
    @media screen and (min-width: 768px) {
       display: flexbox;
-      margin-left: 60px;
+      // margin-left: 60px;
 
    }
 
@@ -150,7 +161,8 @@ padding-left: 40px;
 }
 
 .auth__input {
-
+margin: 0px;
+width: 100px;
    @media screen and (min-width: 1200px) {
       width: 338px;
       margin-right: 12px;
