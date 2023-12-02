@@ -1,19 +1,18 @@
 .develo-eco___line {
-// display: none;
-margin-top: 170px;
+// display: none; 
+margin-top: 190px;
+  z-index: 2;
+margin-top: 190px;display: flexbox;
    @media screen and (min-width: 1200px) {
-   display: flexbox;
    margin-top: 90px;
-   z-index: 2;
+
    }
    
  
 }
 
 .impact___line {
-
    // display: none;
-   
       @media screen and (min-width: 1200px) {
    display: flexbox;
    margin-top: 60px;
@@ -52,9 +51,28 @@ margin-top: 170px;
 }
 
 .develo-eco___decor1 {
+   border: 1px solid $line-color;
+   width: 220px;
+.develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
 
+@media screen and (min-width: 1200px) {
    margin-left: -10px;
    width: 425px;
+   
+
+   
+}}
+
+
+.develo-eco___decor2 {
+   overflow: visible;
+   margin-top: -221px;
+   height: 221px;
+   margin-left: 415px;
+   width: 1px;
    border: 1px solid $line-color;
 
    .develo-eco__content:hover &,
@@ -63,289 +81,274 @@ margin-top: 170px;
    }
 }
 
+.develo-eco___decor3 {
+   margin-top: -221px;
+   width: 170px;
+   margin-left: 415px;
+   border: 1px solid $line-color;
 
-// .develo-eco___decor2 {
-//    overflow: visible;
-//    margin-top: -221px;
-//    height: 221px;
-//    margin-left: 415px;
-//    width: 1px;
-//    border: 1px solid $line-color;
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+// < !-- man-laptop -->
 
-// .develo-eco___decor3 {
-//    margin-top: -221px;
-//    width: 170px;
-//    margin-left: 415px;
-//    border: 1px solid $line-color;
+.develo-eco___decor4 {
+   margin-left: -10px;
+   width: 440px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-// // < !-- man-laptop -->
+.develo-eco___decor5 {
+   margin-top: -514px;
+   margin-left: 430px;
+   height: 514px;
+   width: 1px;
+   border: 1px solid $line-color;
 
-// .develo-eco___decor4 {
-//    margin-left: -10px;
-//    width: 440px;
-//    border: 1px solid $line-color;
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
-
-// .develo-eco___decor5 {
-//    margin-top: -514px;
-//    margin-left: 430px;
-//    height: 514px;
-//    width: 1px;
-//    border: 1px solid $line-color;
-
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
-
-// .develo-eco___decor6 {
-//    margin-top: -514px;
-//    width: 155px;
+.develo-eco___decor6 {
+   margin-top: -514px;
+   width: 155px;
    
-//    margin-left: 430px;
-//    border: 1px solid $line-color;
+   margin-left: 430px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-// // < !-- oil -->
+// < !-- oil -->
 
-// .develo-eco___decor7 {
-//    width: 610px;
-//    border: 1px solid $line-color;
+.develo-eco___decor7 {
+   width: 610px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-// .develo-eco___decor8 {
-//    margin-top: -423px;
-//    height: 423px;
-//    width: 1px;
-//    border: 1px solid $line-color;
+.develo-eco___decor8 {
+   margin-top: -423px;
+   height: 423px;
+   width: 1px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-// .develo-eco___decor9 {
-//    margin-top: -423px;
-//    width: 70px;
-//    margin-left: 0px;
-//    border: 1px solid $line-color;
+.develo-eco___decor9 {
+   margin-top: -423px;
+   width: 70px;
+   margin-left: 0px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-// // < !-- ocean -->
+// < !-- ocean -->
 
-// .develo-eco___decor10 {
-//    width: 500px;
-//    border: 1px solid $line-color;
+.develo-eco___decor10 {
+   width: 500px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-// .develo-eco___decor11 {
-//    margin-top: -710px;
-//    height: 710px;
-//    width: 1px;
-//    border: 1px solid $line-color;
+.develo-eco___decor11 {
+   margin-top: -710px;
+   height: 710px;
+   width: 1px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-// .develo-eco___decor12 {
-//    margin-top: -710px;
-//    width: 95px;
-//    border: 1px solid $line-color;
+.develo-eco___decor12 {
+   margin-top: -710px;
+   width: 95px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-//       // < !-- factory -->
+      // < !-- factory -->
 
-// .develo-eco___decor14 {
-//    margin-top: -370px;
-//    height: 370px;
-//    width: 1px;
-//    border: 1px solid $line-color;
+.develo-eco___decor14 {
+   margin-top: -370px;
+   height: 370px;
+   width: 1px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-// .develo-eco___decor15 {
-//    margin-top: -370px;
-//    width: 133px;
-//    border: 1px solid $line-color;
+.develo-eco___decor15 {
+   margin-top: -370px;
+   width: 133px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-// .develo-eco___decor16 {
-//    margin-left: 133px;
-//    margin-top: -649px;
-//    height: 649px;
-//    width: 1px;
-//    border: 1px solid $line-color;
+.develo-eco___decor16 {
+   margin-left: 133px;
+   margin-top: -649px;
+   height: 649px;
+   width: 1px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-// .develo-eco___decor17 {
-//    margin-left: 133px;
-//    margin-top: -649px;
-//    width: 115px;
-//    border: 1px solid $line-color;
+.develo-eco___decor17 {
+   margin-left: 133px;
+   margin-top: -649px;
+   width: 115px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-//       //  < !-- earth -->
+      //  < !-- earth -->
 
-// .develo-eco___decor18 {
-//    margin-top: -680px;
-//    height: 680px;
-//    width: 1px;
-//    border: 1px solid $line-color;
+.develo-eco___decor18 {
+   margin-top: -680px;
+   height: 680px;
+   width: 1px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-// .develo-eco___decor19 {
-//    margin-top: -680px;
-//    width: 249px;
-//    border: 1px solid $line-color;
+.develo-eco___decor19 {
+   margin-top: -680px;
+   width: 249px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-// .develo-eco___decor20 {
-//    margin-left: 249px;
-//    margin-top: -606px;
-//    height: 606px;
-//    width: 1px;
-//    border: 1px solid $line-color;
+.develo-eco___decor20 {
+   margin-left: 249px;
+   margin-top: -606px;
+   height: 606px;
+   width: 1px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-// .develo-eco___decor21 {
-//    margin-left: 249px;
-//    margin-top: -606px;
-//    width: 150px;
-//    border: 1px solid $line-color;
+.develo-eco___decor21 {
+   margin-left: 249px;
+   margin-top: -606px;
+   width: 150px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-// //   < !-- man 
+//   < !-- man 
 
-// .develo-eco___decor22 {
-//    margin-top: -1053px;
-//    height: 1053px;
-//    width: 1px;
-//    border: 1px solid $line-color;
+.develo-eco___decor22 {
+   margin-top: -1053px;
+   height: 1053px;
+   width: 1px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-// .develo-eco___decor23 {
-//    margin-top: -1053px;
-//    width: 369px;
-//    border: 1px solid $line-color;
+.develo-eco___decor23 {
+   margin-top: -1053px;
+   width: 369px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-// .develo-eco___decor24 {
-//    margin-left: 369px;
-//    margin-top: -565px;
-//    height: 565px;
-//    width: 1px;
-//    border: 1px solid $line-color;
+.develo-eco___decor24 {
+   margin-left: 369px;
+   margin-top: -565px;
+   height: 565px;
+   width: 1px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}
 
-// .develo-eco___decor25 {
-//    margin-left: 369px;
-//    margin-top: -565px;
-//    width: 155px;
-//    border: 1px solid $line-color;
+.develo-eco___decor25 {
+   margin-left: 369px;
+   margin-top: -565px;
+   width: 155px;
+   border: 1px solid $line-color;
 
-//    .develo-eco__content:hover &,
-//    .develo-eco__content:focus & {
-//       border: 1px solid $primary-text-color;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+   }
+}

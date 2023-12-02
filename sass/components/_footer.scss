@@ -1,19 +1,15 @@
 /* =================== FOOTER =================== */
 .page-footer {
-
       display: block;
-      height: 500px;
-      padding: 5px;
-         @media screen and (min-width: 1200px) {
+      padding-top: 50px;
+         padding-bottom: 0px;
+      // padding: 5px;
+@media screen and (min-width: 1200px) {
+
 display: flex;
-
 align-items:center;
-
-   padding-top: 150px;
-   padding-bottom: 60px;
-  width: 1200px;
-  height: 300px;
-  margin: auto;
+   padding-top: 70px;
+   padding-bottom: 70px;
   }
 
 }

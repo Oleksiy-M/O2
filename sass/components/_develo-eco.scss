@@ -3,24 +3,21 @@
     .develo-eco {
 // padding: 5px;
 display: block;
- margin-bottom: 50px;
-
-      
-         @media screen and (min-width: 1200px) {
-            margin-bottom: 0px;
-       margin-left: auto;
-       margin-right: auto;
-       display: flex;
+ margin-bottom: 100px;
+  @media screen and (min-width: 1200px) {
+display: flex;
+  margin-left: auto;
+  margin-right: auto;
        flex-wrap: wrap;
        width: 1120px;
       }
     }
 
     .develo-eco__box {
-
        text-align: center;
        padding-bottom: 50px;
-      
+      padding-left: 10px;
+      padding-right: 10px;
          @media screen and (min-width: 1200px) {
    padding-bottom: 0px;
        height: 35px;
@@ -57,89 +54,83 @@ display: block;
     font-size: 17px;
     border-radius: 5px;
 }
-    }
-   }
+}
+}
 
 
-    
 
 
     .impact-title__box {
-margin-bottom: 150px;
-
-
+      display: block;
+margin-bottom: 100px;
+      padding-left: 10px;
+      padding-right: 10px;
+text-align: center;
 @media screen and (min-width: 1200px) {
-   margin-bottom: 0px;
+   margin-bottom: 0;
        margin-left: 680px;
        padding: 5px;
        width: 360px;
       }
    }
    
-   .impact-title {
-   text-align: center;
-   font-weight: 300;
-      font-size: 11px;
-      line-height: 1.86;
-      letter-spacing: 0.26em;
-
+.impact-title {
+font-weight: 300;
+font-size: 11px;
+line-height: 1.86;
+letter-spacing: 0.26em;
 &:hover,
 &:focus {
-          font-size: 12px;
-          border-radius: 5px;
-          // color: $White-color;
-          background-color: transparent;
-          box-shadow: 2px 2px 0px 0px #c2e6b026;
-          box-shadow: 0px 0px 2px 2px #c2e6b026;
-          border: 1px solid #0ee21572
-       }
+  font-size: 12px;
+  border-radius: 5px;
+     // color: $White-color;
+  background-color: transparent;
+  box-shadow: 2px 2px 0px 0px #c2e6b026;
+  box-shadow: 0px 0px 2px 2px #c2e6b026;
+  border: 1px solid #0ee21572
+}
 
-   @media screen and (min-width: 1200px) {
-       font-weight: 600;
-       font-size: 16px;
-       line-height: 1.86;
-       letter-spacing: 0.26em;
+@media screen and (min-width: 1200px) {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.86;
+   letter-spacing: 0.26em;
    &:hover,
    &:focus {
       font-size: 17px;
-   }
+}
+}
+}
 
-   }
-   }
-
-    .develo-eco__list {
+.develo-eco__list {
       justify-content: center;
       display: block;
-     
       @media screen and (min-width: 1200px) {
        margin-top: -100px;
       }
     }
 
-    .develo-eco__content {
+.develo-eco__content {
 //  padding: 10px;
 // height: 160px;
   display: flexbox;
   margin-bottom: 100px;
-         @media screen and (min-width: 1200px) {
-       width: 420px;
-       height: 150px;
-       position: relative;
-   
-       
-         }
+  position: relative;
+@media screen and (min-width: 1200px) {
+    margin-bottom:0;
+  width: 420px;
+   height: 150px;
+ }
+}
 
-    }
-
-    .develo-eco__content2 {
-
-      display: block;
+.develo-eco__content2 {
+display: block;
       
-         @media screen and (min-width: 1200px) {
-       margin-top: 150px;
-       width: 435px;
-      //  margin-top: 50px;
-         }
+@media screen and (min-width: 1200px) {
+margin-top: 150px;
+width: 435px;
+  //  margin-top: 50px;
+ }
     }
 
     .impact__content {
@@ -193,9 +184,7 @@ margin-bottom: 150px;
     }
 
     .impact__content5 {
-
       display: block;
-      
          @media screen and (min-width: 1200px) {
        margin-left: 75px;
        width: 500px;
@@ -206,35 +195,48 @@ margin-bottom: 150px;
     
 
 
-        .impact-title2 {
-    
-          //   text-align: right;
-          white-space: pre-wrap;
-          font-weight: 500;
-          font-size: 11px;
-          line-height: 1.86;
-          letter-spacing: 0.26em;
-    margin-bottom: 50px;
-          &:hover,
-          &:focus {
-            font-size: 13px;
-            border-radius: 5px;
-            // color: $White-color;
-            background-color: transparent;
-            box-shadow: 2px 2px 0px 0px #c2e6b026;
-            box-shadow: 0px 0px 2px 2px #c2e6b026;
-            border: 1px solid #0ee21572
-          }
-    
-          display: block;
-          font-size: 16px;
-    
-          @media screen and (min-width: 1200px) {
-    
-            &:hover,
-            &:focus {
-              font-size: 17px;
-            }
-          }
-    
+.impact-title2__box {
+  margin-bottom: 50px;  
+  padding: 10px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+  margin-left: auto;
+  margin-right: auto;
+    // margin-left: 220px;
+    width: 1200px;
+    height: 100px;
+
+  }
+}
+    .impact-title2 {
+      
+  text-align: center;
+      white-space: pre-wrap;
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 1.86;
+      letter-spacing: 0.26em;
+      margin-bottom: 50px;
+      &:hover,
+      &:focus {
+        font-size: 13px;
+        border-radius: 5px;
+        // color: $White-color;
+        background-color: transparent;
+        box-shadow: 2px 2px 0px 0px #c2e6b026;
+        box-shadow: 0px 0px 2px 2px #c2e6b026;
+        border: 1px solid #0ee21572
+      }
+
+      @media screen and (min-width: 1200px) {
+      display: block;
+      text-align: right;
+      font-size: 16px;
+        &:hover,
+        &:focus {
+          font-size: 17px;
         }
+      }
+
+    }

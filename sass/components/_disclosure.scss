@@ -1,13 +1,13 @@
 // < !-- disclosure -->
 
 .discl{
-   display: block;
-   justify-content: center;
+   // display: block;
+   // justify-content: center;
    // height: 950px;
    padding-top: 40px;
    padding-left: 5px;
    padding-right: 5px;
- margin: 0;
+   margin: 0;
    background-size:cover;
    background-position: center;
    background-attachment:scroll;
@@ -17,48 +17,45 @@
    url("../img/bg-discl/bg-mobil.jpg");
 
    @media screen and (min-width: 1200px) {
-
-      background-image:(rgba(11, 44, 114, 0.708),
-            rgba(0, 0, 0, 0.636)),
-      url("../img/bg-discl/bg.jpg") ;
-        display: flexbox;
-   max-width: 1600px;
-   height: 2670px;
-   margin-left: auto;
-   margin-right: auto;
+      display: flexbox;
+      max-width: 1600px;
+      height: 2650px;
+      // margin-left: auto;
+      // margin-right: auto;
+      background-image:
+      linear-gradient(rgba(11, 44, 114, 0.708),
+         rgba(0, 0, 0, 0.636)),
+      url("../img/bg-discl/bg.jpg");
    }
 }
 
 .discl-hero{
 // width: 270px;
       padding-bottom: 50px;
-      // margin-left: 5px;
-      //    margin-right: 5px;
-         @media screen and (min-width: 1200px) {
-      padding-top: 150px;
+      margin-left: auto;
+   margin-right: auto;      
+ @media screen and (min-width: 1200px) {
+   margin: 0;
+   padding-top: 150px;
    padding-bottom: 150px;
-   width: 900px;
-   margin-left: auto;
-   margin-right: auto;
-         }
+   // width: 900px;
+   }
 }
 
 .discl-hero__heading{
-   text-align: center;
-   text-transform: uppercase;
-   margin-left: 10px;
-   margin-right: 10px;
+margin-left: 10px;
+margin-right: 10px;
    // padding: 5px;
-color: $svg-color;
-text-shadow: 2px 1px 10px black;
-
-      font-weight: 300;
-      font-size: 13px;
-      line-height: 1.86;
-      letter-spacing: 0.26em;
-
-   @media screen and (min-width: 1200px) {
-   height: 50px;
+   color: $svg-color;
+   text-shadow: 2px 1px 10px black;
+   text-transform: uppercase;
+   text-align: center;
+   font-weight: 300;
+   font-size: 13px;
+   line-height: 1.86;
+   letter-spacing: 0.26em;
+@media screen and (min-width: 1200px) {
+height: 50px;
 font-weight: 600;
 font-size: 20px;
 line-height: 1.86;
@@ -71,37 +68,33 @@ letter-spacing: 0.26em;
 
 .hand-hero {
    display:flexbox;
-   // justify-content: center;
-   // margin-left: auto;
-   // margin-right: auto;
+   justify-content: center;
+   margin-left: 10px;
+   margin-right: 10px;
 // max-width: 270px;
- 
-margin-bottom: 100px;
-   border: 3px solid #0000FF;
-      box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.5);
-      box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.5);
-   
-      &:hover,
-      &:focus {
-   
-         border: 3px solid $primary-text-color;
-         box-shadow: 3px 3px 0px 0px rgba(128, 215, 228, 0.5);
-         box-shadow: 0px 0px 3px 3px rgba(109, 206, 239, 0.5);
-      }
-   
-      .develo-eco:hover &,
-      .develo-eco:focus & {
-         border: 3px solid $primary-text-color;
-      }
-
-   @media screen and (min-width: 1200px) {
+   margin-bottom: 100px;
+border: 3px solid #0000FF;
+box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.5);
+box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.5);
+z-index: 1;
+ &:hover,
+ &:focus {
+border: 3px solid $primary-text-color;
+box-shadow: 3px 3px 0px 0px rgba(128, 215, 228, 0.5);
+box-shadow: 0px 0px 3px 3px rgba(109, 206, 239, 0.5);
+}
+.develo-eco:hover &,
+.develo-eco:focus & {
+ border: 3px solid $primary-text-color;
+}
+@media screen and (min-width: 1200px) {
+   margin-bottom: 50px;
+   margin-right:0px;
    margin-left: 565px;
    display: flexbox;
    justify-content: right;
    height: 210px;
    max-width: 550px;
-   z-index: 1;
-
 
    }
 }
