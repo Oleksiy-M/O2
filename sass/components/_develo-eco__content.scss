@@ -33,7 +33,7 @@ margin-right: 0;
 
    .develo-eco:hover &,
    .develo-eco:focus & {
-      transform: translateY(-140%);
+      transform: translateY(-130%);
    }
 }
 }
@@ -48,7 +48,7 @@ margin-right: 0;
 }
 
 .cards__overlay {
-
+color: black;
    display: block;
    padding-left: 10px;
    padding-right: 10px;
@@ -63,7 +63,7 @@ transition: transform $animation-card, opacity $animation-card;
 .develo-eco:focus & {
       transform: translateY(0);
       opacity: 1;
-      color: black
+      
    }
 @media screen and (min-width: 1200px) {
    display: flex;
@@ -72,7 +72,7 @@ transition: transform $animation-card, opacity $animation-card;
    width: 100%;
    height: 100%;
 
-         }
+}
 }
 
 .develo-eco__art {
@@ -86,7 +86,7 @@ transition: transform $animation-card, opacity $animation-card;
   .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       color: $Secondary-text-color;
-       background-color: rgba(207, 149, 23, 0.553);
+      //  background-color: rgba(207, 149, 23, 0.553);
 }
 @media screen and (min-width: 1200px) {
    margin-right: 0px;
@@ -97,7 +97,6 @@ transition: transform $animation-card, opacity $animation-card;
 }
 
 .impact__art {
-
    @media screen and (min-width: 1200px) {
    max-width: 470px;
    margin-left: 130px;

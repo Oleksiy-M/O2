@@ -303,6 +303,8 @@ body {
 }
 
 .discl {
+  justify-content: center;
+  padding-bottom: 50px;
   padding-top: 40px;
   padding-left: 5px;
   padding-right: 5px;
@@ -316,7 +318,8 @@ body {
   .discl {
     display: flexbox;
     max-width: 1600px;
-    height: 2650px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: linear-gradient(rgba(11, 44, 114, 0.708), rgba(0, 0, 0, 0.636)), url("../img/bg-discl/bg.jpg");
   }
 }
@@ -391,6 +394,7 @@ body {
 .container {
   padding-left: 5px;
   padding-right: 5px;
+  border: 3px solid #51515d;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -698,7 +702,7 @@ body {
 .page-footer {
   display: block;
   padding-top: 50px;
-  padding-bottom: 0px;
+  padding-bottom: 50px;
 }
 @media screen and (min-width: 1200px) {
   .page-footer {
@@ -880,13 +884,11 @@ body {
 
 .develo-eco {
   display: block;
-  margin-bottom: 100px;
+  margin-bottom: 0px;
 }
 @media screen and (min-width: 1200px) {
   .develo-eco {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
     flex-wrap: wrap;
     width: 1120px;
   }
@@ -936,7 +938,7 @@ body {
 }
 
 .impact-title__box {
-  display: block;
+  z-index: 3;
   margin-bottom: 100px;
   padding-left: 10px;
   padding-right: 10px;
@@ -944,6 +946,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .impact-title__box {
+    height: 35px;
     margin-bottom: 0;
     margin-left: 680px;
     padding: 5px;
@@ -984,6 +987,7 @@ body {
 @media screen and (min-width: 1200px) {
   .develo-eco__list {
     margin-top: -100px;
+    margin-bottom: 100px;
   }
 }
 
@@ -1141,7 +1145,7 @@ body {
     margin-left: 290px;
   }
   .develo-eco:hover .impact__svg, .develo-eco:focus .impact__svg {
-    transform: translateY(-140%);
+    transform: translateY(-130%);
   }
 }
 
@@ -1155,6 +1159,7 @@ body {
 }
 
 .cards__overlay {
+  color: black;
   display: block;
   padding-left: 10px;
   padding-right: 10px;
@@ -1167,7 +1172,6 @@ body {
 .develo-eco:hover .cards__overlay, .develo-eco:focus .cards__overlay {
   transform: translateY(0);
   opacity: 1;
-  color: black;
 }
 @media screen and (min-width: 1200px) {
   .cards__overlay {
@@ -1190,7 +1194,6 @@ body {
 }
 .develo-eco__content:hover .develo-eco__art, .develo-eco__content:focus .develo-eco__art {
   color: #3FA9F5;
-  background-color: rgba(207, 149, 23, 0.553);
 }
 @media screen and (min-width: 1200px) {
   .develo-eco__art {
