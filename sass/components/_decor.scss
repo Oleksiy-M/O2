@@ -15,7 +15,7 @@ margin-top: 190px;display: flexbox;
    // display: none;
       @media screen and (min-width: 1200px) {
    display: flexbox;
-   margin-top: 60px;
+   margin-top: 80px;
       z-index: 2;
       }
 }
@@ -50,11 +50,13 @@ margin-top: 190px;display: flexbox;
       }
 }
 
+
+//   < !-- home -->
 .develo-eco___decor1 {
    border: 1px solid $line-color;
    width: 220px;
 .develo-eco__content:hover &,
-   .develo-eco__content:focus & {
+.develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
    }
 
@@ -62,15 +64,13 @@ margin-top: 190px;display: flexbox;
    margin-left: -10px;
    width: 425px;
    
-
-   
 }}
 
 
 .develo-eco___decor2 {
    overflow: visible;
-   margin-top: -221px;
-   height: 221px;
+   margin-top: -218px;
+   height: 218px;
    margin-left: 415px;
    width: 1px;
    border: 1px solid $line-color;
@@ -82,7 +82,7 @@ margin-top: 190px;display: flexbox;
 }
 
 .develo-eco___decor3 {
-   margin-top: -221px;
+   margin-top: -218px;
    width: 170px;
    margin-left: 415px;
    border: 1px solid $line-color;
@@ -107,9 +107,9 @@ margin-top: 190px;display: flexbox;
 }
 
 .develo-eco___decor5 {
-   margin-top: -514px;
+   margin-top: -511px;
    margin-left: 430px;
-   height: 514px;
+   height: 511px;
    width: 1px;
    border: 1px solid $line-color;
 
@@ -120,7 +120,7 @@ margin-top: 190px;display: flexbox;
 }
 
 .develo-eco___decor6 {
-   margin-top: -514px;
+   margin-top: -511px;
    width: 155px;
    
    margin-left: 430px;
@@ -145,8 +145,8 @@ margin-top: 190px;display: flexbox;
 }
 
 .develo-eco___decor8 {
-   margin-top: -423px;
-   height: 423px;
+   margin-top: -440px;
+   height: 440px;
    width: 1px;
    border: 1px solid $line-color;
 
@@ -157,7 +157,7 @@ margin-top: 190px;display: flexbox;
 }
 
 .develo-eco___decor9 {
-   margin-top: -423px;
+   margin-top: -440px;
    width: 70px;
    margin-left: 0px;
    border: 1px solid $line-color;
@@ -181,8 +181,8 @@ margin-top: 190px;display: flexbox;
 }
 
 .develo-eco___decor11 {
-   margin-top: -710px;
-   height: 710px;
+   margin-top: -727px;
+   height: 727px;
    width: 1px;
    border: 1px solid $line-color;
 
@@ -193,7 +193,7 @@ margin-top: 190px;display: flexbox;
 }
 
 .develo-eco___decor12 {
-   margin-top: -710px;
+   margin-top: -727px;
    width: 95px;
    border: 1px solid $line-color;
 
@@ -206,8 +206,8 @@ margin-top: 190px;display: flexbox;
       // < !-- factory -->
 
 .develo-eco___decor14 {
-   margin-top: -370px;
-   height: 370px;
+   margin-top: -387px;
+   height: 387px;
    width: 1px;
    border: 1px solid $line-color;
 
@@ -218,7 +218,7 @@ margin-top: 190px;display: flexbox;
 }
 
 .develo-eco___decor15 {
-   margin-top: -370px;
+   margin-top: -387px;
    width: 133px;
    border: 1px solid $line-color;
 
@@ -256,8 +256,8 @@ margin-top: 190px;display: flexbox;
       //  < !-- earth -->
 
 .develo-eco___decor18 {
-   margin-top: -680px;
-   height: 680px;
+   margin-top: -697px;
+   height: 697px;
    width: 1px;
    border: 1px solid $line-color;
 
@@ -268,7 +268,7 @@ margin-top: 190px;display: flexbox;
 }
 
 .develo-eco___decor19 {
-   margin-top: -680px;
+   margin-top: -697px;
    width: 249px;
    border: 1px solid $line-color;
 
@@ -306,8 +306,8 @@ margin-top: 190px;display: flexbox;
 //   < !-- man 
 
 .develo-eco___decor22 {
-   margin-top: -1053px;
-   height: 1053px;
+   margin-top: -1070px;
+   height: 1070px;
    width: 1px;
    border: 1px solid $line-color;
 
@@ -318,7 +318,7 @@ margin-top: 190px;display: flexbox;
 }
 
 .develo-eco___decor23 {
-   margin-top: -1053px;
+   margin-top: -1070px;
    width: 369px;
    border: 1px solid $line-color;
 

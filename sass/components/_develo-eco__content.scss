@@ -10,41 +10,39 @@ transition: transform $animation-card, opacity $animation-card;
 
    @media screen and (min-width: 1200px) {
 margin-right: 0;
-   margin-left: 150px;
-   transition: transform $animation-card, opacity $animation-card;
+margin-left: 150px;
+transition: transform $animation-card, opacity $animation-card;
    .develo-eco:hover &,
    .develo-eco:focus & {
-      transform: translateY(-150%);
+transform: translateY(-150%);
    }
    // .develo-eco__content:hover &,
    // .develo-eco__content:focus &{
    //    width: 100%;
    // }
-
    }
 }
 
 .impact__svg {
-
    display: block;
-   
-      @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
    margin-left: 290px;
-
-   .develo-eco:hover &,
-   .develo-eco:focus & {
-      transform: translateY(-130%);
-   }
+.develo-eco:hover &,
+.develo-eco:focus & {
+transform: translateY(-140%);
+}
 }
 }
 
 .impact__svg2 {
-
    display: block;
-   
-      @media screen and (min-width: 1200px) {
-   margin-left: 175px;
-      }
+@media screen and (min-width: 1200px) {
+margin-left: 175px;
+}
+.develo-eco:hover &,
+.develo-eco:focus & {
+transform: translateY(-140%);
+}
 }
 
 .cards__overlay {

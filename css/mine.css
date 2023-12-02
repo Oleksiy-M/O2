@@ -326,8 +326,6 @@ body {
 
 .discl-hero {
   padding-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .discl-hero {
@@ -360,7 +358,7 @@ body {
 }
 
 .hand-hero {
-  display: flexbox;
+  display: flex;
   justify-content: center;
   margin-left: 10px;
   margin-right: 10px;
@@ -428,7 +426,7 @@ body {
 @media screen and (min-width: 1200px) {
   .impact___line {
     display: flexbox;
-    margin-top: 60px;
+    margin-top: 80px;
     z-index: 2;
   }
 }
@@ -473,8 +471,8 @@ body {
 
 .develo-eco___decor2 {
   overflow: visible;
-  margin-top: -221px;
-  height: 221px;
+  margin-top: -218px;
+  height: 218px;
   margin-left: 415px;
   width: 1px;
   border: 1px solid #0000FF;
@@ -484,7 +482,7 @@ body {
 }
 
 .develo-eco___decor3 {
-  margin-top: -221px;
+  margin-top: -218px;
   width: 170px;
   margin-left: 415px;
   border: 1px solid #0000FF;
@@ -503,9 +501,9 @@ body {
 }
 
 .develo-eco___decor5 {
-  margin-top: -514px;
+  margin-top: -511px;
   margin-left: 430px;
-  height: 514px;
+  height: 511px;
   width: 1px;
   border: 1px solid #0000FF;
 }
@@ -514,7 +512,7 @@ body {
 }
 
 .develo-eco___decor6 {
-  margin-top: -514px;
+  margin-top: -511px;
   width: 155px;
   margin-left: 430px;
   border: 1px solid #0000FF;
@@ -532,8 +530,8 @@ body {
 }
 
 .develo-eco___decor8 {
-  margin-top: -423px;
-  height: 423px;
+  margin-top: -440px;
+  height: 440px;
   width: 1px;
   border: 1px solid #0000FF;
 }
@@ -542,7 +540,7 @@ body {
 }
 
 .develo-eco___decor9 {
-  margin-top: -423px;
+  margin-top: -440px;
   width: 70px;
   margin-left: 0px;
   border: 1px solid #0000FF;
@@ -560,8 +558,8 @@ body {
 }
 
 .develo-eco___decor11 {
-  margin-top: -710px;
-  height: 710px;
+  margin-top: -727px;
+  height: 727px;
   width: 1px;
   border: 1px solid #0000FF;
 }
@@ -570,7 +568,7 @@ body {
 }
 
 .develo-eco___decor12 {
-  margin-top: -710px;
+  margin-top: -727px;
   width: 95px;
   border: 1px solid #0000FF;
 }
@@ -579,8 +577,8 @@ body {
 }
 
 .develo-eco___decor14 {
-  margin-top: -370px;
-  height: 370px;
+  margin-top: -387px;
+  height: 387px;
   width: 1px;
   border: 1px solid #0000FF;
 }
@@ -589,7 +587,7 @@ body {
 }
 
 .develo-eco___decor15 {
-  margin-top: -370px;
+  margin-top: -387px;
   width: 133px;
   border: 1px solid #0000FF;
 }
@@ -619,8 +617,8 @@ body {
 }
 
 .develo-eco___decor18 {
-  margin-top: -680px;
-  height: 680px;
+  margin-top: -697px;
+  height: 697px;
   width: 1px;
   border: 1px solid #0000FF;
 }
@@ -629,7 +627,7 @@ body {
 }
 
 .develo-eco___decor19 {
-  margin-top: -680px;
+  margin-top: -697px;
   width: 249px;
   border: 1px solid #0000FF;
 }
@@ -659,8 +657,8 @@ body {
 }
 
 .develo-eco___decor22 {
-  margin-top: -1053px;
-  height: 1053px;
+  margin-top: -1070px;
+  height: 1070px;
   width: 1px;
   border: 1px solid #0000FF;
 }
@@ -669,7 +667,7 @@ body {
 }
 
 .develo-eco___decor23 {
-  margin-top: -1053px;
+  margin-top: -1070px;
   width: 369px;
   border: 1px solid #0000FF;
 }
@@ -1020,7 +1018,7 @@ body {
 @media screen and (min-width: 1200px) {
   .impact__content {
     width: 600px;
-    height: 130px;
+    height: 150px;
     margin-left: 501px;
     margin-top: -185px;
   }
@@ -1051,11 +1049,11 @@ body {
   }
 }
 
-.impact__content4 {
+.impact-content__earth {
   display: block;
 }
 @media screen and (min-width: 1200px) {
-  .impact__content4 {
+  .impact-content__earth {
     margin-left: 210px;
     width: 500px;
     height: 110px;
@@ -1145,7 +1143,7 @@ body {
     margin-left: 290px;
   }
   .develo-eco:hover .impact__svg, .develo-eco:focus .impact__svg {
-    transform: translateY(-130%);
+    transform: translateY(-140%);
   }
 }
 
@@ -1156,6 +1154,9 @@ body {
   .impact__svg2 {
     margin-left: 175px;
   }
+}
+.develo-eco:hover .impact__svg2, .develo-eco:focus .impact__svg2 {
+  transform: translateY(-140%);
 }
 
 .cards__overlay {
