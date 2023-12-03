@@ -1,240 +1,109 @@
     // < !--dev-eco-->
 
-    .develo-eco {
-// padding: 5px;
+.develo-eco {
 display: block;
+// justify-content: center;
+// padding: 10px;
  margin-bottom: 0px;
   @media screen and (min-width: 1200px) {
+
 display: flex;
 flex-wrap: wrap;
-width: 1120px;
+width: 1200px;
+padding-left: 40px;
+padding-right: 40px;
       }
     }
-
-.develo-eco__box {
-       text-align: center;
-       padding-bottom: 50px;
-      padding-left: 10px;
-      padding-right: 10px;
-         @media screen and (min-width: 1200px) {
-   padding-bottom: 0px;
-       height: 35px;
-       padding: 5px;
-       width: 430px;
-       }
-    }
-
-.develo-eco__title {
-       transition: transform $animation;
-       font-weight: 300;
-       font-size: 11px;
-       line-height: 1.86;
-       letter-spacing: 0.26em;
-       &:hover,
-       &:focus {
-          font-size: 12px;
-          border-radius: 5px;
-          // color: $White-color;
-          background-color: transparent;
-          box-shadow: 2px 2px 0px 0px #c2e6b026;
-          box-shadow: 0px 0px 2px 2px #c2e6b026;
-          border: 1px solid #0ee21572
-       }
-
-   @media screen and (min-width: 1200px) {
-          font-weight: 600;
-           font-size: 16px;
-         line-height: 1.86;
-       letter-spacing: 0.26em;
-    
- &:hover,
- &:focus {
-    font-size: 17px;
-    border-radius: 5px;
-}
-}
-}
-
-
-.impact-title__box {  
-  z-index: 3;
-margin-bottom: 100px;
-      padding-left: 10px;
-      padding-right: 10px;
-text-align: center;
-@media screen and (min-width: 1200px) {
-  height: 35px;
-   margin-bottom: 0;
-       margin-left: 680px;
-       padding: 5px;
-       width: 360px;
-      }
-   }
-   
-.impact-title {
-font-weight: 300;
-font-size: 11px;
-line-height: 1.86;
-letter-spacing: 0.26em;
-&:hover,
-&:focus {
-  font-size: 12px;
-  border-radius: 5px;
-     // color: $White-color;
-  background-color: transparent;
-  box-shadow: 2px 2px 0px 0px #c2e6b026;
-  box-shadow: 0px 0px 2px 2px #c2e6b026;
-  border: 1px solid #0ee21572
-}
-
-@media screen and (min-width: 1200px) {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.86;
-   letter-spacing: 0.26em;
-   &:hover,
-   &:focus {
-      font-size: 17px;
-}
-}
-}
 
 .develo-eco__list {
-      justify-content: center;
-      display: block;
-      @media screen and (min-width: 1200px) {
-       margin-top: -100px;
+display: block;
+  // justify-content: right;
+
+  // flex-direction:column;
+@media screen and (min-width: 1200px) {
+    margin-top: -100px;
        margin-bottom: 100px;
-      }
-    }
+ }
+}
 
 .develo-eco__content {
-//  padding: 10px;
-// height: 160px;
-  display: flexbox;
-  margin-bottom: 100px;
+margin-left: 30px;
+
+// margin-right: 5px;
+  margin-bottom: 150px;
   position: relative;
+  height: 200px;
+  // width: 220px;
 @media screen and (min-width: 1200px) {
     margin-bottom:0;
+    margin-left: 0;
   width: 420px;
    height: 150px;
  }
 }
 
-.develo-eco__content2 {
-display: block;
-      
+.laptop-content {
+margin-bottom: 130px;
+margin-left: 25px;
 @media screen and (min-width: 1200px) {
 margin-top: 150px;
+margin-bottom: 0;
+margin-left: 0;
 width: 435px;
-  //  margin-top: 50px;
+
  }
  }
 
-    .impact__content {
-
-      display: block;
-      
-         @media screen and (min-width: 1200px) {
-       width: 600px;
-       height: 150px;
-       margin-left: 501px;
-       margin-top: -185px;
-         }
+.oil-content {
+margin-left: 20px;
+ @media screen and (min-width: 1200px) {
+width: 600px;
+height: 150px;
+margin-left: 501px;
+margin-top: -185px;
+ }
     }
 
-    .impact__content2 {
+.ocean-content {
+margin-left: 15px;
+margin-bottom: 110px;
+@media screen and (min-width: 1200px) {
+height: 130px;
+width: 500px;
+margin-top: 150px;
+margin-bottom: 150px;
+margin-left: 487px;
+  }
+}
 
-      display: block;
+.factory-content {
+margin-left: 10px;
       
-         @media screen and (min-width: 1200px) {
-       height: 130px;
-       width: 500px;
-       margin-top: 150px;
-       margin-bottom: 150px;
-       padding-left: 0px;
-       margin-left: 487px;
-         }
-    }
+@media screen and (min-width: 1200px) {
+ margin-left: 340px;
+  margin-bottom: 150px;
+  width: 500px;
+ }
+}
 
-    .impact__content3 {
+.earth-content{
+margin-left: 5px;
+@media screen and (min-width: 1200px) {
+ margin-left: 210px;
+ width: 500px;
+ height: 110px;
+ margin-bottom: 160px
+ }
+}
 
-      display: block;
-      
-         @media screen and (min-width: 1200px) {
-       margin-left: 340px;
-       margin-bottom: 150px;
-       width: 500px;
-         }
-    }
+.man-content {
 
-    .impact-content__earth {
-
-      display: block;
-      
-         @media screen and (min-width: 1200px) {
-       margin-left: 210px;
-       width: 500px;
-       height: 110px;
-       margin-bottom: 160px;
-
-         }
-    }
-
-    .impact__content5 {
-      display: block;
-         @media screen and (min-width: 1200px) {
-       margin-left: 75px;
-       width: 500px;
-       height: 165px;
-       margin-bottom: 50px;
-         }
+margin-left: 0px;
+ @media screen and (min-width: 1200px) {
+ margin-left: 75px;
+ width: 500px;
+ height: 165px;
+ margin-bottom: 50px;   }
     }
     
 
-
-.impact-title2__box {
-  margin-bottom: 50px;  
-  padding: 10px;
-  text-align: center;
-
-  @media screen and (min-width: 1200px) {
-  margin-left: auto;
-  margin-right: auto;
-    // margin-left: 220px;
-    width: 1200px;
-    height: 100px;
-
-  }
-}
-    .impact-title2 {
-      
-  text-align: center;
-      white-space: pre-wrap;
-      font-weight: 300;
-      font-size: 11px;
-      line-height: 1.86;
-      letter-spacing: 0.26em;
-      margin-bottom: 50px;
-      &:hover,
-      &:focus {
-        font-size: 13px;
-        border-radius: 5px;
-        // color: $White-color;
-        background-color: transparent;
-        box-shadow: 2px 2px 0px 0px #c2e6b026;
-        box-shadow: 0px 0px 2px 2px #c2e6b026;
-        border: 1px solid #0ee21572
-      }
-
-      @media screen and (min-width: 1200px) {
-      display: block;
-      text-align: right;
-      font-size: 16px;
-        &:hover,
-        &:focus {
-          font-size: 17px;
-        }
-      }
-
-    }

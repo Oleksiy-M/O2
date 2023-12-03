@@ -5,36 +5,35 @@ margin-right:auto;
 transition: transform $animation-card, opacity $animation-card;
    .develo-eco:hover &,
    .develo-eco:focus & {
-   transform: translateY(-50%);
+   transform: translateY(-150%);
    }
 
    @media screen and (min-width: 1200px) {
-margin-right: 0;
 margin-left: 150px;
-transition: transform $animation-card, opacity $animation-card;
-   .develo-eco:hover &,
-   .develo-eco:focus & {
-transform: translateY(-150%);
+// transition: transform $animation-card, opacity $animation-card;
+//    .develo-eco:hover &,
+//    .develo-eco:focus & {
+// transform: translateY(-150%);
    }
    // .develo-eco__content:hover &,
    // .develo-eco__content:focus &{
    //    width: 100%;
    // }
-   }
+   // }
 }
 
-.impact__svg {
-   display: block;
+.oil-svg {
+.develo-eco:hover &,
+   .develo-eco:focus & {
+      transform: translateY(-140%);
+   }
+
 @media screen and (min-width: 1200px) {
    margin-left: 290px;
-.develo-eco:hover &,
-.develo-eco:focus & {
-transform: translateY(-140%);
-}
 }
 }
 
-.impact__svg2 {
+.impact-svg {
    display: block;
 @media screen and (min-width: 1200px) {
 margin-left: 175px;
@@ -46,16 +45,14 @@ transform: translateY(-140%);
 }
 
 .cards__overlay {
-color: black;
    display: block;
    padding-left: 10px;
    padding-right: 10px;
    overflow: hidden;
-            // display: flex;
    position: absolute;
    opacity: 0;
-
-transform: translateY(50%);
+color: black;
+transform: translateY(10%);
 transition: transform $animation-card, opacity $animation-card;
 .develo-eco:hover &,
 .develo-eco:focus & {
@@ -63,19 +60,17 @@ transition: transform $animation-card, opacity $animation-card;
       opacity: 1;
       
    }
-@media screen and (min-width: 1200px) {
-   display: flex;
    top: 0;
    left: 0;
    width: 100%;
    height: 100%;
 
 }
-}
 
 .develo-eco__art {
    text-align: left;
-   margin-right: 40px;
+   margin:0px;
+  
    font-size: 11px;
    line-height: 1.5;
    letter-spacing: 0.02em;
@@ -84,26 +79,25 @@ transition: transform $animation-card, opacity $animation-card;
   .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       color: $Secondary-text-color;
-      //  background-color: rgba(207, 149, 23, 0.553);
+       background-color: rgba(207, 149, 23, 0.553);
 }
 @media screen and (min-width: 1200px) {
-   margin-right: 0px;
+   
+   margin-left: 0px;
    font-size: 13px;
    line-height: 1.5;
    letter-spacing: 0.02em;
 }
 }
 
-.impact__art {
+.impact-oil {
    @media screen and (min-width: 1200px) {
    max-width: 470px;
    margin-left: 130px;
 }
 }
 
-.impact__art2 {
-
-  
+.impact-art {
     @media screen and (min-width: 1200px) {
    max-width: 470px;
    margin-left: 0px;

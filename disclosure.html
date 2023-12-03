@@ -15,9 +15,11 @@
 
 <!-- SITE-NAV -->
    <header class="">
-   <nav class="bg-nav">
+      <div class="container">
+
+   <nav class="bg-nav ">
       
-      <ul class="site-nav list">
+      <ul class="site-nav  list">
          <li class=" discl-logo"><a href="./index.html" class="site-nav__link"><svg width="60" height="60" class="site-nav__item"><use href="./img/sprite.svg#logo"></use></svg></a></li>
          <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Head</a></li>
          <li class="site-nav__item"><a href="./disclosure.html" class="site-nav__link site-nav__link--current">Disclosure</a></li>
@@ -26,17 +28,19 @@
       </ul>
 
    </nav>
+
+   </div>
    </header>
 
    <!-- page --><!-- disclosure -->
  <main class="discl ">
-         <div class="discl-hero "><h1 class="discl-hero__heading">The scale of the problem of poor water quality</h1></div>
-         
-<section class="develo-eco container">
-   <div class="develo-eco__box"><h2 class="develo-eco__title">Development of eco technologies</h2></div>
+    <div class="container">
+<div class="discl-hero "><h1 class="discl-hero__heading">The scale of the problem of poor water quality</h1></div>
 
+<section class="develo-eco">
    
-
+   <div class="develo-eco__box"><h2 class="develo-eco__title">Development of eco technologies</h2></div>
+   <div class="develo-eco__hand">
       <div class="hand-hero">
          <picture>
             <source srcset="./img/hand/hand.webp 1x, ./img/hand/hand@2x.webp 2x" media="(min-width: 1200px)" type="img/webp">
@@ -45,13 +49,13 @@
             <source srcset="./img/hand/hand-tablet.webp 1x, ./img/hand/hand-tablet@2x.webp 2x" media="(min-width: 768px)" type="img/webp">
             <source srcset="./img/hand/hand-tablet.png 1x, ./img/hand/hand-tablet@2x.png 2x" media="(min-width: 768px)">
          
-            <!-- <source srcset="./img/hand/hand-mobil.webp 1x, ./img/hand/hand-mobil@2x.webp 2x" media="(max-width: 767px)"type="img/webp"> -->
+            <source srcset="./img/hand/hand-mobil.webp 1x, ./img/hand/hand-mobil@2x.webp 2x" media="(max-width: 767px)"type="img/webp">
             <source srcset="./img/hand/hand-mobil.png 1x, ./img/hand/hand-mobil@2x.png 2x" media="(max-width: 767px)">
          
             <img src="./img/hand/hand.png" alt="hand of robot and hand of human">
          </picture>
       </div>
-      
+   </div>
 <div class="impact-title__box"> <h2 class="impact-title">Impact on the environment</h2></div>
 
 
@@ -62,7 +66,7 @@
             <div class="cards__overlay">
              <p class="develo-eco__art">       Development of eco-technologies It is impossible to imagine the present without modern technologies and developed infrastructure. Technical progress contributed to the development of society, allowing to influence natural processes and accumulate vital resources. The combined efforts of people and the de-standardization of applied methods gave rapid growth to precisely those industries that were in demand.</p>
                </div>
-               <ul class="develo-eco___line list"> 
+               <ul class="home-line list"> 
                   <li class="develo-eco___decor1"></li>
                   <li class="develo-eco___decor2"></li>
                   <li class="develo-eco___decor3"></li>
@@ -70,25 +74,25 @@
       </li> 
     
 <!-- man-laptop -->
-      <li class="develo-eco__content develo-eco__content2">
+      <li class="develo-eco__content laptop-content">
          <svg width="85" height="60" class="develo-eco__svg"><use href="./img/sprite.svg#man-laptop"><use></svg>
             <div class="cards__overlay">
             <p class="develo-eco__art ">      Scientific activity has brought the worldview to a new level of perception and awareness, freeing space from archaisms for decisive actions, which is reflected in the specifics of setting goals and reassessing priorities.
       Thus, technological evolution has solved global problems regarding the provision of humanity and taken care of its primary needs.</p>
                </div>
-            <ul class="develo-eco___line  list"> 
+            <ul class="man-laptop__line list"> 
                <li class="develo-eco___decor4"></li>
                <li class="develo-eco___decor5"></li>
                <li class="develo-eco___decor6"></li>
             </ul>
          </li>
 <!-- oil -->
-      <li class="develo-eco__content impact__content">
-         <svg width="110" height="70" class="develo-eco__svg impact__svg"><use href="./img/sprite.svg#oil"><use></svg>
+      <li class="develo-eco__content oil-content">
+         <svg width="110" height="70" class="develo-eco__svg oil-svg"><use href="./img/sprite.svg#oil"><use></svg>
             <div class="cards__overlay"> 
-            <p class="develo-eco__art impact__art">      It is quite clear that the point of intersection of technology and human needs is nature. She instantly reacts to irresponsible behavior. Concentrating all efforts on obtaining resources often leads to significant changes in the ecosystem. The consequences of such activities have enough examples of terrible environmental disasters that do not pass without a trace, forming negative indicators of the environmental situation in the world.</p>
+            <p class="develo-eco__art impact-oil">      It is quite clear that the point of intersection of technology and human needs is nature. She instantly reacts to irresponsible behavior. Concentrating all efforts on obtaining resources often leads to significant changes in the ecosystem. The consequences of such activities have enough examples of terrible environmental disasters that do not pass without a trace, forming negative indicators of the environmental situation in the world.</p>
                </div>
-            <ul class="impact___line list"> 
+            <ul class="oil-line list"> 
                <li class="develo-eco___decor7"></li>
                <li class="develo-eco___decor8"></li>
                <li class="develo-eco___decor9"></li>
@@ -97,26 +101,27 @@
             
 <!-- ocean -->
 
-      <li class="develo-eco__content impact__content2">
-         <svg width="125" height="60" class="develo-eco__svg impact__svg2"><use href="./img/sprite.svg#ocean"><use></svg>
+      <li class="develo-eco__content ocean-content">
+         <svg width="125" height="60" class="develo-eco__svg impact-svg"><use href="./img/sprite.svg#ocean"><use></svg>
           <div class="cards__overlay">
-            <p class=" develo-eco__art impact__art2">     Environmental pollution has become the main driver for starting new industries and developing eco-technology aimed at preserving nature and human health.
+            <p class=" develo-eco__art impact-art">     Environmental pollution has become the main driver for starting new industries and developing eco-technology aimed at preserving nature and human health.
       Equally important is the actualization and development of mechanisms for overcoming existing problems, giving rise to the hope that a polluted environment will not be the norm in our time.</p>
             </div>
-            <ul class="impact___line4 list"> 
+            <ul class="ocean-line list"> 
                <li class="develo-eco___decor10"></li>
                <li class="develo-eco___decor11"></li>
                <li class="develo-eco___decor12"></li>
             </ul>
       </li>
-         <!-- factory -->
-      <li class="develo-eco__content impact__content3">
-         <svg width="140" height="60" class="develo-eco__svg impact__svg2"><use href="./img/sprite.svg#factory"><use></svg>
+
+<!-- factory -->
+      <li class="develo-eco__content factory-content">
+         <svg width="140" height="60" class="develo-eco__svg impact-svg"><use href="./img/sprite.svg#factory"><use></svg>
             <div class="cards__overlay">
-            <p class="develo-eco__art impact__art2">      Recognizing the activities of society as the main influencing factor on natural processes is a key moment in building the concept of an ecologically safe future, allowing to focus on the preservation of the natural environment as the primary task.
+            <p class="develo-eco__art impact-art">      Recognizing the activities of society as the main influencing factor on natural processes is a key moment in building the concept of an ecologically safe future, allowing to focus on the preservation of the natural environment as the primary task.
       This information confirms that, first of all, the impact on human health has become the main driver in this direction, providing a social and moral basis for overcoming the existing consequences.</p>
             </div>
-            <ul class="develo-eco___line list"> 
+            <ul class="factory-line list"> 
                <li class="develo-eco___decor10"></li>
                <li class="develo-eco___decor14"></li>
                <li class="develo-eco___decor15"></li>
@@ -124,13 +129,14 @@
                <li class="develo-eco___decor17"></li>
             </ul>
       </li>
+      
       <!-- earth -->
-      <li class="develo-eco__content impact-content__earth">
-          <svg width="125" height="60" class="develo-eco__svg impact__svg2"><use href="./img/sprite.svg#earth"><use></svg>
+      <li class="develo-eco__content earth-content">
+          <svg width="125" height="60" class="develo-eco__svg impact-svg"><use href="./img/sprite.svg#earth"><use></svg>
             <div class="cards__overlay">
-             <p class="develo-eco__art impact__art2">      For centuries, the consequences of the technological revolution have held hostage the planet's population, namely polluted air and water. It is possible to say without exaggeration that today there is no person whose life would not be affected by such factors, because they occupy the first places in their list.</p>
+             <p class="develo-eco__art impact-art">      For centuries, the consequences of the technological revolution have held hostage the planet's population, namely polluted air and water. It is possible to say without exaggeration that today there is no person whose life would not be affected by such factors, because they occupy the first places in their list.</p>
                </div>
-            <ul class="impact___line2 list"> 
+            <ul class="earth-line list"> 
                <li class="develo-eco___decor10"></li>
                <li class="develo-eco___decor18"></li>
                <li class="develo-eco___decor19"></li>
@@ -140,12 +146,12 @@
       </li>
 
 <!-- man -->
-      <li class="develo-eco__content impact__content5">
-          <svg width="110" height="65" class="develo-eco__svg impact__svg2"><use href="./img/sprite.svg#man"><use></svg>
+      <li class="develo-eco__content man-content">
+          <svg width="110" height="65" class="develo-eco__svg impact-svg"><use href="./img/sprite.svg#man"><use></svg>
             <div class="cards__overlay">
-             <p class="develo-eco__art impact__art2">      There are various standards, as a rule, they approach international ones. Developed countries overcome the problems of lack of drinking water with complex solutions for extraction, purification, disinfection and use a modern water supply network. Less successful countries benefit from the benefits inherited from the beginning of the industrial age, namely outdated technologies and depleted water supply networks, which are partially replaced in case of critical accidents. Very poor countries may not have such resources.</p>
+             <p class="develo-eco__art impact-art">      There are various standards, as a rule, they approach international ones. Developed countries overcome the problems of lack of drinking water with complex solutions for extraction, purification, disinfection and use a modern water supply network. Less successful countries benefit from the benefits inherited from the beginning of the industrial age, namely outdated technologies and depleted water supply networks, which are partially replaced in case of critical accidents. Very poor countries may not have such resources.</p>
                </div>
-            <ul class="impact___line3 list"> 
+            <ul class="impact-line__man list"> 
                <li class="develo-eco___decor10"></li>
                <li class="develo-eco___decor22"></li>
                <li class="develo-eco___decor23"></li>
@@ -154,15 +160,15 @@
             </ul>
       </li>
          
-   </ul>
+   </ul> 
 
 
 
-   <div class="impact-title2__box"><h2 class="impact-title2">Water is the source of life and an indicator of its quality
+   <div class="impact-box__end"><h2 class="title-end">Water is the source of life and an indicator of its quality
    
    But if we objectively assess the state of affairs, can we say with confidence that the existing standards are really criteria for quality water</h2></div>
 </section>
-
+</div>
 </main>
 
 
@@ -170,10 +176,10 @@
 <footer class="page-footer container">
 
 <!-- AUTH  -->
-         
-   <a href="./index.html" class=""><svg width="80" height="80" class="footer-logo"><use href="./img/sprite.svg#logo"></use></svg></a>
+     
 
-   <div class="page-footer__address">
+<div class="page-footer__address">
+      <a href="./index.html" class=""><svg width="80" height="80" class="footer-logo"><use href="./img/sprite.svg#logo"></use></svg></a>
       <address>
 
          <ul class="page-footer__list list">
