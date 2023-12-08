@@ -4,6 +4,7 @@
       padding-top: 50px;
          padding-bottom: 50px;
       // padding: 5px;
+
 @media screen and (min-width: 1200px) {
 
 display: flex;
@@ -18,6 +19,7 @@ align-items:flex-start;
 
 .page-footer__address {
    display: flex;
+   justify-content: center;
    margin-bottom: 40px;
    @media screen and (min-width: 1200px) {
       display: inline-flex;
@@ -27,15 +29,17 @@ align-items:flex-start;
 }
 
 .page-footer__list{
-
+padding-left: 30px;
 @media screen and (min-width: 1200px) {
-   padding-left: 40px;
+   padding-left: 30px;
+   width: 250px;
  
 }}
 
 
 .page-footer__item{
    padding: 0;
+  
 }
 
 .page-footer__contacts {
@@ -57,18 +61,21 @@ align-items:flex-start;
 }}
 
 .page-footer__contacts--city {
+   
    color: $White-color;
 }
 
 .footer-logo{
    margin-left: 0px;
-   margin-right: 30px;
+   margin-right: 0px;
    margin-top: 0px;
 }
 
 
 /*================= join ================= */
 .join {
+   display: flexbox;
+
    margin-bottom: 50px;
    @media screen and (min-width: 1200px) {
       display: block;
@@ -79,9 +86,11 @@ align-items:flex-start;
 }
 
 .join__title {
+   text-align: center;
    @media screen and (min-width: 768px) {
+      text-align: left;
       display: flexbox;
-      // margin-left: 60px;
+      margin-left: 10px;
 
    }
 
@@ -94,8 +103,8 @@ align-items:flex-start;
 }
 
 .join__list {
-   display: flex;
-
+display: flex;
+justify-content: center;
 }
 
 .join__item {
@@ -132,23 +141,24 @@ align-items:flex-start;
 
 /*============ AUTH ============= */
 .auth {
-   // text-align: center;
+   text-align: center;
 
    @media screen and (min-width: 1200px) {
       display: flex;
       // justify-content: center;   
       align-items: center;
-      margin-left: 70px;
+      margin-left: 50px;
        margin-top: 0px;
    }
-
-
 }
 
 .auth__wrapper {
 
+display: inline-flex;
+flex-direction: column;
    @media screen and (min-width: 1200px) {
       display: flex;
+      flex-direction: row;
       // justify-content: center;
       align-items: center;
    }
@@ -207,7 +217,7 @@ width: 250px;
    height: 50px;
    background-color: $Accent;
    box-shadow: 0px 4px 4px 0px #00000026;
-   min-width: 200px;
+   min-width: 250px;
    font-size: 16px;
    font-weight: 700;
    line-height: 1.87;

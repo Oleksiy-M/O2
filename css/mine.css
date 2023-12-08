@@ -555,7 +555,6 @@ body {
 }
 
 .develo-eco___decor1 {
-  width: 215px;
   border: 1px solid #0000FF;
   box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -619,7 +618,6 @@ body {
 }
 
 .develo-eco___decor4 {
-  width: 220px;
   border: 1px solid #0000FF;
   box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -682,7 +680,6 @@ body {
 }
 
 .develo-eco___decor7 {
-  width: 220px;
   border: 1px solid #0000FF;
   box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -1033,6 +1030,7 @@ body {
 
 .page-footer__address {
   display: flex;
+  justify-content: center;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 1200px) {
@@ -1042,9 +1040,13 @@ body {
   }
 }
 
+.page-footer__list {
+  padding-left: 30px;
+}
 @media screen and (min-width: 1200px) {
   .page-footer__list {
-    padding-left: 40px;
+    padding-left: 30px;
+    width: 250px;
   }
 }
 
@@ -1075,12 +1077,13 @@ body {
 
 .footer-logo {
   margin-left: 0px;
-  margin-right: 30px;
+  margin-right: 0px;
   margin-top: 0px;
 }
 
 /*================= join ================= */
 .join {
+  display: flexbox;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 1200px) {
@@ -1091,6 +1094,7 @@ body {
 }
 
 .join__title {
+  text-align: center;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -1100,12 +1104,15 @@ body {
 }
 @media screen and (min-width: 768px) {
   .join__title {
+    text-align: left;
     display: flexbox;
+    margin-left: 10px;
   }
 }
 
 .join__list {
   display: flex;
+  justify-content: center;
 }
 
 .join__item {
@@ -1135,18 +1142,26 @@ body {
 }
 
 /*============ AUTH ============= */
+.auth {
+  text-align: center;
+}
 @media screen and (min-width: 1200px) {
   .auth {
     display: flex;
     align-items: center;
-    margin-left: 70px;
+    margin-left: 50px;
     margin-top: 0px;
   }
 }
 
+.auth__wrapper {
+  display: inline-flex;
+  flex-direction: column;
+}
 @media screen and (min-width: 1200px) {
   .auth__wrapper {
     display: flex;
+    flex-direction: row;
     align-items: center;
   }
 }
@@ -1196,7 +1211,7 @@ body {
   height: 50px;
   background-color: #FF8230;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1490196078);
-  min-width: 200px;
+  min-width: 250px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;

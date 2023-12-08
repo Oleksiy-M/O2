@@ -10,21 +10,14 @@ transition: transform $animation-card, opacity $animation-card;
 
    @media screen and (min-width: 1200px) {
 margin-left: 150px;
-// transition: transform $animation-card, opacity $animation-card;
-//    .develo-eco:hover &,
-//    .develo-eco:focus & {
-// transform: translateY(-150%);
+
    }
-   // .develo-eco__content:hover &,
-   // .develo-eco__content:focus &{
-   //    width: 100%;
-   // }
-   // }
+
 }
 
 .oil-svg {
 .develo-eco:hover &,
-   .develo-eco:focus & {
+.develo-eco:focus & {
       transform: translateY(-140%);
    }
 
@@ -70,19 +63,17 @@ transition: transform $animation-card, opacity $animation-card;
 .develo-eco__art {
    text-align: left;
    margin:0px;
-  
    font-size: 11px;
    line-height: 1.5;
    letter-spacing: 0.02em;
     white-space: pre-wrap;  
     color: black;     
-  .develo-eco__content:hover &,
-   .develo-eco__content:focus & {
-      color: $Secondary-text-color;
-       background-color: rgba(207, 149, 23, 0.553);
+.develo-eco__content:hover &,
+.develo-eco__content:focus & {
+   color: $Secondary-text-color;
+   background-color: rgba(207, 149, 23, 0.553);
 }
 @media screen and (min-width: 1200px) {
-   
    margin-left: 0px;
    font-size: 13px;
    line-height: 1.5;
