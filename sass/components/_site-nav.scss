@@ -11,8 +11,8 @@
 }
 
 .bg-nav{
-	display: block;
-	justify-content: left;
+	display: flex;
+	// justify-content: left;
 	// margin-left: 20px;
 	// padding-left: 0px;
 	padding-top: 15px;
@@ -28,8 +28,8 @@
 	}
 }
 
+
 .site-nav {
-	
 text-shadow: 1px 1px 1px black;
 	align-items: center;
 	display: flex;
@@ -83,7 +83,7 @@ text-shadow: 1px 1px 1px black;
 .discl-logo{
 	display: none;
 @media screen and (min-width: 1200px) {
-	// margin-left: 30px;
+	margin-left: 20px;
 	display: table;
 	
 				// opacity: 0;
@@ -96,4 +96,42 @@ text-shadow: 1px 1px 1px black;
 				// }
 			}
 
+}
+
+
+.contact__list{
+	display: none;
+	@media screen and (min-width: 1200px) {
+		
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		width: 600px;
+		}
+}
+
+.page__item{
+	padding: 0;
+}
+
+.page__contacts{
+	text-decoration: none;
+	margin-right: 20px;
+	font-style: normal;
+	font-size: 12px;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.6);
+	transition: color $animation-card;
+	
+	&:hover,
+	&:focus {
+		color: $Accent;
+	}
+	
+	@media screen and (min-width: 1200px) {
+	
+		font-size: 16px;
+		line-height: 1.71;
+	
+	}
 }

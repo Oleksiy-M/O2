@@ -2,45 +2,98 @@
 display: block;
 margin-left:auto;
 margin-right:auto;
+margin-bottom: 145px;
 transition: transform $animation-card, opacity $animation-card;
    .develo-eco:hover &,
    .develo-eco:focus & {
    transform: translateY(-150%);
    }
+@media screen and (min-width: 360px) {
+margin-bottom: 80px;
+}
 
-   @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
 margin-left: 150px;
-
+margin-bottom: 90px;
    }
 
 }
 
+
+
+.man-laptop__svg {
+   margin-bottom: 115px;
+@media screen and (min-width: 360px) {
+      margin-bottom: 80px;
+   }
+   @media screen and (min-width: 1200px) {
+   margin-bottom: 90px;
+   }
+}
+
+
 .oil-svg {
+   margin-bottom: 140px;
 .develo-eco:hover &,
 .develo-eco:focus & {
       transform: translateY(-140%);
    }
-
+@media screen and (min-width: 360px) {
+   margin-bottom: 85px;
+}
 @media screen and (min-width: 1200px) {
    margin-left: 290px;
+   margin-bottom: 80px;
 }
 }
 
 .impact-svg {
-   display: block;
-@media screen and (min-width: 1200px) {
-margin-left: 175px;
+margin-bottom: 100px;
+   .develo-eco:hover &,
+   .develo-eco:focus & {
+      transform: translateY(-140%);
+   }
+@media screen and (min-width: 360px) {
+   margin-bottom: 60px;
 }
-.develo-eco:hover &,
-.develo-eco:focus & {
-transform: translateY(-140%);
+   @media screen and (min-width: 1200px) {
+   margin-left: 175px;
+   margin-bottom: 70px;
+   }
 }
+
+.factory-svg{
+      margin-bottom: 150px;
+@media screen and (min-width: 360px) {
+      margin-bottom: 95px;
+   }
+      @media screen and (min-width: 1200px) {
+   margin-bottom: 90px;
+   }
+}
+.earth-svg{
+   margin-bottom: 80px;
+   @media screen and (min-width: 360px) {
+         margin-bottom: 45px;
+      }
+      @media screen and (min-width: 1200px) {
+   margin-bottom: 50px;
+   }
+}
+.man-svg{
+   @media screen and (min-width: 360px) {
+         margin-bottom: 105px;
+      }
+      @media screen and (min-width: 1200px) {
+   margin-bottom: 105px;
+   }
 }
 
 .cards__overlay {
    display: block;
    padding-left: 10px;
    padding-right: 10px;
+   
    overflow: hidden;
    position: absolute;
    opacity: 0;
@@ -63,11 +116,13 @@ transition: transform $animation-card, opacity $animation-card;
 .develo-eco__art {
    text-align: left;
    margin:0px;
+   margin-bottom: 10px;
    font-size: 11px;
    line-height: 1.5;
    letter-spacing: 0.02em;
     white-space: pre-wrap;  
-    color: black;     
+    color: black;
+
 .develo-eco__content:hover &,
 .develo-eco__content:focus & {
    color: $Secondary-text-color;

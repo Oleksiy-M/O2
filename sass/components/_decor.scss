@@ -1,13 +1,16 @@
 //   < !-- home -->
 
 
-.home-line {
-margin-top: 145px;
+.develo-eco-line {
+// margin-top: 145px;
 z-index: 2;
 
-   @media screen and (min-width: 1200px) {
-   margin-top: 90px;
-   }
+   // @media screen and (min-width: 360px) {
+   // margin-top: 80px;
+   // }
+   // @media screen and (min-width: 1200px) {
+   // margin-top: 10px;
+   // }
 }
 
 
@@ -17,6 +20,7 @@ z-index: 2;
    border: 1px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
+
 .develo-eco__content:hover &,
 .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
@@ -41,6 +45,10 @@ box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
    .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
    }
+@media screen and (min-width: 360px) {
+margin-top: -405px;
+   height: 405px;
+}
 
 @media screen and (min-width: 1200px) {
    margin-top: -218px;
@@ -59,10 +67,11 @@ box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
 .develo-eco__content:focus & {
 border: 1px solid $primary-text-color;
 }   
+@media screen and (min-width: 360px) {}
+ margin-top: -405px;
 @media screen and (min-width: 1200px) {
-   display: block;
    margin-top: -218px;
-   width: 170px;
+   width: 165px;
    margin-left: 415px;
 
 }
@@ -70,17 +79,7 @@ border: 1px solid $primary-text-color;
 
 // < !-- man-laptop -->
 
-.man-laptop__line {
-   margin-top: 115px;
-   z-index: 2;
-   
-   @media screen and (min-width: 1200px) {
-      margin-top: 90px;
-   }
-}
-
 .develo-eco___decor4 {
-   // width: 220px;
    border: 1px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -107,9 +106,13 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
       .develo-eco__content:focus & {
          border: 1px solid $primary-text-color;
 }
+@media screen and (min-width: 360px) {
+   margin-top: -758px;
+   height: 758px;
+}
    @media screen and (min-width: 1200px) {
    margin-top: -511px;
-   margin-left: 430px;
+   margin-left: 428px;
    height: 511px;
    
 }}
@@ -125,24 +128,30 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
    }
+   @media screen and (min-width: 360px) {
+margin-top: -758px;
+
+}
    @media screen and (min-width: 1200px) {
    margin-top: -511px;
    width: 155px;
    
-   margin-left: 430px;
+   margin-left: 428px;
 
 }}
 
 // < !-- oil -->
 
-.oil-line {
-margin-top: 140px;
-   // display: none;
-   @media screen and (min-width: 1200px) {
-      margin-top: 80px;
-      z-index: 2;
-   }
-}
+// .oil-line {
+// margin-top: 140px;
+//    @media screen and (min-width: 360px) {
+//    margin-top: 90px;
+//    }  
+//    @media screen and (min-width: 1200px) {
+//       margin-top: 80px;
+//       z-index: 2;
+//    }
+// }
 
 .develo-eco___decor7 {
    // width: 220px;
@@ -159,8 +168,8 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 
 .develo-eco___decor8 {
    width: 1px;
-   height: 1156px;
-   margin-top: -1156px;
+   height: 1155px;
+   margin-top: -1155px;
    border: 1px solid $line-color;
    box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
       box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -168,14 +177,18 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
    }
+   @media screen and (min-width: 360px) {
+   margin-top: -1106px;
+   height: 1106px;
+}
    @media screen and (min-width: 1200px) {
-   margin-top: -440px;
-   height: 440px;
+   margin-top: -441px;
+   height: 441px;
 
 }}
 
 .develo-eco___decor9 {
- margin-top: -1156px;
+ margin-top: -1155px;
 width: 10px;
    border: 1px solid $line-color;
    box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -184,23 +197,29 @@ width: 10px;
    .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
    }
+   @media screen and (min-width: 360px) {
+   margin-top: -1106px;
+}
    @media screen and (min-width: 1200px) {
-   margin-top: -440px;
-   width: 70px;
+   margin-top: -441px;
+   width: 83px;
    margin-left: 0px;
 
 }}
 
 // < !-- ocean -->
 
-.ocean-line {
-   margin-top: 100px;
+// .ocean-line {
+//    margin-top: 100px;
+//    @media screen and (min-width: 360px) {
+//    margin-top: 65px;
+//    }
 
-   @media screen and (min-width: 1200px) {
-      margin-top: 70px;
-      z-index: 2;
-   }
-}
+//    @media screen and (min-width: 1200px) {
+//       margin-top: 70px;
+//       z-index: 2;
+//    }
+// }
 
 .develo-eco___decor10 {
    border: 1px solid $line-color;
@@ -217,8 +236,8 @@ width: 10px;
 }}
 
 .develo-eco___decor11 {
-   margin-top: -1460px;
-   height: 1460px;
+   margin-top: -1457px;
+   height: 1457px;
    width: 1px;
    border: 1px solid $line-color;
    box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -227,13 +246,17 @@ width: 10px;
    .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
    }
+   @media screen and (min-width: 360px) {
+   margin-top: -1424px;
+   height: 1424px;
+}
    @media screen and (min-width: 1200px) {
-   margin-top: -727px;
-   height: 727px;
+   margin-top: -728px;
+   height: 728px;
 }}
 
 .develo-eco___decor12 {
-margin-top: -1460px;
+margin-top: -1457px;
    width: 15px;
    border: 1px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -242,23 +265,29 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
    }
+@media screen and (min-width: 360px) {
+   margin-top: -1424px;
+}
    @media screen and (min-width: 1200px) {
-   margin-top: -727px;
-   width: 95px;
+   margin-top: -728px;
+   width: 100px;
 }}
 
       // < !-- factory -->
-.factory-line {
-   margin-top: 150px;
-   @media screen and (min-width: 1200px) {
-      margin-top: 90px;
-      z-index: 2;
-   }
-}
+// .factory-line {
+//    margin-top: 150px;
+//    @media screen and (min-width: 360px) {
+//    margin-top: 100px;
+//    }
+//    @media screen and (min-width: 1200px) {
+//       margin-top: 90px;
+//       z-index: 2;
+//    }
+// }
 
 .develo-eco___decor14 {
-margin-top: -1824px;
-   height: 1824px;
+margin-top: -1859px;
+   height: 1859px;
    width: 1px;
    border: 1px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -267,13 +296,17 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
    }
+  @media screen and (min-width: 360px) {
+     margin-top: -1812px;
+     height: 1812px;
+  }
    @media screen and (min-width: 1200px) {
-   margin-top: -387px;
-   height: 387px;
+   margin-top: -380px;
+   height: 380px;
 }}
 
 .develo-eco___decor15 {
-   margin-top: -1824px;
+   margin-top: -1859px;
       width: 20px;
    border: 1px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -282,16 +315,19 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
    }
+  @media screen and (min-width: 360px) {
+     margin-top: -1812px;
+  }
    @media screen and (min-width: 1200px) {
-   margin-top: -387px;
-   width: 133px;
+   margin-top: -380px;
+   width: 127px;
 }}
 
 .develo-eco___decor16 {
       @media screen and (min-width: 1200px) {
-   margin-left: 133px;
-   margin-top: -649px;
-   height: 649px;
+   margin-left: 127px;
+   margin-top: -656px;
+   height: 656px;
    width: 1px;
    border: 1px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -304,8 +340,8 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 
 .develo-eco___decor17 {
       @media screen and (min-width: 1200px) {
-   margin-left: 133px;
-   margin-top: -649px;
+   margin-left: 127px;
+   margin-top: -656px;
    width: 115px;
    border: 1px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -318,20 +354,21 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 
       //  < !-- earth -->
 
-.earth-line {
-   // display: none;
-   margin-top: 80px;
-margin-top: 85 px;
-   @media screen and (min-width: 1200px) {
-      display: flexbox;
-      margin-top: 50px;
-      z-index: 2;
-   }
-}
+// .earth-line {
+//    margin-top: 80px;
+//       @media screen and (min-width: 360px) {
+//    margin-top: 50px;
+//    }
+//    @media screen and (min-width: 1200px) {
+//       display: flexbox;
+//       margin-top: 50px;
+//       z-index: 2;
+//    }
+// }
 
 .develo-eco___decor18 {
-margin-top: -2108px;
-   height: 2108px;
+margin-top: -2141px;
+   height: 2141px;
    width: 1px;
    border: 1px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -340,13 +377,17 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
    }
+@media screen and (min-width: 360px) {
+   margin-top: -2115px;
+   height: 2115px;
+}
    @media screen and (min-width: 1200px) {
-   margin-top: -697px;
-   height: 697px;
+   margin-top: -690px;
+   height: 690px;
 }}
 
 .develo-eco___decor19 {
-   margin-top: -2108px;
+   margin-top: -2141px;
 width: 25px;
    border: 1px solid $line-color;
    box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -355,17 +396,20 @@ width: 25px;
    .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
    }
+  @media screen and (min-width: 360px) {
+     margin-top: -2115px;
+  }
       @media screen and (min-width: 1200px) {
-   margin-top: -697px;
-   width: 249px;
+   margin-top: -690px;
+   width: 244px;
 
 }}
 
 .develo-eco___decor20 {
       @media screen and (min-width: 1200px) {
-   margin-left: 249px;
-   margin-top: -606px;
-   height: 606px;
+   margin-left: 244px;
+   margin-top: -613px;
+   height: 613px;
    width: 1px;
    border: 1px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -378,8 +422,8 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 
 .develo-eco___decor21 {
       @media screen and (min-width: 1200px) {
-   margin-left: 249px;
-   margin-top: -606px;
+   margin-left: 244px;
+   margin-top: -613px;
    width: 150px;
    border: 1px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -393,19 +437,21 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 //   < !-- man 
 
 
-.impact-line__man {
-   // display: none;
-margin-top: 145px;
-   @media screen and (min-width: 1200px) {
-      display: flexbox;
-      margin-top: 100px;
-      z-index: 2;
-   }
-}
+// .impact-line__man {
+// margin-top: 145px;
+//    @media screen and (min-width: 360px) {
+//    margin-top: 110px;
+//    }
+//    @media screen and (min-width: 1200px) {
+//       display: flexbox;
+//       margin-top: 100px;
+//       z-index: 2;
+//    }
+// }
 
 .develo-eco___decor22 {
-margin-top: -2532px;
-   height: 2532px;
+margin-top: -2563px;
+   height: 2563px;
    width: 1px;
    border: 1px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -414,6 +460,10 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
  }
+   @media screen and (min-width: 360px) {
+   margin-top: -2533px;
+   height: 2533px;
+}
       @media screen and (min-width: 1200px) {
    margin-top: -1070px;
    height: 1070px;
@@ -421,7 +471,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 }}
 
 .develo-eco___decor23 {
-   margin-top: -2532px;
+   margin-top: -2563px;
       width: 30px;
       border: 1px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -430,17 +480,20 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
  }
+   @media screen and (min-width: 360px) {
+   margin-top: -2533px;
+}
    @media screen and (min-width: 1200px) {
    margin-top: -1070px;
-   width: 369px;
+   width: 366px;
   
 }}
 
 .develo-eco___decor24 {
          @media screen and (min-width: 1200px) {
-   margin-left: 369px;
-   margin-top: -565px;
-   height: 565px;
+   margin-left: 366px;
+   margin-top: -570px;
+   height: 570px;
    width: 1px;
    border: 1px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -453,8 +506,8 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 
 .develo-eco___decor25 {
          @media screen and (min-width: 1200px) {
-   margin-left: 369px;
-   margin-top: -565px;
+   margin-left: 366px;
+   margin-top: -570px;
    width: 155px;
    border: 1px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
