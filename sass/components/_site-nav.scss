@@ -120,9 +120,8 @@ text-shadow: 1px 1px 1px black;
 	font-style: normal;
 	font-size: 12px;
 	text-decoration: none;
-	color: rgba(255, 255, 255, 0.6);
+	color: rgb(4, 228, 240);
 	transition: color $animation-card;
-	
 	&:hover,
 	&:focus {
 		color: $Accent;
@@ -134,4 +133,9 @@ text-shadow: 1px 1px 1px black;
 		line-height: 1.71;
 	
 	}
+}
+
+.contacts__icon {
+	margin-right: 10px;
+	
 }

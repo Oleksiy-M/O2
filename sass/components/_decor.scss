@@ -33,21 +33,21 @@ box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
 }}
 
 .develo-eco___decor2 {
-margin-top: -465px;
-height: 465px; 
+margin-top: -451px;
+height: 451px; 
+width: 1px;
 // margin-left: 40px;
 // margin-left: 5px;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
    border: 1px solid $line-color;
-   width: 1px;
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
    }
 @media screen and (min-width: 360px) {
-margin-top: -405px;
-   height: 405px;
+margin-top: -387px;
+   height: 387px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -58,24 +58,22 @@ margin-top: -405px;
 }
 
 .develo-eco___decor3 {
-   width: 1px;
-      margin-top: -465px;
-border: 1px solid $line-color;
-box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
-box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
-.develo-eco__content:hover &,
-.develo-eco__content:focus & {
-border: 1px solid $primary-text-color;
-}   
-@media screen and (min-width: 360px) {}
- margin-top: -405px;
+      // @media screen and (min-width: 360px) {
 @media screen and (min-width: 1200px) {
-   margin-top: -218px;
-   width: 165px;
-   margin-left: 415px;
+      border: 1px solid $line-color;
+      box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
+      box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
+      .develo-eco__content:hover &,
+      .develo-eco__content:focus & {
+      border: 1px solid $primary-text-color;
+      }   
+      margin-top: -218px;
+      width: 165px;
+      margin-left: 415px;
+   }
 
 }
-}
+
 
 // < !-- man-laptop -->
 
@@ -96,8 +94,8 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 
 .develo-eco___decor5 {
 
-   margin-top: -787px;
-   height: 787px;
+   margin-top: -789px;
+   height: 789px;
    width: 1px;
    border: 1px solid $line-color;
    box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -119,7 +117,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 
 .develo-eco___decor6 {
 
-   margin-top: -787px;
+   margin-top: -789px;
    width: 5px;
    border: 1px solid $line-color;
    box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -168,8 +166,8 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 
 .develo-eco___decor8 {
    width: 1px;
-   height: 1155px;
-   margin-top: -1155px;
+   height: 1156px;
+   margin-top: -1156px;
    border: 1px solid $line-color;
    box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
       box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -188,7 +186,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 }}
 
 .develo-eco___decor9 {
- margin-top: -1155px;
+ margin-top: -1156px;
 width: 10px;
    border: 1px solid $line-color;
    box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -224,7 +222,7 @@ width: 10px;
 .develo-eco___decor10 {
    border: 1px solid $line-color;
    box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
-      box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
+   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
@@ -236,8 +234,8 @@ width: 10px;
 }}
 
 .develo-eco___decor11 {
-   margin-top: -1457px;
-   height: 1457px;
+   margin-top: -1459px;
+   height: 1459px;
    width: 1px;
    border: 1px solid $line-color;
    box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -256,7 +254,7 @@ width: 10px;
 }}
 
 .develo-eco___decor12 {
-margin-top: -1457px;
+margin-top: -1459px;
    width: 15px;
    border: 1px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -286,8 +284,8 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 // }
 
 .develo-eco___decor14 {
-margin-top: -1859px;
-   height: 1859px;
+margin-top: -1862px;
+   height: 1862px;
    width: 1px;
    border: 1px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -306,7 +304,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 }}
 
 .develo-eco___decor15 {
-   margin-top: -1859px;
+   margin-top: -1862px;
       width: 20px;
    border: 1px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -320,12 +318,12 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
   }
    @media screen and (min-width: 1200px) {
    margin-top: -380px;
-   width: 127px;
+   width: 147px;
 }}
 
 .develo-eco___decor16 {
       @media screen and (min-width: 1200px) {
-   margin-left: 127px;
+   margin-left: 147px;
    margin-top: -656px;
    height: 656px;
    width: 1px;
@@ -340,7 +338,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 
 .develo-eco___decor17 {
       @media screen and (min-width: 1200px) {
-   margin-left: 127px;
+   margin-left: 147px;
    margin-top: -656px;
    width: 115px;
    border: 1px solid $line-color;
@@ -367,8 +365,8 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 // }
 
 .develo-eco___decor18 {
-margin-top: -2141px;
-   height: 2141px;
+margin-top: -2144px;
+   height: 2144px;
    width: 1px;
    border: 1px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -387,7 +385,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 }}
 
 .develo-eco___decor19 {
-   margin-top: -2141px;
+   margin-top: -2144px;
 width: 25px;
    border: 1px solid $line-color;
    box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -401,13 +399,13 @@ width: 25px;
   }
       @media screen and (min-width: 1200px) {
    margin-top: -690px;
-   width: 244px;
+   width: 264px;
 
 }}
 
 .develo-eco___decor20 {
       @media screen and (min-width: 1200px) {
-   margin-left: 244px;
+   margin-left: 264px;
    margin-top: -613px;
    height: 613px;
    width: 1px;
@@ -422,7 +420,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 
 .develo-eco___decor21 {
       @media screen and (min-width: 1200px) {
-   margin-left: 244px;
+   margin-left: 264px;
    margin-top: -613px;
    width: 150px;
    border: 1px solid $line-color;
@@ -450,8 +448,8 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 // }
 
 .develo-eco___decor22 {
-margin-top: -2563px;
-   height: 2563px;
+margin-top: -2567px;
+   height: 2567px;
    width: 1px;
    border: 1px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -471,7 +469,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 }}
 
 .develo-eco___decor23 {
-   margin-top: -2563px;
+   margin-top: -2567px;
       width: 30px;
       border: 1px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -485,13 +483,13 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 }
    @media screen and (min-width: 1200px) {
    margin-top: -1070px;
-   width: 366px;
+   width: 381px;
   
 }}
 
 .develo-eco___decor24 {
          @media screen and (min-width: 1200px) {
-   margin-left: 366px;
+   margin-left: 381px;
    margin-top: -570px;
    height: 570px;
    width: 1px;
@@ -506,7 +504,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 
 .develo-eco___decor25 {
          @media screen and (min-width: 1200px) {
-   margin-left: 366px;
+   margin-left: 381px;
    margin-top: -570px;
    width: 155px;
    border: 1px solid $line-color;
