@@ -1,0 +1,47 @@
+//  < !-- video-bg -->
+
+.video-bg{ 
+display:block;
+position: relative;
+padding: 0;
+margin-left: auto;
+margin-right: auto;
+   // overflow:hidden;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   
+//   margin-left: 200px;
+   // width: 100%;
+   // height: 100%;
+ background-size:cover;
+background-attachment: scroll;
+background-image:
+linear-gradient(rgba(11, 44, 114, 0.708),
+         rgba(0, 0, 0, 0.636));
+
+@media screen and (min-width: 1200px) {
+        max-width: 1600px;
+
+padding: 0;
+// margin-bottom: 250px;
+}}
+
+.bubble{
+   min-width: 500px;
+   margin-top: 0px;
+   margin-bottom: 1650px;
+position: fixed;
+   width: 100%;
+   object-fit: cover;
+   z-index: -1;
+   @media screen and (min-width: 1200px) {
+   position:absolute;
+// padding-top: 100px;
+      // width: 1200px;
+         // height: 2000px;
+         // object-fit:cover;
+}}
+
+
+

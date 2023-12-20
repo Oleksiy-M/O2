@@ -1,8 +1,8 @@
 /* =================== FOOTER =================== */
 .page-footer {
       display: block;
-      padding-top: 50px;
-         padding-bottom: 50px;
+      padding-top:380px;
+         padding-bottom: 100px;
       // padding: 5px;
 
 @media screen and (min-width: 1200px) {
@@ -181,9 +181,9 @@ flex-direction: column;
 
 .auth__input {
 margin: 0px;
-width: 250px;
+width: 230px;
    @media screen and (min-width: 1200px) {
-      width: 338px;
+      width: 300px;
       margin-right: 12px;
    }
 
@@ -216,7 +216,7 @@ width: 250px;
    height: 50px;
    background-color: $Accent;
    box-shadow: 0px 4px 4px 0px #00000026;
-   min-width: 250px;
+   min-width: 230px;
    font-size: 16px;
    font-weight: 700;
    line-height: 1.87;
