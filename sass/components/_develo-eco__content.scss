@@ -129,7 +129,7 @@ transition: transform $animation-card, opacity $animation-card;
 .develo-eco__content:hover &,
 .develo-eco__content:focus & {
    color: $Secondary-text-color;
-   background-color: rgba(207, 149, 23, 0.553);
+   // background-color: rgba(207, 149, 23, 0.553);
 }
 @media screen and (min-width: 1200px) {
    margin-left: 0px;
