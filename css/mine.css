@@ -362,8 +362,8 @@ body {
 @media screen and (min-width: 1200px) {
   .discl-hero {
     margin: 0;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 190px;
+    padding-bottom: 110px;
   }
 }
 
@@ -398,7 +398,6 @@ body {
 @media screen and (min-width: 1200px) {
   .develo-eco__box {
     margin-bottom: 0px;
-    margin-left: 0px;
     height: 35px;
     padding: 5px;
     width: 430px;
@@ -438,12 +437,13 @@ body {
   margin-bottom: 50px;
   margin-left: 30px;
   z-index: 3;
+  max-width: 360px;
 }
 @media screen and (min-width: 1200px) {
   .develo-eco__hand {
     display: flexbox;
     justify-content: right;
-    width: 550px;
+    max-width: 550px;
     margin-bottom: 50px;
     margin-left: 0px;
   }
@@ -465,7 +465,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hand-hero {
-    height: 220px;
+    height: 210px;
     width: 550px;
   }
 }
@@ -639,7 +639,7 @@ body {
 @media screen and (min-width: 1200px) {
   .develo-eco___decor4 {
     margin-left: -10px;
-    width: 440px;
+    width: 435px;
   }
 }
 
@@ -663,7 +663,7 @@ body {
 @media screen and (min-width: 1200px) {
   .develo-eco___decor5 {
     margin-top: -514px;
-    margin-left: 428px;
+    margin-left: 425px;
     height: 514px;
   }
 }
@@ -687,7 +687,7 @@ body {
   .develo-eco___decor6 {
     margin-top: -514px;
     width: 155px;
-    margin-left: 428px;
+    margin-left: 425px;
   }
 }
 
@@ -701,6 +701,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .develo-eco___decor7 {
+    margin-left: -125px;
     width: 610px;
   }
 }
@@ -726,6 +727,7 @@ body {
   .develo-eco___decor8 {
     margin-top: -456px;
     height: 456px;
+    margin-left: -125px;
   }
 }
 
@@ -747,8 +749,9 @@ body {
 @media screen and (min-width: 1200px) {
   .develo-eco___decor9 {
     margin-top: -456px;
-    width: 60px;
+    width: 80px;
     margin-left: 0px;
+    margin-left: -125px;
   }
 }
 
@@ -808,7 +811,7 @@ body {
 @media screen and (min-width: 1200px) {
   .develo-eco___decor12 {
     margin-top: -741px;
-    width: 80px;
+    width: 85px;
   }
 }
 
@@ -854,13 +857,13 @@ body {
 @media screen and (min-width: 1200px) {
   .develo-eco___decor15 {
     margin-top: -380px;
-    width: 147px;
+    width: 135px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .develo-eco___decor16 {
-    margin-left: 147px;
+    margin-left: 135px;
     margin-top: -669px;
     height: 669px;
     width: 2px;
@@ -875,7 +878,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .develo-eco___decor17 {
-    margin-left: 147px;
+    margin-left: 135px;
     margin-top: -669px;
     width: 100px;
     border: 2px solid #0000FF;
@@ -929,13 +932,13 @@ body {
 @media screen and (min-width: 1200px) {
   .develo-eco___decor19 {
     margin-top: -690px;
-    width: 264px;
+    width: 255px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .develo-eco___decor20 {
-    margin-left: 264px;
+    margin-left: 255px;
     margin-top: -624px;
     height: 624px;
     width: 2px;
@@ -950,7 +953,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .develo-eco___decor21 {
-    margin-left: 264px;
+    margin-left: 255px;
     margin-top: -624px;
     width: 110px;
     border: 2px solid #0000FF;
@@ -1004,13 +1007,13 @@ body {
 @media screen and (min-width: 1200px) {
   .develo-eco___decor23 {
     margin-top: -1070px;
-    width: 381px;
+    width: 375px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .develo-eco___decor24 {
-    margin-left: 381px;
+    margin-left: 375px;
     margin-top: -578px;
     height: 578px;
     width: 2px;
@@ -1025,7 +1028,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .develo-eco___decor25 {
-    margin-left: 381px;
+    margin-left: 375px;
     margin-top: -578px;
     width: 115px;
     border: 2px solid #0000FF;
@@ -1307,9 +1310,10 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .oil-content {
-    width: 600px;
+    display: flow-root;
+    width: 480px;
     height: 150px;
-    margin-left: 493px;
+    margin-left: 600px;
     margin-top: -185px;
   }
 }
@@ -1320,10 +1324,10 @@ body {
 @media screen and (min-width: 1200px) {
   .ocean-content {
     height: 130px;
-    width: 500px;
+    width: 480px;
     margin-top: 150px;
     margin-bottom: 150px;
-    margin-left: 480px;
+    margin-left: 465px;
   }
 }
 
@@ -1334,7 +1338,7 @@ body {
   .factory-content {
     margin-left: 320px;
     margin-bottom: 150px;
-    width: 500px;
+    width: 480px;
   }
 }
 
@@ -1344,7 +1348,7 @@ body {
 @media screen and (min-width: 1200px) {
   .earth-content {
     margin-left: 190px;
-    width: 500px;
+    width: 480px;
     height: 110px;
     margin-bottom: 160px;
   }
@@ -1356,7 +1360,7 @@ body {
 @media screen and (min-width: 1200px) {
   .man-content {
     margin-left: 60px;
-    width: 500px;
+    width: 480px;
     height: 165px;
     margin-bottom: 50px;
   }
@@ -1379,7 +1383,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .develo-eco__svg {
-    margin-left: 150px;
     margin-bottom: 90px;
   }
 }
@@ -1411,7 +1414,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .oil-svg {
-    margin-left: 290px;
     margin-bottom: 80px;
   }
 }
@@ -1429,7 +1431,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .impact-svg {
-    margin-left: 175px;
     margin-bottom: 70px;
   }
 }
@@ -1445,7 +1446,6 @@ body {
 @media screen and (min-width: 1200px) {
   .factory-svg {
     margin-bottom: 90px;
-    margin-left: 180px;
   }
 }
 
@@ -1460,7 +1460,6 @@ body {
 @media screen and (min-width: 1200px) {
   .earth-svg {
     margin-bottom: 50px;
-    margin-left: 180px;
   }
 }
 
@@ -1472,7 +1471,6 @@ body {
 @media screen and (min-width: 1200px) {
   .man-svg {
     margin-bottom: 105px;
-    margin-left: 180px;
   }
 }
 
@@ -1519,15 +1517,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .impact-oil {
-    max-width: 470px;
-    margin-left: 130px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
   .impact-art {
-    max-width: 470px;
     margin-left: 0px;
     padding-left: 30px;
   }
@@ -1544,7 +1534,7 @@ body {
   overflow: hidden;
   background-size: cover;
   background-attachment: scroll;
-  background-image: linear-gradient(rgba(11, 44, 114, 0.708), rgba(0, 0, 0, 0.636));
+  background-image: linear-gradient(rgba(0, 16, 122, 0.853), rgba(0, 0, 0, 0.781));
 }
 @media screen and (min-width: 1200px) {
   .video-bg {
@@ -1554,7 +1544,9 @@ body {
 }
 
 .bubble {
-  min-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 270px;
   margin-top: 0px;
   margin-bottom: 1650px;
   position: fixed;

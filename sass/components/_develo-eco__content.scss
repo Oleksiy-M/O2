@@ -13,7 +13,7 @@ margin-bottom: 80px;
 }
 
 @media screen and (min-width: 1200px) {
-margin-left: 150px;
+// margin-left: 150px;  
 margin-bottom: 90px;
    }
 
@@ -42,7 +42,7 @@ margin-bottom: 90px;
    margin-bottom: 85px;
 }
 @media screen and (min-width: 1200px) {
-   margin-left: 290px;
+   // margin-left: 330px;
    margin-bottom: 80px;
 }
 }
@@ -57,7 +57,7 @@ margin-bottom: 100px;
    margin-bottom: 60px;
 }
    @media screen and (min-width: 1200px) {
-   margin-left: 175px;
+   // margin-left: 175px;
    margin-bottom: 70px;
    }
 }
@@ -69,7 +69,7 @@ margin-bottom: 100px;
    }
       @media screen and (min-width: 1200px) {
    margin-bottom: 90px;
-   margin-left: 180px;
+   // margin-left: 180px;
    }
 }
 .earth-svg{
@@ -79,7 +79,7 @@ margin-bottom: 100px;
       }
       @media screen and (min-width: 1200px) {
    margin-bottom: 50px;
-   margin-left: 180px;
+   // margin-left: 180px;
    }
 }
 .man-svg{
@@ -88,7 +88,7 @@ margin-bottom: 100px;
       }
       @media screen and (min-width: 1200px) {
    margin-bottom: 105px;
-   margin-left: 180px;
+   // margin-left: 180px;
    }
 }
 
@@ -139,16 +139,19 @@ transition: transform $animation-card, opacity $animation-card;
 }
 }
 
-.impact-oil {
-   @media screen and (min-width: 1200px) {
-   max-width: 470px;
-   margin-left: 130px;
-}
-}
+// .impact-oil {
+//    @media screen and (min-width: 1200px) {
+//    max-width: 470px;
+//    // margin-left: 140px;
+   
+// }
+// }
+
+
 
 .impact-art {
     @media screen and (min-width: 1200px) {
-   max-width: 470px;
+   // max-width: 470px;
    margin-left: 0px;
    padding-left: 30px;
       }
