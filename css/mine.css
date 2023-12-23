@@ -344,6 +344,9 @@ body {
   display: block;
   margin: 0;
   background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-image: linear-gradient(rgba(0, 16, 122, 0.853), rgba(0, 0, 0, 0.781));
 }
 @media screen and (min-width: 1200px) {
   .discl {
@@ -1532,9 +1535,6 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-size: cover;
-  background-attachment: scroll;
-  background-image: linear-gradient(rgba(0, 16, 122, 0.853), rgba(0, 0, 0, 0.781));
 }
 @media screen and (min-width: 1200px) {
   .video-bg {
@@ -1557,5 +1557,23 @@ body {
 @media screen and (min-width: 1200px) {
   .bubble {
     position: absolute;
+  }
+}
+
+.history-page {
+  display: block;
+  margin: 0;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-image: linear-gradient(rgba(0, 16, 122, 0.853), rgba(0, 0, 0, 0.781));
+}
+@media screen and (min-width: 1200px) {
+  .history-page {
+    display: flexbox;
+    justify-content: center;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }/*# sourceMappingURL=mine.css.map */

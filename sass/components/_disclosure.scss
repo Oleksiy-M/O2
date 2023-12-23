@@ -8,7 +8,11 @@ z-index: 2;
    margin: 0;
    // background-size:contain;
    background-position: center;
-
+background-size: cover;
+   background-attachment: scroll;
+   background-image:
+      linear-gradient(rgba(0, 16, 122, 0.853),
+         rgba(0, 0, 0, 0.781));
   
          // url("../img/bg-discl/bg-mobil.jpg")
 
