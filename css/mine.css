@@ -346,7 +346,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: scroll;
-  background-image: linear-gradient(rgba(0, 16, 122, 0.853), rgba(0, 0, 0, 0.781));
+  background-image: linear-gradient(rgba(0, 12, 89, 0.853), rgba(0, 0, 0, 0.781));
 }
 @media screen and (min-width: 1200px) {
   .discl {
@@ -400,6 +400,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .develo-eco__box {
+    margin-left: 5px;
     margin-bottom: 0px;
     height: 35px;
     padding: 5px;
@@ -440,36 +441,26 @@ body {
   margin-bottom: 50px;
   margin-left: 30px;
   z-index: 3;
-  max-width: 360px;
 }
 @media screen and (min-width: 1200px) {
   .develo-eco__hand {
     display: flexbox;
-    justify-content: right;
-    max-width: 550px;
-    margin-bottom: 50px;
-    margin-left: 0px;
+    margin-left: 540px;
   }
 }
 
 .hand-hero {
   z-index: 3;
-  border: 5px solid #0000FF;
-  box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.5);
-  box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.5);
 }
-.hand-hero:hover, .hand-hero:focus {
-  border: 5px solid rgb(0, 255, 255);
-  box-shadow: 3px 3px 0px 0px rgba(128, 215, 228, 0.5);
-  box-shadow: 0px 0px 3px 3px rgba(109, 206, 239, 0.5);
-}
-.develo-eco:hover .hand-hero, .develo-eco:focus .hand-hero {
-  border: 5px solid rgb(0, 255, 255);
+@media screen and (min-width: 360px) {
+  .hand-hero {
+    height: 110px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hand-hero {
-    height: 210px;
-    width: 550px;
+    height: 220px;
+    width: 600px;
   }
 }
 
@@ -593,8 +584,8 @@ body {
 }
 
 .develo-eco___decor2 {
-  margin-top: -451px;
-  height: 451px;
+  margin-top: -466px;
+  height: 466px;
   width: 2px;
   box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -605,8 +596,8 @@ body {
 }
 @media screen and (min-width: 360px) {
   .develo-eco___decor2 {
-    margin-top: -387px;
-    height: 387px;
+    margin-top: -406px;
+    height: 406px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1047,7 +1038,12 @@ body {
 .page-footer {
   display: block;
   padding-top: 380px;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
+}
+@media screen and (min-width: 360px) {
+  .page-footer {
+    padding-bottom: 280px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .page-footer {
@@ -1132,7 +1128,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .join__title {
-    text-align: left;
     display: flexbox;
     margin-left: 10px;
   }
@@ -1534,11 +1529,11 @@ body {
   margin-right: auto;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 @media screen and (min-width: 1200px) {
   .video-bg {
     max-width: 1600px;
+    overflow: hidden;
     padding: 0;
   }
 }
@@ -1566,7 +1561,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: scroll;
-  background-image: linear-gradient(rgba(0, 16, 122, 0.853), rgba(0, 0, 0, 0.781));
+  background-image: linear-gradient(rgba(57, 111, 65, 0.705), rgba(0, 0, 0, 0.781));
 }
 @media screen and (min-width: 1200px) {
   .history-page {

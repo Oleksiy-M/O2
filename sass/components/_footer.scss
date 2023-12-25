@@ -2,9 +2,11 @@
 .page-footer {
       display: block;
       padding-top:380px;
-         padding-bottom: 100px;
+   padding-bottom: 150px;
       // padding: 5px;
-
+@media screen and (min-width: 360px) {
+   padding-bottom: 280px;
+   }
 @media screen and (min-width: 1200px) {
 
 display: flex;
@@ -86,19 +88,20 @@ padding-left: 30px;
 
 .join__title {
    text-align: center;
-   @media screen and (min-width: 768px) {
-      text-align: left;
-      display: flexbox;
-      margin-left: 10px;
-
-   }
-
+   
    margin-bottom: 20px;
    font-weight: 700;
    font-size: 14px;
    line-height: 1.14;
    text-transform: uppercase;
    color: $White-color;
+   
+   @media screen and (min-width: 768px) {
+      // text-align: left;
+      display: flexbox;
+      margin-left: 10px;
+   
+   }
 }
 
 .join__list {
