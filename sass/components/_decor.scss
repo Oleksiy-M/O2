@@ -16,7 +16,7 @@ z-index: 4;
 
 .develo-eco___decor1 {
    // width: 215px;
-
+border-radius: 5px;
    border: 2px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -38,6 +38,7 @@ height: 466px;
 width: 2px;
 // margin-left: 40px;
 // margin-left: 5px;
+border-radius: 5px;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
    border: 2px solid $line-color;
@@ -60,6 +61,7 @@ margin-top: -406px;
 .develo-eco___decor3 {
       // @media screen and (min-width: 360px) {
 @media screen and (min-width: 1200px) {
+   border-radius: 5px;
       border: 2px solid $line-color;
       box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
       box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -67,6 +69,7 @@ margin-top: -406px;
       .develo-eco__content:focus & {
       border: 2px solid $primary-text-color;
       }   
+      
       margin-top: -219px;
       width: 165px;
       margin-left: 415px;
@@ -78,6 +81,7 @@ margin-top: -406px;
 // < !-- man-laptop -->
 
 .develo-eco___decor4 {
+  border-radius: 5px; 
    border: 2px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -93,7 +97,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 }}
 
 .develo-eco___decor5 {
-
+border-radius: 5px;
    margin-top: -789px;
    height: 789px;
    width: 2px;
@@ -116,7 +120,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 }}
 
 .develo-eco___decor6 {
-
+border-radius: 5px;
    margin-top: -789px;
    width: 5px;
    border: 2px solid $line-color;
@@ -140,7 +144,7 @@ margin-top: -758px;
 
 // < !-- oil -->
 
-.develo-eco___decor7 {
+.develo-eco___decor7 {border-radius: 5px;
    // width: 220px;
    border: 2px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -154,7 +158,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    width: 610px;
 }}
 
-.develo-eco___decor8 {
+.develo-eco___decor8 {border-radius: 5px;
    width: 2px;
    height: 1156px;
    margin-top: -1156px;
@@ -176,7 +180,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 
 }}
 
-.develo-eco___decor9 {
+.develo-eco___decor9 {border-radius: 5px;
  margin-top: -1156px;
 width: 10px;
    border: 2px solid $line-color;
@@ -210,7 +214,7 @@ width: 10px;
 //    }
 // }
 
-.develo-eco___decor10 {
+.develo-eco___decor10 {border-radius: 5px;
    border: 2px solid $line-color;
    box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -224,7 +228,7 @@ width: 10px;
 
 }}
 
-.develo-eco___decor11 {
+.develo-eco___decor11 {border-radius: 5px;
    margin-top: -1459px;
    height: 1459px;
    width: 2px;
@@ -244,7 +248,7 @@ width: 10px;
    height: 741px;
 }}
 
-.develo-eco___decor12 {
+.develo-eco___decor12 {border-radius: 5px;
 margin-top: -1459px;
    width: 15px;
    border: 2px solid $line-color;
@@ -265,7 +269,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
       // < !-- factory -->
 
 
-.develo-eco___decor14 {
+.develo-eco___decor14 {border-radius: 5px;
 margin-top: -1862px;
    height: 1862px;
    width: 2px;
@@ -285,7 +289,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    height: 380px;
 }}
 
-.develo-eco___decor15 {
+.develo-eco___decor15 {border-radius: 5px;
    margin-top: -1862px;
       width: 20px;
    border: 2px solid $line-color;
@@ -304,7 +308,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 }}
 
 .develo-eco___decor16 {
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1200px) {border-radius: 5px;
    margin-left: 135px;
    margin-top: -669px;
    height: 669px;
@@ -319,7 +323,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 }}
 
 .develo-eco___decor17 {
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1200px) {border-radius: 5px;
    margin-left: 135px;
    margin-top: -669px;
    width: 100px;
@@ -346,7 +350,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 //    }
 // }
 
-.develo-eco___decor18 {
+.develo-eco___decor18 {border-radius: 5px;
 margin-top: -2144px;
    height: 2144px;
    width: 2px;
@@ -366,7 +370,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    height: 690px;
 }}
 
-.develo-eco___decor19 {
+.develo-eco___decor19 {border-radius: 5px;
    margin-top: -2144px;
 width: 25px;
    border: 2px solid $line-color;
@@ -385,7 +389,7 @@ width: 25px;
 
 }}
 
-.develo-eco___decor20 {
+.develo-eco___decor20 {border-radius: 5px;
       @media screen and (min-width: 1200px) {
    margin-left: 255px;
    margin-top: -624px;
@@ -400,7 +404,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    }
 }}
 
-.develo-eco___decor21 {
+.develo-eco___decor21 {border-radius: 5px;
       @media screen and (min-width: 1200px) {
    margin-left: 255px;
    margin-top: -624px;
@@ -417,7 +421,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 //   < !-- man 
 
 
-.develo-eco___decor22 {
+.develo-eco___decor22 {border-radius: 5px;
 margin-top: -2567px;
    height: 2567px;
    width: 2px;
@@ -438,7 +442,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
   
 }}
 
-.develo-eco___decor23 {
+.develo-eco___decor23 {border-radius: 5px;
    margin-top: -2567px;
       width: 30px;
       border: 2px solid $line-color;
@@ -458,7 +462,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 }}
 
 .develo-eco___decor24 {
-         @media screen and (min-width: 1200px) {
+         @media screen and (min-width: 1200px) {border-radius: 5px;
    margin-left: 375px;
    margin-top: -578px;
    height: 578px;
@@ -472,7 +476,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    }
 }}
 
-.develo-eco___decor25 {
+.develo-eco___decor25 {border-radius: 5px;
          @media screen and (min-width: 1200px) {
    margin-left: 375px;
    margin-top: -578px;
