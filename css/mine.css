@@ -1174,12 +1174,12 @@ body {
 .page-footer {
   display: block;
   padding-top: 150px;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
 }
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 360px) {
   .page-footer {
-    padding-top: 300px;
-    padding-bottom: 300px;
+    padding-top: 320px;
+    padding-bottom: 150px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1558,7 +1558,6 @@ body {
   margin-right: auto;
   min-width: 270px;
   margin-top: 0px;
-  margin-bottom: 1650px;
   position: fixed;
   width: 100%;
   z-index: -1;
