@@ -152,14 +152,13 @@ z-index: 4;
 //  border: 5px solid $primary-text-color;
 // }
 
-
-// @media screen and (min-width: 380px) {
-// height: 115px;
-
+@media screen and (min-width: 380px) {
+height: 115px;
+}
 
 @media screen and (min-width: 1200px) {
    // justify-content: right;
-   // height: 200px;
+   height: 185px;
    width: 500px;
    // margin-left: 50px;
    }
