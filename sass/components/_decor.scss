@@ -2,19 +2,20 @@
 
 
 .develo-eco-line {
-// margin-top: 145px;
-z-index: 4;
+margin-top: 190px;
+z-index: 0;
 
    // @media screen and (min-width: 360px) {
    // margin-top: 80px;
    // }
-   // @media screen and (min-width: 1200px) {
-   // margin-top: 10px;
-   // }
+   @media screen and (min-width: 1200px) {
+   margin-top: 100px;
+   }
 }
 
 
 .develo-eco___decor1 {
+   margin-left: -35px;
    // width: 215px;
 border-radius: 5px;
    border: 2px solid $line-color;
@@ -27,14 +28,15 @@ box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
    }
 
 @media screen and (min-width: 1200px) {
-   margin-left: -10px;
-   width: 425px;
+   margin-left: 0px;
+   width: 435px;
    
 }}
 
 .develo-eco___decor2 {
-margin-top: -466px;
-height: 466px; 
+   margin-left: -35px;
+margin-top: -568px;
+height: 568px; 
 width: 2px;
 // margin-left: 40px;
 // margin-left: 5px;
@@ -46,33 +48,36 @@ box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
    .develo-eco__content:focus & {
       border: 2px solid $primary-text-color;
    }
-@media screen and (min-width: 360px) {
-margin-top: -406px;
-   height: 406px;
-}
+// @media screen and (min-width: 360px) {
+// margin-top: -406px;
+//    height: 406px;
+// }
 
 @media screen and (min-width: 1200px) {
-   margin-top: -219px;
-   height: 219px;
-   margin-left: 415px;
+   margin-top: -244px;
+   height: 244px;
+   margin-left: 435px;
 }
 }
 
 .develo-eco___decor3 {
+   margin-left: -35px;
+   margin-top: -568px;
+   width: 35px;
       // @media screen and (min-width: 360px) {
+         border-radius: 5px;
+            border: 2px solid $line-color;
+            box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
+            box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
+            .develo-eco__content:hover &,
+            .develo-eco__content:focus & {
+            border: 2px solid $primary-text-color;
+            }   
 @media screen and (min-width: 1200px) {
-   border-radius: 5px;
-      border: 2px solid $line-color;
-      box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
-      box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
-      .develo-eco__content:hover &,
-      .develo-eco__content:focus & {
-      border: 2px solid $primary-text-color;
-      }   
       
-      margin-top: -219px;
-      width: 165px;
-      margin-left: 415px;
+      margin-top: -244px;
+      width: 160px;
+      margin-left: 435px;
    }
 
 }
@@ -81,6 +86,7 @@ margin-top: -406px;
 // < !-- man-laptop -->
 
 .develo-eco___decor4 {
+margin-left: -30px;
   border-radius: 5px; 
    border: 2px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -91,15 +97,16 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
       }
 
       @media screen and (min-width: 1200px) {
-   margin-left: -10px;
-   width: 435px;
+   margin-left: 0px;
+   width: 445px;
 
 }}
 
 .develo-eco___decor5 {
+margin-left: -30px;
 border-radius: 5px;
-   margin-top: -789px;
-   height: 789px;
+   margin-top: -1065px;
+   height: 1065px;
    width: 2px;
    border: 2px solid $line-color;
    box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -108,21 +115,22 @@ border-radius: 5px;
       .develo-eco__content:focus & {
          border: 2px solid $primary-text-color;
 }
-@media screen and (min-width: 360px) {
-   margin-top: -758px;
-   height: 758px;
-}
+// @media screen and (min-width: 360px) {
+//    margin-top: -758px;
+//    height: 758px;
+// }
    @media screen and (min-width: 1200px) {
-   margin-top: -514px;
-   margin-left: 425px;
-   height: 514px;
+   margin-top: -653px;
+   margin-left: 445px;
+   height: 653px;
    
 }}
 
 .develo-eco___decor6 {
+   margin-left: -30px;
 border-radius: 5px;
-   margin-top: -789px;
-   width: 5px;
+   margin-top: -1065px;
+   width: 30px;
    border: 2px solid $line-color;
    box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
       box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -130,21 +138,23 @@ border-radius: 5px;
    .develo-eco__content:focus & {
       border: 2px solid $primary-text-color;
    }
-   @media screen and (min-width: 360px) {
-margin-top: -758px;
+//    @media screen and (min-width: 360px) {
+// margin-top: -758px;
 
-}
+// }
    @media screen and (min-width: 1200px) {
-   margin-top: -514px;
+   margin-top: -653px;
    width: 155px;
    
-   margin-left: 425px;
+   margin-left: 445px;
 
 }}
 
 // < !-- oil -->
 
 .develo-eco___decor7 {border-radius: 5px;
+   margin-left: -25px;
+   margin-top: -10px;
    // width: 220px;
    border: 2px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -154,14 +164,15 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
       border: 2px solid $primary-text-color;
    }
    @media screen and (min-width: 1200px) {
-   margin-left: -125px;
-   width: 610px;
+   margin-left: -105px;
+   width: 605px;
 }}
 
 .develo-eco___decor8 {border-radius: 5px;
+   margin-left: -25px;
    width: 2px;
-   height: 1156px;
-   margin-top: -1156px;
+   height: 1562px;
+   margin-top: -1562px;
    border: 2px solid $line-color;
    box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
       box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -169,20 +180,21 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    .develo-eco__content:focus & {
       border: 2px solid $primary-text-color;
    }
-   @media screen and (min-width: 360px) {
-   margin-top: -1106px;
-   height: 1106px;
-}
+//    @media screen and (min-width: 360px) {
+//    margin-top: -1106px;
+//    height: 1106px;
+// }
    @media screen and (min-width: 1200px) {
-   margin-top: -456px;
-   height: 456px;
-      margin-left: -125px;
+   margin-top: -528px;
+   height: 528px;
+      margin-left: -105px;
 
 }}
 
 .develo-eco___decor9 {border-radius: 5px;
- margin-top: -1156px;
-width: 10px;
+   margin-left: -25px;
+ margin-top: -1562px;
+width: 25px;
    border: 2px solid $line-color;
    box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
       box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -190,31 +202,21 @@ width: 10px;
    .develo-eco__content:focus & {
       border: 2px solid $primary-text-color;
    }
-   @media screen and (min-width: 360px) {
-   margin-top: -1106px;
-}
+//    @media screen and (min-width: 360px) {
+//    margin-top: -1106px;
+// }
    @media screen and (min-width: 1200px) {
-   margin-top: -456px;
-   width: 80px;
+   margin-top: -528px;
+   width: 100px;
    margin-left: 0px;
-   margin-left: -125px;
+   margin-left: -105px;
 }}
 
 // < !-- ocean -->
 
-// .ocean-line {
-//    margin-top: 100px;
-//    @media screen and (min-width: 360px) {
-//    margin-top: 65px;
-//    }
-
-//    @media screen and (min-width: 1200px) {
-//       margin-top: 70px;
-//       z-index: 2;
-//    }
-// }
-
-.develo-eco___decor10 {border-radius: 5px;
+.develo-eco___decor10 {
+   margin-left: -20px;
+   border-radius: 5px;
    border: 2px solid $line-color;
    box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -224,13 +226,15 @@ width: 10px;
       border: 2px solid $primary-text-color;
    }
    @media screen and (min-width: 1200px) {
-   width: 500px;
+   width: 510px;
+   margin-left: -10px;
 
 }}
 
 .develo-eco___decor11 {border-radius: 5px;
-   margin-top: -1459px;
-   height: 1459px;
+   margin-left: -20px;
+   margin-top: -2059px;
+   height: 2059px;
    width: 2px;
    border: 2px solid $line-color;
    box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -239,18 +243,21 @@ width: 10px;
    .develo-eco__content:focus & {
       border: 2px solid $primary-text-color;
    }
-   @media screen and (min-width: 360px) {
-   margin-top: -1424px;
-   height: 1424px;
-}
+//    @media screen and (min-width: 360px) {
+//    margin-top: -1424px;
+//    height: 1424px;
+// }
    @media screen and (min-width: 1200px) {
-   margin-top: -741px;
-   height: 741px;
+   margin-top: -929px;
+   height: 929px;
+   margin-left: -10px;
 }}
 
-.develo-eco___decor12 {border-radius: 5px;
-margin-top: -1459px;
-   width: 15px;
+.develo-eco___decor12 {
+   margin-left: -20px;
+   border-radius: 5px;
+margin-top: -2059px;
+   width: 20px;
    border: 2px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -258,20 +265,39 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    .develo-eco__content:focus & {
       border: 2px solid $primary-text-color;
    }
-@media screen and (min-width: 360px) {
-   margin-top: -1424px;
-}
+// @media screen and (min-width: 360px) {
+//    margin-top: -1424px;
+// }
    @media screen and (min-width: 1200px) {
-   margin-top: -741px;
-   width: 85px;
+   margin-top: -929px;
+   width: 110px;
+   margin-left: -10px;
 }}
 
       // < !-- factory -->
+.develo-eco___decor27 {
+   margin-left: -15px;
+   border-radius: 5px;
+   border: 2px solid $line-color;
+   box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
+   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
 
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 2px solid $primary-text-color;
+   }
+
+   @media screen and (min-width: 1200px) {
+      width: 510px;
+      margin-left: -10px;
+
+   }
+}
 
 .develo-eco___decor14 {border-radius: 5px;
-margin-top: -1862px;
-   height: 1862px;
+margin-left: -15px;
+margin-top: -2556px;
+   height: 2556px;
    width: 2px;
    border: 2px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -280,18 +306,20 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    .develo-eco__content:focus & {
       border: 2px solid $primary-text-color;
    }
-  @media screen and (min-width: 360px) {
-     margin-top: -1812px;
-     height: 1812px;
-  }
+//   @media screen and (min-width: 360px) {
+//      margin-top: -1812px;
+//      height: 1812px;
+//   }
    @media screen and (min-width: 1200px) {
-   margin-top: -380px;
-   height: 380px;
+   margin-top: -440px;
+   height: 440px;
+   margin-left: -10px;
 }}
 
 .develo-eco___decor15 {border-radius: 5px;
-   margin-top: -1862px;
-      width: 20px;
+   margin-left: -15px;
+   margin-top: -2556px;
+      width: 15px;
    border: 2px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -299,19 +327,20 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    .develo-eco__content:focus & {
       border: 2px solid $primary-text-color;
    }
-  @media screen and (min-width: 360px) {
-     margin-top: -1812px;
-  }
+//   @media screen and (min-width: 360px) {
+//      margin-top: -1812px;
+//   }
    @media screen and (min-width: 1200px) {
-   margin-top: -380px;
-   width: 135px;
+   margin-top: -440px;
+   width: 90px;
+   margin-left: -10px;
 }}
 
 .develo-eco___decor16 {
       @media screen and (min-width: 1200px) {border-radius: 5px;
-   margin-left: 135px;
-   margin-top: -669px;
-   height: 669px;
+   margin-left: 80px;
+   margin-top: -893px;
+   height: 893px;
    width: 2px;
    border: 2px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -324,9 +353,9 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 
 .develo-eco___decor17 {
       @media screen and (min-width: 1200px) {border-radius: 5px;
-   margin-left: 135px;
-   margin-top: -669px;
-   width: 100px;
+   margin-left: 80px;
+   margin-top: -893px;
+   width: 120px;
    border: 2px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -336,23 +365,32 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    }
 }}
 
+
       //  < !-- earth -->
+.develo-eco___decor28 {
+   margin-left: -10px;
+   border-radius: 5px;
+   border: 2px solid $line-color;
+   box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
+   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
 
-// .earth-line {
-//    margin-top: 80px;
-//       @media screen and (min-width: 360px) {
-//    margin-top: 50px;
-//    }
-//    @media screen and (min-width: 1200px) {
-//       display: flexbox;
-//       margin-top: 50px;
-//       z-index: 2;
-//    }
-// }
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      border: 2px solid $primary-text-color;
+   }
 
-.develo-eco___decor18 {border-radius: 5px;
-margin-top: -2144px;
-   height: 2144px;
+   @media screen and (min-width: 1200px) {
+      width: 510px;
+      margin-left: -10px;
+
+   }
+}
+
+.develo-eco___decor18 {
+   margin-left: -10px;
+   border-radius: 5px;
+margin-top: -3053px;
+   height: 3053px;
    width: 2px;
    border: 2px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -361,18 +399,21 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    .develo-eco__content:focus & {
       border: 2px solid $primary-text-color;
    }
-@media screen and (min-width: 360px) {
-   margin-top: -2115px;
-   height: 2115px;
-}
+// @media screen and (min-width: 360px) {
+//    margin-top: -2115px;
+//    height: 2115px;
+// }
    @media screen and (min-width: 1200px) {
-   margin-top: -690px;
-   height: 690px;
+   margin-top: -895px;
+   height: 895px;
+   margin-left: -10px;
 }}
 
-.develo-eco___decor19 {border-radius: 5px;
-   margin-top: -2144px;
-width: 25px;
+.develo-eco___decor19 {
+   margin-left: -10px;
+   border-radius: 5px;
+   margin-top: -3053px;
+width: 10px;
    border: 2px solid $line-color;
    box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
       box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -380,20 +421,20 @@ width: 25px;
    .develo-eco__content:focus & {
       border: 2px solid $primary-text-color;
    }
-  @media screen and (min-width: 360px) {
-     margin-top: -2115px;
-  }
+//   @media screen and (min-width: 360px) {
+//      margin-top: -2115px;
+//   }
       @media screen and (min-width: 1200px) {
-   margin-top: -690px;
-   width: 255px;
-
+   margin-top: -895px;
+   width: 180px;
+margin-left: -10px;
 }}
 
 .develo-eco___decor20 {border-radius: 5px;
       @media screen and (min-width: 1200px) {
-   margin-left: 255px;
-   margin-top: -624px;
-   height: 624px;
+   margin-left: 170px;
+   margin-top: -839px;
+   height: 839px;
    width: 2px;
    border: 2px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -406,9 +447,9 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 
 .develo-eco___decor21 {border-radius: 5px;
       @media screen and (min-width: 1200px) {
-   margin-left: 255px;
-   margin-top: -624px;
-   width: 110px;
+   margin-left: 170px;
+   margin-top: -839px;
+   width: 140px;
    border: 2px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -418,12 +459,34 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    }
 }}
 
+
+
 //   < !-- man 
 
+.develo-eco___decor26 {
+  margin-top: -5px;   
+margin-left: -5px;
+      border: 2px solid $line-color;
+         box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
+         box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
+      
+         .develo-eco__content:hover &,
+         .develo-eco__content:focus & {
+            border: 2px solid $primary-text-color;
+         }
+   @media screen and (min-width: 1200px) {
+    
+      margin-left: -10px;
+      width: 510px;
 
-.develo-eco___decor22 {border-radius: 5px;
-margin-top: -2567px;
-   height: 2567px;
+   }}
+
+
+.develo-eco___decor22 {
+   margin-left: -5px;
+   border-radius: 5px;
+margin-top: -3550px;
+   height: 3550px;
    width: 2px;
    border: 2px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -432,19 +495,21 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    .develo-eco__content:focus & {
       border: 2px solid $primary-text-color;
  }
-   @media screen and (min-width: 360px) {
-   margin-top: -2533px;
-   height: 2533px;
-}
+//    @media screen and (min-width: 360px) {
+//    margin-top: -2533px;
+//    height: 2533px;
+// }
       @media screen and (min-width: 1200px) {
-   margin-top: -1070px;
-   height: 1070px;
-  
+   margin-top: -1350px;
+   height: 1350px;
+margin-left: -10px;
 }}
 
-.develo-eco___decor23 {border-radius: 5px;
-   margin-top: -2567px;
-      width: 30px;
+.develo-eco___decor23 {
+   margin-left: -5px;
+   border-radius: 5px;
+   margin-top: -3550px;
+      width: 5px;
       border: 2px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -452,20 +517,20 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    .develo-eco__content:focus & {
       border: 2px solid $primary-text-color;
  }
-   @media screen and (min-width: 360px) {
-   margin-top: -2533px;
-}
+//    @media screen and (min-width: 360px) {
+//    margin-top: -2533px;
+// }
    @media screen and (min-width: 1200px) {
-   margin-top: -1070px;
-   width: 375px;
-  
+   margin-top: -1350px;
+   width: 270px;
+margin-left: -10px;
 }}
 
 .develo-eco___decor24 {
          @media screen and (min-width: 1200px) {border-radius: 5px;
-   margin-left: 375px;
-   margin-top: -578px;
-   height: 578px;
+   margin-left: 260px;
+   margin-top: -785px;
+   height: 785px;
    width: 2px;
    border: 2px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -478,9 +543,9 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 
 .develo-eco___decor25 {border-radius: 5px;
          @media screen and (min-width: 1200px) {
-   margin-left: 375px;
-   margin-top: -578px;
-   width: 115px;
+   margin-left: 260px;
+   margin-top: -785px;
+   width: 145px;
    border: 2px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);

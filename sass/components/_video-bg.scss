@@ -6,6 +6,8 @@ position: relative;
 padding: 0;
 margin-left: auto;
 margin-right: auto;
+// margin-top: 25px;
+padding-top: 50px;
    // overflow:hidden;
    justify-content: center;
    align-items: center;
@@ -17,8 +19,8 @@ margin-right: auto;
 
 
 @media screen and (min-width: 1200px) {
-
-        max-width: 1600px;
+object-fit:contain;
+max-width: 1600px;
  overflow: hidden;
 padding: 0;
 // margin-bottom: 250px;
@@ -32,10 +34,11 @@ padding: 0;
    margin-bottom: 1650px;
 position: fixed;
    width: 100%;
-   object-fit: cover;
+  
    z-index: -1;
    @media screen and (min-width: 1200px) {
    position:absolute;
+
 // padding-top: 100px;
       // width: 1200px;
          // height: 2000px;

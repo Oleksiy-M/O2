@@ -1,23 +1,26 @@
 // < !-- industry -->
 
 .discl{
-z-index: 2;
+z-index: 1;
    display: block;
    // height: 950px; 
       //  padding-bottom:50px ;
    margin: 0;
    // background-size:contain;
+// margin-top: 50px;
+
    background-position: center;
 
    background-attachment: scroll;
       background-image:
-            linear-gradient(rgba(9, 0, 87, 0.716),
-               rgba(0, 0, 0, 0.819));
+            linear-gradient(rgba(6, 1, 55, 0.897),
+               rgba(0, 0, 0, 0.803));
   
          // url("../img/bg-discl/bg-mobil.jpg")
 
    @media screen and (min-width: 1200px) {
-
+padding-top: 100px;
+// padding-bottom: 20px;
       display: flexbox;
     justify-content: center;
       max-width: 1600px;
@@ -32,12 +35,12 @@ z-index: 2;
 
 
 .discl-hero{
-padding-top: 100px;
-padding-bottom: 50px;    
+padding-top: 50px;
+padding-bottom: 80px;    
  @media screen and (min-width: 1200px) {
    margin: 0;
-   padding-top: 200px;
-   padding-bottom: 110px;
+   padding-top: 0px;
+   padding-bottom: 50px;
    // width: 900px;
    }
 }
@@ -115,12 +118,12 @@ letter-spacing: 0.26em;
    display:block;
       margin-bottom: 50px;
       margin-left: 30px;
-      // z-index: 3;
+      z-index: 3;
    // max-width: 390px;
-      
 
       @media screen and (min-width: 1200px) {
          display: flex;
+         margin-bottom: 30px;
    // justify-content: right;
    // max-width: 600px;
       //  margin-bottom: 50px;
@@ -130,8 +133,9 @@ letter-spacing: 0.26em;
    }
 
 .hand-hero {
+   
    // max-width: 430px;
-z-index: 3;
+z-index: 4;
 // padding-right: -5px;
 // border: 5px solid #0000FF;
 // box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.5);
@@ -149,21 +153,21 @@ z-index: 3;
 // }
 
 
-// @media screen and (min-width: 360px) {
-// height: 110px;
-// }
+// @media screen and (min-width: 380px) {
+// height: 115px;
+
 
 @media screen and (min-width: 1200px) {
    // justify-content: right;
-   // height: 220px;
-   width: 545px;
+   // height: 200px;
+   width: 500px;
    // margin-left: 50px;
    }
 }
   
 .impact-title__box {
-   z-index: 3;
-   margin-bottom: 150px;
+   // z-index: 3;
+   margin-bottom: 200px;
    margin-left: auto;
    margin-right: auto;
    text-align: center;
@@ -211,16 +215,16 @@ width: 180px;
 }
 
 .impact-box__end {
-   margin-top: 20px;
-   margin-bottom: 50px;
+   // margin-top: 20px;
+   // margin-bottom: 50px;
    padding: 10px;
    text-align: center;
 // height: 200px;
    @media screen and (min-width: 1200px) {
       margin-left: auto;
       margin-right: auto;
-      margin-top: 150px;
-      margin-bottom: 100px;
+      margin-top: 0px;
+      margin-bottom: 0px;
       // margin-left: 220px;
       // width: 1200px;
       // height: 100px;
