@@ -356,7 +356,7 @@ body {
   padding-bottom: 50px;
   background-position: center;
   background-attachment: scroll;
-  background-image: linear-gradient(rgba(6, 1, 55, 0.897), rgba(0, 0, 0, 0.803));
+  background-image: linear-gradient(rgba(6, 1, 55, 0.897), rgba(0, 0, 0, 0.929));
 }
 @media screen and (min-width: 1200px) {
   .idustry {
@@ -465,6 +465,7 @@ body {
 @media screen and (min-width: 1200px) {
   .hand-hero {
     justify-content: right;
+    margin-right: 0px;
     width: 500px;
   }
 }
@@ -1207,7 +1208,7 @@ body {
 }
 
 .page-footer__list {
-  padding-left: 30px;
+  padding-left: 10px;
 }
 @media screen and (min-width: 1200px) {
   .page-footer__list {
@@ -1395,8 +1396,7 @@ body {
 .develo-eco {
   display: block;
   border-radius: 5px;
-  background-color: transparent;
-  border: 2px solid #33FF99;
+  background: rgba(67, 39, 222, 0.1764705882);
   padding-left: 4px;
   padding-right: 4px;
   padding-top: 50px;
@@ -1404,6 +1404,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .develo-eco {
+    border: 2px solid #33FF99;
     padding-top: 50px;
     display: flexbox;
     padding-bottom: 45px;

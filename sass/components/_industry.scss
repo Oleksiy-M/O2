@@ -15,7 +15,7 @@ z-index: 1;
    background-attachment: scroll;
       background-image:
             linear-gradient(rgba(6, 1, 55, 0.897),
-               rgba(0, 0, 0, 0.803));
+               rgba(0, 0, 0, 0.929));
   
          // url("../img/bg-discl/bg-mobil.jpg")
 
@@ -106,6 +106,7 @@ padding: 5px;
 
    .develo-eco__hand{
    display:block;
+   
       margin-bottom: 100px;
       margin-left: 30px;   
       z-index: 5;
@@ -122,7 +123,7 @@ margin-left: 0px;
    }
 
 .hand-hero {
-   // max-width: 430px;
+
 z-index: 4;
 // border-left: 5px solid $primary-text-color;
    // border-right: 5px solid $svg-color;
@@ -143,6 +144,7 @@ z-index: 4;
 
 @media screen and (min-width: 1200px) {
    justify-content: right;
+   margin-right: 0px;
    // height: 185px;
    width: 500px;
    }
