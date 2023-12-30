@@ -82,6 +82,8 @@ body {
 
 /* =================SITE-NAV  ================= */
 .page__nav {
+  display: flex;
+  align-items: end;
   margin-left: 8%;
   margin-top: 15px;
   z-index: 2;
@@ -118,8 +120,9 @@ body {
 .nav-logo {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .nav-logo {
+    margin-right: 50px;
     text-decoration: none;
     display: flex;
     padding: 0;
@@ -567,6 +570,7 @@ body {
 }
 
 .develo-eco__line {
+  margin-left: -2px;
   margin-top: 195px;
   z-index: 0;
 }
