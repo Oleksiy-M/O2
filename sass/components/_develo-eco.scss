@@ -1,48 +1,45 @@
     // < !--dev-eco-->
 
 .develo-eco {
-
 display: block;
-// justify-content: center;
-
+      border-radius: 5px;
+        background-color: transparent;
+        // box-shadow: 2px 0px 0px 0px #c2e6b026;
+        // box-shadow: 0px 0px 2px 0px #c2e6b026;
+        border: 2px solid $svg-color;
+        padding-left: 4px;
+        padding-right: 4px;
+        padding-top: 50px;
 padding-bottom: 50px;
   @media screen and (min-width: 1200px) {
-display: flex;
-flex-wrap: wrap;
-// width: 1200px;
+    padding-top: 50px;
+display:flexbox;
+padding-bottom: 45px;
 padding-left: 40px;
 padding-right: 40px;
       }
     }
 
 .develo-eco__list {
-
 display: block;
-  // justify-content: right;
-margin-bottom: 150px;
-  // flex-direction:column;
+margin-bottom: 200px;
 @media screen and (min-width: 1200px) {
-    margin-top: -20px;
-    // width: 1120px;  
+    margin-top: -50px;
  }
 }
 
 .develo-eco__content {
 margin-left: 35px;
-
-// margin-right: 5px;
   margin-bottom: 250px;
   position: relative;
-  height: 245px;
-  // width: 220px;
-  // padding: 10px;
+  height: 250px;
     // border-radius: 5px;
     //   background-color: transparent;
     //   box-shadow: 2px 2px 0px 0px #c2e6b026;
     //   box-shadow: 0px 0px 2px 2px #c2e6b026;
     //   border: 1px solid #0ebbe272;
     @media screen and (min-width: 360px) {
-         height: 200px;
+         height: 185px;
       }
 @media screen and (min-width: 1200px) {
     margin-bottom:250px;
@@ -55,71 +52,51 @@ margin-left: 35px;
 }
 
 .laptop-content {
-// margin-bottom: 130px;
-// margin-left: 30px;
 @media screen and (min-width: 1200px) {
-// margin-top: 150px;
 margin-bottom: 0;
 margin-left: 0;
-// width: 435px;
 
  }
  }
 
 .oil-content {
-// margin-left: 30px;
  @media screen and (min-width: 1200px) {
-  // display:flow-root;
-  // flex-direction:row-reverse;
 
 width: 490px;
-// height: 150px;
 margin-left: 600px;
-margin-top: -300px;
+margin-top: -320px;
 
  }
 }
 
 .ocean-content {
-// margin-left: 30px;
-// margin-bottom: 110px;
 @media screen and (min-width: 1200px) {
-  // margin-left: 0px;
-// height: 130px;
 width: 500px;
 margin-top: 150px;
-// margin-bottom: 150px;
+
 margin-left: 495px;
   }
 }
 
-.factory-content {
-// margin-left: 30px;
-      
+.factory-content {  
 @media screen and (min-width: 1200px) {
  margin-left: 395px;
-  // margin-bottom: 150px;
   width: 500px;
  }
 }
 
 .earth-content{
-// margin-left: 30px;
 @media screen and (min-width: 1200px) {
  margin-left: 295px;
  width: 500px;
-//  height: 110px;
-//  margin-bottom: 160px
  }
 }
 
 .man-content {
   margin-bottom: 0px;
-// margin-left: 30px;
  @media screen and (min-width: 1200px) {
  margin-left: 195px;
  width: 500px;
-//  height: 165px;
 margin-bottom: 0px;  
 }
     }

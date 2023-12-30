@@ -2,8 +2,7 @@
 .page-footer {
       display: block;
       padding-top:150px;
-   padding-bottom: 50px;
-      // padding: 5px;
+   padding-bottom: 80px;
 @media screen and (min-width: 360px) {
       padding-top: 320px;
    padding-bottom: 150px;
@@ -27,7 +26,6 @@ align-items:flex-start;
    @media screen and (min-width: 1200px) {
       display: inline-flex;
       margin-bottom: 0px;
-// padding-left: 40px;  
    }
 }
 
@@ -81,7 +79,6 @@ padding-left: 30px;
    margin-bottom: 50px;
    @media screen and (min-width: 1200px) {
       display: block;
-      // justify-content: right;
       margin-left: 40px;
    }
 
