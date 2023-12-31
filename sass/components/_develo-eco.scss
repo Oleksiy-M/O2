@@ -10,23 +10,25 @@ display: block;
      
         padding-left: 4px;
         padding-right: 4px;
-        padding-top: 50px;
-padding-bottom: 50px;
+        padding-top: 260px;
+        padding-bottom: 50px;
   @media screen and (min-width: 1200px) {
-       border: 2px solid $svg-color;
-    padding-top: 50px;
-display:flexbox;
-padding-bottom: 45px;
-padding-left: 40px;
-padding-right: 40px;
+   display:flexbox; 
+   
+   padding-top: 130px;
+   padding-bottom: 45px;
+   padding-left: 40px;
+   padding-right: 40px;
+   border: 2px solid $svg-color;
+   border-top: 0px;
       }
     }
 
 .develo-eco__list {
 display: block;
-margin-bottom: 200px;
+margin-bottom: 100px;
 @media screen and (min-width: 1200px) {
-    margin-top: -50px;
+    // margin-top: -50px;
  }
 }
 
