@@ -1,14 +1,17 @@
 // < !-- Water -->
 
 .hero {
-
+background-color: rgba(3, 3, 109, 0.781);
 padding: 0px;
 display: flex;
+// position: absolute;
 justify-content: center;
+padding-bottom:1010px;
+position: fixed;
+width: 100%;
 }
 
 .hero__link {
-	position: fixed;
 	text-decoration: none;
 	display: block;
 }

@@ -120,11 +120,13 @@ text-shadow: 1px 1px 1px black;
 	font-style: normal;
 	font-size: 12px;
 	text-decoration: none;
-	color: rgb(255, 255, 255);
-	transition: color $animation-card;
+	color:$White-color;
+	fill:$White-color;
 	&:hover,
 	&:focus {
+		transition: $animation-card;
 		color: $Accent;
+		fill: $Accent;
 	}
 	
 	@media screen and (min-width: 1200px) {
@@ -137,5 +139,6 @@ text-shadow: 1px 1px 1px black;
 
 .contacts__icon {
 	margin-right: 10px;
+
 
 }
