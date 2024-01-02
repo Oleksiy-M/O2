@@ -22,12 +22,12 @@ padding: 0;
 .bubble{
    z-index: -1;
    min-width: 270px;
-   margin-top: 0px;
+   margin-top: -20px;
 position: fixed;
    width: 100%;
    @media screen and (min-width: 1200px) {
    position:absolute;
-
+margin-top: 0px;
 }}
 
 

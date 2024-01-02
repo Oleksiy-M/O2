@@ -11,7 +11,7 @@ display: block;
         padding-left: 4px;
         padding-right: 4px;
         padding-top: 260px;
-        padding-bottom: 50px;
+        padding-bottom: 100px;
   @media screen and (min-width: 1200px) {
    display:flexbox; 
    
@@ -26,8 +26,9 @@ display: block;
 
 .develo-eco__list {
 display: block;
-margin-bottom: 100px;
+margin-bottom: 300px;
 @media screen and (min-width: 1200px) {
+  margin-bottom: 100px;
     // margin-top: -50px;
  }
 }
