@@ -1,116 +1,182 @@
 // < !-- Water -->
 
 .hero {
-background-color: rgba(3, 3, 109, 0.781);
-padding: 0px;
-display: flex;
-// position: absolute;
-justify-content: center;
-padding-bottom:1010px;
-position: fixed;
-width: 100%;
-}
+	display: flex;
+		
+	// flex-wrap:wrap;
+	// flex-direction: column;
+	justify-content: center;	
+	// align-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	// padding-top: 120px;
 
-.hero__link {
-	text-decoration: none;
-	display: block;
-}
+			padding-top: 130px;
 
-.hero__thumb {
-	position: relative;
-	overflow: hidden;
-}
-
-.hero__water {
-	z-index: 2;
-margin-top: 100px;
-padding-left: 10px;
-padding-right: 10px;
 	@media screen and (min-width: 650px) {
-		margin-top: 35px;
-	}
-	
-	@media screen and (min-width: 661px){
-		margin-top: 40px;
-	}
-	
-@media screen and (min-width: 1200px) {
-	margin-top: 120px;
-	}	
-
-
+		// display: flex;
+		padding-top: 30px;
+				}
+	@media screen and (min-width: 1200px) {
+		padding-top: 40px;
+				}	
 }
 
-// < !-- Logo -->
+	.hero__water {
+		
+		// display: flex;
+	padding: 0;
+	}
+
+
+.hero_list{
+padding: 0;
+}
+
+
+// .hero__link {
+// 	text-decoration: none;
+// 	display: block;
+// }
+
+// .hero__thumb {
+// 	position: relative;
+// 	overflow: hidden;
+// }
+
+// 	z-index: 2;
+// margin-top: 100px;
+// padding-left: 10px;
+// padding-right: 10px;
+// 	@media screen and (min-width: 650px) {
+// 		margin-top: 35px;
+// 	}
+	
+// 	@media screen and (min-width: 661px){
+// 		margin-top: 40px;
+// 	}
+	
+// @media screen and (min-width: 1200px) {
+// 	margin-top: 120px;
+// 	}	
+
+
+// }
+
+// // < !-- Logo -->
 
 .logo__overlay {
-display: flex;
-justify-content: center;
-// margin-top: 160px;	
-padding: 0px;
-opacity: 0;
-// transform: translateY(50%);
-transition: transform $animation,
-opacity $animation;
+			display: flex;
+	justify-content: center;
+	padding-top: 130px;
+	padding-bottom: 100px;
 
-.hero__link:hover &,
-.hero__link:focus & {
-opacity: 1;
+
+	@media screen and (min-width: 650px) {
+padding-top: 0px;
+padding-bottom: 0px;
+	}
+	@media screen and (min-width: 1200px) {
+		padding: 130px;
+	padding-bottom: 30px;
+	
+	}
+				// margin-top: 250px;
 }
-}	
+// display: flex;
+// justify-content: center;
+// // margin-top: 160px;	
+// padding: 0px;
+// opacity: 0;
+// // transform: translateY(50%);
+// transition: transform $animation,
+// opacity $animation;
+
+// .hero__link:hover &,
+// .hero__link:focus & {
+// opacity: 1;
+// }
+// }	
+
+
+.hero__link {
+	transition: transform $animation,
+		opacity $animation;
+opacity: 0;
+	.hero :hover &,
+	.hero :focus &{
+		opacity: 1;
+	}
+
+}
+
 
 .hero-logo {
 		width: 90px;
 		height: 90px;
-		margin-top: -230px;
+		// margin-top: -230px;
 
 @media screen and (min-width: 650px) {
-	margin-top: -150px;}
+	// margin-top: -150px;
+}
 	
 @media screen and (min-width: 660px) {
-	margin-top: -180px;
+	// margin-top: -180px;
 }
 	@media screen and (min-width: 768px) {
 		width: 110px;
 		height: 110px;
-		margin-top: -190px;
+		// margin-top: -190px;
 	}
 
 	@media screen and (min-width: 1200px) {
 		width: 150px;
 		height: 150px;
-		margin-top: -250px;
+		// margin-top: -250px;
 	}
 }
 
 .oxy-container {
-	margin-top: 300px;
-
-	@media screen and (min-width: 380px) {
-		margin-top: 400px;
-	}
-
-	@media screen and (min-width: 650px){
-		margin-top: 90px;
-	}
-
-	@media screen and (min-width: 660px) {
-		margin-top: 140px;
-	}
-
-	@media screen and (min-width: 1200px) {
-		margin-top: 300px;
-	}
-}
-
-.oxy {
 	display: flex;
 	justify-content: center;
+	padding: 0;
 }
+// 	margin-top: 300px;
+
+// 	@media screen and (min-width: 380px) {
+// 		margin-top: 400px;
+// 	}
+
+// 	@media screen and (min-width: 650px){
+// 		margin-top: 90px;
+// 	}
+
+// 	@media screen and (min-width: 660px) {
+// 		margin-top: 140px;
+// 	}
+
+// 	@media screen and (min-width: 1200px) {
+// 		margin-top: 300px;
+// 	}
+// }
+
+// .oxy {
+// 	display: flex;
+// 	justify-content: center;
+// }
 
 .hero__title {
+	display: flex;
+	justify-content: center;
 	text-align: center;
-}
+margin-top: 30px;
+		@media screen and (min-width: 650px){
+				margin-top: 0px;
+			}
+		@media screen and (min-width: 1200px) {
+				justify-content: right;
+			margin-right: -200px;
+}}
 
 .title {
 	text-shadow: 2px 1px 10px black;
@@ -126,12 +192,8 @@ font-weight: 600;
 font-size: 20px;
 line-height: 1.86;
 letter-spacing: 0.26em;	
-
-		text-align: right;
-		position: fixed;
 		margin-top: 0px;
-		margin-left: 12%;
-		width: 60%;
+
 	}
 
 }

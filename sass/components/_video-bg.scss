@@ -24,7 +24,7 @@ padding: 0;
 .bubble{
    z-index: -1;
    min-width: 270px;
-   margin-top: -20px;
+   margin-top: 10px;
 position: fixed;
    width: 100%;
 
@@ -35,5 +35,9 @@ margin-top: 0px;
 
 }}
 
+.bg-color__video {
+   background-color: $video-color;
 
+
+}
 

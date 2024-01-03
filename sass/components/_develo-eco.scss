@@ -1,9 +1,10 @@
     // < !--dev-eco-->
 
 .develo-eco {
+
 display: block;
       border-radius: 5px;
-      background: #4327de2d;
+      background: $section-color;
         // background-color: transparent;
         // box-shadow: 2px 0px 0px 0px #c2e6b026;
         // box-shadow: 0px 0px 2px 0px #c2e6b026;
@@ -11,15 +12,15 @@ display: block;
         padding-left: 4px;
         padding-right: 4px;
         padding-top: 260px;
-        padding-bottom: 100px;
+        padding-bottom: 400px;
+        
   @media screen and (min-width: 1200px) {
    display:flexbox; 
-   
-   padding-top: 130px;
-   padding-bottom: 45px;
+   padding-top: 0px;
+   padding-bottom: 300px;
    padding-left: 40px;
    padding-right: 40px;
-   border: 2px solid $svg-color;
+  //  border: 1px solid $svg-color;
    border-top: 0px;
       }
     }
@@ -28,8 +29,8 @@ display: block;
 display: block;
 margin-bottom: 300px;
 @media screen and (min-width: 1200px) {
-  margin-bottom: 100px;
-    // margin-top: -50px;
+  padding-top: 150px;
+  margin-bottom: 0px;
  }
 }
 
@@ -69,7 +70,7 @@ margin-left: 0;
 
 width: 490px;
 margin-left: 600px;
-margin-top: -320px;
+margin-top: -400px;
 
  }
 }

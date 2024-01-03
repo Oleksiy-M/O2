@@ -11,13 +11,20 @@
 	<link rel="stylesheet" href="./css/mine.min.css">
 </head>
 
-<body class="page-header">
-<video class="bubble" src="./img/video/bubble.mp4" type="video/mp4" autoplay muted loop></video>
-<!-- Water -->
+
+
+
+<body class="page-header ">
+
+
+<video class="bubble-head" src="./img/video/bubble.mp4" type="video/mp4" autoplay muted loop></video>
+	<div class="bg-color__head">
+
+
 	<!--  PAGE-HEADER -->
 <header>
 
-<nav class="page__nav ">
+<nav class="page__nav container">
 
 <!-- SITE-NAV -->
 <a href="./index.html" class="nav-logo"><svg width="60" height="60" class=""><use href="./img/sprite.svg#logo"></use></svg></a>
@@ -32,67 +39,82 @@
 </nav>
 </header>
 
+
+
 <main class="">
 
 	
-<section class="hero">
+<section class="hero container">
 
-<h1 class="visually-hidden">heading</h1>
+	
+	<!-- Water -->
+	<h1 class="visually-hidden">heading</h1>
 
-<a class="hero__link link" href="./index.html">
-<ul class="hero__thumb list">
-
-	<li class="hero__water">
-		<picture >
+	<ul class="hero_list list">
+<li class="hero__water">
+	<picture >
 		<source srcset="./img/water/water.webp 1x, ./img/water/water@2x.webp 2x"  media="(min-width: 1200px)" type="img/webp">
 		<source srcset="./img/water/water.png 1x, ./img/water/water@2x.png 2x" media="(min-width: 1200px)">		
-
+		
 		<source srcset="./img/water/water-tablet.webp 1x, ./img/water/water-tablet@2x.webp 2x" media="(min-width: 768px)" type="img/webp">
 		<source srcset="./img/water/water-tablet.png 1x, ./img/water/water-tablet@2x.png 2x" media="(min-width: 768px)">
-
+		
 		<source srcset="./img/water/water-mobil.webp 1x, ./img/water/water-mobil@2x.webp 2x" media="(max-width: 767px)" type="img/webp">
 		<source srcset="./img/water/water-mobil.png 1x, ./img/water/water-mobil@2x.png 2x" media="(max-width: 767px)">
-
+		
 		<img src="./img/water/water.png" alt="the word water from water">
-		</picture>
+	</picture>
+</li>
+
+
+
+		<!-- Logo -->
+<li class="logo__overlay">
+		<a class="hero__link link" href="./index.html">
+				<svg class="hero-logo">
+					<use href="./img/sprite.svg#logo"></use>
+				</svg>
+			</a>
+</li>
+
+
 
 		<!-- Oxy -->
-			<ul class="oxy-container list">
+<li class="oxy-container ">
+			
+				<picture>
+					<source srcset="./img/oxy/oxygen.webp 1x, ./img/oxy/oxygen@2x.webp 2x" media="(min-width: 1200px)" type="png/webp">
+					<source srcset="./img/oxy/oxygen.png 1x, ./img/oxy/oxygen@2x.png 2x" media="(min-width: 1200px)">
+					
+					<source srcset="./img/oxy/oxy-tablet.webp 1x, ./img/oxy/oxy-tablet@2x.webp 2x" media="(min-width: 768px)" type="png/webp">
+					<source srcset="./img/oxy/oxy-tablet.png 1x, ./img/oxy/oxy-tablet@2x.png 2x" media="(min-width: 768px)">
+					
+					<source srcset="./img/oxy/oxy-mobil.webp 1x, ./img/oxy/oxy-mobil@2x.webp 2x" media="(max-width: 767px)" type="png/webp">
+					<source srcset="./img/oxy/oxy-mobil.png 1x, ./img/oxy/oxy-mobil@2x.png 2x" media="(max-width: 767px)">
+					<img src="./img/oxy/oxygen.png" alt="word oxygen">
+				</picture>
+		
+			
+</li>	
 
-				<li class="oxy">
-					<picture>
-						<source srcset="./img/oxy/oxygen.webp 1x, ./img/oxy/oxygen@2x.webp 2x" media="(min-width: 1200px)" type="png/webp">
-						<source srcset="./img/oxy/oxygen.png 1x, ./img/oxy/oxygen@2x.png 2x" media="(min-width: 1200px)">
-
-						<source srcset="./img/oxy/oxy-tablet.webp 1x, ./img/oxy/oxy-tablet@2x.webp 2x" media="(min-width: 768px)" type="png/webp">
-						<source srcset="./img/oxy/oxy-tablet.png 1x, ./img/oxy/oxy-tablet@2x.png 2x" media="(min-width: 768px)">
-
-						<source srcset="./img/oxy/oxy-mobil.webp 1x, ./img/oxy/oxy-mobil@2x.webp 2x" media="(max-width: 767px)" type="png/webp">
-						<source srcset="./img/oxy/oxy-mobil.png 1x, ./img/oxy/oxy-mobil@2x.png 2x" media="(max-width: 767px)">
-						<img src="./img/oxy/oxygen.png" alt="word oxygen">
-					</picture>
-				</li>
-				<li class="hero__title"><h2 class="title">Water enriched with oxygen No.1</h2></li>
-
-			</ul>	
-
-	</li>
-
-	<!-- Logo -->
-	<li class="logo__overlay">
-		<svg class="hero-logo">
-			<use href="./img/sprite.svg#logo"></use>
-		</svg>
-	</li>
+<li class="hero__title"><h2 class="title">Water enriched with oxygen No.1</h2></li>
 </ul>
-</a>
-
-
-
 
 </section>
 
+	<div class="hero__thumb list">
+	</div>
+		
+		
+		
+
+
+
+
+
+
 </main>
+</div>
 
 
 </body>
