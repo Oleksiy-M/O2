@@ -1,4 +1,5 @@
 .develo-eco__svg {
+fill: #2965c0;
 display: block;
 margin-left:auto;
 margin-right:auto;
@@ -6,7 +7,15 @@ transition: transform $animation-card, opacity $animation-card;
    .develo-eco__list:hover &,
    .develo-eco__list:focus & {
    transform: translateY(-180%);
-   }}
+
+   }
+
+   .develo-eco__content:focus &,
+   .develo-eco__content:hover & {
+         fill: $svg-color;
+   }
+
+}
 
 .cards__overlay {
    display: block;

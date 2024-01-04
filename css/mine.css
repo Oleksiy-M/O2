@@ -71,7 +71,7 @@ body {
 }
 
 .bg-color__head {
-  background-color: rgba(1, 1, 125, 0.495);
+  background-color: rgba(1, 1, 98, 0.703);
   height: 935px;
 }
 @media screen and (min-width: 768px) {
@@ -671,7 +671,7 @@ body {
 @media screen and (min-width: 1200px) {
   .develo-eco___decor3 {
     margin-top: -402px;
-    width: 200px;
+    width: 205px;
     margin-left: 435px;
   }
 }
@@ -1196,7 +1196,7 @@ body {
   display: block;
   padding-top: 150px;
   padding-bottom: 80px;
-  background-color: rgba(1, 1, 125, 0.495);
+  background-color: rgba(1, 1, 98, 0.703);
 }
 @media screen and (min-width: 360px) {
   .page-footer {
@@ -1425,7 +1425,7 @@ body {
   .develo-eco {
     display: flexbox;
     padding-top: 0px;
-    padding-bottom: 300px;
+    padding-bottom: 330px;
     padding-left: 40px;
     padding-right: 40px;
     border-top: 0px;
@@ -1512,6 +1512,7 @@ body {
 }
 
 .develo-eco__svg {
+  fill: #2965c0;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1519,6 +1520,9 @@ body {
 }
 .develo-eco__list:hover .develo-eco__svg, .develo-eco__list:focus .develo-eco__svg {
   transform: translateY(-180%);
+}
+.develo-eco__content:focus .develo-eco__svg, .develo-eco__content:hover .develo-eco__svg {
+  fill: #33FF99;
 }
 
 .cards__overlay {
@@ -1589,7 +1593,7 @@ body {
 .bubble {
   z-index: -1;
   min-width: 270px;
-  margin-top: 10px;
+  margin-top: 30px;
   position: fixed;
   width: 100%;
 }
@@ -1601,7 +1605,7 @@ body {
 }
 
 .bg-color__video {
-  background-color: rgba(1, 1, 125, 0.495);
+  background-color: rgba(1, 1, 98, 0.703);
 }
 
 .history-page {
