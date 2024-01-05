@@ -100,8 +100,7 @@ padding-bottom: 0px;
 
 
 .hero__link {
-	transition: transform $animation,
-		opacity $animation;
+	transition:opacity $animation-logo;
 opacity: 0;
 	.hero :hover &,
 	.hero :focus &{

@@ -44,6 +44,8 @@ padding-top: 80px;
 }
 
 .idustry-hero{
+      margin-left: 35px;
+      margin-right: 35px;   
 padding-bottom: 80px;    
  @media screen and (min-width: 1200px) {
    width: 1170px;
@@ -89,21 +91,23 @@ letter-spacing: 0.26em;
 }
 
 .develo-eco__title {
-   transition: transform $animation-card, opacity $animation-card;
+   transition:  border $animation-card;
+   transition-property: font-size;
    font-weight: 300;
    font-size: 11px;
    line-height: 1.86;
    letter-spacing: 0.26em;
 padding: 5px;
-   &:hover,
-   &:focus {
+
+   .section-hero:hover &,
+   .section-hero:focus &{
       font-size: 12px;
       border-radius: 15px;
-   transition: transform $animation-card, opacity $animation-card;
-      background-color: transparent;
+
+      // background-color: transparent;
       box-shadow: 2px 2px 0px 0px #c2e6b026;
       box-shadow: 0px 0px 2px 2px #c2e6b026;
-      border: 1px solid #0ee21572;
+      border: 1px solid #0e4ae272;
    }
 
    @media screen and (min-width: 1200px) {
@@ -112,8 +116,8 @@ padding: 5px;
       line-height: 1.86;
       letter-spacing: 0.26em;
 
-      &:hover,
-      &:focus {
+   .section-hero:hover &,
+      .section-hero:focus &{
          font-size: 17px;
       }
    }
@@ -182,16 +186,19 @@ z-index: 4;
    font-size: 11px;
    line-height: 1.86;
    letter-spacing: 0.26em;
-transition: transform $animation;
-   &:hover,
-   &:focus {
+   
+   transition: border $animation-card;
+      transition-property: font-size;
+
+.section-hero:hover &,
+.section-hero:focus &{
       font-size: 12px;
       border-radius: 15px;
-   transition: transform $animation;
-      background-color: transparent;
+   // transition: transform $animation;
+      // background-color: transparent;
       box-shadow: 2px 2px 0px 0px #c2e6b026;
       box-shadow: 0px 0px 2px 2px #c2e6b026;
-      border: 1px solid #0ee21572;
+      border: 1px solid #0e4ae272;
    }
 
    @media screen and (min-width: 1200px) {
@@ -200,8 +207,8 @@ transition: transform $animation;
       line-height: 1.86;
       letter-spacing: 0.26em;
 
-      &:hover,
-      &:focus {
+.section-hero:hover &,
+   .section-hero:focus &{
          font-size: 17px;
       }
    }

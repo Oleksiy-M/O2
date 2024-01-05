@@ -4,7 +4,8 @@ fill: #3fa9f5;
 display: block;
 margin-left:auto;
 margin-right:auto;
-transition: transform $animation-card, opacity $animation-card;
+// transition: transform $animation-card, opacity $animation-card;
+transition: fill $animation-card,transform $animation-card;
    .develo-eco__list:hover &,
    .develo-eco__list:focus & {
    transform: translateY(-180%);
@@ -13,6 +14,7 @@ transition: transform $animation-card, opacity $animation-card;
 
    .develo-eco__content:focus &,
    .develo-eco__content:hover & {
+
          fill: $svg-color;
    }
 
@@ -28,16 +30,16 @@ transition: transform $animation-card, opacity $animation-card;
 color: black;
 transform: translateY(10%);
 // transition: transform $animation-card, opacity $animation-card;
+transition: color $animation-card, $animation-card, opacity $animation-card;
+
 top: 0;
 left: 0;
 width: 100%;
 height: 100%;
 .develo-eco__list:hover &,
 .develo-eco__list:focus & {
-transition: transform $animation-card, opacity $animation-card;
       transform: translateY(0);
       opacity: 1;
-      // transition: color $animation-card;
          border-radius: 20px;
             background-color: transparent;
             // box-shadow: 2px 2px 0px 0px #c2e6b026;
@@ -59,8 +61,7 @@ transition: transform $animation-card, opacity $animation-card;
 
 .develo-eco__content:hover &,
 .develo-eco__content:focus & {
-   transition: transform $animation-card, opacity $animation-card;
-   transition: color $animation-card;
+   transition: color $animation;
    color:rgb(0, 255, 140);
    // background-color: rgba(207, 149, 23, 0.553);
 }

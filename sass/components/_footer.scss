@@ -50,7 +50,7 @@ padding-left: 10px;
    font-size: 12px;
  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
-   transition: color $animation-card;
+   transition: color $animation;
 
    &:hover,
    &:focus {
@@ -124,7 +124,7 @@ justify-content: center;
    height: 44px;
    background: rgba(255, 255, 255, 0.1);
    border-radius: 50%;
-   transition: background-color $animation-card;
+   transition: background-color $animation;
 
    &:hover,
    &:focus {
@@ -226,6 +226,7 @@ width: 230px;
    letter-spacing: 0.06em;
    color: $White-color;
    transition: transform $animation;
+      // animation-name: background-color;
 }
 
 .button__icon {

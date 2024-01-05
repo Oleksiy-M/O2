@@ -91,7 +91,7 @@ text-shadow: 1px 1px 1px black;
 .site-nav__link {
 	text-decoration: none;
 	color: $White-color;
-	transition: color $animation-card;
+	transition: color $animation;
 	&:hover,
 	&:focus {
 		color: $Accent;
@@ -124,14 +124,14 @@ text-shadow: 1px 1px 1px black;
 	fill:$White-color;
 	&:hover,
 	&:focus {
-		transition: $animation-card;
+		transition: $animation;
 		color: $Accent;
 		fill: $Accent;
 	}
 	
 	@media screen and (min-width: 1200px) {
 	
-		font-size: 16px;
+		font-size: 14px;
 		line-height: 1.71;
 	
 	}
