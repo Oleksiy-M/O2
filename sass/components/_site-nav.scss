@@ -4,20 +4,18 @@
 			// background-color: rgb(3, 18, 78);
 			justify-content:start;
 			align-items: end;
-			padding-top: 15px;
-			padding-bottom: 10px;
+			padding: 15px 0;
+			// padding-top: 10px;
+			// padding-bottom: 10px;
 			width: 100%;
 			position: fixed;
-			z-index: 4;
 		
 			@media screen and (min-width: 1200px) {
 				display: flexbox;
 				position: static;
 				max-width: 1600px;
-				padding-top: 10px;
-				padding-left: 50px;
-				// background-color: $bg-color;
-				// background-color: #07116b;	
+		
+
 			}
 }
 
@@ -25,18 +23,22 @@
 	display: flex;
 	background-color: $bg-color;
 	justify-content: space-between;
-	align-items:end;
-	padding-top: 15px;
-	padding-bottom: 10px;
+	align-items: end;
+	// align-self:first baseline;
+
+	padding: 15px 0 10px 0;
+	// padding-top: 15px;
+	// padding-bottom: 10px;
 	width: 100%;
 	position: fixed;
-	z-index: 4;
-
+	z-index: 2;
+	
 	@media screen and (min-width: 1200px) {
 		display: flexbox;
+	
 		position: static;
 	max-width: 1600px;
-	padding-top: 10px;	
+	// padding-top: 10px;	
 
 	}
 }
@@ -44,24 +46,23 @@
 .nav-logo{
 	display: none;
 @media screen and (min-width: 1200px) {
+display: block;
+height: 60px;
+margin: 0;
 	margin-right: 50px;
-	text-decoration: none;
-	display: flex;
 	padding: 0;
-	
 			}
 
 }
 
 .site-nav {
-text-shadow: 1px 1px 1px black;
-	align-items:baseline;
 	display: flex;
 	margin-right: 20%;
 	font-weight: 400;
-	font-size: 12px;
+	font-size: 10px;
 	line-height: 1.94;
 	letter-spacing: 0.03em;
+	text-shadow: 1px 1px 1px black;
 	@media screen and (min-width: 768px){
 	
 		font-weight: 400;
@@ -72,7 +73,7 @@ text-shadow: 1px 1px 1px black;
 		
 @media screen and (min-width: 1200px) {
 		font-weight: 500;
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 1.94;
 		letter-spacing: 0.03em;
 	}
@@ -80,6 +81,7 @@ text-shadow: 1px 1px 1px black;
 
 
 .site-nav__item {
+	
 	margin-right: 15px;
 	@media screen and (min-width: 768px) {
 	margin-right: 50px;
@@ -89,6 +91,7 @@ text-shadow: 1px 1px 1px black;
 
 
 .site-nav__link {
+	
 	text-decoration: none;
 	color: $White-color;
 	transition: color $animation;
@@ -106,7 +109,7 @@ text-shadow: 1px 1px 1px black;
 .contact__list{
 	display: none;
 	@media screen and (min-width: 1200px) {
-		display: flex;
+		display: flex; 
 		}
 }
 
@@ -115,7 +118,6 @@ text-shadow: 1px 1px 1px black;
 }
 
 .page__contacts{
-	
 	margin-right: 20px;
 	font-style: normal;
 	font-size: 12px;

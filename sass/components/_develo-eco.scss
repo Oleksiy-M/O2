@@ -16,10 +16,11 @@ display: block;
         
   @media screen and (min-width: 1200px) {
    display:flexbox; 
-   padding-top: 0px;
-   padding-bottom: 330px;
-   padding-left: 40px;
-   padding-right: 40px;
+  //  padding-top: 0px;
+  //  padding-bottom: 330px;
+  //  padding-left: 40px;
+  //  padding-right: 40px;
+   padding: 0px 40px 330px 40px;
   //  border: 1px solid $svg-color;
    border-top: 0px;
       }
@@ -69,8 +70,8 @@ margin-left: 0;
  @media screen and (min-width: 1200px) {
 
 width: 490px;
-margin-left: 600px;
 margin-top: -400px;
+margin-left: 600px;
 
  }
 }
@@ -79,7 +80,6 @@ margin-top: -400px;
 @media screen and (min-width: 1200px) {
 width: 500px;
 margin-top: 150px;
-
 margin-left: 495px;
   }
 }

@@ -3,9 +3,10 @@
 display:block;
 position: relative;
 padding: 0;
-margin-left: auto;
-margin-right: auto;
-margin-top: 0px;
+margin: 0 auto 0 auto;
+// margin-left: auto;
+// margin-right: auto;
+// margin-top: 0px;
    overflow:hidden;
    justify-content: center;
    
@@ -28,13 +29,11 @@ margin-top: 0px;
    
           @media screen and (min-width: 1200px) {
              position: absolute;
-            //  margin-top: 0px;
    margin-top: -200px;
           }
          }
 
 .bg-color__head {
-   // background-color: rgba(3, 3, 109, 0.781);
    background-color: $video-color;
    height: 935px;
 
