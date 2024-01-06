@@ -373,7 +373,7 @@ body {
   justify-content: space-between;
   padding-top: 100px;
   margin-bottom: 40px;
-  background: rgba(7, 1, 44, 0.8156862745);
+  background: rgba(24, 24, 56, 0.8431372549);
   border-radius: 5px;
 }
 @media screen and (min-width: 1200px) {
@@ -1638,7 +1638,7 @@ body {
 .develo-eco {
   display: block;
   border-radius: 5px;
-  background: rgba(7, 1, 44, 0.8156862745);
+  background: rgba(24, 24, 56, 0.8431372549);
   padding-left: 4px;
   padding-right: 4px;
   padding-top: 260px;
