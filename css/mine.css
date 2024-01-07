@@ -115,16 +115,18 @@ body {
   }
 }
 
-.page__header {
-  background-color: #202045;
-  display: flex;
+.pg-header {
+  display: block;
   justify-content: center;
-  width: 100%;
-  z-index: 2;
   position: fixed;
+  width: 100%;
+  padding: 15px 0 10px 0;
+  z-index: 2;
+  background-color: #202045;
 }
 @media screen and (min-width: 1200px) {
-  .page__header {
+  .pg-header {
+    padding: 15px 0 15px 0;
     position: static;
   }
 }
@@ -133,14 +135,10 @@ body {
   display: flex;
   justify-self: start;
   align-items: end;
-  padding: 0 15px;
-  padding: 15px 0 10px 0;
   width: 100%;
-  z-index: 2;
 }
 @media screen and (min-width: 1200px) {
   .bg-nav {
-    display: flex;
     justify-content: space-between;
     position: static;
     max-width: 1600px;

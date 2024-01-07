@@ -20,43 +20,34 @@
 }
 
 
-.page__header{
-	background-color: $bg-color;
-	display: flex;
+.pg-header{
+	display: block;
 	justify-content: center;
-	// height: 40px;
-	width: 100%;
-	// margin-left: auto;
-	// 	margin-right: auto;
-	z-index: 2;
+	
 	position: fixed;
-		@media screen and (min-width: 1200px) {
+	width: 100%;
+	padding: 15px 0 10px 0;
+	z-index: 2;
+	background-color: $bg-color;
+	@media screen and (min-width: 1200px) {
+			padding: 15px 0 15px 0;
 position: static;
 		}
 }
 
 .bg-nav{
-	
-	display: flex;
+display: flex;
 	justify-self: start;
 	align-items: end;
-	padding: 0 15px;
-	
-	// align-self:first baseline;
-
-	padding: 15px 0 10px 0;
-	// padding-top: 15px;
-	// padding-bottom: 10px;
+	// justify-content: baseline;
 	width: 100%;
 	
-	z-index: 2;
-	
 	@media screen and (min-width: 1200px) {
-		display: flex;
+		
 		justify-content: space-between;
 		position: static;
 	max-width: 1600px;
-	// padding-top: 10px;	
+
 
 	}
 }
