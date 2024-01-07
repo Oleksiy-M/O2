@@ -3,7 +3,7 @@
 .develo-eco__line {
    margin-left: -1px;
 margin-top: 195px;
-z-index: 0;
+z-index: 1;
 
    @media screen and (min-width: 360px) {
    margin-top: 130px;
@@ -62,8 +62,8 @@ transition: border $animation;
       border: 1px solid $primary-text-color;
    }
 @media screen and (min-width: 360px) {
-margin-top: -568px;
-   height: 568px;
+margin-top: -564px;
+   height: 564px;
 }
 
 @media screen and (min-width: 768px) {
@@ -75,9 +75,9 @@ margin-top: -568px;
 }
 @media screen and (min-width: 1200px) {
    // margin-top: -402px;
-   height: 402px;
+   height: 412px;
    // margin-left: 435px;
-   margin: -402px 0 0 435px;
+   margin: -412px 0 0 435px;
 }
 }
 
@@ -96,7 +96,7 @@ margin-top: -568px;
             border: 1px solid $primary-text-color;
             }   
 @media screen and (min-width: 360px) {
-   margin-top: -568px;
+   margin-top: -564px;
 }
 @media screen and (min-width: 768px) {
      border: 2px solid $line-color;
@@ -110,7 +110,7 @@ margin-top: -568px;
       // margin-top: -402px;
       width: 205px;
       // margin-left: 435px;
-         margin: -402px 0 0 435px;
+         margin: -412px 0 0 435px;
    }
 
 }
@@ -158,8 +158,8 @@ border-radius: 5px;
          border: 1px solid $primary-text-color;
 }
 @media screen and (min-width: 360px) {
-   margin-top: -1006px;
-   height: 1006px;
+   margin-top: -1002px;
+   height: 1002px;
 }
 @media screen and (min-width: 768px) {
      border: 2px solid $line-color;
@@ -169,9 +169,9 @@ border-radius: 5px;
    } 
 }
    @media screen and (min-width: 1200px) {
-   margin-top: -811px;
+   margin-top: -821px;
    margin-left: 445px;
-   height: 811px;
+   height: 821px;
    
 }}
 
@@ -189,7 +189,7 @@ border-radius: 5px;
       border: 1px solid $primary-text-color;
    }
    @media screen and (min-width: 360px) {
-margin-top: -1006px;
+margin-top: -1002px;
 
 }
 
@@ -201,7 +201,7 @@ margin-top: -1006px;
    } 
 }
    @media screen and (min-width: 1200px) {
-   margin-top: -811px;
+   margin-top: -821px;
    width: 195px;
    
    margin-left: 445px;
@@ -251,8 +251,8 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
       border: 1px solid $primary-text-color;
    }
    @media screen and (min-width: 360px) {
-   margin-top: -1444px;
-   height: 1444px;
+   margin-top: -1440px;
+   height: 1440px;
 }
 
 @media screen and (min-width: 768px) {
@@ -263,8 +263,8 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    } 
 }
    @media screen and (min-width: 1200px) {
-   margin-top: -586px;
-   height: 586px;
+   margin-top: -596px;
+   height: 596px;
       margin-left: -105px;
 
 }}
@@ -283,7 +283,7 @@ width: 25px;
       border: 1px solid $primary-text-color;
    }
    @media screen and (min-width: 360px) {
-   margin-top: -1444px;
+   margin-top: -1440px;
 }
 
 @media screen and (min-width: 768px) {
@@ -294,7 +294,7 @@ width: 25px;
    } 
 }
    @media screen and (min-width: 1200px) {
-   margin-top: -586px;
+   margin-top: -596px;
    width: 170px;
    margin-left: 0px;
    margin-left: -105px;
@@ -343,8 +343,8 @@ width: 25px;
       border: 1px solid $primary-text-color;
    }
    @media screen and (min-width: 360px) {
-   margin-top: -1882px;
-   height: 1882px;
+   margin-top: -1878px;
+   height: 1878px;
 }
 
 @media screen and (min-width: 768px) {
@@ -355,8 +355,8 @@ width: 25px;
    } 
 }
    @media screen and (min-width: 1200px) {
-   margin-top: -987px;
-   height: 987px;
+   margin-top: -997px;
+   height: 997px;
    margin-left: -10px;
 }}
 
@@ -374,7 +374,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
       border: 1px solid $primary-text-color;
    }
 @media screen and (min-width: 360px) {
-   margin-top: -1882px;
+   margin-top: -1878px;
 }
 
 @media screen and (min-width: 768px) {
@@ -385,7 +385,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    } 
 }
    @media screen and (min-width: 1200px) {
-   margin-top: -987px;
+   margin-top: -997px;
    width: 180px;
    margin-left: -10px;
 }}
@@ -435,8 +435,8 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
       border: 1px solid $primary-text-color;
    }
   @media screen and (min-width: 360px) {
-     margin-top: -2320px;
-     height: 2320px;
+     margin-top: -2316px;
+     height: 2316px;
   }
   
   @media screen and (min-width: 768px) {
@@ -448,8 +448,8 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 }
   
    @media screen and (min-width: 1200px) {
-   margin-top: -458px;
-   height: 458px;
+   margin-top: -468px;
+   height: 468px;
    margin-left: -10px;
 }}
 
@@ -467,7 +467,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
       border: 1px solid $primary-text-color;
    }
   @media screen and (min-width: 360px) {
-     margin-top: -2320px;
+     margin-top: -2316px;
   }
  
   @media screen and (min-width: 768px) {
@@ -479,7 +479,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 }
   
    @media screen and (min-width: 1200px) {
-   margin-top: -458px;
+   margin-top: -468px;
    width: 90px;
    margin-left: -10px;
 }}
@@ -501,8 +501,8 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 }
 @media screen and (min-width: 1200px) {
       margin-left: 80px;
-   margin-top: -933px;
-   height: 933px;
+   margin-top: -933.5px;
+   height: 937.5px;
 }
 }
 
@@ -522,7 +522,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 }
 @media screen and (min-width: 1200px) {
       margin-left: 80px;
-   margin-top: -933px;
+   margin-top: -937.5px;
    width: 180px;
 }
 }
@@ -572,8 +572,8 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
       border: 1px solid $primary-text-color;
    }
 @media screen and (min-width: 360px) {
-   margin-top: -2758px;
-   height: 2758px;
+   margin-top: -2754px;
+   height: 2754px;
 }
  @media screen and (min-width: 768px) {
      border: 2px solid $line-color;
@@ -584,8 +584,8 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
      }
   }
    @media screen and (min-width: 1200px) {
-   margin-top: -893px;
-   height: 893px;
+   margin-top: -903px;
+   height: 903px;
    margin-left: -10px;
 }}
 
@@ -603,7 +603,7 @@ width: 10.5px;
       border: 1px solid $primary-text-color;
    }
   @media screen and (min-width: 360px) {
-     margin-top: -2758px;
+     margin-top: -2754px;
   }
   @media screen and (min-width: 768px) {
      border: 2px solid $line-color;
@@ -614,7 +614,7 @@ width: 10.5px;
      }
   }
       @media screen and (min-width: 1200px) {
-   margin-top: -893px;
+   margin-top: -903px;
    width: 180px;
 margin-left: -10px;
 }}
@@ -635,8 +635,8 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 }
 @media screen and (min-width: 1200px) {
       margin-left: 170px;
-   margin-top: -899px;
-   height: 899px;
+   margin-top: -899.5px;
+   height: 899.5px;
 }
 }
 
@@ -655,7 +655,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 }
 @media screen and (min-width: 1200px) {
       margin-left: 170px;
-   margin-top: -899px;
+   margin-top: -899.5px;
    width: 190px;
 }
 }
@@ -708,8 +708,8 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
       border: 1px solid $primary-text-color;
  }
    @media screen and (min-width: 360px) {
-   margin-top: -3196px;
-   height: 3196px;
+   margin-top: -3192px;
+   height: 3192px;
 }
 
   @media screen and (min-width: 768px) {
@@ -722,8 +722,8 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    }
 
       @media screen and (min-width: 1200px) {
-   margin-top: -1328px;
-   height: 1328px;
+   margin-top: -1338px;
+   height: 1338px;
 margin-left: -10px;
 }}
 
@@ -741,7 +741,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
       border: 1px solid $primary-text-color;
  }
    @media screen and (min-width: 360px) {
-   margin-top: -3196px;
+   margin-top: -3192px;
 }
 
      border: 2px solid $line-color;
@@ -751,7 +751,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
         border: 2px solid $primary-text-color;
      }
    @media screen and (min-width: 1200px) {
-   margin-top: -1328px;
+   margin-top: -1338px;
    width: 270px;
 margin-left: -10px;
 }}
@@ -774,8 +774,8 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 }
 @media screen and (min-width: 1200px) {
  margin-left: 260px;
-   margin-top: -865px;
-   height: 865px;
+   margin-top: -865.5px;
+   height: 865.5px;
 
 }
 }
@@ -796,7 +796,7 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 }
  @media screen and (min-width: 1200px) {
   margin-left: 260px;
-   margin-top: -865px;
+   margin-top: -865.5px;
    width: 190px;
 }
 }
