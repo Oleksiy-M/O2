@@ -22,7 +22,7 @@
 .bg-nav{
 	display: flex;
 	background-color: $bg-color;
-	justify-content: space-between;
+justify-self: start;
 	align-items: end;
 	// align-self:first baseline;
 
@@ -35,7 +35,7 @@
 	
 	@media screen and (min-width: 1200px) {
 		display: flexbox;
-	
+		justify-content: space-between;
 		position: static;
 	max-width: 1600px;
 	// padding-top: 10px;	

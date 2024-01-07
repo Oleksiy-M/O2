@@ -1,110 +1,112 @@
     // < !--dev-eco-->
 
-.develo-eco {
+    .develo-eco {
 
-display: block;
+      display: block;
       border-radius: 5px;
       background: $section-color;
-        // background-color: transparent;
-        // box-shadow: 2px 0px 0px 0px #c2e6b026;
-        // box-shadow: 0px 0px 2px 0px #c2e6b026;
-     
-        padding-left: 4px;
-        padding-right: 4px;
-        padding-top: 260px;
-        padding-bottom: 400px;
-        
-  @media screen and (min-width: 1200px) {
-   display:flexbox; 
-  //  padding-top: 0px;
-  //  padding-bottom: 330px;
-  //  padding-left: 40px;
-  //  padding-right: 40px;
-   padding: 0px 40px 330px 40px;
-  //  border: 1px solid $svg-color;
-   border-top: 0px;
+      // background-color: transparent;
+      // box-shadow: 2px 0px 0px 0px #c2e6b026;
+      // box-shadow: 0px 0px 2px 0px #c2e6b026;
+
+      padding-left: 4px;
+      padding-right: 4px;
+      padding-top: 260px;
+      padding-bottom: 400px;
+
+      @media screen and (min-width: 1200px) {
+        display: flexbox;
+        //  padding-top: 0px;
+        //  padding-bottom: 330px;
+        //  padding-left: 40px;
+        //  padding-right: 40px;
+        padding: 0px 40px 330px 40px;
+        //  border: 1px solid $svg-color;
+        border-top: 0px;
       }
     }
 
-.develo-eco__list {
-display: block;
-margin-bottom: 300px;
-@media screen and (min-width: 1200px) {
-  padding-top: 150px;
-  margin-bottom: 0px;
- }
-}
+    .develo-eco__list {
+      display: block;
+      margin-bottom: 300px;
 
-.develo-eco__content {
-margin-left: 35px;
-  margin-bottom: 250px;
-  position: relative;
-  height: 250px;
-    // border-radius: 5px;
-    //   background-color: transparent;
-    //   box-shadow: 2px 2px 0px 0px #c2e6b026;
-    //   box-shadow: 0px 0px 2px 2px #c2e6b026;
-    //   border: 1px solid #0ebbe272;
-    @media screen and (min-width: 360px) {
-         height: 185px;
+      @media screen and (min-width: 1200px) {
+        padding-top: 150px;
+        margin-bottom: 0px;
       }
-@media screen and (min-width: 1200px) {
-    margin-bottom:250px;
-    margin-left: 0;
-  width: 430px;
-  height: 155px;
-
-   
- }
-}
-
-.laptop-content {
-@media screen and (min-width: 1200px) {
-margin-bottom: 0;
-margin-left: 0;
-
- }
- }
-
-.oil-content {
- @media screen and (min-width: 1200px) {
-
-width: 490px;
-margin-top: -400px;
-margin-left: 600px;
-
- }
-}
-
-.ocean-content {
-@media screen and (min-width: 1200px) {
-width: 500px;
-margin-top: 150px;
-margin-left: 495px;
-  }
-}
-
-.factory-content {  
-@media screen and (min-width: 1200px) {
- margin-left: 395px;
-  width: 500px;
- }
-}
-
-.earth-content{
-@media screen and (min-width: 1200px) {
- margin-left: 295px;
- width: 500px;
- }
-}
-
-.man-content {
-  margin-bottom: 0px;
- @media screen and (min-width: 1200px) {
- margin-left: 195px;
- width: 500px;
-margin-bottom: 0px;  
-}
     }
-    
 
+    .develo-eco__content {
+      margin-left: 35px;
+      margin-bottom: 250px;
+      position: relative;
+      height: 250px;
+
+      // border-radius: 5px;
+      //   background-color: transparent;
+      //   box-shadow: 2px 2px 0px 0px #c2e6b026;
+      //   box-shadow: 0px 0px 2px 2px #c2e6b026;
+      //   border: 1px solid #0ebbe272;
+      @media screen and (min-width: 360px) {
+        height: 185px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 250px;
+        margin-left: 0;
+        width: 430px;
+        height: 155px;
+
+
+      }
+    }
+
+    .laptop-content {
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        margin-left: 0;
+
+      }
+    }
+
+    .oil-content {
+      @media screen and (min-width: 1200px) {
+
+        width: 490px;
+        margin-top: -400px;
+        margin-left: 600px;
+
+      }
+    }
+
+    .ocean-content {
+      @media screen and (min-width: 1200px) {
+        width: 500px;
+        margin-top: 150px;
+        margin-left: 495px;
+      }
+    }
+
+    .factory-content {
+      @media screen and (min-width: 1200px) {
+        margin-left: 395px;
+        width: 500px;
+      }
+    }
+
+    .earth-content {
+      @media screen and (min-width: 1200px) {
+        margin-left: 295px;
+        width: 500px;
+      }
+    }
+
+    .man-content {
+      margin-bottom: 0px;
+
+      @media screen and (min-width: 1200px) {
+        margin-left: 195px;
+        width: 500px;
+        margin-bottom: 0px;
+      }
+    }

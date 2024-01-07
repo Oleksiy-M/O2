@@ -118,7 +118,7 @@ body {
 .bg-nav {
   display: flex;
   background-color: #202045;
-  justify-content: space-between;
+  justify-self: start;
   align-items: end;
   padding: 15px 0 10px 0;
   width: 100%;
@@ -128,6 +128,7 @@ body {
 @media screen and (min-width: 1200px) {
   .bg-nav {
     display: flexbox;
+    justify-content: space-between;
     position: static;
     max-width: 1600px;
   }
@@ -405,21 +406,31 @@ body {
 }
 
 .develo-eco__box {
-  display: block;
+  display: flex;
+  align-items: center;
   margin: 0 15px 50px 15px;
   text-align: center;
   height: 45px;
+  border-radius: 15px;
+  transition-duration: 0.5s;
+}
+.section-hero:hover .develo-eco__box, .section-hero:focus .develo-eco__box {
+  box-shadow: 2px 2px 0px 0px rgba(194, 230, 176, 0.1490196078);
+  box-shadow: 0px 0px 2px 2px rgba(194, 230, 176, 0.1490196078);
+  border: 1px solid rgba(14, 74, 226, 0.4470588235);
 }
 @media screen and (min-width: 1200px) {
   .develo-eco__box {
-    height: 35px;
+    height: 45px;
     margin: 0 0 0 50px;
-    width: 430px;
+    width: 460px;
   }
 }
 
 .develo-eco__title {
-  transition: border 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: auto;
+  margin-right: auto;
+  transition: 600ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: font-size;
   font-weight: 300;
   font-size: 11px;
@@ -429,10 +440,6 @@ body {
 }
 .section-hero:hover .develo-eco__title, .section-hero:focus .develo-eco__title {
   font-size: 12px;
-  border-radius: 15px;
-  box-shadow: 2px 2px 0px 0px rgba(194, 230, 176, 0.1490196078);
-  box-shadow: 0px 0px 2px 2px rgba(194, 230, 176, 0.1490196078);
-  border: 1px solid rgba(14, 74, 226, 0.4470588235);
 }
 @media screen and (min-width: 1200px) {
   .develo-eco__title {
@@ -448,7 +455,7 @@ body {
 
 .develo-eco__hand {
   margin-left: 30px;
-  z-index: 5;
+  z-index: 1;
 }
 @media screen and (min-width: 1200px) {
   .develo-eco__hand {
@@ -457,9 +464,6 @@ body {
   }
 }
 
-.hand-hero {
-  z-index: 4;
-}
 @media screen and (min-width: 1200px) {
   .hand-hero {
     justify-content: right;
@@ -469,39 +473,43 @@ body {
 }
 
 .impact-title__box {
-  z-index: 3;
-  display: flexbox;
+  display: flex;
+  border-radius: 15px;
   text-align: center;
+  align-items: center;
   margin-left: 20px;
   margin-right: 20px;
   height: 45px;
   transform: translateY(135px);
+  transition-duration: 0.5s;
+}
+.impact-title__box:hover, .impact-title__box:focus {
+  box-shadow: 2px 2px 0px 0px rgba(194, 230, 176, 0.1490196078);
+  box-shadow: 0px 0px 2px 2px rgba(194, 230, 176, 0.1490196078);
+  border: 1px solid rgba(14, 74, 226, 0.4470588235);
 }
 @media screen and (min-width: 1200px) {
   .impact-title__box {
     transform: translateY(120px);
-    height: 35px;
+    height: 45px;
     margin-left: 670px;
     width: 390px;
   }
 }
 
 .impact-title {
+  margin-left: auto;
+  margin-right: auto;
   padding: 5px;
-  margin-left: 35px;
   font-weight: 300;
   font-size: 11px;
   line-height: 1.86;
   letter-spacing: 0.26em;
-  transition: border 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 600ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: font-size;
 }
-.section-hero:hover .impact-title, .section-hero:focus .impact-title {
+.impact-title:hover, .impact-title:focus {
   font-size: 12px;
-  border-radius: 15px;
-  box-shadow: 2px 2px 0px 0px rgba(194, 230, 176, 0.1490196078);
-  box-shadow: 0px 0px 2px 2px rgba(194, 230, 176, 0.1490196078);
-  border: 1px solid rgba(14, 74, 226, 0.4470588235);
 }
 @media screen and (min-width: 1200px) {
   .impact-title {
@@ -510,7 +518,7 @@ body {
     line-height: 1.86;
     letter-spacing: 0.26em;
   }
-  .section-hero:hover .impact-title, .section-hero:focus .impact-title {
+  .impact-title:hover, .impact-title:focus {
     font-size: 17px;
   }
 }
@@ -1715,7 +1723,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  transition: fill 800ms cubic-bezier(0.4, 0, 0.2, 1), transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 600ms cubic-bezier(0.4, 0, 0.2, 1), transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .develo-eco__list:hover .develo-eco__svg, .develo-eco__list:focus .develo-eco__svg {
   transform: translateY(-180%);
@@ -1733,7 +1741,7 @@ body {
   opacity: 0;
   color: black;
   transform: translateY(10%);
-  transition: color 800ms cubic-bezier(0.4, 0, 0.2, 1), 800ms cubic-bezier(0.4, 0, 0.2, 1), opacity 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 600ms cubic-bezier(0.4, 0, 0.2, 1), 600ms cubic-bezier(0.4, 0, 0.2, 1), opacity 600ms cubic-bezier(0.4, 0, 0.2, 1);
   top: 0;
   left: 0;
   width: 100%;

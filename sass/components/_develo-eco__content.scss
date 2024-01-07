@@ -1,21 +1,22 @@
 .develo-eco__svg {
-fill: #3fa9f5;
+   fill: #3fa9f5;
 
-display: block;
-margin-left:auto;
-margin-right:auto;
-// transition: transform $animation-card, opacity $animation-card;
-transition: fill $animation-card,transform $animation-card;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   // transition: transform $animation-card, opacity $animation-card;
+   transition: fill $animation-card, transform $animation-card;
+
    .develo-eco__list:hover &,
    .develo-eco__list:focus & {
-   transform: translateY(-180%);
+      transform: translateY(-180%);
 
    }
 
    .develo-eco__content:focus &,
    .develo-eco__content:hover & {
 
-         fill: $svg-color;
+      fill: $svg-color;
    }
 
 }
@@ -27,52 +28,49 @@ transition: fill $animation-card,transform $animation-card;
    overflow: hidden;
    position: absolute;
    opacity: 0;
-color: black;
-transform: translateY(10%);
-// transition: transform $animation-card, opacity $animation-card;
-transition: color $animation-card, $animation-card, opacity $animation-card;
+   color: black;
+   transform: translateY(10%);
+   // transition: transform $animation-card, opacity $animation-card;
+   transition: color $animation-card, $animation-card, opacity $animation-card;
 
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-.develo-eco__list:hover &,
-.develo-eco__list:focus & {
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+
+   .develo-eco__list:hover &,
+   .develo-eco__list:focus & {
       transform: translateY(0);
       opacity: 1;
-         border-radius: 20px;
-            background-color: transparent;
-            // box-shadow: 2px 2px 0px 0px #c2e6b026;
-            // box-shadow: 0px 0px 2px 2px #c2e6b026;
-            // border: 1px solid #e2710e;  
-               background-color: #0261cd64;
+      border-radius: 20px;
+      background-color: transparent;
+      // box-shadow: 2px 2px 0px 0px #c2e6b026;
+      // box-shadow: 0px 0px 2px 2px #c2e6b026;
+      // border: 1px solid #e2710e;  
+      background-color: #0261cd64;
    }
 }
 
 .develo-eco__art {
    text-align: left;
-   margin:0px;
+   margin: 0px;
    font-size: 11px;
    line-height: 1.5;
    letter-spacing: 0.02em;
-    white-space: pre-wrap;  
-    color: black;
-  padding: 10px;
+   white-space: pre-wrap;
+   color: black;
+   padding: 10px;
 
-.develo-eco__content:hover &,
-.develo-eco__content:focus & {
-   transition: color $animation;
-   color:rgb(0, 255, 140);
-   // background-color: rgba(207, 149, 23, 0.553);
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      transition: color $animation;
+      color: rgb(0, 255, 140);
+      // background-color: rgba(207, 149, 23, 0.553);
+   }
+
+   @media screen and (min-width: 1200px) {
+      font-size: 13px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+   }
 }
-@media screen and (min-width: 1200px) {
-   font-size: 13px;
-   line-height: 1.5;
-   letter-spacing: 0.02em;
-}
-}
-
-
-
-
-
