@@ -19,22 +19,40 @@
 			}
 }
 
-.bg-nav{
-	display: flex;
+
+.page__header{
 	background-color: $bg-color;
-justify-self: start;
+	display: flex;
+	justify-content: center;
+	// height: 40px;
+	width: 100%;
+	// margin-left: auto;
+	// 	margin-right: auto;
+	z-index: 2;
+	position: fixed;
+		@media screen and (min-width: 1200px) {
+position: static;
+		}
+}
+
+.bg-nav{
+	
+	display: flex;
+	justify-self: start;
 	align-items: end;
+	padding: 0 15px;
+	
 	// align-self:first baseline;
 
 	padding: 15px 0 10px 0;
 	// padding-top: 15px;
 	// padding-bottom: 10px;
 	width: 100%;
-	position: fixed;
+	
 	z-index: 2;
 	
 	@media screen and (min-width: 1200px) {
-		display: flexbox;
+		display: flex;
 		justify-content: space-between;
 		position: static;
 	max-width: 1600px;
