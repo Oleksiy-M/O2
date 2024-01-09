@@ -29,11 +29,12 @@ margin: 0 auto 0 auto;
    
           @media screen and (min-width: 1200px) {
              position: absolute;
+             overflow: hidden;
    margin-top: -200px;
           }
          }
 
-.bg-color__head {
+.bg-color__head { 
    background-color: $video-color;
    height: 935px;
 
@@ -61,7 +62,7 @@ margin: 0 auto 0 auto;
 	}
 
 @media screen and (min-width: 1200px) {
-   height: 820px;
+   height: 820px; 
     }
 	
     @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
@@ -69,7 +70,8 @@ margin: 0 auto 0 auto;
    	(min-resolution: 2dppx) and (min-width: 1200px) {
    height: 1180px;
    
-}}
+}
+}
 
 
 
