@@ -374,11 +374,12 @@ body {
   justify-content: space-between;
   padding-top: 80px;
   margin-bottom: 40px;
-  background: rgba(24, 36, 58, 0.8745098039);
+  background: rgba(24, 36, 58, 0.4431372549);
   border-radius: 5px;
 }
 @media screen and (min-width: 1200px) {
   .section-hero {
+    background-color: rgba(24, 36, 58, 0.8745098039);
     display: flex;
     flex-wrap: wrap;
     padding-top: 60px;
@@ -395,6 +396,7 @@ body {
 }
 
 .idustry-hero__heading {
+  padding: 5px 0px;
   color: aqua;
   text-shadow: 2px 1px 10px black;
   text-transform: uppercase;
@@ -403,8 +405,6 @@ body {
   font-size: 13px;
   line-height: 1.86;
   letter-spacing: 0.26em;
-  transition-duration: 0.5s;
-  border-bottom: 2px solid #33FF99;
 }
 @media screen and (min-width: 1200px) {
   .idustry-hero__heading {
@@ -416,18 +416,28 @@ body {
   }
 }
 
+.head-border {
+  transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 2px;
+  border-bottom: 2px solid #33FF99;
+}
+.section-hero:hover .head-border, .section-hero:focus .head-border {
+  box-shadow: 0px 3px 10px 2px #33FF99;
+}
+
 .develo-eco__box {
   display: flex;
   align-items: center;
-  margin: 0 35px 50px 35px;
+  margin: 0 30px 50px 30px;
   text-align: center;
   height: 45px;
   border-radius: 15px;
   transition-duration: 0.5s;
-  border-bottom: 1px solid #0000FF;
+  border-bottom: 1px solid #3fa9f5;
 }
 .develo-eco__box:hover, .develo-eco__box:focus {
-  box-shadow: 0px 1px 4px 0px #0000FF;
+  box-shadow: 0px 1px 4px 0px #3fa9f5;
+  background-color: rgba(63, 104, 240, 0.14);
 }
 @media screen and (min-width: 1200px) {
   .develo-eco__box {
@@ -440,7 +450,7 @@ body {
 .develo-eco__title {
   margin-left: auto;
   margin-right: auto;
-  color: #3FA9F5;
+  color: #3fa9f5;
   transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: font-size;
   font-weight: 300;
@@ -492,10 +502,11 @@ body {
   height: 45px;
   transform: translateY(135px);
   transition-duration: 0.5s;
-  border-bottom: 1px solid #0000FF;
+  border-bottom: 1px solid #3fa9f5;
 }
 .impact-title__box:hover, .impact-title__box:focus {
-  box-shadow: 0px 1px 4px 0px #0000FF;
+  box-shadow: 0px 1px 4px 0px #3fa9f5;
+  background-color: rgba(63, 104, 240, 0.14);
 }
 @media screen and (min-width: 1200px) {
   .impact-title__box {
@@ -510,7 +521,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 5px;
-  color: #3FA9F5;
+  color: #3fa9f5;
   font-weight: 300;
   font-size: 11px;
   line-height: 1.86;
@@ -1614,7 +1625,7 @@ body {
 .develo-eco {
   display: block;
   border-radius: 5px;
-  background: rgba(24, 36, 58, 0.8745098039);
+  background: rgba(24, 36, 58, 0.4431372549);
   padding-left: 4px;
   padding-right: 4px;
   padding-top: 260px;
@@ -1623,6 +1634,7 @@ body {
 @media screen and (min-width: 1200px) {
   .develo-eco {
     display: flexbox;
+    background-color: rgba(24, 36, 58, 0.8745098039);
     padding: 0px 40px 330px 40px;
     border-top: 0px;
   }
@@ -1754,7 +1766,7 @@ body {
   padding: 10px;
 }
 .develo-eco__content:hover .develo-eco__art, .develo-eco__content:focus .develo-eco__art {
-  transition: color 2ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 800ms cubic-bezier(0.4, 0, 0.2, 1);
   color: rgb(0, 255, 140);
 }
 @media screen and (min-width: 769px) {

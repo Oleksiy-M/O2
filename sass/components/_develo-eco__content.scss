@@ -1,5 +1,5 @@
 .develo-eco__svg {
-   fill: #3fa9f5;
+   fill: $Secondary-text-color;
 
    display: block;
    margin-left: auto;
@@ -59,7 +59,7 @@ padding: 0 0 ;
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
-      transition: color $animation;
+      transition: color $animation-card;
       color: rgb(0, 255, 140);
       // background-color: rgba(207, 149, 23, 0.553);
    }
