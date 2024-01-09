@@ -23,8 +23,7 @@
 
 .cards__overlay {
    display: block;
-   padding-left: 0px;
-   padding-right: 0px;
+padding: 0 0 ;
    overflow: hidden;
    position: absolute;
    opacity: 0;
@@ -44,9 +43,6 @@
       opacity: 1;
       border-radius: 20px;
       background-color: transparent;
-      // box-shadow: 2px 2px 0px 0px #c2e6b026;
-      // box-shadow: 0px 0px 2px 2px #c2e6b026;
-      // border: 1px solid #e2710e;  
       background-color: #0261cd64;
    }
 }
