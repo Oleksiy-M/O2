@@ -1552,6 +1552,7 @@ body {
   display: flex;
   align-items: center;
   margin: 0 20px 200px 55px;
+  padding: 5px 10px;
   text-align: center;
   height: 45px;
   border-radius: 15px;
@@ -1568,6 +1569,7 @@ body {
     height: 45px;
     margin: 0 0 100px 0px;
     width: 420px;
+    padding: 5px;
   }
 }
 
@@ -1581,7 +1583,6 @@ body {
   font-size: 11px;
   line-height: 1.86;
   letter-spacing: 0.26em;
-  padding: 5px;
 }
 .develo-eco:hover .develo-eco__title, .develo-eco:focus .develo-eco__title {
   font-size: 12px;
@@ -1787,15 +1788,15 @@ body {
   transform: translateY(0);
   opacity: 1;
   border-radius: 20px;
-  background-color: transparent;
-  background-color: rgba(2, 97, 205, 0.3921568627);
+  box-shadow: 0px 1px 4px 0px #3fa9f5;
+  background-color: rgba(63, 104, 240, 0.14);
 }
 .impact-section:hover .cards__overlay, .impact-section:focus .cards__overlay {
   transform: translateY(0);
   opacity: 1;
   border-radius: 20px;
-  background-color: transparent;
-  background-color: rgba(2, 97, 205, 0.3921568627);
+  box-shadow: 0px 1px 4px 0px #3fa9f5;
+  background-color: rgba(63, 104, 240, 0.14);
 }
 
 .develo-eco__art {
