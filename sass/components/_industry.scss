@@ -51,7 +51,9 @@ padding-top: 80px;
 
 .idustry-hero{
 margin: 0 35px 120px 35px;  
-
+@media screen and (min-width: 360px) {
+   margin: 0 30px 120px 30px;
+}
  @media screen and (min-width: 1200px) {
    // width: 1170px;
    // margin: 0;
@@ -72,19 +74,42 @@ font-weight: 300;
 font-size: 13px;
 line-height: 1.86;
 letter-spacing: 0.26em;
-// 
 
+height: 85px;
+transition: $animation-card;
+   transition-property: font-size;
+
+      .section-hero:hover &,
+         .section-hero:focus & {
+            font-size: 13.5px;
+         }
+
+         @media screen and (min-width: 360px) {
+            height: 60px;
+            padding: 0px 0px;
+         }
+         
+         @media screen and (min-width: 768px) {
+   padding: 0px 20px;
+height: 30px;
+}
    // box-shadow: 0px 7px 6px -6px $svg-color;
    // border-bottom: 2px solid $svg-color;
 
 @media screen and (min-width: 1200px) {
-   padding: 5px 20px;
 
 font-weight: 600;
 font-size: 20px;
 line-height: 1.86;
 letter-spacing: 0.26em;
-   }
+height: 40px;
+
+   .section-hero:hover &,
+      .section-hero:focus & {
+      font-size: 20.5px;
+      }
+}
+
 }
 
 .head-border{

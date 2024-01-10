@@ -391,6 +391,11 @@ body {
 .idustry-hero {
   margin: 0 35px 120px 35px;
 }
+@media screen and (min-width: 360px) {
+  .idustry-hero {
+    margin: 0 30px 120px 30px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .idustry-hero {
     margin: 0 auto 100px auto;
@@ -407,14 +412,35 @@ body {
   font-size: 13px;
   line-height: 1.86;
   letter-spacing: 0.26em;
+  height: 85px;
+  transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: font-size;
+}
+.section-hero:hover .idustry-hero__heading, .section-hero:focus .idustry-hero__heading {
+  font-size: 13.5px;
+}
+@media screen and (min-width: 360px) {
+  .idustry-hero__heading {
+    height: 60px;
+    padding: 0px 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .idustry-hero__heading {
+    padding: 0px 20px;
+    height: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .idustry-hero__heading {
-    padding: 5px 20px;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.86;
     letter-spacing: 0.26em;
+    height: 40px;
+  }
+  .section-hero:hover .idustry-hero__heading, .section-hero:focus .idustry-hero__heading {
+    font-size: 20.5px;
   }
 }
 
@@ -545,7 +571,7 @@ body {
   margin-left: -35px;
   margin-top: -640px;
   height: 640px;
-  width: 1px;
+  width: 0.5px;
   border-radius: 5px;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -638,7 +664,7 @@ body {
   border-radius: 5px;
   margin-top: -1143px;
   height: 1143px;
-  width: 1px;
+  width: 0.5px;
   border: 1px solid #0000FF;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
 }
@@ -729,7 +755,7 @@ body {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 5px;
   margin-left: -25px;
-  width: 1px;
+  width: 0.5px;
   height: 1841px;
   margin-top: -1841px;
   border: 1px solid #0000FF;
@@ -824,7 +850,7 @@ body {
   margin-left: -20px;
   margin-top: -2344px;
   height: 2344px;
-  width: 1px;
+  width: 0.5px;
   border-radius: 5px;
   border: 1px solid #0000FF;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -889,7 +915,7 @@ body {
 
 .develo-eco___decor27 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: -15.5px;
+  margin-left: -15px;
   border-radius: 5px;
   border: 1px solid #0000FF;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -915,10 +941,10 @@ body {
 .develo-eco___decor14 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 5px;
-  margin-left: -15.5px;
+  margin-left: -15px;
   margin-top: -2847px;
   height: 2847px;
-  width: 1px;
+  width: 0.5px;
   border: 1px solid #0000FF;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
 }
@@ -950,9 +976,9 @@ body {
 .develo-eco___decor15 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 5px;
-  margin-left: -15.5px;
+  margin-left: -15px;
   margin-top: -2847px;
-  width: 15.5px;
+  width: 15px;
   border: 1px solid #0000FF;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
 }
@@ -982,10 +1008,10 @@ body {
 
 .develo-eco___decor16 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 5px;
 }
 @media screen and (min-width: 768px) {
   .develo-eco___decor16 {
+    border-radius: 5px;
     border-radius: 5px;
     width: 2px;
     border: 2px solid #0000FF;
@@ -1005,10 +1031,10 @@ body {
 
 .develo-eco___decor17 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 5px;
 }
 @media screen and (min-width: 768px) {
   .develo-eco___decor17 {
+    border-radius: 5px;
     border-radius: 5px;
     width: 5px;
     border: 2px solid #0000FF;
@@ -1028,7 +1054,7 @@ body {
 
 .develo-eco___decor28 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: -10.5px;
+  margin-left: -10px;
   border-radius: 5px;
   border: 1px solid #0000FF;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -1052,12 +1078,12 @@ body {
 }
 
 .develo-eco___decor18 {
-  margin-left: -10.5px;
+  margin-left: -10px;
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 5px;
   margin-top: -3350px;
   height: 3350px;
-  width: 1px;
+  width: 0.5px;
   border: 1px solid #0000FF;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
 }
@@ -1088,10 +1114,10 @@ body {
 
 .develo-eco___decor19 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: -10.5px;
+  margin-left: -10px;
   border-radius: 5px;
   margin-top: -3350px;
-  width: 10.5px;
+  width: 10px;
   border: 1px solid #0000FF;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
 }
@@ -1165,7 +1191,7 @@ body {
 
 .develo-eco___decor26 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: -5.5px;
+  margin-left: -5px;
   border: 1px solid #0000FF;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
 }
@@ -1189,11 +1215,11 @@ body {
 
 .develo-eco___decor22 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: -5.5px;
+  margin-left: -5px;
   border-radius: 5px;
   margin-top: -3853px;
   height: 3853px;
-  width: 1px;
+  width: 0.5px;
   border: 1px solid #0000FF;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
 }
@@ -1224,10 +1250,10 @@ body {
 
 .develo-eco___decor23 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: -5.5px;
+  margin-left: -5px;
   border-radius: 5px;
   margin-top: -3853px;
-  width: 5.5px;
+  width: 5px;
   border: 1px solid #0000FF;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
 }
@@ -1730,7 +1756,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .factory-content {
-    margin-left: -35.5px;
+    margin-left: -35px;
     width: 500px;
   }
 }
