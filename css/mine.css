@@ -127,7 +127,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .pg-header {
-    padding: 15px 0 15px 0;
+    padding: 15px 0 20px 0;
     position: static;
   }
 }
@@ -146,16 +146,27 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .site-nav__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    width: 65px;
+    margin: 0 50px 0 20px;
+  }
+}
+
 .nav-logo {
   display: none;
 }
 @media screen and (min-width: 1200px) {
   .nav-logo {
     display: block;
-    height: 60px;
     margin: 0;
-    margin-right: 50px;
     padding: 0;
+    transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -503,8 +514,8 @@ body {
   font-size: 13px;
   line-height: 1.86;
   letter-spacing: 0.11em;
-  transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: font-size;
+  transition: 800ms cubic-bezier(0.4, 0, 0.2, 1), color 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: font-size 800ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #3fa9f5;
 }
 .impact-box__end:hover .title-end, .impact-box__end:focus .title-end {
@@ -1806,7 +1817,7 @@ body {
   position: absolute;
   opacity: 0;
   transform: translateY(0%);
-  transition: color 800ms cubic-bezier(0.4, 0, 0.2, 1), 800ms cubic-bezier(0.4, 0, 0.2, 1), opacity 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 800ms cubic-bezier(0.4, 0, 0.2, 1), opacity 800ms cubic-bezier(0.4, 0, 0.2, 1);
   top: 0;
   left: 0;
   width: 100%;
@@ -1834,9 +1845,9 @@ body {
   white-space: pre-wrap;
   color: #3fa9f5;
   padding: 10px;
+  transition: color 800ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .develo-eco__content:hover .develo-eco__art, .develo-eco__content:focus .develo-eco__art {
-  transition: color 800ms cubic-bezier(0.4, 0, 0.2, 1);
   color: rgb(0, 255, 140);
 }
 @media screen and (min-width: 769px) {

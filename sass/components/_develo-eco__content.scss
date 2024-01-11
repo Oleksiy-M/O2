@@ -35,7 +35,7 @@ padding: 0 0;
    opacity: 0;
    transform: translateY(0%);
    // transition: transform $animation-card, opacity $animation-card;
-   transition: color $animation-card, $animation-card, opacity $animation-card;
+   transition: $animation-card, opacity $animation-card;
 
    top: 0;
    left: 0;
@@ -70,9 +70,9 @@ border-radius: 5px;
    color: $Secondary-text-color;
    padding: 10px;
 
+   transition: color $animation-card;
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
-      transition: color $animation-card;
       color: rgb(0, 255, 140);
       // background-color: rgba(207, 149, 23, 0.553);
    }

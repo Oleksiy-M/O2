@@ -191,8 +191,8 @@ margin-left: 0px;
    line-height: 1.86;
    letter-spacing: 0.11em;
 
-   transition: $animation-card;
-transition-property: font-size;
+   transition: $animation-card, color $animation-card;
+transition-property: font-size $animation-card;
 color: $Secondary-text-color;
       .impact-box__end:hover &,
       .impact-box__end:focus &{
