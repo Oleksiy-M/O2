@@ -1812,7 +1812,7 @@ body {
 
 .cards__overlay {
   display: block;
-  padding: 0 0;
+  padding: 0;
   overflow: hidden;
   position: absolute;
   opacity: 0;
@@ -1822,7 +1822,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .develo-eco:hover .cards__overlay, .develo-eco:focus .cards__overlay {
   transform: translateY(0);
