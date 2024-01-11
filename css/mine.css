@@ -389,7 +389,7 @@ body {
 }
 
 .idustry-hero {
-  margin: 0 25px 120px 25px;
+  margin: 0 27px 120px 27px;
 }
 @media screen and (min-width: 1200px) {
   .idustry-hero {
@@ -398,7 +398,7 @@ body {
 }
 
 .idustry-hero__heading {
-  padding: 5px 0px;
+  padding: 5px 10px;
   color: aqua;
   text-shadow: 2px 1px 10px black;
   text-transform: uppercase;
