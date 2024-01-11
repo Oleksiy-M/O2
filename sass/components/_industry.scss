@@ -50,10 +50,10 @@ padding-top: 80px;
 }
 
 .idustry-hero{
-margin: 0 35px 120px 35px;  
-@media screen and (min-width: 360px) {
-   margin: 0 30px 120px 30px;
-}
+margin: 0 30px 120px 30px;  
+// @media screen and (min-width: 360px) {
+//    margin: 0 30px 120px 30px;
+// }
  @media screen and (min-width: 1200px) {
    // width: 1170px;
    // margin: 0;
@@ -150,19 +150,21 @@ margin-left: 0px;
   
 
 .impact-box__end {
+   
    padding: 10px;
    text-align: center;
 height: 50px;
-      transform: translateY(-400px);
+      // transform: translateY(-400px);
 
 @media screen and (min-width: 1200px) {
+   // width: 800px;
    padding-right: 40px;
    margin: 0px auto 0px auto;
    // margin-left: auto;
    // margin-right: auto;
    // margin-top: 0px;
    // margin-bottom: 0px;
-   transform: translateY(-180px);
+   // transform: translateY(-180px);
    }
 }
 
