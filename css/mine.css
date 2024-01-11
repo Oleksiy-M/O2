@@ -389,7 +389,7 @@ body {
 }
 
 .idustry-hero {
-  margin: 0 30px 120px 30px;
+  margin: 0 25px 120px 25px;
 }
 @media screen and (min-width: 1200px) {
   .idustry-hero {
@@ -417,7 +417,7 @@ body {
 @media screen and (min-width: 360px) {
   .idustry-hero__heading {
     height: 60px;
-    padding: 0px 0px;
+    padding: 0px 5px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -468,14 +468,31 @@ body {
 }
 
 .impact-box__end {
-  padding: 10px;
+  height: 270px;
+  padding: 20px 15px;
   text-align: center;
-  height: 50px;
+  margin: 0 auto 100px auto;
+  border-radius: 15px;
+  transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-bottom: 2px solid #0000FF;
+  width: 93%;
+}
+.impact-box__end:hover, .impact-box__end:focus {
+  width: 95%;
+  background-color: rgba(57, 136, 247, 0.086);
+  box-shadow: 0px 2px 6px 1px #0000FF;
+}
+@media screen and (min-width: 360px) {
+  .impact-box__end {
+    height: 190px;
+    padding: 20px 15px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .impact-box__end {
-    padding-right: 40px;
-    margin: 0px auto 0px auto;
+    padding: 10px 20px;
+    height: 90px;
+    margin: 0px auto 65px auto;
   }
 }
 
@@ -485,13 +502,23 @@ body {
   font-weight: 300;
   font-size: 13px;
   line-height: 1.86;
-  letter-spacing: 0.26em;
+  letter-spacing: 0.11em;
+  transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: font-size;
+  color: #3fa9f5;
+}
+.impact-box__end:hover .title-end, .impact-box__end:focus .title-end {
+  font-size: 13.5px;
+  color: aqua;
 }
 @media screen and (min-width: 1200px) {
   .title-end {
     display: block;
-    text-align: right;
     font-size: 17px;
+  }
+  .impact-box__end:hover .title-end, .impact-box__end:focus .title-end {
+    font-size: 17.5px;
+    color: aqua;
   }
 }
 
@@ -598,7 +625,6 @@ body {
   margin-left: -35px;
   margin-top: -640px;
   width: 35px;
-  border-radius: 5px;
   border: 1px solid #0000FF;
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -721,7 +747,6 @@ body {
 
 .develo-eco___decor7 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 5px;
   margin-left: -25px;
   border: 1px solid #0000FF;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -746,7 +771,6 @@ body {
 
 .develo-eco___decor8 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 5px;
   margin-left: -25px;
   width: 0.5px;
   height: 1841px;
@@ -781,7 +805,6 @@ body {
 
 .develo-eco___decor9 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 5px;
   margin-left: -25px;
   margin-top: -1841px;
   width: 25px;
@@ -816,7 +839,6 @@ body {
 .develo-eco___decor10 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: -20px;
-  border-radius: 5px;
   border: 1px solid #0000FF;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
 }
@@ -844,7 +866,6 @@ body {
   margin-top: -2344px;
   height: 2344px;
   width: 0.5px;
-  border-radius: 5px;
   border: 1px solid #0000FF;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
 }
@@ -876,7 +897,6 @@ body {
 .develo-eco___decor12 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: -20px;
-  border-radius: 5px;
   margin-top: -2344px;
   width: 20px;
   border: 1px solid #0000FF;
@@ -909,7 +929,6 @@ body {
 .develo-eco___decor27 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: -15px;
-  border-radius: 5px;
   border: 1px solid #0000FF;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
 }
@@ -933,7 +952,6 @@ body {
 
 .develo-eco___decor14 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 5px;
   margin-left: -15px;
   margin-top: -2847px;
   height: 2847px;
@@ -968,7 +986,6 @@ body {
 
 .develo-eco___decor15 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 5px;
   margin-left: -15px;
   margin-top: -2847px;
   width: 15px;
@@ -1005,7 +1022,6 @@ body {
 @media screen and (min-width: 768px) {
   .develo-eco___decor16 {
     border-radius: 5px;
-    border-radius: 5px;
     width: 2px;
     border: 2px solid #0000FF;
     box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -1028,7 +1044,6 @@ body {
 @media screen and (min-width: 768px) {
   .develo-eco___decor17 {
     border-radius: 5px;
-    border-radius: 5px;
     width: 5px;
     border: 2px solid #0000FF;
     box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -1048,7 +1063,6 @@ body {
 .develo-eco___decor28 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: -10px;
-  border-radius: 5px;
   border: 1px solid #0000FF;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
 }
@@ -1073,7 +1087,6 @@ body {
 .develo-eco___decor18 {
   margin-left: -10px;
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 5px;
   margin-top: -3350px;
   height: 3350px;
   width: 0.5px;
@@ -1108,7 +1121,6 @@ body {
 .develo-eco___decor19 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: -10px;
-  border-radius: 5px;
   margin-top: -3350px;
   width: 10px;
   border: 1px solid #0000FF;
@@ -1140,7 +1152,6 @@ body {
 
 .develo-eco___decor20 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 5px;
 }
 @media screen and (min-width: 768px) {
   .develo-eco___decor20 {
@@ -1162,7 +1173,6 @@ body {
 
 .develo-eco___decor21 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 5px;
 }
 @media screen and (min-width: 768px) {
   .develo-eco___decor21 {
@@ -1209,7 +1219,6 @@ body {
 .develo-eco___decor22 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: -5px;
-  border-radius: 5px;
   margin-top: -3853px;
   height: 3853px;
   width: 0.5px;
@@ -1244,7 +1253,6 @@ body {
 .develo-eco___decor23 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: -5px;
-  border-radius: 5px;
   margin-top: -3853px;
   width: 5px;
   border: 1px solid #0000FF;
@@ -1279,7 +1287,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .develo-eco___decor24 {
-    border-radius: 5px;
     width: 2px;
     border: 2px solid #0000FF;
     box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
@@ -1299,7 +1306,6 @@ body {
 
 .develo-eco___decor25 {
   transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 5px;
 }
 @media screen and (min-width: 768px) {
   .develo-eco___decor25 {
@@ -1545,20 +1551,20 @@ body {
 
 .section-bg {
   background: rgba(24, 36, 58, 0.6078431373);
-  padding: 0px 0px 400px 0px;
+  border-radius: 5px;
+  padding: 0px 3px 100px 3px;
 }
 @media screen and (min-width: 1200px) {
   .section-bg {
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 40px 110px 40px;
+    padding: 0px 40px 0px 40px;
     background-color: rgba(24, 36, 58, 0.8745098039);
   }
 }
 
 .develo-eco {
   display: block;
-  border-radius: 5px;
   padding: 60px 4px 180px 4px;
 }
 @media screen and (min-width: 1200px) {
@@ -1663,24 +1669,25 @@ body {
 
 .impact-section {
   display: block;
+  margin-bottom: 400px;
   border-radius: 5px;
   padding: 0px 4px 0px 4px;
 }
 @media screen and (min-width: 1200px) {
   .impact-section {
     display: flexbox;
-    margin-bottom: 170px;
+    margin-bottom: 175px;
     padding: 80px 0px 0px 0px;
   }
 }
 
 .impact-title__box {
   display: flex;
-  border-radius: 15px;
   text-align: center;
   align-items: center;
   margin: 0 20px 220px 55px;
   height: 45px;
+  border-radius: 15px;
   transition-duration: 0.5s;
   border-bottom: 1px solid #3fa9f5;
 }
@@ -1828,7 +1835,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   white-space: pre-wrap;
-  color: black;
+  color: #3fa9f5;
   padding: 10px;
 }
 .develo-eco__content:hover .develo-eco__art, .develo-eco__content:focus .develo-eco__art {

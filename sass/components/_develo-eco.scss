@@ -2,18 +2,18 @@
 
     .section-bg{
     background: $section-color;
-padding: 0px 0px 400px 0px;
+    border-radius: 5px;
+padding: 0px 3px 100px 3px;
 @media screen and (min-width: 1200px) {
   display: flex;
   flex-wrap: wrap;
-  padding: 0px 40px 110px 40px;
+  padding: 0px 40px 0px 40px;
   // justify-content:center;
       background-color: $section-color__desktop;
     }
   }
-    .develo-eco {
-      display: block;
-      border-radius: 5px;
+  .develo-eco {
+    display: block;
       // background: $section-color;
 padding:60px 4px 180px 4px;
       // padding-left: 4px;
@@ -141,7 +141,7 @@ padding:60px 4px 180px 4px;
 
     .impact-section{
 display: block;
-
+margin-bottom: 400px;
   border-radius: 5px;
   // background: $section-color;
 padding: 0px 4px 0px 4px;
@@ -152,7 +152,7 @@ padding: 0px 4px 0px 4px;
 
   @media screen and (min-width: 1200px) {
     display: flexbox;
-  margin-bottom: 170px;
+  margin-bottom: 175px;
     padding: 80px 0px 0px 0px;
     //  border: 1px solid $svg-color;
     // background-color: $section-color__desktop;
@@ -163,14 +163,14 @@ padding: 0px 4px 0px 4px;
 .impact-title__box {
   display: flex;
 
-  border-radius: 15px;
-
   text-align: center;
   align-items: center;
   margin: 0 20px 220px 55px;
   height: 45px;
-  // transform: translateY(-180px);
+  border-radius: 15px;
+
   transition-duration: 0.5s;
+  
   border-bottom: 1px solid $Secondary-text-color;
 
   .impact-section:hover &,
@@ -180,9 +180,8 @@ padding: 0px 4px 0px 4px;
   }
 
   @media screen and (min-width: 1200px) {
-    // transform: translateY(120px);
+  
     height: 45px;
-
     margin-left: 210px;
     margin-bottom: 250px;
     width: 390px;

@@ -44,7 +44,9 @@ padding: 0;
 
 
 .hero__link {
+	
 	transition:opacity $animation-logo;
+	
 opacity: 0;
 	.hero :hover &,
 	.hero :focus &{
