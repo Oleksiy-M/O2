@@ -547,6 +547,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .down__up {
+    display: block;
     padding: 5px;
     text-decoration: none;
     text-transform: uppercase;
