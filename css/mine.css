@@ -127,8 +127,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .pg-header {
-    padding: 15px 0 20px 0;
     position: static;
+    height: 90px;
   }
 }
 
@@ -366,8 +366,7 @@ body {
 
 .idustry {
   display: block;
-  margin: 0;
-  padding-top: 80px;
+  padding: 80px 0 50px 0;
   background-position: center;
   background-attachment: scroll;
 }
@@ -376,8 +375,7 @@ body {
     display: flexbox;
     justify-content: center;
     padding-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     max-width: 1600px;
   }
 }
@@ -410,7 +408,9 @@ body {
 
 .idustry-hero__heading {
   padding: 5px 10px;
+  height: 85px;
   color: aqua;
+  user-select: none;
   text-shadow: 2px 1px 10px black;
   text-transform: uppercase;
   text-align: center;
@@ -418,7 +418,6 @@ body {
   font-size: 13px;
   line-height: 1.86;
   letter-spacing: 0.26em;
-  height: 85px;
   transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: font-size;
 }
@@ -496,20 +495,20 @@ body {
 @media screen and (min-width: 360px) {
   .impact-box__end {
     height: 190px;
-    padding: 20px 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .impact-box__end {
     padding: 10px 20px;
     height: 90px;
-    margin: 0px auto 65px auto;
+    margin: 0px auto 40px auto;
   }
 }
 
 .title-end {
   text-align: center;
   white-space: pre-wrap;
+  user-select: none;
   font-weight: 300;
   font-size: 13px;
   line-height: 1.86;
@@ -530,6 +529,36 @@ body {
   .impact-box__end:hover .title-end, .impact-box__end:focus .title-end {
     font-size: 17.5px;
     color: aqua;
+  }
+}
+
+.section-down {
+  display: block;
+}
+
+.buton-down__up {
+  display: flex;
+  justify-content: right;
+  margin: 0px 50px 10px 0px;
+}
+
+.down__up {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .down__up {
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #0000FF;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .down__up:hover, .down__up:focus {
+    color: aqua;
+    background-color: #FF8230;
   }
 }
 
@@ -1563,7 +1592,7 @@ body {
 .section-bg {
   background: rgba(24, 36, 58, 0.7725490196);
   border-radius: 5px;
-  padding: 0px 3px 100px 3px;
+  padding: 0px 3px 10px 3px;
 }
 @media screen and (min-width: 1200px) {
   .section-bg {
@@ -1614,6 +1643,7 @@ body {
 .develo-eco__title {
   margin-left: auto;
   margin-right: auto;
+  user-select: none;
   color: #3fa9f5;
   transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: font-size;
@@ -1687,7 +1717,7 @@ body {
 @media screen and (min-width: 1200px) {
   .impact-section {
     display: flexbox;
-    margin-bottom: 175px;
+    margin-bottom: 105px;
     padding: 80px 0px 0px 0px;
   }
 }
@@ -1719,6 +1749,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 5px;
+  user-select: none;
   color: #3fa9f5;
   font-weight: 300;
   font-size: 11px;
@@ -1839,6 +1870,7 @@ body {
 
 .develo-eco__art {
   text-align: left;
+  user-select: none;
   font-size: 11px;
   line-height: 1.5;
   letter-spacing: 0.02em;

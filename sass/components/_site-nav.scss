@@ -30,9 +30,9 @@
 	z-index: 2;
 	background-color: $bg-color;
 	@media screen and (min-width: 1200px) {
+		position: static;
+	height: 90px;
 	
-			padding: 15px 0 20px 0;
-position: static;
 		}
 }
 
@@ -40,7 +40,6 @@ position: static;
 display: flex;
 	justify-self: start;
 	align-items: end;
-	// justify-content: baseline;
 	width: 100%;
 	
 	@media screen and (min-width: 1200px) {
@@ -74,12 +73,6 @@ display: block;
 margin: 0;
 	padding: 0;
 transition: $animation-card;
-
-// &:hover,
-// &:focus{
-// 	width: 65px;
-// 	height: 65px;
-// }
 }
 
 }

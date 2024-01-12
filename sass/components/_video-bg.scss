@@ -7,8 +7,6 @@ padding: 0;
 margin-left: auto;
 margin-right: auto;
 margin-top: 0px;
-// padding-top: 20px;   
-   // overflow:hidden;
    justify-content: center;
    align-items: center;
 
@@ -19,6 +17,7 @@ object-fit:contain;
 max-width: 1600px;
  overflow: hidden;
 padding: 0;
+
 }}
 
 .bubble{
@@ -37,6 +36,7 @@ margin-top: 0px;
 
 .bg-color__video {
    background-color: $video-color;
+
 
 
 }

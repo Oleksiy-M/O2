@@ -3,23 +3,18 @@
     .section-bg{
     background: $section-color;
     border-radius: 5px;
-padding: 0px 3px 100px 3px;
+padding: 0px 3px 10px 3px;
 @media screen and (min-width: 1200px) {
   display: flex;
   flex-wrap: wrap;
   padding: 0px 40px 0px 40px;
-  // justify-content:center;
+
       background-color: $section-color__desktop;
     }
   }
   .develo-eco {
     display: block;
-      // background: $section-color;
-padding:60px 4px 180px 4px;
-      // padding-left: 4px;
-      // padding-right: 4px;
-      // padding-top: 260px;
-      // padding-bottom: 400px;
+padding: 60px 4px 180px 4px;
 
       @media screen and (min-width: 1200px) {
         display: flexbox;
@@ -64,8 +59,9 @@ padding:60px 4px 180px 4px;
     .develo-eco__title {
       margin-left: auto;
       margin-right: auto;
+
+      user-select: none;
       color: $Secondary-text-color;
-      // transition-duration: 1s;
       transition: $animation-card;
       transition-property: font-size;
       font-weight: 300;
@@ -108,11 +104,7 @@ padding:60px 4px 180px 4px;
       position: relative;
       height: 250px;
 
-      // border-radius: 5px;
-      //   background-color: transparent;
-      //   box-shadow: 2px 2px 0px 0px #c2e6b026;
-      //   box-shadow: 0px 0px 2px 2px #c2e6b026;
-      //   border: 1px solid #0ebbe272;
+
       @media screen and (min-width: 360px) {
         height: 185px;
       }
@@ -143,19 +135,14 @@ padding:60px 4px 180px 4px;
 display: block;
 margin-bottom: 400px;
   border-radius: 5px;
-  // background: $section-color;
 padding: 0px 4px 0px 4px;
-  // padding-left: ;
-  // padding-right: ;
-  // padding-top: ;
-  // padding-bottom: ;
+
 
   @media screen and (min-width: 1200px) {
     display: flexbox;
-  margin-bottom: 175px;
+  margin-bottom: 105px;
     padding: 80px 0px 0px 0px;
-    //  border: 1px solid $svg-color;
-    // background-color: $section-color__desktop;
+    
   }
 }
 
@@ -170,7 +157,6 @@ padding: 0px 4px 0px 4px;
   border-radius: 15px;
 
   transition-duration: 0.5s;
-  
   border-bottom: 1px solid $Secondary-text-color;
 
   .impact-section:hover &,
@@ -194,6 +180,8 @@ padding: 0px 4px 0px 4px;
   margin-left: auto;
   margin-right: auto;
   padding: 5px;
+
+  user-select: none;
   color: $Secondary-text-color;
   font-weight: 300;
   font-size: 11px;
@@ -228,7 +216,6 @@ padding: 0px 4px 0px 4px;
   margin-bottom: 0px;
 
   @media screen and (min-width: 1200px) {
-    // padding-top: 150px;
     margin-bottom: 0px;
   }
 }
@@ -240,7 +227,6 @@ padding: 0px 4px 0px 4px;
       @media screen and (min-width: 1200px) {
 
         width: 490px;
-        // margin-top: -400px;
         margin-left: 170px;
 
       }
