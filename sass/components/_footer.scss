@@ -10,13 +10,14 @@
    padding-bottom: 150px;
 }
 @media screen and (min-width: 1200px) {
+   
    display: flex;
    justify-content: center;
    align-items:flex-start;
    padding-top: 70px;
    padding-bottom: 30px;
    max-width: 1600px;
-   background-color: #ffffff00;
+   background-color: $bg-color;
   }
 
 }

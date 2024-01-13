@@ -13,7 +13,7 @@ margin-top: 0px;
 
 
 @media screen and (min-width: 1200px) {
-object-fit:contain;
+// object-fit:contain;
 max-width: 1600px;
  overflow: hidden;
 padding: 0;
@@ -29,9 +29,9 @@ position: fixed;
 
    
    @media screen and (min-width: 1200px) {
-   position:absolute;
-margin-top: 0px;
-
+   // position:absolute;
+margin-top: -90px;
+max-width: 1600px;
 }}
 
 .bg-color__video {
