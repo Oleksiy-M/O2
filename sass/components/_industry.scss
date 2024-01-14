@@ -71,9 +71,8 @@ font-size: 13px;
 line-height: 1.86;
 letter-spacing: 0.26em;
 
-transition: $animation-card;
-   transition-property: font-size;
-transition-duration: 3s;
+   // transition-property: font-size;  
+transition-duration: $animation-head;
       .section-hero:hover &,
          .section-hero:focus & {
             font-size: 13.5px;
@@ -108,10 +107,11 @@ height: 40px;
 
 .head-border{
    // transition-duration: 0.5s;
-   transition: $animation-card;
-   transition-duration: 1s;
+   // transition: $animation-card;
+   transition-duration: $animation-head;
    height: 2px;
    border-bottom: 2px solid $svg-color;
+
    .section-hero:hover &,
 .section-hero:focus &{
       box-shadow: 0px 3px 10px 2px $svg-color;
@@ -160,29 +160,29 @@ margin-left: 0px;
 .box__end {
    display: flex;
    align-items: center;
-   align-self: center;
+   // align-self: center;
    // height: 270px;
 height: 1px;
    padding: 0px 15px;
    margin: 0 auto 100px auto;
-   // border-radius: 15px;
+   border-radius: 1px;
    overflow: hidden;
-   border: 2px solid $line-color;
-   box-shadow: 0px -2px 6px 1px ($line-color), 0px 2px 6px 1px ($line-color);
+   border: 4px solid $line-color;
+   box-shadow: 0px -3px 8px 1px ($line-color), 0px 3px 8px 1px ($line-color);
    
+   background-color: rgba(0, 106, 255, 0.142);
    // opacity: 0;
    // transition-property: height;
    // transition: $animation-card;
-   transition-duration:  3s;
+transition-duration: $animation-head;
    width: 93%;
    .impact-box__end:hover &,
    .impact-box__end:focus &{
-
+transition-duration: 3s;
       height: 80%;
       width: 95%;
-      background-color: rgba(96, 160, 249, 0.142);
-      border: 2px solid $primary-text-color;
-      box-shadow: 0px -2px 6px 1px ($Secondary-text-color), 0px 2px 6px 1px ($Secondary-text-color);
+   border: 1px solid $line-color;
+      box-shadow: 0px -1px 4px 0px ($line-color), 0px 1px 4px 0px ($line-color);
    }
        @media screen and (min-width: 360px) {
    // height: 190px;
@@ -201,15 +201,13 @@ height: 1px;
    text-align: center;
    white-space: pre-wrap;
    user-select: none;
-   font-weight: 300;
+   font-weight: 600;
    font-size: 13px;
    line-height: 1.86;
-   letter-spacing: 0.22em;
+   letter-spacing: 0.20em;
    color: $Secondary-text-color;
 
-   transition: $animation-card, color $animation-card;
-transition-property: font-size $animation-card;
-transition-duration: 3s;
+transition-duration: $animation-head;
       .impact-box__end:hover &,
       .impact-box__end:focus &{
       font-size: 13.5px;
@@ -217,7 +215,7 @@ transition-duration: 3s;
       }
 
    @media screen and (min-width: 1200px) {
-text-align: right;
+text-align: center;
       display: block;
       font-size: 17px;
       .impact-box__end:hover &,

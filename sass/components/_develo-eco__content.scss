@@ -1,11 +1,11 @@
 .develo-eco__svg {
    fill: $Secondary-text-color;
-
+// padding-bottom: 20px;
    display: block;
    margin-left: auto;
    margin-right: auto;
    // transition: transform $animation-card, opacity $animation-card;
-   transition: fill $animation-card, transform $animation-card;
+   transition-duration: $animation-head;
 
    .develo-eco:hover &,
    .develo-eco:focus & {
@@ -28,14 +28,15 @@
 }
 
 .cards__overlay {
-   display: block;
+      display: block;
+
 padding: 0;
    overflow: hidden;
-   position: absolute;
+   position:absolute;
    opacity: 0;
-   transform: translateY(10%);
+   transform: translateY(20%);
    // transition: transform $animation-card, opacity $animation-card;
-   transition: $animation-card, opacity $animation-card;
+transition-duration: $animation-head;
 // transition-duration: 3s;
    top: 0;
    left: 0;
@@ -43,26 +44,19 @@ padding: 0;
    height: 100%;
 border-radius: 10px;
 
-
-   // .develo-eco__content:hover &,
-   //    .develo-eco__content:focus & {
-         
-   //    }
-
-
    .develo-eco:hover &,
    .develo-eco:focus & {
-      transform: translateY(0);
+      transform: translateY(-5%);
       opacity: 1;
-   // height: 100%;
+   height: 100%;
       box-shadow: 0px 1px 4px 0px $Secondary-text-color;
          background-color: rgba(63, 104, 240, 0.14);
    }
  .impact-section:hover &,
  .impact-section:focus & {
-      transform: translateY(0);
+      transform: translateY(-5%);
          opacity: 1;
-      // height: 100%;
+      height: 100%;
       box-shadow: 0px 1px 4px 0px $Secondary-text-color;
          background-color: rgba(63, 104, 240, 0.14);
       }
@@ -79,7 +73,7 @@ user-select: none;
    color: $Secondary-text-color;
    padding: 10px;
 
-   transition: color $animation-card;
+transition-duration: $animation-head;
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       color: rgb(0, 255, 140);
@@ -87,6 +81,7 @@ user-select: none;
    }
 
    @media screen and (min-width: 769px) {
+      
       font-size: 13px;
       line-height: 1.5;
       letter-spacing: 0.02em;
