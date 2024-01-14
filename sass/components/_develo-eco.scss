@@ -3,7 +3,7 @@
     .section-bg{
     background: $section-color;
     border-radius: 5px;
-padding: 0px 3px 10px 3px;
+padding: 90px 3px 0px 3px;
 @media screen and (min-width: 1200px) {
   display: flex;
   flex-wrap: wrap;
@@ -16,7 +16,8 @@ padding: 0px 3px 10px 3px;
 
   .develo-eco {
     display: block;
-padding: 80px 4px 180px 39px;
+padding: 0px 0px 0px 10px;
+margin-bottom: 180px;
 
       @media screen and (min-width: 1200px) {
         display: flex;
@@ -25,7 +26,7 @@ padding: 80px 4px 180px 39px;
         align-items:center;
 // margin: 0 auto;
   
-        padding: 0px;
+        padding: 0px 0 0 0;
     
       }
     }
@@ -35,7 +36,7 @@ padding: 80px 4px 180px 39px;
       // display: block;
       display: flex;
       align-items: center;
-      margin: 0 auto 200px auto;
+      margin: 0 auto 70px auto;
       padding: 5px 10px;
       text-align: center;
       height: 45px;
@@ -46,7 +47,7 @@ padding: 80px 4px 180px 39px;
       
       .develo-eco:hover &,
       .develo-eco:focus &{
-        width: 100%;
+        width: 90%;
         // margin-left: 45px;
         box-shadow: 0px 1px 4px 0px $Secondary-text-color;
         background-color: rgba(63, 104, 240, 0.14);
@@ -54,19 +55,16 @@ padding: 80px 4px 180px 39px;
       
       
       @media screen and (min-width: 1200px) {
-        width: 95%;
+        width: 90%;
         transform: translateY(-190px);
         height: 45px;
-        margin: 0 0 100px 0px;
+        margin: 0 0 50px 0px;
         // width: 420px;
         padding: 5px;
-
-        // .develo-eco:hover &,
-        //   .develo-eco:focus & {
-        //     width: 100%;
-        //     box-shadow: 0px 1px 4px 0px $Secondary-text-color;
-        //     background-color: rgba(63, 104, 240, 0.14);
-        //   }
+            .develo-eco:hover &,
+              .develo-eco:focus & {
+                width: 100%;
+              }
       }
       
     }
@@ -110,7 +108,7 @@ transition-duration: $animation-head;
       margin-bottom: 0px;
 
       @media screen and (min-width: 1200px) {
-        padding-top: 40px;
+        padding-top: 0px;
         margin-bottom: 0px;
       }
     }
@@ -118,24 +116,30 @@ transition-duration: $animation-head;
  
     
     .develo-eco__content {
-      // display: flex;
+      display: flex;
+          flex-direction: column;
+            justify-content: flex-end;
       // flex-wrap: wrap;
+      // align-self: flex-end;
+      // align-items: ;
       
       // margin-left: 35px;
-      margin-bottom: 250px;
+      margin-bottom: 120px;
       position: relative;
-      height: 250px;
+      height: 380px;
+      
+      
+      @media screen and (min-width: 350px) {
+        height: 315px;
+        }
+        
+        @media screen and (min-width: 1200px) {
 
-
-      @media screen and (min-width: 360px) {
-        height: 185px;
-      }
-
-      @media screen and (min-width: 1200px) {
-        margin-bottom: 250px;
+          // flex-wrap: nowrap;
+        margin-bottom: 155px;
         margin-left: 0;
         width: 430px;
-        height: 155px;
+        height: 250px;
 
 
       }
@@ -156,9 +160,8 @@ transition-duration: $animation-head;
     .impact-section{
 display: block;
 
-margin-bottom: 400px;
-  border-radius: 5px;
-padding: 0px 4px 0px 39px;
+margin-bottom: 300px;
+      padding: 0px 0px 0px 10px;
 
 
   @media screen and (min-width: 1200px) {
@@ -176,7 +179,7 @@ padding: 0px 4px 0px 39px;
 .impact-title__box {
     display: flex;
       align-items: center;
-      margin: 0 auto 200px auto;
+      margin: 0 auto 70px auto;
 
   text-align: center;
   height: 45px;
@@ -187,7 +190,7 @@ width: 80%;
 
   .impact-section:hover &,
   .impact-section:focus &{
-    width: 100%;
+    width: 90%;
     box-shadow: 0px 1px 4px 0px $Secondary-text-color;
     background-color: rgba(63, 104, 240, 0.14);
   }
@@ -197,7 +200,7 @@ width: 80%;
     height: 45px;
     // margin-left: 30%;
     // margin-bottom: 250px;
-margin: 0 0 250px 140px;
+margin: 0 0 160px 140px;
 .impact-section:hover &,
   .impact-section:focus & {
     width: 60%;
@@ -265,23 +268,23 @@ transition-duration: $animation-head;
 
     .ocean-content {
       @media screen and (min-width: 1200px) {
-        width: 500px;
+        width: 520px;
         margin-top: 150px;
-        margin-left: 65px;
+        margin-left: 55px;
       }
     }
 
     .factory-content {
       @media screen and (min-width: 1200px) {
-        margin-left: -35px;
-        width: 500px;
+        margin-left: -45px;
+        width: 520px;
       }
     }
 
     .earth-content {
       @media screen and (min-width: 1200px) {
-        margin-left: -135px;
-        width: 500px;
+        margin-left: -145px;
+        width: 520px;
       }
     }
 
@@ -289,8 +292,8 @@ transition-duration: $animation-head;
       margin-bottom: 0px;
 
       @media screen and (min-width: 1200px) {
-        margin-left: -235px;
-        width: 500px;
+        margin-left: -245px;
+        width: 520px;
         margin-bottom: 0px;
       }
     }

@@ -110,17 +110,18 @@ height: 40px;
    // transition: $animation-card;
    transition-duration: $animation-head;
    height: 2px;
-   border-bottom: 2px solid $svg-color;
+   border-bottom: 2px solid $Secondary-text-color;
 
    .section-hero:hover &,
 .section-hero:focus &{
-      box-shadow: 0px 3px 10px 2px $svg-color;
+   border-bottom: 2px solid $primary-text-color;
+      box-shadow: 0px 3px 10px 2px $primary-text-color;
 }}
 
 
 
    .develo-eco__hand{
-      margin-left: 30px;   
+      margin-left: 20px;   
 z-index: 4;
 @media screen and (min-width: 1200px) {
 justify-content: right;

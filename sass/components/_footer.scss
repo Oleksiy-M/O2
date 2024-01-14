@@ -91,7 +91,7 @@ padding-left: 10px;
 
 .join__title {
    text-align: center;
-   
+   user-select: none;
    margin-bottom: 20px;
    font-weight: 700;
    font-size: 14px;
@@ -177,7 +177,7 @@ flex-direction: column;
    line-height: 1.14;
    text-transform: uppercase;
    color: $White-color;
-
+user-select: none;
    @media screen and (min-width: 1200px) {
       text-align: left;
    }
