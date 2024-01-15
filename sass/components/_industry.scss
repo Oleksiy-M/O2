@@ -172,7 +172,7 @@ height: 1px;
    border: 4px solid $line-color;
    box-shadow: 0px -3px 8px 1px ($line-color), 0px 3px 8px 1px ($line-color);
    
-   background-color: rgba(0, 106, 255, 0.142);
+   background-color: rgba(2, 13, 29, 0.356);
    // opacity: 0;
    // transition-property: height;
    // transition: $animation-card;
@@ -213,7 +213,7 @@ transition-duration: $animation-head;
       .impact-box__end:hover &,
       .impact-box__end:focus &{
       font-size: 13.5px;
-     color: $primary-text-color;
+   //   color: $primary-text-color;
       }
 
    @media screen and (min-width: 1200px) {
@@ -223,7 +223,7 @@ text-align: center;
       .impact-box__end:hover &,
          .impact-box__end:focus & {
          font-size: 17.5px;
-        color:  $primary-text-color;
+      //   color:  $primary-text-color;
       }
    }
 
