@@ -3,24 +3,19 @@
 .history-page {
    display: block;
    padding:100px 0 0  0 ;
-   // height: 950px; 
-   //  padding-bottom:50px ;
+
    margin: 0;
-   // background-size:contain;
+
    background-position: center;
 background-size: cover;
    background-attachment: scroll;
-   // background-image:
-   //    linear-gradient(rgba(57, 111, 65, 0.705),
-   //       rgba(0, 0, 0, 0.781));
 
-   // url("../img/bg-discl/bg-mobil.jpg")
 
    @media screen and (min-width: 1200px) {
       display: flexbox;
       justify-content: center;
       max-width: 1600px;
-      height: 2000px;
+      // height: 2000px;
       margin-left: auto;
       margin-right: auto;
 
