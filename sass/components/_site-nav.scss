@@ -113,7 +113,7 @@ transition: $animation-card;
 
 
 .site-nav__link {
-	
+	user-select: none;
 	text-decoration: none;
 	color: $White-color;
 	transition: color $animation;
@@ -141,6 +141,7 @@ transition: $animation-card;
 
 .page__contacts{
 	margin-right: 20px;
+	
 	font-style: normal;
 	font-size: 12px;
 	text-decoration: none;

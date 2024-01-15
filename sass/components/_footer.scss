@@ -206,7 +206,7 @@ width: 230px;
    font-size: 16px;
    line-height: 20px;
    color: rgba(255, 255, 255, 0.6);
-
+user-select: none;
 }
 
 .button--submit {
@@ -223,6 +223,8 @@ width: 230px;
    background-color: $Accent;
    box-shadow: 0px 4px 4px 0px #00000026;
    min-width: 230px;
+
+      user-select: none;
    font-size: 16px;
    font-weight: 700;
    line-height: 1.87;
