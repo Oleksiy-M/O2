@@ -719,7 +719,7 @@ body {
 @media screen and (min-width: 1200px) {
   .develo-eco___decor4 {
     margin-left: 20px;
-    width: 435px;
+    width: 425px;
   }
 }
 
@@ -752,7 +752,7 @@ body {
 @media screen and (min-width: 1200px) {
   .develo-eco___decor5 {
     margin-top: -831px;
-    margin-left: 455px;
+    margin-left: 445px;
     height: 831px;
   }
 }
@@ -786,7 +786,7 @@ body {
   .develo-eco___decor6 {
     margin-top: -831px;
     width: 190px;
-    margin-left: 455px;
+    margin-left: 445px;
   }
 }
 
@@ -1712,7 +1712,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .laptop-content {
-    margin-left: 0;
+    margin-left: 10px;
   }
 }
 
@@ -1801,7 +1801,7 @@ body {
 @media screen and (min-width: 1200px) {
   .oil-content {
     width: 490px;
-    margin-left: 170px;
+    margin-left: 160px;
   }
 }
 
@@ -1809,20 +1809,20 @@ body {
   .ocean-content {
     width: 520px;
     margin-top: 150px;
-    margin-left: 65px;
+    margin-left: 55px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .factory-content {
-    margin-left: -35px;
+    margin-left: -45px;
     width: 520px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .earth-content {
-    margin-left: -135px;
+    margin-left: -145px;
     width: 520px;
   }
 }
@@ -1832,7 +1832,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .man-content {
-    margin-left: -235px;
+    margin-left: -245px;
     width: 520px;
     margin-bottom: 0px;
   }

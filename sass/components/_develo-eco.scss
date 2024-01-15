@@ -149,7 +149,7 @@ transition-duration: $animation-head;
       margin-bottom: 0;
 
       @media screen and (min-width: 1200px) {
-        margin-left: 0;
+        margin-left: 10px;
 
       }
     }
@@ -261,7 +261,7 @@ transition-duration: $animation-head;
       @media screen and (min-width: 1200px) {
 
         width: 490px;
-        margin-left: 170px;
+        margin-left: 160px;
 
       }
     }
@@ -270,21 +270,21 @@ transition-duration: $animation-head;
       @media screen and (min-width: 1200px) {
         width: 520px;
         margin-top: 150px;
-        margin-left: 65px;
+        margin-left: 55px;
        
       }
     }
 
     .factory-content {
       @media screen and (min-width: 1200px) {
-        margin-left: -35px;
+        margin-left: -45px;
         width: 520px;
       }
     }
 
     .earth-content {
       @media screen and (min-width: 1200px) {
-        margin-left: -135px;
+        margin-left: -145px;
         width: 520px;
       }
     }
@@ -293,7 +293,7 @@ transition-duration: $animation-head;
       margin-bottom: 0px;
 
       @media screen and (min-width: 1200px) {
-        margin-left: -235px;
+        margin-left: -245px;
         width: 520px;
         margin-bottom: 0px;
       }
