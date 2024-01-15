@@ -16,7 +16,7 @@ padding: 90px 3px 0px 3px;
 
   .develo-eco {
     display: block;
-padding: 0px 0px 0px 10px;
+padding: 0px 5px 0px 30px;
 margin-bottom: 180px;
 
       @media screen and (min-width: 1200px) {
@@ -106,7 +106,7 @@ transition-duration: $animation-head;
     .develo-eco__list {
       display: block;
       margin-bottom: 0px;
-
+// margin: 0 10px;
       @media screen and (min-width: 1200px) {
         padding-top: 0px;
         margin-bottom: 0px;
@@ -136,8 +136,8 @@ transition-duration: $animation-head;
         @media screen and (min-width: 1200px) {
 
           // flex-wrap: nowrap;
-        margin-bottom: 155px;
-        margin-left: 0;
+     
+        margin: 0 0 155px 0;
         width: 430px;
         height: 250px;
 
@@ -161,7 +161,7 @@ transition-duration: $animation-head;
 display: block;
 
 margin-bottom: 300px;
-      padding: 0px 0px 0px 10px;
+    padding: 0px 5px 0px 30px;
 
 
   @media screen and (min-width: 1200px) {
@@ -270,20 +270,21 @@ transition-duration: $animation-head;
       @media screen and (min-width: 1200px) {
         width: 520px;
         margin-top: 150px;
-        margin-left: 55px;
+        margin-left: 65px;
+       
       }
     }
 
     .factory-content {
       @media screen and (min-width: 1200px) {
-        margin-left: -45px;
+        margin-left: -35px;
         width: 520px;
       }
     }
 
     .earth-content {
       @media screen and (min-width: 1200px) {
-        margin-left: -145px;
+        margin-left: -135px;
         width: 520px;
       }
     }
@@ -292,7 +293,7 @@ transition-duration: $animation-head;
       margin-bottom: 0px;
 
       @media screen and (min-width: 1200px) {
-        margin-left: -245px;
+        margin-left: -235px;
         width: 520px;
         margin-bottom: 0px;
       }

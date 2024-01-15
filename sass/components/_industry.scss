@@ -60,7 +60,7 @@ margin: 0 auto 100px auto;
    padding: 5px 10px;
    height: 85px;
 
-   color: aqua;
+   color: $Secondary-text-color;
    user-select: none;
 // border-radius: 25px;
 text-shadow: 2px 1px 10px black;
@@ -76,6 +76,7 @@ transition-duration: $animation-head;
       .section-hero:hover &,
          .section-hero:focus & {
             font-size: 13.5px;
+            color: $primary-text-color;
          }
 
          @media screen and (min-width: 360px) {
@@ -121,9 +122,9 @@ height: 40px;
 
 
    .develo-eco__hand{
-      margin-left: 20px;   
+      margin-left: 25px;   
 z-index: 4;
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
 justify-content: right;
 margin-left: 0px;
 
@@ -132,7 +133,7 @@ margin-left: 0px;
 
 .hand-hero {
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
    justify-content: right;
    margin-right: 0px;
    width: 500px;
