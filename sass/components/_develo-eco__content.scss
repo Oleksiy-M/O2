@@ -69,11 +69,11 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
    white-space: pre-wrap;
    color: $Secondary-text-color;
    padding: 10px;
-
+text-shadow: 2px 1px 10px black;
 transition-duration: 3s;
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
-      color: rgb(0, 255, 140);
+      color: $svg-color;
       // background-color: rgba(207, 149, 23, 0.553);
    }
 

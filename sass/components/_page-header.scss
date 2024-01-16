@@ -17,7 +17,7 @@ margin: 0 auto 0 auto;
          // 	background-attachment: fixed;
       // object-fit:contain;
       max-width: 1600px;
-      
+ 
    }}
 
        .bubble-head {
@@ -29,7 +29,7 @@ margin: 0 auto 0 auto;
    
           @media screen and (min-width: 1200px) {
              position: absolute;
-             overflow: hidden;
+           
    margin-top: -200px;
           }
          }
@@ -48,10 +48,6 @@ margin: 0 auto 0 auto;
    height: 1370px;
       	
    }
-
-@media screen and (min-width: 768px) {
- 	height: 1370px;
-   }
    
 @media
 (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -62,7 +58,7 @@ margin: 0 auto 0 auto;
 	}
 
 @media screen and (min-width: 1200px) {
-   height: 820px; 
+   height: 1120px; 
     }
 	
     @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
