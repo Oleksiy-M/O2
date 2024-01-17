@@ -484,9 +484,24 @@ body {
   margin: 0 auto;
 }
 
+.end__svg {
+  fill: #3fa9f5;
+  display: flexbox;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  transition-duration: 1s;
+  width: 95%;
+}
+.section-end:hover .end__svg, .section-end:focus .end__svg {
+  width: 100%;
+  fill: #0000FF;
+}
+
 .impact-box__end {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 600px;
 }
 @media screen and (min-width: 768px) {
@@ -496,6 +511,10 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .impact-box__end {
+    border-radius: 5px;
+    border: 1px solid #0000FF;
+    border-top: none;
+    border-bottom: none;
     height: 265px;
     margin-bottom: 100px;
   }
@@ -573,11 +592,12 @@ body {
   letter-spacing: 0.08em;
   word-spacing: 2px;
   text-shadow: 2px 1px 10px black;
-  color: aqua;
-  transition-duration: 1s;
+  color: #3fa9f5;
+  transition-duration: 3s;
 }
-.impact-box__end:hover .title-end, .impact-box__end:focus .title-end {
+.section-end:hover .title-end, .section-end:focus .title-end {
   font-size: 13.5px;
+  color: #0000FF;
 }
 @media screen and (min-width: 768px) {
   .title-end {
@@ -1938,6 +1958,7 @@ body {
   padding: 10px;
   text-shadow: 2px 1px 10px black;
   transition-duration: 3s;
+  font-style: italic;
 }
 .develo-eco__content:hover .develo-eco__art, .develo-eco__content:focus .develo-eco__art {
   color: #33FF99;

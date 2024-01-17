@@ -154,18 +154,40 @@ margin-left: 0px;
    
 }
 
+.end__svg{
+      fill: $Secondary-text-color;
+         // padding-bottom: 20px;
+         display: flexbox;
+         margin-left: auto;
+         margin-right: auto;
+         margin-bottom: 10px;
+      
+      transition-duration: $animation-head;
+      
+      width: 95%;
+.section-end:hover &,
+   .section-end:focus &{
+      width: 100%;
+            fill: $line-color;
+         }
+}
 
 
 .impact-box__end{
    display: flex;
    align-items: center;
-   // align-self: center;
+   justify-content: center ;
    height: 600px;
-
-          @media screen and (min-width: 768px) {
-         height: 350px;
-             }
+   
+   @media screen and (min-width: 768px) {
+      height: 350px;
+   }
    @media screen and (min-width: 1200px) {
+// box-shadow: 0px 0px 1px 0px ($line-color), 0px 0px 1px 0px ($line-color);
+border-radius: 5px;
+border: 1px solid $line-color ;
+border-top: none;
+border-bottom: none;
          height: 265px;  
 margin-bottom: 100px;
       }
@@ -196,7 +218,7 @@ transition-duration: 3s;
       width: 100%;
    border: 1px solid $Secondary-text-color;
       box-shadow: 0px -1px 4px 0px ($line-color), 0px 1px 4px 0px ($line-color);
-   }
+   }  
    //     @media screen and (min-width: 360px) {
    // // height: 190px;
    //     }
@@ -215,7 +237,6 @@ margin: 0 auto;
 background-position: center;
    // object-fit:cover;
    // height: 100%;
-   // position: ab;
    // background-color: rgba(3, 3, 109, 0.781); 
          background-image:
                linear-gradient(rgba(0, 110, 255, 0.316),
@@ -250,6 +271,8 @@ background-position: center;
    }
 
    @media screen and (min-width: 1200px) {
+ 
+ 
       background-image:
             linear-gradient(rgba(2, 108, 246, 0.185),
                rgba(2, 0, 60, 0.89), rgba(2, 108, 246, 0.26)),
@@ -271,6 +294,7 @@ background-position: center;
 
 .title-end {
    padding:  330px 0 0 0;
+
    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    text-align: center;
    white-space: pre-wrap;
@@ -281,13 +305,14 @@ background-position: center;
    letter-spacing: 0.08em;
    word-spacing: 2px;
    text-shadow: 2px 1px 10px black;
-   color: $primary-text-color;
-// font-style:italic;
-transition-duration: $animation-head;
-      .impact-box__end:hover &,
-      .impact-box__end:focus &{
+   // font-style:italic;
+     color: $Secondary-text-color;
+   transition-duration: 3s;
+
+   .section-end:hover &,
+   .section-end:focus &{
       font-size: 13.5px;
-   //   color: $primary-text-color;
+      color: $line-color;
       }
 
       
