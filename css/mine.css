@@ -505,6 +505,11 @@ body {
   border-top: none;
   border-bottom: none;
 }
+.impact-box__end:hover, .impact-box__end:focus {
+  border: 2px solid aqua;
+  border-top: none;
+  border-bottom: none;
+}
 @media screen and (min-width: 768px) {
   .impact-box__end {
     height: 550px;
@@ -514,11 +519,6 @@ body {
   .impact-box__end {
     height: 465px;
     margin-bottom: 100px;
-  }
-  .impact-box__end:hover, .impact-box__end:focus {
-    border: 2px solid aqua;
-    border-top: none;
-    border-bottom: none;
   }
 }
 

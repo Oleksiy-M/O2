@@ -187,6 +187,13 @@ margin-left: 0px;
    border-top: none;
    border-bottom: none;
 
+   &:hover,
+   &:focus {
+   
+         border: 2px solid $primary-text-color ;
+      border-top: none;
+         border-bottom: none;
+      }
    @media screen and (min-width: 768px) {
       height: 550px;
    }
@@ -195,13 +202,6 @@ margin-left: 0px;
 height:465px;  
 margin-bottom: 100px;
 
-&:hover,
-&:focus {
-
-      border: 2px solid $primary-text-color ;
-   border-top: none;
-      border-bottom: none;
-   }
 
       }
 
