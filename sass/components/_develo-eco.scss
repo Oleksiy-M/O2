@@ -82,7 +82,7 @@ text-shadow: 2px 1px 10px black;
       font-size: 10px;
       line-height: 1.86;
       letter-spacing: 0.26em;
-      
+      text-transform: uppercase;
       
       .develo-eco:hover &,
         .develo-eco:focus & {
@@ -92,13 +92,13 @@ text-shadow: 2px 1px 10px black;
       
       @media screen and (min-width: 1200px) {
         font-weight: 600;
-        font-size: 15px;
+        font-size: 14px;
         line-height: 1.86;
         letter-spacing: 0.26em;
         
       .develo-eco:hover &,
         .develo-eco:focus & {
-          font-size: 17px;
+          font-size: 15px;
         }
       }
     }
@@ -215,7 +215,7 @@ margin: 0 0 160px 140px;
   margin-left: auto;
   margin-right: auto;
   padding: 5px;
-
+text-transform: uppercase;
   user-select: none;
   color: $Secondary-text-color;
   font-weight: 300;
@@ -233,13 +233,13 @@ transition-duration: $animation-head;
 
   @media screen and (min-width: 1200px) {
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.86;
     letter-spacing: 0.26em;
 
   .impact-section:hover &,
     .impact-section:focus & {
-      font-size: 17px;
+      font-size: 15px;
     }
   }
 }

@@ -1,4 +1,5 @@
 .develo-eco__svg {
+ 
    fill: $Secondary-text-color;
 // padding-bottom: 20px;
    display: flexbox;
@@ -33,22 +34,23 @@ transition-duration: $animation-head;
    height: 1%;
 border-radius: 5px;
 
-// &:hover,
-// &:focus{
+&:hover,
+&:focus{
+   border: 1px solid $primary-text-color;
 //    box-shadow: 0px 1px 4px 0px $primary-text-color;
-// }
+}
    .develo-eco:hover &,
    .develo-eco:focus & {
       opacity: 1;
    height: 70%;
-      box-shadow: 0px -1px 4px 0px $Secondary-text-color;
+      box-shadow: 0px -1px 4px 0px $primary-text-color;
          background-color: rgba(63, 104, 240, 0.14);
    }
  .impact-section:hover &,
  .impact-section:focus & {
          opacity: 1;
       height: 70%;
-      box-shadow: 0px -1px 4px 0px $Secondary-text-color;
+      box-shadow: 0px -1px 4px 0px $primary-text-color;
          background-color: rgba(63, 104, 240, 0.14);
       }
       @media screen and (min-width: 1200px) {

@@ -2,7 +2,7 @@
 
 .history-page {
    display: block;
-   padding:100px 0 0  0 ;
+   padding:100px 0 ;
 
    margin: 0;
 
@@ -12,7 +12,7 @@ background-size: cover;
 
 
    @media screen and (min-width: 1200px) {
-      display: flexbox;
+      display: flex;
       justify-content: center;
       max-width: 1600px;
       // height: 2000px;
@@ -20,4 +20,72 @@ background-size: cover;
       margin-right: auto;
 
    }
+}
+
+
+.history-hero{
+
+
+
+margin: 0 22px 120px 22px;
+// @media screen and (min-width: 360px) {
+//    margin: 0 30px 120px 30px;
+// }
+
+@media screen and (min-width: 1200px) {
+
+   margin: 0 auto 100px auto;
+}
+}
+
+
+
+.history-hero__heading{
+   padding: 5px 10px;
+      height: 85px;
+   
+      color: $Secondary-text-color;
+      user-select: none;
+      // border-radius: 25px;
+      text-shadow: 2px 1px 10px black;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 1.86;
+      letter-spacing: 0.26em;
+   
+      // transition-property: font-size;  
+      transition-duration: $animation-head;
+   
+      .history-page:hover &,
+      .history-page:focus & {
+         font-size: 13.5px;
+         color: $primary-text-color;
+      }
+   
+      @media screen and (min-width: 360px) {
+         height: 60px;
+         padding: 0px 5px;
+      }
+   
+      @media screen and (min-width: 768px) {
+         padding: 0px 20px;
+         height: 30px;
+      }
+   
+   
+      @media screen and (min-width: 1200px) {
+   
+         font-weight: 600;
+         font-size: 23px;
+         line-height: 1.86;
+         letter-spacing: 0.26em;
+         height: 40px;
+   
+         .history-page:hover &,
+         .history-page:focus & {
+            font-size: 24.5px;
+         }
+      }
 }

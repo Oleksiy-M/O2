@@ -9,12 +9,13 @@ $animation: 2ms cubic-bezier(0.4, 0, 0.2, 1);
 $animation-card: 800ms cubic-bezier(0.4, 0, 0.2, 1);
 $animation-head: 1s;
 $bg-color: #1f2f52;
-$video-color: rgba(4, 30, 197, 0.804);
-$section-color: #18243ac5;
-$section-color__desktop: #18243adf;
+$video-color: rgba(27, 0, 179, 0.595);
+$section-color: #1d1357df;
+$section-color__desktop: #1d1357df;
 // $section-color: #282849d7;$section-color: #18243adf;
 /* ==========Utils========= */
-
+// $video-color: rgba(4, 30, 197, 0.804);
+// $section-color: #18243ac5; $section-color__desktop: #18243adf;
 .list {
 	margin: 0;
 	padding: 0;
