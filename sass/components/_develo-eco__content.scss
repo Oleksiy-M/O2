@@ -36,7 +36,7 @@ transition-duration: $animation-head;
    // width: 100%;
    height: 1%;
 border-radius: 5px;
-background-color: #015efe1e;
+// background-color: #015efe1e;
 
 .develo-eco:hover &,
 .develo-eco:focus & {
@@ -56,12 +56,12 @@ background-color: #015efe1e;
 }
 &:hover,
 &:focus{
-      background-color: rgba(0, 157, 255, 0.351);
+      background-color: rgba(0, 127, 254, 0.218);
       // background-color: $primary-text-color;
-   border: 1px solid $primary-text-color;
+   border: 0.5px solid $primary-text-color;
    // box-shadow: 0px 8px 10px 0px $primary-text-color;
-   box-shadow: 0px -3px 6px $primary-text-color,
-         0px -1px 1px $primary-text-color,    1px -1px 3px $primary-text-color;
+   box-shadow: 0px -2px 5px $primary-text-color,
+         0px 0px 0px $primary-text-color,    0px 0px 0px $primary-text-color;
 }
 @media screen and (min-width: 1200px) {
 margin: 0 0px 0 20px;
@@ -87,7 +87,7 @@ transition-duration: 1s;
 font-style:italic;
    .cards__overlay:hover &,
    .cards__overlay:focus & {
-      color: $primary-text-color;
+      color: $svg-color;
 
       // background-color: rgba(207, 149, 23, 0.553);
    }

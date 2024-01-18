@@ -382,7 +382,7 @@ body {
   padding: 80px 0 20px 0;
   margin-bottom: 40px;
   border-radius: 5px;
-  background-color: rgba(3, 2, 89, 0.4901960784);
+  background-color: rgba(12, 12, 12, 0.7568627451);
 }
 @media screen and (min-width: 1200px) {
   .section-hero {
@@ -454,10 +454,6 @@ body {
   border-bottom: 2px solid aqua;
   box-shadow: 0px 3px 10px 2px aqua;
 }
-.history-page:hover .head-border, .history-page:focus .head-border {
-  border-bottom: 2px solid aqua;
-  box-shadow: 0px 3px 10px 2px aqua;
-}
 
 .develo-eco__hand {
   margin-left: 25px;
@@ -504,6 +500,10 @@ body {
   align-items: center;
   justify-content: center;
   height: 600px;
+  border-radius: 5px;
+  border: 1px solid #0000FF;
+  border-top: none;
+  border-bottom: none;
 }
 @media screen and (min-width: 768px) {
   .impact-box__end {
@@ -512,15 +512,11 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .impact-box__end {
-    border-radius: 5px;
-    border: 1px solid #0000FF;
-    border-top: none;
-    border-bottom: none;
     height: 465px;
     margin-bottom: 100px;
   }
   .impact-box__end:hover, .impact-box__end:focus {
-    border: 1px solid aqua;
+    border: 2px solid aqua;
     border-top: none;
     border-bottom: none;
   }
@@ -569,7 +565,7 @@ body {
 }
 
 .title-end {
-  background-color: rgba(36, 0, 237, 0.7529411765);
+  background-color: rgba(20, 0, 132, 0.7529411765);
   height: 100%;
   text-transform: uppercase;
   padding: 300px 10px;
@@ -580,7 +576,7 @@ body {
   user-select: none;
   font-weight: 700;
   font-size: 12px;
-  line-height: 1.4;
+  line-height: 1.9;
   letter-spacing: 0.08em;
   word-spacing: 2px;
   text-shadow: 1px 2px 5px black;
@@ -599,7 +595,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .title-end {
-    padding: 230px 70px;
     font-size: 16px;
   }
   .section-end:hover .title-end, .section-end:focus .title-end {
@@ -1653,7 +1648,7 @@ body {
 .section-bg {
   border-radius: 5px;
   padding: 90px 3px 0px 3px;
-  background-color: rgba(3, 2, 89, 0.4901960784);
+  background-color: rgba(12, 12, 12, 0.7568627451);
 }
 @media screen and (min-width: 1200px) {
   .section-bg {
@@ -1690,7 +1685,7 @@ body {
   border-bottom: 1px solid #3fa9f5;
 }
 .develo-eco:hover .develo-eco__box, .develo-eco:focus .develo-eco__box {
-  width: 90%;
+  width: 95%;
   box-shadow: 0px 1px 4px 0px #3fa9f5;
   background-color: rgba(63, 104, 240, 0.14);
 }
@@ -1804,7 +1799,7 @@ body {
   border-bottom: 1px solid #3fa9f5;
 }
 .impact-section:hover .impact-title__box, .impact-section:focus .impact-title__box {
-  width: 90%;
+  width: 95%;
   box-shadow: 0px 1px 4px 0px #3fa9f5;
   background-color: rgba(63, 104, 240, 0.14);
 }
@@ -1927,7 +1922,6 @@ body {
   transition-duration: 1s;
   height: 1%;
   border-radius: 5px;
-  background-color: rgba(1, 94, 254, 0.1176470588);
 }
 .develo-eco:hover .cards__overlay, .develo-eco:focus .cards__overlay {
   opacity: 1;
@@ -1938,9 +1932,9 @@ body {
   height: 70%;
 }
 .cards__overlay:hover, .cards__overlay:focus {
-  background-color: rgba(0, 157, 255, 0.351);
-  border: 1px solid aqua;
-  box-shadow: 0px -3px 6px aqua, 0px -1px 1px aqua, 1px -1px 3px aqua;
+  background-color: rgba(0, 127, 254, 0.218);
+  border: 0.5px solid aqua;
+  box-shadow: 0px -2px 5px aqua, 0px 0px 0px aqua, 0px 0px 0px aqua;
 }
 @media screen and (min-width: 1200px) {
   .cards__overlay {
@@ -1963,7 +1957,7 @@ body {
   font-style: italic;
 }
 .cards__overlay:hover .develo-eco__art, .cards__overlay:focus .develo-eco__art {
-  color: aqua;
+  color: #33FF99;
 }
 @media screen and (min-width: 769px) {
   .develo-eco__art {
@@ -2043,7 +2037,7 @@ body {
 
 .history-hero__heading {
   padding: 5px 10px;
-  height: 85px;
+  height: 60px;
   color: #3fa9f5;
   user-select: none;
   text-shadow: 2px 1px 10px black;
@@ -2061,7 +2055,7 @@ body {
 }
 @media screen and (min-width: 360px) {
   .history-hero__heading {
-    height: 60px;
+    height: 30px;
     padding: 0px 5px;
   }
 }
@@ -2082,6 +2076,16 @@ body {
   .history-section:hover .history-hero__heading, .history-section:focus .history-hero__heading {
     font-size: 24.5px;
   }
+}
+
+.history-border {
+  transition-duration: 1s;
+  height: 2px;
+  border-bottom: 2px solid #3fa9f5;
+}
+.history-section:hover .history-border, .history-section:focus .history-border {
+  border-bottom: 2px solid aqua;
+  box-shadow: 0px 3px 10px 2px aqua;
 }
 
 .section-card {
