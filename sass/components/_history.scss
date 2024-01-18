@@ -1,6 +1,13 @@
       // < !-- history -->
 
-.history-page {
+.history-page{
+   display: block;
+}
+
+
+
+
+.history-section {
    display: block;
    padding:100px 0 ;
 
@@ -51,16 +58,16 @@ margin: 0 22px 120px 22px;
       text-transform: uppercase;
       text-align: center;
       font-weight: 300;
-      font-size: 13px;
+      font-size: 15px;
       line-height: 1.86;
       letter-spacing: 0.26em;
    
       // transition-property: font-size;  
       transition-duration: $animation-head;
    
-      .history-page:hover &,
-      .history-page:focus & {
-         font-size: 13.5px;
+   .history-section:hover &,
+   .history-section:focus & {
+         font-size: 15.5px;
          color: $primary-text-color;
       }
    
@@ -83,8 +90,8 @@ margin: 0 22px 120px 22px;
          letter-spacing: 0.26em;
          height: 40px;
    
-         .history-page:hover &,
-         .history-page:focus & {
+         .history-section:hover &,
+         .history-section:focus & {
             font-size: 24.5px;
          }
       }

@@ -9,10 +9,10 @@
 
 	@media screen and (min-width: 650px) {
 		// display: flex;
-		padding-top: 30px;
+		padding-top: 10px;
 				}
 	@media screen and (min-width: 1200px) {
-		padding-top: 10px;
+		padding-top: 0px;
 				}	
 }
 
@@ -119,7 +119,7 @@ margin-top: 30px;
 
 .title {
 	user-select: none;
-	text-shadow: 2px 1px 10px black;
+text-shadow: 1px 1px 4px black;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.86;
