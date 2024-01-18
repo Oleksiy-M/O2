@@ -366,19 +366,19 @@ position: absolute;
 
    @media screen and (min-width: 1200px) {
 
-padding: 230px 70px;
+padding: 230px 80px;
          // background-image: linear-gradient(to bottom,
          
          //          #070085a5 10%,
          //          #00025cf0 60%,
          //          #0a0276a4);
             // height: 100%;
-      font-size: 16px;
+      font-size: 15px;
       .section-end:hover &,
          .section-end:focus & {
             
             padding: 230px 110px;
-         font-size: 16.5px;
+         font-size: 15.5px;
       //   color:  $primary-text-color;
       }
    }

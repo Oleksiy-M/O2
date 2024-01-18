@@ -595,12 +595,12 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .title-end {
-    padding: 230px 70px;
-    font-size: 16px;
+    padding: 230px 80px;
+    font-size: 15px;
   }
   .section-end:hover .title-end, .section-end:focus .title-end {
     padding: 230px 110px;
-    font-size: 16.5px;
+    font-size: 15.5px;
   }
 }
 
@@ -1933,7 +1933,7 @@ body {
   height: 70%;
 }
 .cards__overlay:hover, .cards__overlay:focus {
-  background-color: rgba(0, 127, 254, 0.218);
+  background-color: rgba(25, 69, 247, 0.1803921569);
   border: 0.5px solid aqua;
   box-shadow: 0px -2px 5px aqua, 0px 0px 0px aqua, 0px 0px 0px aqua;
 }
