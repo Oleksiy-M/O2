@@ -580,7 +580,7 @@ body {
   letter-spacing: 0.08em;
   word-spacing: 2px;
   text-shadow: 1px 2px 5px black;
-  color: #3fa9f5;
+  color: #0000FF;
   transition-duration: 3s;
 }
 .section-end:hover .title-end, .section-end:focus .title-end {
@@ -599,7 +599,7 @@ body {
     font-size: 15px;
   }
   .section-end:hover .title-end, .section-end:focus .title-end {
-    padding: 230px 110px;
+    padding: 230px 135px;
     font-size: 15.5px;
   }
 }
@@ -1680,7 +1680,7 @@ body {
   padding: 5px 15px;
   text-align: center;
   height: 45px;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 80%;
   transition-duration: 1s;
   border-bottom: 1px solid #3fa9f5;
@@ -1728,7 +1728,7 @@ body {
     letter-spacing: 0.26em;
   }
   .develo-eco:hover .develo-eco__title, .develo-eco:focus .develo-eco__title {
-    font-size: 15px;
+    font-size: 14.5px;
   }
 }
 
@@ -1794,7 +1794,7 @@ body {
   margin: 0 auto 70px auto;
   text-align: center;
   height: 45px;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 80%;
   transition-duration: 1s;
   border-bottom: 1px solid #3fa9f5;
@@ -1806,7 +1806,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .impact-title__box {
-    width: 55%;
+    width: 50%;
     height: 45px;
     margin: 0 0 160px 140px;
   }
@@ -1843,7 +1843,7 @@ body {
     letter-spacing: 0.26em;
   }
   .impact-section:hover .impact-title, .impact-section:focus .impact-title {
-    font-size: 15px;
+    font-size: 14.5px;
   }
 }
 
@@ -1919,7 +1919,6 @@ body {
   align-self: flex-end;
   flex-wrap: wrap;
   overflow: hidden;
-  border: 1px solid rgba(0, 196, 240, 0.0588235294);
   transition-duration: 1s;
   height: 1%;
   border-radius: 5px;
@@ -1931,11 +1930,6 @@ body {
 .impact-section:hover .cards__overlay, .impact-section:focus .cards__overlay {
   opacity: 1;
   height: 70%;
-}
-.cards__overlay:hover, .cards__overlay:focus {
-  background-color: rgba(25, 69, 247, 0.1803921569);
-  border: 0.5px solid aqua;
-  box-shadow: 0px -2px 5px aqua, 0px 0px 0px aqua, 0px 0px 0px aqua;
 }
 @media screen and (min-width: 1200px) {
   .cards__overlay {
@@ -1957,7 +1951,7 @@ body {
   transition-duration: 1s;
   font-style: italic;
 }
-.cards__overlay:hover .develo-eco__art, .cards__overlay:focus .develo-eco__art {
+.develo-eco__content:hover .develo-eco__art, .develo-eco__content:focus .develo-eco__art {
   color: #33FF99;
 }
 @media screen and (min-width: 769px) {

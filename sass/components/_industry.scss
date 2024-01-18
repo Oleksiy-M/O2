@@ -348,7 +348,7 @@ position: absolute;
    word-spacing: 2px;
    text-shadow: 1px 2px 5px black;
    // font-style:italic;
-     color: $Secondary-text-color;
+     color: $line-color;
    transition-duration: 3s;
 
    .section-end:hover &,
@@ -377,7 +377,7 @@ padding: 230px 80px;
       .section-end:hover &,
          .section-end:focus & {
             
-            padding: 230px 110px;
+            padding: 230px 135px;
          font-size: 15.5px;
       //   color:  $primary-text-color;
       }

@@ -28,7 +28,8 @@ margin: 0 0px 0 0px;
    align-self: flex-end;
    flex-wrap: wrap;
    overflow: hidden;
-   border: 1px solid #00c4f00f;
+      // box-shadow: 0px 1px 1px rgba(75, 81, 161, 0.397),
+      //       0px -4px 4px rgba(79, 62, 153, 0.06), 1px -4px 6px rgba(59, 61, 155, 0.281);
 transition-duration: $animation-head;
 // transition-duration: 3s;
       // top: 0;
@@ -54,16 +55,16 @@ border-radius: 5px;
    // background-color: $line-color;
    // background-color: rgba(63, 104, 240, 0.14);
 }
-&:hover,
-&:focus{
-      // background-color: rgba(0, 127, 254, 0.218);
-      background-color: #1945f72e;
-      // background-color: $primary-text-color;
-   border: 0.5px solid $primary-text-color;
-   // box-shadow: 0px 8px 10px 0px $primary-text-color;
-   box-shadow: 0px -2px 5px $primary-text-color,
-         0px 0px 0px $primary-text-color,    0px 0px 0px $primary-text-color;
-}
+// &:hover,
+// &:focus{
+//       // background-color: rgba(0, 127, 254, 0.218);
+//       background-color: #1945f72e;
+//       // background-color: $primary-text-color;
+//    border: 0.5px solid $primary-text-color;
+//    // box-shadow: 0px 8px 10px 0px $primary-text-color;
+//    box-shadow: 0px -2px 5px $primary-text-color,
+//          0px 0px 0px $primary-text-color,    0px 0px 0px $primary-text-color;
+// }
 @media screen and (min-width: 1200px) {
 margin: 0 0px 0 20px;
 
@@ -86,8 +87,8 @@ text-shadow: 1px 1.5px 1px black;
 transition-duration: 1s;
 
 font-style:italic;
-   .cards__overlay:hover &,
-   .cards__overlay:focus & {
+   .develo-eco__content:hover &,
+      .develo-eco__content:focus & {
       color: $svg-color;
 
       // background-color: rgba(207, 149, 23, 0.553);

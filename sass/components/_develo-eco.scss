@@ -41,7 +41,7 @@ margin-bottom: 180px;
       padding: 5px 15px;
       text-align: center;
       height: 45px;
-      border-radius: 10px;
+      border-radius: 5px;
         width: 80%;
       transition-duration: $animation-head;
       border-bottom: 1px solid $Secondary-text-color;
@@ -99,7 +99,7 @@ text-shadow: 1px 1px 4px black;
         
       .develo-eco:hover &,
         .develo-eco:focus & {
-          font-size: 15px;
+          font-size: 14.5px;
         }
       }
     }
@@ -184,7 +184,7 @@ margin-bottom: 200px;
 
   text-align: center;
   height: 45px;
-  border-radius: 10px;
+  border-radius: 5px;
 width: 80%;
   transition-duration: $animation-head;
   border-bottom: 1px solid $Secondary-text-color;
@@ -197,7 +197,7 @@ width: 80%;
   }
 
   @media screen and (min-width: 1200px) {
-  width: 55%;
+  width: 50%;
     height: 45px;
     // margin-left: 30%;
     // margin-bottom: 250px;
@@ -240,7 +240,7 @@ transition-duration: $animation-head;
 
   .impact-section:hover &,
     .impact-section:focus & {
-      font-size: 15px;
+      font-size: 14.5px;
     }
   }
 }
