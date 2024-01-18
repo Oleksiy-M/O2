@@ -63,7 +63,7 @@ margin: 0 auto 100px auto;
    color: $Secondary-text-color;
    user-select: none;
 // border-radius: 25px;
-text-shadow: 2px 1px 10px black;
+text-shadow: 1px 1px 3px black;
 text-transform: uppercase;
 text-align: center;
 font-weight: 300;
@@ -266,7 +266,8 @@ align-self: center;
 @media screen and (min-width: 1200px) {
 // height:100%;
 width: 100%;
-      // z-index: 1;
+      // z-index: -1;
+
          // min-width: 270px;
          // margin-top: 30px;
          // position: fixed;
@@ -336,7 +337,7 @@ width: 100%;
 
 
 .title-end {
-// background-color: #0a00662b;
+background-color: #2400edc0;
       height: 100%;
 
 text-transform: uppercase;
@@ -351,7 +352,7 @@ position: absolute;
    line-height: 1.4;
    letter-spacing: 0.08em;
    word-spacing: 2px;
-   text-shadow: 2px 1px 10px black;
+   text-shadow: 1px 2px 5px black;
    // font-style:italic;
      color: $Secondary-text-color;
    transition-duration: 3s;
@@ -375,12 +376,13 @@ padding: 230px 70px;
          // background-image: linear-gradient(to bottom,
          
          //          #070085a5 10%,
-         //          #01022df0 50%,
+         //          #00025cf0 60%,
          //          #0a0276a4);
             // height: 100%;
       font-size: 16px;
       .section-end:hover &,
          .section-end:focus & {
+            
             padding: 230px 110px;
          font-size: 16.5px;
       //   color:  $primary-text-color;

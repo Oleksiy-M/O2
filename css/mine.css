@@ -407,7 +407,7 @@ body {
   height: 85px;
   color: #3fa9f5;
   user-select: none;
-  text-shadow: 2px 1px 10px black;
+  text-shadow: 1px 1px 3px black;
   text-transform: uppercase;
   text-align: center;
   font-weight: 300;
@@ -569,6 +569,7 @@ body {
 }
 
 .title-end {
+  background-color: rgba(36, 0, 237, 0.7529411765);
   height: 100%;
   text-transform: uppercase;
   padding: 300px 10px;
@@ -582,7 +583,7 @@ body {
   line-height: 1.4;
   letter-spacing: 0.08em;
   word-spacing: 2px;
-  text-shadow: 2px 1px 10px black;
+  text-shadow: 1px 2px 5px black;
   color: #3fa9f5;
   transition-duration: 3s;
 }
@@ -1908,7 +1909,10 @@ body {
   margin-bottom: 10px;
   transition-duration: 1s;
 }
-.develo-eco__content:focus .develo-eco__svg, .develo-eco__content:hover .develo-eco__svg {
+.impact-section:hover .develo-eco__svg, .impact-section:focus .develo-eco__svg {
+  fill: #33FF99;
+}
+.develo-eco:hover .develo-eco__svg, .develo-eco:focus .develo-eco__svg {
   fill: #33FF99;
 }
 
@@ -1958,7 +1962,7 @@ body {
   transition-duration: 1s;
   font-style: italic;
 }
-.develo-eco__content:hover .develo-eco__art, .develo-eco__content:focus .develo-eco__art {
+.cards__overlay:hover .develo-eco__art, .cards__overlay:focus .develo-eco__art {
   color: aqua;
 }
 @media screen and (min-width: 769px) {

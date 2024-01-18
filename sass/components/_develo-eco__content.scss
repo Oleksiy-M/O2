@@ -9,9 +9,12 @@
    // transition: transform $animation-card, opacity $animation-card;
 transition-duration: 1s;
 
-
-   .develo-eco__content:focus &,
-   .develo-eco__content:hover & {
+.impact-section:hover &,
+   .impact-section:focus & {
+         fill: $svg-color;
+         }
+.develo-eco:hover &,
+.develo-eco:focus & {
 
       fill: $svg-color;
    }
@@ -82,8 +85,8 @@ text-shadow: 1px 1.5px 1px black;
 transition-duration: 1s;
 
 font-style:italic;
-   .develo-eco__content:hover &,
-   .develo-eco__content:focus & {
+   .cards__overlay:hover &,
+   .cards__overlay:focus & {
       color: $primary-text-color;
 
       // background-color: rgba(207, 149, 23, 0.553);
