@@ -161,22 +161,7 @@ margin-left: 0px;
    
 }
 
-.end__svg{
-      fill: $Secondary-text-color;
-         // padding-bottom: 20px;
-         display: flexbox;
-         margin-left: auto;
-         margin-right: auto;
-         margin-bottom: 10px;
-      
-      transition-duration: $animation-head;
-      
-.section-end:hover &,
-   .section-end:focus &{
-  
-            fill: $line-color;
-         }
-}
+
 
 
 .impact-box__end{
@@ -202,7 +187,7 @@ margin-left: 0px;
    }
    @media screen and (min-width: 1200px) {
 // box-shadow: 0px 0px 1px 0px ($line-color), 0px 0px 1px 0px ($line-color);
-height:465px;  
+height:300px;  
 margin-bottom: 100px;
 
 
@@ -253,84 +238,15 @@ transition-duration: 3s;
 .chart{
    padding: 0;
    
-display: flex;
-align-self: center;
-   align-items: center;
-      justify-content: center;
-   margin: 0 auto;
-
-   // height: 100%;
+// display: flex;
+//    align-items: center;
+//       justify-content: center;
+   // margin: 0 auto;
 @media screen and (min-width: 1200px) {
-// height:100%;
 width: 100%;
-      // z-index: -1;
-
-         // min-width: 270px;
-         // margin-top: 30px;
-         // position: fixed;
-         // width: 100%;
 }
 }
 
-// .end-pic {
-//    display: flex;
-//    margin: 0 auto;
-// background-position: center;
-//    // object-fit:cover;
-//    // height: 100%;
-//    // background-color: rgba(3, 3, 109, 0.781); 
-//          background-image:
-//                linear-gradient(rgba(0, 110, 255, 0.316),
-//                   rgba(2, 0, 60, 0.89)),
-//                url("../img/end/end-mobile.jpg");
-
-// @media (min-device-pixel-ratio: 2) and (max-width: 767px),
-//    (min-resolution: 192dpi) and (max-width: 767px),
-//    (min-resolution: 2dppx) and (max-width: 767px) {
-//             background-image:
-//                   linear-gradient(rgba(0, 110, 255, 0.129),
-//     rgba(2, 0, 60, 0.89)),
-//                   url("../img/end/end-mobile.jpg");
-//    }
-
-//    @media screen and (min-width: 768px) {
-//       background-image:
-//             linear-gradient(rgba(2, 108, 246, 0.185),
-//                rgba(2, 0, 60, 0.89), rgba(2, 108, 246, 0.26)),
-//             url("../img/end/end-tablet.jpg");
-
-//    }
-
-
-//    @media (min-device-pixel-ratio: 2) and (min-width: 768px),
-//    (min-resolution: 192dpi) and (min-width: 768px),
-//    (min-resolution: 2dppx) and (min-width: 768px) {
-//       background-image:
-//             linear-gradient(rgba(2, 108, 246, 0.185),
-//                rgba(2, 0, 60, 0.53), rgba(2, 108, 246, 0.26)),
-//             url("../img/end/end-tablet.jpg");
-//    }
-
-//    @media screen and (min-width: 1200px) {
- 
- 
-//       background-image:
-//             linear-gradient(rgba(2, 108, 246, 0.185),
-//                rgba(2, 0, 60, 0.89), rgba(2, 108, 246, 0.26)),
-//             url("../img/end/end.jpg");
-//       }
-   
-
-//    @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
-//    (min-resolution: 192dpi) and (min-width: 1200px),
-//    (min-resolution: 2dppx) and (min-width: 1200px) {
-
-//       background-image:
-//    linear-gradient(rgba(2, 108, 246, 0.185),
-//    rgba(2, 0, 60, 0.89), rgba(2, 108, 246, 0.26)),
-//       url("../img/end/end.jpg");
-//       }
-// }
 
 
 
@@ -350,7 +266,6 @@ width: 100%;
 }
 
 .title-end {
-
 margin: 0 auto;
 width: 220px;
 
@@ -400,28 +315,27 @@ width: 800px;
 .buton-down__up {
    display: none;
    @media screen and (min-width: 1200px) {
-   display: block;
-   // justify-content: right;
-margin: 0px 50px 50px 80%;
+   display: flex;
+   width: 100%;
+   justify-content: right;
+margin: 0px 0px 20px 0;
 
+}}
+
+
+.up-svg {
+   fill: $Secondary-text-color;
+   // padding-bottom: 20px;
+   // display: flexbox;
+   margin-left: auto;
+   margin-right: auto;
+
+   fill: #514ef800;
+   transition-duration: $animation-head;
+
+&:hover ,
+&:focus  {
+fill: $primary-text-color;
+   }
 }
 
-
-.down__up{
-      display: block;
-   padding: 5px 10px;
-   color: $Secondary-text-color;
-   border: 1px solid $primary-text-color;
-   transition:  $animation-card;
-   border-radius:5px;
-   
-   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 700;
-  &:hover,
-  &:focus{
-      color: $line-color;
-      background-color: $svg-color;
-   }
-}}
