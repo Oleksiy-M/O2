@@ -4,7 +4,12 @@
     // background: $section-color;
     border-radius: 5px;
 padding: 90px 3px 0px 3px;
-background-color: $section-color__desktop;
+// background-color: $section-color__desktop;
+background-image: linear-gradient(to bottom,
+
+      #5e0101b7 0.1%,
+      #460117c6 6%,
+      #00020eb5 99%);
 
 @media screen and (min-width: 1200px) {
   display: flex;
@@ -204,7 +209,7 @@ width: 80%;
 margin: 0 0 160px 140px;
 .impact-section:hover &,
   .impact-section:focus & {
-    width: 60%;
+    width: 55%;
     box-shadow: 0px 1px 4px 0px $Secondary-text-color;
     background-color: rgba(63, 104, 240, 0.14);
   }

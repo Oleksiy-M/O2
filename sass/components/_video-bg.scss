@@ -10,10 +10,15 @@ margin-top: 0px;
    justify-content: center;
    align-items: center;
 
-
+   background-image: linear-gradient(to bottom,
+   
+            #014ee7d4 30%,
+            #01117bbb 85%,
+            #010f62d3);
 
 @media screen and (min-width: 1200px) {
 // object-fit:contain;
+
 max-width: 1600px;
  overflow: hidden;
 padding: 0;
@@ -26,7 +31,7 @@ padding: 0;
    margin-top: 30px;
 position: fixed;
    width: 100%;
-
+ 
    
    @media screen and (min-width: 1200px) {
    // position:absolute;
@@ -34,10 +39,13 @@ margin-top: -90px;
 max-width: 1600px;
 }}
 
-.bg-color__video {
-   background-color: $video-color;
+// .bg-color__video {
+   
+//    background-color: $video-color;
+// background-image: linear-gradient(to bottom,
 
+//          #014ee7d4 30%,
+//          #0019ba4a 85%);
 
-
-}
+// }
 

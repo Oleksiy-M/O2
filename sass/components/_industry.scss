@@ -31,7 +31,10 @@ padding: 80px 0 50px 0;
    
    // background: $section-color;
    border-radius: 5px;
-   background-color: $section-color__desktop;
+background-image: linear-gradient(to bottom,
+
+         #7d0101a3 5%,
+         #5e0101b7);
    
    @media screen and (min-width: 1200px) {
       display: flex;
@@ -330,13 +333,28 @@ width: 100%;
 // }
 
 
+
+.box-title-end{
+// @media screen and (min-width: 1200px) {
+
+      display: flex;
+   //   flex-direction: column;
+         align-items: center;
+         // justify-content: center;
+         position: absolute;
+  
+   background-color: #140084c0;
+         height: 100%;
+         width: 100%;
+
+}
+
 .title-end {
-background-color: #140084c0;
-      height: 100%;
+
+margin: 0 auto;
+width: 220px;
 
 text-transform: uppercase;
-   padding: 300px 10px;
-position: absolute;
    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    text-align: center;
    white-space: pre-wrap;
@@ -347,7 +365,6 @@ position: absolute;
    letter-spacing: 0.08em;
    word-spacing: 2px;
    text-shadow: 1px 2px 5px black;
-   // font-style:italic;
      color: $line-color;
    transition-duration: 3s;
 
@@ -355,31 +372,24 @@ position: absolute;
    .section-end:focus &{
       font-size: 13.5px;
       color: $Secondary-text-color;
-         padding: 300px 15px;
+         // padding: 300px 15px;
       }
 
       
+      @media screen and (min-width: 360px) {
+         width: 300px;
+      }
       @media screen and (min-width: 768px) {
-         padding: 100px 10px;
+         width: 600px;
       }
 
 
    @media screen and (min-width: 1200px) {
-
-padding: 230px 80px;
-         // background-image: linear-gradient(to bottom,
-         
-         //          #070085a5 10%,
-         //          #00025cf0 60%,
-         //          #0a0276a4);
-            // height: 100%;
+width: 800px;
       font-size: 15px;
       .section-end:hover &,
-         .section-end:focus & {
-            
-            padding: 230px 135px;
+      .section-end:focus & {
          font-size: 15.5px;
-      //   color:  $primary-text-color;
       }
    }
 
@@ -390,9 +400,9 @@ padding: 230px 80px;
 .buton-down__up {
    display: none;
    @media screen and (min-width: 1200px) {
-   display: flex;
-   justify-content: right;
-margin: 0px 50px 50px 0px;
+   display: block;
+   // justify-content: right;
+margin: 0px 50px 50px 80%;
 
 }
 
