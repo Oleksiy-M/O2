@@ -1434,7 +1434,7 @@ body {
   width: 100%;
   padding-top: 150px;
   padding-bottom: 80px;
-  background-image: linear-gradient(to bottom, rgba(1, 15, 98, 0.8274509804) 5%, rgba(0, 25, 186, 0.5725490196) 85%, rgba(18, 2, 161, 0.4588235294));
+  background-image: linear-gradient(to bottom, rgba(1, 15, 98, 0.8274509804) 0.1%, rgba(0, 25, 186, 0.5725490196) 85%, rgba(18, 2, 161, 0.4588235294));
 }
 @media screen and (min-width: 360px) {
   .page-footer {
