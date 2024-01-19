@@ -1931,7 +1931,7 @@ body {
   overflow: hidden;
   transition-duration: 1s;
   height: 1%;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .develo-eco:hover .cards__overlay, .develo-eco:focus .cards__overlay {
   opacity: 1;
@@ -1940,6 +1940,10 @@ body {
 .impact-section:hover .cards__overlay, .impact-section:focus .cards__overlay {
   opacity: 1;
   height: 70%;
+}
+.cards__overlay:hover, .cards__overlay:focus {
+  background-color: rgba(244, 192, 209, 0.031372549);
+  box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.12), 0px 0px 4px rgba(0, 0, 0, 0.06), 1px -1px 6px rgba(0, 0, 0, 0.16);
 }
 @media screen and (min-width: 1200px) {
   .cards__overlay {

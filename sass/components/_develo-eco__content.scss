@@ -28,43 +28,33 @@ margin: 0 0px 0 0px;
    align-self: flex-end;
    flex-wrap: wrap;
    overflow: hidden;
-      // box-shadow: 0px 1px 1px rgba(75, 81, 161, 0.397),
-      //       0px -4px 4px rgba(79, 62, 153, 0.06), 1px -4px 6px rgba(59, 61, 155, 0.281);
+ 
 transition-duration: $animation-head;
-// transition-duration: 3s;
-      // top: 0;
-      // left: 0;
-   // width: 100%;
+// transition-duration: 1s;
    height: 1%;
-border-radius: 5px;
-// background-color: #015efe1e;
+border-radius: 10px;
 
 .develo-eco:hover &,
 .develo-eco:focus & {
    opacity: 1;
    height: 70%;
-   // box-shadow: 0px -1px 4px 0px $primary-text-color;
-   
-   // background-color: rgba(63, 104, 240, 0.14);
 }
 .impact-section:hover &,
 .impact-section:focus & {
    opacity: 1;
    height: 70%;
-   // box-shadow: 0px -1px 4px 0px $primary-text-color;
-   // background-color: $line-color;
-   // background-color: rgba(63, 104, 240, 0.14);
+
 }
-// &:hover,
-// &:focus{
-//       // background-color: rgba(0, 127, 254, 0.218);
-//       background-color: #1945f72e;
-//       // background-color: $primary-text-color;
-//    border: 0.5px solid $primary-text-color;
-//    // box-shadow: 0px 8px 10px 0px $primary-text-color;
-//    box-shadow: 0px -2px 5px $primary-text-color,
-//          0px 0px 0px $primary-text-color,    0px 0px 0px $primary-text-color;
-// }
+
+&:hover,
+&:focus{
+      background-color: #f4c0d108;
+   box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.12),
+         0px 0px 4px rgba(0, 0, 0, 0.06), 1px -1px 6px rgba(0, 0, 0, 0.16);
+   
+   }
+
+
 @media screen and (min-width: 1200px) {
 margin: 0 0px 0 20px;
 
