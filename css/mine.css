@@ -129,7 +129,6 @@ body {
 
 .bg-nav {
   display: flex;
-  justify-self: start;
   align-items: end;
   width: 100%;
 }
@@ -144,12 +143,8 @@ body {
 @media screen and (min-width: 1200px) {
   .site-nav__logo {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 65px;
     width: 65px;
-    margin: 0 50px 0 20px;
   }
 }
 
@@ -159,7 +154,7 @@ body {
 @media screen and (min-width: 1200px) {
   .nav-logo {
     display: block;
-    margin: 0;
+    margin: 0 100px 0 0;
     padding: 0;
     transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
   }
