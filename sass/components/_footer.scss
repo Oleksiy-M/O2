@@ -2,27 +2,26 @@
 .page-footer {
       display: block;
       width: 100%;
-      padding-top:150px;
-   padding-bottom: 80px;
-   background-image: linear-gradient(to bottom,
-   
-            #010f62d3 0.1%,
-            #0019ba92 85%,
-            #1202a175);
-@media screen and (min-width: 360px) {
-   padding-top: 320px;
-   padding-bottom: 150px;
-}
+      // padding-top:150px;
+   margin-bottom: 110px;
+// background-image: $background-waterwater__mobile;
+
+// @media screen and (min-width: 360px) {
+//    // padding-top: 320px;
+//    padding-bottom: 150px;
+// }
 @media screen and (min-width: 1200px) {
+   background-color: $bg-color;
    
    display: flex;
    justify-content: center;
-   align-items:flex-start;
-   padding-top: 70px;
-   padding-bottom: 30px;
+   align-items: center;
+   margin: 0;
+   // padding-top: 70px;
+   // padding-bottom: 30px;
    max-width: 1600px;
-   background-color: $bg-color;
-      background-image: none;
+   height: 300px;
+      // background-image: none;
   }
 
 }
@@ -89,7 +88,7 @@ padding-left: 10px;
    margin-bottom: 50px;
    @media screen and (min-width: 1200px) {
       display: block;
-      margin-left: 40px;
+      margin:0 0 0 40px;
    }
 
 }

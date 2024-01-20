@@ -10,15 +10,11 @@ margin-top: 0px;
    justify-content: center;
    align-items: center;
 
-   background-image: linear-gradient(to bottom,
-   
-            #014ee7d4 30%,
-            #01117bbb 85%,
-            #010f62d3);
+// background-image: $background-water__mobile;
 
 @media screen and (min-width: 1200px) {
 // object-fit:contain;
-
+background-image: $background-water;
 max-width: 1600px;
  overflow: hidden;
 padding: 0;

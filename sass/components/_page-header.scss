@@ -29,17 +29,14 @@ margin: 0 auto 0 auto;
    
           @media screen and (min-width: 1200px) {
              position: absolute;
-           
-   margin-top: -200px;
+         //   background-image: $background-water__mobile;
+   margin-top: -100px;
           }
          }
 
-.bg-color__head { 
-
-   background-image: linear-gradient(to bottom,
-
-            #014ee7e2 20%,
-            #11018e8c 85%);
+.bg-color__head {
+background-image: $background-water__mobile;
+   // background-image: $background-water;
    // background-color: $video-color;
    height: 935px;
 
@@ -51,7 +48,7 @@ margin: 0 auto 0 auto;
    
 @media screen and (min-width: 768px) {
    height: 1510px;
-      	
+      background-image: $background-water;
    }
    
 @media
@@ -64,6 +61,7 @@ margin: 0 auto 0 auto;
 
 @media screen and (min-width: 1200px) {
    height: 1120px; 
+ 
     }
 	
     @media (min-device-pixel-ratio: 2) and (min-width: 1200px),

@@ -11,7 +11,7 @@ padding: 80px 0 50px 0;
       //          rgba(4, 3, 38, 0.777));
   
          // url("../img/bg-discl/bg-mobil.jpg")
-
+   margin: 0 auto 300px 0;
    @media screen and (min-width: 1200px) {
  
       
@@ -299,16 +299,17 @@ text-transform: uppercase;
       }
 
       
-      @media screen and (min-width: 360px) {
-
-            width: 300px;
-      // .impact-box__end:hover &,
-      //    .impact-box__end:focus & {
+      // @media screen and (min-width: 360px) {
 
       //       width: 300px;
-      //    }
+      // // .impact-box__end:hover &,
+      // //    .impact-box__end:focus & {
 
-      }
+      // //       width: 300px;
+      // //    }
+
+      // }
+
       @media screen and (min-width: 768px) {
          width: 600px;
       }
