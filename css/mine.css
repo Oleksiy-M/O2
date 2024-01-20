@@ -1892,6 +1892,7 @@ body {
   flex-wrap: wrap;
   overflow: hidden;
   transition-duration: 1s;
+  box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.185);
   height: 1%;
   border-radius: 10px;
 }
@@ -1912,6 +1913,7 @@ body {
 }
 
 .develo-eco__art {
+  padding: 10px;
   text-align: center;
   user-select: none;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -1920,7 +1922,6 @@ body {
   letter-spacing: 0.02em;
   white-space: pre-wrap;
   color: #3fa9f5;
-  padding: 10px;
   text-shadow: 1px 1.5px 1px black;
   transition-duration: 0.5s;
   font-style: italic;
@@ -1971,7 +1972,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .bubble {
-    margin-top: -90px;
+    margin-top: -250px;
     max-width: 1600px;
   }
 }
