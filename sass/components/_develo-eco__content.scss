@@ -1,26 +1,59 @@
-.develo-eco__svg {
- 
-   fill: $Secondary-text-color;
 
+
+.svg-box{
+width: 120px;
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
+}
+
+
+.develo-eco__svg {
    display: flexbox;
-   // margin-left: auto;
-   // margin-right: auto;
-   // margin-bottom: 10px;
-   margin: 0 auto 10px auto;
+   fill: $Secondary-text-color;
+   margin: 0 0 10px 0;  
    // transition: transform $animation-card, opacity $animation-card;
 transition-duration: 1s;
+   .develo-eco__content:hover &,
+      .develo-eco__content:focus & {
 
-.impact-section:hover &,
-   .impact-section:focus & {
-         fill: $svg-color;
+   fill: $svg-color;
          }
-.develo-eco:hover &,
-.develo-eco:focus & {
 
-      fill: $svg-color;
-   }
+
 
 }
+
+.eco__svg {
+
+
+   display: flexbox;
+   fill: $Secondary-text-color;
+.impact-section:hover &,
+   .impact-section:focus & {
+
+      fill: $primary-text-color;
+   }
+
+      .develo-eco:hover &,
+      .develo-eco:focus & {
+   
+      fill: $primary-text-color;
+      }
+}
+
+
+
+
+.eco__svg-imp{
+margin-left: -120px;
+   
+}
+
+
+
+
+
 
 .cards__overlay {
 margin: 0 0px 0 0px;

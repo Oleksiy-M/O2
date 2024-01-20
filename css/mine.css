@@ -1871,17 +1871,36 @@ body {
   }
 }
 
+.svg-box {
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
 .develo-eco__svg {
-  fill: #3fa9f5;
   display: flexbox;
-  margin: 0 auto 10px auto;
+  fill: #3fa9f5;
+  margin: 0 0 10px 0;
   transition-duration: 1s;
 }
-.impact-section:hover .develo-eco__svg, .impact-section:focus .develo-eco__svg {
+.develo-eco__content:hover .develo-eco__svg, .develo-eco__content:focus .develo-eco__svg {
   fill: #33FF99;
 }
-.develo-eco:hover .develo-eco__svg, .develo-eco:focus .develo-eco__svg {
-  fill: #33FF99;
+
+.eco__svg {
+  display: flexbox;
+  fill: #3fa9f5;
+}
+.impact-section:hover .eco__svg, .impact-section:focus .eco__svg {
+  fill: aqua;
+}
+.develo-eco:hover .eco__svg, .develo-eco:focus .eco__svg {
+  fill: aqua;
+}
+
+.eco__svg-imp {
+  margin-left: -120px;
 }
 
 .cards__overlay {
