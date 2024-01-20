@@ -156,10 +156,10 @@ margin-left: 0px;
 }
 
 
-.end__h2o{
-   margin: 0 auto;
+// .end__h2o{
+//    margin: 0 auto;
    
-}
+// }
 
 
 
@@ -174,22 +174,30 @@ margin-left: 0px;
    border: 1px solid $line-color ;
    border-top: none;
    border-bottom: none;
+margin: 0 40px;
 
-   &:hover,
-   &:focus {
-   
-         border: 2px solid $primary-text-color ;
+transition-duration: $animation-head;
+&:hover,
+&:focus {
+      transition-duration: 3s;
+   margin: 0 0px 0px 0px;
+         border: 4px solid $primary-text-color ;
       border-top: none;
          border-bottom: none;
       }
+
    @media screen and (min-width: 768px) {
       height: 550px;
    }
+
    @media screen and (min-width: 1200px) {
 // box-shadow: 0px 0px 1px 0px ($line-color), 0px 0px 1px 0px ($line-color);
 height:300px;  
 margin-bottom: 100px;
-
+   &:hover,
+      &:focus {
+margin-bottom: 100px;
+}
 
       }
 
@@ -213,8 +221,8 @@ position: relative;
 transition-duration: $animation-head;
    width: 93%;
 
-   .section-end:hover &,
-   .section-end:focus &{
+   .impact-box__end:hover &,
+   .impact-box__end:focus &{
 transition-duration: 3s;
       height: 100%;
       width: 100%;
@@ -256,7 +264,7 @@ width: 100%;
       display: flex;
    //   flex-direction: column;
          align-items: center;
-         // justify-content: center;
+         justify-content: center;
          position: absolute;
   
    background-color: #140084c0;
@@ -266,7 +274,7 @@ width: 100%;
 }
 
 .title-end {
-margin: 0 auto;
+// margin: 0 auto;
 width: 220px;
 
 text-transform: uppercase;
@@ -283,8 +291,8 @@ text-transform: uppercase;
      color: $line-color;
    transition-duration: 3s;
 
-   .section-end:hover &,
-   .section-end:focus &{
+   .impact-box__end:hover &,
+   .impact-box__end:focus &{
       font-size: 13.5px;
       color: $Secondary-text-color;
          // padding: 300px 15px;
@@ -292,7 +300,14 @@ text-transform: uppercase;
 
       
       @media screen and (min-width: 360px) {
-         width: 300px;
+
+            width: 300px;
+      // .impact-box__end:hover &,
+      //    .impact-box__end:focus & {
+
+      //       width: 300px;
+      //    }
+
       }
       @media screen and (min-width: 768px) {
          width: 600px;
@@ -300,11 +315,12 @@ text-transform: uppercase;
 
 
    @media screen and (min-width: 1200px) {
-width: 800px;
-      font-size: 15px;
-      .section-end:hover &,
-      .section-end:focus & {
+width: 700px;
+      font-size: 13px;
+      .impact-box__end:hover &,
+      .impact-box__end:focus & {
          font-size: 15.5px;
+         width: 800px;
       }
    }
 
