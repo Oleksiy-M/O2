@@ -270,20 +270,18 @@ width: 100%;
    background-color: #140084c0;
          height: 100%;
          width: 100%;
-
+padding: 0 15px;
 }
 
 .title-end {
-// margin: 0 auto;
-width: 220px;
-
+// width: 240px;
 text-transform: uppercase;
    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    text-align: center;
    white-space: pre-wrap;
    user-select: none;
    font-weight: 700;
-   font-size: 12px;
+   font-size: 9px;
    line-height: 1.9;
    letter-spacing: 0.08em;
    word-spacing: 2px;
@@ -295,20 +293,18 @@ text-transform: uppercase;
    .impact-box__end:focus &{
       font-size: 13.5px;
       color: $Secondary-text-color;
-         // padding: 300px 15px;
+      // width: 250px;
+         // padding:  15px;
       }
 
-      
       // @media screen and (min-width: 360px) {
 
-      //       width: 300px;
-      // // .impact-box__end:hover &,
-      // //    .impact-box__end:focus & {
+      //       width: 200px;
 
-      // //       width: 300px;
-      // //    }
-
-      // }
+      //          .impact-box__end:hover &,
+      //             .impact-box__end:focus & {
+      //                width: 300px;
+      // }}
 
       @media screen and (min-width: 768px) {
          width: 600px;
