@@ -1894,7 +1894,7 @@ body {
   transition-duration: 1s;
 }
 .develo-eco__content:hover .eco__svg, .develo-eco__content:focus .eco__svg {
-  fill: #6bf8f1;
+  fill: #fae455;
 }
 
 .eco__svg-home {
