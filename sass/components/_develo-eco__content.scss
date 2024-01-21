@@ -5,6 +5,7 @@ width: 120px;
    display: flex;
    justify-content: center;
    margin: 0 auto;
+   
 }
 
 
@@ -13,7 +14,7 @@ width: 120px;
    fill: $Secondary-text-color;
    margin: 0 0 10px 0;  
    // transition: transform $animation-card, opacity $animation-card;
-transition-duration: 1s;
+transition-duration: $animation-head;
    .develo-eco__content:hover &,
       .develo-eco__content:focus & {
 
@@ -25,24 +26,20 @@ transition-duration: 1s;
 }
 
 .eco__svg {
-
-
    display: flexbox;
    fill: $Secondary-text-color;
-.impact-section:hover &,
-   .impact-section:focus & {
+transition-duration: $animation-head;
 
-      fill: $primary-text-color;
-   }
-
-      .develo-eco:hover &,
-      .develo-eco:focus & {
+    .develo-eco__content:hover &,
+.develo-eco__content:focus & {
    
-      fill: $primary-text-color;
+      fill: #6bf8f1;
       }
 }
 
-
+.eco__svg-home{
+   margin-left: -70px;
+}
 
 
 .eco__svg-imp{

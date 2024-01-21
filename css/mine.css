@@ -1413,7 +1413,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: 0 auto;
     max-width: 1600px;
     height: 300px;
   }
@@ -1891,12 +1891,14 @@ body {
 .eco__svg {
   display: flexbox;
   fill: #3fa9f5;
+  transition-duration: 1s;
 }
-.impact-section:hover .eco__svg, .impact-section:focus .eco__svg {
-  fill: aqua;
+.develo-eco__content:hover .eco__svg, .develo-eco__content:focus .eco__svg {
+  fill: #6bf8f1;
 }
-.develo-eco:hover .eco__svg, .develo-eco:focus .eco__svg {
-  fill: aqua;
+
+.eco__svg-home {
+  margin-left: -70px;
 }
 
 .eco__svg-imp {
