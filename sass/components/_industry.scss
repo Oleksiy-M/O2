@@ -37,6 +37,7 @@ background-image: linear-gradient(to bottom,
 
  @media screen and (min-width: 768px) {
       display: flex;
+      
       // flex-direction: column;
       // align-items: end;
          flex-wrap: wrap;
@@ -126,12 +127,14 @@ height: 40px;
 
 
    .develo-eco__hand{
-      display: flexbox;
+      display: flex;
 margin-left: 25px;   
 
 z-index: 2;
 @media screen and (min-width: 768px) {
+   // width: 100%;
 // justify-content: right;
+flex-direction: row-reverse;
    margin-left: 0px;
  }
 }
@@ -139,7 +142,7 @@ z-index: 2;
 
 
 .hand-hero {
-      
+display: flexbox;
 @media screen and (min-width: 768px) {
    // margin-right: 0px;
    width: 360px;
