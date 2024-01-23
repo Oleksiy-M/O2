@@ -2,17 +2,17 @@
 .page__nav {
 		display: flex;
 			// background-color: rgb(3, 18, 78);
-			justify-content:start;
-			align-items: end;
-			padding: 15px 0;
+			// justify-content:start;
+			// align-items: end;
+			padding: 15px 0 0 0;
 			// padding-top: 10px;
 			// padding-bottom: 10px;
-			width: 100%;
-			position: fixed;
+			// width: 100%;/
+			// position: fixed;
 		
 			@media screen and (min-width: 1200px) {
-				display: flexbox;
-				position: static;
+				// display: flex;
+				// position: static;
 				max-width: 1600px;
 		
 
@@ -42,8 +42,8 @@
 .bg-nav{
 display: flex;
 	// justify-self: start;
-	align-items: end;
-	width: 100%;
+	// align-items: end;
+	// width: 100%;
 	
 	@media screen and (min-width: 768) {
 		
@@ -56,6 +56,7 @@ display: flex;
 }
 
 .site-nav__logo{
+	display: none;
 	@media screen and (min-width: 768px) {
 		display: flex;
 
@@ -71,27 +72,31 @@ display: flex;
 @media screen and (min-width: 768px) {
 
 display: block;
-margin: 0 50px 0 10px;
+margin: 0 30px 0 10px;
 	padding: 0;
 transition: $animation-card;
+width: 50px;
+height: 50px;
 }
 @media screen and (min-width: 1200px) {
 		height: 65px;
 			width: 65px;
-			margin: 0 100px 0 10px;
+			margin: 0 50px 0 10px;
 }
 }
 
 .site-nav {
 	display: flex;
-	margin-right: 20%;
+	align-items:end;
+	// margin-right: 20%;
+	// justify-content: flex-start;
 	font-weight: 400;
 	font-size: 10px;
 	line-height: 1.94;
 	letter-spacing: 0.03em;
 	text-shadow: 1px 1px 1px black;
 	@media screen and (min-width: 768px){
-			align-items: end;
+			// align-items: end;
 		margin-right: 20%;
 		font-weight: 400;
 		font-size: 10px;
@@ -100,7 +105,7 @@ transition: $animation-card;
 		}
 		
 @media screen and (min-width: 1200px) {
-		margin-right: 35%;
+		margin-right: 25%;
 		font-weight: 500;
 		font-size: 16px;
 		line-height: 1.94;
@@ -116,10 +121,10 @@ transition: $animation-card;
 margin-right: 20px;
 		
 	}
-	@media screen and (min-width: 1200px) {}
+	@media screen and (min-width: 1200px) {
 	margin-right: 50px;
 }
-
+}
 
 .site-nav__link {
 	user-select: none;
@@ -178,7 +183,7 @@ justify-content: right;
 }
 
 .contacts__icon {
-	margin-right: 5px;
+	margin-right: 10px;
 
 
 }
