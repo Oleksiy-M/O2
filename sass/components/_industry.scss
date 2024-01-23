@@ -37,10 +37,10 @@ background-image: linear-gradient(to bottom,
 
  @media screen and (min-width: 768px) {
       display: flex;
-      flex-direction: column;
+      // flex-direction: column;
       // align-items: end;
-         // flex-wrap: wrap;
-         // justify-content: right;
+         flex-wrap: wrap;
+         justify-content: right;
          padding-top: 60px;
          padding-bottom: 20px;
             }
@@ -130,8 +130,7 @@ margin-left: 25px;
 
 z-index: 2;
 @media screen and (min-width: 768px) {
-display: flex;
-flex-direction: row-reverse;
+display: flexbox;
 // justify-content: right;
    margin-left: 0px;
  }
@@ -140,6 +139,7 @@ flex-direction: row-reverse;
 
 
 .hand-hero {
+      
 @media screen and (min-width: 768px) {
    // margin-right: 0px;
    width: 360px;

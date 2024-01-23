@@ -110,7 +110,7 @@ body {
   display: block;
   position: fixed;
   width: 100%;
-  padding: 15px 0 10px 0;
+  padding: 10px 0 10px 0;
   z-index: 2;
   background-color: #1f2f52;
 }
@@ -169,7 +169,7 @@ body {
 
 .site-nav {
   display: flex;
-  align-items: last baseline;
+  align-items: center;
   z-index: 2;
   font-weight: 400;
   font-size: 10px;
@@ -188,6 +188,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .site-nav {
+    align-items: end;
     margin-right: 25%;
     font-weight: 500;
     font-size: 16px;
@@ -232,11 +233,17 @@ body {
   .contact__list {
     display: flex;
     justify-content: right;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__list {
     align-items: last baseline;
   }
 }
 
 .page__item {
+  display: flexbox;
   padding: 0;
 }
 
@@ -408,7 +415,8 @@ body {
 @media screen and (min-width: 768px) {
   .section-hero {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: right;
     padding-top: 60px;
     padding-bottom: 20px;
   }
@@ -482,8 +490,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .develo-eco__hand {
-    display: flex;
-    flex-direction: row-reverse;
+    display: flexbox;
     margin-left: 0px;
   }
 }
@@ -1762,7 +1769,6 @@ body {
 .develo-eco__box {
   display: flex;
   align-items: center;
-  z-index: 3;
   margin: 0 auto 70px auto;
   padding: 5px 15px;
   text-align: center;
