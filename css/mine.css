@@ -487,7 +487,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .develo-eco__hand {
-    justify-content: right;
     margin-left: 0px;
   }
 }
