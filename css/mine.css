@@ -400,7 +400,6 @@ body {
   .section-hero {
     display: flex;
     flex-wrap: wrap;
-    justify-content: right;
     padding-top: 60px;
     padding-bottom: 20px;
   }
@@ -474,7 +473,10 @@ body {
 }
 @media screen and (min-width: 768px) {
   .develo-eco__hand {
+    display: flex;
+    justify-content: right;
     margin-left: 0px;
+    width: 100%;
   }
 }
 
