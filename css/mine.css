@@ -413,9 +413,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .section-hero {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
     padding-top: 60px;
     padding-bottom: 20px;
   }
@@ -426,7 +423,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .idustry-hero {
-    margin: 0 auto 100px auto;
+    margin: 0 50px 100px 50px;
   }
 }
 
@@ -486,16 +483,16 @@ body {
 .develo-eco__hand {
   display: flex;
   margin-left: 25px;
-  z-index: 2;
 }
 @media screen and (min-width: 768px) {
   .develo-eco__hand {
-    flex-direction: row-reverse;
+    justify-content: right;
     margin-left: 0px;
   }
 }
 
 .hand-hero {
+  z-index: 2;
   display: flexbox;
 }
 @media screen and (min-width: 768px) {

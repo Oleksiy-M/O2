@@ -36,12 +36,12 @@ background-image: linear-gradient(to bottom,
          #5e0101b7);
 
  @media screen and (min-width: 768px) {
-      display: flex;
+      // display: flex;
       
       // flex-direction: column;
       // align-items: end;
-         flex-wrap: wrap;
-         justify-content: right;
+         // flex-wrap: wrap;
+         // justify-content: right;
          padding-top: 60px;
          padding-bottom: 20px;
             }
@@ -54,7 +54,7 @@ margin: 0 22px 120px 22px;
 // }
 
          @media screen and (min-width: 768px) {
-margin: 0 auto 100px auto;
+margin: 0 50px 100px 50px;
 }
 
 }
@@ -130,18 +130,18 @@ height: 40px;
       display: flex;
 margin-left: 25px;   
 
-z-index: 2;
 @media screen and (min-width: 768px) {
    // width: 100%;
-// justify-content: right;
-flex-direction: row-reverse;
+   justify-content: right;
+   // flex-direction: row-reverse;
    margin-left: 0px;
- }
+}
 }
 
 
 
 .hand-hero {
+   z-index: 2;
 display: flexbox;
 @media screen and (min-width: 768px) {
    // margin-right: 0px;
