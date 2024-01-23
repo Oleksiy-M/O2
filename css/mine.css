@@ -391,7 +391,6 @@ body {
 }
 
 .section-hero {
-  justify-content: right;
   padding: 80px 0 20px 0;
   margin-bottom: 40px;
   border-radius: 5px;
@@ -401,6 +400,7 @@ body {
   .section-hero {
     display: flex;
     flex-wrap: wrap;
+    justify-content: right;
     padding-top: 60px;
     padding-bottom: 20px;
   }
@@ -493,8 +493,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .hand-hero {
-    justify-content: right;
-    margin-right: 0px;
     width: 360px;
   }
 }
@@ -645,15 +643,13 @@ body {
   .buton-down__up {
     display: flex;
     width: 100%;
+    margin: 0px 10px 20px;
     justify-content: right;
-    margin: 0px 10px 20px 0;
   }
 }
 
 .up-svg {
   fill: #3fa9f5;
-  margin-left: auto;
-  margin-right: auto;
   fill: rgba(81, 78, 248, 0);
   transition-duration: 1s;
 }

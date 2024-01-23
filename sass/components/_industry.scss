@@ -26,10 +26,8 @@ padding: 80px 0 50px 0;
 }
 
 .section-hero{
-   justify-content: right;
    padding: 80px 0 20px 0;
    margin-bottom: 40px;
-   
    // background: $section-color;
    border-radius: 5px;
 background-image: linear-gradient(to bottom,
@@ -37,11 +35,10 @@ background-image: linear-gradient(to bottom,
          #7d0101a3 5%,
          #5e0101b7);
 
-
-
  @media screen and (min-width: 768px) {
       display: flex;
          flex-wrap: wrap;
+         justify-content: right;
          padding-top: 60px;
          padding-bottom: 20px;
             }
@@ -139,20 +136,19 @@ height: 40px;
 
 
    .develo-eco__hand{
-      margin-left: 25px;   
+margin-left: 25px;   
 z-index: 4;
 
 @media screen and (min-width: 768px) {
 margin-left: 0px;
+ }
+}
 
-   }
-   }
+
 
 .hand-hero {
-
 @media screen and (min-width: 768px) {
-   justify-content: right;
-   margin-right: 0px;
+   // margin-right: 0px;
    width: 360px;
 
    }
@@ -359,11 +355,11 @@ width: 700px;
 .buton-down__up {
    display: none;
 
-         @media screen and (min-width: 768px) {
+ @media screen and (min-width: 768px) {
    display: flex;
       width: 100%;
+      margin: 0px 10px 20px ;
       justify-content: right;
-      margin: 0px 10px 20px 0;
       }
 
 }
@@ -371,10 +367,6 @@ width: 700px;
 
 .up-svg {
    fill: $Secondary-text-color;
-   // padding-bottom: 20px;
-   // display: flexbox;
-   margin-left: auto;
-   margin-right: auto;
 
    fill: #514ef800;
    transition-duration: $animation-head;
