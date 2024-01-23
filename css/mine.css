@@ -169,7 +169,6 @@ body {
 
 .site-nav {
   display: flex;
-  align-items: center;
   z-index: 2;
   font-weight: 400;
   font-size: 10px;
@@ -198,7 +197,8 @@ body {
 }
 
 .site-nav__item {
-  display: flexbox;
+  display: flex;
+  align-items: center;
   margin-right: 15px;
 }
 @media screen and (min-width: 768px) {
@@ -232,8 +232,6 @@ body {
 @media screen and (min-width: 768px) {
   .contact__list {
     display: flex;
-    justify-content: right;
-    align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -243,7 +241,8 @@ body {
 }
 
 .page__item {
-  display: flexbox;
+  display: flex;
+  align-items: center;
   padding: 0;
 }
 
