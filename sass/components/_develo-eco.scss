@@ -10,6 +10,11 @@ background-image: linear-gradient(to bottom,
       #5e0101b7 0.1%,
       #460117c6 6%,
       #00020eb5 99%);
+@media screen and (min-width: 768px) {
+    display: flex;
+      flex-wrap: wrap;
+      padding: 0px 20px 0px 20px;
+}
 
 @media screen and (min-width: 1200px) {
   display: flex;
@@ -25,21 +30,21 @@ background-image: linear-gradient(to bottom,
 padding: 0px 5px 0px 30px;
 margin-bottom: 180px;
 
+@media screen and (min-width: 768px) {
+  display: flex;
+    flex-direction: column;
+      align-items: center;
+      padding: 0;
+}
+
       @media screen and (min-width: 1200px) {
-        display: flex;
-        // flex-wrap: wrap;
-        flex-direction: column;
-        align-items:center;
-// margin: 0 auto;
-  
-        padding: 0px 0 0 0;
+        padding: 0;
     
       }
     }
 
     
     .develo-eco__box {
-      // display: block;
       display: flex;
       align-items: center;
       margin: 0 auto 70px auto;
@@ -54,18 +59,26 @@ margin-bottom: 180px;
       .develo-eco:hover &,
       .develo-eco:focus &{
         width: 95%;
-        // margin-left: 45px;
         box-shadow: 0px 1px 4px 0px $Secondary-text-color;
         background-color: rgba(63, 104, 240, 0.14);
       }
       
-      
+ @media screen and (min-width: 768px) {
+  margin: 0;
+width: 195px;
+    transform: translateY(-170px);
+    .develo-eco:hover &,
+      .develo-eco:focus & {
+        width: 208px;
+      }
+ }
+
+
       @media screen and (min-width: 1200px) {
         width: 90%;
         transform: translateY(-190px);
         height: 45px;
         margin: 0 0 50px 0px;
-        // width: 420px;
         padding: 5px;
             .develo-eco:hover &,
               .develo-eco:focus & {
@@ -86,15 +99,18 @@ transition-duration: $animation-head;
 text-shadow: 1px 1px 4px black;
       font-weight: 300;
       font-size: 10px;
-      line-height: 1.86;
+      line-height: 1.46;
       letter-spacing: 0.26em;
       text-transform: uppercase;
       
       .develo-eco:hover &,
         .develo-eco:focus & {
-        font-size: 12px;
+        font-size: 11px;
         color: $svg-color;
       }
+     @media screen and (min-width: 768px) {
+
+     }
       
       @media screen and (min-width: 1200px) {
         font-weight: 600;
@@ -111,12 +127,9 @@ text-shadow: 1px 1px 4px black;
     
     .develo-eco__list {
       display: block;
-      margin-bottom: 0px;
-// margin: 0 10px;
-      @media screen and (min-width: 1200px) {
-        padding-top: 0px;
-        margin-bottom: 0px;
-      }
+      // @media screen and (min-width: 1200px) {
+
+      // }
     }
 
  
@@ -133,14 +146,24 @@ text-shadow: 1px 1px 4px black;
       @media screen and (min-width: 350px) {
         height: 315px;
         }
-        
-        @media screen and (min-width: 1200px) {
 
-          // flex-wrap: nowrap;
-     
+    @media screen and (min-width: 768px) {
+width: 300px;
+height: 390px;
+  margin-bottom: 100px;
+  &:nth-child(-n+2) .cards__overlay {
+    border-radius: 10px 0 0 0;
+      margin-left: 0px;
+    }
+    }
+
+        @media screen and (min-width: 1200px) {
         margin: 0 0 155px 0;
         width: 430px;
         height: 250px;
+          &:first-child .cards__overlay {
+              margin-left: 0px;
+            }
 
 
       }
@@ -164,15 +187,18 @@ display: block;
 margin-bottom: 200px;
     padding: 0px 5px 0px 30px;
 
+@media screen and (min-width: 768px) {
+ display: flex;
+  flex-direction: column;
+      align-items: center;
+margin: 0 auto 200px auto;
+  padding: 80px 0px 0px 0px;
+    // width: 50%;
+  }
 
   @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
   margin-bottom: 300px;
-    padding: 80px 0px 0px 0px;
-    
+ 
   }
 }
 
@@ -196,11 +222,18 @@ width: 80%;
     background-color: rgba(63, 104, 240, 0.14);
   }
 
+     @media screen and (min-width: 768px) {
+       width: 195px;
+  margin: 0 0 60px 70px;
+
+  .impact-section:hover &,
+  .impact-section:focus &{
+         width: 215px;
+       }}
+
   @media screen and (min-width: 1200px) {
   width: 50%;
     height: 45px;
-    // margin-left: 30%;
-    // margin-bottom: 250px;
 margin: 0 0 160px 140px;
 .impact-section:hover &,
   .impact-section:focus & {
@@ -213,22 +246,21 @@ margin: 0 0 160px 140px;
 }
 
 .impact-title {
-  margin-left: auto;
-  margin-right: auto;
+margin: 0 auto;
   padding: 5px;
 text-transform: uppercase;
   user-select: none;
   color: $Secondary-text-color;
   font-weight: 300;
   font-size: 10px;
-  line-height: 1.86;
+line-height: 1.46;
   letter-spacing: 0.26em;
 text-shadow: 1px 1px 4px black;
 transition-duration: $animation-head;
 
   .impact-section:hover &,
   .impact-section:focus &{
-    font-size: 12px;
+    font-size: 11px;
     color: $svg-color;
   }
 
@@ -250,16 +282,19 @@ transition-duration: $animation-head;
   display: block;
   margin-bottom: 0px;
 
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 0px;
-  }
 }
 
 
 
 
     .oil-content {
-      @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
+margin-left: 95px;
+  &:first-child .cards__overlay {
+  border-radius: 0 10px 0 0;
+    }
+  }
+@media screen and (min-width: 1200px) {
 
         width: 490px;
         margin-left: 160px;
@@ -268,6 +303,16 @@ transition-duration: $animation-head;
     }
 
     .ocean-content {
+      @media screen and (min-width: 768px) {
+          margin-left: 43.5px;
+
+   &:nth-child(2) .cards__overlay { 
+                border-radius: 0 10px 0 0;
+                margin-left: 20px;
+              }
+      }
+
+
       @media screen and (min-width: 1200px) {
         width: 520px;
         margin-top: 150px;
@@ -277,6 +322,10 @@ transition-duration: $animation-head;
     }
 
     .factory-content {
+
+            @media screen and (min-width: 768px) {
+                    margin-left: 8.5px;
+              }
       @media screen and (min-width: 1200px) {
         margin-left: -45px;
         width: 520px;
@@ -284,6 +333,9 @@ transition-duration: $animation-head;
     }
 
     .earth-content {
+         @media screen and (min-width: 768px) {
+                    margin-left: -25.5px;
+              }
       @media screen and (min-width: 1200px) {
         margin-left: -145px;
         width: 520px;
@@ -292,7 +344,9 @@ transition-duration: $animation-head;
 
     .man-content {
       margin-bottom: 0px;
-
+    @media screen and (min-width: 768px) {
+        margin-left: -60.5px;
+      }
       @media screen and (min-width: 1200px) {
         margin-left: -245px;
         width: 520px;

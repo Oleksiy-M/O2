@@ -2,26 +2,18 @@
 .page-footer {
       display: block;
       width: 100%;
-      // padding-top:150px;
    margin-bottom: 110px;
-// background-image: $background-waterwater__mobile;
-
-// @media screen and (min-width: 360px) {
-//    // padding-top: 320px;
-//    padding-bottom: 150px;
-// }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
    background-color: $bg-color;
    
    display: flex;
+   flex-wrap: wrap;
    justify-content: center;
    align-items: center;
    margin: 0 auto;
-   // padding-top: 70px;
-   // padding-bottom: 30px;
+
    max-width: 1600px;
    height: 300px;
-      // background-image: none;
   }
 
 }
@@ -151,13 +143,13 @@ justify-content: center;
 /*============ AUTH ============= */
 .auth {
    text-align: center;
+@media screen and (min-width: 768px) {
+margin-left: 50px;
 
-   @media screen and (min-width: 1200px) {
       display: flex;
       // justify-content: center;   
       align-items: center;
-      margin-left: 50px;
-       margin-top: 0px;
+    
    }
 }
 

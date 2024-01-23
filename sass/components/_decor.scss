@@ -3,7 +3,7 @@
 .develo-eco__line {
 z-index: 1;
 margin-left: -40px;
-   @media screen and (min-width: 1200px) {
+   @media screen and (min-width: 768px) {
    margin: 0 0 0 0;
    
    }
@@ -25,6 +25,9 @@ transition: border $animation;
 
 @media screen and (min-width: 768px) {
      border: 2px solid $line-color;
+
+      margin-left: 0px;
+         width: 305px;
 .develo-eco__content:hover &,
 .develo-eco__content:focus & {
       border: 2px solid $primary-text-color;
@@ -33,8 +36,8 @@ transition: border $animation;
 }
 
 @media screen and (min-width: 1200px) {
-   margin-left: 20px;
-   width: 425px;
+   margin-left: 0px;
+   width: 445px;
 
    
 }}
@@ -58,6 +61,8 @@ margin-top: -605px;
 }
 
 @media screen and (min-width: 768px) {
+      height: 527px;
+         margin: -527px 0 0 305px;
      border: 2px solid $line-color;
 .develo-eco__content:hover &,
 .develo-eco__content:focus & {
@@ -89,6 +94,8 @@ margin-top: -605px;
    margin-top: -605px;
 }
 @media screen and (min-width: 768px) {
+         width: 60px;
+            margin: -527px 0 0 305px;
      border: 2px solid $line-color;
 .develo-eco__content:hover &,
 .develo-eco__content:focus & {
@@ -120,6 +127,8 @@ margin-left: 5px;
       }
 
       @media screen and (min-width: 768px) {
+            margin-left: 0px;
+               width: 315px;
      border: 2px solid $line-color;
 .develo-eco__content:hover &,
 .develo-eco__content:focus & {
@@ -149,6 +158,9 @@ margin-left: 5px;
    height: 1043px;
 }
 @media screen and (min-width: 768px) {
+      margin-top: -1020px;
+         margin-left: 313px;
+         height: 1020px;
      border: 2px solid $line-color;
 .develo-eco__content:hover &,
 .develo-eco__content:focus & {
@@ -165,7 +177,6 @@ margin-left: 5px;
 .develo-eco___decor6 {
    transition: border $animation;
    margin-left: 5px;
-border-radius: 5px;
    margin-top: -1163px;
    width: 30px;
    border: 1px solid $line-color;
@@ -181,7 +192,11 @@ margin-top: -1043px;
 }
 
 @media screen and (min-width: 768px) {
+margin-left: 313px;
+      margin-top: -1020px;
+         width: 57px;
      border: 2px solid $line-color;
+
 .develo-eco__content:hover &,
 .develo-eco__content:focus & {
       border: 2px solid $primary-text-color;
@@ -203,7 +218,7 @@ margin-top: -1043px;
 .develo-eco___decor7 {
    transition: border $animation;
    margin-left: 10px;
-   // margin-top: -10px;
+
    // width: 220px;
    border: 1px solid $line-color;
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -213,6 +228,8 @@ margin-top: -1043px;
    }
 
    @media screen and (min-width: 768px) {
+      margin-left: -43.5px;
+         // width: 345px;
      border: 2px solid $line-color;
 .develo-eco__content:hover &,
 .develo-eco__content:focus & {
@@ -223,6 +240,8 @@ margin-top: -1043px;
    margin-left: -95px;
    width: 585px;
 }}
+
+
 
 .develo-eco___decor8 {
    transition: border $animation;
@@ -243,6 +262,9 @@ margin-top: -1043px;
 }
 
 @media screen and (min-width: 768px) {
+      margin-top: -685px;
+         height: 685px;
+         margin-left: -43.5px;
      border: 2px solid $line-color;
 .develo-eco__content:hover &,
 .develo-eco__content:focus & {
@@ -274,6 +296,10 @@ width: 25px;
 }
 
 @media screen and (min-width: 768px) {
+   margin-left: -43.5px;
+margin-top: -685px;
+   width: 13px;
+
      border: 2px solid $line-color;
 .develo-eco__content:hover &,
 .develo-eco__content:focus & {
@@ -283,7 +309,6 @@ width: 25px;
    @media screen and (min-width: 1200px) {
    margin-top: -636px;
    width: 135px;
-   margin-left: 0px;
    margin-left: -95px;
 }}
 
@@ -307,6 +332,7 @@ width: 25px;
    }
 
    @media screen and (min-width: 768px) {
+margin-left: 0;
      border: 2px solid $line-color;
 .develo-eco__content:hover &,
 .develo-eco__content:focus & {
@@ -338,6 +364,9 @@ width: 25px;
 }
 
 @media screen and (min-width: 768px) {
+   margin-left: 0;
+   margin-top: -1172px;
+   height: 1172px;
      border: 2px solid $line-color;
 .develo-eco__content:hover &,
 .develo-eco__content:focus & {
@@ -367,6 +396,9 @@ margin-top: -2344px;
 }
 
 @media screen and (min-width: 768px) {
+      margin-top: -1172px;
+         width: 28px;
+   margin-left: 0;
      border: 2px solid $line-color;
 .develo-eco__content:hover &,
 .develo-eco__content:focus & {
@@ -399,6 +431,8 @@ margin-top: -2344px;
    }
 
    @media screen and (min-width: 768px) {
+         // width: 300px;
+   margin-left: 0px;
      border: 2px solid $line-color;
 .develo-eco__content:hover &,
 .develo-eco__content:focus &{
@@ -432,6 +466,9 @@ margin-top: -2847px;
   }
   
   @media screen and (min-width: 768px) {
+   margin-top: -551px;
+      height: 551px;
+      margin-left: 0px;
      border: 2px solid $line-color;
 .develo-eco__content:hover &,
 .develo-eco__content:focus &{
@@ -463,6 +500,9 @@ margin-top: -2847px;
   }
  
   @media screen and (min-width: 768px) {
+      margin-top: -551px;
+         width: 27px;
+         margin-left: 0px;
      border: 2px solid $line-color;
 .develo-eco__content:hover &,
 .develo-eco__content:focus & {
@@ -480,8 +520,13 @@ margin-top: -2847px;
 .develo-eco___decor17 {
    display: none;
    @media screen and (min-width: 768px) {
+
       display:block;
       transition: border $animation;
+
+         margin-left: 27px;
+   margin-top: -1112px;
+      height: 1112px;
 // border-radius: 5px;
    width: 2px;
    border: 2px solid $line-color;
@@ -504,8 +549,10 @@ margin-top: -2847px;
    @media screen and (min-width: 768px) {
    display: block;
       transition: border $animation;
+         margin-left: 27px;
+               margin-top: -1112px;
+               width:43px;
       // border-radius: 5px;
-width: 5px;
    border: 2px solid $line-color;
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
    .develo-eco__content:hover &,
@@ -534,6 +581,8 @@ width: 5px;
       border: 1px solid $primary-text-color;
    }
     @media screen and (min-width: 768px) {
+
+               margin-left: 0px;
      border: 2px solid $line-color;
 
      .develo-eco__content:hover &,
@@ -567,6 +616,9 @@ margin-top: -3350px;
    height: 2970px;
 }
  @media screen and (min-width: 768px) {
+      margin-top: -1060px;
+         height: 1060px;
+         margin-left: 0px;
      border: 2px solid $line-color;
 
      .develo-eco__content:hover &,
@@ -596,6 +648,9 @@ width: 10px;
      margin-top: -2970px;
   }
   @media screen and (min-width: 768px) {
+      margin-top: -1060px;
+         width: 53px;
+         margin-left: 0px;
      border: 2px solid $line-color;
 
      .develo-eco__content:hover &,
@@ -612,6 +667,10 @@ margin-left: 0px;
 .develo-eco___decor22 {
    
    @media screen and (min-width: 768px) {
+            margin-left: 53px;
+               margin-top: -1090px;
+               height: 1090px;
+            
          transition: border $animation;
 
    width: 2px;
@@ -632,8 +691,10 @@ margin-left: 0px;
 .develo-eco___decor23 {
    
    @media screen and (min-width: 768px) {
+         margin-left: 53px;
+            margin-top: -1090px;
+            width: 50px;
          transition: border $animation;
-width: 5px;
    border: 2px solid $line-color;
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
    .develo-eco__content:hover &,
@@ -665,6 +726,7 @@ margin-left: 30px;
          }
 
   @media screen and (min-width: 768px) {
+      margin-left: 0px;
      border: 2px solid $line-color;
 
      .develo-eco__content:hover &,
@@ -674,7 +736,7 @@ margin-left: 30px;
   }                                                                                                                                                                                       
    @media screen and (min-width: 1200px) {
    margin-left: 0px;
-      width: 520px;
+
 
    }}
 
@@ -698,6 +760,9 @@ margin-top: -3853px;
 }
 
   @media screen and (min-width: 768px) {
+      margin-top: -1570px;
+         height: 1570px;
+         margin-left: 0px;
      border: 2px solid $line-color;
 
      .develo-eco__content:hover &,
@@ -711,6 +776,8 @@ margin-top: -3853px;
    height: 1325px;
 margin-left: 0px;
 }}
+
+
 
 .develo-eco___decor26 {
    transition: border $animation;
@@ -729,6 +796,9 @@ margin-left: 0px;
    margin-top: -3408px;
 }
   @media screen and (min-width: 768px) {
+      margin-top: -1570px;
+   width: 80px;
+margin-left: 0px;
      border: 2px solid $line-color;
 
      .develo-eco__content:hover &,
@@ -747,7 +817,9 @@ margin-left: 0px;
 .develo-eco___decor27 {
    @media screen and (min-width: 768px) {
             transition: border $animation;
-         
+   margin-left: 80px;
+      margin-top: -1067px;
+      height: 1067px;
   
    width: 2px;
    border: 2px solid $line-color;
@@ -769,8 +841,10 @@ box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
 .develo-eco___decor28 {
    
    @media screen and (min-width: 768px) {
+      margin-left: 80px;
+         margin-top: -1067px;
+         width: 53px;
             transition: border $animation;
-width: 5px;
    border: 2px solid $line-color;
 box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);

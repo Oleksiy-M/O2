@@ -36,9 +36,9 @@
       width: calc((100% - 4 * 15px) / 2);
       margin: 15px;
 
-      &:first-child .cards__content {
-         padding-bottom: 56px;
-      }
+      // &:first-child .cards__content {
+      //    padding-bottom: 56px;
+      // }
    }
 
    @media screen and (min-width: 1200px) {
@@ -56,8 +56,13 @@
 }
 
 .cards__thumb {
+display: flex;
+justify-content: center;
+
    position: relative;
    overflow: hidden;
+
+   
 }
 
 .history-cards__overlay {
@@ -83,7 +88,7 @@
 
 .cards__alert {
    text-align: justify;
-   padding: 15px 24px;
+   padding: 10px 24px;
    color: $White-color;
    font-size: 12px;
    line-height: 1.56;
@@ -94,11 +99,12 @@ letter-spacing: 0.02em;
 
 .cards__content {
    padding: 20px 24px;
-   border: 1px solid #320fc1;
+   border: 1px solid #330fc197;
 
 }
 
-.cards__title {user-select: none;
+.cards__title {
+   user-select: none;
    margin-bottom: 4px;
    font-weight: 700;
    font-size: 18px;
@@ -107,7 +113,8 @@ letter-spacing: 0.02em;
    color: $primary-text-color;
 }
 
-.cards__text {user-select: none;
+.cards__text {
+   user-select: none;
    font-size: 16px;
    line-height: 1.87;
    color: $Secondary-text-color;
