@@ -169,7 +169,7 @@ body {
 
 .site-nav {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   font-weight: 400;
   font-size: 10px;
   line-height: 1.94;
@@ -281,7 +281,12 @@ body {
 
 @media screen and (min-width: 650px) {
   .hero__water {
-    margin-top: -10px;
+    margin-top: -30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__water {
+    margin: 0;
   }
 }
 
@@ -301,7 +306,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .logo__overlay {
-    padding: 50px 130px 50px 130px;
+    padding: 30px 130px 30px 130px;
   }
 }
 
