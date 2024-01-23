@@ -126,11 +126,11 @@ height: 40px;
 
 
    .develo-eco__hand{
+      display: flexbox;
 margin-left: 25px;   
 
 z-index: 2;
 @media screen and (min-width: 768px) {
-display: flexbox;
 // justify-content: right;
    margin-left: 0px;
  }

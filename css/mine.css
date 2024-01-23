@@ -484,12 +484,12 @@ body {
 }
 
 .develo-eco__hand {
+  display: flexbox;
   margin-left: 25px;
   z-index: 2;
 }
 @media screen and (min-width: 768px) {
   .develo-eco__hand {
-    display: flexbox;
     margin-left: 0px;
   }
 }
