@@ -42,14 +42,6 @@ background-image: linear-gradient(to bottom,
          padding-top: 60px;
          padding-bottom: 20px;
             }
-   @media screen and (min-width: 1200px) {
-      display: flex;
-      flex-wrap: wrap;
-      padding-top: 60px;
-      padding-bottom: 20px;
-            // border: 1px solid $svg-color;
-
-}
 }
 
 .idustry-hero{
@@ -61,10 +53,6 @@ margin: 0 22px 120px 22px;
          @media screen and (min-width: 768px) {
 margin: 0 auto 100px auto;
 }
- @media screen and (min-width: 1200px) {
-
-margin: 0 auto 100px auto;
-   }
 
 }
 
@@ -357,9 +345,10 @@ width: 700px;
 
  @media screen and (min-width: 768px) {
    display: flex;
+   flex-direction: row-reverse;
       width: 100%;
-      margin: 0px 10px 20px ;
-      justify-content: right;
+      margin: 0px 0px 20px 0;
+      // justify-content: right; 
       }
 
 }
