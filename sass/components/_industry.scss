@@ -132,8 +132,8 @@ margin-left: 25px;
 
 @media screen and (min-width: 768px) {
    // width: 100%;
-   justify-content: right;
-   // flex-direction: row-reverse;
+   // justify-content: right;
+   flex-direction: row-reverse;
    margin-left: 0px;
 }
 }
