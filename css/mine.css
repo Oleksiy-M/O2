@@ -429,7 +429,6 @@ body {
 
 .idustry-hero__heading {
   padding: 5px 10px;
-  height: 85px;
   color: #3fa9f5;
   user-select: none;
   text-shadow: 1px 1px 3px black;
@@ -442,19 +441,17 @@ body {
   transition-duration: 1s;
 }
 .section-hero:hover .idustry-hero__heading, .section-hero:focus .idustry-hero__heading {
-  font-size: 13.5px;
+  transform: scale(1.15);
   color: aqua;
 }
 @media screen and (min-width: 360px) {
   .idustry-hero__heading {
-    height: 60px;
     padding: 0px 5px;
   }
 }
 @media screen and (min-width: 768px) {
   .idustry-hero__heading {
-    padding: 0px 20px;
-    height: 30px;
+    padding: 5px 20px 0 20px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -463,10 +460,9 @@ body {
     font-size: 20px;
     line-height: 1.86;
     letter-spacing: 0.26em;
-    height: 40px;
   }
   .section-hero:hover .idustry-hero__heading, .section-hero:focus .idustry-hero__heading {
-    font-size: 20.5px;
+    transform: scale(1.15);
   }
 }
 
@@ -486,14 +482,15 @@ body {
 }
 @media screen and (min-width: 768px) {
   .develo-eco__hand {
-    flex-direction: row-reverse;
+    justify-content: right;
     margin-left: 0px;
   }
 }
 
 .hand-hero {
   z-index: 2;
-  display: flexbox;
+  display: flex;
+  justify-content: right;
 }
 @media screen and (min-width: 768px) {
   .hand-hero {

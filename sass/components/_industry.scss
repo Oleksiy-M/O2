@@ -61,7 +61,7 @@ margin: 0 50px 100px 50px;
 
 .idustry-hero__heading{
    padding: 5px 10px;
-   height: 85px;
+   // height: 85px;
 
    color: $Secondary-text-color;
    user-select: none;
@@ -78,18 +78,18 @@ letter-spacing: 0.26em;
 transition-duration: $animation-head;
       .section-hero:hover &,
          .section-hero:focus & {
-            font-size: 13.5px;
+            transform: scale(1.15);
             color: $primary-text-color;
          }
 
          @media screen and (min-width: 360px) {
-            height: 60px;
+            // height: 60px;
             padding: 0px 5px;
          }
          
          @media screen and (min-width: 768px) {
-   padding: 0px 20px;
-height: 30px;
+   padding: 5px 20px 0  20px;
+// height: 30px;
 }
 
 
@@ -99,11 +99,11 @@ font-weight: 600;
 font-size: 20px;
 line-height: 1.86;
 letter-spacing: 0.26em;
-height: 40px;
+// height: 40px;
 
    .section-hero:hover &,
       .section-hero:focus & {
-      font-size: 20.5px;
+      transform: scale(1.15);
       }
 }
 
@@ -132,8 +132,8 @@ margin-left: 25px;
 
 @media screen and (min-width: 768px) {
    // width: 100%;
-   // justify-content: right;
-   flex-direction: row-reverse;
+   justify-content: right;
+   // flex-direction: row-reverse;
    margin-left: 0px;
 }
 }
@@ -142,7 +142,8 @@ margin-left: 25px;
 
 .hand-hero {
    z-index: 2;
-display: flexbox;
+display: flex;
+justify-content: right;
 @media screen and (min-width: 768px) {
    // margin-right: 0px;
    width: 360px;
