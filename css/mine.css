@@ -406,7 +406,7 @@ body {
 }
 
 .section-hero {
-  padding: 80px 0 20px 0;
+  padding: 80px 0 30px 0;
   margin-bottom: 40px;
   border-radius: 5px;
   background-image: linear-gradient(to bottom, rgba(125, 1, 1, 0.6392156863) 5%, rgba(94, 1, 1, 0.7176470588));
@@ -441,7 +441,7 @@ body {
   transition-duration: 1s;
 }
 .section-hero:hover .idustry-hero__heading, .section-hero:focus .idustry-hero__heading {
-  transform: scale(1.15);
+  transform: scale(1.05);
   color: aqua;
 }
 @media screen and (min-width: 360px) {
@@ -460,9 +460,6 @@ body {
     font-size: 20px;
     line-height: 1.86;
     letter-spacing: 0.26em;
-  }
-  .section-hero:hover .idustry-hero__heading, .section-hero:focus .idustry-hero__heading {
-    transform: scale(1.15);
   }
 }
 
@@ -490,9 +487,6 @@ body {
 .hand-hero {
   z-index: 2;
   transition-duration: 1s;
-}
-.hand-hero:hover, .hand-hero:focus {
-  transform: scale(1.02);
 }
 @media screen and (min-width: 768px) {
   .hand-hero {
@@ -1728,14 +1722,14 @@ body {
 
 .section-bg {
   border-radius: 5px;
-  padding: 90px 3px 0px 3px;
+  padding: 80px 3px 0px 3px;
   background-image: linear-gradient(to bottom, rgba(94, 1, 1, 0.7176470588) 0.1%, rgba(70, 1, 23, 0.7764705882) 6%, rgba(0, 2, 14, 0.7098039216) 99%);
 }
 @media screen and (min-width: 768px) {
   .section-bg {
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 20px 0px 20px;
+    padding: 10px 20px 0px 20px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1749,7 +1743,7 @@ body {
 .develo-eco {
   display: block;
   padding: 0px 5px 0px 30px;
-  margin-bottom: 180px;
+  margin-bottom: 185px;
 }
 @media screen and (min-width: 768px) {
   .develo-eco {
@@ -1768,36 +1762,33 @@ body {
 .develo-eco__box {
   display: flex;
   align-items: center;
-  margin: 0 auto 70px auto;
-  padding: 5px 15px;
+  justify-content: center;
   text-align: center;
-  height: 45px;
+  margin: 0 10% 70px 10%;
+  padding: 5px 10px;
   border-radius: 5px;
   transition-duration: 1s;
   border-bottom: 1px solid #3fa9f5;
 }
 .develo-eco:hover .develo-eco__box, .develo-eco:focus .develo-eco__box {
+  transform: scale(1.05);
   box-shadow: 0px 1px 4px 0px #3fa9f5;
   background-color: rgba(63, 104, 240, 0.14);
 }
 @media screen and (min-width: 768px) {
   .develo-eco__box {
-    margin: 0;
-    transform: translateY(-170px);
+    margin: -170px 0 175px 0;
+    padding: 5px 10px;
   }
 }
 @media screen and (min-width: 1200px) {
   .develo-eco__box {
-    transform: translateY(-190px);
-    height: 45px;
-    margin: 0 0 50px 0px;
-    padding: 5px;
+    margin: -190px 0 240px 0px;
   }
 }
 
 .develo-eco__title {
-  margin-left: auto;
-  margin-right: auto;
+  padding: 2px;
   user-select: none;
   color: #3fa9f5;
   transition-duration: 1s;
@@ -1809,7 +1800,6 @@ body {
   text-transform: uppercase;
 }
 .develo-eco:hover .develo-eco__title, .develo-eco:focus .develo-eco__title {
-  transform: scale(1.05);
   color: #33FF99;
 }
 @media screen and (min-width: 1200px) {
@@ -1818,9 +1808,6 @@ body {
     font-size: 14px;
     line-height: 1.86;
     letter-spacing: 0.26em;
-  }
-  .develo-eco:hover .develo-eco__title, .develo-eco:focus .develo-eco__title {
-    transform: scale(1.05);
   }
 }
 
@@ -1883,56 +1870,46 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0 auto 200px auto;
-    padding: 80px 0px 0px 0px;
+    padding: 85px 0px 0px 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .impact-section {
+    padding: 80px 0px 0px 0px;
     margin-bottom: 300px;
   }
 }
 
 .impact-title__box {
+  margin: 0 10% 70px 10%;
   display: flex;
   align-items: center;
-  margin: 0 auto 70px auto;
+  justify-content: center;
   text-align: center;
-  height: 45px;
+  padding: 5px 10px;
   border-radius: 5px;
-  width: 80%;
   transition-duration: 1s;
   border-bottom: 1px solid #3fa9f5;
 }
 .impact-section:hover .impact-title__box, .impact-section:focus .impact-title__box {
-  width: 95%;
+  transform: scale(1.05);
   box-shadow: 0px 1px 4px 0px #3fa9f5;
   background-color: rgba(63, 104, 240, 0.14);
 }
 @media screen and (min-width: 768px) {
   .impact-title__box {
-    width: 195px;
     margin: 0 0 60px 70px;
-  }
-  .impact-section:hover .impact-title__box, .impact-section:focus .impact-title__box {
-    width: 215px;
+    padding: 5px 20px;
   }
 }
 @media screen and (min-width: 1200px) {
   .impact-title__box {
-    width: 50%;
-    height: 45px;
     margin: 0 0 160px 140px;
-  }
-  .impact-section:hover .impact-title__box, .impact-section:focus .impact-title__box {
-    width: 55%;
-    box-shadow: 0px 1px 4px 0px #3fa9f5;
-    background-color: rgba(63, 104, 240, 0.14);
   }
 }
 
 .impact-title {
-  margin: 0 auto;
-  padding: 5px;
+  padding: 2px;
   text-transform: uppercase;
   user-select: none;
   color: #3fa9f5;
@@ -1944,7 +1921,6 @@ body {
   transition-duration: 1s;
 }
 .impact-section:hover .impact-title, .impact-section:focus .impact-title {
-  font-size: 11px;
   color: #33FF99;
 }
 @media screen and (min-width: 1200px) {
@@ -1953,9 +1929,6 @@ body {
     font-size: 14px;
     line-height: 1.86;
     letter-spacing: 0.26em;
-  }
-  .impact-section:hover .impact-title, .impact-section:focus .impact-title {
-    font-size: 14.5px;
   }
 }
 
@@ -2049,7 +2022,10 @@ body {
   margin: 0 0 10px 0;
   transition-duration: 1s;
 }
-.develo-eco__content:hover .develo-eco__svg, .develo-eco__content:focus .develo-eco__svg {
+.develo-eco:hover .develo-eco__svg, .develo-eco:focus .develo-eco__svg {
+  fill: #33FF99;
+}
+.impact-section:hover .develo-eco__svg, .impact-section:focus .develo-eco__svg {
   fill: #33FF99;
 }
 
@@ -2092,6 +2068,7 @@ body {
 .develo-eco__content:hover .cards__overlay, .develo-eco__content:focus .cards__overlay {
   background-color: rgba(244, 192, 209, 0.031372549);
   box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.12), 0px 0px 4px rgba(0, 0, 0, 0.06), 1px -1px 6px rgba(0, 0, 0, 0.16);
+  transform: scale(1.01);
 }
 @media screen and (min-width: 768px) {
   .cards__overlay {
@@ -2120,8 +2097,7 @@ body {
 }
 .develo-eco__content:hover .develo-eco__art, .develo-eco__content:focus .develo-eco__art {
   color: #33FF99;
-  font-size: 11.1px;
-  padding: 8.8px;
+  transform: scale(1.01);
 }
 @media screen and (min-width: 768px) {
   .develo-eco__art {
@@ -2129,10 +2105,6 @@ body {
     font-size: 12.9px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-  }
-  .develo-eco__content:hover .develo-eco__art, .develo-eco__content:focus .develo-eco__art {
-    font-size: 13px;
-    padding: 8.2px;
   }
 }
 

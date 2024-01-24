@@ -15,13 +15,17 @@ width: 120px;
    margin: 0 0 10px 0;  
    // transition: transform $animation-card, opacity $animation-card;
 transition-duration: $animation-head;
-   .develo-eco__content:hover &,
-      .develo-eco__content:focus & {
-
+   .develo-eco:hover &,
+      .develo-eco:focus & {
+// transform: scale(1.01);
    fill: $svg-color;
          }
 
-
+      .impact-section:hover &,
+      .impact-section:focus & {
+         // transform: scale(1.01);
+         fill: $svg-color;
+      }
 
 }
 
@@ -80,7 +84,7 @@ border-radius: 0 10px 0 0;
       background-color: #f4c0d108;
    box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.12),
          0px 0px 4px rgba(0, 0, 0, 0.06), 1px -1px 6px rgba(0, 0, 0, 0.16);
-   
+   transform: scale(1.01);
    }
 
 
@@ -112,8 +116,7 @@ font-style:italic;
    .develo-eco__content:hover &,
       .develo-eco__content:focus & {
       color: $svg-color;
-                  font-size: 11.1px;
-                     padding: 8.8px;
+      transform: scale(1.01);
 
       // background-color: rgba(207, 149, 23, 0.553);
    }
@@ -124,9 +127,9 @@ font-style:italic;
       line-height: 1.5;
       letter-spacing: 0.02em;
 
-      .develo-eco__content:hover &,
-         .develo-eco__content:focus & {
-            font-size: 13px;
-            padding: 8.2px;
-   }
+   //    .develo-eco__content:hover &,
+   //       .develo-eco__content:focus & {
+   //          font-size: 13px;
+   //          padding: 8.2px;
+   // }
 }}
