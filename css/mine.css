@@ -482,15 +482,17 @@ body {
 }
 @media screen and (min-width: 768px) {
   .develo-eco__hand {
-    justify-content: right;
+    flex-direction: row-reverse;
     margin-left: 0px;
   }
 }
 
 .hand-hero {
   z-index: 2;
-  display: flex;
-  justify-content: right;
+  transition-duration: 1s;
+}
+.hand-hero:hover, .hand-hero:focus {
+  transform: scale(1.02);
 }
 @media screen and (min-width: 768px) {
   .hand-hero {
@@ -1771,35 +1773,25 @@ body {
   text-align: center;
   height: 45px;
   border-radius: 5px;
-  width: 80%;
   transition-duration: 1s;
   border-bottom: 1px solid #3fa9f5;
 }
 .develo-eco:hover .develo-eco__box, .develo-eco:focus .develo-eco__box {
-  width: 95%;
   box-shadow: 0px 1px 4px 0px #3fa9f5;
   background-color: rgba(63, 104, 240, 0.14);
 }
 @media screen and (min-width: 768px) {
   .develo-eco__box {
     margin: 0;
-    width: 195px;
     transform: translateY(-170px);
-  }
-  .develo-eco:hover .develo-eco__box, .develo-eco:focus .develo-eco__box {
-    width: 208px;
   }
 }
 @media screen and (min-width: 1200px) {
   .develo-eco__box {
-    width: 90%;
     transform: translateY(-190px);
     height: 45px;
     margin: 0 0 50px 0px;
     padding: 5px;
-  }
-  .develo-eco:hover .develo-eco__box, .develo-eco:focus .develo-eco__box {
-    width: 95%;
   }
 }
 
@@ -1817,7 +1809,7 @@ body {
   text-transform: uppercase;
 }
 .develo-eco:hover .develo-eco__title, .develo-eco:focus .develo-eco__title {
-  font-size: 11px;
+  transform: scale(1.05);
   color: #33FF99;
 }
 @media screen and (min-width: 1200px) {
@@ -1828,7 +1820,7 @@ body {
     letter-spacing: 0.26em;
   }
   .develo-eco:hover .develo-eco__title, .develo-eco:focus .develo-eco__title {
-    font-size: 14.5px;
+    transform: scale(1.05);
   }
 }
 
