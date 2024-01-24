@@ -3,7 +3,7 @@
     .section-bg{
     // background: $section-color;
     border-radius: 5px;
-padding: 80px 3px 0px 3px;
+padding: 90px 3px 0px 3px;
 // background-color: $section-color__desktop;
 background-image: linear-gradient(to bottom,
 
@@ -13,13 +13,13 @@ background-image: linear-gradient(to bottom,
 @media screen and (min-width: 768px) {
     display: flex;
       flex-wrap: wrap;
-      padding: 10px 20px 0px 20px;
+      padding: 0px 20px;
 }
 
 @media screen and (min-width: 1200px) {
   display: flex;
   flex-wrap: wrap;
-  padding: 0px 40px 0px 40px;
+  padding: 0px 40px;
 
     }
   }
@@ -28,13 +28,14 @@ background-image: linear-gradient(to bottom,
   .develo-eco {
     display: block;
 padding: 0px 5px 0px 30px;
-margin-bottom: 185px;
+margin-bottom: 190px;
 
 @media screen and (min-width: 768px) {
   display: flex;
     flex-direction: column;
       align-items: center;
       padding: 0;
+      margin:0;
 }
 
       @media screen and (min-width: 1200px) {
@@ -49,7 +50,7 @@ margin-bottom: 185px;
       align-items: center;
       justify-content: center;
       text-align: center;
-  
+  height: 35px;
       margin: 0 10% 70px 10%;
       padding: 5px 10px;
       // height: 45px;
@@ -67,7 +68,7 @@ margin-bottom: 185px;
       }
       
  @media screen and (min-width: 768px) {
-  margin: -170px 0 175px 0;
+  margin: -210px 0 190px 0;
     padding: 5px 10px;
 // width: 195px;
     // transform: translateY(-170px);
@@ -80,7 +81,7 @@ margin-bottom: 185px;
         // width: 90%;
         // transform: translateY(-190px);
         // height: 45px;
-        margin: -190px 0 240px 0px;
+        margin: -190px 0 245px 0px;
         // padding: 5px;
             // .develo-eco:hover &,
             //   .develo-eco:focus & {
@@ -192,12 +193,12 @@ margin-bottom: 200px;
   flex-direction: column;
       align-items: center;
 margin: 0 auto 200px auto;
-  padding: 85px 0px 0px 0px;
+  padding: 70px 0px 0px 0px;
     // width: 50%;
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 80px 0px 0px 0px;
+    padding: 75px 0px 0px 0px;
   margin-bottom: 300px;
  
   }
@@ -211,7 +212,7 @@ margin: 0 auto 200px auto;
       justify-content: center;
   text-align: center;
   padding: 5px 10px;
-  // height: 45px;
+  height: 35px;
   border-radius: 5px;
 // width: 80%;
   transition-duration: $animation-head;
@@ -227,7 +228,7 @@ margin: 0 auto 200px auto;
 
      @media screen and (min-width: 768px) {
       //  width: 195px;
-  margin: 0 0 60px 70px;
+  margin: 0 0 70px 70px;
 padding: 5px 20px;
   // .impact-section:hover &,
   // .impact-section:focus &{
@@ -239,7 +240,7 @@ padding: 5px 20px;
   @media screen and (min-width: 1200px) {
   // width: 50%;
     // height: 45px;
-margin: 0 0 160px 140px;
+margin: 0 0 145px 140px;
 // .impact-section:hover &,
 //   .impact-section:focus & {
 //     width: 55%;
