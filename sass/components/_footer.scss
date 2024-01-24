@@ -60,6 +60,7 @@ padding-left: 10px;
    &:hover,
    &:focus {
       color: $Accent;
+      
    }
    @media screen and (min-width: 1200px) {
   
@@ -71,11 +72,17 @@ padding-left: 10px;
 .page-footer__contacts--city {
    
    color: $White-color;
+   
 }
 
 .footer-logo{
    margin: 0px;
-  
+   transition-duration: 0.5s;
+   &:hover,
+      &:focus {
+   
+         transform: scale(1.05);
+      }
 }
 
 
@@ -129,11 +136,12 @@ justify-content: center;
    height: 44px;
    background: rgba(255, 255, 255, 0.1);
    border-radius: 50%;
-   transition: background-color $animation;
+transition-duration: 0.5s;
 
    &:hover,
    &:focus {
       background: $Accent;
+            transform: scale(1.15);
    }
 }
 
@@ -141,6 +149,12 @@ justify-content: center;
    width: 20px;
    height: 20px;
    fill: $White-color;
+   transition-duration: 0.5s;
+   &:hover,
+      &:focus {
+         
+         transform: scale(1.01);
+      }
 }
 
 
@@ -159,8 +173,14 @@ margin-left: 50px;
    }
 }
 
-.auth__wrapper {
+.auth__form{
+   margin: 0;
+//       @media screen and (min-width: 1200px) {
+// margin: 0 0 0 20px;
+// }
+}
 
+.auth__wrapper {
 display: inline-flex;
 flex-direction: column;
    @media screen and (min-width: 1200px) {
@@ -173,7 +193,8 @@ flex-direction: column;
 }
 
 .auth__title {
-   margin-bottom: 20px;
+   margin: 0 0 20px 0px;
+   // margin-bottom: ;
    font-size: 14px;
    font-weight: 700;
    line-height: 1.14;
@@ -182,6 +203,7 @@ flex-direction: column;
 user-select: none;
    @media screen and (min-width: 1200px) {
       text-align: left;
+      margin: 0 0 20px 45px;
    }
 
 
@@ -190,18 +212,26 @@ user-select: none;
 .auth__input {
 margin: 0px;
 width: 230px;
-   @media screen and (min-width: 1200px) {
-      width: 300px;
-      margin-right: 12px;
-   }
 
-   height: 50px;
-   padding-left: 16px;
-   border-radius: 4px;
-   color: $White-color;
-   background-color: transparent;
-   // box-shadow: 0px 4px 4px 0px #e8e5e526;
-   border: 1px solid #ffffff4d
+height: 50px;
+padding-left: 16px;
+border-radius: 4px;
+color: $White-color;
+background-color: transparent;
+// box-shadow: 0px 4px 4px 0px #e8e5e526;
+border: 1px solid #ffffff4d;
+transition-duration: 0.5s;
+
+   &:hover,
+   &:focus {
+      transform: scale(1.02);
+      background-color: #7181f914;
+      border: 1px solid #ffffffcf;
+   }
+@media screen and (min-width: 1200px) {
+   width: 300px;
+   margin-right: 12px;
+}
 }
 
 .auth__input::placeholder {
@@ -223,7 +253,7 @@ user-select: none;
 
    height: 50px;
    background-color: $Accent;
-   box-shadow: 0px 4px 4px 0px #00000026;
+   box-shadow: 0px 4px 4px 0px #ffffff26;
    min-width: 230px;
 
       user-select: none;
@@ -232,7 +262,14 @@ user-select: none;
    line-height: 1.87;
    letter-spacing: 0.06em;
    color: $White-color;
-   transition: transform $animation;
+      border-radius: 4px;
+ transition-duration: 0.5s;
+            &:hover,
+            &:focus {
+               transform: scale(1.02);
+               // background-color: #7181f914;
+               border: 1px solid #ffffffcf;
+            }
       // animation-name: background-color;
 }
 

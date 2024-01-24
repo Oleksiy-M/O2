@@ -5,7 +5,13 @@ width: 120px;
    display: flex;
    justify-content: center;
    margin: 0 auto;
-   
+      transition-duration: $animation-head;
+      
+.develo-eco__content:hover &,
+.develo-eco__content:focus & {
+      
+            transform: scale(1.05);
+         }
 }
 
 
@@ -15,17 +21,10 @@ width: 120px;
    margin: 0 0 10px 0;  
    // transition: transform $animation-card, opacity $animation-card;
 transition-duration: $animation-head;
-   .develo-eco:hover &,
-      .develo-eco:focus & {
-// transform: scale(1.01);
+.develo-eco__content:hover &,
+.develo-eco__content:focus &{
    fill: $svg-color;
-         }
-
-      .impact-section:hover &,
-      .impact-section:focus & {
-         // transform: scale(1.01);
-         fill: $svg-color;
-      }
+}
 
 }
 
@@ -34,7 +33,7 @@ transition-duration: $animation-head;
    fill: $Secondary-text-color;
 transition-duration: $animation-head;
 
-    .develo-eco__content:hover &,
+.develo-eco__content:hover &,
 .develo-eco__content:focus & {
    
       fill: #85fbff;
@@ -86,7 +85,6 @@ border-radius: 0 10px 0 0;
          0px 0px 4px rgba(0, 0, 0, 0.06), 1px -1px 6px rgba(0, 0, 0, 0.16);
    transform: scale(1.01);
    }
-
 
 @media screen and (min-width: 768px) {
 margin-left: 20px;
