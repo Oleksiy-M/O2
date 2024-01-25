@@ -57,7 +57,10 @@ margin: 0 22px 120px 22px;
 // }
 
          @media screen and (min-width: 768px) {
-margin: 0 50px 100px 50px;
+margin: 0 60px 100px 60px;
+}
+@media screen and (min-width: 1200px) {
+   margin: 0 140px 100px 140px;
 }
 
 }
@@ -73,7 +76,7 @@ text-shadow: 1px 1px 3px black;
 text-transform: uppercase;
 text-align: center;
 font-weight: 300;
-font-size: 13px;
+font-size: 15px;
 line-height: 1.86;
 letter-spacing: 0.26em;
 
@@ -91,7 +94,8 @@ transition-duration: $animation-head;
          }
          
          @media screen and (min-width: 768px) {
-   padding: 5px 20px 0  20px;
+   padding: 5px 20px 0 20px;
+   
 // height: 30px;
 }
 
@@ -99,31 +103,24 @@ transition-duration: $animation-head;
 @media screen and (min-width: 1200px) {
 
 font-weight: 600;
-font-size: 20px;
+font-size: 22px;
 line-height: 1.86;
 letter-spacing: 0.26em;
-// height: 40px;
-
-   // .section-hero:hover &,
-   //    .section-hero:focus & {
-   //    transform: scale(1.15);
-   //    }
 }
-
 }
 
 .head-border{
    transition-duration: $animation-head;
+  
    height: 2px;
    border-bottom: 2px solid $Secondary-text-color;
 
 .section-hero:hover &,
 .section-hero:focus &{
    border-bottom: 2px solid $primary-text-color;
-      box-shadow: 0px 3px 10px 2px $primary-text-color;
+      box-shadow: 0px 2px 8px 1px $primary-text-color;
+      transform: scale(1.05)
 }
-
-
 }
 
 
