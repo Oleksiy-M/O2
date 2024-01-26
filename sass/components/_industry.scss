@@ -199,7 +199,7 @@ transition-duration: $animation-head;
       }
 
    @media screen and (min-width: 768px) {
-      height: 450px;
+      height: 330px;
 
       margin-bottom: 100px;
       
@@ -368,7 +368,7 @@ width: 700px;
    fill: $Secondary-text-color;
 
    fill: #514ef800;
-   transition-duration: 0.5s;
+   transition-duration: 1s;
 
 &:hover ,
 &:focus  {

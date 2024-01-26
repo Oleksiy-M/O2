@@ -110,7 +110,7 @@ body {
   display: block;
   position: fixed;
   width: 100%;
-  padding: 10px 0 10px 0;
+  padding: 10px 0 5px 0;
   z-index: 2;
   background-color: #1f2f52;
 }
@@ -132,8 +132,6 @@ body {
 @media screen and (min-width: 768) {
   .bg-nav {
     justify-content: space-between;
-    position: static;
-    max-width: 1600px;
   }
 }
 
@@ -142,7 +140,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .site-nav__logo {
-    display: flex;
+    display: block;
   }
 }
 
@@ -546,7 +544,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .impact-box__end {
-    height: 450px;
+    height: 330px;
     margin-bottom: 100px;
   }
   .impact-box__end:hover, .impact-box__end:focus {
@@ -669,7 +667,7 @@ body {
 .up-svg {
   fill: #3fa9f5;
   fill: rgba(81, 78, 248, 0);
-  transition-duration: 0.5s;
+  transition-duration: 1s;
 }
 .up-svg:hover, .up-svg:focus {
   fill: aqua;
