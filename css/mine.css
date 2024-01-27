@@ -521,6 +521,14 @@ body {
 .section-end {
   display: flex;
   flex-direction: column;
+  padding: 100px 3px;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom, rgba(0, 2, 14, 0.7098039216) 26%, rgba(0, 2, 14, 0.8) 99%);
+}
+@media screen and (min-width: 768px) {
+  .section-end {
+    padding: 50px 40px;
+  }
 }
 
 .impact-box__end {
@@ -532,12 +540,11 @@ body {
   border: 1px solid #0000FF;
   border-top: none;
   border-bottom: none;
-  margin: 0 40px;
   transition-duration: 1s;
+  margin: 0 0px 0px 0px;
 }
 .impact-box__end:hover, .impact-box__end:focus {
   transition-duration: 3s;
-  margin: 0 0px 0px 0px;
   border: 4px solid aqua;
   border-top: none;
   border-bottom: none;
@@ -547,17 +554,10 @@ body {
     height: 330px;
     margin-bottom: 100px;
   }
-  .impact-box__end:hover, .impact-box__end:focus {
-    margin-bottom: 100px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .impact-box__end {
     height: 300px;
-    margin-bottom: 100px;
-  }
-  .impact-box__end:hover, .impact-box__end:focus {
-    margin-bottom: 100px;
   }
 }
 
@@ -660,7 +660,7 @@ body {
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
-    margin: 0px 0px 20px 0;
+    margin: 0px 0px 0px 0;
   }
 }
 
@@ -1766,21 +1766,22 @@ body {
 
 .section-bg {
   border-radius: 5px;
-  padding: 90px 3px 0px 3px;
+  padding: 90px 3px 100px 3px;
+  margin-bottom: 40px;
   background-image: linear-gradient(to bottom, rgba(0, 24, 77, 0.8431372549) 1.1%, rgba(19, 17, 56, 0.9019607843) 26%, rgba(0, 2, 14, 0.7098039216) 99%);
 }
 @media screen and (min-width: 768px) {
   .section-bg {
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 20px;
+    padding: 0px 20px 100px;
   }
 }
 @media screen and (min-width: 1200px) {
   .section-bg {
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 40px;
+    padding: 0px 40px 100px;
   }
 }
 
@@ -1907,7 +1908,7 @@ body {
 
 .impact-section {
   display: block;
-  margin-bottom: 200px;
+  margin-bottom: 0px;
   padding: 0px 5px 0px 30px;
 }
 @media screen and (min-width: 768px) {
@@ -1915,14 +1916,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto 200px auto;
+    margin: 0 auto 0px auto;
     padding: 70px 0px 0px 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .impact-section {
     padding: 75px 0px 0px 0px;
-    margin-bottom: 300px;
+    margin-bottom: 0px;
   }
 }
 

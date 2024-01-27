@@ -3,7 +3,8 @@
     .section-bg{
     // background: $section-color;
     border-radius: 5px;
-padding: 90px 3px 0px 3px;
+padding: 90px 3px 100px 3px;
+margin-bottom: 40px;
 // background-color: $section-color__desktop;
 background-image: linear-gradient(to bottom,
     #00184dd7 1.1%,
@@ -16,13 +17,13 @@ background-image: linear-gradient(to bottom,
 @media screen and (min-width: 768px) {
     display: flex;
       flex-wrap: wrap;
-      padding: 0px 20px;
+      padding: 0px 20px 100px;
 }
 
 @media screen and (min-width: 1200px) {
   display: flex;
   flex-wrap: wrap;
-  padding: 0px 40px;
+  padding: 0px 40px 100px;
 
     }
   }
@@ -188,21 +189,21 @@ height: 390px;
     .impact-section{
 display: block;
 
-margin-bottom: 200px;
+margin-bottom: 0px;
     padding: 0px 5px 0px 30px;
 
 @media screen and (min-width: 768px) {
  display: flex;
   flex-direction: column;
       align-items: center;
-margin: 0 auto 200px auto;
+margin: 0 auto 0px auto;
   padding: 70px 0px 0px 0px;
     // width: 50%;
   }
 
   @media screen and (min-width: 1200px) {
     padding: 75px 0px 0px 0px;
-  margin-bottom: 300px;
+  margin-bottom: 0px;
  
   }
 }
