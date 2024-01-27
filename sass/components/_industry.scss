@@ -196,7 +196,6 @@ border-radius: 5px;
    border: 1px solid $line-color ;
    border-top: none;
    border-bottom: none;
-// margin: 0 40px;
 
 transition-duration: $animation-head;
 margin: 0 0px 0px 0px;
@@ -210,24 +209,11 @@ margin: 0 0px 0px 0px;
 
    @media screen and (min-width: 768px) {
       height: 330px;
-
       margin-bottom: 100px;
-      
-         // &:hover,
-         // &:focus {
-         //    margin-bottom: 100px;
-         // }
    }
-
    @media screen and (min-width: 1200px) {
 // box-shadow: 0px 0px 1px 0px ($line-color), 0px 0px 1px 0px ($line-color);
-height:300px;  
-// margin-bottom: 200px;
-//    &:hover,
-//    &:focus {
-// margin-bottom: 100px;
-// }
-
+height:300px; 
       }
 
 }
