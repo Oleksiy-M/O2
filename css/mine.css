@@ -2068,7 +2068,7 @@ body {
   transition-duration: 1s;
 }
 .develo-eco__content:hover .svg-box, .develo-eco__content:focus .svg-box {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .develo-eco__svg {
