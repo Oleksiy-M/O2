@@ -286,18 +286,23 @@ body {
 }
 @media screen and (min-width: 650px) {
   .hero {
-    padding-top: 0px;
+    padding-top: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 50px;
   }
 }
 
 @media screen and (min-width: 650px) {
   .hero__water {
-    margin-top: -30px;
+    margin-top: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__water {
-    margin: 0;
+    margin-top: 0;
   }
 }
 
@@ -317,7 +322,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .logo__overlay {
-    padding: 30px 130px 30px 130px;
+    padding: 100px 130px 30px 130px;
   }
 }
 

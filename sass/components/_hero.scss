@@ -8,17 +8,21 @@ margin: 0 auto;
 
 	@media screen and (min-width: 650px) {
 		// display: flex;
-		padding-top: 0px;
+		padding-top: 10px;
+				}
+	@media screen and (min-width: 1200px) {
+						padding-top: 50px;
 				}
 }
 
+
 	.hero__water {
 	@media screen and (min-width: 650px) {
-margin-top: -30px;
+margin-top: 0px;
 		}
 
 				@media screen and (min-width: 1200px) {
-					margin: 0;
+					margin-top: 0;
 				}
 	}
 
@@ -39,7 +43,7 @@ padding: 0;
 		padding: 0 0 0 0;
 	}
 	@media screen and (min-width: 1200px) {
-		padding: 30px 130px 30px 130px;
+		padding: 100px 130px 30px 130px;
 	
 	}
 }
