@@ -537,23 +537,24 @@ body {
   justify-content: center;
   height: 600px;
   border-radius: 5px;
-  border: 2px solid #0000FF;
+  border: 4px solid #0000FF;
   border-top: none;
   border-bottom: none;
   transition-duration: 1s;
-  margin: 0 60px;
+  margin: 0 30px;
 }
 .impact-box__end:hover, .impact-box__end:focus {
   margin-left: 0px;
   margin-right: 0px;
   transition-duration: 3s;
-  border: 4px solid aqua;
+  border: 6px solid aqua;
   border-top: none;
   border-bottom: none;
 }
 @media screen and (min-width: 768px) {
   .impact-box__end {
     height: 330px;
+    margin: 0 60px;
     margin-bottom: 100px;
   }
 }
@@ -572,17 +573,16 @@ body {
   height: 1px;
   border-radius: 2px;
   overflow: hidden;
-  border: 5px solid #0000FF;
+  border: 1px solid #0000FF;
   border-left: none;
   border-right: none;
   transition-duration: 1s;
-  width: 93%;
 }
 .impact-box__end:hover .box__end, .impact-box__end:focus .box__end {
   transition-duration: 3s;
   height: 100%;
   width: 100%;
-  border: 6px solid #3fa9f5;
+  border: 3px solid #3fa9f5;
   border-left: none;
   border-right: none;
 }
