@@ -286,12 +286,12 @@ body {
 }
 @media screen and (min-width: 650px) {
   .hero {
-    padding-top: 10px;
+    padding-top: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    padding-top: 50px;
+    padding-top: 30px;
   }
 }
 
