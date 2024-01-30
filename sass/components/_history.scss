@@ -49,66 +49,60 @@ margin: 0 22px 120px 22px;
 
 .history-hero__heading{
    padding: 5px 10px;
-      height: 60px;
-   
-      color: $Secondary-text-color;
-      user-select: none;
-      // border-radius: 25px;
-      text-shadow: 2px 1px 10px black;
-      text-transform: uppercase;
-      text-align: center;
-      font-weight: 300;
-      font-size: 15px;
-      line-height: 1.86;
-      letter-spacing: 0.26em;
-   
-      // transition-property: font-size;  
-      transition-duration: $animation-head;
-   
-   .history-section:hover &,
-   .history-section:focus & {
-         font-size: 15.5px;
-         color: $primary-text-color;
-      }
-   
-      @media screen and (min-width: 360px) {
-         height: 30px;
-         padding: 0px 5px;
-      }
-   
-      @media screen and (min-width: 768px) {
-         padding: 0px 20px;
-         height: 30px;
-      }
-   
-   
-      @media screen and (min-width: 1200px) {
-   
-         font-weight: 600;
-         font-size: 23px;
-         line-height: 1.86;
-         letter-spacing: 0.26em;
-         height: 40px;
-   
-         .history-section:hover &,
+   // height: 85px;
+
+   color: $Secondary-text-color;
+   user-select: none;
+// border-radius: 25px;
+text-shadow: 1px 1px 3px black;
+text-transform: uppercase;
+text-align: center;
+font-weight: 300;
+font-size: 15px;
+line-height: 1.86;
+letter-spacing: 0.26em;
+
+   // transition-property: font-size;  
+transition-duration: $animation-head;
+      .history-section:hover &,
          .history-section:focus & {
-            font-size: 24.5px;
+            transform: scale(1.05);
+            color: $primary-text-color;
          }
-      }
+
+         @media screen and (min-width: 360px) {
+            // height: 60px;
+            padding: 0px 5px;
+         }
+         
+         @media screen and (min-width: 768px) {
+   padding: 5px 20px 0 20px;
+   
+// height: 30px;
+}
+
+
+@media screen and (min-width: 1200px) {
+
+font-weight: 600;
+font-size: 22px;
+line-height: 1.86;
+letter-spacing: 0.26em;
+}
 }
 
 .history-border {
-   // transition-duration: 0.5s;
-   // transition: $animation-card;
    transition-duration: $animation-head;
-   height: 2px;
-   border-bottom: 2px solid $Secondary-text-color;
-
-   .history-section:hover &,
-   .history-section:focus & {
-      border-bottom: 2px solid $primary-text-color;
-      box-shadow: 0px 3px 10px 2px $primary-text-color;
-   }
+   
+      height: 2px;
+      border-bottom: 2px solid $Secondary-text-color;
+   
+      .history-section:hover &,
+      .history-section:focus & {
+         border-bottom: 2px solid $primary-text-color;
+         box-shadow: 0px 2px 8px 1px $primary-text-color;
+         transform: scale(1.05)
+      }
 
 
 }

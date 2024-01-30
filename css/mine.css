@@ -2228,10 +2228,9 @@ body {
 
 .history-hero__heading {
   padding: 5px 10px;
-  height: 60px;
   color: #3fa9f5;
   user-select: none;
-  text-shadow: 2px 1px 10px black;
+  text-shadow: 1px 1px 3px black;
   text-transform: uppercase;
   text-align: center;
   font-weight: 300;
@@ -2241,31 +2240,25 @@ body {
   transition-duration: 1s;
 }
 .history-section:hover .history-hero__heading, .history-section:focus .history-hero__heading {
-  font-size: 15.5px;
+  transform: scale(1.05);
   color: aqua;
 }
 @media screen and (min-width: 360px) {
   .history-hero__heading {
-    height: 30px;
     padding: 0px 5px;
   }
 }
 @media screen and (min-width: 768px) {
   .history-hero__heading {
-    padding: 0px 20px;
-    height: 30px;
+    padding: 5px 20px 0 20px;
   }
 }
 @media screen and (min-width: 1200px) {
   .history-hero__heading {
     font-weight: 600;
-    font-size: 23px;
+    font-size: 22px;
     line-height: 1.86;
     letter-spacing: 0.26em;
-    height: 40px;
-  }
-  .history-section:hover .history-hero__heading, .history-section:focus .history-hero__heading {
-    font-size: 24.5px;
   }
 }
 
@@ -2276,7 +2269,8 @@ body {
 }
 .history-section:hover .history-border, .history-section:focus .history-border {
   border-bottom: 2px solid aqua;
-  box-shadow: 0px 3px 10px 2px aqua;
+  box-shadow: 0px 2px 8px 1px aqua;
+  transform: scale(1.05);
 }
 
 .section-card {
