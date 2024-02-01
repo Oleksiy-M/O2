@@ -169,7 +169,7 @@ display: flex;
    padding: 0;
    margin: 0;
    animation-timing-function: ease-out;
-   animation: moveRightToLeft 40s linear infinite;
+   animation: moveRightToLeft 30s linear infinite;
    // transition: animation-duration 2s ease-out;
    &:hover ,
    &:focus {
@@ -193,7 +193,7 @@ display: flex;
       0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
    }
    @media screen and (min-width: 768px) {
-     margin-right: 80px;
+     margin-right: 60px;
 
   }
 }
@@ -206,7 +206,7 @@ display: flex;
    }
 
    100% {
-      transform: translateX(calc(-100% - 1300px));
+      transform: translateX(calc(-100% - 1060px));
    }
 }
 

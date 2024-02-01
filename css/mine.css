@@ -2235,7 +2235,7 @@ body {
     margin: 50px auto 40px;
     max-width: 1600px;
     border-radius: 5px;
-    background-image: linear-gradient(to bottom, rgba(51, 150, 1, 0.6823529412) 0, 5%, rgba(44, 47, 1, 0.8196078431));
+    background-image: linear-gradient(to bottom, rgba(51, 150, 1, 0.6823529412) 0, 5%, rgba(44, 47, 1, 0.5803921569));
   }
 }
 
@@ -2295,7 +2295,7 @@ body {
 .section-histore__end {
   height: 500px;
   margin: 0 auto 300px;
-  background-image: linear-gradient(to bottom, rgba(37, 47, 5, 0.7098039216) 5%, rgba(2, 40, 15, 0.6078431373));
+  background-image: linear-gradient(to bottom, rgba(44, 47, 1, 0.5803921569) 35%, rgba(3, 42, 16, 0.5450980392));
 }
 @media screen and (min-width: 768px) {
   .section-histore__end {
@@ -2395,7 +2395,7 @@ body {
   padding: 0;
   margin: 0;
   animation-timing-function: ease-out;
-  animation: moveRightToLeft 40s linear infinite;
+  animation: moveRightToLeft 30s linear infinite;
 }
 .cards:hover, .cards:focus {
   /* Поступова зупинка */
@@ -2414,7 +2414,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .cards__item {
-    margin-right: 80px;
+    margin-right: 60px;
   }
 }
 
@@ -2423,6 +2423,6 @@ body {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(calc(-100% - 1300px));
+    transform: translateX(calc(-100% - 1060px));
   }
 }/*# sourceMappingURL=mine.css.map */
