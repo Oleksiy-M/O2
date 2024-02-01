@@ -2189,7 +2189,6 @@ body {
 .video-bg {
   display: block;
   position: relative;
-  padding: 0;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
@@ -2224,16 +2223,15 @@ body {
 }
 
 .history-section {
-  display: block;
+  display: flex;
+  justify-content: center;
   padding: 100px 0;
-  margin: 0px auto;
+  margin: 0px 15px;
   border-radius: 5px;
   background-image: linear-gradient(to bottom, rgba(205, 184, 109, 0.7411764706) 0.5%, rgba(1, 97, 108, 0.6901960784));
 }
 @media screen and (min-width: 768px) {
   .history-section {
-    display: flex;
-    justify-content: center;
     padding: 100px 0;
     margin: 0px auto;
     max-width: 1600px;
@@ -2249,7 +2247,7 @@ body {
 }
 .history-section:hover .history-hero, .history-section:focus .history-hero {
   border: 1px solid rgba(234, 230, 140, 0.2);
-  background-color: rgba(251, 250, 224, 0.1725490196);
+  background-color: rgba(251, 250, 224, 0.0745098039);
   transform: scale(1.05);
   color: #fffdd1;
 }
@@ -2260,6 +2258,7 @@ body {
 }
 
 .history-hero__heading {
+  padding: 5px 30px;
   user-select: none;
   text-shadow: 1px 1px 3px black;
   text-transform: uppercase;
@@ -2295,7 +2294,7 @@ body {
 
 .section-histore__end {
   height: 500px;
-  margin: 0 auto 300px;
+  margin: 0 15px 300px;
   background-image: linear-gradient(to bottom, rgba(1, 98, 108, 0.6) 35%, rgba(59, 56, 48, 0.6588235294));
 }
 @media screen and (min-width: 768px) {
@@ -2387,9 +2386,8 @@ body {
 }
 
 .section-card {
-  background-color: rgba(132, 117, 75, 0.7490196078);
   overflow: hidden;
-  margin: 40px 0;
+  margin: 0px 0;
   padding: 50px 0;
 }
 
