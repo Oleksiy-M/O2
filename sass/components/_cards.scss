@@ -1,82 +1,85 @@
 
-.section-card{
-   padding:0 0 300px 0;
-   // background-color: $section-color__desktop;
-}
+// .section-card{
+//    padding:0 0 300px 0;
+//    // background-color: $section-color__desktop;
+// }
 
 
 
-.cards {
+// .cards {
 
-   @media screen and (min-width: 768px) {
-      display: flex;
-      flex-wrap: wrap;
-      margin: -15px;
-   }
+//    @media screen and (min-width: 768px) {
+//       display: flex;
+//       flex-wrap: wrap;
+//       margin: -15px;
+//    }
 
-}
+// }
 
-.cards__item {
-   overflow: hidden;
-   transition: box-shadow $animation-card;
+// .cards__item {
+//    overflow: hidden;
+//    transition: box-shadow $animation-card;
 
-   &:hover,
-   &:focus {
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-         0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-   }
+//    &:hover,
+//    &:focus {
+//       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+//          0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+//    }
 
-   @media screen and (max-width: 768px) {
-      &:not(:last-child) {
-         margin-bottom: 30px;
-      }
-   }
+//    @media screen and (max-width: 768px) {
+//       &:not(:last-child) {
+//          margin-bottom: 30px;
+//       }
+//    }
 
-   @media screen and (min-width: 768px) and (max-width: 1199px) {
-      width: calc((100% - 4 * 15px) / 2);
-      margin: 15px;
+//    @media screen and (min-width: 768px) and (max-width: 1199px) {
+//       width: calc((100% - 4 * 15px) / 2);
+//       margin: 15px;
 
-      // &:first-child .cards__content {
-      //    padding-bottom: 56px;
-      // }
-   }
+//       // &:first-child .cards__content {
+//       //    padding-bottom: 56px;
+//       // }
+//    }
 
-   @media screen and (min-width: 1200px) {
-      width: calc((100% - 6 * 15px) / 3);
-      margin: 15px;
+//    @media screen and (min-width: 1200px) {
+//       width: calc((100% - 6 * 15px) / 3);
+//       margin: 15px;
 
-   }
+//    }
 
-}
+// }
 
 .cards__link {
 
    text-decoration: none;
    display: block;
+
 }
 
 .cards__thumb {
+   
 display: flex;
 justify-content: center;
-
    position: relative;
    overflow: hidden;
+   // width: 100%;
 
    
 }
 
 .history-cards__overlay {
    display: flex;
-   align-items: center;
+      // width: 420px;
+   // align-items: center;
    position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
+   // top: 0;
+   // left: 0;
+   // width: 100%;
    height: 100%;
    opacity: 0;
    transform: translateY(100%);
-   transition: transform $animation-card, opacity $animation-card;
-   background-color: $Accent;
+   transition-duration: 3s;
+   background-color: #330fc1b0;
 
    .cards__link:hover &,
    .cards__link:focus & {
@@ -87,7 +90,12 @@ justify-content: center;
 }
 
 .cards__alert {
-   text-align: justify;
+   display: flex;
+      // white-space: pre-wrap;
+      text-align:center;
+      align-items: center;
+      overflow: hidden;
+   
    padding: 10px 24px;
    color: $White-color;
    font-size: 12px;
@@ -98,12 +106,17 @@ letter-spacing: 0.02em;
 }
 
 .cards__content {
-   padding: 20px 24px;
-   border: 1px solid #330fc197;
+display: flex;
+flex-direction: column;
+align-items: center;
+// width: 400px;
+   padding: 20px 4px;
+   border: 1px solid #1a047497;
 
 }
 
 .cards__title {
+   
    user-select: none;
    margin-bottom: 4px;
    font-weight: 700;
@@ -111,6 +124,7 @@ letter-spacing: 0.02em;
    line-height: 2.0;
    letter-spacing: 0.06em;
    color: $primary-text-color;
+   
 }
 
 .cards__text {
@@ -119,3 +133,71 @@ letter-spacing: 0.02em;
    line-height: 1.87;
    color: $Secondary-text-color;
 }
+
+
+
+
+
+
+
+.section-card{
+   overflow: hidden;
+   margin-bottom: 120px;
+   padding: 50px 0;
+   border: 1px solid;
+   // transition: animation-play-state 3s ease-out;
+}
+
+
+.cards {
+display: flex;
+   padding: 0;
+   margin: 0;
+   animation-timing-function: ease-out;
+   animation: moveRightToLeft 40s linear infinite;
+   // transition: animation-duration 2s ease-out;
+   &:hover ,
+   &:focus {
+      /* Поступова зупинка */
+      transition: all 2s ease-out;
+   animation-play-state: paused;
+
+   }
+
+}
+
+.cards__item{
+   flex-shrink: 0;
+   margin-right: 100px;
+   transition-duration: 3s ;
+   &:hover,
+   &:focus {
+         transform: scale(1.25);
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+               0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+         }
+}
+
+
+
+@keyframes moveRightToLeft {
+   0% {
+      transform: translateX(0%);
+   }
+
+   100% {
+      transform: translateX(calc(-100% - 1300px));
+   }
+}
+
+
+
+// .hist-pic{
+//    transition-duration: 3s;
+//    &:hover,
+//    &:focus{
+//       z-index: 2;
+//       // position: absolute;
+//          // transform: scale(1.25);
+//    }
+// }

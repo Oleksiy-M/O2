@@ -1,17 +1,25 @@
 /*================== PAGE-HEADER ====================== */
+// .body-bg{
+//    // position: relative;
+//    // background-color: #f9fbff;
+//    // z-index: 4;
+// // display: flexbox;
+// // max-width: 1600px;
+//    // padding-bottom: 15px;
+// }
+
+
 .page-header {
 display:block;
 position: relative;
 padding: 0;
-margin: 0 auto 0 auto;
-// margin-left: auto;
-// margin-right: auto;
-// margin-top: 0px;
+margin: 0 auto;
    overflow:hidden;
    justify-content: center;
-   
+  
       @media screen and (min-width: 1200px) { 
        display: flexbox;
+       
       // background-size: contain;
          // 	background-position: center;
          // 	background-attachment: fixed;
@@ -29,13 +37,17 @@ margin: 0 auto 0 auto;
    
           @media screen and (min-width: 1200px) {
              position: absolute;
-         //   background-image: $background-water__mobile;
+         //   background-image: $background-water;
    margin-top: -100px;
+
           }
          }
+         
+
+
 
 .bg-color__head {
-background-image: $background-water__mobile;
+// background-image: $background-water__mobile;
    // background-image: $background-water;
    // background-color: $video-color;
    height: 935px;
