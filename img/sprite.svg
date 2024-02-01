@@ -1,5 +1,6 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+
 <symbol id="logo" viewBox="0 0 32 32">
 <path fill="#fc9" style="fill: var(--color1, #fc9)" d="M31.221 11.856c0.066 3.874 0.050 7.787 0.073 11.328l-0.027-4.247c0.014 2.123-0.016 3.911-0.084 6.078-0.085-0.652-0.018-2.052-0.132-2.391 0-5.184 0.137-10.384 0.261-15.433 0.261 2.005-0.103 3.248-0.092 4.665z"></path>
 <path fill="#fc9" style="fill: var(--color1, #fc9)" d="M31.056 30.756c0-0.521 0-1.029 0-1.531 0.007 0.54 0.016 1.065 0 1.531z"></path>
