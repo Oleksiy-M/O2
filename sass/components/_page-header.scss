@@ -1,12 +1,18 @@
 /*================== PAGE-HEADER ====================== */
-// .body-bg{
+.body-bg{
+            @media screen and (min-width: 768px) {
+                  background: $Secondary-text-color;
+                  // height:300px;
+                  // padding-bottom: 10px;
+                  border-bottom: 1px solid #fff;
+               }
 //    // position: relative;
 //    // background-color: #f9fbff;
 //    // z-index: 4;
 // // display: flexbox;
 // // max-width: 1600px;
 //    // padding-bottom: 15px;
-// }
+}
 
 
 .page-header {
@@ -38,7 +44,7 @@ margin: 0 auto;
           @media screen and (min-width: 1200px) {
              position: absolute;
          //   background-image: $background-water;
-   margin-top: -100px;
+   margin-top: -120px;
 
           }
          }
@@ -47,9 +53,6 @@ margin: 0 auto;
 
 
 .bg-color__head {
-// background-image: $background-water__mobile;
-   // background-image: $background-water;
-   // background-color: $video-color;
    height: 935px;
 
 @media (min-device-pixel-ratio: 2) and (max-width: 767px),

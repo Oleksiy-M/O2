@@ -1,43 +1,55 @@
 // < !-- Water -->
 
 .hero {
-	display: flex;
+	display: block;
 	justify-content: center;	
-margin: 0 auto;
+margin: 0;
 			padding-top: 130px;
-
 	@media screen and (min-width: 650px) {
 		// display: flex;
 		padding-top: 0px;
-				}
+	}
+
+
 	@media screen and (min-width: 1200px) {
-						padding-top: 30px;
+
+						padding-top: 0px;
 				}
 }
+
 
 
 .hero_list{
 padding: 0;
 }
-	.hero__water {
-		padding: 0 35px;
 
+.hero__water {
+	display: flex;
+	justify-content: center;
+	// margin: 0 auto;
+	padding: 0 35px;
+	
 	@media screen and (min-width: 650px) {
-margin-top: 0px;
-		}
-
-@media screen and (min-width: 1200px) {
-	margin-top: 0;
-}
+		margin-top: 0px;
 	}
+	
+	
+	@media screen and (min-width: 1200px) {
+		margin-top: 0;
+		padding: 35px 35px 70px 35px;
+	}
+}
 
 
 
 
 // < !-- Logo -->
 
+
+
 .logo__overlay {
 			display: flex;
+	
 	justify-content: center;
 	padding: 130px 0 100px 0;
 
@@ -45,7 +57,7 @@ margin-top: 0px;
 		padding: 0;
 	}
 	@media screen and (min-width: 1200px) {
-		padding: 100px 130px 30px 130px;
+		padding: 30px 130px 30px 130px;
 	
 	}
 }
@@ -55,7 +67,7 @@ margin-top: 0px;
 	
 	transition:opacity $animation-logo;
 	
-opacity: 0;
+opacity: 1;
 	.hero :hover &,
 	.hero :focus &{
 		opacity: 1;
@@ -68,7 +80,7 @@ opacity: 0;
 		width: 90px;
 		height: 90px;
 		// margin-top: -230px;
-
+		margin: 0 auto;
 @media screen and (min-width: 650px) {
 		width: 70px;
 			height: 70px;
@@ -81,10 +93,23 @@ opacity: 0;
 	}
 
 	@media screen and (min-width: 1200px) {
-		width: 150px;
-		height: 150px;
+		width: 120px;
+		height: 120px;
 	
 	}
+}
+
+
+.section-oxy{
+	display: block;
+	margin: 0 auto;
+	@media screen and (min-width: 768px) {
+		// z-index: 5;
+		padding: 50px 0;
+		height: 800px;
+	background: $Secondary-text-color;
+	border-top: 1px solid #fff;
+}
 }
 
 .oxy-container {
@@ -95,6 +120,7 @@ opacity: 0;
 
 
 .hero__title {
+
 	display: flex;
 	justify-content: center;
 	text-align: center;
@@ -102,9 +128,10 @@ margin-top: 30px;
 		@media screen and (min-width: 650px){
 				margin-top: 0px;
 			}
+			
 		@media screen and (min-width: 1200px) {
 				justify-content: right;
-			margin-right: -200px;
+			margin-right: 200px;
 }}
 
 .title {

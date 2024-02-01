@@ -62,6 +62,11 @@ display: flex;
 justify-content: center;
    position: relative;
    overflow: hidden;
+   width: 250px;
+   // margin: 0 20px;
+   @media screen and (min-width: 768px) {
+    width: auto;
+   }
    // width: 100%;
 
    
@@ -78,7 +83,7 @@ justify-content: center;
    height: 100%;
    opacity: 0;
    transform: translateY(100%);
-   transition-duration: 3s;
+   transition-duration: 1s;
    background-color: #330fc1b0;
 
    .cards__link:hover &,
@@ -87,36 +92,44 @@ justify-content: center;
       opacity: 1;
 
    }
+
+
 }
+
 
 .cards__alert {
    display: flex;
-      // white-space: pre-wrap;
+      
       text-align:center;
       align-items: center;
       overflow: hidden;
    
-   padding: 10px 24px;
+   padding: 10px 4px;
    color: $White-color;
-   font-size: 12px;
-   line-height: 1.56;
+   font-size:10px;
+   line-height: 1.16;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 font-style: italic;
 letter-spacing: 0.02em;
+      @media screen and (min-width: 768px) {
+         padding: 10px 24px;
+            font-size: 12px;
+               line-height: 1.56;
+         }
 }
 
 .cards__content {
 display: flex;
 flex-direction: column;
 align-items: center;
-// width: 400px;
-   padding: 20px 4px;
-   border: 1px solid #1a047497;
+padding: 20px 4px;
+border: 1px solid #1a047497;
 
 }
 
 .cards__title {
-   
+   // width: ;
+  text-wrap:wrap;
    user-select: none;
    margin-bottom: 4px;
    font-weight: 700;
@@ -142,15 +155,17 @@ align-items: center;
 
 .section-card{
    overflow: hidden;
-   margin-bottom: 120px;
+   // overflow-x: auto;
+   margin-bottom: 40px;
    padding: 50px 0;
-   border: 1px solid;
+   // border: 1px solid;
    // transition: animation-play-state 3s ease-out;
 }
 
 
 .cards {
 display: flex;
+
    padding: 0;
    margin: 0;
    animation-timing-function: ease-out;
@@ -163,19 +178,24 @@ display: flex;
    animation-play-state: paused;
 
    }
+   
 
 }
 
 .cards__item{
    flex-shrink: 0;
-   margin-right: 100px;
-   transition-duration: 3s ;
+   margin-right: 30px;
+   transition-duration: 1s ;
    &:hover,
    &:focus {
-         transform: scale(1.25);
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-               0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-         }
+      transform: scale(1.25);
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+      0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+   }
+   @media screen and (min-width: 768px) {
+     margin-right: 80px;
+
+  }
 }
 
 

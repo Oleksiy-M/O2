@@ -42,6 +42,13 @@ body {
 }
 
 /*================== PAGE-HEADER ====================== */
+@media screen and (min-width: 768px) {
+  .body-bg {
+    background: #3fa9f5;
+    border-bottom: 1px solid #fff;
+  }
+}
+
 .page-header {
   display: block;
   position: relative;
@@ -66,7 +73,7 @@ body {
 @media screen and (min-width: 1200px) {
   .bubble-head {
     position: absolute;
-    margin-top: -100px;
+    margin-top: -120px;
   }
 }
 
@@ -98,7 +105,7 @@ body {
 /* =================SITE-NAV  ================= */
 .page__nav {
   display: flex;
-  padding: 10px 0 0 0;
+  padding: 10px 0 10px 0;
 }
 @media screen and (min-width: 1200px) {
   .page__nav {
@@ -279,9 +286,9 @@ body {
 }
 
 .hero {
-  display: flex;
+  display: block;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0;
   padding-top: 130px;
 }
 @media screen and (min-width: 650px) {
@@ -291,7 +298,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    padding-top: 30px;
+    padding-top: 0px;
   }
 }
 
@@ -300,6 +307,8 @@ body {
 }
 
 .hero__water {
+  display: flex;
+  justify-content: center;
   padding: 0 35px;
 }
 @media screen and (min-width: 650px) {
@@ -310,6 +319,7 @@ body {
 @media screen and (min-width: 1200px) {
   .hero__water {
     margin-top: 0;
+    padding: 35px 35px 70px 35px;
   }
 }
 
@@ -325,13 +335,13 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .logo__overlay {
-    padding: 100px 130px 30px 130px;
+    padding: 30px 130px 30px 130px;
   }
 }
 
 .hero__link {
   transition: opacity 2000ms cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 0;
+  opacity: 1;
 }
 .hero :hover .hero__link, .hero :focus .hero__link {
   opacity: 1;
@@ -340,6 +350,7 @@ body {
 .hero-logo {
   width: 90px;
   height: 90px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 650px) {
   .hero-logo {
@@ -355,8 +366,21 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero-logo {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.section-oxy {
+  display: block;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .section-oxy {
+    padding: 50px 0;
+    height: 800px;
+    background: #3fa9f5;
+    border-top: 1px solid #fff;
   }
 }
 
@@ -380,7 +404,7 @@ body {
 @media screen and (min-width: 1200px) {
   .hero__title {
     justify-content: right;
-    margin-right: -200px;
+    margin-right: 200px;
   }
 }
 
@@ -2201,21 +2225,32 @@ body {
 
 .history-section {
   display: block;
-  padding: 100px 0;
-  margin: 0;
+  padding: 150px 0 0;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .history-section {
     display: flex;
     justify-content: center;
+    padding: 100px 0;
+    margin: 50px auto 40px;
     max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, rgba(51, 150, 1, 0.6823529412) 0, 5%, rgba(44, 47, 1, 0.8196078431));
   }
 }
 
 .history-hero {
   margin: 0 22px 120px 22px;
+  border-radius: 5px 5px 0 0;
+  transition-duration: 1s;
+  color: #3fa9f5;
+  border: 1px solid rgba(48, 176, 223, 0.0705882353);
+}
+.history-section:hover .history-hero, .history-section:focus .history-hero {
+  border: 1px solid rgba(48, 176, 223, 0.2);
+  background-color: rgba(3, 206, 252, 0.1254901961);
+  transform: scale(1.05);
+  color: aqua;
 }
 @media screen and (min-width: 1200px) {
   .history-hero {
@@ -2224,8 +2259,6 @@ body {
 }
 
 .history-hero__heading {
-  padding: 5px 10px;
-  color: #3fa9f5;
   user-select: none;
   text-shadow: 1px 1px 3px black;
   text-transform: uppercase;
@@ -2234,20 +2267,10 @@ body {
   font-size: 15px;
   line-height: 1.86;
   letter-spacing: 0.26em;
-  transition-duration: 1s;
-}
-.history-section:hover .history-hero__heading, .history-section:focus .history-hero__heading {
-  transform: scale(1.05);
-  color: aqua;
-}
-@media screen and (min-width: 360px) {
-  .history-hero__heading {
-    padding: 0px 5px;
-  }
 }
 @media screen and (min-width: 768px) {
   .history-hero__heading {
-    padding: 5px 20px 0 20px;
+    padding: 5px 80px 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2266,8 +2289,20 @@ body {
 }
 .history-section:hover .history-border, .history-section:focus .history-border {
   border-bottom: 2px solid aqua;
-  box-shadow: 0px 2px 8px 1px aqua;
-  transform: scale(1.05);
+  box-shadow: 0px 2px 5px 1px aqua;
+}
+
+.section-histore__end {
+  height: 500px;
+  margin: 0 auto 300px;
+  background-image: linear-gradient(to bottom, rgba(37, 47, 5, 0.7098039216) 5%, rgba(2, 40, 15, 0.6078431373));
+}
+@media screen and (min-width: 768px) {
+  .section-histore__end {
+    padding: 0px;
+    margin: 0 auto 50px;
+    border-radius: 5px;
+  }
 }
 
 .cards__link {
@@ -2280,6 +2315,12 @@ body {
   justify-content: center;
   position: relative;
   overflow: hidden;
+  width: 250px;
+}
+@media screen and (min-width: 768px) {
+  .cards__thumb {
+    width: auto;
+  }
 }
 
 .history-cards__overlay {
@@ -2288,7 +2329,7 @@ body {
   height: 100%;
   opacity: 0;
   transform: translateY(100%);
-  transition-duration: 3s;
+  transition-duration: 1s;
   background-color: rgba(51, 15, 193, 0.6901960784);
 }
 .cards__link:hover .history-cards__overlay, .cards__link:focus .history-cards__overlay {
@@ -2301,13 +2342,20 @@ body {
   text-align: center;
   align-items: center;
   overflow: hidden;
-  padding: 10px 24px;
+  padding: 10px 4px;
   color: #FFFFFF;
-  font-size: 12px;
-  line-height: 1.56;
+  font-size: 10px;
+  line-height: 1.16;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-style: italic;
   letter-spacing: 0.02em;
+}
+@media screen and (min-width: 768px) {
+  .cards__alert {
+    padding: 10px 24px;
+    font-size: 12px;
+    line-height: 1.56;
+  }
 }
 
 .cards__content {
@@ -2319,6 +2367,7 @@ body {
 }
 
 .cards__title {
+  text-wrap: wrap;
   user-select: none;
   margin-bottom: 4px;
   font-weight: 700;
@@ -2337,9 +2386,8 @@ body {
 
 .section-card {
   overflow: hidden;
-  margin-bottom: 120px;
+  margin-bottom: 40px;
   padding: 50px 0;
-  border: 1px solid;
 }
 
 .cards {
@@ -2357,12 +2405,17 @@ body {
 
 .cards__item {
   flex-shrink: 0;
-  margin-right: 100px;
-  transition-duration: 3s;
+  margin-right: 30px;
+  transition-duration: 1s;
 }
 .cards__item:hover, .cards__item:focus {
   transform: scale(1.25);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 768px) {
+  .cards__item {
+    margin-right: 80px;
+  }
 }
 
 @keyframes moveRightToLeft {
