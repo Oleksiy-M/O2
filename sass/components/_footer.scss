@@ -1,26 +1,26 @@
 /* =================== FOOTER =================== */
 .page-footer {
-      display: block;
-      width: 100%;
+   display: block;
+   width: 100%;
    margin-bottom: 110px;
-   
-@media screen and (min-width: 768px) {
-   background-color: $bg-color;
-   
-   display: flex;
-   // flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-   margin: 0 auto;
 
-   max-width: 1600px;
-   height: 300px;
+   @media screen and (min-width: 768px) {
+      background-color: $bg-color;
 
-// &:last-child {
-//    align-items: end;
-// }
+      display: flex;
+      // flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
 
-}
+      max-width: 1600px;
+      height: 300px;
+
+      // &:last-child {
+      //    align-items: end;
+      // }
+
+   }
 
 }
 
@@ -30,59 +30,65 @@
    display: flex;
    justify-content: center;
    margin-bottom: 40px;
+
    @media screen and (min-width: 1200px) {
       display: inline-flex;
       margin-bottom: 0px;
    }
 }
 
-.page-footer__list{
-padding-left: 10px;
-@media screen and (min-width: 1200px) {
-   padding-left: 30px;
-   width: 250px;
- 
-}}
+.page-footer__list {
+   padding-left: 10px;
+
+   @media screen and (min-width: 1200px) {
+      padding-left: 30px;
+      width: 250px;
+
+   }
+}
 
 
-.page-footer__item{
+.page-footer__item {
    padding: 0;
-  
+
 }
 
 .page-footer__contacts {
- font-style: normal;
+   font-style: normal;
    font-size: 12px;
- text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
+   text-decoration: none;
+   color: $Secondary-text-color;
    transition: color $animation;
 
    &:hover,
    &:focus {
       color: $Accent;
-      
-   }
-   @media screen and (min-width: 1200px) {
-  
-   font-size: 16px;
-   line-height: 1.71;
-  
-}}
 
-.page-footer__contacts--city {
-   
-   color: $White-color;
-   
+   }
+
+   @media screen and (min-width: 1200px) {
+
+      font-size: 16px;
+      line-height: 1.71;
+
+   }
 }
 
-.footer-logo{
+.page-footer__contacts--city {
+
+   color: $White-color;
+
+}
+
+.footer-logo {
    margin: 0px;
    transition-duration: 0.5s;
+
    &:hover,
-      &:focus {
-   
-         transform: scale(1.05);
-      }
+   &:focus {
+
+      transform: scale(1.05);
+   }
 }
 
 
@@ -91,9 +97,10 @@ padding-left: 10px;
    display: flexbox;
 
    margin-bottom: 50px;
+
    @media screen and (min-width: 1200px) {
       display: block;
-      margin:0 0 0 40px;
+      margin: 0 0 0 40px;
    }
 
 }
@@ -107,18 +114,18 @@ padding-left: 10px;
    line-height: 1.14;
    text-transform: uppercase;
    color: $White-color;
-   
+
    @media screen and (min-width: 768px) {
       // text-align: left;
       display: flexbox;
       // margin-left: 10px;
-   
+
    }
 }
 
 .join__list {
-display: flex;
-justify-content: center;
+   display: flex;
+   justify-content: center;
 }
 
 .join__item {
@@ -134,14 +141,14 @@ justify-content: center;
    padding: 12px;
    width: 44px;
    height: 44px;
-   background: rgba(255, 255, 255, 0.1);
+   background: rgba(141, 186, 245, 0.1);
    border-radius: 50%;
-transition-duration: 0.5s;
+   transition-duration: 0.5s;
 
    &:hover,
    &:focus {
       background: $Accent;
-            transform: scale(1.15);
+      transform: scale(1.15);
    }
 }
 
@@ -150,11 +157,12 @@ transition-duration: 0.5s;
    height: 20px;
    fill: $White-color;
    transition-duration: 0.5s;
+
    &:hover,
-      &:focus {
-         
-         transform: scale(1.01);
-      }
+   &:focus {
+
+      transform: scale(1.01);
+   }
 }
 
 
@@ -163,26 +171,28 @@ transition-duration: 0.5s;
 /*============ AUTH ============= */
 .auth {
    text-align: center;
-@media screen and (min-width: 768px) {
-margin-left: 50px;
+
+   @media screen and (min-width: 768px) {
+      margin-left: 50px;
 
       display: flex;
       // justify-content: center;   
       // align-items: center;
-    
+
    }
 }
 
-.auth__form{
+.auth__form {
    margin: 0;
-//       @media screen and (min-width: 1200px) {
-// margin: 0 0 0 20px;
-// }
+   //       @media screen and (min-width: 1200px) {
+   // margin: 0 0 0 20px;
+   // }
 }
 
 .auth__wrapper {
-display: inline-flex;
-flex-direction: column;
+   display: inline-flex;
+   flex-direction: column;
+
    @media screen and (min-width: 1200px) {
       display: flex;
       flex-direction: row;
@@ -200,7 +210,8 @@ flex-direction: column;
    line-height: 1.14;
    text-transform: uppercase;
    color: $White-color;
-user-select: none;
+   user-select: none;
+
    @media screen and (min-width: 1200px) {
       text-align: left;
       margin: 0 0 20px 45px;
@@ -210,17 +221,17 @@ user-select: none;
 }
 
 .auth__input {
-margin: 0px;
-width: 230px;
+   margin: 0px;
+   width: 230px;
 
-height: 50px;
-padding-left: 16px;
-border-radius: 4px;
-color: $White-color;
-background-color: transparent;
-// box-shadow: 0px 4px 4px 0px #e8e5e526;
-border: 1px solid #ffffff4d;
-transition-duration: 0.5s;
+   height: 50px;
+   padding-left: 16px;
+   border-radius: 4px;
+   color: $White-color;
+   background-color: transparent;
+   // box-shadow: 0px 4px 4px 0px #e8e5e526;
+   border: 1px solid #ffffff4d;
+   transition-duration: 0.5s;
 
    &:hover,
    &:focus {
@@ -228,17 +239,18 @@ transition-duration: 0.5s;
       background-color: #7181f914;
       border: 1px solid #ffffffcf;
    }
-@media screen and (min-width: 1200px) {
-   width: 300px;
-   margin-right: 12px;
-}
+
+   @media screen and (min-width: 1200px) {
+      width: 300px;
+      margin-right: 12px;
+   }
 }
 
 .auth__input::placeholder {
    font-size: 16px;
    line-height: 20px;
    color: rgba(255, 255, 255, 0.6);
-user-select: none;
+   user-select: none;
 }
 
 .button--submit {
@@ -256,21 +268,23 @@ user-select: none;
    box-shadow: 0px 4px 4px 0px #ffffff26;
    min-width: 230px;
 
-      user-select: none;
+   user-select: none;
    font-size: 16px;
    font-weight: 700;
    line-height: 1.87;
    letter-spacing: 0.06em;
    color: $White-color;
-      border-radius: 4px;
- transition-duration: 0.5s;
-            &:hover,
-            &:focus {
-               transform: scale(1.02);
-               // background-color: #7181f914;
-               border: 1px solid #ffffffcf;
-            }
-      // animation-name: background-color;
+   border-radius: 4px;
+   transition-duration: 0.5s;
+
+   &:hover,
+   &:focus {
+      transform: scale(1.02);
+      // background-color: #7181f914;
+      border: 1px solid #ffffffcf;
+   }
+
+   // animation-name: background-color;
 }
 
 .button__icon {

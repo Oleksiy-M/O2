@@ -263,8 +263,8 @@ body {
   font-style: normal;
   font-size: 11px;
   text-decoration: none;
-  color: #FFFFFF;
-  fill: #FFFFFF;
+  color: #3fa9f5;
+  fill: #3fa9f5;
   transition-duration: 0.5s;
 }
 .page__contacts:hover, .page__contacts:focus {
@@ -1599,7 +1599,7 @@ body {
   font-style: normal;
   font-size: 12px;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
+  color: #3fa9f5;
   transition: color 2ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .page-footer__contacts:hover, .page-footer__contacts:focus {
@@ -1669,7 +1669,7 @@ body {
   padding: 12px;
   width: 44px;
   height: 44px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(141, 186, 245, 0.1);
   border-radius: 50%;
   transition-duration: 0.5s;
 }
@@ -2113,6 +2113,7 @@ body {
   transition-duration: 1s;
 }
 .develo-eco__content:hover .eco__svg, .develo-eco__content:focus .eco__svg {
+  fill: #005c2e;
   fill: #85fbff;
 }
 
@@ -2228,11 +2229,11 @@ body {
   padding: 100px 0;
   margin: 0px 15px;
   border-radius: 5px;
-  background-image: linear-gradient(to bottom, rgba(205, 184, 109, 0.7411764706) 0.5%, rgba(1, 97, 108, 0.6901960784));
+  background-image: linear-gradient(to bottom, rgba(205, 184, 109, 0.7411764706) 0.5%, rgba(91, 83, 53, 0.7411764706));
 }
 @media screen and (min-width: 768px) {
   .history-section {
-    padding: 100px 0;
+    padding: 60px 0;
     margin: 0px auto;
     max-width: 1600px;
   }
@@ -2242,12 +2243,9 @@ body {
   margin: 0 22px 120px 22px;
   border-radius: 5px 5px 0 0;
   transition-duration: 1s;
-  color: #aeaa7e;
-  border: 1px solid rgba(209, 210, 165, 0.0705882353);
+  color: #d5d095;
 }
 .history-section:hover .history-hero, .history-section:focus .history-hero {
-  border: 1px solid rgba(234, 230, 140, 0.2);
-  background-color: rgba(251, 250, 224, 0.0745098039);
   transform: scale(1.05);
   color: #fffdd1;
 }
@@ -2285,7 +2283,7 @@ body {
 .history-border {
   transition-duration: 1s;
   height: 2px;
-  border-bottom: 2px solid #aeaa7e;
+  border-bottom: 2px solid #d5d095;
 }
 .history-section:hover .history-border, .history-section:focus .history-border {
   border-bottom: 2px solid #fffdd1;
@@ -2295,7 +2293,7 @@ body {
 .section-histore__end {
   height: 500px;
   margin: 0 15px 300px;
-  background-image: linear-gradient(to bottom, rgba(1, 98, 108, 0.6) 35%, rgba(59, 56, 48, 0.6588235294));
+  background-image: linear-gradient(to bottom, rgba(91, 83, 53, 0.7411764706) 35%, rgba(59, 56, 48, 0.6588235294));
 }
 @media screen and (min-width: 768px) {
   .section-histore__end {
@@ -2375,14 +2373,14 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #aeaa7e;
+  color: #fffdd1;
 }
 
 .cards__text {
   user-select: none;
   font-size: 16px;
   line-height: 1.87;
-  color: #fffdd1;
+  color: #d5d095;
 }
 
 .section-card {

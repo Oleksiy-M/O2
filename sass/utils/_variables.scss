@@ -8,16 +8,16 @@ $animation-logo: 2000ms cubic-bezier(0.4, 0, 0.2, 1);
 $animation: 2ms cubic-bezier(0.4, 0, 0.2, 1);
 $animation-card: 800ms cubic-bezier(0.4, 0, 0.2, 1);
 $animation-head: 1s;
-$histor-color-text: #aeaa7e;
+$histor-color-text: #d5d095;
 $prim-histor-text: #fffdd1;
 $bg-color: #1f2f52;
 $background-water: linear-gradient(to bottom,
 
 		#002cb19a 30%,
 		#010932b7 85%);
-		
+
 // $video-color: rgba(27, 0, 179, 0.595);
-$section-color: #1d135745;
+$section-color: #0a5800;
 $section-color__desktop: #0c0c0cce;
 // $section-color: #282849d7;$section-color: #18243adf;
 /* ==========Utils========= */
@@ -58,6 +58,7 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
 // 6f727b  #adb2c1
 body {
 	font-family: 'Courier New', Courier, monospace;

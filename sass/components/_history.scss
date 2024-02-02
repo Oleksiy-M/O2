@@ -18,11 +18,11 @@
          background-image: linear-gradient(to bottom,
 
                #cdb86dbd 0.5%,
-               #01616cb0);
+               #5b5335bd);
 
          @media screen and (min-width: 768px) {
 
-            padding: 100px 0;
+            padding: 60px 0;
             margin: 0px auto;
             max-width: 1600px;
 
@@ -35,12 +35,12 @@
          border-radius: 5px 5px 0 0;
          transition-duration: $animation-head;
          color: $histor-color-text;
-         border: 1px solid #d1d2a512;
+         // border: 1px solid #d1d2a512;
 
          .history-section:hover &,
          .history-section:focus & {
-            border: 1px solid #eae68c33;
-            background-color: #fbfae013;
+            // border: 1px solid #eae68c33;
+            // background-color: #fbfae013;
             transform: scale(1.05);
             color: #fffdd1;
          }
@@ -106,7 +106,7 @@
          background-image: linear-gradient(to bottom,
 
 
-               #01626c99 35%,
+               #5b5335bd 35%,
                #3b3830a8);
 
          @media screen and (min-width: 768px) {
