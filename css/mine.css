@@ -575,7 +575,8 @@ body {
   height: 1px;
   border-radius: 0px;
   overflow: hidden;
-  border: 3px solid #3fa9f5;
+  box-shadow: 0px 0px 5px 3px rgba(89, 60, 234, 0.486);
+  border: 0.5px solid #4b3ff5;
   border-left: none;
   border-right: none;
   transition-duration: 1s;
@@ -584,7 +585,7 @@ body {
   transition-duration: 3s;
   height: 100%;
   width: 100%;
-  border: 1px solid aqua;
+  border: 0.5px solid #4b3ff5;
   border-left: none;
   border-right: none;
 }
@@ -707,8 +708,8 @@ body {
 
 .develo-eco___decor1 {
   margin-left: 0px;
-  border: 1px solid #0000FF;
-  width: 1px;
+  border: 1px solid rgba(0, 0, 255, 0.1450980392);
+  width: 40px;
 }
 .develo-eco__content:hover .develo-eco___decor1, .develo-eco__content:focus .develo-eco___decor1 {
   border: 1px solid aqua;
@@ -718,9 +719,9 @@ body {
 }
 @media screen and (min-width: 768px) {
   .develo-eco___decor1 {
-    border: 1.5px solid #0000FF;
-    margin-left: 296px;
-    width: 10px;
+    border: 2px solid rgba(0, 0, 255, 0.1450980392);
+    margin-left: 300px;
+    width: 5px;
   }
   .develo-eco__content:hover .develo-eco___decor1, .develo-eco__content:focus .develo-eco___decor1 {
     border: 2px solid aqua;
@@ -730,7 +731,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .develo-eco___decor1 {
-    border: 2px solid #0000FF;
     margin-left: 430px;
     width: 18px;
   }
@@ -809,20 +809,20 @@ body {
 
 .develo-eco___decor4 {
   margin-left: 5px;
-  border: 1px solid #0000FF;
-  width: 1px;
+  border: 1px solid rgba(0, 0, 255, 0.1450980392);
+  width: 40px;
 }
 .develo-eco__content:hover .develo-eco___decor4, .develo-eco__content:focus .develo-eco___decor4 {
   border: 1px solid aqua;
   box-shadow: 0px 0px 3px 1px aqua;
   transition-duration: 600ms;
-  width: 100%;
+  width: 99%;
 }
 @media screen and (min-width: 768px) {
   .develo-eco___decor4 {
     width: 13px;
     margin-left: 300px;
-    border: 1.5px solid #0000FF;
+    border: 2px solid rgba(0, 0, 255, 0.1450980392);
   }
   .develo-eco__content:hover .develo-eco___decor4, .develo-eco__content:focus .develo-eco___decor4 {
     border: 2px solid aqua;
@@ -834,7 +834,6 @@ body {
   .develo-eco___decor4 {
     width: 15px;
     margin-left: 430px;
-    border: 2px solid #0000FF;
   }
   .develo-eco__content:hover .develo-eco___decor4, .develo-eco__content:focus .develo-eco___decor4 {
     border: 2px solid aqua;
@@ -915,25 +914,33 @@ body {
 
 .develo-eco___decor7 {
   margin-left: 10px;
-  border: 1px solid #0000FF;
-  box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
+  width: 35px;
+  border: 1px solid rgba(0, 0, 255, 0.1450980392);
 }
 .develo-eco__content:hover .develo-eco___decor7, .develo-eco__content:focus .develo-eco___decor7 {
   border: 1px solid aqua;
+  box-shadow: 0px 0px 3px 1px aqua;
+  transition-duration: 600ms;
+  width: 98%;
 }
 @media screen and (min-width: 768px) {
   .develo-eco___decor7 {
-    margin-left: -43.5px;
-    border: 2px solid #0000FF;
+    margin-left: -40px;
+    width: 40px;
+    border: 2px solid rgba(0, 0, 255, 0.1450980392);
   }
   .develo-eco__content:hover .develo-eco___decor7, .develo-eco__content:focus .develo-eco___decor7 {
     border: 2px solid aqua;
+    width: 115%;
   }
 }
 @media screen and (min-width: 1200px) {
   .develo-eco___decor7 {
     margin-left: -95px;
-    width: 585px;
+    width: 95px;
+  }
+  .develo-eco__content:hover .develo-eco___decor7, .develo-eco__content:focus .develo-eco___decor7 {
+    width: 120%;
   }
 }
 
@@ -1009,25 +1016,24 @@ body {
 
 .develo-eco___decor10 {
   margin-left: 15px;
-  border: 1px solid #0000FF;
-  box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
+  border: 1px solid rgba(0, 0, 255, 0.1450980392);
+  width: 30px;
 }
 .develo-eco__content:hover .develo-eco___decor10, .develo-eco__content:focus .develo-eco___decor10 {
   border: 1px solid aqua;
+  box-shadow: 0px 0px 3px 1px aqua;
+  transition-duration: 600ms;
+  width: 97%;
 }
 @media screen and (min-width: 768px) {
   .develo-eco___decor10 {
     margin-left: 0;
-    border: 2px solid #0000FF;
+    border: 2px solid rgba(0, 0, 255, 0.1450980392);
+    width: 1px;
   }
   .develo-eco__content:hover .develo-eco___decor10, .develo-eco__content:focus .develo-eco___decor10 {
     border: 2px solid aqua;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .develo-eco___decor10 {
-    width: 520px;
-    margin-left: 0px;
+    width: 100%;
   }
 }
 
@@ -1063,7 +1069,6 @@ body {
   .develo-eco___decor11 {
     margin-top: -1037px;
     height: 1037px;
-    margin-left: 0px;
   }
 }
 
@@ -1097,31 +1102,29 @@ body {
   .develo-eco___decor12 {
     margin-top: -1037px;
     width: 150px;
-    margin-left: 0px;
   }
 }
 
 .develo-eco___decor14 {
   margin-left: 20px;
-  border: 1px solid #0000FF;
-  box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
+  width: 20px;
+  border: 1px solid rgba(0, 0, 255, 0.1450980392);
 }
 .develo-eco__content:hover .develo-eco___decor14, .develo-eco__content:focus .develo-eco___decor14 {
   border: 1px solid aqua;
+  box-shadow: 0px 0px 3px 1px aqua;
+  transition-duration: 600ms;
+  width: 96%;
 }
 @media screen and (min-width: 768px) {
   .develo-eco___decor14 {
+    width: 1px;
     margin-left: 0px;
-    border: 2px solid #0000FF;
+    border: 2px solid rgba(0, 0, 255, 0.1450980392);
   }
   .develo-eco__content:hover .develo-eco___decor14, .develo-eco__content:focus .develo-eco___decor14 {
     border: 2px solid aqua;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .develo-eco___decor14 {
-    width: 520px;
-    margin-left: 0px;
+    width: 100%;
   }
 }
 
@@ -1246,25 +1249,24 @@ body {
 
 .develo-eco___decor19 {
   margin-left: 25px;
-  border: 1px solid #0000FF;
-  box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
+  border: 1px solid rgba(0, 0, 255, 0.1450980392);
+  width: 15px;
 }
 .develo-eco__content:hover .develo-eco___decor19, .develo-eco__content:focus .develo-eco___decor19 {
   border: 1px solid aqua;
+  box-shadow: 0px 0px 3px 1px aqua;
+  transition-duration: 600ms;
+  width: 95%;
 }
 @media screen and (min-width: 768px) {
   .develo-eco___decor19 {
     margin-left: 0px;
-    border: 2px solid #0000FF;
+    border: 2px solid rgba(0, 0, 255, 0.1450980392);
+    width: 1px;
   }
   .develo-eco__content:hover .develo-eco___decor19, .develo-eco__content:focus .develo-eco___decor19 {
     border: 2px solid aqua;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .develo-eco___decor19 {
-    width: 520px;
-    margin-left: 0px;
+    width: 100%;
   }
 }
 
@@ -1381,24 +1383,24 @@ body {
 
 .develo-eco___decor24 {
   margin-left: 30px;
-  border: 1px solid #0000FF;
-  box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
+  border: 1px solid rgba(0, 0, 255, 0.1450980392);
+  width: 10px;
 }
 .develo-eco__content:hover .develo-eco___decor24, .develo-eco__content:focus .develo-eco___decor24 {
   border: 1px solid aqua;
+  box-shadow: 0px 0px 3px 1px aqua;
+  transition-duration: 600ms;
+  width: 94%;
 }
 @media screen and (min-width: 768px) {
   .develo-eco___decor24 {
     margin-left: 0px;
-    border: 2px solid #0000FF;
+    border: 2px solid rgba(0, 0, 255, 0.1450980392);
+    width: 1px;
   }
   .develo-eco__content:hover .develo-eco___decor24, .develo-eco__content:focus .develo-eco___decor24 {
     border: 2px solid aqua;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .develo-eco___decor24 {
-    margin-left: 0px;
+    width: 100%;
   }
 }
 
@@ -1790,11 +1792,13 @@ body {
     align-items: center;
     padding: 0;
     margin: 0;
+    height: 900px;
   }
 }
 @media screen and (min-width: 1200px) {
   .develo-eco {
     padding: 0;
+    height: 700px;
   }
 }
 
@@ -1862,7 +1866,7 @@ body {
   margin-bottom: 120px;
   position: relative;
   height: 380px;
-  border-bottom: 3px solid #0000FF;
+  border-bottom: 1.8px solid rgba(0, 0, 255, 0.1450980392);
   box-shadow: 0px 0px 3px -3px rgb(89, 60, 234);
 }
 @media screen and (min-width: 350px) {
@@ -1875,6 +1879,7 @@ body {
     width: 300px;
     height: 390px;
     margin-bottom: 100px;
+    border-bottom: 3.5px solid rgba(0, 0, 255, 0.1450980392);
   }
   .develo-eco__content:nth-child(-n+2) .cards__overlay {
     border-radius: 10px 0 0 0;
@@ -2101,7 +2106,7 @@ body {
   overflow: hidden;
   transition-duration: 1s;
   box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.185);
-  height: 1%;
+  height: 0.1%;
   border-radius: 0 10px 0 0;
 }
 .develo-eco:hover .cards__overlay, .develo-eco:focus .cards__overlay {
@@ -2160,7 +2165,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .video-bg {
-    background-image: linear-gradient(to bottom, rgba(43, 120, 228, 0.831372549) 30%, rgba(1, 9, 50, 0.8156862745) 85%);
+    background-image: linear-gradient(to bottom, rgba(22, 0, 109, 0.6980392157) 10%, rgba(8, 0, 40, 0.8901960784) 85%);
     max-width: 1600px;
     overflow: hidden;
     padding: 0;
@@ -2381,8 +2386,8 @@ body {
 
 .section-card {
   overflow: hidden;
-  padding: 50px 0;
-  margin: 0px -18px 0px;
+  padding: 20px 0;
+  margin: 0px -20px 0px;
   border: 8px solid rgba(122, 0, 126, 0.7647058824);
   border-right: none;
   border-left: none;

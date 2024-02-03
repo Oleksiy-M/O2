@@ -226,8 +226,8 @@
    height: 1px;
    border-radius: 0px;
    overflow: hidden;
-
-   border: 3px solid $Secondary-text-color;
+   box-shadow: 0px 0px 5px 3px rgba(89, 60, 234, 0.486);
+   border: 0.5px solid #4b3ff5;
    border-left: none;
    border-right: none;
    transition-duration: $animation-head;
@@ -238,7 +238,7 @@
       transition-duration: 3s;
       height: 100%;
       width: 100%;
-      border: 1px solid $primary-text-color;
+      border: 0.5px solid #4b3ff5;
       border-left: none;
       border-right: none;
    }

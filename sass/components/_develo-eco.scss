@@ -45,11 +45,12 @@
         align-items: center;
         padding: 0;
         margin: 0;
+        height: 900px;
       }
 
       @media screen and (min-width: 1200px) {
         padding: 0;
-
+        height: 700px;
       }
     }
 
@@ -145,14 +146,14 @@
 
 
     .develo-eco__content {
-      
+
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       margin-bottom: 120px;
       position: relative;
       height: 380px;
-      border-bottom: 3px solid $line-color;
+      border-bottom: 1.8px solid #0000ff25;
       box-shadow: 0px 0px 3px -3px rgb(89, 60, 234);
 
       @media screen and (min-width: 350px) {
@@ -163,6 +164,7 @@
         width: 300px;
         height: 390px;
         margin-bottom: 100px;
+        border-bottom: 3.5px solid #0000ff25;
 
         &:nth-child(-n+2) .cards__overlay {
           border-radius: 10px 0 0 0;
