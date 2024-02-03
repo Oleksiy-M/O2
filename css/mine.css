@@ -472,7 +472,6 @@ body {
   font-size: 15px;
   line-height: 1.86;
   letter-spacing: 0.26em;
-  border-bottom: 2px solid #3fa9f5;
 }
 @media screen and (min-width: 1200px) {
   .idustry-hero__heading {
@@ -487,14 +486,13 @@ body {
   margin: -2px auto 0;
   transition-duration: 1s;
   height: 2px;
-  border-bottom: 2px solid #3fa9f5;
   border: none;
   width: 0.1%;
 }
 .section-hero:hover .head-border, .section-hero:focus .head-border {
   width: 100%;
   border-bottom: 2px solid aqua;
-  box-shadow: 0px 2px 8px 1px aqua;
+  box-shadow: 0px 2px 8px 2px aqua;
 }
 
 .develo-eco__hand {
@@ -710,26 +708,36 @@ body {
 .develo-eco___decor1 {
   margin-left: 0px;
   border: 1px solid #0000FF;
-  box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
-  transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 1px;
 }
 .develo-eco__content:hover .develo-eco___decor1, .develo-eco__content:focus .develo-eco___decor1 {
   border: 1px solid aqua;
+  box-shadow: 0px 0px 3px 1px aqua;
+  transition-duration: 500ms;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .develo-eco___decor1 {
-    border: 2px solid #0000FF;
-    margin-left: 0px;
-    width: 305px;
+    border: 1.5px solid #0000FF;
+    margin-left: 296px;
+    width: 10px;
   }
   .develo-eco__content:hover .develo-eco___decor1, .develo-eco__content:focus .develo-eco___decor1 {
     border: 2px solid aqua;
+    margin-left: 0;
+    width: 101.5%;
   }
 }
 @media screen and (min-width: 1200px) {
   .develo-eco___decor1 {
-    margin-left: 0px;
-    width: 445px;
+    border: 2px solid #0000FF;
+    margin-left: 430px;
+    width: 18px;
+  }
+  .develo-eco__content:hover .develo-eco___decor1, .develo-eco__content:focus .develo-eco___decor1 {
+    border: 2px solid aqua;
+    margin-left: 0;
+    width: 103.5%;
   }
 }
 
@@ -739,7 +747,6 @@ body {
   height: 660px;
   width: 0.5px;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
-  transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #0000FF;
 }
 .develo-eco__content:hover .develo-eco___decor2, .develo-eco__content:focus .develo-eco___decor2 {
@@ -773,7 +780,6 @@ body {
   margin-top: -660px;
   width: 35px;
   border: 1px solid #0000FF;
-  transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
 }
 .develo-eco__content:hover .develo-eco___decor3, .develo-eco__content:focus .develo-eco___decor3 {
@@ -802,33 +808,42 @@ body {
 }
 
 .develo-eco___decor4 {
-  transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 5px;
   border: 1px solid #0000FF;
-  box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
+  width: 1px;
 }
 .develo-eco__content:hover .develo-eco___decor4, .develo-eco__content:focus .develo-eco___decor4 {
   border: 1px solid aqua;
+  box-shadow: 0px 0px 3px 1px aqua;
+  transition-duration: 600ms;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .develo-eco___decor4 {
-    margin-left: 0px;
-    width: 315px;
-    border: 2px solid #0000FF;
+    width: 13px;
+    margin-left: 300px;
+    border: 1.5px solid #0000FF;
   }
   .develo-eco__content:hover .develo-eco___decor4, .develo-eco__content:focus .develo-eco___decor4 {
     border: 2px solid aqua;
+    width: 105%;
+    margin-left: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .develo-eco___decor4 {
+    width: 15px;
+    margin-left: 430px;
+    border: 2px solid #0000FF;
+  }
+  .develo-eco__content:hover .develo-eco___decor4, .develo-eco__content:focus .develo-eco___decor4 {
+    border: 2px solid aqua;
+    width: 104%;
     margin-left: 0px;
-    width: 445px;
   }
 }
 
 .develo-eco___decor5 {
-  transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 5px;
   margin-top: -1163px;
   height: 1163px;
@@ -865,7 +880,6 @@ body {
 }
 
 .develo-eco___decor6 {
-  transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 5px;
   margin-top: -1163px;
   width: 30px;
@@ -900,7 +914,6 @@ body {
 }
 
 .develo-eco___decor7 {
-  transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 10px;
   border: 1px solid #0000FF;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -925,7 +938,6 @@ body {
 }
 
 .develo-eco___decor8 {
-  transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 10px;
   width: 0.5px;
   height: 1841px;
@@ -962,7 +974,6 @@ body {
 }
 
 .develo-eco___decor9 {
-  transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 10px;
   margin-top: -1841px;
   width: 25px;
@@ -997,7 +1008,6 @@ body {
 }
 
 .develo-eco___decor10 {
-  transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 15px;
   border: 1px solid #0000FF;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -1022,7 +1032,6 @@ body {
 }
 
 .develo-eco___decor11 {
-  transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 15px;
   margin-top: -2344px;
   height: 2344px;
@@ -1059,7 +1068,6 @@ body {
 }
 
 .develo-eco___decor12 {
-  transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 15px;
   margin-top: -2344px;
   width: 20px;
@@ -1094,7 +1102,6 @@ body {
 }
 
 .develo-eco___decor14 {
-  transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 20px;
   border: 1px solid #0000FF;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -1119,7 +1126,6 @@ body {
 }
 
 .develo-eco___decor15 {
-  transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 20px;
   margin-top: -2847px;
   height: 2847px;
@@ -1156,7 +1162,6 @@ body {
 }
 
 .develo-eco___decor16 {
-  transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 20px;
   margin-top: -2847px;
   width: 15px;
@@ -1196,7 +1201,6 @@ body {
 @media screen and (min-width: 768px) {
   .develo-eco___decor17 {
     display: block;
-    transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-left: 27px;
     margin-top: -1112px;
     height: 1112px;
@@ -1222,7 +1226,6 @@ body {
 @media screen and (min-width: 768px) {
   .develo-eco___decor18 {
     display: block;
-    transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-left: 27px;
     margin-top: -1112px;
     width: 43px;
@@ -1242,7 +1245,6 @@ body {
 }
 
 .develo-eco___decor19 {
-  transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 25px;
   border: 1px solid #0000FF;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -1268,7 +1270,6 @@ body {
 
 .develo-eco___decor20 {
   margin-left: 25px;
-  transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: -3350px;
   height: 3350px;
   width: 0.5px;
@@ -1304,7 +1305,6 @@ body {
 }
 
 .develo-eco___decor21 {
-  transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 25px;
   margin-top: -3350px;
   width: 10px;
@@ -1343,7 +1343,6 @@ body {
     margin-left: 53px;
     margin-top: -1090px;
     height: 1090px;
-    transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 2px;
     border: 2px solid #0000FF;
     box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -1365,7 +1364,6 @@ body {
     margin-left: 53px;
     margin-top: -1090px;
     width: 50px;
-    transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
     border: 2px solid #0000FF;
     box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
   }
@@ -1382,7 +1380,6 @@ body {
 }
 
 .develo-eco___decor24 {
-  transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 30px;
   border: 1px solid #0000FF;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -1406,7 +1403,6 @@ body {
 }
 
 .develo-eco___decor25 {
-  transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 30px;
   margin-top: -3853px;
   height: 3853px;
@@ -1443,7 +1439,6 @@ body {
 }
 
 .develo-eco___decor26 {
-  transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 30px;
   margin-top: -3853px;
   width: 5px;
@@ -1479,7 +1474,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .develo-eco___decor27 {
-    transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-left: 80px;
     margin-top: -1067px;
     height: 1067px;
@@ -1505,7 +1499,6 @@ body {
     margin-left: 80px;
     margin-top: -1067px;
     width: 53px;
-    transition: border 2ms cubic-bezier(0.4, 0, 0.2, 1);
     border: 2px solid #0000FF;
     box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
     box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -1571,7 +1564,7 @@ body {
   font-size: 12px;
   text-decoration: none;
   color: #3fa9f5;
-  transition: color 2ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.1ms;
 }
 .page-footer__contacts:hover, .page-footer__contacts:focus {
   color: #FF8230;
@@ -1869,6 +1862,8 @@ body {
   margin-bottom: 120px;
   position: relative;
   height: 380px;
+  border-bottom: 3px solid #0000FF;
+  box-shadow: 0px 0px 3px -3px rgb(89, 60, 234);
 }
 @media screen and (min-width: 350px) {
   .develo-eco__content {
@@ -2165,7 +2160,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .video-bg {
-    background-image: linear-gradient(to bottom, rgba(82, 154, 255, 0.768627451) 30%, rgba(1, 9, 50, 0.8156862745) 85%);
+    background-image: linear-gradient(to bottom, rgba(43, 120, 228, 0.831372549) 30%, rgba(1, 9, 50, 0.8156862745) 85%);
     max-width: 1600px;
     overflow: hidden;
     padding: 0;
@@ -2252,7 +2247,6 @@ body {
   font-size: 15px;
   line-height: 1.86;
   letter-spacing: 0.26em;
-  border-bottom: 2px solid #d5d095;
 }
 @media screen and (min-width: 1200px) {
   .history-hero__heading {
@@ -2273,7 +2267,7 @@ body {
 .history-section:hover .history-border, .history-section:focus .history-border {
   width: 100%;
   border-bottom: 2px solid #fffdd1;
-  box-shadow: 0px 2px 5px 1px #fffdd1;
+  box-shadow: 0px 2px 5px 2px #fffdd1;
 }
 
 .histor-gif {
@@ -2395,6 +2389,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .section-card {
+    padding: 30px 0;
     margin: 0px -180px 0px;
   }
 }

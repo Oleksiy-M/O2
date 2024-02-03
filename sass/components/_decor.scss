@@ -14,30 +14,46 @@
    margin-left: 0px;
    // width: 215px;
    border: 1px solid $line-color;
-   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
-   transition: border $animation;
+
+   width: 1px;
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
+      box-shadow: 0px 0px 3px 1px $primary-text-color;
+      transition-duration: 500ms;
+      width: 100%;
    }
 
    @media screen and (min-width: 768px) {
-      border: 2px solid $line-color;
+      border: 1.5px solid $line-color;
 
-      margin-left: 0px;
-      width: 305px;
+      margin-left: 296px;
+      width: 10px;
 
       .develo-eco__content:hover &,
       .develo-eco__content:focus & {
          border: 2px solid $primary-text-color;
+         margin-left: 0;
+         width: 101.5%;
       }
 
    }
 
    @media screen and (min-width: 1200px) {
-      margin-left: 0px;
-      width: 445px;
+      border: 2px solid $line-color;
+      // display: flex;
+      // // flex-direction:row-reverse;
+      // justify-content: end;
+      margin-left: 430px;
+      width: 18px;
+
+      .develo-eco__content:hover &,
+      .develo-eco__content:focus & {
+         border: 2px solid $primary-text-color;
+         margin-left: 0;
+         width: 103.5%;
+      }
 
 
    }
@@ -48,14 +64,14 @@
    margin-top: -660px;
    height: 660px;
    width: 0.5px;
-
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
-   transition: border $animation;
    border: 1px solid $line-color;
+
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
+
    }
 
    @media screen and (min-width: 360px) {
@@ -82,13 +98,15 @@
    }
 }
 
+
+
 .develo-eco___decor3 {
    margin-left: 0px;
    margin-top: -660px;
    width: 35px;
 
    border: 1px solid $line-color;
-   transition: border $animation;
+
 
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
 
@@ -109,6 +127,7 @@
       .develo-eco__content:hover &,
       .develo-eco__content:focus & {
          border: 2px solid $primary-text-color;
+
       }
    }
 
@@ -127,36 +146,51 @@
 // < !-- man-laptop -->
 
 .develo-eco___decor4 {
-   transition: border $animation;
+
    margin-left: 5px;
    border: 1px solid $line-color;
-   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
+   width: 1px;
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
+      box-shadow: 0px 0px 3px 1px $primary-text-color;
+      transition-duration: 600ms;
+      width: 100%;
    }
 
    @media screen and (min-width: 768px) {
-      margin-left: 0px;
-      width: 315px;
-      border: 2px solid $line-color;
+      width: 13px;
+      margin-left: 300px;
+      // width: 315px;
+      border: 1.5px solid $line-color;
 
       .develo-eco__content:hover &,
       .develo-eco__content:focus & {
          border: 2px solid $primary-text-color;
+         width: 105%;
+         margin-left: 0px;
       }
    }
 
    @media screen and (min-width: 1200px) {
-      margin-left: 0px;
-      width: 445px;
+      width: 15px;
+      margin-left: 430px;
+border: 2px solid $line-color;
+      .develo-eco__content:hover &,
+      .develo-eco__content:focus & {
+         border: 2px solid $primary-text-color;
+         width: 104%;
+         margin-left: 0px;
+      }
+
+      // width: 445px;
 
    }
 }
 
 .develo-eco___decor5 {
-   transition: border $animation;
+
    margin-left: 5px;
    margin-top: -1163px;
    height: 1163px;
@@ -195,7 +229,7 @@
 }
 
 .develo-eco___decor6 {
-   transition: border $animation;
+
    margin-left: 5px;
    margin-top: -1163px;
    width: 30px;
@@ -240,7 +274,7 @@
 // < !-- oil -->
 
 .develo-eco___decor7 {
-   transition: border $animation;
+
    margin-left: 10px;
 
    // width: 220px;
@@ -272,7 +306,7 @@
 
 
 .develo-eco___decor8 {
-   transition: border $animation;
+
 
    margin-left: 10px;
    width: 0.5px;
@@ -312,7 +346,7 @@
 }
 
 .develo-eco___decor9 {
-   transition: border $animation;
+
 
    margin-left: 10px;
    margin-top: -1841px;
@@ -358,7 +392,7 @@
 // < !-- ocean -->
 
 .develo-eco___decor10 {
-   transition: border $animation;
+
    margin-left: 15px;
 
    border: 1px solid $line-color;
@@ -387,7 +421,7 @@
 }
 
 .develo-eco___decor11 {
-   transition: border $animation;
+
    margin-left: 15px;
    margin-top: -2344px;
    height: 2344px;
@@ -426,7 +460,7 @@
 }
 
 .develo-eco___decor12 {
-   transition: border $animation;
+
    margin-left: 15px;
 
    margin-top: -2344px;
@@ -469,7 +503,7 @@
 
 // < !-- factory -->
 .develo-eco___decor14 {
-   transition: border $animation;
+
    margin-left: 20px;
    // border-radius: 5px;
 
@@ -501,7 +535,7 @@
 
 
 .develo-eco___decor15 {
-   transition: border $animation;
+
    // border-radius: 5px;
    margin-left: 20px;
    margin-top: -2847px;
@@ -541,7 +575,7 @@
 }
 
 .develo-eco___decor16 {
-   transition: border $animation;
+
    // border-radius: 5px;
    margin-left: 20px;
    margin-top: -2847px;
@@ -584,7 +618,7 @@
    @media screen and (min-width: 768px) {
 
       display: block;
-      transition: border $animation;
+
 
       margin-left: 27px;
       margin-top: -1112px;
@@ -613,7 +647,7 @@
 
    @media screen and (min-width: 768px) {
       display: block;
-      transition: border $animation;
+
       margin-left: 27px;
       margin-top: -1112px;
       width: 43px;
@@ -637,7 +671,7 @@
 
 //  < !-- earth -->
 .develo-eco___decor19 {
-   transition: border $animation;
+
    margin-left: 25px;
 
    border: 1px solid $line-color;
@@ -668,7 +702,7 @@
 
 .develo-eco___decor20 {
    margin-left: 25px;
-   transition: border $animation;
+
 
    margin-top: -3350px;
    height: 3350px;
@@ -706,7 +740,7 @@
 }
 
 .develo-eco___decor21 {
-   transition: border $animation;
+
    margin-left: 25px;
 
    margin-top: -3350px;
@@ -749,7 +783,7 @@
       margin-top: -1090px;
       height: 1090px;
 
-      transition: border $animation;
+
 
       width: 2px;
       border: 2px solid $line-color;
@@ -774,7 +808,7 @@
       margin-left: 53px;
       margin-top: -1090px;
       width: 50px;
-      transition: border $animation;
+
       border: 2px solid $line-color;
       box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
 
@@ -796,7 +830,7 @@
 //   < !-- man 
 
 .develo-eco___decor24 {
-   transition: border $animation;
+
    margin-left: 30px;
 
    border: 1px solid $line-color;
@@ -826,7 +860,7 @@
 
 
 .develo-eco___decor25 {
-   transition: border $animation;
+
    margin-left: 30px;
 
    margin-top: -3853px;
@@ -867,7 +901,7 @@
 
 
 .develo-eco___decor26 {
-   transition: border $animation;
+
    margin-left: 30px;
 
    margin-top: -3853px;
@@ -907,7 +941,7 @@
 
 .develo-eco___decor27 {
    @media screen and (min-width: 768px) {
-      transition: border $animation;
+
       margin-left: 80px;
       margin-top: -1067px;
       height: 1067px;
@@ -937,7 +971,7 @@
       margin-left: 80px;
       margin-top: -1067px;
       width: 53px;
-      transition: border $animation;
+
       border: 2px solid $line-color;
       box-shadow: 3px 3px 0px 0px rgba(89, 60, 234, 0.3);
       box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);

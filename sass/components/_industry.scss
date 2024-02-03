@@ -77,7 +77,6 @@
       margin: 0 140px 100px 140px;
 
    }
-
 }
 
 .idustry-hero__heading {
@@ -89,7 +88,7 @@
    font-size: 15px;
    line-height: 1.86;
    letter-spacing: 0.26em;
-   border-bottom: 2px solid $Secondary-text-color;
+   // border-bottom: 2px solid $Secondary-text-color;
 
    @media screen and (min-width: 1200px) {
       font-weight: 600;
@@ -104,7 +103,7 @@
    transition-duration: $animation-head;
 
    height: 2px;
-   border-bottom: 2px solid $Secondary-text-color;
+   // border-bottom: 2px solid $Secondary-text-color;
    border: none;
    width: 0.1%;
 
@@ -112,7 +111,7 @@
    .section-hero:focus & {
       width: 100%;
       border-bottom: 2px solid $primary-text-color;
-      box-shadow: 0px 2px 8px 1px $primary-text-color;
+      box-shadow: 0px 2px 8px 2px $primary-text-color;
    }
 }
 

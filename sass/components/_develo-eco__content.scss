@@ -5,6 +5,7 @@
    margin: 0 auto;
    transition-duration: $animation-head;
 
+
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
 
@@ -58,6 +59,7 @@
 
 .cards__overlay {
    margin: 0;
+ 
    display: flex;
    align-items: center;
    align-self: flex-end;

@@ -145,13 +145,15 @@
 
 
     .develo-eco__content {
+      
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       margin-bottom: 120px;
       position: relative;
       height: 380px;
-
+      border-bottom: 3px solid $line-color;
+      box-shadow: 0px 0px 3px -3px rgb(89, 60, 234);
 
       @media screen and (min-width: 350px) {
         height: 315px;
