@@ -1,42 +1,55 @@
 //  < !-- video-bg -->
 
-.video-bg{ 
-display:block;
-position: relative;
+.video-bg {
+   display: block;
+   position: relative;
 
-margin-left: auto;
-margin-right: auto;
-margin-top: 0px;
-   justify-content: center;
-   align-items: center;
+   margin: 0 auto;
+   // margin-top: 0px;
 
-// background-image: $background-water__mobile;
+   // background-image: $background-water__mobile;
 
-@media screen and (min-width: 768px) {
-// object-fit:contain;
-background-image: $background-water;
-max-width: 1600px;
- overflow: hidden;
-padding: 0;
+   @media screen and (min-width: 768px) {
+      // object-fit:contain;
+      background-image: $bg-water-industry;
+   
+      max-width: 1600px;
+      overflow: hidden;
+      padding: 0;
 
-}}
+   }
+}
 
-.bubble{
+.video-bg__histor {
+   background-image: none;
+   background-color: #ffffff8d;
+
+   // background-image: linear-gradient(to bottom,
+   //       #fae59914 1%,
+   //       #ffffff 50%,
+   //       #26211032);
+
+}
+
+
+
+.bubble {
    z-index: -1;
    min-width: 270px;
    margin-top: 30px;
-position: fixed;
+   position: fixed;
    width: 100%;
- 
-   
+
+
    @media screen and (min-width: 768px) {
-   // position:absolute;
-margin-top: -250px;
-max-width: 1600px;
-}}
+      // position: static;
+      margin-top: -250px;
+      max-width: 1600px;
+   }
+}
 
 // .bg-color__video {
-   
+
 //    background-color: $video-color;
 // background-image: linear-gradient(to bottom,
 
@@ -44,4 +57,3 @@ max-width: 1600px;
 //          #0019ba4a 85%);
 
 // }
-

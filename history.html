@@ -28,7 +28,7 @@
          <ul class="site-nav list">
             <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Head</a></li>
             <li class="site-nav__item"><a href="./industry.html" class="site-nav__link ">Industry</a></li>
-            <li class="site-nav__item"><a href="./history.html"
+            <li class="site-nav__item"><a id="up" href="./history.html"
                   class="site-nav__link site-nav__link--current">History</a></li>
             <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Water</a></li>
          </ul>
@@ -58,24 +58,27 @@
 
    <!-- main -->
 
-   <main class="video-bg  ">
+   <main class="video-bg video-bg__histor">
 
       <video class="bubble" src="./video/bubble.mp4" type="video/mp4" autoplay muted loop></video>
-      <div class="idustry ">
+      <div class="history-page container">
 
-         <section class="history-section container">
+         <section class="history-section ">
 
             <div class="history-hero">
 
                <h1 class="history-hero__heading">the history of water</h1>
                <div class="history-border"></div>
             </div>
-         </section>
+
+<div class="histor-gif">
+            <img src="./img/gif/bicycle.gif"  alt="hand of robot and hand of human">
+      </div>   
+   </section>
 
 
 
          <section class="section-card">
-
 
             <!-- FILTER -->
             <ul class="cards  list">
@@ -364,8 +367,11 @@
          </section>
 
 
-         <section class="section-histore__end container">
-
+         <section class="section-histore__end ">
+            <div class="buton-down__up"><a href="#up" class="down__up"><svg width="60" height="50" class="up-svg ">
+                     <use href="./img/sprite.svg#arrow">
+                        <use>
+                  </svg></a></div>
          </section>
 
       </div>

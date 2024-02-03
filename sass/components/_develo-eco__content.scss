@@ -35,7 +35,7 @@
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
-// 00641e
+      // 00641e
       fill: #005c2e;
       fill: #85fbff;
    }
@@ -83,7 +83,7 @@
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
-      background-color: #f4c0d108;
+      background-color: #f4c0d113;
       box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.12),
          0px 0px 4px rgba(0, 0, 0, 0.06), 1px -1px 6px rgba(0, 0, 0, 0.16);
       transform: scale(1.01);
@@ -108,7 +108,7 @@
    font-size: 11px;
    line-height: 1.5;
    letter-spacing: 0.02em;
-   white-space: pre-wrap;
+   // white-space: pre-wrap;
    color: $Secondary-text-color;
    text-shadow: 1px 1.5px 1px black;
    transition-duration: 0.5s;

@@ -2,8 +2,20 @@
 
       .history-page {
          display: block;
-         // margin-top: 100px;
+         padding: 80px 15px 50px;
+         // margin: 0 auto 300px;
 
+         @media screen and (min-width: 768px) {
+            padding: 50px 15px 50px;
+         }
+
+         @media screen and (min-width: 1200px) {
+
+            display: flexbox;
+            margin: 0 auto;
+            max-width: 1600px;
+
+         }
       }
 
 
@@ -11,19 +23,21 @@
 
       .history-section {
          display: flex;
-         justify-content: center;
+         flex-direction: column;
+         align-items: center;
          padding: 100px 0;
-         margin: 0px 15px;
+         margin: 0px auto 0px;
          border-radius: 5px;
          background-image: linear-gradient(to bottom,
 
-               #cdb86dbd 0.5%,
-               #5b5335bd);
+               #5b5335bd 0.5%,
+               #cdb86dcb);
 
+         // 5b5335bd cdb86d9a
          @media screen and (min-width: 768px) {
 
             padding: 60px 0;
-            margin: 0px auto;
+            // margin: 0px auto;
             max-width: 1600px;
 
          }
@@ -42,7 +56,7 @@
             // border: 1px solid #eae68c33;
             // background-color: #fbfae013;
             transform: scale(1.05);
-            color: #fffdd1;
+            color: $prim-histor-text;
          }
 
          @media screen and (min-width: 1200px) {
@@ -51,6 +65,10 @@
          }
       }
 
+
+      .histor-gif{
+         width: 200px;
+      }
 
 
       .history-hero__heading {
@@ -89,11 +107,10 @@
 
          .history-section:hover &,
          .history-section:focus & {
-            border-bottom: 2px solid #fffdd1;
-            box-shadow: 0px 2px 5px 1px #fffdd1;
+            border-bottom: 2px solid $prim-histor-text;
+            box-shadow: 0px 2px 5px 1px $prim-histor-text;
             // transform: scale(1.08)
          }
-
 
       }
 
@@ -101,13 +118,14 @@
       .section-histore__end {
 
          height: 500px;
-
-         margin: 0 15px 300px;
+         border-radius: 5px;
+         margin: 0 0px 300px;
          background-image: linear-gradient(to bottom,
 
 
-               #5b5335bd 35%,
-               #3b3830a8);
+               #cdb86dcb 5%,
+
+               #5b5335bd);
 
          @media screen and (min-width: 768px) {
             padding: 0px;

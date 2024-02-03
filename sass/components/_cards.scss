@@ -56,7 +56,7 @@
 }
 
 .cards__thumb {
-
+   border-radius: 10px 10px 0 0;
    display: flex;
    justify-content: center;
    position: relative;
@@ -85,10 +85,10 @@
    opacity: 0;
    transform: translateY(100%);
    transition-duration: 1s;
-   background-color: #1a1912d7;
+   background-color: #42235eba;
 
-   .cards__link:hover &,
-   .cards__link:focus & {
+   .cards__item:hover &,
+   .cards__item:focus & {
       transform: translateY(0);
       opacity: 1;
 
@@ -104,18 +104,18 @@
    text-align: center;
    align-items: center;
    overflow: hidden;
-
+   // font-weight: 600;
    padding: 10px 4px;
-   color: $White-color;
+   color: $prim-histor-text;
    font-size: 10px;
    line-height: 1.16;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    font-style: italic;
-   text-shadow: 1px 1.5px 1px black;
+   text-shadow: 1px 1.5px 1px rgba(14, 14, 14, 0.607);
    letter-spacing: 0.02em;
 
    @media screen and (min-width: 768px) {
-      padding: 10px 24px;
+      padding: 10px 20px;
       font-size: 12px;
       line-height: 1.56;
    }
@@ -127,6 +127,13 @@
    align-items: center;
    padding: 20px 4px;
    border: 1px solid #b89d5349;
+   // background-color: #70015850;
+   transition-duration: 1s;
+
+   .cards__item:hover &,
+   .cards__item:focus & {
+      background-color: #4e035138;
+   }
 
 }
 
@@ -155,13 +162,26 @@
 
 
 
-
 .section-card {
    // background-color: #84754b42;
    overflow: hidden;
-   // overflow-x: auto;
-   margin: 0px 0;
    padding: 50px 0;
+   margin: 0px -18px 0px;
+   // background-color: #400243bf;
+   // background-image: linear-gradient(to bottom,
+   //       #ffffffc3 1%,
+   //       #fbf4f646 50%,
+   //       #ffffffc3);
+
+   @media screen and (min-width: 768px) {
+      margin: 0px -180px 0px;
+   }
+
+   @media screen and (min-width: 1200px) {
+      margin: 0px -210px 0px;
+
+   }
+
    // border: 1px solid;
    // transition: animation-play-state 3s ease-out;
 }
@@ -191,16 +211,17 @@
    flex-shrink: 0;
    margin-right: 30px;
    transition-duration: 1s;
+   border-radius: 5px;
 
    &:hover,
    &:focus {
-      transform: scale(1.25);
+      transform: scale(1.20);
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
          0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
    }
 
    @media screen and (min-width: 768px) {
-      margin-right: 60px;
+      margin-right: 50px;
 
    }
 }
@@ -208,12 +229,15 @@
 
 
 @keyframes moveRightToLeft {
+
    0% {
+      transition-duration: 1s;
       transform: translateX(0%);
    }
 
    100% {
-      transform: translateX(calc(-100% - 1060px));
+      transition-duration: 1s;
+      transform: translateX(calc(-100% - 930px));
    }
 }
 
