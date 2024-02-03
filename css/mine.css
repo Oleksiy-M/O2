@@ -539,7 +539,7 @@ body {
   flex-direction: column;
   padding: 100px 3px;
   border-radius: 5px;
-  background-image: linear-gradient(to bottom, #28477c 0.5%, rgba(21, 1, 62, 0.8549019608) 1.2%, rgba(21, 1, 62, 0.8549019608) 1.1%, rgba(2, 3, 31, 0.7215686275) 99%, #000000 5%);
+  background-image: linear-gradient(to bottom, #28477c 0.5%, rgba(21, 1, 62, 0.8549019608) 1%, rgba(21, 1, 62, 0.8549019608) 1.1%, rgba(2, 3, 31, 0.7215686275) 99.2%, #000000 5%);
 }
 @media screen and (min-width: 768px) {
   .section-end {
@@ -1779,7 +1779,7 @@ body {
   border-radius: 5px;
   padding: 90px 3px 100px 3px;
   margin-bottom: 40px;
-  background-image: linear-gradient(to bottom, rgba(143, 96, 213, 0.8901960784) 0.1%, rgba(50, 0, 85, 0.8431372549) 0.3%, rgba(21, 1, 62, 0.8549019608) 99.7%, rgba(0, 0, 0, 0.8) 5%);
+  background-image: linear-gradient(to bottom, rgba(140, 107, 247, 0.9764705882) 0.1%, rgba(62, 1, 106, 0.8431372549) 0.2%, rgba(21, 1, 62, 0.8549019608) 99.8%, rgba(0, 0, 0, 0.8) 3%);
 }
 @media screen and (min-width: 768px) {
   .section-bg {
