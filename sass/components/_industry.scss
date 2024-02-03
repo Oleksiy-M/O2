@@ -90,7 +90,7 @@
    font-size: 15px;
    line-height: 1.86;
    letter-spacing: 0.26em;
-
+   border-bottom: 2px solid $Secondary-text-color;
    // transition-property: font-size;  
    transition-duration: $animation-head;
 
@@ -122,13 +122,17 @@
 }
 
 .head-border {
+   margin: -2px auto 0;
    transition-duration: $animation-head;
 
    height: 2px;
    border-bottom: 2px solid $Secondary-text-color;
+   border: none;
+   width: 0.1%;
 
    .section-hero:hover &,
    .section-hero:focus & {
+      width: 100%;
       border-bottom: 2px solid $primary-text-color;
       box-shadow: 0px 2px 8px 1px $primary-text-color;
       transform: scale(1.05)

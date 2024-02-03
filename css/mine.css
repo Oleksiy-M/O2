@@ -103,7 +103,7 @@ body {
   padding: 10px 0 5px 0;
   z-index: 2;
   background-color: #1f2f52;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid rgba(249, 235, 165, 0.8470588235);
 }
 @media screen and (min-width: 768px) {
   .pg-header {
@@ -472,6 +472,7 @@ body {
   font-size: 15px;
   line-height: 1.86;
   letter-spacing: 0.26em;
+  border-bottom: 2px solid #3fa9f5;
   transition-duration: 1s;
 }
 .section-hero:hover .idustry-hero__heading, .section-hero:focus .idustry-hero__heading {
@@ -498,11 +499,15 @@ body {
 }
 
 .head-border {
+  margin: -2px auto 0;
   transition-duration: 1s;
   height: 2px;
   border-bottom: 2px solid #3fa9f5;
+  border: none;
+  width: 0.1%;
 }
 .section-hero:hover .head-border, .section-hero:focus .head-border {
+  width: 100%;
   border-bottom: 2px solid aqua;
   box-shadow: 0px 2px 8px 1px aqua;
   transform: scale(1.05);
@@ -2221,7 +2226,6 @@ body {
 .history-section {
   display: block;
   padding: 100px 0 0;
-  margin: 0px auto 0px;
   border-radius: 5px;
   background-image: linear-gradient(to bottom, rgba(91, 83, 53, 0.7411764706) 0.5%, rgba(205, 184, 109, 0.7960784314));
 }
@@ -2233,9 +2237,6 @@ body {
 }
 
 .history-hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin: 0 22px 120px 22px;
   border-radius: 5px 5px 0 0;
   transition-duration: 1s;
@@ -2245,14 +2246,19 @@ body {
   transform: scale(1.05);
   color: #fffdd1;
 }
+@media screen and (min-width: 768px) {
+  .history-hero {
+    margin: 0 200px 120px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .history-hero {
-    margin: 0 auto 100px auto;
+    margin: 0 300px 120px;
   }
 }
 
 .history-hero__heading {
-  padding: 5px 30px;
+  padding: px 0px;
   user-select: none;
   text-shadow: 1px 1px 3px black;
   text-transform: uppercase;
@@ -2261,11 +2267,7 @@ body {
   font-size: 15px;
   line-height: 1.86;
   letter-spacing: 0.26em;
-}
-@media screen and (min-width: 768px) {
-  .history-hero__heading {
-    padding: 5px 80px 0px;
-  }
+  border-bottom: 2px solid #d5d095;
 }
 @media screen and (min-width: 1200px) {
   .history-hero__heading {
@@ -2277,11 +2279,14 @@ body {
 }
 
 .history-border {
+  margin: -2px auto 0;
   transition-duration: 1s;
   height: 2px;
-  border-bottom: 2px solid #d5d095;
+  border: none;
+  width: 0.1%;
 }
 .history-section:hover .history-border, .history-section:focus .history-border {
+  width: 100%;
   border-bottom: 2px solid #fffdd1;
   box-shadow: 0px 2px 5px 1px #fffdd1;
 }
