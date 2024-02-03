@@ -2,41 +2,38 @@
 
 .hero {
 	display: block;
-	justify-content: center;	
-margin: 0;
-			padding-top: 130px;
+	justify-content: center;
+	margin: 0;
+	padding-top: 130px;
+
 	@media screen and (min-width: 650px) {
 		// display: flex;
-		padding-top: 0px;
+		padding: 0px;
 	}
 
-
-	@media screen and (min-width: 1200px) {
-
-						padding-top: 0px;
-				}
 }
 
 
 
-.hero_list{
-padding: 0;
+.hero_list {
+	padding: 0;
 }
 
 .hero__water {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	// margin: 0 auto;
 	padding: 0 35px;
-	
+
 	@media screen and (min-width: 650px) {
 		margin-top: 0px;
 	}
-	
-	
+
+
 	@media screen and (min-width: 1200px) {
 		margin-top: 0;
-		padding: 35px 35px 70px 35px;
+		padding: 0px 250px 20px;
 	}
 }
 
@@ -48,28 +45,30 @@ padding: 0;
 
 
 .logo__overlay {
-			display: flex;
-	
+	display: flex;
+
 	justify-content: center;
 	padding: 130px 0 100px 0;
 
 	@media screen and (min-width: 650px) {
 		padding: 0;
 	}
+
 	@media screen and (min-width: 1200px) {
-		padding: 30px 130px 30px 130px;
-	
+		padding: 0px 130px 30px 130px;
+
 	}
 }
 
 
 .hero__link {
-	
-	transition:opacity $animation-logo;
-	
-opacity: 1;
+
+	transition: opacity $animation-logo;
+
+	opacity: 1;
+
 	.hero :hover &,
-	.hero :focus &{
+	.hero :focus & {
 		opacity: 1;
 	}
 
@@ -77,15 +76,16 @@ opacity: 1;
 
 
 .hero-logo {
-		width: 90px;
-		height: 90px;
-		// margin-top: -230px;
-		margin: 0 auto;
-@media screen and (min-width: 650px) {
+	width: 90px;
+	height: 90px;
+	// margin-top: -230px;
+	margin: 0 auto;
+
+	@media screen and (min-width: 650px) {
 		width: 70px;
-			height: 70px;
-}
-	
+		height: 70px;
+	}
+
 	@media screen and (min-width: 768px) {
 		width: 110px;
 		height: 110px;
@@ -95,21 +95,22 @@ opacity: 1;
 	@media screen and (min-width: 1200px) {
 		width: 120px;
 		height: 120px;
-	
+
 	}
 }
 
 
-.section-oxy{
+.section-oxy {
 	display: block;
 	margin: 0 auto;
+
 	@media screen and (min-width: 768px) {
 		// z-index: 5;
 		padding: 50px 0;
 		height: 800px;
-	background: $Secondary-text-color;
-	border-top: 1px solid #fff;
-}
+		background: $Secondary-text-color;
+		border-top: 1px solid #fff;
+	}
 }
 
 .oxy-container {
@@ -124,19 +125,21 @@ opacity: 1;
 	display: flex;
 	justify-content: center;
 	text-align: center;
-margin-top: 30px;
-		@media screen and (min-width: 650px){
-				margin-top: 0px;
-			}
-			
-		@media screen and (min-width: 1200px) {
-				justify-content: right;
-			margin-right: 200px;
-}}
+	margin-top: 30px;
+
+	@media screen and (min-width: 650px) {
+		margin-top: 0px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		justify-content: right;
+		margin-right: 200px;
+	}
+}
 
 .title {
 	user-select: none;
-text-shadow: 1px 1px 4px black;
+	text-shadow: 1px 1px 4px black;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.86;
@@ -145,10 +148,10 @@ text-shadow: 1px 1px 4px black;
 	color: $primary-text-color;
 
 	@media screen and (min-width: 1200px) {
-font-weight: 600;
-font-size: 20px;
-line-height: 1.86;
-letter-spacing: 0.26em;	
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 1.86;
+		letter-spacing: 0.26em;
 		margin-top: 0px;
 
 	}

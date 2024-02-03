@@ -6,13 +6,9 @@
 
    margin: 0 auto;
    // margin-top: 0px;
-
-   // background-image: $background-water__mobile;
-
    @media screen and (min-width: 768px) {
       // object-fit:contain;
       background-image: $bg-water-industry;
-   
       max-width: 1600px;
       overflow: hidden;
       padding: 0;
@@ -21,13 +17,9 @@
 }
 
 .video-bg__histor {
-   background-image: none;
-   background-color: #ffffff8d;
-
-   // background-image: linear-gradient(to bottom,
-   //       #fae59914 1%,
-   //       #ffffff 50%,
-   //       #26211032);
+      @media screen and (min-width: 768px) {
+   background-image: $bg-water-histore;
+      }
 
 }
 

@@ -1,75 +1,73 @@
 /*================== PAGE-HEADER ====================== */
 
 .page-header {
-display:block;
-position: relative;
-padding: 0;
-margin: 0 auto;
-   overflow:hidden;
+   display: block;
+   position: relative;
+   padding: 0;
+   margin: 0 auto;
+   overflow: hidden;
    justify-content: center;
-  
-      @media screen and (min-width: 1200px) { 
-       display: flexbox;
-       
+
+   @media screen and (min-width: 1200px) {
+      display: block;
+
       // background-size: contain;
-         // 	background-position: center;
-         // 	background-attachment: fixed;
+      // 	background-position: center;
+      // 	background-attachment: fixed;
       // object-fit:contain;
       max-width: 1600px;
- 
-   }}
 
-       .bubble-head {
+   }
+}
+
+.bubble-head {
    z-index: -1;
-      min-width: 270px;
+   min-width: 270px;
 
-      position: fixed;
-      width: 100%;
-   
-          @media screen and (min-width: 1200px) {
-             position: absolute;
-         //   background-image: $background-water;
-   margin-top: -120px;
+   position: fixed;
+   width: 100%;
 
-          }
-         }
-         
+   @media screen and (min-width: 1200px) {
+      position: absolute;
+      //   background-image: $background-water;
+      margin-top: -120px;
+
+   }
+}
+
 
 
 
 .bg-color__head {
    height: 935px;
 
-@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+   @media (min-device-pixel-ratio: 2) and (max-width: 767px),
    (min-resolution: 192dpi) and (max-width: 767px),
-   (min-resolution: 2dppx) and (max-width: 767px) {
+   (min-resolution: 2dppx) and (max-width: 767px) {}
+
+   @media screen and (min-width: 768px) {
+      height: 1510px;
+      background-image: $bg-water;
+   }
+
+   @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+   (min-resolution: 192dpi) and (min-width: 768px),
+   (min-resolution: 2dppx) and (min-width: 768px) {
+
+      height: 1370px;
+   }
+
+   @media screen and (min-width: 1200px) {
+      height: 1120px;
 
    }
-   
-@media screen and (min-width: 768px) {
-   height: 1510px;
-      background-image: $background-water;
-   }
-   
-@media
-(min-device-pixel-ratio: 2) and (min-width: 768px),
-(min-resolution: 192dpi) and (min-width: 768px),
-(min-resolution: 2dppx) and (min-width: 768px){
-   
-   height: 1370px;
-	}
 
-@media screen and (min-width: 1200px) {
-   height: 1120px; 
- 
-    }
-	
-    @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
-   	(min-resolution: 192dpi) and (min-width: 1200px),
-   	(min-resolution: 2dppx) and (min-width: 1200px) {
-   height: 1180px;
-   
-}
+   @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+   (min-resolution: 192dpi) and (min-width: 1200px),
+   (min-resolution: 2dppx) and (min-width: 1200px) {
+      height: 1180px;
+
+   }
 }
 
 
@@ -87,7 +85,7 @@ margin: 0 auto;
 // 	margin-right: auto;
 // 	// padding-top: 50px;
 // 	// border: 2px dashed tomato;
-	
+
 
 // 	@media (min-device-pixel-ratio: 2) and (max-width: 767px),
 // 	(min-resolution: 192dpi) and (max-width: 767px),
@@ -121,7 +119,7 @@ margin: 0 auto;
 // 	background-image:
 // 	url("../img/background/background-desktop.jpg");
 // 	}
-	
+
 // 	@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
 // 	(min-resolution: 192dpi) and (min-width: 1200px),
 // 	(min-resolution: 2dppx) and (min-width: 1200px) {
@@ -130,4 +128,3 @@ margin: 0 auto;
 // 	url("../img/background/background-desktop@2x.jpg");
 // 	}
 // }
-

@@ -48,7 +48,6 @@
          // flex-direction: column;
          // align-items: center;
          margin: 0 22px 120px 22px;
-         border-radius: 5px 5px 0 0;
          transition-duration: $animation-head;
          color: $histor-color-text;
          // border: 1px solid #d1d2a512;
@@ -67,14 +66,14 @@
          }
 
          @media screen and (min-width: 1200px) {
-            margin: 0 300px 120px;
+            margin: 0 350px 120px;
             // margin: 0 auto 100px auto;
          }
       }
 
 
       .history-hero__heading {
-         padding: px 0px;
+         padding: 0px 0px;
          // height: 85px;
          user-select: none;
          // border-radius: 25px;
@@ -99,7 +98,7 @@
          margin: -2px auto 0;
          transition-duration: $animation-head;
          height: 2px;
-border: none;
+         border: none;
          width: 0.1%;
 
          .history-section:hover &,
@@ -117,6 +116,11 @@ border: none;
          display: flex;
          justify-content: left;
          width: 200px;
+
+         &:hover,
+         &:focus {
+            animation: none;
+         }
       }
 
 

@@ -52,7 +52,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .page-header {
-    display: flexbox;
+    display: block;
     max-width: 1600px;
   }
 }
@@ -277,12 +277,7 @@ body {
 }
 @media screen and (min-width: 650px) {
   .hero {
-    padding-top: 0px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero {
-    padding-top: 0px;
+    padding: 0px;
   }
 }
 
@@ -293,6 +288,7 @@ body {
 .hero__water {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 0 35px;
 }
 @media screen and (min-width: 650px) {
@@ -303,7 +299,7 @@ body {
 @media screen and (min-width: 1200px) {
   .hero__water {
     margin-top: 0;
-    padding: 35px 35px 70px 35px;
+    padding: 0px 250px 20px;
   }
 }
 
@@ -319,7 +315,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .logo__overlay {
-    padding: 30px 130px 30px 130px;
+    padding: 0px 130px 30px 130px;
   }
 }
 
@@ -433,7 +429,7 @@ body {
   padding: 80px 0 30px 0;
   margin-bottom: 40px;
   border-radius: 5px;
-  background-image: linear-gradient(to bottom, #3fa7e3 0.3%, rgba(0, 93, 187, 0.8588235294) 1%, rgba(50, 0, 85, 0.8431372549) 99%, rgba(12, 1, 19, 0.8431372549) 5.1%, rgba(12, 1, 19, 0.8431372549) 1.1%);
+  background-image: linear-gradient(to bottom, #6ac8ff 0.3%, rgba(0, 93, 187, 0.8588235294) 1%, rgba(56, 0, 120, 0.8431372549) 99%, rgba(12, 1, 19, 0.8431372549) 0.1%, rgba(12, 1, 19, 0.8431372549) 0.1%);
 }
 @media screen and (min-width: 768px) {
   .section-hero {
@@ -449,6 +445,12 @@ body {
 
 .idustry-hero {
   margin: 0 22px 120px 22px;
+  transition-duration: 1s;
+  color: #3fa9f5;
+}
+.section-hero:hover .idustry-hero, .section-hero:focus .idustry-hero {
+  transform: scale(1.05);
+  color: aqua;
 }
 @media screen and (min-width: 768px) {
   .idustry-hero {
@@ -462,8 +464,6 @@ body {
 }
 
 .idustry-hero__heading {
-  padding: 5px 10px;
-  color: #3fa9f5;
   user-select: none;
   text-shadow: 1px 1px 3px black;
   text-transform: uppercase;
@@ -473,21 +473,6 @@ body {
   line-height: 1.86;
   letter-spacing: 0.26em;
   border-bottom: 2px solid #3fa9f5;
-  transition-duration: 1s;
-}
-.section-hero:hover .idustry-hero__heading, .section-hero:focus .idustry-hero__heading {
-  transform: scale(1.05);
-  color: aqua;
-}
-@media screen and (min-width: 360px) {
-  .idustry-hero__heading {
-    padding: 0px 5px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .idustry-hero__heading {
-    padding: 5px 20px 0 20px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .idustry-hero__heading {
@@ -510,7 +495,6 @@ body {
   width: 100%;
   border-bottom: 2px solid aqua;
   box-shadow: 0px 2px 8px 1px aqua;
-  transform: scale(1.05);
 }
 
 .develo-eco__hand {
@@ -544,7 +528,7 @@ body {
   flex-direction: column;
   padding: 100px 3px;
   border-radius: 5px;
-  background-image: linear-gradient(to bottom, #28477c 0.5%, rgba(21, 1, 62, 0.8549019608) 1%, rgba(21, 1, 62, 0.8549019608) 1.1%, rgba(2, 3, 31, 0.7215686275) 99.2%, #000000 5%);
+  background-image: linear-gradient(to bottom, #28477c 0.5%, rgba(21, 1, 62, 0.8549019608) 0.8%, rgba(27, 1, 57, 0.8431372549) 1.1%, rgba(1, 2, 26, 0.7215686275) 99.2%, #000000 5%);
 }
 @media screen and (min-width: 768px) {
   .section-end {
@@ -558,7 +542,7 @@ body {
   justify-content: center;
   height: 600px;
   border-radius: 5px;
-  border: 4px solid #0000FF;
+  border: 6px solid #3fa9f5;
   border-top: none;
   border-bottom: none;
   transition-duration: 1s;
@@ -593,7 +577,7 @@ body {
   height: 1px;
   border-radius: 0px;
   overflow: hidden;
-  border: 3px solid #0000FF;
+  border: 3px solid #3fa9f5;
   border-left: none;
   border-right: none;
   transition-duration: 1s;
@@ -1784,7 +1768,7 @@ body {
   border-radius: 5px;
   padding: 90px 3px 100px 3px;
   margin-bottom: 40px;
-  background-image: linear-gradient(to bottom, rgba(140, 107, 247, 0.9764705882) 0.1%, rgba(62, 1, 106, 0.8431372549) 0.2%, rgba(21, 1, 62, 0.8549019608) 99.8%, rgba(0, 0, 0, 0.8) 3%);
+  background-image: linear-gradient(to bottom, hsla(248, 55%, 62%, 0.721) 0.1%, rgba(52, 1, 110, 0.8431372549) 0.15%, rgba(27, 1, 57, 0.8431372549) 99.8%, rgba(0, 0, 0, 0.8) 3%);
 }
 @media screen and (min-width: 768px) {
   .section-bg {
@@ -2155,6 +2139,7 @@ body {
   font-size: 11px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  white-space: pre-wrap;
   color: #3fa9f5;
   text-shadow: 1px 1.5px 1px black;
   transition-duration: 0.5s;
@@ -2180,16 +2165,17 @@ body {
 }
 @media screen and (min-width: 768px) {
   .video-bg {
-    background-image: linear-gradient(to bottom, rgba(59, 103, 233, 0.6039215686) 30%, rgba(1, 9, 50, 0.7176470588) 85%);
+    background-image: linear-gradient(to bottom, rgba(82, 154, 255, 0.768627451) 30%, rgba(1, 9, 50, 0.8156862745) 85%);
     max-width: 1600px;
     overflow: hidden;
     padding: 0;
   }
 }
 
-.video-bg__histor {
-  background-image: none;
-  background-color: rgba(255, 255, 255, 0.5529411765);
+@media screen and (min-width: 768px) {
+  .video-bg__histor {
+    background-image: linear-gradient(to bottom, rgba(82, 154, 255, 0.768627451) 30%, rgba(1, 9, 50, 0.8470588235) 85%);
+  }
 }
 
 .bubble {
@@ -2238,7 +2224,6 @@ body {
 
 .history-hero {
   margin: 0 22px 120px 22px;
-  border-radius: 5px 5px 0 0;
   transition-duration: 1s;
   color: #d5d095;
 }
@@ -2253,12 +2238,12 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .history-hero {
-    margin: 0 300px 120px;
+    margin: 0 350px 120px;
   }
 }
 
 .history-hero__heading {
-  padding: px 0px;
+  padding: 0px 0px;
   user-select: none;
   text-shadow: 1px 1px 3px black;
   text-transform: uppercase;
@@ -2295,6 +2280,9 @@ body {
   display: flex;
   justify-content: left;
   width: 200px;
+}
+.histor-gif:hover, .histor-gif:focus {
+  animation: none;
 }
 
 .section-histore__end {
@@ -2372,11 +2360,11 @@ body {
   align-items: center;
   padding: 5px 4px;
   border: 1px solid rgba(184, 157, 83, 0.2862745098);
-  background-color: rgba(112, 1, 88, 0.431372549);
+  background-color: rgba(76, 0, 60, 0.2862745098);
   transition-duration: 1s;
 }
 .cards__item:hover .cards__content, .cards__item:focus .cards__content {
-  background-color: rgba(60, 5, 62, 0.5294117647);
+  background-color: rgba(69, 1, 72, 0.6941176471);
 }
 
 .cards__title {
@@ -2401,6 +2389,9 @@ body {
   overflow: hidden;
   padding: 50px 0;
   margin: 0px -18px 0px;
+  border: 8px solid rgba(122, 0, 126, 0.7647058824);
+  border-right: none;
+  border-left: none;
 }
 @media screen and (min-width: 768px) {
   .section-card {

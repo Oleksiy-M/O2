@@ -128,12 +128,12 @@
    align-items: center;
    padding: 5px 4px;
    border: 1px solid #b89d5349;
-   background-color: #7001586e;
+   background-color: #4c003c49;
    transition-duration: 1s;
 
    .cards__item:hover &,
    .cards__item:focus & {
-      background-color: #3c053e87;
+      background-color: #450148b1;
    }
 
 }
@@ -168,7 +168,10 @@
    overflow: hidden;
    padding: 50px 0;
    margin: 0px -18px 0px;
-   // background-color: #400243bf;
+   border: 8px solid #7a007ec3;
+   border-right: none;
+   border-left: none;
+   // background-color: #a1eae3a2;
    // background-image: linear-gradient(to bottom,
    //       #ffffffc3 1%,
    //       #fbf4f646 50%,
