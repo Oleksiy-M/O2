@@ -86,7 +86,7 @@
    opacity: 0;
    transform: translateY(100%);
    transition-duration: 1s;
-   background-color: #42235eba;
+   background-color: #390153d6;
 
    .cards__item:hover &,
    .cards__item:focus & {
@@ -128,12 +128,12 @@
    align-items: center;
    padding: 5px 4px;
    border: 1px solid #b89d5349;
-   background-color: #4c003c49;
+   background-color: #4c003c09;
    transition-duration: 1s;
 
    .cards__item:hover &,
    .cards__item:focus & {
-      background-color: #450148b1;
+      background-color: #3f023435;
    }
 
 }
@@ -166,19 +166,21 @@
 .section-card {
    // background-color: #84754b42;
    overflow: hidden;
-   padding: 20px 0;
+   // padding: 20px 0;
    margin: 0px -20px 0px;
-   border: 8px solid #7a007ec3;
+
    border-right: none;
    border-left: none;
-   // background-color: #a1eae3a2;
-   // background-image: linear-gradient(to bottom,
-   //       #ffffffc3 1%,
-   //       #fbf4f646 50%,
-   //       #ffffffc3);
+   // background-color: rgba(0, 0, 0, 0.6);
+   background-image: linear-gradient(to bottom,
+         #01000300 3%,
+         #00000045 5%,
+         #00000045 95%,
+         #dac7ff45,
+         #ffffff00);
 
    @media screen and (min-width: 768px) {
-      padding: 30px 0;
+
       margin: 0px -180px 0px;
    }
 
@@ -192,6 +194,69 @@
 }
 
 
+.box-border {
+   width: 3200px;
+   padding: 0 0 40px;
+   animation-timing-function: ease-out;
+   animation-duration: 5s;
+   // background-color: #ffffffac;
+
+   &:last-child {
+      padding: 40px 0 0;
+   }
+
+}
+
+.border-history {
+   animation: move 38s linear infinite;
+   border: 8px dashed #394f67ab;
+   margin: 0px 25px 0 0px;
+
+   .section-card:hover &,
+   .section-card:focus & {
+      animation-play-state: paused;
+   }
+}
+
+@keyframes move {
+   0% {
+
+      transform: translateX(0%);
+   }
+
+   100% {
+      transform: translateX(calc(-100%));
+   }
+}
+
+.border-history2 {
+   margin: -16px 0 0 25px;
+   animation: movenext 38s linear infinite;
+   border: 8px dashed #394f67ab;
+
+   .section-card:hover &,
+   .section-card:focus & {
+      animation-play-state: paused;
+   }
+
+}
+
+
+@keyframes movenext {
+
+   0% {
+
+      transform: translateX(100%);
+   }
+
+   100% {
+      transform: translateX(calc(0%));
+   }
+}
+
+
+
+
 .cards {
    display: flex;
 
@@ -201,8 +266,8 @@
    animation: moveRightToLeft 30s linear infinite;
 
    // transition: animation-duration 2s ease-out;
-   &:hover,
-   &:focus {
+   .section-card:hover &,
+   .section-card:focus & {
       /* Поступова зупинка */
       transition: all 2s ease-out;
       animation-play-state: paused;

@@ -24,7 +24,8 @@
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       fill: $svg-color;
-      // fill: #00ff55;
+
+
    }
 
 }
@@ -36,22 +37,20 @@
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
-      // 00641e
-      fill: #005c2e;
       fill: #85fbff;
    }
 }
 
-.eco__svg-home {
-   margin-left: -70px;
-}
-
-
 .eco__svg-imp {
    margin-left: -120px;
+   transition-duration: $animation-head;
+   stroke-width: 0.4px;
 
+   .develo-eco__content:hover &,
+   .develo-eco__content:focus & {
+      stroke: $primary-text-color;
+   }
 }
-
 
 
 

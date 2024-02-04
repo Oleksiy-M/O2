@@ -429,7 +429,7 @@ body {
   padding: 80px 0 30px 0;
   margin-bottom: 40px;
   border-radius: 5px;
-  background-image: linear-gradient(to bottom, #6ac8ff 0.3%, rgba(0, 93, 187, 0.8588235294) 1%, rgba(56, 0, 120, 0.8431372549) 99%, rgba(12, 1, 19, 0.8431372549) 0.1%, rgba(12, 1, 19, 0.8431372549) 0.1%);
+  background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(0, 93, 187, 0.8588235294) 1%, rgba(56, 0, 120, 0.8431372549) 99%, rgba(12, 1, 19, 0.8431372549) 0.1%, rgba(12, 1, 19, 0.8431372549) 0.1%);
 }
 @media screen and (min-width: 768px) {
   .section-hero {
@@ -710,11 +710,11 @@ body {
   margin-left: 0px;
   border: 1px solid rgba(0, 0, 255, 0.1450980392);
   width: 40px;
+  transition-duration: 600ms;
 }
 .develo-eco__content:hover .develo-eco___decor1, .develo-eco__content:focus .develo-eco___decor1 {
   border: 1px solid aqua;
   box-shadow: 0px 0px 3px 1px aqua;
-  transition-duration: 500ms;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -811,11 +811,11 @@ body {
   margin-left: 5px;
   border: 1px solid rgba(0, 0, 255, 0.1450980392);
   width: 40px;
+  transition-duration: 600ms;
 }
 .develo-eco__content:hover .develo-eco___decor4, .develo-eco__content:focus .develo-eco___decor4 {
   border: 1px solid aqua;
   box-shadow: 0px 0px 3px 1px aqua;
-  transition-duration: 600ms;
   width: 99%;
 }
 @media screen and (min-width: 768px) {
@@ -916,11 +916,11 @@ body {
   margin-left: 10px;
   width: 35px;
   border: 1px solid rgba(0, 0, 255, 0.1450980392);
+  transition-duration: 600ms;
 }
 .develo-eco__content:hover .develo-eco___decor7, .develo-eco__content:focus .develo-eco___decor7 {
   border: 1px solid aqua;
   box-shadow: 0px 0px 3px 1px aqua;
-  transition-duration: 600ms;
   width: 98%;
 }
 @media screen and (min-width: 768px) {
@@ -1018,11 +1018,11 @@ body {
   margin-left: 15px;
   border: 1px solid rgba(0, 0, 255, 0.1450980392);
   width: 30px;
+  transition-duration: 600ms;
 }
 .develo-eco__content:hover .develo-eco___decor10, .develo-eco__content:focus .develo-eco___decor10 {
   border: 1px solid aqua;
   box-shadow: 0px 0px 3px 1px aqua;
-  transition-duration: 600ms;
   width: 97%;
 }
 @media screen and (min-width: 768px) {
@@ -1109,11 +1109,11 @@ body {
   margin-left: 20px;
   width: 20px;
   border: 1px solid rgba(0, 0, 255, 0.1450980392);
+  transition-duration: 600ms;
 }
 .develo-eco__content:hover .develo-eco___decor14, .develo-eco__content:focus .develo-eco___decor14 {
   border: 1px solid aqua;
   box-shadow: 0px 0px 3px 1px aqua;
-  transition-duration: 600ms;
   width: 96%;
 }
 @media screen and (min-width: 768px) {
@@ -1251,11 +1251,11 @@ body {
   margin-left: 25px;
   border: 1px solid rgba(0, 0, 255, 0.1450980392);
   width: 15px;
+  transition-duration: 600ms;
 }
 .develo-eco__content:hover .develo-eco___decor19, .develo-eco__content:focus .develo-eco___decor19 {
   border: 1px solid aqua;
   box-shadow: 0px 0px 3px 1px aqua;
-  transition-duration: 600ms;
   width: 95%;
 }
 @media screen and (min-width: 768px) {
@@ -1385,11 +1385,11 @@ body {
   margin-left: 30px;
   border: 1px solid rgba(0, 0, 255, 0.1450980392);
   width: 10px;
+  transition-duration: 600ms;
 }
 .develo-eco__content:hover .develo-eco___decor24, .develo-eco__content:focus .develo-eco___decor24 {
   border: 1px solid aqua;
   box-shadow: 0px 0px 3px 1px aqua;
-  transition-duration: 600ms;
   width: 94%;
 }
 @media screen and (min-width: 768px) {
@@ -2084,16 +2084,16 @@ body {
   transition-duration: 1s;
 }
 .develo-eco__content:hover .eco__svg, .develo-eco__content:focus .eco__svg {
-  fill: #005c2e;
   fill: #85fbff;
-}
-
-.eco__svg-home {
-  margin-left: -70px;
 }
 
 .eco__svg-imp {
   margin-left: -120px;
+  transition-duration: 1s;
+  stroke-width: 0.4px;
+}
+.develo-eco__content:hover .eco__svg-imp, .develo-eco__content:focus .eco__svg-imp {
+  stroke: aqua;
 }
 
 .cards__overlay {
@@ -2165,7 +2165,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .video-bg {
-    background-image: linear-gradient(to bottom, rgba(22, 0, 109, 0.6980392157) 10%, rgba(8, 0, 40, 0.8901960784) 85%);
+    background-image: linear-gradient(to bottom, rgba(19, 2, 86, 0.6980392157) 10%, rgba(8, 0, 40, 0.8901960784) 85%);
     max-width: 1600px;
     overflow: hidden;
     padding: 0;
@@ -2174,7 +2174,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .video-bg__histor {
-    background-image: linear-gradient(to bottom, rgba(82, 154, 255, 0.768627451) 30%, rgba(1, 9, 50, 0.8470588235) 85%);
+    background-image: linear-gradient(to bottom, rgba(154, 195, 251, 0.8274509804) 30%, rgba(25, 35, 82, 0.8470588235) 85%);
   }
 }
 
@@ -2213,7 +2213,9 @@ body {
   display: block;
   padding: 100px 0 0;
   border-radius: 5px;
-  background-image: linear-gradient(to bottom, rgba(91, 83, 53, 0.7411764706) 0.5%, rgba(205, 184, 109, 0.7960784314));
+  border-top: 4px solid rgba(77, 64, 18, 0.7411764706);
+  border-bottom: 4px solid rgba(248, 239, 209, 0.7411764706);
+  background-image: linear-gradient(to bottom, rgba(66, 19, 61, 0.662745098) 0.5%, rgba(205, 184, 109, 0.7960784314));
 }
 @media screen and (min-width: 768px) {
   .history-section {
@@ -2281,14 +2283,14 @@ body {
   width: 200px;
 }
 .histor-gif:hover, .histor-gif:focus {
-  animation: none;
+  animation-play-state: paused;
 }
 
 .section-histore__end {
   height: 500px;
   border-radius: 5px;
   margin: 0 0px 300px;
-  background-image: linear-gradient(to bottom, rgba(205, 184, 109, 0.7960784314) 5%, rgba(91, 83, 53, 0.7411764706));
+  background-image: linear-gradient(to bottom, rgba(205, 184, 109, 0.7960784314) 5%, rgba(66, 19, 61, 0.662745098));
 }
 @media screen and (min-width: 768px) {
   .section-histore__end {
@@ -2324,7 +2326,7 @@ body {
   opacity: 0;
   transform: translateY(100%);
   transition-duration: 1s;
-  background-color: rgba(66, 35, 94, 0.7294117647);
+  background-color: rgba(57, 1, 83, 0.8392156863);
 }
 .cards__item:hover .history-cards__overlay, .cards__item:focus .history-cards__overlay {
   transform: translateY(0);
@@ -2359,11 +2361,11 @@ body {
   align-items: center;
   padding: 5px 4px;
   border: 1px solid rgba(184, 157, 83, 0.2862745098);
-  background-color: rgba(76, 0, 60, 0.2862745098);
+  background-color: rgba(76, 0, 60, 0.0352941176);
   transition-duration: 1s;
 }
 .cards__item:hover .cards__content, .cards__item:focus .cards__content {
-  background-color: rgba(69, 1, 72, 0.6941176471);
+  background-color: rgba(63, 2, 52, 0.2078431373);
 }
 
 .cards__title {
@@ -2386,15 +2388,13 @@ body {
 
 .section-card {
   overflow: hidden;
-  padding: 20px 0;
   margin: 0px -20px 0px;
-  border: 8px solid rgba(122, 0, 126, 0.7647058824);
   border-right: none;
   border-left: none;
+  background-image: linear-gradient(to bottom, rgba(1, 0, 3, 0) 3%, rgba(0, 0, 0, 0.2705882353) 5%, rgba(0, 0, 0, 0.2705882353) 95%, rgba(218, 199, 255, 0.2705882353), rgba(255, 255, 255, 0));
 }
 @media screen and (min-width: 768px) {
   .section-card {
-    padding: 30px 0;
     margin: 0px -180px 0px;
   }
 }
@@ -2404,6 +2404,50 @@ body {
   }
 }
 
+.box-border {
+  width: 3200px;
+  padding: 0 0 40px;
+  animation-timing-function: ease-out;
+  animation-duration: 5s;
+}
+.box-border:last-child {
+  padding: 40px 0 0;
+}
+
+.border-history {
+  animation: move 38s linear infinite;
+  border: 8px dashed rgba(57, 79, 103, 0.6705882353);
+  margin: 0px 25px 0 0px;
+}
+.section-card:hover .border-history, .section-card:focus .border-history {
+  animation-play-state: paused;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.border-history2 {
+  margin: -16px 0 0 25px;
+  animation: movenext 38s linear infinite;
+  border: 8px dashed rgba(57, 79, 103, 0.6705882353);
+}
+.section-card:hover .border-history2, .section-card:focus .border-history2 {
+  animation-play-state: paused;
+}
+
+@keyframes movenext {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 .cards {
   display: flex;
   padding: 0;
@@ -2411,7 +2455,7 @@ body {
   animation-timing-function: ease-out;
   animation: moveRightToLeft 30s linear infinite;
 }
-.cards:hover, .cards:focus {
+.section-card:hover .cards, .section-card:focus .cards {
   /* Поступова зупинка */
   transition: all 2s ease-out;
   animation-play-state: paused;

@@ -15,11 +15,12 @@
    border: 1px solid #0000ff25;
    width: 40px;
 
+   transition-duration: 600ms;
+
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
       box-shadow: 0px 0px 3px 1px $primary-text-color;
-      transition-duration: 500ms;
       width: 100%;
    }
 
@@ -127,12 +128,12 @@
    margin-left: 5px;
    border: 1px solid #0000ff25;
    width: 40px;
+   transition-duration: 600ms;
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
       box-shadow: 0px 0px 3px 1px $primary-text-color;
-      transition-duration: 600ms;
       width: 99%;
    }
 
@@ -237,17 +238,20 @@
 }
 
 
+
+
 // < !-- oil -->
+
 .develo-eco___decor7 {
    margin-left: 10px;
    width: 35px;
    border: 1px solid #0000ff25;
+   transition-duration: 600ms;
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
       box-shadow: 0px 0px 3px 1px $primary-text-color;
-      transition-duration: 600ms;
       width: 98%;
    }
 
@@ -360,11 +364,12 @@
    border: 1px solid #0000ff25;
    width: 30px;
 
+   transition-duration: 600ms;
+
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
       box-shadow: 0px 0px 3px 1px $primary-text-color;
-      transition-duration: 600ms;
       width: 97%;
    }
 
@@ -460,12 +465,12 @@
    margin-left: 20px;
    width: 20px;
    border: 1px solid #0000ff25;
+   transition-duration: 600ms;
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
       box-shadow: 0px 0px 3px 1px $primary-text-color;
-      transition-duration: 600ms;
       width: 96%;
    }
 
@@ -615,12 +620,12 @@
    margin-left: 25px;
    border: 1px solid #0000ff25;
    width: 15px;
+   transition-duration: 600ms;
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
       box-shadow: 0px 0px 3px 1px $primary-text-color;
-      transition-duration: 600ms;
       width: 95%;
    }
 
@@ -761,12 +766,12 @@
    margin-left: 30px;
    border: 1px solid #0000ff25;
    width: 10px;
+   transition-duration: 600ms;
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
       box-shadow: 0px 0px 3px 1px $primary-text-color;
-      transition-duration: 600ms;
       width: 94%;
    }
 

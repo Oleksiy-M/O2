@@ -27,9 +27,11 @@
          padding: 100px 0 0;
          // margin: 0px auto 0px;
          border-radius: 5px;
+         border-top: 4px solid #4d4012bd;
+         border-bottom: 4px solid #f8efd1bd;
          background-image: linear-gradient(to bottom,
 
-               #5b5335bd 0.5%,
+               #42133da9 0.5%,
                #cdb86dcb);
 
          // 5b5335bd cdb86d9a
@@ -119,7 +121,8 @@
 
          &:hover,
          &:focus {
-            animation: none;
+
+            animation-play-state: paused;
          }
       }
 
@@ -136,7 +139,7 @@
 
                #cdb86dcb 5%,
 
-               #5b5335bd);
+               #42133da9);
 
          @media screen and (min-width: 768px) {
             padding: 0px;
