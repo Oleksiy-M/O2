@@ -2215,7 +2215,7 @@ body {
   border-radius: 5px;
   border-top: 4px solid rgba(45, 1, 38, 0.7764705882);
   border-bottom: 4px solid rgba(252, 238, 197, 0.862745098);
-  background-image: linear-gradient(to bottom, rgba(66, 19, 61, 0.7411764706) 0.5%, rgba(255, 234, 163, 0.9450980392));
+  background-image: linear-gradient(to bottom, rgba(72, 16, 67, 0.7960784314) 0.5%, rgba(255, 234, 163, 0.9450980392));
 }
 @media screen and (min-width: 768px) {
   .history-section {
