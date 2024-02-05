@@ -429,7 +429,7 @@ body {
   padding: 80px 0 30px 0;
   margin-bottom: 40px;
   border-radius: 5px;
-  background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(6, 109, 213, 0.8588235294) 1%, rgba(56, 0, 120, 0.8431372549) 99%, rgba(12, 1, 19, 0.8431372549) 0.1%, rgba(12, 1, 19, 0.8431372549) 0.1%);
+  background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(1, 118, 234, 0.8588235294) 1%, rgba(56, 0, 120, 0.8431372549) 99%, rgba(12, 1, 19, 0.8431372549) 0.1%, rgba(12, 1, 19, 0.8431372549) 0.1%);
 }
 @media screen and (min-width: 768px) {
   .section-hero {
@@ -526,7 +526,7 @@ body {
   flex-direction: column;
   padding: 100px 3px;
   border-radius: 5px;
-  background-image: linear-gradient(to bottom, #28477c 0.5%, rgba(21, 1, 62, 0.8549019608) 0.8%, rgba(27, 1, 57, 0.8431372549) 1.1%, rgba(1, 2, 26, 0.7215686275) 99.2%, #000000 5%);
+  background-image: linear-gradient(to bottom, #243f6c 0.5%, rgba(21, 1, 62, 0.8549019608) 0.8%, rgba(26, 0, 29, 0.8117647059) 1.1%, rgba(17, 0, 19, 0.8941176471) 99.2%, #000000 5%);
 }
 @media screen and (min-width: 768px) {
   .section-end {
@@ -710,7 +710,7 @@ body {
   margin-left: 0px;
   border: 1px solid rgba(0, 0, 255, 0.1450980392);
   width: 40px;
-  transition-duration: 600ms;
+  transition-duration: 2s;
 }
 .develo-eco__content:hover .develo-eco___decor1, .develo-eco__content:focus .develo-eco___decor1 {
   border: 1px solid aqua;
@@ -811,7 +811,7 @@ body {
   margin-left: 5px;
   border: 1px solid rgba(0, 0, 255, 0.1450980392);
   width: 40px;
-  transition-duration: 600ms;
+  transition-duration: 2s;
 }
 .develo-eco__content:hover .develo-eco___decor4, .develo-eco__content:focus .develo-eco___decor4 {
   border: 1px solid aqua;
@@ -916,7 +916,7 @@ body {
   margin-left: 10px;
   width: 35px;
   border: 1px solid rgba(0, 0, 255, 0.1450980392);
-  transition-duration: 600ms;
+  transition-duration: 2s;
 }
 .develo-eco__content:hover .develo-eco___decor7, .develo-eco__content:focus .develo-eco___decor7 {
   border: 1px solid aqua;
@@ -1018,7 +1018,7 @@ body {
   margin-left: 15px;
   border: 1px solid rgba(0, 0, 255, 0.1450980392);
   width: 30px;
-  transition-duration: 600ms;
+  transition-duration: 2s;
 }
 .develo-eco__content:hover .develo-eco___decor10, .develo-eco__content:focus .develo-eco___decor10 {
   border: 1px solid aqua;
@@ -1109,7 +1109,7 @@ body {
   margin-left: 20px;
   width: 20px;
   border: 1px solid rgba(0, 0, 255, 0.1450980392);
-  transition-duration: 600ms;
+  transition-duration: 2s;
 }
 .develo-eco__content:hover .develo-eco___decor14, .develo-eco__content:focus .develo-eco___decor14 {
   border: 1px solid aqua;
@@ -1251,7 +1251,7 @@ body {
   margin-left: 25px;
   border: 1px solid rgba(0, 0, 255, 0.1450980392);
   width: 15px;
-  transition-duration: 600ms;
+  transition-duration: 2s;
 }
 .develo-eco__content:hover .develo-eco___decor19, .develo-eco__content:focus .develo-eco___decor19 {
   border: 1px solid aqua;
@@ -1385,7 +1385,7 @@ body {
   margin-left: 30px;
   border: 1px solid rgba(0, 0, 255, 0.1450980392);
   width: 10px;
-  transition-duration: 600ms;
+  transition-duration: 2s;
 }
 .develo-eco__content:hover .develo-eco___decor24, .develo-eco__content:focus .develo-eco___decor24 {
   border: 1px solid aqua;
@@ -1763,7 +1763,7 @@ body {
   border-radius: 5px;
   padding: 90px 3px 100px 3px;
   margin-bottom: 40px;
-  background-image: linear-gradient(to bottom, hsla(248, 55%, 62%, 0.721) 0.1%, rgba(52, 1, 110, 0.8431372549) 0.15%, rgba(27, 1, 57, 0.8431372549) 99.8%, rgba(0, 0, 0, 0.8) 3%);
+  background-image: linear-gradient(to bottom, hsla(248, 55%, 62%, 0.721) 0.01%, rgba(56, 0, 120, 0.831372549) 0.15%, rgba(27, 0, 57, 0.8431372549) 25%, rgba(26, 0, 29, 0.8941176471) 99.7%, rgba(0, 0, 0, 0.8) 3%);
 }
 @media screen and (min-width: 768px) {
   .section-bg {
@@ -2165,7 +2165,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .video-bg {
-    background-image: linear-gradient(to bottom, rgba(73, 56, 137, 0.8039215686) 10%, rgba(13, 0, 66, 0.8901960784) 85%);
+    background-image: linear-gradient(to bottom, rgba(2, 32, 80, 0.831372549) 8%, rgba(0, 96, 206, 0.8196078431) 30%, rgba(31, 0, 92, 0.8509803922) 85%);
     max-width: 1600px;
     overflow: hidden;
     padding: 0;
