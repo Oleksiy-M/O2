@@ -2214,12 +2214,12 @@ body {
   padding: 100px 0 0;
   border-radius: 5px;
   border-top: 4px solid rgba(45, 1, 38, 0.7764705882);
-  border-bottom: 4px solid rgba(235, 218, 165, 0.862745098);
-  background-image: linear-gradient(to bottom, rgba(66, 19, 61, 0.7882352941) 0.5%, rgba(205, 184, 109, 0.9019607843));
+  border-bottom: 4px solid rgba(252, 238, 197, 0.862745098);
+  background-image: linear-gradient(to bottom, rgba(66, 19, 61, 0.7411764706) 0.5%, rgba(255, 234, 163, 0.9450980392));
 }
 @media screen and (min-width: 768px) {
   .history-section {
-    padding: 60px 0 300px;
+    padding: 60px 0 0px;
     max-width: 1600px;
   }
 }
@@ -2277,6 +2277,11 @@ body {
   box-shadow: 0px 2px 5px 2px #fffdd1;
 }
 
+.gif-container__opacity {
+  display: block;
+  height: 260px;
+}
+
 .section-histore__end {
   height: 500px;
   border-radius: 5px;
@@ -2295,33 +2300,45 @@ body {
 
 .cards__link {
   text-decoration: none;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   transition-duration: 1s;
-}
-.cards__link:hover, .cards__link:focus {
-  transform: translateY(15.5%);
 }
 
 .cards__thumb {
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   position: relative;
   overflow: hidden;
-  width: 250px;
   transition-duration: 1s;
   border: 2px solid rgba(255, 255, 255, 0);
   z-index: -1;
 }
-.cards__link:hover .cards__thumb, .cards__link:focus .cards__thumb {
-  border-radius: 10px 10px;
-  border: 2px solid #fff;
+.cards__item:hover .cards__thumb, .cards__item:focus .cards__thumb {
+  border: 2px solid #f1e5a7;
   z-index: 2;
   transform: scale(1.5);
 }
 @media screen and (min-width: 768px) {
   .cards__thumb {
     width: auto;
+  }
+}
+
+.cards-photo {
+  height: 160px;
+}
+@media screen and (min-width: 768px) {
+  .cards-photo {
+    height: 160px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards-photo {
+    height: auto;
   }
 }
 
@@ -2332,7 +2349,7 @@ body {
   opacity: 0;
   transform: translateY(100%);
   transition-duration: 1s;
-  background-color: rgba(60, 1, 90, 0.7019607843);
+  background-color: rgba(79, 2, 142, 0.6078431373);
 }
 .cards__item:hover .history-cards__overlay, .cards__item:focus .history-cards__overlay {
   transform: translateY(0%);
@@ -2344,9 +2361,9 @@ body {
   text-align: center;
   align-items: center;
   overflow: hidden;
-  padding: 10px 4px;
+  padding: 10px 8px;
   color: #fffdd1;
-  font-size: 10px;
+  font-size: 8px;
   line-height: 1.16;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-style: italic;
@@ -2355,22 +2372,46 @@ body {
 }
 @media screen and (min-width: 768px) {
   .cards__alert {
-    padding: 10px 20px;
-    font-size: 12px;
+    padding: 10px 10px;
+    font-size: 8px;
     line-height: 1.56;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards__alert {
+    font-size: 12px;
+    padding: 10px 20px;
   }
 }
 
 .cards__content {
   display: flex;
+  position: absolute;
   flex-direction: column;
   align-items: center;
+  width: 200px;
+  margin: 5px 0;
   padding: 5px 4px;
-  border: 1px solid rgba(239, 217, 156, 0.7058823529);
+  border-radius: 15px;
+  background-color: rgba(17, 3, 69, 0.3568627451);
+  transition-duration: 3s;
+  opacity: 1;
+  color: #fffdd1;
 }
 .cards__item:hover .cards__content, .cards__item:focus .cards__content {
-  transition-duration: 3s;
-  display: none;
+  transition-duration: 0.5s;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+@media screen and (min-width: 768px) {
+  .cards__content {
+    width: calc((100% - 120px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards__content {
+    width: calc((100% - 120px) / 4);
+  }
 }
 
 .cards__title {
@@ -2378,48 +2419,75 @@ body {
   user-select: none;
   margin-bottom: 0px;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
+  font-size: 10px;
+  line-height: 1.5;
   letter-spacing: 0.06em;
-  color: #fffdd1;
+}
+@media screen and (min-width: 768px) {
+  .cards__title {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards__title {
+    font-size: 18px;
+  }
 }
 
 .cards__text {
   user-select: none;
-  font-size: 16px;
+  font-size: 10px;
   line-height: 1.87;
   color: #d5d095;
+}
+@media screen and (min-width: 768px) {
+  .cards__text {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards__text {
+    font-size: 16px;
+  }
 }
 
 .section-card {
   overflow: hidden;
   padding: 0px 0;
   margin: 0px -20px 0px;
-  background-color: rgba(0, 37, 224, 0.862745098);
+  background-color: rgba(140, 0, 179, 0.8784313725);
   transition-duration: 3s;
 }
 .section-card:hover, .section-card:focus {
-  background-color: rgba(245, 228, 167, 0.951);
+  transition-duration: 1s;
+  background-color: #fffdd1;
 }
 @media screen and (min-width: 768px) {
   .section-card {
-    margin: 0px -180px 0px;
+    margin: 0px -140px 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .section-card {
-    margin: 0px -210px 0px;
+    margin: 0px -200px 0px;
+    height: auto;
   }
 }
 
 .section-gif {
+  pointer-events: none;
   position: absolute;
-  margin: -260px 230px 0 230px;
-  animation: moveLeftToRight 50s linear infinite alternate;
-  transition: animation-duration 2s ease-out;
+  margin: -260px 0px 0 -200px;
+  animation: moveLeftToRight 90s linear infinite normal;
+  animation-timing-function: cubic-bezier(0, 0.82, 1, 0.12);
 }
 .section-card:hover .section-gif, .section-card:focus .section-gif {
   animation-play-state: paused;
+}
+@media screen and (min-width: 768px) {
+  .section-gif {
+    margin: -260px 0px 0 -200px;
+  }
 }
 
 @keyframes moveLeftToRight {
@@ -2427,7 +2495,7 @@ body {
     transform: translatex(0);
   }
   100% {
-    transform: translatex(calc(100vw - 460px));
+    transform: translatex(calc(100vw + 220px));
   }
 }
 .gif-container {
@@ -2449,26 +2517,41 @@ body {
 }
 
 .box-border {
-  width: 3200px;
-  padding: 5px 0px;
+  padding: 0 0 25px 0px;
   animation-timing-function: ease-out;
   animation-duration: 5s;
   background-image: linear-gradient(to bottom, rgba(189, 207, 253, 0.6470588235) 5%, rgba(5, 25, 49, 0) 99%);
 }
 .box-border:last-child {
-  padding: 5px 0;
+  padding: 25px 0 0;
   background-image: linear-gradient(to top, rgba(189, 207, 253, 0.6470588235) 5%, rgba(5, 25, 49, 0) 99%);
+}
+@media screen and (min-width: 768px) {
+  .box-border {
+    padding: 0 0 25px 0px;
+  }
+  .box-border:last-child {
+    padding: 25px 0 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .box-border {
+    padding: 0 0 45px 0px;
+  }
+  .box-border:last-child {
+    padding: 45px 0 0;
+  }
 }
 
 .border-history {
-  animation: move 38s linear infinite;
-  border: 8px dashed rgba(22, 35, 51, 0.8509803922);
-  margin: 0px 20px 0 0px;
+  animation: move 25.5s linear infinite;
+  border: 8px dashed rgba(40, 3, 32, 0.8509803922);
+  margin: 0px 10px 0 0px;
   transition-duration: 1s;
 }
 .section-card:hover .border-history, .section-card:focus .border-history {
   animation-play-state: paused;
-  border: 8px dashed rgba(22, 35, 51, 0.2);
+  border: 8px dashed rgba(40, 3, 32, 0);
 }
 
 @keyframes move {
@@ -2481,13 +2564,13 @@ body {
 }
 .border-history2 {
   transition-duration: 1s;
-  margin: -16px 0 0 20px;
-  animation: movenext 38s linear infinite;
-  border: 8px dashed rgba(22, 35, 51, 0.8509803922);
+  margin: -16px 0 0 10px;
+  animation: movenext 25.5s linear infinite;
+  border: 8px dashed rgba(40, 3, 32, 0.8509803922);
 }
 .section-card:hover .border-history2, .section-card:focus .border-history2 {
   animation-play-state: paused;
-  border: 8px dashed rgba(22, 35, 51, 0.2);
+  border: 8px dashed rgba(40, 3, 32, 0);
 }
 
 @keyframes movenext {
@@ -2503,24 +2586,30 @@ body {
   padding: 0px;
   margin: 0;
   animation-timing-function: ease-out;
-  animation: moveRightToLeft 30s linear infinite;
+  animation: moveRightToLeft 25s linear infinite;
+  width: 192%;
 }
 .section-card:hover .cards, .section-card:focus .cards {
   /* Поступова зупинка */
   transition: all 2s ease-out;
   animation-play-state: paused;
 }
+@media screen and (min-width: 768px) {
+  .cards {
+    width: 75%;
+    animation: moveRightToLeft 40s linear infinite;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards {
+    width: auto;
+  }
+}
 
 .cards__item {
   flex-shrink: 0;
   margin-right: 30px;
   transition-duration: 1s;
-  border-radius: 5px;
-}
-@media screen and (min-width: 768px) {
-  .cards__item {
-    margin-right: 50px;
-  }
 }
 
 @keyframes moveRightToLeft {
@@ -2530,6 +2619,6 @@ body {
   }
   100% {
     transition-duration: 1s;
-    transform: translateX(calc(-100% - 950px));
+    transform: translateX(calc(-100% - 850px));
   }
 }/*# sourceMappingURL=mine.css.map */

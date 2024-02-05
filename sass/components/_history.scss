@@ -23,21 +23,20 @@
 
       .history-section {
          display: block;
-
          padding: 100px 0 0;
          // margin: 0px auto 0px;
          border-radius: 5px;
          border-top: 4px solid #2d0126c6;
-         border-bottom: 4px solid #ebdaa5dc;
+         border-bottom: 4px solid #fceec5dc;
          background-image: linear-gradient(to bottom,
 
-               #42133dc9 0.5%,
-               #cdb86de6);
+               #42133dbd 0.5%,
+               #ffeaa3f1);
 
          // 5b5335bd cdb86d9a
          @media screen and (min-width: 768px) {
 
-            padding: 60px 0 300px;
+            padding: 60px 0 0px;
             // margin: 0px auto;
             max-width: 1600px;
 
@@ -99,6 +98,7 @@
       .history-border {
          margin: -2px auto 0;
          transition-duration: $animation-head;
+
          height: 2px;
          border: none;
          width: 0.1%;
@@ -112,6 +112,11 @@
          }
       }
 
+
+      .gif-container__opacity {
+         display: block;
+         height: 260px;
+      }
 
       .section-histore__end {
 
