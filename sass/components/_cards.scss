@@ -204,34 +204,53 @@
 }
 
 
-                  .section-gif {
-                     position: absolute;
-                     margin: 0 0 0 220px;
-                     transform: translateY(-100%);
-                  }
-         
-                  .gif-container {
-                     display: flex;
-                     justify-content: left;
-                     width: 200px;
-         
-                     .section-card:hover &,
-                     .section-card:focus & {
-                        display: none;
-                     }
-                  }
-         
-         
-                  .gifa-container {
-                     display: none;
-                     justify-content: left;
-                     width: 200px;
-         
-                     .section-card:hover &,
-                     .section-card:focus & {
-                        display: flex;
-                     }
-                  }
+.section-gif {
+   position: absolute;
+   margin: -260px 230px 0 230px;
+   animation: moveLeftToRight 50s linear infinite alternate;
+   transition: animation-duration 2s ease-out;
+
+   .section-card:hover &,
+   .section-card:focus & {
+      animation-play-state: paused;
+
+   }
+}
+
+
+@keyframes moveLeftToRight {
+   0% {
+      transform: translatex(0);
+   }
+
+   100% {
+      transform: translatex(calc(100vw - 460px));
+   }
+}
+
+
+.gif-container {
+   display: flex;
+   justify-content: left;
+   width: 200px;
+
+   .section-card:hover &,
+   .section-card:focus & {
+      display: none;
+   }
+}
+
+
+.gifa-container {
+   display: none;
+   justify-content: left;
+   width: 200px;
+
+   .section-card:hover &,
+   .section-card:focus & {
+      display: flex;
+   }
+}
 
 
 
@@ -310,7 +329,7 @@
 .cards {
    display: flex;
 
-   padding: 0px 0;
+   padding: 0px;
    margin: 0;
    animation-timing-function: ease-out;
    animation: moveRightToLeft 30s linear infinite;
@@ -332,8 +351,6 @@
    margin-right: 30px;
    transition-duration: 1s;
    border-radius: 5px;
-
-
 
    @media screen and (min-width: 768px) {
       margin-right: 50px;
