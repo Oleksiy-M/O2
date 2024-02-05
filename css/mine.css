@@ -103,7 +103,7 @@ body {
   padding: 10px 0 5px 0;
   z-index: 2;
   background-color: #1f2f52;
-  border-bottom: 1px solid rgba(249, 235, 165, 0.8470588235);
+  border-bottom: 1px solid #3f8cff;
 }
 @media screen and (min-width: 768px) {
   .pg-header {
@@ -2213,13 +2213,13 @@ body {
   display: block;
   padding: 100px 0 0;
   border-radius: 5px;
-  border-top: 4px solid rgba(77, 64, 18, 0.7411764706);
-  border-bottom: 4px solid rgba(248, 239, 209, 0.7411764706);
-  background-image: linear-gradient(to bottom, rgba(66, 19, 61, 0.662745098) 0.5%, rgba(205, 184, 109, 0.7960784314));
+  border-top: 4px solid rgba(45, 1, 38, 0.7764705882);
+  border-bottom: 4px solid rgba(235, 218, 165, 0.862745098);
+  background-image: linear-gradient(to bottom, rgba(66, 19, 61, 0.7882352941) 0.5%, rgba(205, 184, 109, 0.9019607843));
 }
 @media screen and (min-width: 768px) {
   .history-section {
-    padding: 60px 0 0;
+    padding: 60px 0 300px;
     max-width: 1600px;
   }
 }
@@ -2277,20 +2277,13 @@ body {
   box-shadow: 0px 2px 5px 2px #fffdd1;
 }
 
-.histor-gif {
-  display: flex;
-  justify-content: left;
-  width: 200px;
-}
-.histor-gif:hover, .histor-gif:focus {
-  animation-play-state: paused;
-}
-
 .section-histore__end {
   height: 500px;
   border-radius: 5px;
   margin: 0 0px 300px;
-  background-image: linear-gradient(to bottom, rgba(205, 184, 109, 0.7960784314) 5%, rgba(66, 19, 61, 0.662745098));
+  border-top: 4px solid rgba(235, 218, 165, 0.862745098);
+  border-bottom: 4px solid rgba(34, 1, 28, 0.8392156863);
+  background-image: linear-gradient(to bottom, rgba(205, 184, 109, 0.7960784314) 5%, rgba(72, 16, 67, 0.7960784314));
 }
 @media screen and (min-width: 768px) {
   .section-histore__end {
@@ -2303,6 +2296,10 @@ body {
 .cards__link {
   text-decoration: none;
   display: block;
+  transition-duration: 1s;
+}
+.cards__link:hover, .cards__link:focus {
+  transform: translateY(15.5%);
 }
 
 .cards__thumb {
@@ -2312,6 +2309,15 @@ body {
   position: relative;
   overflow: hidden;
   width: 250px;
+  transition-duration: 1s;
+  border: 2px solid rgba(255, 255, 255, 0);
+  z-index: -1;
+}
+.cards__link:hover .cards__thumb, .cards__link:focus .cards__thumb {
+  border-radius: 10px 10px;
+  border: 2px solid #fff;
+  z-index: 2;
+  transform: scale(1.5);
 }
 @media screen and (min-width: 768px) {
   .cards__thumb {
@@ -2326,10 +2332,10 @@ body {
   opacity: 0;
   transform: translateY(100%);
   transition-duration: 1s;
-  background-color: rgba(57, 1, 83, 0.8392156863);
+  background-color: rgba(60, 1, 90, 0.7019607843);
 }
 .cards__item:hover .history-cards__overlay, .cards__item:focus .history-cards__overlay {
-  transform: translateY(0);
+  transform: translateY(0%);
   opacity: 1;
 }
 
@@ -2360,12 +2366,11 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 5px 4px;
-  border: 1px solid rgba(184, 157, 83, 0.2862745098);
-  background-color: rgba(76, 0, 60, 0.0352941176);
-  transition-duration: 1s;
+  border: 1px solid rgba(239, 217, 156, 0.7058823529);
 }
 .cards__item:hover .cards__content, .cards__item:focus .cards__content {
-  background-color: rgba(63, 2, 52, 0.2078431373);
+  transition-duration: 3s;
+  display: none;
 }
 
 .cards__title {
@@ -2388,10 +2393,13 @@ body {
 
 .section-card {
   overflow: hidden;
+  padding: 0px 0;
   margin: 0px -20px 0px;
-  border-right: none;
-  border-left: none;
-  background-image: linear-gradient(to bottom, rgba(1, 0, 3, 0) 3%, rgba(0, 0, 0, 0.2705882353) 5%, rgba(0, 0, 0, 0.2705882353) 95%, rgba(218, 199, 255, 0.2705882353), rgba(255, 255, 255, 0));
+  background-color: rgba(0, 37, 224, 0.862745098);
+  transition-duration: 3s;
+}
+.section-card:hover, .section-card:focus {
+  background-color: rgba(245, 228, 167, 0.951);
 }
 @media screen and (min-width: 768px) {
   .section-card {
@@ -2404,23 +2412,51 @@ body {
   }
 }
 
+.section-gif {
+  position: absolute;
+  margin: 0 0 0 220px;
+  transform: translateY(-100%);
+}
+
+.gif-container {
+  display: flex;
+  justify-content: left;
+  width: 200px;
+}
+.section-card:hover .gif-container, .section-card:focus .gif-container {
+  display: none;
+}
+
+.gifa-container {
+  display: none;
+  justify-content: left;
+  width: 200px;
+}
+.section-card:hover .gifa-container, .section-card:focus .gifa-container {
+  display: flex;
+}
+
 .box-border {
   width: 3200px;
-  padding: 0 0 40px;
+  padding: 5px 0px;
   animation-timing-function: ease-out;
   animation-duration: 5s;
+  background-image: linear-gradient(to bottom, rgba(189, 207, 253, 0.6470588235) 5%, rgba(5, 25, 49, 0) 99%);
 }
 .box-border:last-child {
-  padding: 40px 0 0;
+  padding: 5px 0;
+  background-image: linear-gradient(to top, rgba(189, 207, 253, 0.6470588235) 5%, rgba(5, 25, 49, 0) 99%);
 }
 
 .border-history {
   animation: move 38s linear infinite;
-  border: 8px dashed rgba(57, 79, 103, 0.6705882353);
-  margin: 0px 25px 0 0px;
+  border: 8px dashed rgba(22, 35, 51, 0.8509803922);
+  margin: 0px 20px 0 0px;
+  transition-duration: 1s;
 }
 .section-card:hover .border-history, .section-card:focus .border-history {
   animation-play-state: paused;
+  border: 8px dashed rgba(22, 35, 51, 0.2);
 }
 
 @keyframes move {
@@ -2432,12 +2468,14 @@ body {
   }
 }
 .border-history2 {
-  margin: -16px 0 0 25px;
+  transition-duration: 1s;
+  margin: -16px 0 0 20px;
   animation: movenext 38s linear infinite;
-  border: 8px dashed rgba(57, 79, 103, 0.6705882353);
+  border: 8px dashed rgba(22, 35, 51, 0.8509803922);
 }
 .section-card:hover .border-history2, .section-card:focus .border-history2 {
   animation-play-state: paused;
+  border: 8px dashed rgba(22, 35, 51, 0.2);
 }
 
 @keyframes movenext {
@@ -2450,7 +2488,7 @@ body {
 }
 .cards {
   display: flex;
-  padding: 0;
+  padding: 0px 0;
   margin: 0;
   animation-timing-function: ease-out;
   animation: moveRightToLeft 30s linear infinite;
@@ -2467,10 +2505,6 @@ body {
   transition-duration: 1s;
   border-radius: 5px;
 }
-.cards__item:hover, .cards__item:focus {
-  transform: scale(1.2);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 @media screen and (min-width: 768px) {
   .cards__item {
     margin-right: 50px;
@@ -2484,6 +2518,6 @@ body {
   }
   100% {
     transition-duration: 1s;
-    transform: translateX(calc(-100% - 930px));
+    transform: translateX(calc(-100% - 950px));
   }
 }/*# sourceMappingURL=mine.css.map */

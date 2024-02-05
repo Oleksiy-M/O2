@@ -27,17 +27,17 @@
          padding: 100px 0 0;
          // margin: 0px auto 0px;
          border-radius: 5px;
-         border-top: 4px solid #4d4012bd;
-         border-bottom: 4px solid #f8efd1bd;
+         border-top: 4px solid #2d0126c6;
+         border-bottom: 4px solid #ebdaa5dc;
          background-image: linear-gradient(to bottom,
 
-               #42133da9 0.5%,
-               #cdb86dcb);
+               #42133dc9 0.5%,
+               #cdb86de6);
 
          // 5b5335bd cdb86d9a
          @media screen and (min-width: 768px) {
 
-            padding: 60px 0 0;
+            padding: 60px 0 300px;
             // margin: 0px auto;
             max-width: 1600px;
 
@@ -113,33 +113,19 @@
       }
 
 
-
-      .histor-gif {
-         display: flex;
-         justify-content: left;
-         width: 200px;
-
-         &:hover,
-         &:focus {
-
-            animation-play-state: paused;
-         }
-      }
-
-
-
-
       .section-histore__end {
 
          height: 500px;
          border-radius: 5px;
          margin: 0 0px 300px;
+         border-top: 4px solid #ebdaa5dc;
+         border-bottom: 4px solid #22011cd6;
          background-image: linear-gradient(to bottom,
 
 
                #cdb86dcb 5%,
 
-               #42133da9);
+               #481043cb);
 
          @media screen and (min-width: 768px) {
             padding: 0px;

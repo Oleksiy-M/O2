@@ -20,3 +20,24 @@ window.onload = function () {
 // });
 
 
+// var img = document.querySelector('.gif-container img');
+
+// // Додавання класу "paused" при наведенні на елемент
+// img.addEventListener('mouseover', function () {
+//    img.parentElement.classList.add('paused');
+// });
+
+// // Видалення класу "paused" при відведенні від елементу
+// img.addEventListener('mouseout', function () {
+//    img.parentElement.classList.remove('paused');
+// });
+
+// // Додавання класу "paused" при фокусі на елемент
+// img.addEventListener('focus', function () {
+//    img.parentElement.classList.add('paused');
+// });
+
+// // Видалення класу "paused" при відведенні фокусу від елементу
+// img.addEventListener('blur', function () {
+//    img.parentElement.classList.remove('paused');
+// });
