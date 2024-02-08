@@ -2315,11 +2315,6 @@ body {
 .cards__link:hover, .cards__link:focus {
   transform: translateY(5px);
 }
-@media screen and (min-width: 768px) {
-  .cards__link:hover, .cards__link:focus {
-    transform: translateY(5px);
-  }
-}
 @media screen and (min-width: 1200px) {
   .cards__link:hover, .cards__link:focus {
     transform: translateY(10px);
@@ -2339,11 +2334,6 @@ body {
 .cards__item:hover .cards__thumb, .cards__item:focus .cards__thumb {
   border: 2px solid #ffffff;
   transform: scale(1.46);
-}
-@media screen and (min-width: 768px) {
-  .cards__thumb {
-    width: auto;
-  }
 }
 
 .cards-photo {
