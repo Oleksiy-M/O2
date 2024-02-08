@@ -5,6 +5,7 @@
    position: relative;
 
    margin: 0 auto;
+
    // margin-top: 0px;
    @media screen and (min-width: 768px) {
       // object-fit:contain;
@@ -17,9 +18,9 @@
 }
 
 .video-bg__histor {
-      @media screen and (min-width: 768px) {
-   background-image: $bg-water-histore;
-      }
+   @media screen and (min-width: 768px) {
+      background-image: $bg-water-histore;
+   }
 
 }
 
@@ -34,11 +35,16 @@
 
 
    @media screen and (min-width: 768px) {
-      // position: static;
-      margin-top: -250px;
+      margin-top: 0px;
+      // display: none;
+      margin-top: -100px;
       max-width: 1600px;
    }
 }
+
+
+
+
 
 // .bg-color__video {
 

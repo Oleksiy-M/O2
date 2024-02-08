@@ -88,7 +88,13 @@
    font-size: 15px;
    line-height: 1.86;
    letter-spacing: 0.26em;
+
    // border-bottom: 2px solid $Secondary-text-color;
+   .section-hero:hover &,
+   .section-hero:focus & {
+      text-shadow: 1px 1px 3px black, 1px 1px 10px #ffffff;
+
+   }
 
    @media screen and (min-width: 1200px) {
       font-weight: 600;
@@ -162,7 +168,7 @@
    background-image: linear-gradient(to bottom,
          #243f6c 0.5%,
          #15013eda 0.8%,
-         #1a001de4 1.1%,
+         #1a001db2 1.1%,
          #110013e4 99.2%,
          #000000 5%);
 
