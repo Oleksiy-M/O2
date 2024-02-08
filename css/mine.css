@@ -474,7 +474,7 @@ body {
   letter-spacing: 0.26em;
 }
 .section-hero:hover .idustry-hero__heading, .section-hero:focus .idustry-hero__heading {
-  text-shadow: 1px 1px 3px black, 1px 1px 10px #ffffff;
+  text-shadow: 0px 0px 1px #ffffff, 2px 2px 2px black;
 }
 @media screen and (min-width: 1200px) {
   .idustry-hero__heading {
@@ -579,7 +579,7 @@ body {
   border-radius: 0px;
   overflow: hidden;
   box-shadow: 0px 0px 5px 3px rgba(89, 60, 234, 0.486);
-  border: 0.5px solid #4b3ff5;
+  border: 3px solid #4b3ff5;
   border-left: none;
   border-right: none;
   transition-duration: 1s;
@@ -588,7 +588,7 @@ body {
   transition-duration: 3s;
   height: 100%;
   width: 100%;
-  border: 0.5px solid #4b3ff5;
+  border: 0.5px solid aqua;
   border-left: none;
   border-right: none;
 }
@@ -613,7 +613,7 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
-  background-color: rgba(0, 33, 143, 0.7568627451);
+  background-color: rgba(42, 2, 105, 0.7725490196);
   height: 100%;
   width: 100%;
   padding: 0 15px;
@@ -630,13 +630,13 @@ body {
   line-height: 1.9;
   letter-spacing: 0.08em;
   word-spacing: 2px;
-  text-shadow: 1px 2px 5px black;
   color: #0000FF;
   transition-duration: 3s;
 }
 .impact-box__end:hover .title-end, .impact-box__end:focus .title-end {
   font-size: 11px;
-  color: #3fa9f5;
+  text-shadow: 0px 0px 1px #ffffff, 2px 2px 2px black;
+  color: aqua;
 }
 @media screen and (min-width: 768px) {
   .title-end {
@@ -2260,7 +2260,7 @@ body {
   letter-spacing: 0.26em;
 }
 .history-section:hover .history-hero__heading, .history-section:focus .history-hero__heading {
-  text-shadow: 1px 1px 3px black, 1px 1px 10px #ffffff;
+  text-shadow: 0px 0px 1px #ffffff, 2px 2px 2px black;
 }
 @media screen and (min-width: 1200px) {
   .history-hero__heading {
@@ -2310,7 +2310,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
+}
+.cards__link:hover, .cards__link:focus {
+  transform: translateY(5px);
+}
+@media screen and (min-width: 768px) {
+  .cards__link:hover, .cards__link:focus {
+    transform: translateY(5px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards__link:hover, .cards__link:focus {
+    transform: translateY(10px);
+  }
 }
 
 .cards__thumb {
@@ -2349,19 +2362,20 @@ body {
 
 .history-cards__overlay {
   display: flex;
+  align-items: center;
   position: absolute;
+  width: 100%;
   height: 100%;
   opacity: 0;
-  transform: translateY(100%);
   transition-duration: 1s;
-  background-color: rgba(79, 2, 142, 0.6078431373);
+  background-color: rgba(61, 1, 65, 0.4392156863);
 }
 .cards__item:hover .history-cards__overlay, .cards__item:focus .history-cards__overlay {
-  transform: translateY(0%);
   opacity: 1;
 }
 
 .cards__alert {
+  position: absolute;
   display: flex;
   text-align: center;
   align-items: center;
@@ -2402,18 +2416,16 @@ body {
   padding: 5px 4px;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.1960784314);
-  transition-duration: 1s;
+  transition-duration: 3s;
   opacity: 1;
-  color: #fffdd1;
 }
 .cards__item:hover .cards__content, .cards__item:focus .cards__content {
   transition-duration: 0.5s;
   background-color: rgba(174, 171, 171, 0);
   opacity: 0;
-  transform: scale(0.5);
 }
 .section-card:hover .cards__content, .section-card:focus .cards__content {
-  background: rgba(199, 194, 175, 0.7960784314);
+  background: rgba(15, 108, 174, 0.7019607843);
 }
 
 .cards__title {
@@ -2427,6 +2439,11 @@ body {
   color: #fffdd1;
   text-shadow: 1px 2px 5px black;
   text-shadow: 2px 2px 10px #000000, 3px 3px 3px #000000;
+  transition-duration: 3s;
+}
+.section-card:hover .cards__title, .section-card:focus .cards__title {
+  transition-duration: 1s;
+  opacity: 0.2;
 }
 @media screen and (min-width: 768px) {
   .cards__title {
@@ -2445,6 +2462,11 @@ body {
   line-height: 1.87;
   color: #d5d095;
   text-shadow: 1px 1px 10px #000000, 2px 2px 2px #000000, 2px 2px 10px black;
+  transition-duration: 3s;
+}
+.section-card:hover .cards__text, .section-card:focus .cards__text {
+  transition-duration: 1s;
+  opacity: 0.2;
 }
 @media screen and (min-width: 768px) {
   .cards__text {
@@ -2493,7 +2515,7 @@ body {
 @media screen and (min-width: 1200px) {
   .section-gif {
     margin: 0px 0px 0 200px;
-    transform: translateY(-255px);
+    transform: translateY(-265px);
   }
 }
 
@@ -2520,8 +2542,8 @@ body {
   padding: 0px;
   margin: 0;
   animation-timing-function: ease-out;
-  animation: moveRightToLeft 25s linear infinite;
-  width: 192%;
+  animation: moveRightToLeft 30s linear infinite;
+  width: 145%;
 }
 .section-card:hover .cards, .section-card:focus .cards {
   /* Поступова зупинка */
@@ -2530,7 +2552,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .cards {
-    width: 75%;
+    width: 70%;
     animation: moveRightToLeft 40s linear infinite;
   }
 }
@@ -2547,7 +2569,7 @@ body {
   flex-shrink: 0;
   transition-duration: 1s;
   position: relative;
-  padding: 40px 10px;
+  padding: 35px 10px 45px;
   z-index: -1;
 }
 .cards__item:hover, .cards__item:focus {
@@ -2555,31 +2577,31 @@ body {
 }
 @media screen and (min-width: 768px) {
   .cards__item {
-    padding: 40px 10px;
+    padding: 35px 10px 45px;
   }
 }
 @media screen and (min-width: 1200px) {
   .cards__item {
-    padding: 60px 15px;
+    padding: 50px 15px 70px;
   }
 }
 
 .cadr-svg {
   position: absolute;
-  fill: #1f002a;
+  fill: rgba(48, 24, 55, 0.8862745098);
   height: 228px;
   width: 264px;
   transition-duration: 1s;
-  background-color: #ffffff;
+  background-color: #e2d793;
 }
 .section-card:hover .cadr-svg, .section-card:focus .cadr-svg {
-  background-color: rgba(255, 234, 163, 0.6274509804);
-  fill: rgba(53, 51, 43, 0.4705882353);
+  background-color: rgba(110, 117, 11, 0.2274509804);
+  fill: #0a4169;
 }
 @media screen and (min-width: 768px) {
   .cadr-svg {
     width: 262px;
-    height: 230px;
+    height: 226px;
   }
 }
 @media screen and (min-width: 1200px) {

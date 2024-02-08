@@ -92,7 +92,7 @@
    // border-bottom: 2px solid $Secondary-text-color;
    .section-hero:hover &,
    .section-hero:focus & {
-      text-shadow: 1px 1px 3px black, 1px 1px 10px #ffffff;
+            text-shadow: 0px 0px 1px #ffffff, 2px 2px 2px black;
 
    }
 
@@ -233,7 +233,7 @@
    border-radius: 0px;
    overflow: hidden;
    box-shadow: 0px 0px 5px 3px rgba(89, 60, 234, 0.486);
-   border: 0.5px solid #4b3ff5;
+   border: 3px solid #4b3ff5;
    border-left: none;
    border-right: none;
    transition-duration: $animation-head;
@@ -244,7 +244,7 @@
       transition-duration: 3s;
       height: 100%;
       width: 100%;
-      border: 0.5px solid #4b3ff5;
+      border: 0.5px solid $primary-text-color;
       border-left: none;
       border-right: none;
    }
@@ -285,7 +285,7 @@
    justify-content: center;
    position: absolute;
 
-   background-color: #00218fc1;
+   background-color: #2a0269c5;
    height: 100%;
    width: 100%;
    padding: 0 15px;
@@ -305,14 +305,14 @@
    letter-spacing: 0.08em;
    word-spacing: 2px;
 
-   text-shadow: 1px 2px 5px black;
    color: $line-color;
    transition-duration: 3s;
 
    .impact-box__end:hover &,
    .impact-box__end:focus & {
       font-size: 11px;
-      color: $Secondary-text-color;
+            text-shadow: 0px 0px 1px #ffffff, 2px 2px 2px black;
+      color: $primary-text-color;
    }
 
    @media screen and (min-width: 768px) {
