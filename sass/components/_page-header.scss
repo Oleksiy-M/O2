@@ -28,7 +28,7 @@
    width: 100%;
 
    @media screen and (min-width: 1200px) {
-      position: absolute;
+      // position: absolute;
       //   background-image: $background-water;
       margin-top: -120px;
 
@@ -40,6 +40,7 @@
 
 .bg-color__head {
    height: 935px;
+
 
    @media (min-device-pixel-ratio: 2) and (max-width: 767px),
    (min-resolution: 192dpi) and (max-width: 767px),
@@ -58,7 +59,7 @@
    }
 
    @media screen and (min-width: 1200px) {
-      height: 1120px;
+      height: 1180px;
 
    }
 

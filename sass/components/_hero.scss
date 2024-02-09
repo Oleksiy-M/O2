@@ -84,7 +84,7 @@
 		// height: 500px;
 		background-image:
 			linear-gradient(#89b2f400,
-				#0066ffb7),
+				#afcdfb38),
 			url("../img/family/family-mobil@2x.jpg");
 	}
 
@@ -94,7 +94,7 @@
 		background-position: bottom;
 		background-image:
 			linear-gradient(#89b2f400,
-				#0066ffb7),
+				#afcdfb38),
 			url("../img/family/family-tablet.jpg");
 	}
 
@@ -105,18 +105,18 @@
 		padding: 0px 0 0px;
 		background-image:
 			linear-gradient(#89b2f400,
-				#0066ffb7),
+				#afcdfb38),
 			url("../img/family/family-tablet@2x.jpg");
 
 	}
 
 	@media screen and (min-width: 1200px) {
 		background-position: bottom;
-		height: 440px;
+		height: 460px;
 		padding: 40px 0 0px;
 		background-image:
 			linear-gradient(#89b2f400,
-				#0066ffb7),
+				#afcdfb68),
 			url("../img/family/family.jpg");
 	}
 
@@ -127,7 +127,7 @@
 
 		background-image:
 			linear-gradient(#89b2f400,
-				#0066ffb7),
+				#afcdfb38),
 			url("../img/family/family@2x.jpg");
 
 
@@ -152,39 +152,45 @@
 
 
 .hero__link {
-
-	transition: opacity $animation-logo;
-
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	// transition: opacity $animation-logo;
+	position: relative;
 	opacity: 1;
+	margin: 30px 0 50px;
+	transition-duration: 1s;
 
-	// .hero :hover &,
-	// .hero :focus & {
-	// 	opacity: 1;
+	@media screen and (min-width: 1200px) {
+		margin: 60px 0 70px;
+	}
+
+	// .section-oxy:hover &,
+	// .section-oxy:focus & {
+	// 	transform: scale(1.03);
 	// }
 
 }
 
 
 .hero-logo {
+	position: absolute;
+	border-radius: 5px;
 	width: 90px;
 	height: 90px;
 	// margin-top: -230px;
 	margin: 0 auto;
 	transition-duration: 1s;
-	fill: $Secondary-text-color;
-	// stroke-width: 0.4px;
+	stroke-width: 0.2px;
+	// stroke: #fcb90269;
+	stroke: #fcb902;
 
 	.section-oxy:hover &,
 	.section-oxy:focus & {
-
-
-		fill: $primary-text-color;
-		box-shadow: inset 0 0 65px 10px #fcdb0261,
-			0 0 50px 10px #fc9c02, 0 0 5px 2px #000305c5,
-			inset 0 0 6px 1px #000000c5;
-
+		box-shadow: inset 0 0 35px 5px #fcb902d1, 0 0 5px 2px #362700a3,
+			0 0 30px 5px #fdba00, inset 0 0 10px 6px #fcb90284,
+		;
 	}
-
 
 	@media screen and (min-width: 650px) {
 		width: 70px;
@@ -198,11 +204,59 @@
 	}
 
 	@media screen and (min-width: 1200px) {
-		width: 110px;
-		height: 110px;
+		width: 120px;
+		height: 120px;
 
 	}
 }
+
+.hero-logo__o {
+	transition-duration: 1s;
+	fill: $primary-text-color;
+	// transition: box-shadow 1s;
+	width: 50px;
+	height: 50px;
+	fill: $primary-text-color;
+	border-radius: 30px;
+	stroke-opacity: 0.5;
+	stroke-width: 0.3px;
+	stroke: #ffffff6c;
+
+	.section-oxy:hover &,
+	.section-oxy:focus & {
+		stroke: #ffffff;
+		box-shadow: inset 0 0 10px 8px #0138d083,
+			0 0 15px 5px #0138d083;
+	}
+
+	@media screen and (min-width: 650px) {
+		width: 38px;
+		height: 38px;
+	}
+
+	@media screen and (min-width: 768px) {
+		width: 60px;
+		height: 60px;
+
+		.section-oxy:hover &,
+		.section-oxy:focus & {
+			stroke: #ffffff;
+			box-shadow: inset 0 0 15px 10px #0138d083,
+				0 0 15px 5px #01227c83;
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 68px;
+		height: 68px;
+
+	}
+
+
+}
+
+
+
 
 
 
@@ -231,13 +285,24 @@
 
 .title {
 	user-select: none;
-	text-shadow: 1px 1px 2px #000000, 1px 1px 2px #09003f;
+	text-shadow: 2px 2px 2px black;
 	font-weight: 500;
 	font-size: 14px;
 	// line-height: 1.86;
 	letter-spacing: 0.25em;
 	// text-transform: uppercase;
+	transition-duration: 1s;
+
 	color: #b5f8f8;
+
+	.section-oxy:hover &,
+	.section-oxy:focus & {
+		transform: scale(1.03);
+		color: $primary-text-color;
+		text-shadow:
+			2px 2px 2px black,
+			0px 0px 3px #ffffff;
+	}
 
 	@media screen and (min-width: 1200px) {
 		font-weight: 600;
