@@ -8,7 +8,7 @@
 
 	@media screen and (min-width: 650px) {
 		// display: flex;
-		padding: 30px 0 0;
+		padding: 0px 0 0;
 	}
 
 }
@@ -26,15 +26,23 @@
 	// margin: 0 auto;
 	padding: 0 35px 50px;
 
+	@media screen and (min-width: 350px) {
+		padding: 30px 0 50px;
+	}
+
 	@media screen and (min-width: 650px) {
-		margin-top: 0px;
+		margin-top: 30px;
 		padding: 0px 0 0;
 	}
 
+	@media screen and (min-width: 768px) {
+		margin-top: 0;
+	}
 
 	@media screen and (min-width: 1200px) {
-		margin-top: 0;
-		padding: 0px 250px 20px;
+
+
+		padding: 20px 250px 20px;
 	}
 }
 
@@ -44,6 +52,87 @@
 // < !-- Logo -->
 
 
+
+
+
+
+.section-oxy {
+	display: block;
+	margin: 0 auto;
+	background-size: cover;
+	object-fit: contain;
+	background-position: center;
+	border: 2px solid #b5f8f8cc;
+	// background-attachment: scroll;
+	// padding: 0px 0 20px;
+	// width: 300px;
+	background-image:
+		linear-gradient(#89b2f400,
+			#0066ffb7),
+		url("../img/family/family-mobil.jpg");
+
+	@media screen and (max-width: 660px) {
+		height: 200px;
+		padding: 0px 0 20px;
+	}
+
+
+	@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+	(min-resolution: 192dpi) and (max-width: 767px),
+	(min-resolution: 2dppx) and (max-width: 767px) {
+		padding: 0px 0 20px;
+		// height: 500px;
+		background-image:
+			linear-gradient(#89b2f400,
+				#0066ffb7),
+			url("../img/family/family-mobil@2x.jpg");
+	}
+
+	@media screen and (min-width: 768px) {
+		padding: 0px 0 0px;
+		height: 400px;
+		background-position: bottom;
+		background-image:
+			linear-gradient(#89b2f400,
+				#0066ffb7),
+			url("../img/family/family-tablet.jpg");
+	}
+
+	@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+	(min-resolution: 192dpi) and (min-width: 768px),
+	(min-resolution: 2dppx) and (min-width: 768px) {
+		height: auto;
+		padding: 0px 0 0px;
+		background-image:
+			linear-gradient(#89b2f400,
+				#0066ffb7),
+			url("../img/family/family-tablet@2x.jpg");
+
+	}
+
+	@media screen and (min-width: 1200px) {
+		background-position: bottom;
+		height: 440px;
+		padding: 40px 0 0px;
+		background-image:
+			linear-gradient(#89b2f400,
+				#0066ffb7),
+			url("../img/family/family.jpg");
+	}
+
+	@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+	(min-resolution: 192dpi) and (min-width: 1200px),
+	(min-resolution: 2dppx) and (min-width: 1200px) {
+		padding: 0px 0 0px;
+
+		background-image:
+			linear-gradient(#89b2f400,
+				#0066ffb7),
+			url("../img/family/family@2x.jpg");
+
+
+	}
+}
 
 .logo__overlay {
 	display: flex;
@@ -83,15 +172,15 @@
 	margin: 0 auto;
 	transition-duration: 1s;
 	fill: $Secondary-text-color;
-	stroke-width: 0.4px;
+	// stroke-width: 0.4px;
 
 	.section-oxy:hover &,
 	.section-oxy:focus & {
 
 
 		fill: $primary-text-color;
-		box-shadow: inset 0 0 65px 14px #fcdb02cd,
-			0 0 50px 20px #fc9c02, 0 0 5px 2px #000305c5,
+		box-shadow: inset 0 0 65px 10px #fcdb0261,
+			0 0 50px 10px #fc9c02, 0 0 5px 2px #000305c5,
 			inset 0 0 6px 1px #000000c5;
 
 	}
@@ -116,73 +205,6 @@
 }
 
 
-.section-oxy {
-	display: block;
-	margin: 0 auto;
-	background-size: cover;
-	object-fit: contain;
-	background-position: center;
-	border: 2px solid #b5f8f8cc;
-	// background-attachment: scroll;
-	padding: 0px 0 20px;
-	background-image:
-		linear-gradient(#89b2f400,
-			#0066ffb7),
-		url("../img/family/family-mobil.jpg");
-
-	@media (min-device-pixel-ratio: 2) and (max-width: 767px),
-	(min-resolution: 192dpi) and (max-width: 767px),
-	(min-resolution: 2dppx) and (max-width: 767px) {
-		background-image:
-			linear-gradient(#89b2f400,
-				#0066ffb7),
-			url("../img/family/family-mobil@2x.jpg");
-	}
-
-	@media screen and (min-width: 768px) {
-		padding: 0px 0 0px;
-		height: 400px;
-		background-position: bottom;
-		background-image:
-			linear-gradient(#89b2f400,
-				#0066ffb7),
-			url("../img/family/family-tablet.jpg");
-	}
-
-	@media (min-device-pixel-ratio: 2) and (min-width: 768px),
-	(min-resolution: 192dpi) and (min-width: 768px),
-	(min-resolution: 2dppx) and (min-width: 768px) {
-		padding: 0px 0 0px;
-		background-image:
-			linear-gradient(#89b2f400,
-				#0066ffb7),
-			url("../img/family/family-tablet@2x.jpg");
-
-	}
-
-	@media screen and (min-width: 1200px) {
-		background-position: bottom;
-		height: 400px;
-		padding: 0px 0 0px;
-		background-image:
-			linear-gradient(#89b2f400,
-				#0066ffb7),
-			url("../img/family/family.jpg");
-	}
-
-	@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
-	(min-resolution: 192dpi) and (min-width: 1200px),
-	(min-resolution: 2dppx) and (min-width: 1200px) {
-		padding: 0px 0 0px;
-
-		background-image:
-			linear-gradient(#89b2f400,
-				#0066ffb7),
-			url("../img/family/family@2x.jpg");
-
-
-	}
-}
 
 .oxy-container {
 	display: flex;
