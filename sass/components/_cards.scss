@@ -131,7 +131,7 @@
    opacity: 0;
    // transform: translateY(100%);
    transition-duration: 1s;
-
+   overflow: hidden;
 
    .cards__item:hover &,
    .cards__item:focus & {
@@ -147,7 +147,7 @@
    display: flex;
    text-align: center;
    align-items: center;
-   background-color: #50014d8c;
+   background-color: #2000788c;
    // overflow: hidden;
    // font-weight: 600;
    padding: 10px 8px;
@@ -158,7 +158,7 @@
    font-style: italic;
    text-shadow: 1px 1.5px 1px rgba(14, 14, 14, 0.607);
    letter-spacing: 0.02em;
-   transform: translatex(-100%);
+   // transform: translatex(-105%);
    transition-duration: 1s;
    height: 100%;
 
@@ -188,7 +188,7 @@
    align-items: center;
    text-align: center;
 
-   width: 94%;
+   width: 94.5%;
    height: 75%;
    margin: 0px 0;
    padding: 0px 4px;
@@ -454,7 +454,7 @@
    position: absolute;
    // padding: 0px 40px;
 
-   fill: #054470;
+   fill: #530265;
    width: 110%;
    height: 105%;
    transition-duration: 2s;
