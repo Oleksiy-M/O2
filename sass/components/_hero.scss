@@ -8,7 +8,7 @@
 
 	@media screen and (min-width: 650px) {
 		// display: flex;
-		padding: 0px 0 0;
+		padding: 0px;
 	}
 
 }
@@ -23,26 +23,24 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	// margin: 0 auto;
-	padding: 0 35px 50px;
+	margin: 0px 35px 50px;
 
 	@media screen and (min-width: 350px) {
-		padding: 30px 0 50px;
+		margin: 30px 0 50px;
 	}
 
 	@media screen and (min-width: 650px) {
-		margin-top: 30px;
-		padding: 0px 0 0;
+		margin-top: 130px;
+
 	}
 
 	@media screen and (min-width: 768px) {
-		margin-top: 0;
+		margin: 60px 0 60px;
 	}
 
 	@media screen and (min-width: 1200px) {
+		margin: 20px 250px 20px;
 
-
-		padding: 20px 250px 20px;
 	}
 }
 
@@ -60,74 +58,75 @@
 	display: block;
 	margin: 0 auto;
 	background-size: cover;
-	object-fit: contain;
+	// object-fit: contain;
 	background-position: center;
 	border: 2px solid #b5f8f8cc;
 	// background-attachment: scroll;
 	// padding: 0px 0 20px;
 	// width: 300px;
 	background-image:
-		linear-gradient(#89b2f400,
-			#0066ffb7),
+		linear-gradient(#2f303a47,
+			#2f303a66),
 		url("../img/family/family-mobil.jpg");
+	height: 200px;
 
-	@media screen and (max-width: 660px) {
-		height: 200px;
-		padding: 0px 0 20px;
-	}
+	// @media screen and (max-width: 660px) {
+	// 	padding: 0px 0 20px;
+	// }
 
 
 	@media (min-device-pixel-ratio: 2) and (max-width: 767px),
 	(min-resolution: 192dpi) and (max-width: 767px),
 	(min-resolution: 2dppx) and (max-width: 767px) {
-		padding: 0px 0 20px;
-		// height: 500px;
+		height: 300px;
+		padding: 100px 0 0px;
+
 		background-image:
-			linear-gradient(#89b2f400,
-				#afcdfb38),
+			linear-gradient(#2f303a47,
+				#2f303a66),
 			url("../img/family/family-mobil@2x.jpg");
 	}
 
 	@media screen and (min-width: 768px) {
-		padding: 0px 0 0px;
-		height: 400px;
+		padding: 250px 0 20px;
+		height: 520px;
 		background-position: bottom;
 		background-image:
-			linear-gradient(#89b2f400,
-				#afcdfb38),
+			linear-gradient(#2f303a47,
+				#2f303a66),
 			url("../img/family/family-tablet.jpg");
 	}
 
 	@media (min-device-pixel-ratio: 2) and (min-width: 768px),
 	(min-resolution: 192dpi) and (min-width: 768px),
 	(min-resolution: 2dppx) and (min-width: 768px) {
-		height: auto;
-		padding: 0px 0 0px;
+
+		// padding: 0px 0 40px;
 		background-image:
-			linear-gradient(#89b2f400,
-				#afcdfb38),
+			linear-gradient(#2f303a47,
+				#2f303a66),
 			url("../img/family/family-tablet@2x.jpg");
 
 	}
 
 	@media screen and (min-width: 1200px) {
-		background-position: bottom;
-		height: 460px;
-		padding: 40px 0 0px;
+		// background-position: bottom;
+		padding: 150px 0 20px;
+		height: 420px;
 		background-image:
-			linear-gradient(#89b2f400,
-				#afcdfb68),
+			linear-gradient(#2f303a47,
+				#2f303a66),
 			url("../img/family/family.jpg");
 	}
 
 	@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
 	(min-resolution: 192dpi) and (min-width: 1200px),
 	(min-resolution: 2dppx) and (min-width: 1200px) {
-		padding: 0px 0 0px;
+		// padding: 0px 0 0px;
 
 		background-image:
-			linear-gradient(#89b2f400,
-				#afcdfb38),
+			linear-gradient(#2f303a47,
+				#2f303a66),
 			url("../img/family/family@2x.jpg");
 
 
@@ -138,16 +137,16 @@
 	display: flex;
 
 	justify-content: center;
-	padding: 250px 0 0px 0;
+	// padding: 250px 0 0px 0;
+	// margin: 250px 0 0;
+	// @media screen and (min-width: 650px) {
+	// 	padding: 140px 0 50px;
+	// }
 
-	@media screen and (min-width: 650px) {
-		padding: 15px 0 0;
-	}
+	// @media screen and (min-width: 1200px) {
+	// 	padding: 170px 130px 0px 130px;
 
-	@media screen and (min-width: 1200px) {
-		padding: 170px 130px 0px 130px;
-
-	}
+	// }
 }
 
 
@@ -158,16 +157,18 @@
 	// transition: opacity $animation-logo;
 	position: relative;
 	opacity: 1;
-	margin: 30px 0 50px;
+	height: 160px;
+	margin: 200px 0 0px;
 	transition-duration: 1s;
 
-	@media screen and (min-width: 1200px) {
-		margin: 60px 0 70px;
+	@media screen and (min-width: 768px) {
+		// 	padding: 80px 0px;
+		margin: 0px;
 	}
 
 	// .section-oxy:hover &,
 	// .section-oxy:focus & {
-		transform: scale(1.03);
+	transform: scale(1.03);
 	// }
 
 }
@@ -189,7 +190,7 @@
 	.section-oxy:hover &,
 	.section-oxy:focus & {
 		box-shadow: inset 0 0 65px 10px #02f4fc61,
-			0 0 50px 15px #fc9c02, 0 0 5px 2px #000305c5,
+			0 0 10px 5px #fcce02, 0 0 20px 5px #fcce02, 0 0 5px 2px #000305c5,
 			inset 0 0 6px 1px #000000c5;
 	}
 
@@ -221,12 +222,12 @@
 	border-radius: 35px;
 	stroke-opacity: 0.5;
 	stroke-width: 0.3px;
-	stroke: #ffffff6c;
+	// stroke: #ffffff6c;
 	box-shadow: none;
 
 	.section-oxy:hover &,
 	.section-oxy:focus & {
-		stroke: #ffffff;
+		// stroke: #ffffff;
 		box-shadow: inset 0 0 10px 25px #01bbff7a,
 			0 0 10px 5px #01bbff71;
 	}
@@ -244,8 +245,8 @@
 		.section-oxy:focus & {
 
 			stroke: #ffffff;
-			box-shadow: inset 0 0 10px 25px #01bbff7a,
-				0 0 10px 5px #01bbff71;
+			box-shadow: inset 0 0 10px 25px #015b7b7a,
+				0 0 10px 5px #00496471;
 		}
 	}
 
