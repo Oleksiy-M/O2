@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
    <link rel="stylesheet" href="./css/mine.min.css">
-
+   <!-- <link rel="stylesheet" href="./js/anime.js"> -->
 </head>
 
 
@@ -22,17 +22,21 @@
 
       <nav class="bg-nav container">
 
-<a href="./index.html" class="site-nav__logo">
+         <a href="./index.html" class="site-nav__logo">
 
-<svg width="" height="" class="nav-logo"><use href="./img/sprite.svg#logo"></use></svg>
-<svg width="" height="" class="nav-logo nav-logo__o"><use href="./img/sprite.svg#logo_o"></use></svg></a>
+            <svg width="" height="" class="nav-logo">
+               <use href="./img/sprite.svg#logo"></use>
+            </svg>
+            <svg width="" height="" class="nav-logo nav-logo__o">
+               <use href="./img/sprite.svg#logo_o"></use>
+            </svg></a>
 
          <ul class="site-nav list">
             <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Head</a></li>
             <li class="site-nav__item"><a href="./industry.html" class="site-nav__link ">Industry</a></li>
             <li class="site-nav__item"><a id="up" href="./history.html"
                   class="site-nav__link site-nav__link--current">History</a></li>
-            <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Water</a></li>
+            <li class="site-nav__item"><a href="./water.html" class="site-nav__link">Water</a></li>
          </ul>
 
          <ul class="contact__list list">
@@ -73,7 +77,67 @@
                <div class="history-border"></div>
             </div>
 
-            <div class="gif-container__opacity "> </div>
+
+            <div class="gif-container__history">
+               <svg class="svg-anime" width="1650" height="400" style="outline: 2px dashed #2a2a2a;">
+                
+                  <path id="motionPathCircle" d="M1600,250 Q800,-200 0,250" />
+         
+                  <circle id="movingCircle" r="20">
+                     <animateMotion fill="freeze" dur="10s" repeatCount="1" id="circleAnimation">
+                        <mpath href="#motionPathCircle" />
+                     </animateMotion>
+                  </circle>
+               </svg>
+
+               <svg class="svg-anime" width="1650" height="400" style="outline: 2px dashed #2a2a2a;">
+       
+                  <path id="motionPathSquare" d="M1600,250 Q800,-200 0,250" />
+        
+                  <rect id="movingSquare" width="40" height="40" fill="white">
+                     <animateMotion fill="freeze" dur="10s" repeatCount="1" id="squareAnimation">
+                        <mpath href="#motionPathSquare" />
+                     </animateMotion>
+                  </rect>
+               </svg>
+            </div>
+
+            <script>
+               const circleAnimation = document.getElementById('circleAnimation');
+               const squareAnimation = document.getElementById('squareAnimation');
+
+            
+               circleAnimation.addEventListener('endEvent', function () {
+                  setTimeout(function () {
+                     squareAnimation.beginElement();
+                  }, 10000); 
+               });
+
+
+               squareAnimation.addEventListener('endEvent', function () {
+                  circleAnimation.beginElement();
+               });
+            </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
          </section>
 
 
@@ -93,7 +157,9 @@
             <ul class="cards  list">
                <li class="cards__item ">
 
-                  <svg class="cadr-svg" width="" height=""> <use href=./img/sprite.svg#cadr></use> </svg>
+                  <svg class="cadr-svg" width="" height="">
+                     <use href=./img/sprite.svg#cadr></use>
+                  </svg>
                   <div href="" class="cards__link">
 
 
@@ -135,7 +201,7 @@
                      </div>
 
                      <div class="cards__content">
-                        
+
                         <h2 class="cards__title">Beginning</h2>
                         <p class="cards__text">Urbanization</p>
                      </div>
@@ -144,8 +210,10 @@
 
 
                <li class="cards__item">
-                  
-                  <svg class="cadr-svg" width="" height=""><use href=./img/sprite.svg#cadr></use> </svg>
+
+                  <svg class="cadr-svg" width="" height="">
+                     <use href=./img/sprite.svg#cadr></use>
+                  </svg>
                   <div href="" class="cards__link">
 
                      <div class="cards__thumb">
@@ -193,10 +261,12 @@
                      </div>
                   </div>
                </li>
-               
+
                <li class="cards__item">
-                  <svg class="cadr-svg" width="" height=""><use href=./img/sprite.svg#cadr></use></svg>
-                  
+                  <svg class="cadr-svg" width="" height="">
+                     <use href=./img/sprite.svg#cadr></use>
+                  </svg>
+
                   <div href="" class="cards__link">
 
                      <div class="cards__thumb">
@@ -243,8 +313,10 @@
                </li>
 
                <li class="cards__item">
-                  <svg class="cadr-svg" width="" height=""> <use href=./img/sprite.svg#cadr></use></svg>
-                  
+                  <svg class="cadr-svg" width="" height="">
+                     <use href=./img/sprite.svg#cadr></use>
+                  </svg>
+
                   <div href="" class="cards__link">
 
                      <div class="cards__thumb">
@@ -293,7 +365,9 @@
                </li>
 
                <li class="cards__item">
-                  <svg class="cadr-svg" width="" height=""><use href=./img/sprite.svg#cadr></use></svg>
+                  <svg class="cadr-svg" width="" height="">
+                     <use href=./img/sprite.svg#cadr></use>
+                  </svg>
                   <div href="" class="cards__link">
 
                      <div class="cards__thumb">
@@ -340,7 +414,9 @@
                </li>
 
                <li class="cards__item">
-                  <svg class="cadr-svg" width="" height=""><use href=./img/sprite.svg#cadr></use></svg>
+                  <svg class="cadr-svg" width="" height="">
+                     <use href=./img/sprite.svg#cadr></use>
+                  </svg>
                   <div href="" class="cards__link">
                      <div class="cards__thumb">
                         <picture>
@@ -415,18 +491,23 @@
       <div class="page-footer__address">
 
          <a href="./index.html" class="footer-logo__box">
-            
-<!-- <svg width="80" height="80" class=""> <use href="./img/sprite.svg#logo"></use></svg> -->
 
- <svg width="" height="" class="footer-logo"><use href="./img/sprite.svg#logo"></use></svg>
-<svg width="" height="" class="footer-logo footer-logo__o"><use href="./img/sprite.svg#logo_o"></use></svg>
-</a>        
-        
-<address>
+            <!-- <svg width="80" height="80" class=""> <use href="./img/sprite.svg#logo"></use></svg> -->
+
+            <svg width="" height="" class="footer-logo">
+               <use href="./img/sprite.svg#logo"></use>
+            </svg>
+            <svg width="" height="" class="footer-logo footer-logo__o">
+               <use href="./img/sprite.svg#logo_o"></use>
+            </svg>
+         </a>
+
+         <address>
 
             <ul class="page-footer__list list">
                <li class="page-footer__item"><a class="page-footer__contacts page-footer__contacts--city"
-                     href="https://maps.app.goo.gl/AxT5RmRPUHJdjEPT9" target="_blank" rel="noopener noreferrer">Montreal,
+                     href="https://maps.app.goo.gl/AxT5RmRPUHJdjEPT9" target="_blank"
+                     rel="noopener noreferrer">Montreal,
                      Sherbrooke St.E,1</a>
                </li>
                <li class="page-footer__item"><a href="o.maryan@ukr.net"

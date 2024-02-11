@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>water</title>
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+   <link rel="stylesheet" href="./css/mine.min.css">
+</head>
+
+
+<body>
+   <!-- SITE-NAV -->
+   <header class="pg-header">
+
+      <nav class="bg-nav container">
+
+         <a href="./index.html" class="site-nav__logo">
+
+            <svg width="" height="" class="nav-logo">
+               <use href="./img/sprite.svg#logo"></use>
+            </svg>
+            <svg width="" height="" class="nav-logo nav-logo__o">
+               <use href="./img/sprite.svg#logo_o"></use>
+            </svg></a>
+
+         <ul class="site-nav list">
+            <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Head</a></li>
+            <li class="site-nav__item"><a href="./industry.html" class="site-nav__link ">Industry</a></li>
+            <li class="site-nav__item"><a href="./history.html" class="site-nav__link ">History</a></li>
+            <li class="site-nav__item"><a id="up" href="./water.html"
+                  class="site-nav__link site-nav__link--current">Water</a></li>
+         </ul>
+
+         <ul class="contact__list list">
+            <li class="page__item">
+               <a href="o.maryan@ukr.net" class="page__contacts">
+                  <svg class="contacts__icon" width="16" height="12">
+                     <use href=./img/sprite.svg#envelope></use>
+                  </svg>o.maryan@ukr.net
+               </a>
+            </li>
+
+            <li class="page__item">
+               <a href="tel:+380739909983" class="page__contacts">
+                  <svg class="contacts__icon" width="16" height="12">
+                     <use href=./img/sprite.svg#tel></use>
+                  </svg>+38 073 990 9983
+               </a>
+            </li>
+         </ul>
+      </nav>
+
+      </div>
+   </header>
+
+
+
+
+
+   <main>
+
+
+      <div class="">
+
+         <!-- 
+<svg width="400" height="300" style="outline: 2px dashed #2a2a2a;">
+   <path id="motionPath" d="M100,150 Q200,50 300,150" fill="none" stroke="#2a2a2a" stroke-width="2" />
+   <circle id="movingCircle" r="20" cx="100" cy="150" fill="tomato" stroke="#2a2a2a" stroke-width="2">
+      <animateMotion dur="4s" repeatCount="indefinite">
+         <mpath href="#motionPath" />
+      </animateMotion>
+   </circle>
+</svg> -->
+
+         <svg width="1650" height="400" style="outline: 2px dashed #2a2a2a;">
+            <!-- Траєкторія -->
+            <path id="motionPath" d="M1600,250 Q800,-200 0,250"  />
+
+            <!-- Коло -->
+            <circle id="movingCircle" r="20" >
+               <animateMotion dur="10s" repeatCount="indefinite" id="circleMotion">
+                  <mpath href="#motionPath" />
+               </animateMotion>
+            </circle>
+
+            <!-- Квадрат -->
+            <rect id="movingSquare" >
+               <animateMotion dur="10s" repeatCount="indefinite" id="squareMotion">
+                  <mpath href="#motionPath" />
+               </animateMotion>
+               <!-- Анімація затемнення -->
+       
+            </rect>
+         </svg>
+
+
+
+
+
+
+
+      </div>
+
+
+   </main>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -25,7 +25,7 @@
          display: block;
          padding: 100px 0 0;
          // margin: 0px auto 0px;
-         
+
          border-radius: 5px;
          border-top: 4px solid #2d0126c6;
          border-bottom: 4px solid #fceec5dc;
@@ -91,7 +91,7 @@
          .history-section:hover &,
          .history-section:focus & {
 
-            text-shadow: 0px 0px 1px #ffffff, 2px 2px 2px black ;
+            text-shadow: 0px 0px 1px #ffffff, 2px 2px 2px black;
          }
 
          @media screen and (min-width: 1200px) {
@@ -120,10 +120,56 @@
       }
 
 
-      .gif-container__opacity {
+      .gif-container__history {
          display: block;
-         height: 260px;
+         margin: 0 0 0 -20%;
+         position: relative;
+         height: 400px;
       }
+
+      .svg-anime {
+         position: absolute;
+
+      }
+
+
+      #motionPathCircle {
+         fill: none;
+
+      }
+
+      #motionPathSquare {
+         fill: none;
+  
+      }
+      #movingCircle {
+         fill: #fff;
+         stroke: #9f0303;
+         stroke-width: 4;
+
+      }
+
+
+      #movingSquare {
+         width: 40px;
+         height: 40px;
+         fill: #fff;
+         stroke: #2a2a2a;
+         stroke-width: 2;
+
+
+      }
+
+
+
+
+
+
+
+
+
+
+
 
       .section-histore__end {
 

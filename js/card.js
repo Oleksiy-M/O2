@@ -9,35 +9,11 @@ window.onload = function () {
 }
 
 
-// document.querySelector('.section-card').addEventListener('mouseenter', function () {
-//    const cards = document.querySelectorAll('.cards');
-//    cards.forEach(card => card.classList.add('paused'));
-// });
+// const circleAnimation = document.getElementById('circleAnimation');
+// const squareAnimation = document.getElementById('squareAnimation');
 
-// document.querySelector('.section-card').addEventListener('mouseleave', function () {
-//    const cards = document.querySelectorAll('.cards');
-//    cards.forEach(card => card.classList.remove('paused'));
-// });
-
-
-// var img = document.querySelector('.gif-container img');
-
-// // Додавання класу "paused" при наведенні на елемент
-// img.addEventListener('mouseover', function () {
-//    img.parentElement.classList.add('paused');
-// });
-
-// // Видалення класу "paused" при відведенні від елементу
-// img.addEventListener('mouseout', function () {
-//    img.parentElement.classList.remove('paused');
-// });
-
-// // Додавання класу "paused" при фокусі на елемент
-// img.addEventListener('focus', function () {
-//    img.parentElement.classList.add('paused');
-// });
-
-// // Видалення класу "paused" при відведенні фокусу від елементу
-// img.addEventListener('blur', function () {
-//    img.parentElement.classList.remove('paused');
+// circleAnimation.addEventListener('endEvent', function () {
+//    setTimeout(function () {
+//       squareAnimation.beginElement();
+//    }, 10000); // 10 секунд затримки
 // });
