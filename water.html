@@ -64,25 +64,25 @@
 
    <main>
 
-            <div class="container__history">
-            
-            
-               <svg class="svg__anime">
-                  <!-- Коло -->
-                  <circle id="circle" cx="900" cy="200" r="30" viewBox="0 -1000 1400 800">
-                     <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="90 700 900"
-                        to="-270 800 900" dur="30s" repeatCount="indefinite" />
-                  </circle>
-               </svg>
-               <!-- Півколо -->
-               <svg class="svg__anime" viewBox="0 -1000 1400 800">
-                  <path id="semicircle" d="M20,20 A 30,30 0 0 0 40,70 A 30,30 0 1 1 10,20">
-                     <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 700 -150"
-                        to="-360 700 -150" dur="30s" repeatCount="indefinite" />
-                  </path>
-               </svg>
-            
-            </div>
+      <div class="container__history">
+
+
+         <svg class="svg__anime">
+            <!-- Коло -->
+            <circle id="circle" cx="900" cy="200" r="30" viewBox="0 -1000 1400 800">
+               <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="90 700 900"
+                  to="-270 800 900" dur="30s" repeatCount="indefinite" />
+            </circle>
+         </svg>
+         <!-- Півколо -->
+         <svg class="svg__anime" viewBox="0 -1000 1400 800">
+            <path id="semicircle" d="M20,20 A 30,30 0 0 0 40,70 A 30,30 0 1 1 10,20">
+               <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 700 -150"
+                  to="-360 700 -150" dur="30s" repeatCount="indefinite" />
+            </path>
+         </svg>
+
+      </div>
 
 
 
@@ -92,24 +92,26 @@
 
 
 
-
+<div class="container__history">
 
       <svg class="svg-anime" width="1650" height="400" style="outline: 2px dashed #2a2a2a;">
 
-         <path id="motionPathCircle" d="M1600,250 Q800,-200 0,250" />
+         <path id="motionPathCircle" d="M1600,250 Q800,-200 0,250" fill="none" />
 
-         <circle id="movingCircle" r="20">
+         <circle id="movingCircle" r="20" , style="   fill: #fff;
+   stroke: #9f0303;
+   stroke-width: 4;">
             <animateMotion fill="freeze" dur="10s" repeatCount="1" id="circleAnimation">
                <mpath href="#motionPathCircle" />
             </animateMotion>
          </circle>
-      </svg>
 
-      <svg class="svg-anime" width="1650" height="400" style="outline: 2px dashed #2a2a2a;">
 
-         <path id="motionPathSquare" d="M1600,250 Q800,-200 0,250" />
+         <path id="motionPathSquare" d="M1600,250 Q800,-200 0,250" fill="none" />
 
-         <rect id="movingSquare" width="40" height="40" fill="white">
+         <rect id="movingSquare" width="40" height="40" fill="white" , style="   fill: #fff;
+   stroke: #2a2a2a;
+   stroke-width: 2;">
             <animateMotion fill="freeze" dur="10s" repeatCount="1" id="squareAnimation">
                <mpath href="#motionPathSquare" />
             </animateMotion>
