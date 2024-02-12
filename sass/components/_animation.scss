@@ -1,0 +1,62 @@
+// animation 
+
+
+
+.container__history {
+   display: flex;
+   width: 1600px;
+   height: 400px;
+   margin: 0 -200px 100px;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+.svg__anime {
+   position: absolute;
+   margin: 0px auto;
+   color: #ffe600;
+   width: auto;
+   height: 800px;
+
+ @media screen and (min-width: 768px) {
+       width: 1200px;
+       height: 800px;
+      }
+   // animation-timing-function: cubic-bezier(0, .82, 1, .12);
+   @media screen and (min-width: 1200px) {
+   width: 1600px;
+   height: 800px;
+
+}
+}
+
+#circle {
+   // width: 20px;
+   // height: 20px;
+   // background: #fc0000;
+   // border: 3px solid #4c00ff;
+   // border-radius: 5px;
+   fill: #fce300;
+   stroke-width: 2;
+   stroke: #fd9800;
+   box-shadow: 0px 0px 20px 20px #fce301;
+   // transition-duration: 10s;
+   // animation-duration: 10s;
+
+   .history-section:hover &,
+   .history-section:focus & {
+      animation-play-state: paused;
+   }
+}
+
+
+#semicircle {
+   animation-delay: 10s;
+
+   top: 0px;
+   stroke: #FFA500;
+   stroke-width: 0;
+   fill: #FFD700;
+   // transform: translate(-80% -80%);
+}

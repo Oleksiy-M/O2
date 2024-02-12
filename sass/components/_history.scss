@@ -25,13 +25,19 @@
          display: block;
          padding: 100px 0 0;
          // margin: 0px auto 0px;
+         animation-name: changeBgColor;
+         animation-duration: 30s;
+         animation-timing-function: linear;
+         animation-iteration-count: infinite;
+         transition: animation-play-state 3s ease-out;
 
          border-radius: 5px;
          border-top: 4px solid #2d0126c6;
          border-bottom: 4px solid #fceec5dc;
          background-image: linear-gradient(to bottom,
 
-               #481043cb 0.5%,
+               #48104382 0.5%,
+               #fff3a3a2 90%,
                #ffeaa3f1);
 
          // 5b5335bd cdb86d9a
@@ -43,6 +49,33 @@
 
          }
       }
+
+      @keyframes changeBgColor {
+
+
+         0% {
+            background-color: #0066fe;
+         }
+
+         20% {
+            background-color: #ff5858;
+         }
+
+         65% {
+            background-color: #22002a;
+         }
+
+         95% {
+            background-color: #22002a;
+         }
+
+         100% {
+            background-color: #0066fe;
+         }
+      }
+
+
+
 
 
       .history-hero {
@@ -118,56 +151,6 @@
             // transform: scale(1.08)
          }
       }
-
-
-      .gif-container__history {
-         display: block;
-         margin: 0 0 0 -20%;
-         position: relative;
-         height: 400px;
-      }
-
-      .svg-anime {
-         position: absolute;
-
-      }
-
-
-      #motionPathCircle {
-         fill: none;
-
-      }
-
-      #motionPathSquare {
-         fill: none;
-  
-      }
-      #movingCircle {
-         fill: #fff;
-         stroke: #9f0303;
-         stroke-width: 4;
-
-      }
-
-
-      #movingSquare {
-         width: 40px;
-         height: 40px;
-         fill: #fff;
-         stroke: #2a2a2a;
-         stroke-width: 2;
-
-
-      }
-
-
-
-
-
-
-
-
-
 
 
 

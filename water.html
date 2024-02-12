@@ -64,47 +64,68 @@
 
    <main>
 
+      <div>
 
-      <div class="">
 
-         <!-- 
-<svg width="400" height="300" style="outline: 2px dashed #2a2a2a;">
-   <path id="motionPath" d="M100,150 Q200,50 300,150" fill="none" stroke="#2a2a2a" stroke-width="2" />
-   <circle id="movingCircle" r="20" cx="100" cy="150" fill="tomato" stroke="#2a2a2a" stroke-width="2">
-      <animateMotion dur="4s" repeatCount="indefinite">
-         <mpath href="#motionPath" />
-      </animateMotion>
-   </circle>
-</svg> -->
-
-         <svg width="1650" height="400" style="outline: 2px dashed #2a2a2a;">
-            <!-- Траєкторія -->
-            <path id="motionPath" d="M1600,250 Q800,-200 0,250"  />
-
-            <!-- Коло -->
-            <circle id="movingCircle" r="20" >
-               <animateMotion dur="10s" repeatCount="indefinite" id="circleMotion">
-                  <mpath href="#motionPath" />
-               </animateMotion>
-            </circle>
-
-            <!-- Квадрат -->
-            <rect id="movingSquare" >
-               <animateMotion dur="10s" repeatCount="indefinite" id="squareMotion">
-                  <mpath href="#motionPath" />
-               </animateMotion>
-               <!-- Анімація затемнення -->
-       
-            </rect>
+         <svg class="" viewBox="0 -800 1600 1800">
+            <path id="semicircle" d="M20,20 A 30,30 0 0 0 40,70 A 30,30 0 1 1 20,20">
+               <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 400 0"
+                  to="-360 400 0" dur="30s" repeatCount="indefinite" />
+            </path>
          </svg>
 
-
-
-
-
-
-
       </div>
+
+
+
+
+
+
+
+
+
+
+
+      <svg class="svg-anime" width="1650" height="400" style="outline: 2px dashed #2a2a2a;">
+
+         <path id="motionPathCircle" d="M1600,250 Q800,-200 0,250" />
+
+         <circle id="movingCircle" r="20">
+            <animateMotion fill="freeze" dur="10s" repeatCount="1" id="circleAnimation">
+               <mpath href="#motionPathCircle" />
+            </animateMotion>
+         </circle>
+      </svg>
+
+      <svg class="svg-anime" width="1650" height="400" style="outline: 2px dashed #2a2a2a;">
+
+         <path id="motionPathSquare" d="M1600,250 Q800,-200 0,250" />
+
+         <rect id="movingSquare" width="40" height="40" fill="white">
+            <animateMotion fill="freeze" dur="10s" repeatCount="1" id="squareAnimation">
+               <mpath href="#motionPathSquare" />
+            </animateMotion>
+         </rect>
+      </svg>
+      </div>
+
+      <script>
+         const circleAnimation = document.getElementById('circleAnimation');
+         const squareAnimation = document.getElementById('squareAnimation');
+
+
+         circleAnimation.addEventListener('endEvent', function () {
+            setTimeout(function () {
+               squareAnimation.beginElement();
+            }, 10000);
+         });
+
+
+         squareAnimation.addEventListener('endEvent', function () {
+            circleAnimation.beginElement();
+         });
+      </script>
+
 
 
    </main>

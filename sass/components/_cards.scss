@@ -339,10 +339,10 @@
    // animation-timing-function: cubic-bezier(0, .82, 1, .12);
    transform: translateY(-265px);
 
-   .section-card:hover &,
-   .section-card:focus & {
-      animation-play-state: paused;
-   }
+   // .section-card:hover &,
+   // .section-card:focus & {
+   //    animation-play-state: paused;
+   // }
 
    @media screen and (min-width: 768px) {
       margin: 0px 0px 0 140px;

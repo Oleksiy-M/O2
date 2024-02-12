@@ -78,50 +78,27 @@
             </div>
 
 
-            <div class="gif-container__history">
-               <svg class="svg-anime" width="1650" height="400" style="outline: 2px dashed #2a2a2a;">
-                
-                  <path id="motionPathCircle" d="M1600,250 Q800,-200 0,250" />
-         
-                  <circle id="movingCircle" r="20">
-                     <animateMotion fill="freeze" dur="10s" repeatCount="1" id="circleAnimation">
-                        <mpath href="#motionPathCircle" />
-                     </animateMotion>
+
+
+            <div class="container__history">
+
+
+               <svg class="svg__anime">
+                  <!-- Коло -->
+                  <circle id="circle" cx="900" cy="200" r="30">
+                     <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="90 800 900"
+                        to="-270 800 900" dur="30s" repeatCount="indefinite" />
                   </circle>
                </svg>
-
-               <svg class="svg-anime" width="1650" height="400" style="outline: 2px dashed #2a2a2a;">
-       
-                  <path id="motionPathSquare" d="M1600,250 Q800,-200 0,250" />
-        
-                  <rect id="movingSquare" width="40" height="40" fill="white">
-                     <animateMotion fill="freeze" dur="10s" repeatCount="1" id="squareAnimation">
-                        <mpath href="#motionPathSquare" />
-                     </animateMotion>
-                  </rect>
+               <!-- Півколо -->
+               <svg class="svg__anime" viewBox="0 -1000 1600 800">
+                  <path id="semicircle" d="M20,20 A 30,30 0 0 0 40,70 A 30,30 0 1 1 10,20">
+                     <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 800 0"
+                        to="-360 800 0" dur="30s" repeatCount="indefinite" />
+                  </path>
                </svg>
+
             </div>
-
-            <script>
-               const circleAnimation = document.getElementById('circleAnimation');
-               const squareAnimation = document.getElementById('squareAnimation');
-
-            
-               circleAnimation.addEventListener('endEvent', function () {
-                  setTimeout(function () {
-                     squareAnimation.beginElement();
-                  }, 10000); 
-               });
-
-
-               squareAnimation.addEventListener('endEvent', function () {
-                  circleAnimation.beginElement();
-               });
-            </script>
-
-
-
-
 
 
 

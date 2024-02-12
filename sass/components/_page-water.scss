@@ -1,142 +1,44 @@
-// // page water
-
-// /* CSS-стилі */
-// #motionPath {
-//    fill: none;
-//    stroke-width: 1;
-   
-
-// }
-
-// #movingCircle {
-//    fill: #fff;
-//    stroke: #9f0303;
-//    stroke-width: 4;
-//    opacity: 1;
-//    animation: circleOpacity 20s infinite;
-//    /* 10s для кола, 10s для квадрата */
-// }
-
-// #movingSquare {
-//    width: 40px;
-//    height: 40px;
-//    fill: #fff;
-//    stroke: #2a2a2a;
-//    stroke-width: 2;
-//    opacity: 0;
-//    animation: squareOpacity 20s infinite;
-//    /* 10s для квадрата, 10s для кола */
-// }
-
-// @keyframes circleOpacity {
-//    0% {
-//       opacity: 1;
-//    }
-
-//    50% {
-//       opacity: 1;
-//    }
+// page water
 
 
-//    52% {
-//       opacity: 0;
-//    }
 
-//    100% {
-//       opacity: 0;
-//    }
-// }
+.gif-container__history {
+   display: block;
+   margin: 0 0 0 -20%;
+   position: relative;
+   height: 400px;
+}
 
-// @keyframes squareOpacity {
-//    0% {
-//       opacity: 0;
-//    }
+.svg-anime {
+   position: absolute;
 
-//    50% {
-//       opacity: 0;
-//    }
-
-//    55% {
-//       opacity: 1;
-//    }
-
-//    100% {
-//       opacity: 1;
-//    }
-// }
-
-// #movingCircle:hover,
-// #movingCircle:focus,
-// #movingSquare:hover,
-// #movingSquare:focus {
-//    animation-play-state: paused;
-// }
-// transition-duration: 10s;
+}
 
 
-// .container-water {
-//    position: relative;
-//    width: 400px;
-//    height: 400px;
-// }
+#motionPathCircle {
+   fill: none;
 
-// .element-sun {
-//    position: absolute;
-//    width: 50px;
-//    height: 50px;
-//    background-color: blue;
-//    animation: moveElement 5s infinite alternate;
-// }
+}
 
-// @keyframes moveElement {
-//    0% {
-//       left: 0;
-//       top: 50%;
-//    }
+#motionPathSquare {
+   fill: none;
 
-//    100% {
-//       left: calc(100% - 150px);
-//       top: 50%;
-//    }
-// }
+}
 
-// .container-water {
-//    position: relative;
-//    width: 1200px;
-//    height: 1800px;
-//    border: 2px dashed #2a2a2a;
-//    overflow: hidden;
-// }
+#movingCircle {
+   fill: #fff;
+   stroke: #9f0303;
+   stroke-width: 4;
 
-// .element-sun {
-//    width: 20px;
-//    height: 20px;
-//    background-color: tomato;
-//    border-radius: 50%;
-//    position: absolute;
-//    top: 50%;
-//    left: 0;
-//    animation: moveAlongPath 3s linear infinite;
-// }
+}
 
-// @keyframes moveAlongPath {
-//    0% {
-//       transform: translateX(0) translateY(0);
-//    }
 
-//    20% {
-//       transform: translateX(150px) translateY(-100px);
-//    }
-
-//    50% {
-//       transform: translateX(250px) translateY(0);
-//    }
-
-//    75% {
-//       transform: translateX(350px) translateY(100px);
-//    }
-
-//    100% {
-//       transform: translateX(450px) translateY(0);
-//    }
-// }
+#movingSquare {
+   width: 40px;
+   height: 40px;
+   fill: #fff;
+   stroke: #2a2a2a;
+   stroke-width: 2;
+   animation-delay: 10s;
+// transition-delay
+}
