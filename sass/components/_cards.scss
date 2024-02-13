@@ -332,6 +332,16 @@
    // transition: animation-play-state 3s ease-out;
 }
 
+.fon {
+   border-radius: 25px;
+   background-color: #fff;
+   width: 30px;
+   height: 20px;
+   margin: 46px 0 0 50px;
+   z-index: -1;
+   // transform: translateY(-50px);
+   position: absolute;
+}
 
 .section-gif {
    pointer-events: none;
@@ -339,7 +349,7 @@
    margin: 0px 0px 0 20px;
    // animation: moveLeftToRight 90s linear infinite normal;
    // animation-timing-function: cubic-bezier(0, .82, 1, .12);
-   transform: translateY(-265px);
+   transform: translateY(-200px);
 
    // .section-card:hover &,
    // .section-card:focus & {
@@ -348,12 +358,12 @@
 
    @media screen and (min-width: 768px) {
       margin: 0px 0px 0 140px;
-      transform: translateY(-265px);
+      transform: translateY(-200px);
    }
 
    @media screen and (min-width: 1200px) {
       margin: 0px 0px 0 200px;
-      transform: translateY(-265px);
+      transform: translateY(-200px);
    }
 
 
@@ -374,7 +384,7 @@
 .gif-container {
    display: flex;
    justify-content: left;
-   width: 200px;
+   width: 150px;
 
    .section-card:hover &,
    .section-card:focus & {
@@ -386,7 +396,7 @@
 .gifa-container {
    display: none;
    justify-content: left;
-   width: 200px;
+   width: 150px;
 
    .section-card:hover &,
    .section-card:focus & {

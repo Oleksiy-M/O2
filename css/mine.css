@@ -2435,7 +2435,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .history-hero {
-    margin: 0 350px 120px;
+    margin: 0 350px 0px;
   }
 }
 
@@ -2686,29 +2686,39 @@ body {
   }
 }
 
+.fon {
+  border-radius: 25px;
+  background-color: #fff;
+  width: 30px;
+  height: 20px;
+  margin: 46px 0 0 50px;
+  z-index: -1;
+  position: absolute;
+}
+
 .section-gif {
   pointer-events: none;
   position: absolute;
   margin: 0px 0px 0 20px;
-  transform: translateY(-265px);
+  transform: translateY(-200px);
 }
 @media screen and (min-width: 768px) {
   .section-gif {
     margin: 0px 0px 0 140px;
-    transform: translateY(-265px);
+    transform: translateY(-200px);
   }
 }
 @media screen and (min-width: 1200px) {
   .section-gif {
     margin: 0px 0px 0 200px;
-    transform: translateY(-265px);
+    transform: translateY(-200px);
   }
 }
 
 .gif-container {
   display: flex;
   justify-content: left;
-  width: 200px;
+  width: 150px;
 }
 .section-card:hover .gif-container, .section-card:focus .gif-container {
   display: none;
@@ -2717,7 +2727,7 @@ body {
 .gifa-container {
   display: none;
   justify-content: left;
-  width: 200px;
+  width: 150px;
 }
 .section-card:hover .gifa-container, .section-card:focus .gifa-container {
   display: flex;
@@ -2805,45 +2815,67 @@ body {
   height: 400px;
 }
 
-.container__history {
+.container__anime {
   display: flex;
-  width: 1600px;
-  height: 400px;
-  margin: 0 0 100px -200px;
+  height: 600px;
+  margin: 0 0 0px -200px;
   justify-content: center;
-  align-items: center;
+  align-items: top;
   position: relative;
 }
 @media screen and (min-width: 1200px) {
-  .container__history {
+  .container__anime {
     width: 1600px;
     height: 400px;
-    margin: 0 0 100px -200px;
+    margin: 0 0 0px -200px;
   }
 }
 
-.svg__anime {
+.svg-cloudy__anime {
+  margin: 0px 0 0;
+  width: 350px;
+}
+
+.svg-sun {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0px 0 0;
+  height: 150px;
+}
+
+.svg-sun__anime {
   position: absolute;
-  margin: 0px auto;
-  color: #ffe600;
-  width: 1600px;
-  height: 800px;
+  border-radius: 50px;
+  width: 75px;
+  height: 75px;
+  fill: #fcfc1f;
+  box-shadow: 0 0 20px 5px #f26a02, 0 0 100px 45px #faf881, 0 0 40px 15px #f6ff00, 0 0 40px 15px #f6ff00;
+  stroke-width: 0.3px;
 }
 
-#circle {
-  fill: #fce300;
-  stroke-width: 2;
-  stroke: #fd9800;
-  box-shadow: 0px 0px 20px 20px #fce301;
-}
-.history-section:hover #circle, .history-section:focus #circle {
-  animation-play-state: paused;
+.svg-sunny__anime {
+  position: absolute;
+  margin: 0px 0 0;
+  width: 150px;
+  height: 150px;
+  stroke-width: 0.1px;
 }
 
-#semicircle {
-  animation-delay: 10s;
-  top: 0px;
-  stroke: #FFA500;
-  stroke-width: 0;
-  fill: #FFD700;
+.svg-moon__anime {
+  margin: 35px 0 0;
+  border-radius: 40px;
+  width: 80px;
+  height: 80px;
+  stroke-width: 0.1px;
+  stroke: #ff5500;
+  box-shadow: inset 0 0 70px 5px rgba(231, 252, 2, 0.2862745098), inset 0 0 30px 10px rgba(210, 252, 2, 0.5803921569), 0 0 30px 10px rgba(231, 252, 2, 0.4549019608), 0 0 100px 30px rgba(210, 252, 2, 0.7882352941);
+}
+
+.svg-stars__anime {
+  margin: 0px 0 0;
+  width: 500px;
+  stroke-width: 0.5px;
+  stroke: rgb(255, 238, 0);
 }/*# sourceMappingURL=mine.css.map */
