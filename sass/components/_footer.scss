@@ -118,7 +118,8 @@
    .page-footer:hover &,
    .page-footer:focus & {
       box-shadow: inset 0 0 65px 10px #02f4fc61,
-         0 0 50px 10px #fc9c02, 0 0 5px 2px #000305c5,
+         0 0 10px 5px #fc9402, 0 0 40px 5px #fc9802,
+         0 0 5px 2px #000305c5,
          inset 0 0 6px 1px #000000c5;
 
    }

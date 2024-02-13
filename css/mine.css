@@ -163,7 +163,7 @@ body {
     transition-duration: 0.5s;
   }
   .bg-nav:hover .nav-logo, .bg-nav:focus .nav-logo {
-    box-shadow: inset 0 0 35px 5px rgba(252, 185, 2, 0.8196078431), 0 0 5px 2px rgba(54, 39, 0, 0.6392156863), 0 0 30px 5px #fdba00, inset 0 0 10px 6px rgba(252, 185, 2, 0.5176470588);
+    box-shadow: inset 0 0 65px 1px rgba(2, 244, 252, 0.3803921569), 0 0 10px 5px #fc9402, 0 0 5px 2px rgba(0, 3, 5, 0.7725490196), inset 0 0 6px 1px rgba(0, 0, 0, 0.7725490196);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1749,7 +1749,7 @@ body {
   height: 100px;
 }
 .page-footer:hover .footer-logo, .page-footer:focus .footer-logo {
-  box-shadow: inset 0 0 65px 10px rgba(2, 244, 252, 0.3803921569), 0 0 50px 10px #fc9c02, 0 0 5px 2px rgba(0, 3, 5, 0.7725490196), inset 0 0 6px 1px rgba(0, 0, 0, 0.7725490196);
+  box-shadow: inset 0 0 65px 10px rgba(2, 244, 252, 0.3803921569), 0 0 10px 5px #fc9402, 0 0 40px 5px #fc9802, 0 0 5px 2px rgba(0, 3, 5, 0.7725490196), inset 0 0 6px 1px rgba(0, 0, 0, 0.7725490196);
 }
 
 .footer-logo__o {
