@@ -14,7 +14,7 @@
    margin: 0 0 300px 0;
 
    @media screen and (min-width: 768px) {
-      padding-top: 50px;
+      padding: 50px 0 0;
    }
 
    @media screen and (min-width: 1200px) {
@@ -92,7 +92,7 @@
    // border-bottom: 2px solid $Secondary-text-color;
    .section-hero:hover &,
    .section-hero:focus & {
-            text-shadow: 0px 0px 1px #ffffff, 2px 2px 2px black;
+      text-shadow: 0px 0px 1px #ffffff, 2px 2px 2px black;
 
    }
 
@@ -311,7 +311,7 @@
    .impact-box__end:hover &,
    .impact-box__end:focus & {
       font-size: 11px;
-            text-shadow: 0px 0px 1px #ffffff, 2px 2px 2px black;
+      text-shadow: 0px 0px 1px #ffffff, 2px 2px 2px black;
       color: $primary-text-color;
    }
 

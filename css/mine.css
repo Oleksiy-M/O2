@@ -382,6 +382,7 @@ body {
   .section-oxy {
     padding: 150px 0 20px;
     height: 420px;
+    width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/family/family.jpg");
   }
 }
@@ -536,7 +537,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .idustry {
-    padding-top: 50px;
+    padding: 50px 0 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1661,6 +1662,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
     max-width: 1600px;
     height: 250px;
   }
