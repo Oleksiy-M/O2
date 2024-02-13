@@ -1,39 +1,122 @@
 // animation 
 
 
+.box-dirigible {
+   display: flex;
+   justify-content: right;
+   width: 1600px;
+   // height: 150px;
+   position: absolute;
+   margin: 80px 0 0;
+   animation: moveLeftToRight 70s linear infinite normal;
+   // animation-timing-function: cubic-bezier(.38, .4, .64, .39);
+   // animation-delay: 5s;
+   // .section-card:hover &,
+   // .section-card:focus & {
+   //    animation-play-state: paused;
+   // }
+}
+
+.gif-dirigible {
+   // overflow: hidden;
+   z-index: 2;
+
+   width: 250px;
+   height: 150px;
+
+}
+
+
+@keyframes moveLeftToRight {
+   0% {
+      transform: translatex(20vw);
+   }
+
+   100% {
+      transform: translatex(-110vw);
+   }
+}
+
 
 .container__anime {
    display: flex;
    // width: 1600px;
    height: 600px;
-   margin: 0 0 0px -200px;
+   margin: 0 0 0px -100px;
    justify-content: center;
    align-items: top;
    position: relative;
+   // flex-wrap: wrap;
+
 
    @media screen and (min-width: 1200px) {
       width: 1600px;
-      height: 400px;
-      margin: 0 0 0px -200px;
+      height: 450px;
+      margin: 0 0 0px -215px;
+
    }
 }
+
+
+
+
+
+.anime-day {
+   display: flex;
+   position: absolute;
+   width: 700px;
+   height: 300px;
+   justify-content: space-evenly;
+   margin: 0px 0 0 0px;
+
+   animation: moveDaynight 40s linear infinite normal;
+   animation-timing-function: cubic-bezier(0, .44, 1, .18);
+}
+
+
+@keyframes moveDaynight {
+   0% {
+      transform: translatex(150vw);
+   }
+
+   100% {
+      transform: translatex(-300vw);
+   }
+}
+
 
 .svg-cloudy__anime {
    // position: absolute;
    margin: 0px 0 0;
-   width: 350px;
+   width: 200px;
    // animation-timing-function: cubic-bezier(0, .82, 1, .12);
 }
 
 
-.svg-sun {
+.svg-sun__box {
    display: flex;
    justify-content: center;
    align-items: center;
    position: relative;
    margin: 0px 0 0;
    height: 150px;
+   animation-name: spin;
+   animation-duration: 15s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   // animation-timing-function: cubic-bezier(.01, .7, .64, .39);
 }
+
+@keyframes spin {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(-360deg);
+   }
+}
+
 
 .svg-sun__anime {
    position: absolute;
@@ -44,11 +127,12 @@
    fill: #fcfc1f;
    box-shadow:
       0 0 20px 5px #f26a02,
-      0 0 100px 45px #faf881, 0 0 40px 15px #f6ff00, 0 0 40px 15px #f6ff00,
+      0 0 60px 45px #faf881, 0 0 60px 25px #f6ff0063,
+      0 0 40px 15px #f6ff00,
    ;
    stroke-width: 0.3px;
    // stroke: rgb(255, 238, 0);
-   // animation-timing-function: cubic-bezier(0, .82, 1, .12);
+
 }
 
 .svg-sunny__anime {
@@ -62,28 +146,42 @@
    // ;
    stroke-width: 0.1px;
    // stroke: rgb(255, 238, 0);
-   // animation-timing-function: cubic-bezier(0, .82, 1, .12);
 }
 
 
+.anime-night {
+   display: flex;
+   position: relative;
+   width: 700px;
+   justify-content: center;
+   align-items: center;
+   height: 200px;
+   transform: translateX(200vw);
+   animation: moveDaynight 40s linear infinite normal;
+   animation-timing-function: cubic-bezier(0, .44, 1, .18);
+   animation-delay: 20s;
+}
+
 .svg-moon__anime {
-   // position: absolute;
-   margin: 35px 0 0;
+   position: absolute;
+   margin: 0px 0 0;
    border-radius: 40px;
+   // width: 60px;
+   // height: 80px;
    width: 80px;
    height: 80px;
-
    stroke-width: 0.1px;
    stroke: #ff5500;
    box-shadow: inset 0 0 70px 5px #e7fc0249, inset 0 0 30px 10px #d2fc0294,
       0 0 30px 10px #e7fc0274, 0 0 100px 30px #d2fc02c9;
-   // animation-timing-function: cubic-bezier(0, .82, 1, .12);
+   animation-timing-function: cubic-bezier(0, .82, 1, .12);
 }
 
 .svg-stars__anime {
-   // position: absolute;
+   position: absolute;
    margin: 0px 0 0;
    width: 500px;
+   // height: 80px;
    stroke-width: 0.5px;
    stroke: rgb(255, 238, 0);
 

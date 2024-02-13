@@ -26,11 +26,11 @@
          padding: 100px 0 0;
          // margin: 0px auto 0px;
          animation-name: changeBgColor;
-         animation-duration: 30s;
+         animation-duration: 40s;
          animation-timing-function: linear;
          animation-iteration-count: infinite;
          transition: animation-play-state 3s ease-out;
-
+         // animation-delay: 5s;
          border-radius: 5px;
          border-top: 4px solid #2d0126c6;
          border-bottom: 4px solid #fceec5dc;
@@ -57,7 +57,7 @@
             background-color: #0066fe;
          }
 
-         20% {
+         40% {
             background-color: #ff5858;
          }
 
@@ -101,7 +101,7 @@
          }
 
          @media screen and (min-width: 1200px) {
-            margin: 0 350px 0px;
+            margin: 0 350px 50px;
             // margin: 0 auto 100px auto;
          }
       }
