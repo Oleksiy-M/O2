@@ -2422,7 +2422,7 @@ body {
   }
 }
 .history-hero {
-  margin: 0 22px 120px 22px;
+  margin: 0 22px 0px 22px;
   transition-duration: 1s;
   color: #d5d095;
 }
@@ -2432,12 +2432,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .history-hero {
-    margin: 0 200px 120px;
+    margin: 0 200px 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .history-hero {
-    margin: 0 350px 50px;
+    margin: 0 350px 0px;
   }
 }
 
@@ -2553,7 +2553,7 @@ body {
   display: flex;
   text-align: center;
   align-items: center;
-  background-color: rgba(0, 84, 218, 0.6901960784);
+  background-color: rgba(104, 1, 118, 0.6901960784);
   padding: 10px 8px;
   color: #fffdd1;
   font-size: 8px;
@@ -2707,13 +2707,11 @@ body {
 @media screen and (min-width: 768px) {
   .box-gif {
     margin: 0px 0px 0 170px;
-    transform: translateY(-265px);
   }
 }
 @media screen and (min-width: 1200px) {
   .box-gif {
     margin: 0px 0px 0 250px;
-    transform: translateY(-265px);
   }
 }
 
@@ -2813,21 +2811,26 @@ body {
 .box-dirigible {
   display: flex;
   justify-content: right;
-  width: 1600px;
   position: absolute;
-  margin: 80px 0 0;
-  animation: moveLeftToRight 70s linear infinite normal;
+  margin: 100px 0 0;
+  animation: moveLeftToRight 80s linear infinite normal;
 }
 
 .gif-dirigible {
   z-index: 2;
-  width: 250px;
-  height: 150px;
+  width: 150px;
+  height: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .gif-dirigible {
+    width: 200px;
+    height: 150px;
+  }
 }
 
 @keyframes moveLeftToRight {
   0% {
-    transform: translatex(20vw);
+    transform: translatex(100vw);
   }
   100% {
     transform: translatex(-110vw);
@@ -2835,29 +2838,43 @@ body {
 }
 .container__anime {
   display: flex;
-  height: 600px;
-  margin: 0 0 0px -100px;
+  width: auto;
+  height: 500px;
+  padding: 80px 0 0;
+  margin: 0 -15px;
   justify-content: center;
   align-items: top;
   position: relative;
+  overflow: hidden;
+  min-width: 270px;
+}
+@media screen and (min-width: 768px) {
+  .container__anime {
+    height: 450px;
+    margin: 0 -145px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .container__anime {
-    width: 1600px;
     height: 450px;
-    margin: 0 0 0px -215px;
+    margin: 0 -215px;
   }
 }
 
 .anime-day {
   display: flex;
   position: absolute;
-  width: 700px;
   height: 300px;
+  width: 400px;
   justify-content: space-evenly;
   margin: 0px 0 0 0px;
   animation: moveDaynight 40s linear infinite normal;
   animation-timing-function: cubic-bezier(0, 0.44, 1, 0.18);
+}
+@media screen and (min-width: 1200px) {
+  .anime-day {
+    width: 700px;
+  }
 }
 
 @keyframes moveDaynight {
@@ -2870,7 +2887,12 @@ body {
 }
 .svg-cloudy__anime {
   margin: 0px 0 0;
-  width: 200px;
+  width: 100px;
+}
+@media screen and (min-width: 1200px) {
+  .svg-cloudy__anime {
+    width: 200px;
+  }
 }
 
 .svg-sun__box {
@@ -2915,14 +2937,19 @@ body {
 .anime-night {
   display: flex;
   position: relative;
-  width: 700px;
   justify-content: center;
   align-items: center;
+  width: 300px;
   height: 200px;
   transform: translateX(200vw);
   animation: moveDaynight 40s linear infinite normal;
   animation-timing-function: cubic-bezier(0, 0.44, 1, 0.18);
   animation-delay: 20s;
+}
+@media screen and (min-width: 1200px) {
+  .anime-night {
+    width: 700px;
+  }
 }
 
 .svg-moon__anime {
@@ -2940,7 +2967,12 @@ body {
 .svg-stars__anime {
   position: absolute;
   margin: 0px 0 0;
-  width: 500px;
+  width: 350px;
   stroke-width: 0.5px;
   stroke: rgb(255, 238, 0);
+}
+@media screen and (min-width: 1200px) {
+  .svg-stars__anime {
+    width: 500px;
+  }
 }/*# sourceMappingURL=mine.css.map */

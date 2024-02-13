@@ -147,7 +147,7 @@
    display: flex;
    text-align: center;
    align-items: center;
-   background-color: #0054dab0;
+   background-color: #680176b0;
    // overflow: hidden;
    // font-weight: 600;
    padding: 10px 8px;
@@ -358,12 +358,11 @@
 
    @media screen and (min-width: 768px) {
       margin: 0px 0px 0 170px;
-      transform: translateY(-265px);
    }
 
    @media screen and (min-width: 1200px) {
       margin: 0px 0px 0 250px;
-      transform: translateY(-265px);
+
    }
 
 
