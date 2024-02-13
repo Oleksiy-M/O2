@@ -2808,13 +2808,6 @@ body {
     transform: translateX(calc(-100% - 791px));
   }
 }
-.gif-container__history {
-  display: block;
-  margin: 0 0 0 -20%;
-  position: relative;
-  height: 400px;
-}
-
 .box-dirigible {
   display: flex;
   justify-content: right;
