@@ -651,6 +651,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 100px 3px;
+  margin: 0 0 50px;
   border-radius: 5px;
   background-image: linear-gradient(to bottom, #243f6c 0.5%, rgba(21, 1, 62, 0.8549019608) 0.8%, rgba(26, 0, 29, 0.6980392157) 1.1%, rgba(17, 0, 19, 0.8941176471) 99.2%, #000000 5%);
 }
@@ -2821,7 +2822,7 @@ body {
   justify-content: right;
   position: absolute;
   margin: 100px 0 0;
-  animation: moveLeftToRight 80s linear infinite normal;
+  animation: moveLeftToRight 90s linear infinite normal;
 }
 
 .gif-dirigible {
@@ -2841,7 +2842,7 @@ body {
     transform: translatex(15vw);
   }
   100% {
-    transform: translatex(-60vw);
+    transform: translatex(-110vw);
   }
 }
 .container__anime {
@@ -2864,7 +2865,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .container__anime {
-    height: 450px;
+    height: 400px;
     margin: 0 -215px;
   }
 }

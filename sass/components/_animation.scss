@@ -8,7 +8,7 @@
    // height: 150px;
    position: absolute;
    margin: 100px 0 0;
-   animation: moveLeftToRight 80s linear infinite normal;
+   animation: moveLeftToRight 90s linear infinite normal;
    // animation-timing-function: cubic-bezier(.38, .4, .64, .39);
    // animation-delay: 5s;
    // .section-card:hover &,
@@ -39,7 +39,7 @@
    }
 
    100% {
-      transform: translatex(-60vw);
+      transform: translatex(-110vw);
    }
 }
 
@@ -66,7 +66,7 @@
 
    @media screen and (min-width: 1200px) {
       // width: 1600px;
-      height: 450px;
+      height: 400px;
       margin: 0 -215px;
 
    }
