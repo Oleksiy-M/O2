@@ -35,11 +35,11 @@
 
 @keyframes moveLeftToRight {
    0% {
-      transform: translatex(100vw);
+      transform: translatex(60vw);
    }
 
    100% {
-      transform: translatex(-110vw);
+      transform: translatex(-60vw);
    }
 }
 
@@ -84,7 +84,7 @@
    justify-content: space-evenly;
    margin: 0px 0 0 0px;
    animation: moveDaynight 40s linear infinite normal;
-   animation-timing-function: cubic-bezier(0, .44, 1, .18);
+   animation-timing-function: cubic-bezier(.29, .73, 1, -0.18);
 
 
    @media screen and (min-width: 1200px) {
@@ -153,15 +153,53 @@
    width: 75px;
    height: 75px;
    fill: #fcfc1f;
-   box-shadow:
-      0 0 20px 5px #f26a02,
-      0 0 60px 45px #faf881, 0 0 60px 25px #f6ff0063,
-      0 0 40px 15px #f6ff00,
-   ;
+   // animation-name: ;
+   animation: changeLight 40s linear infinite normal;
+   animation-timing-function: cubic-bezier(.21, .53, 1, -0.42);
+   // box-shadow:
+   //    0 0 20px 5px #f26a02,
+   //    0 0 60px 45px #faf881, 0 0 60px 25px #f6ff0063,
+   //    0 0 40px 15px #f6ff00,
+   // ;
    stroke-width: 0.3px;
    // stroke: rgb(255, 238, 0);
-
 }
+
+@keyframes changeLight {
+
+   0% {
+      box-shadow:
+         0 0 20px 5px #f26a02,
+      ;
+   }
+
+
+   25% {
+      box-shadow:
+         0 0 20px 5px #f26a02,
+         0 0 60px 45px #faf881, 0 0 60px 25px #f6ff0063,
+         0 0 40px 15px #f6ff00,
+      ;
+   }
+
+   60% {
+      box-shadow:
+         0 0 20px 5px #f26a02,
+
+      ;
+   }
+
+   100% {
+      box-shadow:
+         0 0 20px 5px #f26a02,
+
+      ;
+   }
+}
+
+
+
+
 
 .svg-sunny__anime {
    position: absolute;
@@ -186,7 +224,7 @@
    height: 200px;
    transform: translateX(200vw);
    animation: moveDaynight 40s linear infinite normal;
-   animation-timing-function: cubic-bezier(0, .44, 1, .18);
+   animation-timing-function: cubic-bezier(.29, .73, 1, -0.18);
    animation-delay: 20s;
 
    @media screen and (min-width: 1200px) {
@@ -205,10 +243,51 @@
    height: 80px;
    stroke-width: 0.1px;
    stroke: #ff5500;
-   box-shadow: inset 0 0 70px 5px #e7fc0249, inset 0 0 30px 10px #d2fc0294,
-      0 0 30px 10px #e7fc0274, 0 0 100px 30px #d2fc02c9;
-   animation-timing-function: cubic-bezier(0, .82, 1, .12);
+
+   animation: changeMoonLight 40s linear infinite normal;
+   animation-timing-function: cubic-bezier(.21, .53, 1, -0.42);
+   animation-delay: 20s;
+   // box-shadow: inset 0 0 70px 5px #e7fc0249, inset 0 0 30px 10px #d2fc0294,
+   //    0 0 30px 10px #e7fc0274, 0 0 100px 30px #d2fc02c9;
+   // animation-timing-function: cubic-bezier(0, .82, 1, .12);
 }
+
+
+@keyframes changeMoonLight {
+
+   0% {
+      box-shadow:
+         inset 0 0 70px 5px #e7fc0249,
+         inset 0 0 30px 10px #d2fc0294,
+         0 0 30px 10px #e7fc0298,
+      ;
+   }
+
+
+   25% {
+      box-shadow: inset 0 0 70px 5px #e7fc0249,
+         inset 0 0 40px 20px #d2fc0294,
+         0 0 30px 10px #e7fc0274,
+         0 0 100px 30px #d2fc02fe;
+   }
+
+   60% {
+      box-shadow: inset 0 0 70px 5px #e7fc0249,
+         inset 0 0 30px 10px #d2fc0294,
+         0 0 30px 10px #e7fc02cd;
+   }
+
+
+   100% {
+      box-shadow: inset 0 0 70px 5px #e7fc0249,
+         inset 0 0 30px 10px #d2fc0294,
+
+      ;
+   }
+}
+
+
+
 
 .svg-stars__anime {
    position: absolute;
