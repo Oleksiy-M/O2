@@ -3,11 +3,11 @@
 
 .box-dirigible {
    display: flex;
-   justify-content: center;
-   // width: 1600px;
+   justify-content: right;
+   width: 100vw;
    // height: 150px;
    position: absolute;
-   margin: 100px -50px 0;
+   margin: 100px 0px 0;
    animation: moveLeftToRight 90s linear infinite normal;
    // animation-timing-function: cubic-bezier(.38, .4, .64, .39);
    // animation-delay: 5s;
@@ -186,7 +186,7 @@
    }
 
 
-   25% {
+   20% {
       box-shadow:
          0 0 20px 5px #f26a02,
          0 0 60px 45px #faf881, 0 0 60px 25px #f6ff0063,

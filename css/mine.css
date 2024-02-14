@@ -2819,9 +2819,10 @@ body {
 }
 .box-dirigible {
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  width: 100vw;
   position: absolute;
-  margin: 100px -50px 0;
+  margin: 100px 0px 0;
   animation: moveLeftToRight 90s linear infinite normal;
 }
 
@@ -2940,7 +2941,7 @@ body {
   0% {
     box-shadow: 0 0 20px 5px #f26a02;
   }
-  25% {
+  20% {
     box-shadow: 0 0 20px 5px #f26a02, 0 0 60px 45px #faf881, 0 0 60px 25px rgba(246, 255, 0, 0.3882352941), 0 0 40px 15px #f6ff00;
   }
   65% {
