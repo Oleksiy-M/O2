@@ -7,7 +7,7 @@
    // width: 1600px;
    // height: 150px;
    position: absolute;
-   margin: 100px 0 0;
+   margin: 100px -50px 0;
    animation: moveLeftToRight 90s linear infinite normal;
    // animation-timing-function: cubic-bezier(.38, .4, .64, .39);
    // animation-delay: 5s;
@@ -49,7 +49,7 @@
    width: auto;
    height: 400px;
    padding: 80px 0 0;
-   margin: 0 -15px;
+   margin: 0 -100px;
    justify-content: right;
    align-items: top;
    position: relative;
