@@ -2389,9 +2389,9 @@ body {
   padding: 100px 0 0;
   animation: changeBgColor 40s linear infinite normal;
   border-radius: 5px;
-  border-top: 4px solid rgba(45, 1, 38, 0.7764705882);
+  border-top: 4px solid rgba(45, 1, 38, 0.5529411765);
   border-bottom: 4px solid rgba(252, 238, 197, 0.862745098);
-  background-image: linear-gradient(to bottom, rgba(72, 16, 67, 0.5098039216) 0.5%, rgba(255, 243, 163, 0.6352941176) 90%, rgba(255, 234, 163, 0.8156862745));
+  background-image: linear-gradient(to bottom, rgba(72, 16, 67, 0.5098039216) 0.5%, rgba(255, 243, 163, 0.6352941176) 90%, rgba(255, 234, 163, 0.6352941176));
 }
 @media screen and (min-width: 768px) {
   .history-section {
@@ -2402,19 +2402,22 @@ body {
 
 @keyframes changeBgColor {
   0% {
-    background-color: #012964;
+    background-color: rgba(0, 71, 178, 0.9058823529);
   }
-  35% {
-    background-color: #ff5858;
+  20% {
+    background-color: rgba(255, 88, 88, 0.8745098039);
   }
   70% {
-    background-color: #22002a;
+    background-color: rgba(27, 0, 32, 0.9058823529);
   }
   95% {
-    background-color: #22002a;
+    background-color: rgba(27, 0, 32, 0.9215686275);
+  }
+  99% {
+    background-color: rgba(0, 37, 92, 0.7921568627);
   }
   100% {
-    background-color: #012964;
+    background-color: rgba(0, 59, 147, 0.9058823529);
   }
 }
 .history-hero {
@@ -2687,9 +2690,9 @@ body {
 .fon {
   border-radius: 25px;
   background-color: #fff;
-  width: 30px;
-  height: 50px;
-  margin: 31px 0 0 71px;
+  width: 20px;
+  height: 40px;
+  margin: 26px 0 0 55px;
   z-index: -1;
   position: absolute;
 }
@@ -2697,24 +2700,33 @@ body {
 .box-gif {
   pointer-events: none;
   position: absolute;
-  margin: 0px 0px 0 25px;
-  transform: translateY(-265px);
+  margin: -200px 0px 0 25px;
+  animation: movegif 30s;
+  animation-timing-function: cubic-bezier(0.39, 1.41, 0.6, 1);
 }
 @media screen and (min-width: 768px) {
   .box-gif {
-    margin: 0px 0px 0 170px;
+    margin: -200px 0px 0 170px;
   }
 }
 @media screen and (min-width: 1200px) {
   .box-gif {
-    margin: 0px 0px 0 250px;
+    margin: -200px 0px 0 250px;
   }
 }
 
+@keyframes movegif {
+  0% {
+    transform: translatex(-30vw);
+  }
+  100% {
+    transform: translatex(0vw);
+  }
+}
 .gif-container__move {
   display: flex;
   justify-content: left;
-  width: 200px;
+  width: 150px;
 }
 .section-card:hover .gif-container__move, .section-card:focus .gif-container__move {
   display: none;
@@ -2723,7 +2735,7 @@ body {
 .gif-container__stop {
   display: none;
   justify-content: left;
-  width: 200px;
+  width: 150px;
 }
 .section-card:hover .gif-container__stop, .section-card:focus .gif-container__stop {
   display: flex;
@@ -2826,7 +2838,7 @@ body {
 
 @keyframes moveLeftToRight {
   0% {
-    transform: translatex(60vw);
+    transform: translatex(15vw);
   }
   100% {
     transform: translatex(-60vw);
@@ -2835,18 +2847,18 @@ body {
 .container__anime {
   display: flex;
   width: auto;
-  height: 500px;
+  height: 400px;
   padding: 80px 0 0;
   margin: 0 -15px;
-  justify-content: center;
+  justify-content: right;
   align-items: top;
   position: relative;
   overflow: hidden;
-  min-width: 270px;
+  min-width: 260px;
 }
 @media screen and (min-width: 768px) {
   .container__anime {
-    height: 450px;
+    height: 400px;
     margin: 0 -145px;
   }
 }
@@ -2865,7 +2877,7 @@ body {
   justify-content: space-evenly;
   margin: 0px 0 0 0px;
   animation: moveDaynight 40s linear infinite normal;
-  animation-timing-function: cubic-bezier(0.29, 0.73, 1, -0.18);
+  animation-timing-function: cubic-bezier(0, 0.34, 1, -0.12);
 }
 @media screen and (min-width: 1200px) {
   .anime-day {
@@ -2875,10 +2887,10 @@ body {
 
 @keyframes moveDaynight {
   0% {
-    transform: translatex(150vw);
+    transform: translatex(40vw);
   }
   100% {
-    transform: translatex(-300vw);
+    transform: translatex(-350vw);
   }
 }
 .svg-cloudy__anime {
@@ -2930,7 +2942,7 @@ body {
   25% {
     box-shadow: 0 0 20px 5px #f26a02, 0 0 60px 45px #faf881, 0 0 60px 25px rgba(246, 255, 0, 0.3882352941), 0 0 40px 15px #f6ff00;
   }
-  60% {
+  65% {
     box-shadow: 0 0 20px 5px #f26a02;
   }
   100% {
@@ -2954,7 +2966,7 @@ body {
   height: 200px;
   transform: translateX(200vw);
   animation: moveDaynight 40s linear infinite normal;
-  animation-timing-function: cubic-bezier(0.29, 0.73, 1, -0.18);
+  animation-timing-function: cubic-bezier(0, 0.34, 1, -0.12);
   animation-delay: 20s;
 }
 @media screen and (min-width: 1200px) {

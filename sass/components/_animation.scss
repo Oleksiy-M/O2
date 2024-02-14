@@ -35,7 +35,7 @@
 
 @keyframes moveLeftToRight {
    0% {
-      transform: translatex(60vw);
+      transform: translatex(15vw);
    }
 
    100% {
@@ -47,19 +47,19 @@
 .container__anime {
    display: flex;
    width: auto;
-   height: 500px;
+   height: 400px;
    padding: 80px 0 0;
    margin: 0 -15px;
-   justify-content: center;
+   justify-content: right;
    align-items: top;
    position: relative;
    // flex-wrap: wrap;
    overflow: hidden;
-   min-width: 270px;
+   min-width: 260px;
 
    @media screen and (min-width: 768px) {
       // width: 100px;
-      height: 450px;
+      height: 400px;
       margin: 0 -145px;
 
    }
@@ -84,8 +84,10 @@
    justify-content: space-evenly;
    margin: 0px 0 0 0px;
    animation: moveDaynight 40s linear infinite normal;
-   animation-timing-function: cubic-bezier(.29, .73, 1, -0.18);
 
+   animation-timing-function:
+      cubic-bezier(0, .34, 1, -0.12);
+   // animation-timing-function: cubic-bezier(.29, .73, 1, -0.18);
 
    @media screen and (min-width: 1200px) {
       width: 700px;
@@ -97,13 +99,23 @@
 
 @keyframes moveDaynight {
    0% {
-      transform: translatex(150vw);
+      transform: translatex(40vw);
    }
 
    100% {
-      transform: translatex(-300vw);
+      transform: translatex(-350vw);
    }
 }
+
+// @keyframes moveDaynight {
+//    0% {
+//       transform: translatex(145vw);
+//    }
+
+//    100% {
+//       transform: translatex(-300vw);
+//    }
+// }
 
 
 .svg-cloudy__anime {
@@ -182,7 +194,7 @@
       ;
    }
 
-   60% {
+   65% {
       box-shadow:
          0 0 20px 5px #f26a02,
 
@@ -224,7 +236,8 @@
    height: 200px;
    transform: translateX(200vw);
    animation: moveDaynight 40s linear infinite normal;
-   animation-timing-function: cubic-bezier(.29, .73, 1, -0.18);
+   animation-timing-function:
+      cubic-bezier(0, .34, 1, -0.12);
    animation-delay: 20s;
 
    @media screen and (min-width: 1200px) {

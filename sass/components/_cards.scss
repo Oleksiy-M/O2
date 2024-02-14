@@ -335,9 +335,9 @@
 .fon {
    border-radius: 25px;
    background-color: #fff;
-   width: 30px;
-   height: 50px;
-   margin: 31px 0 0 71px;
+   width: 20px;
+   height: 40px;
+   margin: 26px 0 0 55px;
    z-index: -1;
    // transform: translateY(-50px);
    position: absolute;
@@ -346,22 +346,22 @@
 .box-gif {
    pointer-events: none;
    position: absolute;
-   margin: 0px 0px 0 25px;
-   // animation: moveLeftToRight 90s linear infinite normal;
-   // animation-timing-function: cubic-bezier(0, .82, 1, .12);
-   transform: translateY(-265px);
-
+   margin: -200px 0px 0 25px;
+   animation: movegif 30s;
+   animation-timing-function: cubic-bezier(.39, 1.41, .6, 1);
+   // transform: translateY(-265px);
+   // width: 350px;
    // .section-card:hover &,
    // .section-card:focus & {
    //    animation-play-state: paused;
    // }
 
    @media screen and (min-width: 768px) {
-      margin: 0px 0px 0 170px;
+      margin: -200px 0px 0 170px;
    }
 
    @media screen and (min-width: 1200px) {
-      margin: 0px 0px 0 250px;
+      margin: -200px 0px 0 250px;
 
    }
 
@@ -369,21 +369,21 @@
 }
 
 
-// @keyframes moveLeftToRight {
-//    0% {
-//       transform: translatex(0);
-//    }
+@keyframes movegif {
+   0% {
+      transform: translatex(-30vw);
+   }
 
-//    100% {
-//       transform: translatex(calc(100vw + 220px));
-//    }
-// }
+   100% {
+      transform: translatex(0vw);
+   }
+}
 
 
 .gif-container__move {
    display: flex;
    justify-content: left;
-   width: 200px;
+   width: 150px;
 
    .section-card:hover &,
    .section-card:focus & {
@@ -395,7 +395,7 @@
 .gif-container__stop {
    display: none;
    justify-content: left;
-   width: 200px;
+   width: 150px;
 
    .section-card:hover &,
    .section-card:focus & {
