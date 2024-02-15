@@ -2882,7 +2882,7 @@ body {
   display: flex;
   position: absolute;
   height: 300px;
-  width: 310px;
+  width: 305px;
   justify-content: space-evenly;
   margin: 0px -50px;
   animation: moveDaynight 40s linear infinite normal;
@@ -2890,13 +2890,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .anime-day {
-    width: 680px;
+    width: 550px;
   }
 }
 @media screen and (min-width: 1200px) {
   .anime-day {
     margin: 0;
-    width: 650px;
+    width: 700px;
   }
 }
 
@@ -2977,7 +2977,7 @@ body {
   position: relative;
   justify-content: center;
   align-items: center;
-  width: 310px;
+  width: 305px;
   height: 200px;
   margin: 0px -50px;
   transform: translateX(200vw);
@@ -2987,13 +2987,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .anime-night {
-    width: 680px;
+    width: 550px;
   }
 }
 @media screen and (min-width: 1200px) {
   .anime-night {
     margin: 0;
-    width: 650px;
+    width: 700px;
   }
 }
 
