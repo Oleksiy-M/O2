@@ -2824,9 +2824,14 @@ body {
   display: flex;
   justify-content: right;
   position: absolute;
-  margin: 100px -100px 0;
+  margin: 100px -15px 0;
   animation: moveLeftToRight 90s linear infinite normal;
-  animation-timing-function: cubic-bezier(0.05, 0.31, 0.16, 0.19);
+  animation-timing-function: cubic-bezier(0, 0.4, 0, 0.26);
+}
+@media screen and (min-width: 768px) {
+  .box-dirigible {
+    margin: 100px -100px 0;
+  }
 }
 
 .gif-dirigible {
@@ -2877,7 +2882,7 @@ body {
   display: flex;
   position: absolute;
   height: 300px;
-  width: 260px;
+  width: 300px;
   justify-content: space-evenly;
   margin: 0px -50px;
   animation: moveDaynight 40s linear infinite normal;
@@ -2885,13 +2890,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .anime-day {
-    width: 650px;
+    width: 680px;
   }
 }
 @media screen and (min-width: 1200px) {
   .anime-day {
     margin: 0;
-    width: 670px;
+    width: 960px;
   }
 }
 
@@ -2900,7 +2905,7 @@ body {
     transform: translatex(200vw);
   }
   100% {
-    transform: translatex(-260vw);
+    transform: translatex(-290vw);
   }
 }
 .svg-cloudy__anime {
@@ -2972,7 +2977,7 @@ body {
   position: relative;
   justify-content: center;
   align-items: center;
-  width: 260px;
+  width: 300px;
   height: 200px;
   margin: 0px -50px;
   transform: translateX(200vw);
@@ -2982,13 +2987,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .anime-night {
-    width: 650px;
+    width: 680px;
   }
 }
 @media screen and (min-width: 1200px) {
   .anime-night {
     margin: 0;
-    width: 670px;
+    width: 960px;
   }
 }
 

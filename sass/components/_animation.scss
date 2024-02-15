@@ -7,15 +7,19 @@
    position: absolute;
    // width: 100vw;
    // height: 150px;
-   margin: 100px -100px 0;
+   margin: 100px -15px 0;
    // overflow: hidden;
    animation: moveLeftToRight 90s linear infinite normal;
-   animation-timing-function: cubic-bezier(.05, .31, .16, .19);
+   animation-timing-function: cubic-bezier(0, .4, 0, .26);
    // animation-delay: 5s;
    // .section-card:hover &,
    // .section-card:focus & {
    //    animation-play-state: paused;
    // }
+
+       @media screen and (min-width: 768px) {
+            margin: 100px -100px 0;
+       }
 }
 
 .gif-dirigible {
@@ -80,7 +84,7 @@
    display: flex;
    position: absolute;
    height: 300px;
-   width: 260px;
+   width: 300px;
    justify-content: space-evenly;
    margin: 0px -50px;
    animation: moveDaynight 40s linear infinite normal;
@@ -90,12 +94,12 @@
 
    // animation-timing-function: cubic-bezier(.29, .73, 1, -0.18);
    @media screen and (min-width: 768px) {
-      width: 650px;
+      width: 680px;
    }
 
    @media screen and (min-width: 1200px) {
       margin: 0;
-      width: 670px;
+      width: 960px;
 
    }
 
@@ -108,19 +112,10 @@
    }
 
    100% {
-      transform: translatex(-260vw);
+      transform: translatex(-290vw);
    }
 }
 
-// @keyframes moveDaynight {
-//    0% {
-//       transform: translatex(145vw);
-//    }
-
-//    100% {
-//       transform: translatex(-300vw);
-//    }
-// }
 
 
 .svg-cloudy__anime {
@@ -237,7 +232,7 @@
    position: relative;
    justify-content: center;
    align-items: center;
-   width: 260px;
+   width: 300px;
    height: 200px;
    margin: 0px -50px;
    transform: translateX(200vw);
@@ -247,12 +242,12 @@
    animation-delay: 20s;
 
    @media screen and (min-width: 768px) {
-      width: 650px;
+      width: 680px;
    }
 
    @media screen and (min-width: 1200px) {
       margin: 0;
-      width: 670px;
+      width: 960px;
 
    }
 }
