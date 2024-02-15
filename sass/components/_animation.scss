@@ -82,7 +82,7 @@
    height: 300px;
    width: 400px;
    justify-content: space-evenly;
-   margin: 0px -110px;
+   margin: 0px 0 0 -100px;
    animation: moveDaynight 40s linear infinite normal;
 
    animation-timing-function:
@@ -237,8 +237,9 @@
    position: relative;
    justify-content: center;
    align-items: center;
-   width: 300px;
+   width: 200px;
    height: 200px;
+   margin: 0px 0px 0 0;
    transform: translateX(200vw);
    animation: moveDaynight 40s linear infinite normal;
    animation-timing-function:
@@ -246,6 +247,7 @@
    animation-delay: 20s;
 
    @media screen and (min-width: 1200px) {
+      margin: 0;
       width: 700px;
 
    }

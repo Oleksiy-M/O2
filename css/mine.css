@@ -2879,7 +2879,7 @@ body {
   height: 300px;
   width: 400px;
   justify-content: space-evenly;
-  margin: 0px -110px;
+  margin: 0px 0 0 -100px;
   animation: moveDaynight 40s linear infinite normal;
   animation-timing-function: cubic-bezier(0.27, 0.84, 0, -0.2);
 }
@@ -2972,8 +2972,9 @@ body {
   position: relative;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  width: 200px;
   height: 200px;
+  margin: 0px 0px 0 0;
   transform: translateX(200vw);
   animation: moveDaynight 40s linear infinite normal;
   animation-timing-function: cubic-bezier(0.27, 0.84, 0, -0.2);
@@ -2981,6 +2982,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .anime-night {
+    margin: 0;
     width: 700px;
   }
 }
