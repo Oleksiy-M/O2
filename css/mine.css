@@ -2392,7 +2392,7 @@ body {
   border-radius: 5px;
   border-top: 4px solid rgba(45, 1, 38, 0.5529411765);
   border-bottom: 4px solid rgba(252, 238, 197, 0.862745098);
-  background-image: linear-gradient(to bottom, rgba(72, 16, 67, 0.5098039216) 10.5%, rgba(255, 243, 163, 0.6352941176) 90%, rgba(255, 234, 163, 0.6352941176));
+  background-image: linear-gradient(to bottom, rgba(72, 16, 67, 0.5098039216) 10.5%, rgba(255, 243, 163, 0.6352941176) 105%, rgba(255, 234, 163, 0.8392156863));
 }
 @media screen and (min-width: 768px) {
   .history-section {
@@ -2405,14 +2405,14 @@ body {
   0% {
     background-color: rgba(0, 71, 178, 0.9058823529);
   }
-  25% {
-    background-color: rgba(255, 88, 88, 0.8745098039);
+  20% {
+    background-color: rgba(251, 126, 104, 0.8745098039);
   }
   50% {
-    background-color: rgba(23, 0, 27, 0.9058823529);
+    background-color: rgba(50, 0, 59, 0.9058823529);
   }
   95% {
-    background-color: rgba(27, 0, 32, 0.9215686275);
+    background-color: rgba(50, 0, 59, 0.9058823529);
   }
   99% {
     background-color: rgba(0, 37, 92, 0.7921568627);
@@ -2863,7 +2863,7 @@ body {
 @media screen and (min-width: 768px) {
   .container__anime {
     height: 400px;
-    margin: 0 -60px;
+    margin: 0px -140px 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2877,21 +2877,21 @@ body {
   display: flex;
   position: absolute;
   height: 300px;
-  width: 400px;
+  width: 260px;
   justify-content: space-evenly;
-  margin: 0px 0 0 -100px;
+  margin: 0px -50px;
   animation: moveDaynight 40s linear infinite normal;
   animation-timing-function: cubic-bezier(0.27, 0.84, 0, -0.2);
 }
 @media screen and (min-width: 768px) {
   .anime-day {
-    margin: 0px 0px;
+    width: 650px;
   }
 }
 @media screen and (min-width: 1200px) {
   .anime-day {
     margin: 0;
-    width: 700px;
+    width: 670px;
   }
 }
 
@@ -2972,18 +2972,23 @@ body {
   position: relative;
   justify-content: center;
   align-items: center;
-  width: 200px;
+  width: 260px;
   height: 200px;
-  margin: 0px 0px 0 0;
+  margin: 0px -50px;
   transform: translateX(200vw);
   animation: moveDaynight 40s linear infinite normal;
   animation-timing-function: cubic-bezier(0.27, 0.84, 0, -0.2);
   animation-delay: 20s;
 }
+@media screen and (min-width: 768px) {
+  .anime-night {
+    width: 650px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .anime-night {
     margin: 0;
-    width: 700px;
+    width: 670px;
   }
 }
 

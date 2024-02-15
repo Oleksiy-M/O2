@@ -60,7 +60,7 @@
    @media screen and (min-width: 768px) {
       // width: 100px;
       height: 400px;
-      margin: 0 -60px;
+      margin: 0px -140px 0px;
 
    }
 
@@ -80,9 +80,9 @@
    display: flex;
    position: absolute;
    height: 300px;
-   width: 400px;
+   width: 260px;
    justify-content: space-evenly;
-   margin: 0px 0 0 -100px;
+   margin: 0px -50px;
    animation: moveDaynight 40s linear infinite normal;
 
    animation-timing-function:
@@ -90,12 +90,12 @@
 
    // animation-timing-function: cubic-bezier(.29, .73, 1, -0.18);
    @media screen and (min-width: 768px) {
-      margin: 0px 0px;
+      width: 650px;
    }
 
    @media screen and (min-width: 1200px) {
       margin: 0;
-      width: 700px;
+      width: 670px;
 
    }
 
@@ -237,18 +237,22 @@
    position: relative;
    justify-content: center;
    align-items: center;
-   width: 200px;
+   width: 260px;
    height: 200px;
-   margin: 0px 0px 0 0;
+   margin: 0px -50px;
    transform: translateX(200vw);
    animation: moveDaynight 40s linear infinite normal;
    animation-timing-function:
       $anime-section;
    animation-delay: 20s;
 
+   @media screen and (min-width: 768px) {
+      width: 650px;
+   }
+
    @media screen and (min-width: 1200px) {
       margin: 0;
-      width: 700px;
+      width: 670px;
 
    }
 }

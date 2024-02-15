@@ -35,8 +35,9 @@
          background-image: linear-gradient(to bottom,
 
                #48104382 10.5%,
-               #fff3a3a2 90%,
-               #ffeaa3a2);
+
+               #fff3a3a2 105%,
+               #ffeaa3d6);
 
          // 5b5335bd cdb86d9a
          @media screen and (min-width: 768px) {
@@ -55,16 +56,16 @@
             background-color: #0047b2e7;
          }
 
-         25% {
-            background-color: #ff5858df;
+         20% {
+            background-color: #fb7e68df;
          }
 
          50% {
-            background-color: #17001be7;
+            background-color: #32003be7;
          }
 
          95% {
-            background-color: #1b0020eb;
+            background-color: #32003be7;
          }
 
          99% {
