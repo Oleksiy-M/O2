@@ -2392,7 +2392,7 @@ body {
   border-radius: 5px;
   border-top: 4px solid rgba(45, 1, 38, 0.5529411765);
   border-bottom: 4px solid rgba(252, 238, 197, 0.862745098);
-  background-image: linear-gradient(to bottom, rgba(72, 16, 67, 0.5098039216) 10.5%, rgba(255, 243, 163, 0.6352941176) 105%, rgba(255, 234, 163, 0.8392156863));
+  background-image: linear-gradient(to bottom, rgba(72, 16, 67, 0.5098039216) 10.5%, rgba(255, 243, 163, 0.8549019608) 105%, rgba(255, 234, 163, 0.8392156863));
 }
 @media screen and (min-width: 768px) {
   .history-section {
@@ -2478,12 +2478,16 @@ body {
 }
 
 .section-histore__end {
-  height: 500px;
+  display: block;
   border-radius: 5px;
   margin: 0 0px 300px;
   border-top: 4px solid rgba(235, 218, 165, 0.862745098);
   border-bottom: 4px solid rgba(34, 1, 28, 0.8392156863);
-  background-image: linear-gradient(to bottom, rgba(205, 184, 109, 0.7960784314) 5%, rgba(72, 16, 67, 0.7960784314));
+  animation: changeauqa 50s infinite normal;
+  background-position: center;
+  width: 1100px;
+  height: 420px;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .section-histore__end {
@@ -2491,6 +2495,24 @@ body {
     margin: 0 auto;
     border-radius: 5px;
   }
+}
+
+@keyframes changeauqa {
+  0% {
+    background-image: linear-gradient(rgba(205, 184, 109, 0.7294117647) 5%, rgba(72, 16, 67, 0.8196078431)), url("../img/hist-aqua/aqua.jpg");
+  }
+  33% {
+    background-image: linear-gradient(rgba(205, 184, 109, 0.7294117647) 5%, rgba(72, 16, 67, 0.8196078431)), url("../img/hist-aqua/aqua1.jpg");
+  }
+  66% {
+    background-image: linear-gradient(rgba(205, 184, 109, 0.7294117647) 5%, rgba(72, 16, 67, 0.8196078431)), url("../img/hist-aqua/aqua2.jpg");
+  }
+  100% {
+    background-image: linear-gradient(rgba(205, 184, 109, 0.7294117647) 5%, rgba(72, 16, 67, 0.8196078431)), url("../img/hist-aqua/aqua3.jpg");
+  }
+}
+.box-aqua {
+  display: block;
 }
 
 .cards__link {
@@ -2848,18 +2870,18 @@ body {
 
 @keyframes moveLeftToRight {
   0% {
-    transform: translatex(110vw);
+    transform: translatex(60vw);
   }
   100% {
-    transform: translatex(-10vw);
+    transform: translatex(-60vw);
   }
 }
 .container__anime {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   position: relative;
   height: 400px;
-  padding: 80px 0 0;
+  padding: 50px 0 0;
   margin: 0 -20px;
   align-items: top;
   overflow: hidden;
@@ -2873,7 +2895,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .container__anime {
-    height: 400px;
+    height: 450px;
     margin: 0 -200px;
   }
 }
@@ -2886,7 +2908,7 @@ body {
   justify-content: space-evenly;
   margin: 0px -50px;
   animation: moveDaynight 40s linear infinite normal;
-  animation-timing-function: cubic-bezier(0.27, 0.84, 0, -0.2);
+  animation-timing-function: cubic-bezier(0.07, 1.09, 0, -0.13);
 }
 @media screen and (min-width: 768px) {
   .anime-day {
@@ -2902,10 +2924,10 @@ body {
 
 @keyframes moveDaynight {
   0% {
-    transform: translatex(180vw);
+    transform: translatex(200vw);
   }
   100% {
-    transform: translatex(-235vw);
+    transform: translatex(-200vw);
   }
 }
 .svg-cloudy__anime {
@@ -2982,7 +3004,7 @@ body {
   margin: 0px -50px;
   transform: translateX(200vw);
   animation: moveDaynight 40s linear infinite normal;
-  animation-timing-function: cubic-bezier(0.27, 0.84, 0, -0.2);
+  animation-timing-function: cubic-bezier(0.07, 1.09, 0, -0.13);
   animation-delay: 20s;
 }
 @media screen and (min-width: 768px) {
@@ -3035,4 +3057,10 @@ body {
   .svg-stars__anime {
     width: 500px;
   }
+}
+
+.aqueduct-bild {
+  display: flex;
+  position: absolute;
+  margin: 290px 0 0 0;
 }/*# sourceMappingURL=mine.css.map */

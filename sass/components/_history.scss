@@ -36,7 +36,7 @@
 
                #48104382 10.5%,
 
-               #fff3a3a2 105%,
+               #fff3a3da 105%,
                #ffeaa3d6);
 
          // 5b5335bd cdb86d9a
@@ -158,18 +158,18 @@
 
 
       .section-histore__end {
-
-         height: 500px;
+         display: block;
+         // height: 500px;
          border-radius: 5px;
          margin: 0 0px 300px;
          border-top: 4px solid #ebdaa5dc;
          border-bottom: 4px solid #22011cd6;
-         background-image: linear-gradient(to bottom,
-
-
-               #cdb86dcb 5%,
-
-               #481043cb);
+         // animation-duration: 10s;
+         animation: changeauqa 50s infinite normal;
+         background-position: center;
+         width: 1100px;
+         height: 420px;
+overflow: hidden;
 
          @media screen and (min-width: 768px) {
             padding: 0px;
@@ -177,4 +177,44 @@
             border-radius: 5px;
 
          }
+      }
+
+
+      @keyframes changeauqa {
+
+
+         0% {
+            background-image:
+               linear-gradient(#cdb86dba 5%,
+                  #481043d1),
+               url("../img/hist-aqua/aqua.jpg");
+         }
+
+         33% {
+            background-image:
+               linear-gradient(#cdb86dba 5%,
+                  #481043d1),
+               url("../img/hist-aqua/aqua1.jpg");
+         }
+
+         66% {
+            background-image:
+               linear-gradient(#cdb86dba 5%,
+                  #481043d1),
+               url("../img/hist-aqua/aqua2.jpg");
+         }
+
+         100% {
+            background-image:
+               linear-gradient(#cdb86dba 5%,
+                  #481043d1),
+               url("../img/hist-aqua/aqua3.jpg");
+         }
+
+      }
+
+
+
+      .box-aqua {
+         display: block;
       }
