@@ -2392,7 +2392,7 @@ body {
   border-radius: 5px;
   border-top: 4px solid rgba(45, 1, 38, 0.5529411765);
   border-bottom: 4px solid rgba(252, 238, 197, 0.862745098);
-  background-image: linear-gradient(to bottom, rgba(72, 16, 67, 0.5098039216) 0.5%, rgba(255, 243, 163, 0.6352941176) 90%, rgba(255, 234, 163, 0.6352941176));
+  background-image: linear-gradient(to bottom, rgba(72, 16, 67, 0.5098039216) 10.5%, rgba(255, 243, 163, 0.6352941176) 90%, rgba(255, 234, 163, 0.6352941176));
 }
 @media screen and (min-width: 768px) {
   .history-section {
@@ -2405,11 +2405,11 @@ body {
   0% {
     background-color: rgba(0, 71, 178, 0.9058823529);
   }
-  20% {
+  25% {
     background-color: rgba(255, 88, 88, 0.8745098039);
   }
-  70% {
-    background-color: rgba(27, 0, 32, 0.9058823529);
+  50% {
+    background-color: rgba(23, 0, 27, 0.9058823529);
   }
   95% {
     background-color: rgba(27, 0, 32, 0.9215686275);
@@ -2418,7 +2418,7 @@ body {
     background-color: rgba(0, 37, 92, 0.7921568627);
   }
   100% {
-    background-color: rgba(0, 59, 147, 0.9058823529);
+    background-color: rgba(0, 71, 178, 0.9058823529);
   }
 }
 .history-hero {
@@ -2691,9 +2691,9 @@ body {
 .fon {
   border-radius: 25px;
   background-color: #fff;
-  width: 20px;
-  height: 40px;
-  margin: 26px 0 0 55px;
+  width: 25px;
+  height: 35px;
+  margin: -175px 0 0 51px;
   z-index: -1;
   position: absolute;
 }
@@ -2704,6 +2704,9 @@ body {
   margin: -200px 0px 0 25px;
   animation: movegif 30s;
   animation-timing-function: cubic-bezier(0.39, 1.41, 0.6, 1);
+}
+.section-card:hover .box-gif, .section-card:focus .box-gif {
+  animation-play-state: paused;
 }
 @media screen and (min-width: 768px) {
   .box-gif {
@@ -2820,10 +2823,10 @@ body {
 .box-dirigible {
   display: flex;
   justify-content: right;
-  width: 100vw;
   position: absolute;
-  margin: 100px 0px 0;
+  margin: 100px -100px 0;
   animation: moveLeftToRight 90s linear infinite normal;
+  animation-timing-function: cubic-bezier(0.05, 0.31, 0.16, 0.19);
 }
 
 .gif-dirigible {
@@ -2840,34 +2843,33 @@ body {
 
 @keyframes moveLeftToRight {
   0% {
-    transform: translatex(15vw);
+    transform: translatex(110vw);
   }
   100% {
-    transform: translatex(-110vw);
+    transform: translatex(-10vw);
   }
 }
 .container__anime {
   display: flex;
-  width: auto;
+  justify-content: left;
+  position: relative;
   height: 400px;
   padding: 80px 0 0;
-  margin: 0 -100px;
-  justify-content: right;
+  margin: 0 -15px;
   align-items: top;
-  position: relative;
   overflow: hidden;
   min-width: 260px;
 }
 @media screen and (min-width: 768px) {
   .container__anime {
     height: 400px;
-    margin: 0 -145px;
+    margin: 0 -60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container__anime {
     height: 400px;
-    margin: 0 -215px;
+    margin: 0 -200px;
   }
 }
 
@@ -2877,22 +2879,28 @@ body {
   height: 300px;
   width: 400px;
   justify-content: space-evenly;
-  margin: 0px 0 0 0px;
+  margin: 0px -110px;
   animation: moveDaynight 40s linear infinite normal;
-  animation-timing-function: cubic-bezier(0, 0.34, 1, -0.12);
+  animation-timing-function: cubic-bezier(0.27, 0.84, 0, -0.2);
+}
+@media screen and (min-width: 768px) {
+  .anime-day {
+    margin: 0px 0px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .anime-day {
+    margin: 0;
     width: 700px;
   }
 }
 
 @keyframes moveDaynight {
   0% {
-    transform: translatex(40vw);
+    transform: translatex(200vw);
   }
   100% {
-    transform: translatex(-350vw);
+    transform: translatex(-260vw);
   }
 }
 .svg-cloudy__anime {
@@ -2941,10 +2949,10 @@ body {
   0% {
     box-shadow: 0 0 20px 5px #f26a02;
   }
-  20% {
+  15% {
     box-shadow: 0 0 20px 5px #f26a02, 0 0 60px 45px #faf881, 0 0 60px 25px rgba(246, 255, 0, 0.3882352941), 0 0 40px 15px #f6ff00;
   }
-  65% {
+  45% {
     box-shadow: 0 0 20px 5px #f26a02;
   }
   100% {
@@ -2968,7 +2976,7 @@ body {
   height: 200px;
   transform: translateX(200vw);
   animation: moveDaynight 40s linear infinite normal;
-  animation-timing-function: cubic-bezier(0, 0.34, 1, -0.12);
+  animation-timing-function: cubic-bezier(0.27, 0.84, 0, -0.2);
   animation-delay: 20s;
 }
 @media screen and (min-width: 1200px) {
@@ -2994,10 +3002,10 @@ body {
   0% {
     box-shadow: inset 0 0 70px 5px rgba(231, 252, 2, 0.2862745098), inset 0 0 30px 10px rgba(210, 252, 2, 0.5803921569), 0 0 30px 10px rgba(231, 252, 2, 0.5960784314);
   }
-  25% {
+  15% {
     box-shadow: inset 0 0 70px 5px rgba(231, 252, 2, 0.2862745098), inset 0 0 40px 20px rgba(210, 252, 2, 0.5803921569), 0 0 30px 10px rgba(231, 252, 2, 0.4549019608), 0 0 100px 30px rgba(210, 252, 2, 0.9960784314);
   }
-  60% {
+  45% {
     box-shadow: inset 0 0 70px 5px rgba(231, 252, 2, 0.2862745098), inset 0 0 30px 10px rgba(210, 252, 2, 0.5803921569), 0 0 30px 10px rgba(231, 252, 2, 0.8039215686);
   }
   100% {
