@@ -2890,7 +2890,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .anime-day {
-    width: 680px;
+    width: 710px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2902,10 +2902,10 @@ body {
 
 @keyframes moveDaynight {
   0% {
-    transform: translatex(200vw);
+    transform: translatex(180vw);
   }
   100% {
-    transform: translatex(-290vw);
+    transform: translatex(-255vw);
   }
 }
 .svg-cloudy__anime {
@@ -2987,7 +2987,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .anime-night {
-    width: 680px;
+    width: 710px;
   }
 }
 @media screen and (min-width: 1200px) {

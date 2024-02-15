@@ -17,9 +17,9 @@
    //    animation-play-state: paused;
    // }
 
-       @media screen and (min-width: 768px) {
-            margin: 100px -100px 0;
-       }
+   @media screen and (min-width: 768px) {
+      margin: 100px -100px 0;
+   }
 }
 
 .gif-dirigible {
@@ -94,7 +94,7 @@
 
    // animation-timing-function: cubic-bezier(.29, .73, 1, -0.18);
    @media screen and (min-width: 768px) {
-      width: 680px;
+      width: 710px;
    }
 
    @media screen and (min-width: 1200px) {
@@ -108,11 +108,11 @@
 
 @keyframes moveDaynight {
    0% {
-      transform: translatex(200vw);
+      transform: translatex(180vw);
    }
 
    100% {
-      transform: translatex(-290vw);
+      transform: translatex(-255vw);
    }
 }
 
@@ -242,7 +242,7 @@
    animation-delay: 20s;
 
    @media screen and (min-width: 768px) {
-      width: 680px;
+      width: 710px;
    }
 
    @media screen and (min-width: 1200px) {
