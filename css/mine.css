@@ -2860,7 +2860,7 @@ body {
   position: relative;
   height: 400px;
   padding: 80px 0 0;
-  margin: 0 -15px;
+  margin: 0 -20px;
   align-items: top;
   overflow: hidden;
   min-width: 260px;
@@ -2882,7 +2882,7 @@ body {
   display: flex;
   position: absolute;
   height: 300px;
-  width: 300px;
+  width: 310px;
   justify-content: space-evenly;
   margin: 0px -50px;
   animation: moveDaynight 40s linear infinite normal;
@@ -2890,13 +2890,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .anime-day {
-    width: 710px;
+    width: 680px;
   }
 }
 @media screen and (min-width: 1200px) {
   .anime-day {
     margin: 0;
-    width: 960px;
+    width: 650px;
   }
 }
 
@@ -2905,7 +2905,7 @@ body {
     transform: translatex(180vw);
   }
   100% {
-    transform: translatex(-255vw);
+    transform: translatex(-235vw);
   }
 }
 .svg-cloudy__anime {
@@ -2977,7 +2977,7 @@ body {
   position: relative;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  width: 310px;
   height: 200px;
   margin: 0px -50px;
   transform: translateX(200vw);
@@ -2987,13 +2987,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .anime-night {
-    width: 710px;
+    width: 680px;
   }
 }
 @media screen and (min-width: 1200px) {
   .anime-night {
     margin: 0;
-    width: 960px;
+    width: 650px;
   }
 }
 
