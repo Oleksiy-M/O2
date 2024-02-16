@@ -59,7 +59,7 @@
    position: relative;
    height: 350px;
    padding: 50px 0 0;
-   margin: 0 -20px;
+   margin: 0 -15px;
    align-items: top;
    // flex-wrap: wrap;
    overflow: hidden;
@@ -208,7 +208,7 @@
       ;
    }
 
-   45% {
+   50% {
       box-shadow:
          0 0 20px 5px #f26a02,
 
@@ -304,7 +304,7 @@
          0 0 100px 30px #d2fc02fe;
    }
 
-   45% {
+   50% {
       box-shadow: inset 0 0 70px 5px #e7fc0249,
          inset 0 0 30px 10px #d2fc0294,
          0 0 30px 10px #e7fc02cd;
@@ -346,7 +346,7 @@
    justify-content: right;
    overflow: hidden;
 
-   width: 90%;
+   width: 92%;
 
    margin: 120px 0px 0px 0;
    // transform: translateX(120px);
@@ -364,6 +364,8 @@
 }
 
 .mountins {
+   display: flex;
+   justify-content: right;
    fill: $White-color;
    transform: translateX(50px);
    margin: 0px 0px 0px 0px;

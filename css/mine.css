@@ -2396,7 +2396,7 @@ body {
   border-radius: 5px;
   border-top: 4px solid rgba(45, 1, 38, 0.5529411765);
   border-bottom: 18px solid rgba(252, 238, 197, 0.9764705882);
-  background-image: linear-gradient(to bottom, rgba(72, 16, 67, 0.5098039216) 10.5%, rgba(255, 243, 163, 0.8549019608) 105%, rgba(255, 234, 163, 0.8392156863));
+  background-image: linear-gradient(to bottom, rgba(55, 9, 51, 0.5098039216) 10.5%, rgba(255, 243, 163, 0.8549019608) 105%, rgba(255, 234, 163, 0.8392156863));
 }
 @media screen and (min-width: 768px) {
   .history-section {
@@ -2412,13 +2412,10 @@ body {
   10% {
     background-color: rgba(251, 126, 104, 0.8745098039);
   }
-  35% {
-    background-color: rgba(251, 126, 104, 0.8745098039);
+  50% {
+    background-color: rgba(127, 36, 0, 0.9058823529);
   }
-  45% {
-    background-color: rgba(178, 50, 0, 0.9058823529);
-  }
-  55% {
+  60% {
     background-color: rgba(34, 0, 40, 0.9058823529);
   }
   95% {
@@ -2435,6 +2432,7 @@ body {
   margin: 0 22px 0px 22px;
   transition-duration: 1s;
   color: #d5d095;
+  background-color: transparent;
 }
 .history-section:hover .history-hero, .history-section:focus .history-hero {
   transform: scale(1.05);
@@ -2893,7 +2891,7 @@ body {
   position: relative;
   height: 350px;
   padding: 50px 0 0;
-  margin: 0 -20px;
+  margin: 0 -15px;
   align-items: top;
   overflow: hidden;
   min-width: 260px;
@@ -2919,7 +2917,7 @@ body {
   justify-content: space-evenly;
   margin: 0px -50px;
   animation: moveDaynight 40s linear infinite normal;
-  animation-timing-function: cubic-bezier(0.07, 1.09, 0, -0.13);
+  animation-timing-function: cubic-bezier(0.05, 1.12, 0, -0.115);
 }
 @media screen and (min-width: 768px) {
   .anime-day {
@@ -2990,7 +2988,7 @@ body {
   8% {
     box-shadow: 0 0 20px 5px #f26a02, 0 0 60px 45px #faf881, 0 0 60px 25px rgba(246, 255, 0, 0.3882352941), 0 0 40px 15px #f6ff00;
   }
-  45% {
+  50% {
     box-shadow: 0 0 20px 5px #f26a02;
   }
   100% {
@@ -3015,7 +3013,7 @@ body {
   margin: 0px -50px;
   transform: translateX(200vw);
   animation: moveDaynight 40s linear infinite normal;
-  animation-timing-function: cubic-bezier(0.07, 1.09, 0, -0.13);
+  animation-timing-function: cubic-bezier(0.05, 1.12, 0, -0.115);
   animation-delay: 20s;
 }
 @media screen and (min-width: 768px) {
@@ -3050,7 +3048,7 @@ body {
   8% {
     box-shadow: inset 0 0 70px 5px rgba(231, 252, 2, 0.2862745098), inset 0 0 40px 20px rgba(210, 252, 2, 0.5803921569), 0 0 30px 10px rgba(231, 252, 2, 0.4549019608), 0 0 100px 30px rgba(210, 252, 2, 0.9960784314);
   }
-  45% {
+  50% {
     box-shadow: inset 0 0 70px 5px rgba(231, 252, 2, 0.2862745098), inset 0 0 30px 10px rgba(210, 252, 2, 0.5803921569), 0 0 30px 10px rgba(231, 252, 2, 0.8039215686);
   }
   100% {
@@ -3074,7 +3072,7 @@ body {
   display: flex;
   justify-content: right;
   overflow: hidden;
-  width: 90%;
+  width: 92%;
   margin: 120px 0px 0px 0;
   position: absolute;
 }
@@ -3092,6 +3090,8 @@ body {
 }
 
 .mountins {
+  display: flex;
+  justify-content: right;
   fill: #FFFFFF;
   transform: translateX(50px);
   margin: 0px 0px 0px 0px;

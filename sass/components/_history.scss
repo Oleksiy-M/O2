@@ -34,7 +34,7 @@
          border-bottom: 18px solid #fceec5f9;
          background-image: linear-gradient(to bottom,
 
-               #48104382 10.5%,
+               #37093382 10.5%,
 
                #fff3a3da 105%,
                #ffeaa3d6);
@@ -60,15 +60,13 @@
             background-color: #fb7e68df;
          }
 
-         35% {
-            background-color: #fb7e68df;
+
+
+         50% {
+            background-color: #7f2400e7;
          }
 
-         45% {
-            background-color: #b23200e7;
-         }
-
-         55% {
+         60% {
             background-color: #220028e7;
          }
 
@@ -97,6 +95,7 @@
          transition-duration: $animation-head;
          color: $histor-color-text;
          // border: 1px solid #d1d2a512;
+         background-color: transparent;
 
          .history-section:hover &,
          .history-section:focus & {
