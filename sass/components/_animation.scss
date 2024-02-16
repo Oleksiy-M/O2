@@ -7,7 +7,7 @@
    position: absolute;
    // width: 100vw;
    // height: 150px;
-   margin: 100px -15px 0;
+   margin: 120px 0px 0;
    // overflow: hidden;
    animation: moveLeftToRight 90s linear infinite normal;
    animation-timing-function: cubic-bezier(0, .4, 0, .26);
@@ -17,8 +17,12 @@
    //    animation-play-state: paused;
    // }
 
-   @media screen and (min-width: 768px) {
-      margin: 100px -100px 0;
+   // @media screen and (min-width: 768px) {
+   //    margin: 120px 0px 0;
+   // }
+
+   @media screen and (min-width: 1200px) {
+      margin: 100px 0px 0;
    }
 }
 
@@ -53,7 +57,7 @@
    // width: 100vw;
    justify-content: center;
    position: relative;
-   height: 400px;
+   height: 350px;
    padding: 50px 0 0;
    margin: 0 -20px;
    align-items: top;
@@ -63,14 +67,14 @@
 
    @media screen and (min-width: 768px) {
       // width: 100px;
-      height: 400px;
+      height: 350px;
       margin: 0px -140px 0px;
 
    }
 
    @media screen and (min-width: 1200px) {
       // width: 1600px;
-      height: 450px;
+      height: 400px;
       margin: 0 -200px;
 
    }
@@ -196,7 +200,7 @@
    }
 
 
-   15% {
+   8% {
       box-shadow:
          0 0 20px 5px #f26a02,
          0 0 60px 45px #faf881, 0 0 60px 25px #f6ff0063,
@@ -293,7 +297,7 @@
    }
 
 
-   15% {
+   8% {
       box-shadow: inset 0 0 70px 5px #e7fc0249,
          inset 0 0 40px 20px #d2fc0294,
          0 0 30px 10px #e7fc0274,
@@ -338,19 +342,49 @@
 
 .aqueduct-bild {
    display: flex;
+   width: 450px;
+   margin: 230px auto 0;
+   overflow: hidden;
    // align-items: flex-end;
    // justify-content: end;
    // flex-direction: column;
    position: absolute;
    // padding: 0 50px;
-   margin: 290px 0 0 0;
+
+
+   @media screen and (min-width: 768px) {
+      width: 738px;
+      margin: 230px auto 0;
+   }
+
+   @media screen and (min-width: 1200px) {
+      width: 1170px;
+      margin: 240px auto 0;
+   }
+}
+
+.aqueduct {
+   animation: moveAqueduct 20s linear infinite;
 
 }
 
-// .aqueduct {
+.aqueduct-next {
+   animation: moveAqueduct 20s linear infinite;
+   margin: 0 -100% 0 0;
+   animation-delay: 10ms;
+}
 
-//    // height: 200px;
-// }
+@keyframes moveAqueduct {
+
+   0% {
+
+      transform: translateX(0%);
+   }
+
+   100% {
+      transform: translateX(-100%);
+   }
+}
 
 // #circle {
 //    // width: 20px;

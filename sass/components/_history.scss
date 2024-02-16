@@ -31,7 +31,7 @@
          // animation-delay: 5s;
          border-radius: 5px;
          border-top: 4px solid #2d01268d;
-         border-bottom: 4px solid #fceec5dc;
+         border-bottom: 18px solid #fceec5f9;
          background-image: linear-gradient(to bottom,
 
                #48104382 10.5%,
@@ -65,7 +65,7 @@
          }
 
          95% {
-            background-color: #32003be7;
+            background-color: #1e0024f4;
          }
 
          99% {
@@ -159,59 +159,40 @@
 
       .section-histore__end {
          display: block;
-         // height: 500px;
          border-radius: 5px;
          margin: 0 0px 300px;
          border-top: 4px solid #ebdaa5dc;
          border-bottom: 4px solid #22011cd6;
-         // animation-duration: 10s;
-         animation: changeauqa 50s infinite normal;
+         background-image: linear-gradient(#cdb86dba 5%, #481043d1),
+            url("../img/hist-aqua/aqveduct1/aqua-mobile.jpg");
          background-position: center;
-         width: 1100px;
-         height: 420px;
-overflow: hidden;
+         object-fit: cover;
+         height: 400px;
+         max-width: 450px;
+         overflow: hidden;
+      }
 
-         @media screen and (min-width: 768px) {
+      @media screen and (min-width: 768px) {
+         .section-histore__end {
             padding: 0px;
+            max-width: 738px;
+            height: 400px;
             margin: 0 auto;
             border-radius: 5px;
-
+            background-image: linear-gradient(#cdb86dba 5%, #481043d1),
+               url("../img/hist-aqua/aqveduct0/aqua-tablet.jpg");
          }
       }
 
-
-      @keyframes changeauqa {
-
-
-         0% {
-            background-image:
-               linear-gradient(#cdb86dba 5%,
-                  #481043d1),
-               url("../img/hist-aqua/aqua.jpg");
+      @media screen and (min-width: 1200px) {
+         .section-histore__end {
+            max-width: 1170px;
+            height: 650px;
+            background-image: linear-gradient(#cdb86dba 5%, #481043d1),
+               url("../img/hist-aqua/aqveduct0/aqua.jpg");
          }
-
-         33% {
-            background-image:
-               linear-gradient(#cdb86dba 5%,
-                  #481043d1),
-               url("../img/hist-aqua/aqua1.jpg");
-         }
-
-         66% {
-            background-image:
-               linear-gradient(#cdb86dba 5%,
-                  #481043d1),
-               url("../img/hist-aqua/aqua2.jpg");
-         }
-
-         100% {
-            background-image:
-               linear-gradient(#cdb86dba 5%,
-                  #481043d1),
-               url("../img/hist-aqua/aqua3.jpg");
-         }
-
       }
+
 
 
 

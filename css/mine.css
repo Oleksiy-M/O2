@@ -2391,7 +2391,7 @@ body {
   animation: changeBgColor 40s linear infinite normal;
   border-radius: 5px;
   border-top: 4px solid rgba(45, 1, 38, 0.5529411765);
-  border-bottom: 4px solid rgba(252, 238, 197, 0.862745098);
+  border-bottom: 18px solid rgba(252, 238, 197, 0.9764705882);
   background-image: linear-gradient(to bottom, rgba(72, 16, 67, 0.5098039216) 10.5%, rgba(255, 243, 163, 0.8549019608) 105%, rgba(255, 234, 163, 0.8392156863));
 }
 @media screen and (min-width: 768px) {
@@ -2412,7 +2412,7 @@ body {
     background-color: rgba(50, 0, 59, 0.9058823529);
   }
   95% {
-    background-color: rgba(50, 0, 59, 0.9058823529);
+    background-color: rgba(30, 0, 36, 0.9568627451);
   }
   99% {
     background-color: rgba(0, 37, 92, 0.7921568627);
@@ -2483,32 +2483,29 @@ body {
   margin: 0 0px 300px;
   border-top: 4px solid rgba(235, 218, 165, 0.862745098);
   border-bottom: 4px solid rgba(34, 1, 28, 0.8392156863);
-  animation: changeauqa 50s infinite normal;
+  background-image: linear-gradient(rgba(205, 184, 109, 0.7294117647) 5%, rgba(72, 16, 67, 0.8196078431)), url("../img/hist-aqua/aqveduct1/aqua-mobile.jpg");
   background-position: center;
-  width: 1100px;
-  height: 420px;
+  object-fit: cover;
+  height: 400px;
+  max-width: 450px;
   overflow: hidden;
 }
+
 @media screen and (min-width: 768px) {
   .section-histore__end {
     padding: 0px;
+    max-width: 738px;
+    height: 400px;
     margin: 0 auto;
     border-radius: 5px;
+    background-image: linear-gradient(rgba(205, 184, 109, 0.7294117647) 5%, rgba(72, 16, 67, 0.8196078431)), url("../img/hist-aqua/aqveduct0/aqua-tablet.jpg");
   }
 }
-
-@keyframes changeauqa {
-  0% {
-    background-image: linear-gradient(rgba(205, 184, 109, 0.7294117647) 5%, rgba(72, 16, 67, 0.8196078431)), url("../img/hist-aqua/aqua.jpg");
-  }
-  33% {
-    background-image: linear-gradient(rgba(205, 184, 109, 0.7294117647) 5%, rgba(72, 16, 67, 0.8196078431)), url("../img/hist-aqua/aqua1.jpg");
-  }
-  66% {
-    background-image: linear-gradient(rgba(205, 184, 109, 0.7294117647) 5%, rgba(72, 16, 67, 0.8196078431)), url("../img/hist-aqua/aqua2.jpg");
-  }
-  100% {
-    background-image: linear-gradient(rgba(205, 184, 109, 0.7294117647) 5%, rgba(72, 16, 67, 0.8196078431)), url("../img/hist-aqua/aqua3.jpg");
+@media screen and (min-width: 1200px) {
+  .section-histore__end {
+    max-width: 1170px;
+    height: 650px;
+    background-image: linear-gradient(rgba(205, 184, 109, 0.7294117647) 5%, rgba(72, 16, 67, 0.8196078431)), url("../img/hist-aqua/aqveduct0/aqua.jpg");
   }
 }
 .box-aqua {
@@ -2717,7 +2714,6 @@ body {
   height: 35px;
   margin: -175px 0 0 51px;
   z-index: -1;
-  position: absolute;
 }
 
 .box-gif {
@@ -2819,6 +2815,7 @@ body {
 .cadr-svg {
   position: absolute;
   fill: #440240;
+  fill: #39336d;
   width: 110%;
   height: 105%;
   transition-duration: 2s;
@@ -2846,13 +2843,13 @@ body {
   display: flex;
   justify-content: right;
   position: absolute;
-  margin: 100px -15px 0;
+  margin: 120px 0px 0;
   animation: moveLeftToRight 90s linear infinite normal;
   animation-timing-function: cubic-bezier(0, 0.4, 0, 0.26);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .box-dirigible {
-    margin: 100px -100px 0;
+    margin: 100px 0px 0;
   }
 }
 
@@ -2880,7 +2877,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
-  height: 400px;
+  height: 350px;
   padding: 50px 0 0;
   margin: 0 -20px;
   align-items: top;
@@ -2889,13 +2886,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .container__anime {
-    height: 400px;
+    height: 350px;
     margin: 0px -140px 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container__anime {
-    height: 450px;
+    height: 400px;
     margin: 0 -200px;
   }
 }
@@ -2976,7 +2973,7 @@ body {
   0% {
     box-shadow: 0 0 20px 5px #f26a02;
   }
-  15% {
+  8% {
     box-shadow: 0 0 20px 5px #f26a02, 0 0 60px 45px #faf881, 0 0 60px 25px rgba(246, 255, 0, 0.3882352941), 0 0 40px 15px #f6ff00;
   }
   45% {
@@ -3036,7 +3033,7 @@ body {
   0% {
     box-shadow: inset 0 0 70px 5px rgba(231, 252, 2, 0.2862745098), inset 0 0 30px 10px rgba(210, 252, 2, 0.5803921569), 0 0 30px 10px rgba(231, 252, 2, 0.5960784314);
   }
-  15% {
+  8% {
     box-shadow: inset 0 0 70px 5px rgba(231, 252, 2, 0.2862745098), inset 0 0 40px 20px rgba(210, 252, 2, 0.5803921569), 0 0 30px 10px rgba(231, 252, 2, 0.4549019608), 0 0 100px 30px rgba(210, 252, 2, 0.9960784314);
   }
   45% {
@@ -3061,6 +3058,39 @@ body {
 
 .aqueduct-bild {
   display: flex;
+  width: 450px;
+  margin: 230px auto 0;
+  overflow: hidden;
   position: absolute;
-  margin: 290px 0 0 0;
+}
+@media screen and (min-width: 768px) {
+  .aqueduct-bild {
+    width: 738px;
+    margin: 230px auto 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .aqueduct-bild {
+    width: 1170px;
+    margin: 240px auto 0;
+  }
+}
+
+.aqueduct {
+  animation: moveAqueduct 20s linear infinite;
+}
+
+.aqueduct-next {
+  animation: moveAqueduct 20s linear infinite;
+  margin: 0 -100% 0 0;
+  animation-delay: 10ms;
+}
+
+@keyframes moveAqueduct {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }/*# sourceMappingURL=mine.css.map */
