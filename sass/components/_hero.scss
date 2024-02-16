@@ -114,7 +114,7 @@
 		// background-position: bottom;
 		padding: 150px 0 20px;
 		height: 420px;
-		width: 1600px;
+		max-width: 1600px;
 		background-image:
 			linear-gradient(#2f303a47,
 				#2f303a66),
@@ -168,10 +168,10 @@
 		margin: 0px;
 	}
 
-	// .section-oxy:hover &,
-	// .section-oxy:focus & {
-	transform: scale(1.03);
-	// }
+	.section-oxy:hover &,
+	.section-oxy:focus & {
+		transform: scale(1.03);
+	}
 
 }
 
