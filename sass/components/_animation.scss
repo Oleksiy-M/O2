@@ -343,43 +343,46 @@
 
 .anime-mountins {
    display: flex;
-   justify-content: right;
+   // justify-content: right;
    overflow: hidden;
 
-   width: 92%;
+   width: calc(100% - 30px);
 
-   margin: 120px 0px 0px 0;
+   margin: 140px 0px 0px 0;
    // transform: translateX(120px);
    position: absolute;
 
    @media screen and (min-width: 768px) {
       width: 738px;
-      margin: 150px 0px 0px 0;
+      margin: 100px 0px 0px 0;
    }
 
    @media screen and (min-width: 1200px) {
       width: 1170px;
-      margin: 100px 0px 0px 0;
+      margin: 30px 0px 0px 0;
    }
 }
 
 .mountins {
-   display: flex;
-   justify-content: right;
+   // display: flex;
+   // justify-content: right;
    fill: $White-color;
    transform: translateX(50px);
-   margin: 0px 0px 0px 0px;
-   width: 200px;
+   margin: 0px 0px 0px 60%;
+   // width: 200px;
+   height: 150px;
    animation: chageMountin 40s infinite ease-in-out;
 
    @media screen and (min-width: 768px) {
-      width: 400px;
-      transform: translateX(150px);
+      margin: 0px 0px 0px 70%;
+      // width: 400px;
+      height: 200px;
+      // transform: translateX(150px);
    }
 
    @media screen and (min-width: 1200px) {
-      width: 450px;
-      height: 250px;
+      margin: 0px 0px 0px 80%;
+      height: 400px;
    }
 }
 
@@ -394,7 +397,7 @@
 
    95% {
 
-      fill: #5bb7fd;
+      fill: #8545fd;
    }
 
    100% {
@@ -402,12 +405,12 @@
    }
 }
 
-
-
+// $anime-section: cubic-bezier(.05, 1.01, .001, -0.01);
+// $anime-section: cubic-bezier(.2, 1.12, .001, -0.115);
 .aqueduct-bild {
    display: flex;
-   width: 450px;
-   margin: 260px auto 0;
+   width: calc(100% - 30px);
+   margin: 270px auto 0;
    overflow: hidden;
    position: absolute;
 

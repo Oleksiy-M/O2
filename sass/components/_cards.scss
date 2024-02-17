@@ -149,14 +149,14 @@
    align-items: center;
    background-color: #680176b0;
    // overflow: hidden;
-   // font-weight: 600;
+   font-weight: 400;
    padding: 10px 8px;
    color: $prim-histor-text;
    font-size: 8px;
    line-height: 1.16;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    font-style: italic;
-   text-shadow: 1px 1.5px 1px rgba(14, 14, 14, 0.607);
+   text-shadow: 1px 1.5px 1px #000000;
    letter-spacing: 0.02em;
    transform: translatex(-105%);
    transition-duration: 1s;

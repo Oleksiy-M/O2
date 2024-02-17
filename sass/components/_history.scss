@@ -167,23 +167,27 @@
       .section-histore__end {
          display: block;
          border-radius: 5px;
+         padding: 20px;
          margin: 0 0px 300px;
          border-top: 4px solid #ebdaa5dc;
          border-bottom: 4px solid #22011cd6;
          background-image: linear-gradient(#cdb86dba 5%, #481043d1),
-            url("../img/hist-aqua/aqveduct1/aqua-mobile.jpg");
+            url("../img/hist-aqua/aqveduct1/aqua-mobil.jpg");
+         transition: background-image 5s ease-in-out;
+         // animation-duration: 5s;
          background-position: center;
          object-fit: cover;
-         height: 400px;
+         background-size: cover;
+         // height: 400px;
          max-width: 450px;
          overflow: hidden;
       }
 
       @media screen and (min-width: 768px) {
          .section-histore__end {
-            padding: 0px;
+            // padding: 0px;
             max-width: 738px;
-            height: 400px;
+            // height: 400px;
             margin: 0 auto;
             border-radius: 5px;
             background-image: linear-gradient(#cdb86dba 5%, #481043d1),
@@ -194,7 +198,7 @@
       @media screen and (min-width: 1200px) {
          .section-histore__end {
             max-width: 1170px;
-            height: 650px;
+            // height: 650px;
             background-image: linear-gradient(#cdb86dba 5%, #481043d1),
                url("../img/hist-aqua/aqveduct0/aqua.jpg");
          }
@@ -203,6 +207,27 @@
 
 
 
-      .box-aqua {
+      .box-aque {
          display: block;
+         padding: 20px;
+         // text-align: center;
+      }
+
+
+      .title-article__aque {
+         padding: 0 0 10px;
+      }
+
+
+
+      .aqueduct-art {
+         user-select: none;
+         text-align: left;
+
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         font-size: 12px;
+         line-height: 1.5;
+         letter-spacing: 0.02em;
+         color: $Secondary-text-color;
+         text-shadow: 1px 1.5px 1px black;
       }
