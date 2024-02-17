@@ -50,7 +50,7 @@ function changeBackgroundImage(device) {
    var responsiveImage = images[device][currentIndex[device] % images[device].length];
    section.style.opacity = 0; // Зменшуємо прозорість секції
    setTimeout(function () {
-      section.style.backgroundImage = 'linear-gradient(#00000000 5%, #00000000), url("' + responsiveImage + '")';
+      section.style.backgroundImage = ' url("' + responsiveImage + '")';
       currentIndex[device]++;
       section.style.opacity = 1; // Повертаємо прозорість секції
    }, 1000); // Затримка для плавної зміни
@@ -81,8 +81,7 @@ function changeBackgroundOnLoad() {
 // Викликаємо функцію при завантаженні сторінки
 changeBackgroundOnLoad();
 
-// Решта вашого JavaScript коду
-// ...
+
 
 
 
