@@ -1,14 +1,6 @@
 
 
-window.onload = function () {
-   const cardsList = document.querySelector('.cards');
-   const cards = document.querySelectorAll('.cards__item');
 
-   cards.forEach(card => {
-      const clone = card.cloneNode(true);
-      cardsList.appendChild(clone);
-   });
-}
 
 
 
@@ -144,3 +136,17 @@ sectionCard.addEventListener('mouseenter', () => {
 sectionCard.addEventListener('mouseleave', () => {
    boxGif.style.animationPlayState = 'running';
 });
+
+
+
+
+
+window.onload = function () {
+   const cardsList = document.querySelector('.cards');
+   const cards = document.querySelectorAll('.cards__item');
+
+   cards.forEach(card => {
+      const clone = card.cloneNode(true);
+      cardsList.appendChild(clone);
+   });
+}

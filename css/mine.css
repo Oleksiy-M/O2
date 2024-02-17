@@ -2408,7 +2408,7 @@ body {
   border-radius: 5px;
   border-top: 4px solid rgba(45, 1, 38, 0.5529411765);
   border-bottom: 18px solid rgba(252, 238, 197, 0.9764705882);
-  background-image: linear-gradient(to bottom, rgba(55, 9, 51, 0.5098039216) 65.5%, rgba(55, 9, 51, 0.4078431373) 70%, rgba(255, 243, 163, 0.8549019608) 105%, rgba(255, 234, 163, 0.8392156863));
+  background-image: linear-gradient(to bottom, rgba(64, 6, 59, 0.4431372549) 65.5%, rgba(55, 9, 51, 0.3254901961) 70%, rgba(255, 243, 163, 0.8549019608) 105%, rgba(255, 234, 163, 0.8392156863));
 }
 @media screen and (min-width: 768px) {
   .history-section {
@@ -2425,25 +2425,28 @@ body {
 
 @keyframes changeBgColor {
   0% {
-    background-color: rgba(2, 92, 211, 0.9254901961);
+    background-color: rgba(53, 141, 255, 0.9254901961);
   }
-  10% {
+  5% {
+    background-color: rgba(53, 141, 255, 0.9254901961);
+  }
+  6% {
+    background-color: rgba(249, 170, 154, 0.9490196078);
+  }
+  46% {
     background-color: rgba(246, 137, 115, 0.9490196078);
   }
-  57% {
-    background-color: rgba(148, 58, 2, 0.8470588235);
+  53% {
+    background-color: rgba(249, 63, 125, 0.6588235294);
   }
-  60% {
-    background-color: rgba(87, 0, 102, 0.8509803922);
+  56% {
+    background-color: rgba(87, 0, 102, 0.7882352941);
   }
-  95% {
-    background-color: rgba(75, 0, 90, 0.9568627451);
-  }
-  99% {
+  96% {
     background-color: rgba(75, 0, 90, 0.9568627451);
   }
   100% {
-    background-color: rgba(2, 92, 211, 0.9254901961);
+    background-color: rgba(53, 141, 255, 0.9254901961);
   }
 }
 .history-hero {
@@ -2969,7 +2972,7 @@ body {
   0% {
     box-shadow: 0 0 20px 5px #f26a02;
   }
-  8% {
+  6% {
     box-shadow: 0 0 20px 5px #f26a02, 0 0 60px 45px #faf881, 0 0 60px 25px rgba(246, 255, 0, 0.3882352941), 0 0 40px 15px #f6ff00;
   }
   50% {
@@ -3029,7 +3032,7 @@ body {
   0% {
     box-shadow: inset 0 0 70px 5px rgba(231, 252, 2, 0.2862745098), inset 0 0 30px 10px rgba(210, 252, 2, 0.5803921569), 0 0 30px 10px rgba(231, 252, 2, 0.5960784314);
   }
-  8% {
+  6% {
     box-shadow: inset 0 0 70px 5px rgba(231, 252, 2, 0.2862745098), inset 0 0 40px 20px rgba(210, 252, 2, 0.5803921569), 0 0 30px 10px rgba(231, 252, 2, 0.4549019608), 0 0 100px 30px rgba(210, 252, 2, 0.9960784314);
   }
   50% {

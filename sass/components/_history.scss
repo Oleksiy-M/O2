@@ -34,8 +34,8 @@
          border-bottom: 18px solid #fceec5f9;
          background-image: linear-gradient(to bottom,
 
-               #37093382 65.5%,
-               #37093368 70%,
+               #40063b71 65.5%,
+               #37093353 70%,
 
                #fff3a3da 105%,
                #ffeaa3d6);
@@ -58,33 +58,37 @@
 
 
          0% {
-            background-color: #025cd3ec;
+            background-color: #358dffec;
          }
 
-         10% {
+         5% {
+            background-color: #358dffec;
+         }
+
+         6% {
+            background-color: #f9aa9af2;
+         }
+
+         46% {
             background-color: #f68973f2;
          }
 
 
 
-         57% {
-            background-color: #943a02d8;
+         53% {
+            background-color: #f93f7da8;
          }
 
-         60% {
-            background-color: #570066d9;
+         56% {
+            background-color: #570066c9;
          }
 
-         95% {
-            background-color: #4b005af4;
-         }
-
-         99% {
+         96% {
             background-color: #4b005af4;
          }
 
          100% {
-            background-color: #025cd3ec;
+            background-color: #358dffec;
          }
       }
 
