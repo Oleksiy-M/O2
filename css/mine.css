@@ -2403,7 +2403,7 @@ body {
 .history-section {
   display: block;
   padding: 100px 0 0;
-  margin: 0px 0 12px;
+  margin: 0px 0 2px;
   animation: changeBgColor 40s linear infinite normal;
   border-radius: 5px;
   border-top: 4px solid rgba(45, 1, 38, 0.5529411765);
@@ -2419,7 +2419,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .history-section {
-    margin: 0px 0 15px;
+    margin: 0px 0 12px;
   }
 }
 
