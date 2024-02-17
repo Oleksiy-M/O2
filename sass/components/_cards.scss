@@ -302,11 +302,11 @@
 
 
 .section-card {
-   // overflow: hidden;
+   overflow: hidden;
    padding: 0px 0;
-   margin: 0 0 20px;
-   width: calc(100% + 40px);
-   transform: translateX(-20px);
+   margin: 0 0px 20px;
+   width: calc(100% + 30px);
+   transform: translateX(-15px);
    // background: #f9f8f6f1;
    transition-duration: 1s;
    // background-image: linear-gradient(to bottom,
@@ -321,6 +321,7 @@
    // }
 
    @media screen and (min-width: 768px) {
+      overflow: visible;
       margin: 0 0 30px;
       width: calc(100% + 280px);
       transform: translateX(-140px);
@@ -351,9 +352,10 @@
 
 
 .transf-gif {
-   transform: translateY(-200px);
+   // transform: translateY(-200px);
    pointer-events: none;
-   margin: 0px 0px 0 25px;
+   margin: -200px 0px 0 25px;
+   position: absolute;
 
    @media screen and (min-width: 768px) {
       transform: translateY(-200px);
@@ -368,7 +370,6 @@
 }
 
 .box-gif {
-   position: absolute;
 
    animation: movegif 30s;
    animation-timing-function: cubic-bezier(.39, 1.41, .6, 1);
@@ -424,7 +425,7 @@
    margin: 0;
    animation-timing-function: ease-out;
    animation: moveRightToLeft 35s linear infinite;
-   width: 710px;
+   width: 705px;
 
    // transition: animation-duration 2s ease-out;
    .section-card:hover &,

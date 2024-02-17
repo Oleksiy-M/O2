@@ -2726,14 +2726,16 @@ body {
 }
 
 .section-card {
+  overflow: hidden;
   padding: 0px 0;
-  margin: 0 0 20px;
-  width: calc(100% + 40px);
-  transform: translateX(-20px);
+  margin: 0 0px 20px;
+  width: calc(100% + 30px);
+  transform: translateX(-15px);
   transition-duration: 1s;
 }
 @media screen and (min-width: 768px) {
   .section-card {
+    overflow: visible;
     margin: 0 0 30px;
     width: calc(100% + 280px);
     transform: translateX(-140px);
@@ -2758,9 +2760,9 @@ body {
 }
 
 .transf-gif {
-  transform: translateY(-200px);
   pointer-events: none;
-  margin: 0px 0px 0 25px;
+  margin: -200px 0px 0 25px;
+  position: absolute;
 }
 @media screen and (min-width: 768px) {
   .transf-gif {
@@ -2776,7 +2778,6 @@ body {
 }
 
 .box-gif {
-  position: absolute;
   animation: movegif 30s;
   animation-timing-function: cubic-bezier(0.39, 1.41, 0.6, 1);
 }
@@ -2816,7 +2817,7 @@ body {
   margin: 0;
   animation-timing-function: ease-out;
   animation: moveRightToLeft 35s linear infinite;
-  width: 710px;
+  width: 705px;
 }
 .section-card:hover .cards, .section-card:focus .cards {
   /* Поступова зупинка */
@@ -2959,7 +2960,7 @@ body {
   justify-content: space-evenly;
   margin: 0px 0px;
   animation: moveDaynight 40s linear infinite normal;
-  animation-timing-function: cubic-bezier(0.05, 1.044, 0.001, -0.04);
+  animation-timing-function: cubic-bezier(0.05, 1.12, 0.001, -0.115);
 }
 @media screen and (min-width: 768px) {
   .anime-day {
@@ -3055,7 +3056,7 @@ body {
   margin: 0px 0px;
   transform: translateX(200vw);
   animation: moveDaynight 40s linear infinite normal;
-  animation-timing-function: cubic-bezier(0.05, 1.044, 0.001, -0.04);
+  animation-timing-function: cubic-bezier(0.05, 1.12, 0.001, -0.115);
   animation-delay: 20s;
 }
 @media screen and (min-width: 768px) {
@@ -3154,8 +3155,14 @@ body {
   0% {
     fill: #FFFFFF;
   }
+  45% {
+    fill: #FFFFFF;
+  }
+  60% {
+    fill: #9862fd;
+  }
   95% {
-    fill: #8545fd;
+    fill: #9862fd;
   }
   100% {
     fill: #FFFFFF;
