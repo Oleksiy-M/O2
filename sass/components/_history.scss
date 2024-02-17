@@ -34,7 +34,8 @@
          border-bottom: 18px solid #fceec5f9;
          background-image: linear-gradient(to bottom,
 
-               #37093382 10.5%,
+               #37093382 65.5%,
+               #37093368 70%,
 
                #fff3a3da 105%,
                #ffeaa3d6);
@@ -45,6 +46,7 @@
             padding: 60px 0 0px;
             margin: 0px 0 5px;
             max-width: 1600px;
+            // height: auto;
          }
 
          @media screen and (min-width: 1200px) {
@@ -56,33 +58,33 @@
 
 
          0% {
-            background-color: #0047b2e7;
+            background-color: #025cd3ec;
          }
 
          10% {
-            background-color: #fb7e68df;
+            background-color: #f68973f2;
          }
 
 
 
-         50% {
-            background-color: #7f2400e7;
+         57% {
+            background-color: #943a02d8;
          }
 
          60% {
-            background-color: #220028e7;
+            background-color: #570066d9;
          }
 
          95% {
-            background-color: #1e0024f4;
+            background-color: #4b005af4;
          }
 
          99% {
-            background-color: #00255cca;
+            background-color: #4b005af4;
          }
 
          100% {
-            background-color: #0047b2e7;
+            background-color: #025cd3ec;
          }
       }
 
@@ -137,7 +139,7 @@
          .history-section:hover &,
          .history-section:focus & {
 
-            text-shadow: 0px 0px 1px #ffffff, 2px 2px 2px black;
+            text-shadow: 0px 0px 1px #ffffff, 2px 2px 2px #000000;
          }
 
          @media screen and (min-width: 1200px) {
@@ -167,53 +169,62 @@
 
 
 
-      .section-histore__end {
-         display: block;
+
+
+
+      .container-end {
+         position: relative;
          border-radius: 5px;
-         padding: 20px;
+
          margin: 0 0px 300px;
+         max-width: 450px;
+         z-index: 1;
          border-top: 4px solid #ebdaa5dc;
          border-bottom: 4px solid #22011cd6;
-         background-image: linear-gradient(#cdb86dba 5%, #481043d1),
-            url("../img/hist-aqua/aqveduct1/aqua-mobil.jpg");
-         transition: background-image 5s ease-in-out;
-         // animation-duration: 5s;
+
+         @media screen and (min-width: 768px) {
+            margin: 0 0px 0px;
+            max-width: 738px;
+         }
+
+         @media screen and (min-width: 1200px) {
+
+            max-width: 1170px;
+         }
+      }
+
+
+      .section-histore__end {
+         display: block;
+         position: absolute;
+         z-index: -1;
+         height: 100%;
+         width: 100%;
          background-position: center;
          object-fit: cover;
          background-size: cover;
-         // height: 400px;
-         max-width: 450px;
+
          overflow: hidden;
-      }
-
-      @media screen and (min-width: 768px) {
-         .section-histore__end {
-            // padding: 0px;
-            max-width: 738px;
-            // height: 400px;
-            margin: 0 auto;
-            border-radius: 5px;
-            background-image: linear-gradient(#cdb86dba 5%, #481043d1),
-               url("../img/hist-aqua/aqveduct0/aqua-tablet.jpg");
-         }
-      }
-
-      @media screen and (min-width: 1200px) {
-         .section-histore__end {
-            max-width: 1170px;
-            // height: 650px;
-            background-image: linear-gradient(#cdb86dba 5%, #481043d1),
-               url("../img/hist-aqua/aqveduct0/aqua.jpg");
-         }
+         transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
       }
 
 
+
+
+
+
+      .box-end-grad {
+         padding: 20px;
+         background-image: linear-gradient(#cdb86dba 5%,
+               #481043d1);
+      }
 
 
       .box-aque {
          display: block;
          padding: 20px;
-         // text-align: center;
+
+         // z-index: 2;
       }
 
 

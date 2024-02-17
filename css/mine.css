@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* ==========Utils========= */
 .list {
   margin: 0;
@@ -2356,14 +2355,21 @@ body {
   }
 }
 
+.video-bg__histor {
+  display: block;
+  margin: 0 auto;
+}
 @media screen and (min-width: 768px) {
   .video-bg__histor {
+    overflow: hidden;
+    max-width: 1600px;
     background-image: linear-gradient(to bottom, rgba(154, 195, 251, 0.8274509804) 30%, rgba(25, 35, 82, 0.8470588235) 85%);
+    z-index: -1;
   }
 }
 
 .bubble {
-  z-index: -1;
+  z-index: -2;
   min-width: 270px;
   margin-top: 30px;
   position: fixed;
@@ -2402,7 +2408,7 @@ body {
   border-radius: 5px;
   border-top: 4px solid rgba(45, 1, 38, 0.5529411765);
   border-bottom: 18px solid rgba(252, 238, 197, 0.9764705882);
-  background-image: linear-gradient(to bottom, rgba(55, 9, 51, 0.5098039216) 10.5%, rgba(255, 243, 163, 0.8549019608) 105%, rgba(255, 234, 163, 0.8392156863));
+  background-image: linear-gradient(to bottom, rgba(55, 9, 51, 0.5098039216) 65.5%, rgba(55, 9, 51, 0.4078431373) 70%, rgba(255, 243, 163, 0.8549019608) 105%, rgba(255, 234, 163, 0.8392156863));
 }
 @media screen and (min-width: 768px) {
   .history-section {
@@ -2419,25 +2425,25 @@ body {
 
 @keyframes changeBgColor {
   0% {
-    background-color: rgba(0, 71, 178, 0.9058823529);
+    background-color: rgba(2, 92, 211, 0.9254901961);
   }
   10% {
-    background-color: rgba(251, 126, 104, 0.8745098039);
+    background-color: rgba(246, 137, 115, 0.9490196078);
   }
-  50% {
-    background-color: rgba(127, 36, 0, 0.9058823529);
+  57% {
+    background-color: rgba(148, 58, 2, 0.8470588235);
   }
   60% {
-    background-color: rgba(34, 0, 40, 0.9058823529);
+    background-color: rgba(87, 0, 102, 0.8509803922);
   }
   95% {
-    background-color: rgba(30, 0, 36, 0.9568627451);
+    background-color: rgba(75, 0, 90, 0.9568627451);
   }
   99% {
-    background-color: rgba(0, 37, 92, 0.7921568627);
+    background-color: rgba(75, 0, 90, 0.9568627451);
   }
   100% {
-    background-color: rgba(0, 71, 178, 0.9058823529);
+    background-color: rgba(2, 92, 211, 0.9254901961);
   }
 }
 .history-hero {
@@ -2473,7 +2479,7 @@ body {
   letter-spacing: 0.26em;
 }
 .history-section:hover .history-hero__heading, .history-section:focus .history-hero__heading {
-  text-shadow: 0px 0px 1px #ffffff, 2px 2px 2px black;
+  text-shadow: 0px 0px 1px #ffffff, 2px 2px 2px #000000;
 }
 @media screen and (min-width: 1200px) {
   .history-hero__heading {
@@ -2497,36 +2503,45 @@ body {
   box-shadow: 0px 2px 5px 2px #fffdd1;
 }
 
-.section-histore__end {
-  display: block;
+.container-end {
+  position: relative;
   border-radius: 5px;
-  padding: 20px;
   margin: 0 0px 300px;
+  max-width: 450px;
+  z-index: 1;
   border-top: 4px solid rgba(235, 218, 165, 0.862745098);
   border-bottom: 4px solid rgba(34, 1, 28, 0.8392156863);
-  background-image: linear-gradient(rgba(205, 184, 109, 0.7294117647) 5%, rgba(72, 16, 67, 0.8196078431)), url("../img/hist-aqua/aqveduct1/aqua-mobil.jpg");
-  transition: background-image 5s ease-in-out;
-  background-position: center;
-  object-fit: cover;
-  background-size: cover;
-  max-width: 450px;
-  overflow: hidden;
 }
-
 @media screen and (min-width: 768px) {
-  .section-histore__end {
+  .container-end {
+    margin: 0 0px 0px;
     max-width: 738px;
-    margin: 0 auto;
-    border-radius: 5px;
-    background-image: linear-gradient(rgba(205, 184, 109, 0.7294117647) 5%, rgba(72, 16, 67, 0.8196078431)), url("../img/hist-aqua/aqveduct0/aqua-tablet.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
-  .section-histore__end {
+  .container-end {
     max-width: 1170px;
-    background-image: linear-gradient(rgba(205, 184, 109, 0.7294117647) 5%, rgba(72, 16, 67, 0.8196078431)), url("../img/hist-aqua/aqveduct0/aqua.jpg");
   }
 }
+
+.section-histore__end {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+  overflow: hidden;
+  transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.box-end-grad {
+  padding: 20px;
+  background-image: linear-gradient(rgba(205, 184, 109, 0.7294117647) 5%, rgba(72, 16, 67, 0.8196078431));
+}
+
 .box-aque {
   display: block;
   padding: 20px;
@@ -2750,84 +2765,21 @@ body {
   }
 }
 
-.fon {
-  border-radius: 25px;
-  background-color: #fff;
-  width: 25px;
-  height: 35px;
-  margin: -175px 0 0 51px;
-  z-index: -1;
-}
-
-.transf-gif {
-  pointer-events: none;
-  margin: -200px 0px 0 25px;
-  position: absolute;
-}
-@media screen and (min-width: 768px) {
-  .transf-gif {
-    transform: translateY(-200px);
-    margin: 0px 0px 0 170px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .transf-gif {
-    transform: translateY(-205px);
-    margin: 0px 0px 0 250px;
-  }
-}
-
-.box-gif {
-  animation: movegif 30s;
-  animation-timing-function: cubic-bezier(0.39, 1.41, 0.6, 1);
-}
-.section-card:hover .box-gif, .section-card:focus .box-gif {
-  animation-play-state: paused;
-}
-
-@keyframes movegif {
-  0% {
-    transform: translatex(-25vw);
-  }
-  100% {
-    transform: translatex(0vw);
-  }
-}
-.gif-container__move {
-  display: flex;
-  justify-content: left;
-  width: 150px;
-}
-.section-card:hover .gif-container__move, .section-card:focus .gif-container__move {
-  display: none;
-}
-
-.gif-container__stop {
-  display: none;
-  justify-content: left;
-  width: 150px;
-}
-.section-card:hover .gif-container__stop, .section-card:focus .gif-container__stop {
-  display: flex;
-}
-
 .cards {
   display: flex;
   padding: 0px;
   margin: 0;
+  width: auto;
   animation-timing-function: ease-out;
   animation: moveRightToLeft 35s linear infinite;
-  width: 705px;
 }
 .section-card:hover .cards, .section-card:focus .cards {
-  /* Поступова зупинка */
   transition: all 2s ease-out;
   animation-play-state: paused;
 }
 @media screen and (min-width: 768px) {
   .cards {
-    width: 710px;
-    animation: moveRightToLeft 40s linear infinite;
+    width: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2879,7 +2831,6 @@ body {
 
 @keyframes moveRightToLeft {
   0% {
-    transition-duration: 1s;
     transform: translateX(0%);
   }
   100% {
@@ -2895,20 +2846,13 @@ body {
   display: flex;
   justify-content: right;
   position: absolute;
-  margin: 120px 0px 0;
+  top: 150px;
   animation: moveLeftToRight 90s linear infinite normal;
   animation-timing-function: cubic-bezier(0, 0.4, 0, 0.26);
 }
-@media screen and (min-width: 1200px) {
-  .box-dirigible {
-    margin: 100px 0px 0;
-  }
-}
-
 .gif-dirigible {
-  z-index: 2;
-  width: 150px;
   height: 50px;
+  width: 150px;
 }
 @media screen and (min-width: 1200px) {
   .gif-dirigible {
@@ -2999,10 +2943,7 @@ body {
   position: relative;
   margin: 0px 0 0;
   height: 150px;
-  animation-name: spin;
-  animation-duration: 15s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  animation: spin 15s linear infinite;
 }
 
 @keyframes spin {
@@ -3115,19 +3056,19 @@ body {
   display: flex;
   overflow: hidden;
   width: calc(100% - 30px);
-  margin: 140px 0px 0px 0;
+  bottom: -130px;
   position: absolute;
 }
 @media screen and (min-width: 768px) {
   .anime-mountins {
     width: 738px;
-    margin: 100px 0px 0px 0;
+    bottom: -80px;
   }
 }
 @media screen and (min-width: 1200px) {
   .anime-mountins {
     width: 1170px;
-    margin: 30px 0px 0px 0;
+    bottom: -60px;
   }
 }
 
@@ -3135,19 +3076,16 @@ body {
   fill: #FFFFFF;
   transform: translateX(50px);
   margin: 0px 0px 0px 60%;
-  height: 150px;
   animation: chageMountin 40s infinite ease-in-out;
 }
 @media screen and (min-width: 768px) {
   .mountins {
     margin: 0px 0px 0px 70%;
-    height: 200px;
   }
 }
 @media screen and (min-width: 1200px) {
   .mountins {
     margin: 0px 0px 0px 80%;
-    height: 400px;
   }
 }
 
@@ -3192,6 +3130,16 @@ body {
   animation: moveAqueduct 50s linear infinite;
 }
 
+.section-card:hover + .aqueduct-bild .aqueduct,
+.section-card:focus + .aqueduct-bild .aqueduct {
+  animation-play-state: paused;
+}
+
+.section-card:hover + .aqueduct-bild .aqueduct-next,
+.section-card:focus + .aqueduct-bild .aqueduct-next {
+  animation-play-state: paused;
+}
+
 .aqueduct-next {
   animation: moveAqueduct 50s linear infinite;
   margin: 0 -100% 0 0;
@@ -3205,4 +3153,64 @@ body {
   100% {
     transform: translateX(-100%);
   }
+}
+.trans-gif {
+  transform: translateY(-175px);
+}
+
+.box-gif {
+  pointer-events: none;
+  position: relative;
+  display: flex;
+  justify-content: left;
+  margin: 0px 0 0px 20px;
+  animation: movegif 30s;
+  animation-timing-function: cubic-bezier(0.39, 1.41, 0.6, 1);
+}
+@media screen and (min-width: 768px) {
+  .box-gif {
+    margin: 0px 0 0px 50px;
+  }
+}
+
+@keyframes movegif {
+  0% {
+    transform: translatex(-25vw);
+  }
+  100% {
+    transform: translatex(0vw);
+  }
+}
+.fon {
+  position: absolute;
+  border-radius: 25px;
+  background-color: #fff;
+  width: 25px;
+  height: 35px;
+  margin: 35px 0 0 51px;
+  z-index: -1;
+}
+
+.gif-container__move {
+  position: absolute;
+  display: flex;
+  justify-content: left;
+  width: 150px;
+}
+
+.section-card:hover + .aqueduct-bild .gif-container__move,
+.section-card:focus + .aqueduct-bild .gif-container__move {
+  display: none;
+}
+
+.section-card:hover + .aqueduct-bild .gif-container__stop,
+.section-card:focus + .aqueduct-bild .gif-container__stop {
+  display: flex;
+}
+
+.gif-container__stop {
+  position: absolute;
+  display: none;
+  justify-content: left;
+  width: 150px;
 }/*# sourceMappingURL=mine.css.map */
