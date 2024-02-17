@@ -104,6 +104,12 @@
    width: 100px;
    height: 100px;
    margin: 0 0px 0px 0px;
+   transition-duration: 1s;
+
+   .page-footer:hover &,
+   .page-footer:focus & {
+      transform: scale(1.03);
+   }
 }
 
 .footer-logo {
@@ -132,8 +138,11 @@
    stroke-width: 0.3px;
    stroke: #ffffff4a;
 
+   transition-duration: 1s;
+
    .page-footer:hover &,
    .page-footer:focus & {
+
       stroke: #ffffff;
       box-shadow: inset 0 0 10px 15px #009ed8,
          0 0 15px 5px #009ed8;

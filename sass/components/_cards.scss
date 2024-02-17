@@ -302,9 +302,11 @@
 
 
 .section-card {
-   overflow: hidden;
+   // overflow: hidden;
    padding: 0px 0;
-   margin: 0px -20px;
+   margin: 0 0 20px;
+   width: calc(100% + 40px);
+   transform: translateX(-20px);
    // background: #f9f8f6f1;
    transition-duration: 1s;
    // background-image: linear-gradient(to bottom,
@@ -319,12 +321,15 @@
    // }
 
    @media screen and (min-width: 768px) {
-      margin: 0px -140px 0px;
-
+      margin: 0 0 30px;
+      width: calc(100% + 280px);
+      transform: translateX(-140px);
    }
 
    @media screen and (min-width: 1200px) {
-      margin: 0px -200px;
+      margin: 0 0 30px;
+      width: calc(100% + 400px);
+      transform: translateX(-200px);
       height: auto;
    }
 
@@ -344,10 +349,27 @@
    // position: absolute;
 }
 
-.box-gif {
+
+.transf-gif {
+   transform: translateY(-200px);
    pointer-events: none;
+   margin: 0px 0px 0 25px;
+
+   @media screen and (min-width: 768px) {
+      transform: translateY(-200px);
+      margin: 0px 0px 0 170px;
+   }
+
+   @media screen and (min-width: 1200px) {
+      transform: translateY(-205px);
+      margin: 0px 0px 0 250px;
+
+   }
+}
+
+.box-gif {
    position: absolute;
-   margin: -200px 0px 0 25px;
+
    animation: movegif 30s;
    animation-timing-function: cubic-bezier(.39, 1.41, .6, 1);
 
@@ -358,22 +380,12 @@
       animation-play-state: paused;
    }
 
-   @media screen and (min-width: 768px) {
-      margin: -200px 0px 0 170px;
-   }
-
-   @media screen and (min-width: 1200px) {
-      margin: -200px 0px 0 250px;
-
-   }
-
-
 }
 
 
 @keyframes movegif {
    0% {
-      transform: translatex(-30vw);
+      transform: translatex(-25vw);
    }
 
    100% {

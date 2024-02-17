@@ -59,23 +59,25 @@
    position: relative;
    height: 350px;
    padding: 50px 0 0;
-   margin: 0 -15px;
+   width: calc(100% + 30px);
+   transform: translateX(-15px);
    align-items: top;
    // flex-wrap: wrap;
    overflow: hidden;
    min-width: 260px;
 
    @media screen and (min-width: 768px) {
-      // width: 100px;
+      width: calc(100% + 256px);
       height: 350px;
-      margin: 0px -140px 0px;
+      transform: translateX(-128px);
 
    }
 
    @media screen and (min-width: 1200px) {
-      // width: 1600px;
+      width: calc(100% + 400px);
+      transform: translateX(-200px);
       height: 400px;
-      margin: 0 -200px;
+      // margin: 0 -200px;
 
    }
 }
@@ -90,7 +92,7 @@
    height: 300px;
    width: 305px;
    justify-content: space-evenly;
-   margin: 0px -50px;
+   margin: 0px 0px;
    animation: moveDaynight 40s linear infinite normal;
 
    animation-timing-function:
@@ -248,7 +250,7 @@
    align-items: center;
    width: 305px;
    height: 200px;
-   margin: 0px -50px;
+   margin: 0px 0px;
    transform: translateX(200vw);
    animation: moveDaynight 40s linear infinite normal;
    animation-timing-function:
@@ -405,11 +407,11 @@
    }
 }
 
-// $anime-section: cubic-bezier(.05, 1.01, .001, -0.01);
-// $anime-section: cubic-bezier(.2, 1.12, .001, -0.115);
+
 .aqueduct-bild {
    display: flex;
    width: calc(100% - 30px);
+   // width: 100%;
    margin: 270px auto 0;
    overflow: hidden;
    position: absolute;

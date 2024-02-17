@@ -24,7 +24,7 @@
       .history-section {
          display: block;
          padding: 100px 0 0;
-         // margin: 0px auto 0px;
+         margin: 0px 0 12px;
 
          animation: changeBgColor 40s linear infinite normal;
          // transition: animation-play-state 3s ease-out;
@@ -43,9 +43,12 @@
          @media screen and (min-width: 768px) {
 
             padding: 60px 0 0px;
-            // margin: 0px auto;
+            margin: 0px 0 5px;
             max-width: 1600px;
+         }
 
+         @media screen and (min-width: 1200px) {
+            margin: 0px 0 15px;
          }
       }
 
