@@ -207,45 +207,75 @@
          background-position: center;
          object-fit: cover;
          background-size: cover;
-
          overflow: hidden;
          transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
+         background-image: (url("../img/hist-aqua/aqveduct0/aqua-mobil.png"));
+
+
+         @media (min-device-pixel-ratio: 2) and (max-width: 767px),
+         (min-resolution: 192dpi) and (max-width: 767px),
+         (min-resolution: 2dppx) and (max-width: 767px) {
+
+         background-image:
+         (url("../img/hist-aqua/aqveduct0/aqua-mobil@2x.png"));
+         }
+
+         @media screen and (min-width: 768px) {
+          background-image: (url("../img/hist-aqua/aqveduct0/aqua-tablet.png"));
+         }
+
+         @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+         (min-resolution: 192dpi) and (min-width: 768px),
+         (min-resolution: 2dppx) and (min-width: 768px) {
+
+          background-image:
+          (url("../img/hist-aqua/aqveduct0/aqua-tablet@2x.png"));
+         }
+
+         @media screen and (min-width: 1200px) {
+         background-image: (url("../img/hist-aqua/aqveduct0/aqua.png"));
+         }
+
+         @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+         (min-resolution: 192dpi) and (min-width: 1200px),
+         (min-resolution: 2dppx) and (min-width: 1200px) {
+
+            background-image:
+               (url("../img/hist-aqua/aqveduct0/aqua@2x.png"));
+         }
       }
 
 
 
+         .box-end-grad {
+            padding: 20px;
+            background-image: linear-gradient(#cdb86dba 5%,
+                  #481043d1);
+         }
+
+
+         .box-aque {
+            display: block;
+            padding: 20px;
+
+            // z-index: 2;
+         }
+
+
+         .title-article__aque {
+            padding: 0 0 10px;
+         }
 
 
 
-      .box-end-grad {
-         padding: 20px;
-         background-image: linear-gradient(#cdb86dba 5%,
-               #481043d1);
-      }
+         .aqueduct-art {
+            user-select: none;
+            text-align: left;
 
-
-      .box-aque {
-         display: block;
-         padding: 20px;
-
-         // z-index: 2;
-      }
-
-
-      .title-article__aque {
-         padding: 0 0 10px;
-      }
-
-
-
-      .aqueduct-art {
-         user-select: none;
-         text-align: left;
-
-         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-         font-size: 12px;
-         line-height: 1.5;
-         letter-spacing: 0.02em;
-         color: $Secondary-text-color;
-         text-shadow: 1px 1.5px 1px black;
-      }
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: $Secondary-text-color;
+            text-shadow: 1px 1.5px 1px black;
+         }
