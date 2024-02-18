@@ -2547,7 +2547,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .section-histore__end {
-    background-image: url("../img/histaqua/aqveduct0/aqua-tablet.jpg") url("../img/histaqua/aqveduct1/aqua-tablet1.jpg"), url("../img/histaqua/aqveduct2/aqua-tablet2.jpg"), url("../img/histaqua/aqveduct3/aqua-tablet3.jpg");
+    background-image: url("../img/histaqua/aqveduct0/aqua-tablet.jpg"), url("../img/histaqua/aqveduct1/aqua-tablet1.jpg"), url("../img/histaqua/aqveduct2/aqua-tablet2.jpg"), url("../img/histaqua/aqveduct3/aqua-tablet3.jpg");
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
@@ -2564,11 +2564,6 @@ body {
   .section-histore__end {
     background-image: url("../img/histaqua/aqveduct0/aqua@2x.jpg"), url("../img/histaqua/aqveduct1/aqua1@2x.jpg"), url("../img/histaqua/aqveduct2/aqua2@2x.jpg"), url("../img/histaqua/aqveduct3/aqua3@2x.jpg");
   }
-}
-
-.fade-out {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
 }
 
 .box-end-grad {
