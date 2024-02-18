@@ -2538,32 +2538,37 @@ body {
   background-size: cover;
   overflow: hidden;
   transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
-  background-image: url("../img/hist-aqua/aqveduct0/aqua-mobil.png");
+  background-image: url("../img/histaqua/aqveduct0/aqua-mobil.jpg");
 }
 @media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
   .section-histore__end {
-    background-image: url("../img/hist-aqua/aqveduct0/aqua-mobil@2x.png");
+    background-image: url("../img/histaqua/aqveduct0/aqua-mobil@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .section-histore__end {
-    background-image: url("../img/hist-aqua/aqveduct0/aqua-tablet.png");
+    background-image: url("../img/histaqua/aqveduct0/aquat-ablet.jpg");
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
   .section-histore__end {
-    background-image: url("../img/hist-aqua/aqveduct0/aqua-tablet@2x.png");
+    background-image: url("../img/histaqua/aqveduct0/aqua-tablet@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .section-histore__end {
-    background-image: url("../img/hist-aqua/aqveduct0/aqua.png");
+    background-image: url("../img/histaqua/aqveduct0/aqua.jpg");
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .section-histore__end {
-    background-image: url("../img/hist-aqua/aqveduct0/aqua@2x.png");
+    background-image: url("../img/histaqua/aqveduct0/aqua@2x.jpg");
   }
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 .box-end-grad {
