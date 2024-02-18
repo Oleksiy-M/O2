@@ -59,14 +59,14 @@ margin: 0 auto;
    }
 
    @media screen and (min-width: 1200px) {
-      height: 1180px;
+      height: 100vw;
 
    }
 
    @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
    (min-resolution: 192dpi) and (min-width: 1200px),
    (min-resolution: 2dppx) and (min-width: 1200px) {
-      height: 1180px;
+      height: 100vw;
 
    }
 }
