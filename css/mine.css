@@ -2537,33 +2537,16 @@ body {
   object-fit: cover;
   background-size: cover;
   overflow: hidden;
-  transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
-  background-image: url("../img/histaqua/aqveduct0/aqua-mobil.jpg"), url("../img/histaqua/aqveduct1/aqua-mobil1.jpg"), url("../img/histaqua/aqveduct2/aqua-mobil2.jpg"), url("../img/histaqua/aqveduct3/aqua-mobil3.jpg");
 }
-@media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
-  .section-histore__end {
-    background-image: url("../img/histaqua/aqveduct0/aqua-mobil@2x.jpg"), url("../img/histaqua/aqveduct1/aqua-mobil1@2x.jpg"), url("../img/histaqua/aqveduct2/aqua-mobil2@2x.jpg"), url("../img/histaqua/aqveduct3/aqua-mobil3@2x.jpg");
-  }
-}
-@media screen and (min-width: 768px) {
-  .section-histore__end {
-    background-image: url("../img/histaqua/aqveduct0/aqua-tablet.jpg"), url("../img/histaqua/aqveduct1/aqua-tablet1.jpg"), url("../img/histaqua/aqveduct2/aqua-tablet2.jpg"), url("../img/histaqua/aqveduct3/aqua-tablet3.jpg");
-  }
-}
-@media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
-  .section-histore__end {
-    background-image: url("../img/histaqua/aqveduct0/aqua-tablet@2x.jpg"), url("../img/histaqua/aqveduct1/aqua-tablet1@2x.jpg"), url("../img/histaqua/aqveduct2/aqua-tablet2@2x.jpg"), url("../img/histaqua/aqveduct3/aqua-tablet3@2x.jpg");
-  }
-}
-@media screen and (min-width: 1200px) {
-  .section-histore__end {
-    background-image: url("../img/histaqua/aqveduct0/aqua.jpg"), url("../img/histaqua/aqveduct1/aqua1.jpg"), url("../img/histaqua/aqveduct2/aqua2.jpg"), url("../img/histaqua/aqveduct3/aqua3.jpg");
-  }
-}
-@media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
-  .section-histore__end {
-    background-image: url("../img/histaqua/aqveduct0/aqua@2x.jpg"), url("../img/histaqua/aqveduct1/aqua1@2x.jpg"), url("../img/histaqua/aqveduct2/aqua2@2x.jpg"), url("../img/histaqua/aqveduct3/aqua3@2x.jpg");
-  }
+
+.section-histore__end img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 .box-end-grad {

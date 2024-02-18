@@ -9,62 +9,31 @@
 
 
 
+var images = document.querySelectorAll('.section-histore__end img');
+var currentIndex = 0;
 
-var section = document.querySelector('.section-histore__end');
-var images = {
-   'mobile': [
-      '../img/histaqua/aqveduct0/aqua-mobil.jpg',
-      '../img/histaqua/aqveduct1/aqua-mobil1.jpg',
-      '../img/histaqua/aqveduct2/aqua-mobil2.jpg',
-      '../img/histaqua/aqveduct3/aqua-mobil3.jpg'
-   ],
-   'tablet': [
-      '../img/histaqua/aqveduct0/aqua-tablet.jpg',
-      '../img/histaqua/aqveduct1/aqua-tablet1.jpg',
-      '../img/histaqua/aqveduct2/aqua-tablet2.jpg',
-      '../img/histaqua/aqveduct3/aqua-tablet3.jpg'
-   ],
-   'desktop': [
-      '../img/histaqua/aqveduct0/aqua.jpg',
-      '../img/histaqua/aqveduct1/aqua1.jpg',
-      '../img/histaqua/aqveduct2/aqua2.jpg',
-      '../img/histaqua/aqveduct3/aqua3.jpg'
-   ]
-};
+function changeImageOpacity() {
+   var currentImage = images[currentIndex];
+   var nextIndex = (currentIndex + 1) % images.length;
+   var nextImage = images[nextIndex];
 
-var currentIndex = {
-   'mobile': 0,
-   'tablet': 0,
-   'desktop': 0
-};
+   // Зменшуємо прозорість поточного зображення
+   currentImage.style.opacity = 0;
 
-function changeBackgroundImage(device) {
-   var responsiveImage = images[device][currentIndex[device] % images[device].length];
-   section.style.opacity = 0; // Зменшуємо прозорість секції
+   // Збільшуємо прозорість наступного зображення через 1 секунду
    setTimeout(function () {
-      section.style.backgroundImage = ' url("' + responsiveImage + '")';
-      currentIndex[device]++;
-      section.style.opacity = 1; // Повертаємо прозорість секції
-   }, 1000); // Затримка для плавної зміни
+      nextImage.style.opacity = 1;
+   }, 1000);
+
+   // Оновлюємо поточний індекс
+   currentIndex = nextIndex;
 }
 
-function startChangingImages() {
-   setInterval(function () {
-      changeBackgroundImage('mobile');
-   }, 10000);
-   setInterval(function () {
-      changeBackgroundImage('tablet');
-   }, 10000);
-   setInterval(function () {
-      changeBackgroundImage('desktop');
-   }, 10000);
-}
+// Встановлюємо інтервал для зміни зображень кожні 10 секунд
+setInterval(changeImageOpacity, 10000);
 
-startChangingImages();
-
-
-// Функція для зміни зображення при завантаженні сторінки
-
+// Початково встановлюємо прозорість першого зображення
+images[currentIndex].style.opacity = 1;
 
 
 
