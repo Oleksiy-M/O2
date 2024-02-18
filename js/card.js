@@ -64,14 +64,6 @@ startChangingImages();
 
 
 // Функція для зміни зображення при завантаженні сторінки
-function changeBackgroundOnLoad() {
-   changeBackgroundImage('mobile');
-   changeBackgroundImage('tablet');
-   changeBackgroundImage('desktop');
-}
-
-// Викликаємо функцію при завантаженні сторінки
-changeBackgroundOnLoad();
 
 
 
