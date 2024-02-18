@@ -2547,7 +2547,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .section-histore__end {
-    background-image: url("../img/histaqua/aqveduct0/aquat-ablet.jpg");
+    background-image: url("../img/histaqua/aqveduct0/aqua-tablet.jpg");
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
