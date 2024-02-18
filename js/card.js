@@ -14,21 +14,21 @@ var section = document.querySelector('.section-histore__end');
 var images = {
    'mobile': [
       '../img/hist-aqua/aqveduct0/aqua-mobil.jpg',
-      '../img/hist-aqua/aqveduct1/aqua-mobil.jpg',
-      '../img/hist-aqua/aqveduct2/aqua-mobil.jpg',
-      '../img/hist-aqua/aqveduct3/aqua-mobil.jpg'
+      '../img/hist-aqua/aqveduct1/aqua-mobil1.jpg',
+      '../img/hist-aqua/aqveduct2/aqua-mobil2.jpg',
+      '../img/hist-aqua/aqveduct3/aqua-mobil3.jpg'
    ],
    'tablet': [
       '../img/hist-aqua/aqveduct0/aqua-tablet.jpg',
-      '../img/hist-aqua/aqveduct1/aqua-tablet.jpg',
-      '../img/hist-aqua/aqveduct2/aqua-tablet.jpg',
-      '../img/hist-aqua/aqveduct3/aqua-tablet.jpg'
+      '../img/hist-aqua/aqveduct1/aqua-tablet1.jpg',
+      '../img/hist-aqua/aqveduct2/aqua-tablet2.jpg',
+      '../img/hist-aqua/aqveduct3/aqua-tablet3.jpg'
    ],
    'desktop': [
       '../img/hist-aqua/aqveduct0/aqua.jpg',
-      '../img/hist-aqua/aqveduct1/aqua.jpg',
-      '../img/hist-aqua/aqveduct2/aqua.jpg',
-      '../img/hist-aqua/aqveduct3/aqua.jpg'
+      '../img/hist-aqua/aqveduct1/aqua1.jpg',
+      '../img/hist-aqua/aqveduct2/aqua2.jpg',
+      '../img/hist-aqua/aqveduct3/aqua3.jpg'
    ]
 };
 
