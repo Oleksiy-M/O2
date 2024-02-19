@@ -397,9 +397,9 @@
 .gif-box__water {
    display: flex;
    position: absolute;
-   // width: 1175px;
+   overflow: hidden;
+
    bottom: 32px;
-   // right: 10px;
 
 }
 

@@ -283,8 +283,13 @@
          font-size: 12px;
          line-height: 1.5;
          letter-spacing: 0.02em;
+         transition-duration: 100ms;
+         color: $histor-color-text;
 
+         &:hover,
+         &:focus {
+            color: $prim-histor-text;
 
-         color: $prim-histor-text;
-         text-shadow: rgb(0, 0, 0) 1px 1.5px 2px, rgb(0, 0, 0) 1px 2.5px 5px;
+            text-shadow: rgb(0, 0, 0) 1px 1.5px 2px, rgb(0, 0, 0) 1px 2.5px 5px;
+         }
       }
