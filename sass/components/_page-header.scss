@@ -47,7 +47,7 @@ margin: 0 auto;
    (min-resolution: 2dppx) and (max-width: 767px) {}
 
    @media screen and (min-width: 768px) {
-      height: 1510px;
+   height: 100vw;
       background-image: $bg-water;
    }
 
@@ -55,7 +55,7 @@ margin: 0 auto;
    (min-resolution: 192dpi) and (min-width: 768px),
    (min-resolution: 2dppx) and (min-width: 768px) {
 
-      height: 1370px;
+      height: 100vw;
    }
 
    @media screen and (min-width: 1200px) {
