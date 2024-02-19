@@ -2562,9 +2562,12 @@ body {
   padding: 0 0 30px;
   transition-duration: 100ms;
 }
+.article-aque:hover, .article-aque:focus {
+  transform: scale(1.02);
+}
 
 .head-aque {
-  padding: 0 0 10px;
+  padding: 0 0 15px;
   color: #d5d095;
   transition-duration: 1000ms;
 }

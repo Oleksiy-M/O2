@@ -248,16 +248,22 @@
       .article-aque {
          padding: 0 0 30px;
          transition-duration: 100ms;
+
+         &:hover,
+         &:focus {
+            transform: scale(1.02);
+         }
       }
 
 
       .head-aque {
-         padding: 0 0 10px;
+         padding: 0 0 15px;
          color: $histor-color-text;
          transition-duration: 1000ms;
 
          .box-aque:hover &,
          .box-aque:focus & {
+
             text-shadow: #000000 2px 2px 6px, #000000 3px 3px 3px;
          }
       }
