@@ -398,15 +398,22 @@
    display: flex;
    position: absolute;
    // width: 1175px;
-   bottom: 30px;
+   bottom: 32px;
    // right: 10px;
 
 }
 
 
 .gif-water {
-   // height: 80px;
-   width: 585px;
+   width: calc(50vw - 15px);
+
+   @media screen and (min-width: 768px) {
+      width: 364px;
+   }
+
+   @media screen and (min-width: 1200px) {
+      width: 585px;
+   }
 }
 
 
