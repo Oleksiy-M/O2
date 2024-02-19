@@ -393,6 +393,24 @@
 }
 
 
+
+.gif-box__water {
+   display: flex;
+   position: absolute;
+   // width: 1175px;
+   bottom: 30px;
+   // right: 10px;
+
+}
+
+
+.gif-water {
+   // height: 80px;
+   width: 585px;
+}
+
+
+
 .aqueduct-bild {
    display: flex;
    width: calc(100% - 30px);
