@@ -247,14 +247,19 @@
 
       .article-aque {
          padding: 0 0 30px;
+         transition-duration: 100ms;
       }
 
 
       .head-aque {
          padding: 0 0 10px;
-         text-shadow: rgb(0, 0, 0) 2px 2px 6px, rgb(0, 0, 0) 3px 3px 3px;
          color: $histor-color-text;
+         transition-duration: 1000ms;
 
+         .box-aque:hover &,
+         .box-aque:focus & {
+            text-shadow: #000000 2px 2px 6px, #000000 3px 3px 3px;
+         }
       }
 
 
@@ -268,11 +273,14 @@
          font-size: 15px;
          line-height: 1.5;
          letter-spacing: 0.06em;
+         color: $histor-color-text;
 
-         color: $prim-histor-text;
-         text-shadow: rgb(0, 0, 0) 2px 2px 5px, rgb(0, 0, 0) 3px 3px 3px;
+         .article-aque:hover &,
+         .article-aque:focus & {
+            color: $prim-histor-text;
+            text-shadow: rgb(0, 0, 0) 2px 2px 5px, rgb(0, 0, 0) 3px 3px 3px;
+         }
       }
-
 
       .aqueduct-art {
          padding: 0 0px;
@@ -283,11 +291,11 @@
          font-size: 12px;
          line-height: 1.5;
          letter-spacing: 0.02em;
-         transition-duration: 100ms;
+
          color: $histor-color-text;
 
-         &:hover,
-         &:focus {
+         .article-aque:hover &,
+         .article-aque:focus & {
             color: $prim-histor-text;
 
             text-shadow: rgb(0, 0, 0) 1px 1.5px 2px, rgb(0, 0, 0) 1px 2.5px 5px;

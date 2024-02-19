@@ -438,7 +438,7 @@
 }
 
 .aqueduct {
-   animation: moveAqueduct 50s linear infinite;
+   animation: moveAqueduct 90s linear infinite;
 
 }
 
@@ -454,9 +454,8 @@
 }
 
 .aqueduct-next {
-   animation: moveAqueduct 50s linear infinite;
+   animation: moveAqueduct 90s linear infinite;
    margin: 0 -100% 0 0;
-   animation-delay: 1ms;
 }
 
 @keyframes moveAqueduct {
@@ -516,7 +515,7 @@
    background-color: #fff;
    width: 25px;
    height: 35px;
-   margin: 35px 0 0 51px;
+   margin: 25px 0 0 51px;
 
    z-index: -1;
    // transform: translateY(-50px);

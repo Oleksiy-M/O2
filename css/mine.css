@@ -2560,12 +2560,16 @@ body {
 
 .article-aque {
   padding: 0 0 30px;
+  transition-duration: 100ms;
 }
 
 .head-aque {
   padding: 0 0 10px;
-  text-shadow: rgb(0, 0, 0) 2px 2px 6px, rgb(0, 0, 0) 3px 3px 3px;
   color: #d5d095;
+  transition-duration: 1000ms;
+}
+.box-aque:hover .head-aque, .box-aque:focus .head-aque {
+  text-shadow: #000000 2px 2px 6px, #000000 3px 3px 3px;
 }
 
 .title-aque {
@@ -2577,6 +2581,9 @@ body {
   font-size: 15px;
   line-height: 1.5;
   letter-spacing: 0.06em;
+  color: #d5d095;
+}
+.article-aque:hover .title-aque, .article-aque:focus .title-aque {
   color: #fffdd1;
   text-shadow: rgb(0, 0, 0) 2px 2px 5px, rgb(0, 0, 0) 3px 3px 3px;
 }
@@ -2590,10 +2597,9 @@ body {
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  transition-duration: 100ms;
   color: #d5d095;
 }
-.aqueduct-art:hover, .aqueduct-art:focus {
+.article-aque:hover .aqueduct-art, .article-aque:focus .aqueduct-art {
   color: #fffdd1;
   text-shadow: rgb(0, 0, 0) 1px 1.5px 2px, rgb(0, 0, 0) 1px 2.5px 5px;
 }
@@ -2806,7 +2812,7 @@ body {
   margin: 0;
   width: auto;
   animation-timing-function: ease-out;
-  animation: moveRightToLeft 35s linear infinite;
+  animation: moveRightToLeft 45s linear infinite;
 }
 .section-card:hover .cards, .section-card:focus .cards {
   transition: all 2s ease-out;
@@ -3182,7 +3188,7 @@ body {
 }
 
 .aqueduct {
-  animation: moveAqueduct 50s linear infinite;
+  animation: moveAqueduct 90s linear infinite;
 }
 
 .section-card:hover + .aqueduct-bild .aqueduct,
@@ -3196,9 +3202,8 @@ body {
 }
 
 .aqueduct-next {
-  animation: moveAqueduct 50s linear infinite;
+  animation: moveAqueduct 90s linear infinite;
   margin: 0 -100% 0 0;
-  animation-delay: 1ms;
 }
 
 @keyframes moveAqueduct {
@@ -3242,7 +3247,7 @@ body {
   background-color: #fff;
   width: 25px;
   height: 35px;
-  margin: 35px 0 0 51px;
+  margin: 25px 0 0 51px;
   z-index: -1;
 }
 
