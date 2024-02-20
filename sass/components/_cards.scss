@@ -129,16 +129,18 @@
    display: flex;
    text-align: center;
    align-items: center;
-   background-color: #680176b0;
+   background-color: #023c63b0;
+   // background-color: #b000ad84;
 
-   font-weight: 400;
+   font-weight: 500;
    padding: 10px 8px;
    color: $prim-histor-text;
    font-size: 8px;
    line-height: 1.16;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    font-style: italic;
-   text-shadow: 1px 1.5px 1px #000000;
+   // text-shadow: 1px 1.5px 1px #000000,
+   //    1px 2.5px 4px #000000;
    letter-spacing: 0.02em;
    transform: translatex(-105%);
    transition-duration: 1s;
@@ -357,9 +359,7 @@
 .cadr-svg {
    position: absolute;
 
-
-   fill: #2a2a2a;
-
+   fill: #0a4169;
    width: 110%;
    height: 105%;
    transition-duration: 2s;
@@ -375,7 +375,7 @@
 
    .section-card:hover &,
    .section-card:focus & {
-      fill: #0a4169;
+      fill: #2a2a2a;
 
    }
 
