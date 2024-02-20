@@ -1968,9 +1968,7 @@ body {
   border-radius: 5px;
   padding: 90px 3px 100px 3px;
   margin-bottom: 40px;
-  background-position: center;
-  background-size: cover;
-  background-image: linear-gradient(to bottom, hwb(248 41% 17%/0.721) 0.01%, rgba(56, 0, 120, 0.8431372549) 0.15%, rgba(36, 0, 62, 0.8588235294) 35%, rgba(26, 0, 29, 0.6980392157) 99.7%, rgba(0, 0, 0, 0.8) 3%);
+  background-image: linear-gradient(to bottom, rgba(119, 105, 212, 0.7215686275) 0.01%, rgba(56, 0, 120, 0.8431372549) 0.15%, rgba(36, 0, 62, 0.8588235294) 35%, rgba(26, 0, 29, 0.6980392157) 99.7%, rgba(0, 0, 0, 0.8) 3%);
 }
 @media screen and (min-width: 768px) {
   .section-bg {
