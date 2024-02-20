@@ -2572,6 +2572,7 @@ body {
   transition-duration: 1000ms;
 }
 .box-aque:hover .head-aque, .box-aque:focus .head-aque {
+  transform: scale(1.02);
   text-shadow: #000000 2px 2px 6px, #000000 3px 3px 3px;
 }
 
