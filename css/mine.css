@@ -2587,6 +2587,7 @@ body {
   padding: 0 0 15px;
   color: #d5d095;
   transition-duration: 1000ms;
+  user-select: none;
 }
 .box-article:hover .head-article, .box-article:focus .head-article {
   transform: scale(1.02);
