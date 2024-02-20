@@ -2312,7 +2312,7 @@ body {
   justify-content: center;
   overflow: hidden;
   transition-duration: 1s;
-  box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.185);
+  box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.1843137255);
   height: 0.1%;
   border-radius: 0 10px 0 0;
 }
@@ -2583,20 +2583,21 @@ body {
   padding: 20px;
 }
 
+.article-item {
+  padding: 0 0 30px;
+  transition-duration: 100ms;
+}
+
 .head-article {
   padding: 0 0 15px;
   color: #d5d095;
   transition-duration: 1000ms;
   user-select: none;
+  letter-spacing: 0.05em;
 }
 .box-article:hover .head-article, .box-article:focus .head-article {
   transform: scale(1.02);
   text-shadow: #000000 2px 2px 6px, #000000 3px 3px 3px;
-}
-
-.article-item {
-  padding: 0 0 30px;
-  transition-duration: 100ms;
 }
 
 .article-title {

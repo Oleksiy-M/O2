@@ -241,18 +241,6 @@
 
 
 
-      .head-article {
-         padding: 0 0 15px;
-         color: $histor-color-text;
-         transition-duration: 1000ms;
-         user-select: none;
-
-         .box-article:hover &,
-         .box-article:focus & {
-            transform: scale(1.02);
-            text-shadow: #000000 2px 2px 6px, #000000 3px 3px 3px;
-         }
-      }
 
       .article-item {
          padding: 0 0 30px;
@@ -264,6 +252,19 @@
          // }
       }
 
+      .head-article {
+         padding: 0 0 15px;
+         color: $histor-color-text;
+         transition-duration: 1000ms;
+         user-select: none;
+         letter-spacing: 0.05em;
+
+         .box-article:hover &,
+         .box-article:focus & {
+            transform: scale(1.02);
+            text-shadow: #000000 2px 2px 6px, #000000 3px 3px 3px;
+         }
+      }
 
 
 
@@ -278,9 +279,10 @@
          line-height: 1.5;
          letter-spacing: 0.06em;
          color: $histor-color-text;
-transition-duration: 400ms;
-.article-item:hover &,
-.article-item:focus & {
+         transition-duration: 400ms;
+
+         .article-item:hover &,
+         .article-item:focus & {
             transform: scale(1.02);
             color: $prim-histor-text;
             text-shadow: rgb(0, 0, 0) 2px 2px 5px, rgb(0, 0, 0) 3px 3px 3px;
@@ -299,6 +301,7 @@ transition-duration: 400ms;
 
          color: $histor-color-text;
          transition-duration: 100ms;
+
          .article-item:hover &,
          .article-item:focus & {
             color: $prim-histor-text;
