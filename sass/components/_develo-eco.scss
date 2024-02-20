@@ -6,14 +6,18 @@
       padding: 90px 3px 100px 3px;
       margin-bottom: 40px;
       // background-color: $section-color__desktop;
+
+      background-position: center;
+      background-size: cover;
       background-image: linear-gradient(to bottom,
 
-          hsla(248, 55%, 62%, 0.721) 0.01%,
+          hwb(248 41% 17% / 0.721) 0.01%,
 
           #380078d7 0.15%,
           #24003edb 35%,
           #1a001db2 99.7%,
-          #000000cc 3%);
+          #000000cc 3%),
+       ;
 
       // #5e0101b7 0.1%,
       // #460117c6 6%,

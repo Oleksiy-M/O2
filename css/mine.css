@@ -554,17 +554,40 @@ body {
   padding: 80px 0 30px 0;
   margin-bottom: 40px;
   border-radius: 5px;
-  background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(1, 118, 234, 0.8588235294) 1%, rgba(56, 0, 120, 0.8431372549) 99%, rgba(12, 1, 19, 0.8431372549) 0.1%, rgba(12, 1, 19, 0.8431372549) 0.1%);
+  background-size: cover;
+  background-position: top;
+  background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(1, 118, 234, 0.7294117647) 1%, rgba(56, 0, 120, 0.9333333333) 99%, rgba(12, 1, 19, 0.8431372549) 0.1%, rgba(12, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-mobil.jpg");
+}
+@media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
+  .section-hero {
+    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(1, 118, 234, 0.7294117647) 1%, rgba(56, 0, 120, 0.9333333333) 99%, rgba(12, 1, 19, 0.8431372549) 0.1%, rgba(12, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-mobil@2x.jpg");
+  }
 }
 @media screen and (min-width: 768px) {
   .section-hero {
     padding-top: 60px;
     padding-bottom: 30px;
+    background-position: top;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(1, 118, 234, 0.7294117647) 1%, rgba(56, 0, 120, 0.9333333333) 99%, rgba(12, 1, 19, 0.8431372549) 0.1%, rgba(12, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-tablet.jpg");
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+  .section-hero {
+    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(1, 118, 234, 0.7294117647) 1%, rgba(56, 0, 120, 0.9333333333) 99%, rgba(12, 1, 19, 0.8431372549) 0.1%, rgba(12, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-tablet@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .section-hero {
+    background-position: top;
     padding-bottom: 50px;
+    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(1, 118, 234, 0.7294117647) 1%, rgba(56, 0, 120, 0.9333333333) 99%, rgba(12, 1, 19, 0.8431372549) 0.1%, rgba(12, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus.jpg");
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
+  .section-hero {
+    padding-bottom: 50px;
+    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(1, 118, 234, 0.7294117647) 1%, rgba(56, 0, 120, 0.9333333333) 99%, rgba(12, 1, 19, 0.8431372549) 0.1%, rgba(12, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus@2x.jpg");
   }
 }
 
@@ -1945,7 +1968,9 @@ body {
   border-radius: 5px;
   padding: 90px 3px 100px 3px;
   margin-bottom: 40px;
-  background-image: linear-gradient(to bottom, hsla(248, 55%, 62%, 0.721) 0.01%, rgba(56, 0, 120, 0.8431372549) 0.15%, rgba(36, 0, 62, 0.8588235294) 35%, rgba(26, 0, 29, 0.6980392157) 99.7%, rgba(0, 0, 0, 0.8) 3%);
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(to bottom, hwb(248 41% 17%/0.721) 0.01%, rgba(56, 0, 120, 0.8431372549) 0.15%, rgba(36, 0, 62, 0.8588235294) 35%, rgba(26, 0, 29, 0.6980392157) 99.7%, rgba(0, 0, 0, 0.8) 3%);
 }
 @media screen and (min-width: 768px) {
   .section-bg {
@@ -2298,7 +2323,7 @@ body {
   height: 70%;
 }
 .develo-eco__content:hover .cards__overlay, .develo-eco__content:focus .cards__overlay {
-  background-color: rgba(244, 192, 209, 0.0745098039);
+  background-color: rgba(244, 192, 209, 0.0431372549);
   box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.12), 0px 0px 4px rgba(0, 0, 0, 0.06), 1px -1px 6px rgba(0, 0, 0, 0.16);
   transform: scale(1.01);
 }
@@ -2668,7 +2693,7 @@ body {
   display: flex;
   text-align: center;
   align-items: center;
-  background-color: rgba(2, 60, 99, 0.6901960784);
+  background-color: rgba(141, 3, 254, 0.7843137255);
   font-weight: 500;
   padding: 10px 8px;
   color: #fffdd1;
@@ -2676,6 +2701,7 @@ body {
   line-height: 1.16;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-style: italic;
+  text-shadow: 1px 1.5px 4px #000000, 1px 2.5px 4px #000000;
   letter-spacing: 0.02em;
   transform: translatex(-105%);
   transition-duration: 1s;

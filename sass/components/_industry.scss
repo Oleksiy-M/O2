@@ -31,31 +31,107 @@
    margin-bottom: 40px;
    // background: $section-color;
    border-radius: 5px;
+
+
+   background-size: cover;
+   background-position: top;
+   // background-: ;
+   // object-fit: contain;
    background-image: linear-gradient(to bottom,
 
          #6ac8ffbe 0.3%,
-         #0176eadb 1%,
-         #380078d7 99%,
+         #0176eaba 1%,
+         #380078ee 99%,
          #0c0113d7 0.1%,
-         #0c0113d7 0.1%,
-      );
+         #0c0113d7 0.1%),
+      url("../img/head-i/head-indus-mobil.jpg");
    // #7d0101a3 5%,
    // #5e0101b7);
 
-   @media screen and (min-width: 768px) {
-      // display: flex;
 
-      // flex-direction: column;
-      // align-items: end;
-      // flex-wrap: wrap;
-      // justify-content: right;
+   @media (min-device-pixel-ratio: 2) and (max-width: 767px),
+   (min-resolution: 192dpi) and (max-width: 767px),
+   (min-resolution: 2dppx) and (max-width: 767px) {
+      // height: 300px;
+      // padding: 100px 0 0px;
+
+      background-image: linear-gradient(to bottom,
+
+            #6ac8ffbe 0.3%,
+            #0176eaba 1%,
+            #380078ee 99%,
+            #0c0113d7 0.1%,
+            #0c0113d7 0.1%),
+         url("../img/head-i/head-indus-mobil@2x.jpg");
+   }
+
+   @media screen and (min-width: 768px) {
       padding-top: 60px;
       padding-bottom: 30px;
+      background-position: top;
+      background-size: cover;
+
+      // padding: 250px 0 20px;
+      // height: 520px;
+      // background-position: bottom;
+      background-image: linear-gradient(to bottom,
+
+            #6ac8ffbe 0.3%,
+            #0176eaba 1%,
+            #380078ee 99%,
+            #0c0113d7 0.1%,
+            #0c0113d7 0.1%),
+         url("../img/head-i/head-indus-tablet.jpg");
+   }
+
+   @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+   (min-resolution: 192dpi) and (min-width: 768px),
+   (min-resolution: 2dppx) and (min-width: 768px) {
+
+      background-image: linear-gradient(to bottom,
+
+            #6ac8ffbe 0.3%,
+            #0176eaba 1%,
+            #380078ee 99%,
+            #0c0113d7 0.1%,
+            #0c0113d7 0.1%),
+         url("../img/head-i/head-indus-tablet@2x.jpg");
+
    }
 
    @media screen and (min-width: 1200px) {
+      // background-position: bottom;
+      // padding: 150px 0 20px;
+      // height: 420px;
+      // max-width: 1600px;
+      background-position: top;
       padding-bottom: 50px;
+      background-image: linear-gradient(to bottom,
+
+            #6ac8ffbe 0.3%,
+            #0176eaba 1%,
+            #380078ee 99%,
+            #0c0113d7 0.1%,
+            #0c0113d7 0.1%),
+         url("../img/head-i/head-indus.jpg");
    }
+
+   @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+   (min-resolution: 192dpi) and (min-width: 1200px),
+   (min-resolution: 2dppx) and (min-width: 1200px) {
+      // padding: 0px 0 0px;
+      padding-bottom: 50px;
+      background-image: linear-gradient(to bottom,
+
+            #6ac8ffbe 0.3%,
+            #0176eaba 1%,
+            #380078ee 99%,
+            #0c0113d7 0.1%,
+            #0c0113d7 0.1%),
+         url("../img/head-i/head-indus@2x.jpg");
+   }
+
+
 }
 
 .idustry-hero {
