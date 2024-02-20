@@ -2598,9 +2598,6 @@ body {
   padding: 0 0 30px;
   transition-duration: 100ms;
 }
-.article-item:hover, .article-item:focus {
-  transform: scale(1.02);
-}
 
 .article-title {
   padding: 0 0 5px;
@@ -2612,8 +2609,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.06em;
   color: #d5d095;
+  transition-duration: 400ms;
 }
 .article-item:hover .article-title, .article-item:focus .article-title {
+  transform: scale(1.02);
   color: #fffdd1;
   text-shadow: rgb(0, 0, 0) 2px 2px 5px, rgb(0, 0, 0) 3px 3px 3px;
 }
@@ -2628,9 +2627,11 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #d5d095;
+  transition-duration: 100ms;
 }
 .article-item:hover .article-aqueduct, .article-item:focus .article-aqueduct {
   color: #fffdd1;
+  transform: scale(1.02);
   text-shadow: rgb(0, 0, 0) 1px 1.5px 2px, rgb(0, 0, 0) 1px 2.5px 5px;
 }
 
@@ -2695,18 +2696,18 @@ body {
   text-align: center;
   align-items: center;
   background-color: rgba(141, 3, 254, 0.7843137255);
-  font-weight: 500;
+  height: 100%;
+  font-weight: 400;
   padding: 10px 8px;
   color: #fffdd1;
-  font-size: 8px;
-  line-height: 1.16;
+  font-size: 7px;
+  line-height: 1.02;
+  letter-spacing: 0.02em;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-style: italic;
   text-shadow: 1px 1.5px 4px #000000, 1px 2.5px 4px #000000;
-  letter-spacing: 0.02em;
   transform: translatex(-105%);
   transition-duration: 1s;
-  height: 100%;
   opacity: 0;
 }
 .cards__item:hover .cards__alert, .cards__item:focus .cards__alert {

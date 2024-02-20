@@ -131,20 +131,21 @@
    align-items: center;
    background-color: #8d03fec8;
    // background-color: #b000ad84;
+   height: 100%;
 
-   font-weight: 500;
+   font-weight: 400;
    padding: 10px 8px;
    color: $prim-histor-text;
-   font-size: 8px;
-   line-height: 1.16;
+   font-size: 7px;
+   line-height: 1.02;
+   letter-spacing: 0.02em;
+
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    font-style: italic;
    text-shadow: 1px 1.5px 4px #000000,
       1px 2.5px 4px #000000;
-   letter-spacing: 0.02em;
    transform: translatex(-105%);
    transition-duration: 1s;
-   height: 100%;
    opacity: 0;
 
    .cards__item:hover &,
