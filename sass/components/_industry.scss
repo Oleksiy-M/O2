@@ -10,7 +10,7 @@
    //       linear-gradient(rgba(6, 1, 55, 0.718),
    //          rgba(4, 3, 38, 0.777));
 
-   // url("../img/bg-discl/bg-mobil.jpg")
+   // url("../img/bg-discl/bg-mobil.png")
    margin: 0 0 300px 0;
 
    @media screen and (min-width: 768px) {
@@ -31,7 +31,7 @@
    margin-bottom: 40px;
    // background: $section-color;
    border-radius: 5px;
-
+   position: relative;
 
    background-size: cover;
    background-position: top;
@@ -40,11 +40,12 @@
    background-image: linear-gradient(to bottom,
 
          #6ac8ffbe 0.3%,
-         #0176eaba 1%,
-         #380078ee 99%,
-         #0c0113d7 0.1%,
+         #0176ead2 1%,
+         #2a51dc88 49%,
+         #260078 99%,
+         #0c0113 0.1%,
          #0c0113d7 0.1%),
-      url("../img/head-i/head-indus-mobil.jpg");
+      url("../img/head-i/head-indus-mobil.png");
    // #7d0101a3 5%,
    // #5e0101b7);
 
@@ -58,11 +59,12 @@
       background-image: linear-gradient(to bottom,
 
             #6ac8ffbe 0.3%,
-            #0176eaba 1%,
-            #380078ee 99%,
-            #0c0113d7 0.1%,
+            #0176ead2 1%,
+            #2a51dc88 49%,
+            #260078 99%,
+            #0c0113 0.1%,
             #0c0113d7 0.1%),
-         url("../img/head-i/head-indus-mobil@2x.jpg");
+         url("../img/head-i/head-indus-mobil@2x.png");
    }
 
    @media screen and (min-width: 768px) {
@@ -77,11 +79,12 @@
       background-image: linear-gradient(to bottom,
 
             #6ac8ffbe 0.3%,
-            #0176eaba 1%,
-            #380078ee 99%,
-            #0c0113d7 0.1%,
+            #0176ead2 1%,
+            #2a51dc88 49%,
+            #260078 99%,
+            #0c0113 0.1%,
             #0c0113d7 0.1%),
-         url("../img/head-i/head-indus-tablet.jpg");
+         url("../img/head-i/head-indus-tablet.png");
    }
 
    @media (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -91,11 +94,12 @@
       background-image: linear-gradient(to bottom,
 
             #6ac8ffbe 0.3%,
-            #0176eaba 1%,
-            #380078ee 99%,
-            #0c0113d7 0.1%,
+            #0176ead2 1%,
+            #2a51dc88 49%,
+            #260078 99%,
+            #0c0113 0.1%,
             #0c0113d7 0.1%),
-         url("../img/head-i/head-indus-tablet@2x.jpg");
+         url("../img/head-i/head-indus-tablet@2x.png");
 
    }
 
@@ -109,11 +113,12 @@
       background-image: linear-gradient(to bottom,
 
             #6ac8ffbe 0.3%,
-            #0176eaba 1%,
-            #380078ee 99%,
-            #0c0113d7 0.1%,
+            #0176ead2 1%,
+            #2a51dc88 49%,
+            #260078 99%,
+            #0c0113 0.1%,
             #0c0113d7 0.1%),
-         url("../img/head-i/head-indus.jpg");
+         url("../img/head-i/head-indus.png");
    }
 
    @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
@@ -124,11 +129,12 @@
       background-image: linear-gradient(to bottom,
 
             #6ac8ffbe 0.3%,
-            #0176eaba 1%,
-            #380078ee 99%,
-            #0c0113d7 0.1%,
+            #0176ead2 1%,
+            #2a51dc88 49%,
+            #260078 99%,
+            #0c0113 0.1%,
             #0c0113d7 0.1%),
-         url("../img/head-i/head-indus@2x.jpg");
+         url("../img/head-i/head-indus@2x.png");
    }
 
 
@@ -216,7 +222,7 @@
 .hand-hero {
    // display: flex;
    // justify-content: right;
-   z-index: 2;
+   z-index: 3;
    transition-duration: $animation-head;
 
    @media screen and (min-width: 768px) {

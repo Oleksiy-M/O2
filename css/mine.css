@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .list {
   margin: 0;
   padding: 0;
@@ -554,13 +555,14 @@ body {
   padding: 80px 0 30px 0;
   margin-bottom: 40px;
   border-radius: 5px;
+  position: relative;
   background-size: cover;
   background-position: top;
-  background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(1, 118, 234, 0.7294117647) 1%, rgba(56, 0, 120, 0.9333333333) 99%, rgba(12, 1, 19, 0.8431372549) 0.1%, rgba(12, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-mobil.jpg");
+  background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(1, 118, 234, 0.8235294118) 1%, rgba(42, 81, 220, 0.5333333333) 49%, #260078 99%, #0c0113 0.1%, rgba(12, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-mobil.png");
 }
 @media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
   .section-hero {
-    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(1, 118, 234, 0.7294117647) 1%, rgba(56, 0, 120, 0.9333333333) 99%, rgba(12, 1, 19, 0.8431372549) 0.1%, rgba(12, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-mobil@2x.jpg");
+    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(1, 118, 234, 0.8235294118) 1%, rgba(42, 81, 220, 0.5333333333) 49%, #260078 99%, #0c0113 0.1%, rgba(12, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-mobil@2x.png");
   }
 }
 @media screen and (min-width: 768px) {
@@ -569,25 +571,25 @@ body {
     padding-bottom: 30px;
     background-position: top;
     background-size: cover;
-    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(1, 118, 234, 0.7294117647) 1%, rgba(56, 0, 120, 0.9333333333) 99%, rgba(12, 1, 19, 0.8431372549) 0.1%, rgba(12, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-tablet.jpg");
+    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(1, 118, 234, 0.8235294118) 1%, rgba(42, 81, 220, 0.5333333333) 49%, #260078 99%, #0c0113 0.1%, rgba(12, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-tablet.png");
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
   .section-hero {
-    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(1, 118, 234, 0.7294117647) 1%, rgba(56, 0, 120, 0.9333333333) 99%, rgba(12, 1, 19, 0.8431372549) 0.1%, rgba(12, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-tablet@2x.jpg");
+    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(1, 118, 234, 0.8235294118) 1%, rgba(42, 81, 220, 0.5333333333) 49%, #260078 99%, #0c0113 0.1%, rgba(12, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-tablet@2x.png");
   }
 }
 @media screen and (min-width: 1200px) {
   .section-hero {
     background-position: top;
     padding-bottom: 50px;
-    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(1, 118, 234, 0.7294117647) 1%, rgba(56, 0, 120, 0.9333333333) 99%, rgba(12, 1, 19, 0.8431372549) 0.1%, rgba(12, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus.jpg");
+    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(1, 118, 234, 0.8235294118) 1%, rgba(42, 81, 220, 0.5333333333) 49%, #260078 99%, #0c0113 0.1%, rgba(12, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus.png");
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .section-hero {
     padding-bottom: 50px;
-    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(1, 118, 234, 0.7294117647) 1%, rgba(56, 0, 120, 0.9333333333) 99%, rgba(12, 1, 19, 0.8431372549) 0.1%, rgba(12, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus@2x.jpg");
+    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(1, 118, 234, 0.8235294118) 1%, rgba(42, 81, 220, 0.5333333333) 49%, #260078 99%, #0c0113 0.1%, rgba(12, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus@2x.png");
   }
 }
 
@@ -658,7 +660,7 @@ body {
 }
 
 .hand-hero {
-  z-index: 2;
+  z-index: 3;
   transition-duration: 1s;
 }
 @media screen and (min-width: 768px) {
@@ -1965,10 +1967,12 @@ body {
 }
 
 .section-bg {
+  position: relative;
+  z-index: 2;
   border-radius: 5px;
   padding: 90px 3px 100px 3px;
   margin-bottom: 40px;
-  background-image: linear-gradient(to bottom, rgba(119, 105, 212, 0.7215686275) 0.01%, rgba(56, 0, 120, 0.8431372549) 0.15%, rgba(36, 0, 62, 0.8588235294) 35%, rgba(26, 0, 29, 0.6980392157) 99.7%, rgba(0, 0, 0, 0.8) 3%);
+  background-image: linear-gradient(to bottom, rgba(119, 105, 212, 0.7215686275) 0.01%, #260078 0.15%, rgba(36, 0, 62, 0.8588235294) 35%, rgba(26, 0, 29, 0.6980392157) 99.7%, rgba(0, 0, 0, 0.8) 3%);
 }
 @media screen and (min-width: 768px) {
   .section-bg {
@@ -2108,6 +2112,22 @@ body {
 @media screen and (min-width: 1200px) {
   .laptop-content {
     margin-left: 10px;
+  }
+}
+
+.visual-content {
+  position: absolute;
+  z-index: -1;
+  border-radius: 5px;
+  transform: translate(250px, -250px);
+  width: 800px;
+  height: 360px;
+  background-position: bottom;
+  background-size: cover;
+}
+@media screen and (min-width: 1200px) {
+  .visual-content {
+    background-image: url(../img/develo-eco/laptop.png);
   }
 }
 
@@ -2910,6 +2930,45 @@ body {
 }
 .water-mountins {
   height: 100vw;
+}
+
+/* Стилі для контейнера particles.js */
+/* ---- reset ---- */
+canvas {
+  display: block;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  z-index: 4;
+  transform: translateY(-60px);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 120, 14, 0);
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ---- stats.js ---- */
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
 }
 
 .box-dirigible {

@@ -111,3 +111,9 @@ window.onload = function () {
       cardsList.appendChild(clone);
    });
 }
+
+
+
+
+
+
