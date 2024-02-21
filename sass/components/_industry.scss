@@ -35,16 +35,15 @@
 
    background-size: cover;
    background-position: top;
-   // background-: ;
-   // object-fit: contain;
+
    background-image: linear-gradient(to bottom,
 
          #6ac8ffbe 0.3%,
-         #0176ead2 1%,
-         #2a51dc88 49%,
-         #260078 99%,
-         #0c0113 0.1%,
-         #0c0113d7 0.1%),
+         #0176eaec 1%,
+         #1b3aaba9 29%,
+         #251c5be6 99%,
+         #050113 0.1%,
+         #080113d7 0.1%),
       url("../img/head-i/head-indus-mobil.png");
    // #7d0101a3 5%,
    // #5e0101b7);
@@ -59,16 +58,16 @@
       background-image: linear-gradient(to bottom,
 
             #6ac8ffbe 0.3%,
-            #0176ead2 1%,
-            #2a51dc88 49%,
-            #260078 99%,
-            #0c0113 0.1%,
-            #0c0113d7 0.1%),
+            #0176eaec 1%,
+            #1b3aaba9 29%,
+            #251c5be6 99%,
+            #050113 0.1%,
+            #080113d7 0.1%),
          url("../img/head-i/head-indus-mobil@2x.png");
    }
 
    @media screen and (min-width: 768px) {
-      padding-top: 60px;
+      padding-top: 80px;
       padding-bottom: 30px;
       background-position: top;
       background-size: cover;
@@ -77,13 +76,12 @@
       // height: 520px;
       // background-position: bottom;
       background-image: linear-gradient(to bottom,
-
             #6ac8ffbe 0.3%,
-            #0176ead2 1%,
-            #2a51dc88 49%,
-            #260078 99%,
-            #0c0113 0.1%,
-            #0c0113d7 0.1%),
+            #0176eaec 1%,
+            #1b3aaba9 29%,
+            #251c5be6 99%,
+            #050113 0.1%,
+            #080113d7 0.1%),
          url("../img/head-i/head-indus-tablet.png");
    }
 
@@ -92,13 +90,12 @@
    (min-resolution: 2dppx) and (min-width: 768px) {
 
       background-image: linear-gradient(to bottom,
-
             #6ac8ffbe 0.3%,
-            #0176ead2 1%,
-            #2a51dc88 49%,
-            #260078 99%,
-            #0c0113 0.1%,
-            #0c0113d7 0.1%),
+            #0176eaec 1%,
+            #1b3aaba9 29%,
+            #251c5be6 99%,
+            #050113 0.1%,
+            #080113d7 0.1%),
          url("../img/head-i/head-indus-tablet@2x.png");
 
    }
@@ -113,11 +110,11 @@
       background-image: linear-gradient(to bottom,
 
             #6ac8ffbe 0.3%,
-            #0176ead2 1%,
-            #2a51dc88 49%,
-            #260078 99%,
-            #0c0113 0.1%,
-            #0c0113d7 0.1%),
+            #0176eaec 1%,
+            #1b3aaba9 29%,
+            #251c5be6 99%,
+            #050113 0.1%,
+            #080113d7 0.1%),
          url("../img/head-i/head-indus.png");
    }
 
@@ -127,18 +124,54 @@
       // padding: 0px 0 0px;
       padding-bottom: 50px;
       background-image: linear-gradient(to bottom,
-
             #6ac8ffbe 0.3%,
-            #0176ead2 1%,
-            #2a51dc88 49%,
-            #260078 99%,
-            #0c0113 0.1%,
-            #0c0113d7 0.1%),
+            #0176eaec 1%,
+            #1b3aaba9 29%,
+            #251c5be6 99%,
+            #050113 0.1%,
+            #080113d7 0.1%),
          url("../img/head-i/head-indus@2x.png");
    }
-
-
 }
+
+canvas {
+   display: block;
+   // vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+   position: absolute;
+   z-index: 4;
+   transform: translateY(-80px);
+   width: 100%;
+   height: 100%;
+   background-color: #00780e00;
+   background-image: url("");
+   background-repeat: no-repeat;
+   background-size: cover;
+   // background-position: 50% 50%;
+}
+
+
+.js-count-particles {
+   font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+   // -webkit-user-select: none;
+   margin-top: 5px;
+   margin-left: 5px;
+}
+
+#stats {
+   border-radius: 3px 3px 0 0;
+   overflow: hidden;
+}
+
+
+
 
 .idustry-hero {
    margin: 0 22px 120px 22px;
@@ -248,15 +281,20 @@
    padding: 100px 3px;
    margin: 0 0 50px;
    border-radius: 5px;
+   background-repeat: no-repeat;
+   // object-fit: cover;
+   background-size: contain;
+   // width: 100%;
+   // height: 100%;
    background-image: linear-gradient(to bottom,
          #243f6c 0.5%,
-         #15013eda 0.8%,
-         #1a001db2 1.1%,
-         #110013e4 99.2%,
+         #100c30e6 0.8%,
+         #100c30cf 1.1%,
+         #110013c7 99.2%,
          #000000 5%);
 
    @media screen and (min-width: 768px) {
-      padding: 100px 40px 50px;
+      padding: 50px 40px 50px;
    }
 }
 
@@ -299,7 +337,7 @@
    }
 
    @media screen and (min-width: 1200px) {
-      height: 300px;
+      height: 400px;
    }
 
 }

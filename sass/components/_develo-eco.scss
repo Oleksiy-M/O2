@@ -14,9 +14,9 @@
 
           #7769d4b8 0.01%,
 
-          #260078 0.15%,
-          #24003edb 35%,
-          #1a001db2 99.7%,
+          #211661ed 0.15%,
+          #1a114ee6 35%,
+          #0d0830e6 99.7%,
           #000000cc 3%);
 
       // #5e0101b7 0.1%,
@@ -177,6 +177,28 @@
       }
     }
 
+    // .visual-content__home {
+    //   position: absolute;
+    //   z-index: -1;
+    //   border-radius: 10px;
+    //   width: 270px;
+    //   height: 160px;
+    //   // transform: translate(-125px, -120px);
+    //   background-position: bottom;
+    //   background-size: cover;
+    //   opacity: 0.2;
+    //   background-image: url(../img/develo-eco/home.png);
+
+    //   @media screen and (min-width: 1200px) {
+    //     transform: translate(50px, -110px);
+    //     width: 600px;
+    //     height: 250px;
+    //   }
+    // }
+
+
+
+
     .laptop-content {
       margin-bottom: 0;
 
@@ -186,46 +208,24 @@
       }
     }
 
-
-
-
-    // .visual-content_home {
+    // .visual-content__leptop {
     //   position: absolute;
     //   z-index: -1;
-    //   border-radius: 15px;
-    //   transform: translate(-400px, -80px);
-    //   width: 600px;
-    //   height: 220px;
-    //   background-position: center;
-    //   // background-repeat: no-repeat;
+    //   border-radius: 10px;
+    //   width: 270px;
+    //   height: 160px;
+    //   // transform: translate(-125px, -120px);
+    //   background-position: bottom;
     //   background-size: cover;
+    //   opacity: 0.2;
+    //   background-image: url(../img/develo-eco/leptop.png);
 
     //   @media screen and (min-width: 1200px) {
-    //     background-image: url(../img/develo-eco/gidrat.png);
-
+    //     transform: translate(-100px, -110px);
+    //     width: 600px;
+    //     height: 250px;
     //   }
     // }
-
-
-    .visual-content {
-      position: absolute;
-      z-index: -1;
-      border-radius: 5px;
-      width: 270px;
-      height: 160px;
-      transform: translate(25px, -120px);
-      background-position: bottom;
-      background-size: cover;
-
-      background-image: url(../img/develo-eco/laptop.png);
-
-      @media screen and (min-width: 1200px) {
-        transform: translate(250px, -250px);
-        width: 800px;
-        height: 360px;
-      }
-    }
-
 
 
 
@@ -362,6 +362,28 @@
       }
     }
 
+    .visual-content {
+      position: absolute;
+      z-index: -1;
+      border-radius: 10px;
+      width: 270px;
+      height: 160px;
+      // transform: translate(-125px, -120px);
+      background-position: center;
+      background-size: cover;
+      opacity: 0.6;
+      background-image: url(../img/develo-eco/oil.png);
+
+      @media screen and (min-width: 1200px) {
+        transform: translate(-640px, 100px);
+        width: 1170px;
+        height: 410px;
+      }
+    }
+
+
+
+
     .ocean-content {
       @media screen and (min-width: 768px) {
         margin-left: 43.5px;
@@ -372,7 +394,6 @@
         }
       }
 
-
       @media screen and (min-width: 1200px) {
         width: 520px;
         margin-top: 150px;
@@ -381,8 +402,28 @@
       }
     }
 
-    .factory-content {
 
+
+    // .visual-content__ocean {
+    //   position: absolute;
+    //   z-index: -1;
+    //   border-radius: 10px;
+    //   width: 270px;
+    //   height: 160px;
+    //   // transform: translate(-125px, -120px);
+    //   background-position: bottom;
+    //   background-size: cover;
+    //   opacity: 0.2;
+    //   background-image: url(../img/develo-eco/ocean.png);
+
+    //   @media screen and (min-width: 1200px) {
+    //     transform: translate(110px, -110px);
+    //     width: 600px;
+    //     height: 250px;
+    //   }
+    // }
+
+    .factory-content {
       @media screen and (min-width: 768px) {
         margin-left: 8.5px;
       }
@@ -390,6 +431,25 @@
       @media screen and (min-width: 1200px) {
         margin-left: -45px;
         width: 520px;
+      }
+    }
+
+    .visual-content__factory {
+      position: absolute;
+      z-index: -1;
+      border-radius: 10px;
+      width: 270px;
+      height: 160px;
+      // transform: translate(-125px, -120px);
+      background-position: top;
+      background-size: cover;
+      opacity: 0.3;
+      background-image: url(../img/develo-eco/factory.png);
+
+      @media screen and (min-width: 1200px) {
+        transform: translate(-435px, -50px);
+        width: 1170px;
+        height: 400px;
       }
     }
 
@@ -404,6 +464,27 @@
       }
     }
 
+
+
+    // .visual-content__earth {
+    //   position: absolute;
+    //   z-index: -1;
+    //   border-radius: 10px;
+    //   width: 270px;
+    //   height: 160px;
+    //   // transform: translate(-125px, -120px);
+    //   background-position: bottom;
+    //   background-size: cover;
+    //   opacity: 0.5;
+    //   background-image: url(../img/develo-eco/earth.png);
+
+    //   @media screen and (min-width: 1200px) {
+    //     transform: translate(110px, -110px);
+    //     width: 600px;
+    //     height: 250px;
+    //   }
+    // }
+
     .man-content {
       margin-bottom: 0px;
 
@@ -415,5 +496,25 @@
         margin-left: -245px;
         width: 520px;
         margin-bottom: 0px;
+      }
+    }
+
+
+    .visual-content__men {
+      position: absolute;
+      z-index: -1;
+      border-radius: 10px;
+      width: 270px;
+      height: 160px;
+      // transform: translate(-125px, -120px);
+      background-position: top;
+      background-size: cover;
+      opacity: 0.2;
+      background-image: url(../img/develo-eco/men.png);
+
+      @media screen and (min-width: 1200px) {
+        transform: translate(-235px, -100px);
+        width: 1170px;
+        height: 400px;
       }
     }
