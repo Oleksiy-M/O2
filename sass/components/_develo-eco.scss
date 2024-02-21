@@ -211,15 +211,18 @@
       position: absolute;
       z-index: -1;
       border-radius: 5px;
-      transform: translate(250px, -250px);
-      width: 800px;
-      height: 360px;
+      width: 270px;
+      height: 160px;
+      transform: translate(25px, -120px);
       background-position: bottom;
       background-size: cover;
 
-      @media screen and (min-width: 1200px) {
-        background-image: url(../img/develo-eco/laptop.png);
+      background-image: url(../img/develo-eco/laptop.png);
 
+      @media screen and (min-width: 1200px) {
+        transform: translate(250px, -250px);
+        width: 800px;
+        height: 360px;
       }
     }
 
