@@ -68,7 +68,7 @@
    box-shadow: 0px -1px 1px #0000002f;
    height: 0.1%;
    border-radius: 0 10px 0 0;
-
+   animation-timing-function: $anime-section;
 
    // .develo-eco:hover &,
    // .develo-eco:focus & {
@@ -120,8 +120,6 @@
    .develo-eco__content:focus & {
       color: $svg-color;
       transform: scale(1.01);
-
-      // background-color: rgba(207, 149, 23, 0.553);
    }
 
    @media screen and (min-width: 768px) {

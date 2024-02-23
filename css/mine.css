@@ -2338,6 +2338,25 @@ canvas {
   }
 }
 
+.visual-content__earth {
+  position: absolute;
+  z-index: -1;
+  border-radius: 10px;
+  width: 270px;
+  height: 160px;
+  background-position: bottom;
+  background-size: cover;
+  opacity: 0.2;
+  background-image: url(../img/develo-eco/earth.png);
+}
+@media screen and (min-width: 1200px) {
+  .visual-content__earth {
+    transform: translate(-150px, 0px);
+    width: 600px;
+    height: 300px;
+  }
+}
+
 .man-content {
   margin-bottom: 0px;
 }
@@ -2424,6 +2443,7 @@ canvas {
   box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.1843137255);
   height: 0.1%;
   border-radius: 0 10px 0 0;
+  animation-timing-function: cubic-bezier(0.05, 1.12, 0.001, -0.115);
 }
 .develo-eco__content:hover .cards__overlay, .develo-eco__content:focus .cards__overlay {
   background-color: rgba(0, 0, 47, 0.3215686275);

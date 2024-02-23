@@ -467,24 +467,24 @@
 
 
 
-    // .visual-content__earth {
-    //   position: absolute;
-    //   z-index: -1;
-    //   border-radius: 10px;
-    //   width: 270px;
-    //   height: 160px;
-    //   // transform: translate(-125px, -120px);
-    //   background-position: bottom;
-    //   background-size: cover;
-    //   opacity: 0.5;
-    //   background-image: url(../img/develo-eco/earth.png);
+    .visual-content__earth {
+      position: absolute;
+      z-index: -1;
+      border-radius: 10px;
+      width: 270px;
+      height: 160px;
+      // transform: translate(-125px, -120px);
+      background-position: bottom;
+      background-size: cover;
+      opacity: 0.2;
+      background-image: url(../img/develo-eco/earth.png);
 
-    //   @media screen and (min-width: 1200px) {
-    //     transform: translate(110px, -110px);
-    //     width: 600px;
-    //     height: 250px;
-    //   }
-    // }
+      @media screen and (min-width: 1200px) {
+        transform: translate(-150px, 0px);
+        width: 600px;
+        height: 300px;
+      }
+    }
 
     .man-content {
       margin-bottom: 0px;
