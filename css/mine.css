@@ -2003,7 +2003,7 @@ canvas {
   border-radius: 5px;
   padding: 90px 3px 100px 3px;
   margin-bottom: 40px;
-  background-image: linear-gradient(to bottom, rgba(119, 105, 212, 0.7215686275) 0.01%, rgba(33, 5, 69, 0.9411764706) 0.15%, rgba(25, 1, 59, 0.8117647059) 25%, rgba(19, 0, 46, 0.9607843137) 99.7%, rgba(0, 0, 0, 0.8) 3%);
+  background-image: linear-gradient(to bottom, rgba(119, 105, 212, 0.7215686275) 0.01%, rgba(33, 5, 69, 0.8235294118) 0.15%, rgba(25, 1, 59, 0.8509803922) 25%, rgba(19, 0, 46, 0.9607843137) 99.7%, rgba(0, 0, 0, 0.8) 3%);
 }
 @media screen and (min-width: 768px) {
   .section-bg {
@@ -2253,9 +2253,9 @@ canvas {
 }
 @media screen and (min-width: 1200px) {
   .visual-content {
-    transform: translate(-345px, 30px);
+    transform: translate(-175px, 0px);
     width: 600px;
-    height: 500px;
+    height: 300px;
   }
 }
 
@@ -2289,9 +2289,9 @@ canvas {
 }
 @media screen and (min-width: 1200px) {
   .visual-content__ocean {
-    transform: translate(-235px, 175px);
+    transform: translate(-150px, 0px);
     width: 600px;
-    height: 500px;
+    height: 300px;
   }
 }
 
@@ -2320,9 +2320,9 @@ canvas {
 }
 @media screen and (min-width: 1200px) {
   .visual-content__factory {
-    transform: translate(-135px, 320px);
+    transform: translate(-150px, 0px);
     width: 600px;
-    height: 500px;
+    height: 300px;
   }
 }
 
@@ -2367,9 +2367,9 @@ canvas {
 }
 @media screen and (min-width: 1200px) {
   .visual-content__men {
-    transform: translate(65px, 65px);
+    transform: translate(-150px, 0px);
     width: 600px;
-    height: 500px;
+    height: 300px;
   }
 }
 
@@ -2823,12 +2823,12 @@ canvas {
   .cards__alert {
     padding: 10px 10px;
     font-size: 8px;
-    line-height: 1.56;
+    line-height: 1.26;
   }
 }
 @media screen and (min-width: 1200px) {
   .cards__alert {
-    font-size: 12px;
+    font-size: 11px;
     padding: 10px 20px;
   }
 }
@@ -2973,7 +2973,7 @@ canvas {
 }
 @media screen and (min-width: 768px) {
   .cards {
-    animation: moveRightToLeft 35s linear infinite;
+    animation: moveRightToLeft 25s linear infinite;
     justify-content: center;
   }
 }
