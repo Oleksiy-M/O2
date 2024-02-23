@@ -601,6 +601,7 @@ body {
   }
 }
 
+/* ---- reset ---- */
 canvas {
   display: block;
 }
@@ -608,29 +609,17 @@ canvas {
 /* ---- particles.js container ---- */
 #particles-js {
   position: absolute;
-  z-index: 2;
-  transform: translateY(-80px);
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 120, 14, 0);
-  background-image: url("");
+  opacity: 0.5;
+  transform: translateY(-80px);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% 50%;
 }
 
 .js-count-particles {
   font-size: 1.1em;
-}
-
-#stats,
-.count-particles {
-  margin-top: 5px;
-  margin-left: 5px;
-}
-
-#stats {
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
 }
 
 .idustry-hero {
@@ -722,7 +711,7 @@ canvas {
   border-radius: 5px;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: linear-gradient(to bottom, #243f6c 0.5%, rgba(16, 12, 48, 0.9019607843) 0.8%, rgba(16, 12, 48, 0.8117647059) 1.1%, rgba(17, 0, 19, 0.7803921569) 99.2%, #000000 5%);
+  background-image: linear-gradient(to bottom, #243f6c 0.5%, rgba(19, 0, 46, 0.7960784314) 0.8%, rgba(19, 0, 46, 0.9607843137) 1.1%, rgba(17, 0, 19, 0.7803921569) 99.2%, #000000 5%);
 }
 @media screen and (min-width: 768px) {
   .section-end {
@@ -2014,7 +2003,7 @@ canvas {
   border-radius: 5px;
   padding: 90px 3px 100px 3px;
   margin-bottom: 40px;
-  background-image: linear-gradient(to bottom, rgba(119, 105, 212, 0.7215686275) 0.01%, rgba(33, 22, 97, 0.9294117647) 0.15%, rgba(26, 17, 78, 0.9019607843) 35%, rgba(13, 8, 48, 0.9019607843) 99.7%, rgba(0, 0, 0, 0.8) 3%);
+  background-image: linear-gradient(to bottom, rgba(119, 105, 212, 0.7215686275) 0.01%, rgba(33, 5, 69, 0.9411764706) 0.15%, rgba(25, 1, 59, 0.8117647059) 25%, rgba(19, 0, 46, 0.9607843137) 99.7%, rgba(0, 0, 0, 0.8) 3%);
 }
 @media screen and (min-width: 768px) {
   .section-bg {
@@ -2256,17 +2245,17 @@ canvas {
   z-index: -1;
   border-radius: 10px;
   width: 270px;
-  height: 160px;
-  background-position: center;
+  height: 200px;
+  background-position: bottom;
   background-size: cover;
-  opacity: 0.6;
+  opacity: 0.4;
   background-image: url(../img/develo-eco/oil.png);
 }
 @media screen and (min-width: 1200px) {
   .visual-content {
-    transform: translate(-640px, 100px);
-    width: 1170px;
-    height: 410px;
+    transform: translate(-345px, 30px);
+    width: 600px;
+    height: 500px;
   }
 }
 
@@ -2287,6 +2276,25 @@ canvas {
   }
 }
 
+.visual-content__ocean {
+  position: absolute;
+  z-index: -1;
+  border-radius: 10px;
+  width: 270px;
+  height: 200px;
+  background-position: bottom;
+  background-size: cover;
+  opacity: 0.2;
+  background-image: url(../img/develo-eco/ocean.png);
+}
+@media screen and (min-width: 1200px) {
+  .visual-content__ocean {
+    transform: translate(-235px, 175px);
+    width: 600px;
+    height: 500px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .factory-content {
     margin-left: 8.5px;
@@ -2304,7 +2312,7 @@ canvas {
   z-index: -1;
   border-radius: 10px;
   width: 270px;
-  height: 160px;
+  height: 200px;
   background-position: top;
   background-size: cover;
   opacity: 0.3;
@@ -2312,9 +2320,9 @@ canvas {
 }
 @media screen and (min-width: 1200px) {
   .visual-content__factory {
-    transform: translate(-435px, -50px);
-    width: 1170px;
-    height: 400px;
+    transform: translate(-135px, 320px);
+    width: 600px;
+    height: 500px;
   }
 }
 
@@ -2351,7 +2359,7 @@ canvas {
   z-index: -1;
   border-radius: 10px;
   width: 270px;
-  height: 160px;
+  height: 200px;
   background-position: top;
   background-size: cover;
   opacity: 0.2;
@@ -2359,9 +2367,9 @@ canvas {
 }
 @media screen and (min-width: 1200px) {
   .visual-content__men {
-    transform: translate(-235px, -100px);
-    width: 1170px;
-    height: 400px;
+    transform: translate(65px, 65px);
+    width: 600px;
+    height: 500px;
   }
 }
 
@@ -2417,16 +2425,11 @@ canvas {
   height: 0.1%;
   border-radius: 0 10px 0 0;
 }
-.develo-eco:hover .cards__overlay, .develo-eco:focus .cards__overlay {
-  height: 70%;
-}
-.impact-section:hover .cards__overlay, .impact-section:focus .cards__overlay {
-  height: 70%;
-}
 .develo-eco__content:hover .cards__overlay, .develo-eco__content:focus .cards__overlay {
-  background-color: rgba(43, 21, 40, 0.231372549);
+  background-color: rgba(0, 0, 47, 0.3215686275);
   box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.12), 0px 0px 4px rgba(0, 0, 0, 0.06), 1px -1px 6px rgba(0, 0, 0, 0.16);
   transform: scale(1.01);
+  height: 70%;
 }
 @media screen and (min-width: 768px) {
   .cards__overlay {
@@ -2473,7 +2476,7 @@ canvas {
 }
 @media screen and (min-width: 768px) {
   .video-bg {
-    background-image: linear-gradient(to bottom, rgba(27, 0, 147, 0.7215686275) 1%, rgba(23, 15, 92, 0.7647058824) 20%, rgba(19, 1, 69, 0.8078431373) 85%);
+    background-image: linear-gradient(to bottom, rgba(47, 0, 255, 0.6156862745) 1%, rgba(18, 4, 144, 0.7647058824) 20%, rgba(19, 1, 69, 0.8078431373) 85%);
     max-width: 1600px;
     overflow: hidden;
     padding: 0;
@@ -2538,13 +2541,13 @@ canvas {
 @media screen and (min-width: 768px) {
   .history-section {
     padding: 60px 0 0px;
-    margin: 0px 0 30px;
+    margin: 0px 0 20px;
     max-width: 1600px;
   }
 }
 @media screen and (min-width: 1200px) {
   .history-section {
-    margin: 0px 0 35px;
+    margin: 0px 0 25px;
   }
 }
 
@@ -2797,7 +2800,7 @@ canvas {
   display: flex;
   text-align: center;
   align-items: center;
-  background-color: rgba(141, 3, 254, 0.7843137255);
+  background-color: rgba(141, 3, 254, 0.6);
   height: 100%;
   font-weight: 400;
   padding: 10px 8px;
@@ -2837,10 +2840,10 @@ canvas {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  width: 94.5%;
-  height: 75%;
+  width: 100%;
+  height: 70%;
   margin: 0px 0;
-  padding: 0px 4px;
+  padding: 0px 0px;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.1019607843);
   transition-duration: 1s;
@@ -2862,8 +2865,7 @@ canvas {
   font-size: 10px;
   line-height: 1.5;
   letter-spacing: 0.06em;
-  color: #fffdd1;
-  text-shadow: 2px 2px 10px #000000, 3px 3px 3px #000000;
+  color: #d5d095;
   transition-duration: 3s;
   z-index: 2;
 }
@@ -2890,10 +2892,10 @@ canvas {
   user-select: none;
   font-size: 9px;
   line-height: 1.87;
-  color: #d5d095;
-  text-shadow: 2px 2px 10px #000000, 3px 3px 3px #000000;
+  color: #fffdd1;
   transition-duration: 3s;
   z-index: 2;
+  margin: 0 0 -2px;
 }
 .section-card:hover .cards__text, .section-card:focus .cards__text {
   transition-duration: 0.5s;
@@ -2905,16 +2907,18 @@ canvas {
 }
 @media screen and (min-width: 768px) {
   .cards__text {
-    font-size: 10px;
+    font-size: 9px;
   }
 }
 @media screen and (min-width: 1200px) {
   .cards__text {
-    font-size: 12px;
+    margin: 0 0 -4px;
+    font-size: 11px;
   }
 }
 
 .section-card {
+  display: flex;
   overflow: hidden;
   padding: 0px 0;
   margin: 0 0px 20px;
@@ -2926,26 +2930,42 @@ canvas {
   .section-card {
     overflow: visible;
     margin: 0 0 30px;
-    width: calc(100% + 280px);
-    transform: translateX(-140px);
+    width: 1015px;
+    transform: translateX(-145px);
   }
 }
 @media screen and (min-width: 1200px) {
   .section-card {
-    margin: 0 0 30px;
-    width: calc(100% + 400px);
-    transform: translateX(-200px);
+    margin: 0 0 20px;
+    width: 1600px;
+    transform: translateX(-215px);
     height: auto;
   }
 }
 
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(73.75%);
+  }
+  100% {
+    transform: translateX(-73.75%);
+  }
+}
+@keyframes moveRightToLeftMobil {
+  0% {
+    transform: translateX(748px);
+  }
+  100% {
+    transform: translateX(-748px);
+  }
+}
 .cards {
   display: flex;
+  justify-content: center;
   padding: 0px;
   margin: 0;
-  width: auto;
   animation-timing-function: ease-out;
-  animation: moveRightToLeft 45s linear infinite;
+  animation: moveRightToLeftMobil 25s linear infinite;
 }
 .section-card:hover .cards, .section-card:focus .cards {
   transition: all 2s ease-out;
@@ -2953,12 +2973,8 @@ canvas {
 }
 @media screen and (min-width: 768px) {
   .cards {
-    width: auto;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .cards {
-    width: auto;
+    animation: moveRightToLeft 35s linear infinite;
+    justify-content: center;
   }
 }
 
@@ -2989,8 +3005,8 @@ canvas {
 .cadr-svg {
   position: absolute;
   fill: #0a4169;
-  width: 110%;
-  height: 105%;
+  width: 104%;
+  height: 100%;
   transition-duration: 2s;
   z-index: 1;
 }
@@ -3002,15 +3018,6 @@ canvas {
   fill: #2a2a2a;
 }
 
-@keyframes moveRightToLeft {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transition-duration: 1s;
-    transform: translateX(calc(-100% - 791px));
-  }
-}
 .water-mountins {
   height: 100vw;
 }

@@ -70,23 +70,24 @@
    border-radius: 0 10px 0 0;
 
 
-   .develo-eco:hover &,
-   .develo-eco:focus & {
-      height: 70%;
-   }
+   // .develo-eco:hover &,
+   // .develo-eco:focus & {
+   //    height: 70%;
+   // }
 
-   .impact-section:hover &,
-   .impact-section:focus & {
-      height: 70%;
+   // .impact-section:hover &,
+   // .impact-section:focus & {
+   //    height: 70%;
 
-   }
+   // }
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
-      background-color: #2b15283b;
+      background-color: #00002f52;
       box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.12),
          0px 0px 4px rgba(0, 0, 0, 0.06), 1px -1px 6px rgba(0, 0, 0, 0.16);
       transform: scale(1.01);
+      height: 70%;
    }
 
    @media screen and (min-width: 768px) {
