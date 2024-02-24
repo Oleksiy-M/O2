@@ -23,7 +23,7 @@
 .bubble-head {
    z-index: -1;
    min-width: 270px;
-margin: 0 auto;
+   margin: 0 auto;
    position: fixed;
    width: 100%;
 
@@ -47,7 +47,7 @@ margin: 0 auto;
    (min-resolution: 2dppx) and (max-width: 767px) {}
 
    @media screen and (min-width: 768px) {
-   height: 200vw;
+      height: 200vw;
       background-image: $bg-water;
    }
 
@@ -74,58 +74,75 @@ margin: 0 auto;
 
 
 
+.advantages-section {
+   display: block;
+   // width: 1600px;
+}
+
+.advantages-list {
+   // display: block;
+   list-style-type: decimal;
+   display: flex;
+   flex-wrap: wrap;
+
+   // height: 600px;
+   // margin: 0 auto;
+   @media screen and (min-width: 768px) {
+
+      justify-content: space-around;
+   }
+}
+
+.advantages-item {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   width: 250px;
+   margin: 0 auto 100px;
+   counter-increment: advantage-counter;
+
+   @media screen and (min-width: 768px) {
+
+      width: 250px;
+
+   }
+}
 
 
-// background-image: 
-// url("../img/background/background-desktop-mobil.jpg");
-// 	height: 935px;
-// 	background-size: cover;
-// 	background-position: center;
-// 	background-attachment: fixed;
-// 	margin-left: auto;
-// 	margin-right: auto;
-// 	// padding-top: 50px;
-// 	// border: 2px dashed tomato;
+.advantages-item::before {
+   content: counter(advantage-counter);
+   font-size: 80px;
+   font-weight: 100;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   margin-right: 0px;
+   text-shadow: 1px 1px 2px #050505, 0px 0px 4px #050505;
+   color: aqua;
+
+}
 
 
-// 	@media (min-device-pixel-ratio: 2) and (max-width: 767px),
-// 	(min-resolution: 192dpi) and (max-width: 767px),
-// 	(min-resolution: 2dppx) and (max-width: 767px) {
-// 	// padding-top: 20px;
-// 	background-image:
-// 	url("../img/background/background-desktop-mobil@2x.jpg");
-// 	}
+.advantages-title {
+   display: block;
+   text-align: left;
 
-// 	@media screen and (min-width: 768px) {
-// 	height: 1370px;
-// 	background-image:
-// 	url("../img/background/background-desktop-tablet.jpg");
-// 	}
+   margin: 15px 0 0 15px;
+   width: 120px;
+   font-size: 15px;
+   font-weight: 600;
 
-// 	@media
-// 	(min-device-pixel-ratio: 2) and (min-width: 768px),
-// 	(min-resolution: 192dpi) and (min-width: 768px),
-// 	(min-resolution: 2dppx) and (min-width: 768px){
-
-// 	height: 1370px;
-// 	background-image:
-// 	url("../img/background/background-desktop-tablet@2x.jpg");
-// 	}
+   color: $svg-color;
+   // color: #00ff6e;
+   text-shadow: 1px 1px 2px #000317, 0px 0px 1px #01112e;
+}
 
 
+.advantages-svg {
+   width: 200px;
+   // height: 300px;
+   transition-duration: 1s;
 
-// 	@media screen and (min-width: 1200px) {
-// 	max-width: 1600px;
-// 	height: 820px;
-// 	background-image:
-// 	url("../img/background/background-desktop.jpg");
-// 	}
-
-// 	@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
-// 	(min-resolution: 192dpi) and (min-width: 1200px),
-// 	(min-resolution: 2dppx) and (min-width: 1200px) {
-// 		height: 1180px;
-// 	background-image:
-// 	url("../img/background/background-desktop@2x.jpg");
-// 	}
-// }
+   &:hover,
+   &:focus {
+      transform: scale(1.2);
+   }
+}

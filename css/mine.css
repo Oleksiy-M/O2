@@ -94,6 +94,64 @@ body {
   }
 }
 
+.advantages-section {
+  display: block;
+}
+
+.advantages-list {
+  list-style-type: decimal;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    justify-content: space-around;
+  }
+}
+
+.advantages-item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 250px;
+  margin: 0 auto 100px;
+  counter-increment: advantage-counter;
+}
+@media screen and (min-width: 768px) {
+  .advantages-item {
+    width: 250px;
+  }
+}
+
+.advantages-item::before {
+  content: counter(advantage-counter);
+  font-size: 80px;
+  font-weight: 100;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin-right: 0px;
+  text-shadow: 1px 1px 2px #050505, 0px 0px 4px #050505;
+  color: aqua;
+}
+
+.advantages-title {
+  display: block;
+  text-align: left;
+  margin: 15px 0 0 15px;
+  width: 120px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #33FF99;
+  text-shadow: 1px 1px 2px #000317, 0px 0px 1px #01112e;
+}
+
+.advantages-svg {
+  width: 200px;
+  transition-duration: 1s;
+}
+.advantages-svg:hover, .advantages-svg:focus {
+  transform: scale(1.2);
+}
+
 /* =================SITE-NAV  ================= */
 .pg-header {
   display: block;
@@ -351,8 +409,9 @@ body {
 
 .section-oxy {
   display: block;
-  margin: 0 auto 200px;
+  margin: 0 auto 300px;
   background-size: cover;
+  position: relative;
   background-position: center;
   border: 2px solid rgba(181, 248, 248, 0.8);
   background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/family/family-mobil.jpg");
@@ -368,6 +427,7 @@ body {
 @media screen and (min-width: 768px) {
   .section-oxy {
     padding: 250px 0 20px;
+    margin: 0 auto 200px;
     height: 520px;
     background-position: bottom;
     background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/family/family-tablet.jpg");
@@ -389,6 +449,37 @@ body {
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .section-oxy {
     background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/family/family@2x.jpg");
+  }
+}
+
+/* ---- particles.js container ---- */
+#particles-js2 {
+  width: 100%;
+  opacity: 0.8;
+}
+@media screen and (min-width: 768px) {
+  #particles-js2 {
+    margin: -170px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #particles-js2 {
+    margin-top: -70px;
+  }
+}
+
+.particles-js-hero {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  transform: translate(0px, -100px);
+}
+@media screen and (min-width: 768px) {
+  .particles-js-hero {
+    transform: translate(170px, -80px);
   }
 }
 
@@ -530,15 +621,6 @@ body {
     letter-spacing: 0.26em;
     margin-top: 0px;
   }
-}
-
-.section-advantages {
-  display: block;
-}
-
-.list-advantages {
-  display: flex;
-  justify-content: space-between;
 }
 
 .idustry {
@@ -2245,15 +2327,23 @@ canvas {
   z-index: -1;
   border-radius: 10px;
   width: 270px;
-  height: 200px;
+  height: 400px;
+  margin: 0 0 50px;
   background-position: bottom;
   background-size: cover;
   opacity: 0.4;
   background-image: url(../img/develo-eco/oil.png);
 }
+@media screen and (min-width: 768px) {
+  .visual-content {
+    transform: translate(-175px, -50px);
+    width: 400px;
+    height: 300px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .visual-content {
-    transform: translate(-175px, 0px);
+    transform: translate(-175px, -40px);
     width: 600px;
     height: 300px;
   }
@@ -2281,15 +2371,22 @@ canvas {
   z-index: -1;
   border-radius: 10px;
   width: 270px;
-  height: 200px;
+  height: 400px;
   background-position: bottom;
   background-size: cover;
   opacity: 0.2;
   background-image: url(../img/develo-eco/ocean.png);
 }
+@media screen and (min-width: 768px) {
+  .visual-content__ocean {
+    transform: translate(-175px, -50px);
+    width: 400px;
+    height: 300px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .visual-content__ocean {
-    transform: translate(-150px, 0px);
+    transform: translate(-150px, -40px);
     width: 600px;
     height: 300px;
   }
@@ -2312,15 +2409,22 @@ canvas {
   z-index: -1;
   border-radius: 10px;
   width: 270px;
-  height: 200px;
+  height: 400px;
   background-position: top;
   background-size: cover;
   opacity: 0.3;
   background-image: url(../img/develo-eco/factory.png);
 }
+@media screen and (min-width: 768px) {
+  .visual-content__factory {
+    transform: translate(-175px, -50px);
+    width: 400px;
+    height: 300px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .visual-content__factory {
-    transform: translate(-150px, 0px);
+    transform: translate(-150px, -40px);
     width: 600px;
     height: 300px;
   }
@@ -2343,15 +2447,22 @@ canvas {
   z-index: -1;
   border-radius: 10px;
   width: 270px;
-  height: 160px;
+  height: 400px;
   background-position: bottom;
   background-size: cover;
   opacity: 0.2;
   background-image: url(../img/develo-eco/earth.png);
 }
+@media screen and (min-width: 768px) {
+  .visual-content__earth {
+    transform: translate(-175px, -50px);
+    width: 400px;
+    height: 300px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .visual-content__earth {
-    transform: translate(-150px, 0px);
+    transform: translate(-150px, -40px);
     width: 600px;
     height: 300px;
   }
@@ -2378,15 +2489,22 @@ canvas {
   z-index: -1;
   border-radius: 10px;
   width: 270px;
-  height: 200px;
+  height: 400px;
   background-position: top;
   background-size: cover;
   opacity: 0.2;
   background-image: url(../img/develo-eco/men.png);
 }
+@media screen and (min-width: 768px) {
+  .visual-content__men {
+    transform: translate(-175px, -50px);
+    width: 400px;
+    height: 300px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .visual-content__men {
-    transform: translate(-150px, 0px);
+    transform: translate(-150px, -40px);
     width: 600px;
     height: 300px;
   }
@@ -2468,6 +2586,7 @@ canvas {
   user-select: none;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 11px;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   white-space: pre-wrap;

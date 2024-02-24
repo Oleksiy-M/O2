@@ -15,6 +15,21 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hero_list {
 	padding: 0;
 }
@@ -56,9 +71,10 @@
 
 .section-oxy {
 	display: block;
-	margin: 0 auto 200px;
+	margin: 0 auto 300px;
 	background-size: cover;
-	// margin: 0 0 ;
+	position: relative;
+	// overflow: hidden;
 	background-position: center;
 	border: 2px solid #b5f8f8cc;
 	// background-attachment: scroll;
@@ -90,6 +106,7 @@
 
 	@media screen and (min-width: 768px) {
 		padding: 250px 0 20px;
+			margin: 0 auto 200px;
 		height: 520px;
 		background-position: bottom;
 		background-image:
@@ -133,6 +150,46 @@
 			url("../img/family/family@2x.jpg");
 	}
 }
+
+/* ---- particles.js container ---- */
+#particles-js2 {
+	// position: absolute;
+	width: 100%;
+	// height: 420px;
+	// margin-top: -70px;
+	opacity: 0.8;
+	// background-repeat: no-repeat;
+	// background-size: contain;
+	// background-position: 50% 50%;
+
+	@media screen and (min-width: 768px) {
+		margin: -170px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-top: -70px;
+	}
+}
+
+.particles-js-hero {
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+
+	// margin-top: -70px;
+	// margin: 0 auto;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50% 50%;
+	transform: translate(0px, -100px);
+
+	@media screen and (min-width: 768px) {
+		transform: translate(170px, -80px);
+	}
+}
+
+
 
 .logo__overlay {
 	display: flex;
@@ -319,19 +376,4 @@
 
 	}
 
-}
-
-
-
-
-.section-advantages {
-	display: block;
-	// width: 100%;	
-	// flex-direction: row;	
-}
-
-
-.list-advantages {
-	display: flex;
-	justify-content: space-between;
 }

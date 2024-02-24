@@ -368,15 +368,22 @@
       z-index: -1;
       border-radius: 10px;
       width: 270px;
-      height: 200px;
+      height: 400px;
+      margin: 0 0 50px;
       // transform: translate(-125px, -120px);
       background-position: bottom;
       background-size: cover;
       opacity: 0.4;
       background-image: url(../img/develo-eco/oil.png);
 
+      @media screen and (min-width: 768px) {
+        transform: translate(-175px, -50px);
+        width: 400px;
+        height: 300px;
+      }
+
       @media screen and (min-width: 1200px) {
-        transform: translate(-175px, 0px);
+        transform: translate(-175px, -40px);
         width: 600px;
         height: 300px;
       }
@@ -410,15 +417,21 @@
       z-index: -1;
       border-radius: 10px;
       width: 270px;
-      height: 200px;
+      height: 400px;
       // transform: translate(-125px, -120px);
       background-position: bottom;
       background-size: cover;
       opacity: 0.2;
       background-image: url(../img/develo-eco/ocean.png);
 
+      @media screen and (min-width: 768px) {
+        transform: translate(-175px, -50px);
+        width: 400px;
+        height: 300px;
+      }
+
       @media screen and (min-width: 1200px) {
-        transform: translate(-150px, 0px);
+        transform: translate(-150px, -40px);
         width: 600px;
         height: 300px;
       }
@@ -440,15 +453,21 @@
       z-index: -1;
       border-radius: 10px;
       width: 270px;
-      height: 200px;
+      height: 400px;
       // transform: translate(-125px, -120px);
       background-position: top;
       background-size: cover;
       opacity: 0.3;
       background-image: url(../img/develo-eco/factory.png);
 
+      @media screen and (min-width: 768px) {
+        transform: translate(-175px, -50px);
+        width: 400px;
+        height: 300px;
+      }
+
       @media screen and (min-width: 1200px) {
-        transform: translate(-150px, 0px);
+        transform: translate(-150px, -40px);
         width: 600px;
         height: 300px;
       }
@@ -472,15 +491,21 @@
       z-index: -1;
       border-radius: 10px;
       width: 270px;
-      height: 160px;
+      height: 400px;
       // transform: translate(-125px, -120px);
       background-position: bottom;
       background-size: cover;
       opacity: 0.2;
       background-image: url(../img/develo-eco/earth.png);
 
+      @media screen and (min-width: 768px) {
+        transform: translate(-175px, -50px);
+        width: 400px;
+        height: 300px;
+      }
+
       @media screen and (min-width: 1200px) {
-        transform: translate(-150px, 0px);
+        transform: translate(-150px, -40px);
         width: 600px;
         height: 300px;
       }
@@ -492,6 +517,7 @@
       @media screen and (min-width: 768px) {
         margin-left: -60.5px;
       }
+
 
       @media screen and (min-width: 1200px) {
         margin-left: -245px;
@@ -506,15 +532,21 @@
       z-index: -1;
       border-radius: 10px;
       width: 270px;
-      height: 200px;
+      height: 400px;
       // transform: translate(-125px, -120px);
       background-position: top;
       background-size: cover;
       opacity: 0.2;
       background-image: url(../img/develo-eco/men.png);
 
+      @media screen and (min-width: 768px) {
+        transform: translate(-175px, -50px);
+        width: 400px;
+        height: 300px;
+      }
+
       @media screen and (min-width: 1200px) {
-        transform: translate(-150px, 0px);
+        transform: translate(-150px, -40px);
         width: 600px;
         height: 300px;
       }
