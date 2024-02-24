@@ -102,27 +102,24 @@ body {
   list-style-type: decimal;
   display: flex;
   flex-wrap: wrap;
-}
-@media screen and (min-width: 768px) {
-  .advantages-list {
-    justify-content: space-around;
-  }
+  justify-content: center;
 }
 
 .advantages-item {
-  font-size: 75px;
   display: flex;
   justify-content: left;
   position: relative;
-  padding: 0 0 0 15px;
-  margin: 0 auto 50px;
+  padding: 0 35px;
+  margin: 0 0 50px;
   counter-increment: advantage-counter;
   transition-duration: 0.1s;
   text-shadow: 1px 1px 2px #050505, 0px 0px 4px #050505;
   color: rgb(0, 119, 255);
+  font-size: 75px;
   font-weight: 100;
   width: 250px;
   height: 300px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 .advantages-item:hover, .advantages-item:focus {
   color: aqua;
@@ -144,14 +141,13 @@ body {
 
 .advantages-item::before {
   content: counter(advantage-counter);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 .advantages-title {
   display: block;
   text-align: left;
   position: absolute;
-  margin: 15px 0 0px;
+  margin: 15px 0 0 45px;
   width: 120px;
   font-size: 15px;
   font-weight: 600;
@@ -162,7 +158,7 @@ body {
 .advantages-svg {
   width: 200px;
   transition-duration: 1s;
-  margin: 110px 50px 0 0;
+  margin: 110px 0px 0 0;
 }
 .advantages-item:hover .advantages-svg, .advantages-item:focus .advantages-svg {
   transform: scale(1.2);
@@ -2342,9 +2338,10 @@ canvas {
   position: absolute;
   z-index: -1;
   border-radius: 10px;
-  width: 270px;
-  height: 400px;
-  margin: 0 0 50px;
+  width: 100%;
+  height: 500px;
+  margin: 0 0 0px;
+  transform: translateY(-600px);
   background-position: bottom;
   background-size: cover;
   opacity: 0.4;
@@ -2386,8 +2383,9 @@ canvas {
   position: absolute;
   z-index: -1;
   border-radius: 10px;
-  width: 270px;
+  width: 100%;
   height: 400px;
+  transform: translateY(-350px);
   background-position: bottom;
   background-size: cover;
   opacity: 0.2;
@@ -2424,8 +2422,9 @@ canvas {
   position: absolute;
   z-index: -1;
   border-radius: 10px;
-  width: 270px;
+  width: 100%;
   height: 400px;
+  transform: translateY(-200px);
   background-position: top;
   background-size: cover;
   opacity: 0.3;
@@ -2462,8 +2461,9 @@ canvas {
   position: absolute;
   z-index: -1;
   border-radius: 10px;
-  width: 270px;
+  width: 100%;
   height: 400px;
+  transform: translateY(-50px);
   background-position: bottom;
   background-size: cover;
   opacity: 0.2;
@@ -2504,8 +2504,9 @@ canvas {
   position: absolute;
   z-index: -1;
   border-radius: 10px;
-  width: 270px;
+  width: 100%;
   height: 400px;
+  transform: translateY(100px);
   background-position: top;
   background-size: cover;
   opacity: 0.2;
