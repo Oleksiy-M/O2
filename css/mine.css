@@ -110,33 +110,48 @@ body {
 }
 
 .advantages-item {
+  font-size: 75px;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 250px;
-  margin: 0 auto 100px;
+  justify-content: left;
+  position: relative;
+  padding: 0 0 0 15px;
+  margin: 0 auto 50px;
   counter-increment: advantage-counter;
+  transition-duration: 0.1s;
+  text-shadow: 1px 1px 2px #050505, 0px 0px 4px #050505;
+  color: rgb(0, 119, 255);
+  font-weight: 100;
+  width: 250px;
+  height: 300px;
+}
+.advantages-item:hover, .advantages-item:focus {
+  color: aqua;
+  text-shadow: 1px 1px 2px #050505, 0px 0px 4px #050505, 0px 0px 10px #fefafa;
+  font-size: 85px;
 }
 @media screen and (min-width: 768px) {
   .advantages-item {
-    width: 250px;
+    width: 280px;
   }
+}
+
+.advantages-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
 }
 
 .advantages-item::before {
   content: counter(advantage-counter);
-  font-size: 80px;
-  font-weight: 100;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  margin-right: 0px;
-  text-shadow: 1px 1px 2px #050505, 0px 0px 4px #050505;
-  color: aqua;
 }
 
 .advantages-title {
   display: block;
   text-align: left;
-  margin: 15px 0 0 15px;
+  position: absolute;
+  margin: 15px 0 0px;
   width: 120px;
   font-size: 15px;
   font-weight: 600;
@@ -147,8 +162,9 @@ body {
 .advantages-svg {
   width: 200px;
   transition-duration: 1s;
+  margin: 110px 50px 0 0;
 }
-.advantages-svg:hover, .advantages-svg:focus {
+.advantages-item:hover .advantages-svg, .advantages-item:focus .advantages-svg {
   transform: scale(1.2);
 }
 
@@ -427,7 +443,7 @@ body {
 @media screen and (min-width: 768px) {
   .section-oxy {
     padding: 250px 0 20px;
-    margin: 0 auto 200px;
+    margin: 0 auto 150px;
     height: 520px;
     background-position: bottom;
     background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/family/family-tablet.jpg");
