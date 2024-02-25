@@ -6,23 +6,17 @@
       border-radius: 5px;
       padding: 90px 3px 100px 3px;
       margin-bottom: 40px;
+
+      border-top: 4px #074272d7 solid;
+      border-bottom: 5px #010f1a solid;
       // background-color: $section-color__desktop;
 
       // background-position: center;
       // background-size: cover;
       background-image: linear-gradient(to bottom,
+          #0d1c2bf0 39%,
+          #10081ae6 99%);
 
-          #7769d4 0.01%,
-
-          #012558e6 0.15%,
-          #011c4ee6 25%,
-          #09032de6 99.7%,
-
-          #000000cc 3%);
-
-      // #5e0101b7 0.1%,
-      // #460117c6 6%,
-      // #00020eb5 99%);
       @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;

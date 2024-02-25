@@ -83,7 +83,7 @@
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
-      background-color: #2929ff5d;
+      // background-color: #ffffff30;
       box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.12),
          0px 0px 4px rgba(0, 0, 0, 0.06), 1px -1px 6px rgba(0, 0, 0, 0.16);
       // transform: scale(1.01);
@@ -107,12 +107,12 @@
    user-select: none;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    font-size: 11px;
-   font-weight: 400;
+   font-weight: 600;
    line-height: 1.5;
    letter-spacing: 0.02em;
    white-space: pre-wrap;
    color: $Secondary-text-color;
-   text-shadow: 1px 1.5px 1px black;
+   text-shadow: 1px 1.5px 1px black, 0px 1.5px 4px black;
    transition-duration: 0.5s;
 
    font-style: italic;
@@ -120,7 +120,7 @@
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       color: $svg-color;
-      transform: scale(1.01);
+      // transform: scale(1.01);
    }
 
    @media screen and (min-width: 768px) {

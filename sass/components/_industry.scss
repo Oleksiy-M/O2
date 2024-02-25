@@ -38,12 +38,12 @@
 
    background-image: linear-gradient(to bottom,
 
-            #6ac8fff7 0.3%,
-               #1f7fb3d0 1%,
-               #37617724 39%,
-               #032e53e6 99%,
-               #050113 0.1%,
-               #080113d7 0.1%),
+         #6ac8fff7 0.3%,
+         #1f7fb3d0 1%,
+         #37617724 39%,
+         #01284ae6 99%,
+         #050113 0.1%,
+         #080113d7 0.1%),
       url("../img/head-i/head-indus-mobil.png");
    // #7d0101a3 5%,
    // #5e0101b7);
@@ -58,11 +58,11 @@
       background-image: linear-gradient(to bottom,
 
             #6ac8fff7 0.3%,
-               #1f7fb3d0 1%,
-               #37617724 39%,
-               #032e53e6 99%,
-               #050113 0.1%,
-               #080113d7 0.1%),
+            #1f7fb3d0 1%,
+            #37617724 39%,
+            #01284ae6 99%,
+            #050113 0.1%,
+            #080113d7 0.1%),
          url("../img/head-i/head-indus-mobil@2x.png");
    }
 
@@ -77,11 +77,11 @@
       // background-position: bottom;
       background-image: linear-gradient(to bottom,
             #6ac8fff7 0.3%,
-               #1f7fb3d0 1%,
-               #37617724 39%,
-               #032e53e6 99%,
-               #050113 0.1%,
-               #080113d7 0.1%),
+            #1f7fb3d0 1%,
+            #37617724 39%,
+            #01284ae6 99%,
+            #050113 0.1%,
+            #080113d7 0.1%),
          url("../img/head-i/head-indus-tablet.png");
    }
 
@@ -91,11 +91,11 @@
 
       background-image: linear-gradient(to bottom,
             #6ac8fff7 0.3%,
-               #1f7fb3d0 1%,
-               #37617724 39%,
-               #032e53e6 99%,
-               #050113 0.1%,
-               #080113d7 0.1%),
+            #1f7fb3d0 1%,
+            #37617724 39%,
+            #01284ae6 99%,
+            #050113 0.1%,
+            #080113d7 0.1%),
          url("../img/head-i/head-indus-tablet@2x.png");
 
    }
@@ -112,7 +112,7 @@
             #6ac8fff7 0.3%,
             #1f7fb3d0 1%,
             #37617724 39%,
-            #032e53e6 99%,
+            #01284ae6 99%,
             #050113 0.1%,
             #080113d7 0.1%),
          url("../img/head-i/head-indus.png");
@@ -125,11 +125,11 @@
       padding-bottom: 50px;
       background-image: linear-gradient(to bottom,
             #6ac8fff7 0.3%,
-               #1f7fb3d0 1%,
-               #37617724 39%,
-               #032e53e6 99%,
-               #050113 0.1%,
-               #080113d7 0.1%),
+            #1f7fb3d0 1%,
+            #37617724 39%,
+            #01284ae6 99%,
+            #050113 0.1%,
+            #080113d7 0.1%),
          url("../img/head-i/head-indus@2x.png");
    }
 }
@@ -242,7 +242,7 @@ canvas {
    @media screen and (min-width: 768px) {
       // width: 100%;
       flex-direction: row-reverse;
-      margin-left: 0px;
+      margin: 0px;
    }
 }
 
@@ -284,8 +284,8 @@ canvas {
    // height: 100%;
    background-image: linear-gradient(to bottom,
          #243f6c 0.5%,
-         #13002ecb 0.8%,
-         #13002ef5 1.1%,
+         #10081ae6 0.8%,
+         #10081ae6 1.1%,
          #110013c7 99.2%,
          #000000 5%);
 
@@ -382,6 +382,8 @@ canvas {
 
 .chart {
    padding: 0;
+   opacity: 0.8;
+   position: absolute;
 
    @media screen and (min-width: 768px) {
 

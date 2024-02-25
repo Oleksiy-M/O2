@@ -691,11 +691,11 @@ body {
   position: relative;
   background-size: cover;
   background-position: top;
-  background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.968627451) 0.3%, rgba(31, 127, 179, 0.8156862745) 1%, rgba(55, 97, 119, 0.1411764706) 39%, rgba(3, 46, 83, 0.9019607843) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-mobil.png");
+  background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.968627451) 0.3%, rgba(31, 127, 179, 0.8156862745) 1%, rgba(55, 97, 119, 0.1411764706) 39%, rgba(1, 40, 74, 0.9019607843) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-mobil.png");
 }
 @media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
   .section-hero {
-    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.968627451) 0.3%, rgba(31, 127, 179, 0.8156862745) 1%, rgba(55, 97, 119, 0.1411764706) 39%, rgba(3, 46, 83, 0.9019607843) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-mobil@2x.png");
+    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.968627451) 0.3%, rgba(31, 127, 179, 0.8156862745) 1%, rgba(55, 97, 119, 0.1411764706) 39%, rgba(1, 40, 74, 0.9019607843) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-mobil@2x.png");
   }
 }
 @media screen and (min-width: 768px) {
@@ -704,25 +704,25 @@ body {
     padding-bottom: 30px;
     background-position: top;
     background-size: cover;
-    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.968627451) 0.3%, rgba(31, 127, 179, 0.8156862745) 1%, rgba(55, 97, 119, 0.1411764706) 39%, rgba(3, 46, 83, 0.9019607843) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-tablet.png");
+    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.968627451) 0.3%, rgba(31, 127, 179, 0.8156862745) 1%, rgba(55, 97, 119, 0.1411764706) 39%, rgba(1, 40, 74, 0.9019607843) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-tablet.png");
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
   .section-hero {
-    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.968627451) 0.3%, rgba(31, 127, 179, 0.8156862745) 1%, rgba(55, 97, 119, 0.1411764706) 39%, rgba(3, 46, 83, 0.9019607843) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-tablet@2x.png");
+    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.968627451) 0.3%, rgba(31, 127, 179, 0.8156862745) 1%, rgba(55, 97, 119, 0.1411764706) 39%, rgba(1, 40, 74, 0.9019607843) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-tablet@2x.png");
   }
 }
 @media screen and (min-width: 1200px) {
   .section-hero {
     background-position: top;
     padding-bottom: 50px;
-    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.968627451) 0.3%, rgba(31, 127, 179, 0.8156862745) 1%, rgba(55, 97, 119, 0.1411764706) 39%, rgba(3, 46, 83, 0.9019607843) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus.png");
+    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.968627451) 0.3%, rgba(31, 127, 179, 0.8156862745) 1%, rgba(55, 97, 119, 0.1411764706) 39%, rgba(1, 40, 74, 0.9019607843) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus.png");
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .section-hero {
     padding-bottom: 50px;
-    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.968627451) 0.3%, rgba(31, 127, 179, 0.8156862745) 1%, rgba(55, 97, 119, 0.1411764706) 39%, rgba(3, 46, 83, 0.9019607843) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus@2x.png");
+    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.968627451) 0.3%, rgba(31, 127, 179, 0.8156862745) 1%, rgba(55, 97, 119, 0.1411764706) 39%, rgba(1, 40, 74, 0.9019607843) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus@2x.png");
   }
 }
 
@@ -809,7 +809,7 @@ canvas {
 @media screen and (min-width: 768px) {
   .develo-eco__hand {
     flex-direction: row-reverse;
-    margin-left: 0px;
+    margin: 0px;
   }
 }
 
@@ -836,7 +836,7 @@ canvas {
   border-radius: 5px;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: linear-gradient(to bottom, #243f6c 0.5%, rgba(19, 0, 46, 0.7960784314) 0.8%, rgba(19, 0, 46, 0.9607843137) 1.1%, rgba(17, 0, 19, 0.7803921569) 99.2%, #000000 5%);
+  background-image: linear-gradient(to bottom, #243f6c 0.5%, rgba(16, 8, 26, 0.9019607843) 0.8%, rgba(16, 8, 26, 0.9019607843) 1.1%, rgba(17, 0, 19, 0.7803921569) 99.2%, #000000 5%);
 }
 @media screen and (min-width: 768px) {
   .section-end {
@@ -908,6 +908,8 @@ canvas {
 
 .chart {
   padding: 0;
+  opacity: 0.8;
+  position: absolute;
 }
 @media screen and (min-width: 768px) {
   .chart {
@@ -2128,7 +2130,9 @@ canvas {
   border-radius: 5px;
   padding: 90px 3px 100px 3px;
   margin-bottom: 40px;
-  background-image: linear-gradient(to bottom, #7769d4 0.01%, rgba(1, 37, 88, 0.9019607843) 0.15%, rgba(1, 28, 78, 0.9019607843) 25%, rgba(9, 3, 45, 0.9019607843) 99.7%, rgba(0, 0, 0, 0.8) 3%);
+  border-top: 4px rgba(7, 66, 114, 0.8431372549) solid;
+  border-bottom: 5px #010f1a solid;
+  background-image: linear-gradient(to bottom, rgba(13, 28, 43, 0.9411764706) 39%, rgba(16, 8, 26, 0.9019607843) 99%);
 }
 @media screen and (min-width: 768px) {
   .section-bg {
@@ -2611,7 +2615,6 @@ canvas {
   animation-timing-function: cubic-bezier(0.05, 1.12, 0.001, -0.115);
 }
 .develo-eco__content:hover .cards__overlay, .develo-eco__content:focus .cards__overlay {
-  background-color: rgba(41, 41, 255, 0.3647058824);
   box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.12), 0px 0px 4px rgba(0, 0, 0, 0.06), 1px -1px 6px rgba(0, 0, 0, 0.16);
   height: 80%;
 }
@@ -2632,18 +2635,17 @@ canvas {
   user-select: none;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 11px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.5;
   letter-spacing: 0.02em;
   white-space: pre-wrap;
   color: #3fa9f5;
-  text-shadow: 1px 1.5px 1px black;
+  text-shadow: 1px 1.5px 1px black, 0px 1.5px 4px black;
   transition-duration: 0.5s;
   font-style: italic;
 }
 .develo-eco__content:hover .develo-eco__art, .develo-eco__content:focus .develo-eco__art {
   color: #33FF99;
-  transform: scale(1.01);
 }
 @media screen and (min-width: 768px) {
   .develo-eco__art {
@@ -2661,7 +2663,7 @@ canvas {
 }
 @media screen and (min-width: 768px) {
   .video-bg {
-    background-image: linear-gradient(to bottom, rgba(0, 64, 153, 0.8980392157) 30%, rgba(25, 35, 82, 0.8470588235) 85%);
+    background-image: linear-gradient(to bottom, rgba(51, 20, 102, 0.8980392157) 30%, rgba(19, 1, 37, 0.8470588235) 85%);
     max-width: 1600px;
     overflow: hidden;
     padding: 0;
