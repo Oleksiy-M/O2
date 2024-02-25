@@ -2128,7 +2128,7 @@ canvas {
   border-radius: 5px;
   padding: 90px 3px 100px 3px;
   margin-bottom: 40px;
-  background-image: linear-gradient(to bottom, #7769d4 0.01%, rgba(1, 43, 88, 0.9019607843) 0.15%, rgba(1, 38, 78, 0.9019607843) 25%, rgba(9, 3, 45, 0.9019607843) 99.7%, rgba(0, 0, 0, 0.8) 3%);
+  background-image: linear-gradient(to bottom, #7769d4 0.01%, rgba(1, 37, 88, 0.9019607843) 0.15%, rgba(1, 28, 78, 0.9019607843) 25%, rgba(9, 3, 45, 0.9019607843) 99.7%, rgba(0, 0, 0, 0.8) 3%);
 }
 @media screen and (min-width: 768px) {
   .section-bg {
