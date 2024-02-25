@@ -88,10 +88,10 @@
 
    // height: 600px;
    // margin: 0 auto;
-   // @media screen and (min-width: 768px) {
-
-   //    justify-content: space-around;
-   // }
+   @media screen and (min-width: 768px) {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+   }
 }
 
 
@@ -121,16 +121,23 @@
    &:hover,
    &:focus {
       color: aqua;
-      text-shadow: 1px 1px 2px #050505, 0px 0px 4px #050505, 0px 0px 10px #fefafa;
+      text-shadow: 1px 1px 2px #050505,
+         0px 0px 4px #050505, 0px 0px 10px #fefafa;
       font-size: 85px;
 
    }
 
    @media screen and (min-width: 768px) {
-
-      width: 280px;
-
+      padding: 0 0px;
+      margin: 0 0px 50px;
+      width: 200px;
    }
+
+   @media screen and (min-width: 1200px) {
+      width: 280px;
+      padding: 0 35px;
+   }
+
 }
 
 .advantages-card {
@@ -156,12 +163,28 @@
    // left: 0px;
    margin: 15px 0 0 45px;
    width: 120px;
+
+   user-select: none;
    font-size: 15px;
    font-weight: 600;
 
    color: $svg-color;
    // color: #00ff6e;
    text-shadow: 1px 1px 2px #000317, 0px 0px 1px #01112e;
+
+   @media screen and (min-width: 768px) {
+      width: 120px;
+      margin: 15px 0 0 30px;
+      font-size: 13px;
+      font-weight: 500;
+   }
+
+   @media screen and (min-width: 1200px) {
+      margin: 15px 0 0 45px;
+      width: 140px;
+      font-size: 15px;
+      font-weight: 600;
+   }
 }
 
 
