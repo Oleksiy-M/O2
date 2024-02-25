@@ -3,6 +3,7 @@
 .idustry {
    display: block;
    padding: 80px 0 50px 0;
+
    // background-position: center;
    // background-attachment: scroll;
    // background-color: rgba(3, 3, 109, 0.781); 
@@ -27,9 +28,9 @@
 }
 
 .section-hero {
-   padding: 80px 0 30px 0;
+   padding: 80px 0 25px 0;
    margin-bottom: 40px;
-   // background: $section-color;
+   // border-top: 3px solid #5bdeccdb;
    border-radius: 5px;
    position: relative;
 
@@ -37,11 +38,9 @@
    background-position: top;
 
    background-image: linear-gradient(to bottom,
-
-         #6ac8fff7 0.3%,
-         #1f7fb3d0 1%,
+         #1f7fb3f0 4%,
          #37617724 39%,
-         #01284ae6 99%,
+         #01192de6 99%,
          #050113 0.1%,
          #080113d7 0.1%),
       url("../img/head-i/head-indus-mobil.png");
@@ -57,10 +56,9 @@
 
       background-image: linear-gradient(to bottom,
 
-            #6ac8fff7 0.3%,
-            #1f7fb3d0 1%,
+            #1f7fb3f0 4%,
             #37617724 39%,
-            #01284ae6 99%,
+            #01192de6 99%,
             #050113 0.1%,
             #080113d7 0.1%),
          url("../img/head-i/head-indus-mobil@2x.png");
@@ -76,10 +74,9 @@
       // height: 520px;
       // background-position: bottom;
       background-image: linear-gradient(to bottom,
-            #6ac8fff7 0.3%,
-            #1f7fb3d0 1%,
+            #1f7fb3f0 4%,
             #37617724 39%,
-            #01284ae6 99%,
+            #01192de6 99%,
             #050113 0.1%,
             #080113d7 0.1%),
          url("../img/head-i/head-indus-tablet.png");
@@ -90,10 +87,10 @@
    (min-resolution: 2dppx) and (min-width: 768px) {
 
       background-image: linear-gradient(to bottom,
-            #6ac8fff7 0.3%,
-            #1f7fb3d0 1%,
+
+            #1f7fb3f0 4%,
             #37617724 39%,
-            #01284ae6 99%,
+            #01192de6 99%,
             #050113 0.1%,
             #080113d7 0.1%),
          url("../img/head-i/head-indus-tablet@2x.png");
@@ -108,11 +105,11 @@
       background-position: top;
       padding-bottom: 50px;
       background-image: linear-gradient(to bottom,
-
-            #6ac8fff7 0.3%,
-            #1f7fb3d0 1%,
+            #7fd1fdf0 0.6%,
+            #1f7fb3f0 1%,
+            #1f7fb3f0 4%,
             #37617724 39%,
-            #01284ae6 99%,
+            #01192de6 99%,
             #050113 0.1%,
             #080113d7 0.1%),
          url("../img/head-i/head-indus.png");
@@ -124,10 +121,11 @@
       // padding: 0px 0 0px;
       padding-bottom: 50px;
       background-image: linear-gradient(to bottom,
-            #6ac8fff7 0.3%,
-            #1f7fb3d0 1%,
+
+            #4db6eff0 0.1%,
+            #1f7fb3f0 4%,
             #37617724 39%,
-            #01284ae6 99%,
+            #01192de6 99%,
             #050113 0.1%,
             #080113d7 0.1%),
          url("../img/head-i/head-indus@2x.png");
@@ -140,10 +138,7 @@
 //    font: normal 75% Arial, Helvetica, sans-serif;
 // }
 
-canvas {
-   display: block;
-   // vertical-align: bottom;
-}
+
 
 /* ---- particles.js container ---- */
 #particles-js {
@@ -237,7 +232,7 @@ canvas {
 
 .develo-eco__hand {
    display: flex;
-   margin: 0 0 4px 25px;
+   margin: 0px 0 0px 25px;
 
    @media screen and (min-width: 768px) {
       // width: 100%;
@@ -249,13 +244,10 @@ canvas {
 
 
 .hand-hero {
-   // display: flex;
-   // justify-content: right;
    z-index: 3;
-   transition-duration: $animation-head;
+
 
    @media screen and (min-width: 768px) {
-      // margin-right: 0px;
       width: 360px;
 
    }
@@ -284,9 +276,9 @@ canvas {
    // height: 100%;
    background-image: linear-gradient(to bottom,
          #243f6c 0.5%,
-         #10081ae6 0.8%,
-         #10081ae6 1.1%,
-         #110013c7 99.2%,
+         #001021d9 0.8%,
+         #001021d9 1.1%,
+         #00050ad9 99.2%,
          #000000 5%);
 
    @media screen and (min-width: 768px) {

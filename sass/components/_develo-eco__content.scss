@@ -9,7 +9,7 @@
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
 
-      transform: scale(1.03);
+      transform: scale(1.2);
    }
 }
 
@@ -59,17 +59,15 @@
 .cards__overlay {
    margin: 0;
    display: flex;
-   align-items: center;
-   align-self: flex-end;
-   text-wrap: wrap;
 
+   align-self: flex-end;
    overflow: hidden;
-   transition-duration: $animation-head;
-   box-shadow: 0px -1px 1px #0000002f;
+   transition-duration: 0.5s;
+   // box-shadow: 0px -1px 1px #0000002f;
    height: 0.01%;
    border-radius: 0 10px 0 0;
-   animation-timing-function: $anime-section;
-
+   // animation-timing-function: cubic-bezier(.05, 1.12, .001, -0.115);
+   // transform: translateY(100%);
    // .develo-eco:hover &,
    // .develo-eco:focus & {
    //    height: 70%;
@@ -83,11 +81,12 @@
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
-      // background-color: #ffffff30;
-      box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.12),
-         0px 0px 4px rgba(0, 0, 0, 0.06), 1px -1px 6px rgba(0, 0, 0, 0.16);
+      // background-color: #d200e966;
+      // box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.12),
+      //    0px 0px 4px rgba(0, 0, 0, 0.06), 1px -1px 6px rgba(0, 0, 0, 0.16);
       // transform: scale(1.01);
-      height: 80%;
+      height: 70%;
+
    }
 
    @media screen and (min-width: 768px) {
@@ -102,6 +101,7 @@
 
 
 .develo-eco__art {
+   // transform: translateY(100%);
    padding: 10px 30px;
    text-align: center;
    user-select: none;
@@ -120,12 +120,13 @@
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       color: $svg-color;
+      // transform: translateY(0);
       // transform: scale(1.01);
    }
 
    @media screen and (min-width: 768px) {
       text-align: left;
-      font-size: 12.9px;
+      font-size: 12px;
       line-height: 1.5;
       letter-spacing: 0.02em;
 
