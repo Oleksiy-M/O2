@@ -12,10 +12,10 @@
       // background-size: cover;
       background-image: linear-gradient(to bottom,
 
-          #7769d4b8 0.01%,
+          #7769d4 0.01%,
 
-          #0e034ce6 0.15%,
-          #0b0337e6 25%,
+          #012b58e6 0.15%,
+          #01264ee6 25%,
           #09032de6 99.7%,
 
           #000000cc 3%);
@@ -368,11 +368,12 @@
       z-index: -1;
       border-radius: 10px;
       // width: 250px;
-      width: calc(100%);
-      height: 500px;
+      width: calc(100vw - 30px);
+      height: 350px;
       margin: 0 0 0px;
       // left: calc((100% - 250px)/2);
-      transform: translateY(-600px);
+      transform: translate(-35px, 0px);
+
       background-position: bottom;
       background-size: cover;
       opacity: 0.6;
@@ -419,9 +420,9 @@
       position: absolute;
       z-index: -1;
       border-radius: 10px;
-      width: calc(100%);
-      height: 400px;
-      transform: translateY(-350px);
+      width: calc(100vw - 30px);
+      height: 350px;
+      transform: translateX(-35px);
       background-position: bottom;
       background-size: cover;
       opacity: 0.4;
@@ -455,9 +456,9 @@
       position: absolute;
       z-index: -1;
       border-radius: 10px;
-      width: calc(100%);
-      height: 400px;
-      transform: translateY(-200px);
+      width: calc(100vw - 30px);
+      height: 350px;
+      transform: translateX(-35px);
       background-position: top;
       background-size: cover;
       opacity: 0.4;
@@ -493,9 +494,9 @@
       position: absolute;
       z-index: -1;
       border-radius: 10px;
-      width: calc(100%);
-      height: 400px;
-      transform: translateY(-50px);
+      width: calc(100vw - 30px);
+      height: 350px;
+      transform: translateX(-35px);
       background-position: bottom;
       background-size: cover;
       opacity: 0.3;
@@ -534,9 +535,9 @@
       position: absolute;
       z-index: -1;
       border-radius: 10px;
-      width: calc(100%);
-      height: 400px;
-      transform: translateY(100px);
+      width: calc(100vw - 30px);
+      height: 350px;
+      transform: translateX(-35px);
       background-position: top;
       background-size: cover;
       opacity: 0.3;

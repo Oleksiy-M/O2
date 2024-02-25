@@ -483,7 +483,7 @@ body {
 @media screen and (min-width: 1200px) {
   .section-oxy {
     background-position: bottom;
-    height: 460px;
+    height: 400px;
     max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/family/family.jpg");
   }
@@ -627,7 +627,6 @@ body {
 .hero__title {
   text-align: center;
   text-wrap: nowrap;
-  height: 20px;
   top: 120px;
   position: absolute;
 }
@@ -639,17 +638,19 @@ body {
 @media screen and (min-width: 1200px) {
   .hero__title {
     text-align: right;
+    top: 100px;
     left: 200px;
   }
 }
 
 .title {
   user-select: none;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 700;
+  font-size: 16px;
   letter-spacing: 0.25em;
   transition-duration: 1s;
   color: aqua;
+  text-wrap: nowrap;
 }
 .section-oxy:hover .title, .section-oxy:focus .title {
   transform: scale(1.06);
@@ -658,7 +659,7 @@ body {
 @media screen and (min-width: 1200px) {
   .title {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.86;
     letter-spacing: 0.26em;
     margin-top: 0px;
@@ -690,7 +691,7 @@ body {
   position: relative;
   background-size: cover;
   background-position: top;
-  background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(46, 83, 232, 0.9254901961) 1%, rgba(35, 82, 191, 0.368627451) 29%, rgba(21, 22, 70, 0.9019607843) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-mobil.png");
+  background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(108, 136, 246, 0.9254901961) 1%, rgba(76, 126, 243, 0.368627451) 29%, rgba(21, 22, 70, 0.9019607843) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-mobil.png");
 }
 @media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
   .section-hero {
@@ -715,13 +716,12 @@ body {
   .section-hero {
     background-position: top;
     padding-bottom: 50px;
-    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(46, 83, 232, 0.9254901961) 1%, rgba(35, 82, 191, 0.368627451) 29%, rgba(21, 22, 70, 0.9019607843) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus.png");
+    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.968627451) 0.3%, rgba(31, 127, 179, 0.8156862745) 1%, rgba(55, 97, 119, 0.1411764706) 39%, rgba(3, 46, 83, 0.9019607843) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus.png");
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .section-hero {
     padding-bottom: 50px;
-    background-image: linear-gradient(to bottom, rgba(106, 200, 255, 0.7450980392) 0.3%, rgba(46, 83, 232, 0.9254901961) 1%, rgba(35, 82, 191, 0.368627451) 29%, rgba(21, 22, 70, 0.9019607843) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus@2x.png");
   }
 }
 
@@ -2127,7 +2127,7 @@ canvas {
   border-radius: 5px;
   padding: 90px 3px 100px 3px;
   margin-bottom: 40px;
-  background-image: linear-gradient(to bottom, rgba(119, 105, 212, 0.7215686275) 0.01%, rgba(14, 3, 76, 0.9019607843) 0.15%, rgba(11, 3, 55, 0.9019607843) 25%, rgba(9, 3, 45, 0.9019607843) 99.7%, rgba(0, 0, 0, 0.8) 3%);
+  background-image: linear-gradient(to bottom, #7769d4 0.01%, rgba(1, 43, 88, 0.9019607843) 0.15%, rgba(1, 38, 78, 0.9019607843) 25%, rgba(9, 3, 45, 0.9019607843) 99.7%, rgba(0, 0, 0, 0.8) 3%);
 }
 @media screen and (min-width: 768px) {
   .section-bg {
@@ -2368,10 +2368,10 @@ canvas {
   position: absolute;
   z-index: -1;
   border-radius: 10px;
-  width: 100%;
-  height: 500px;
+  width: calc(100vw - 30px);
+  height: 350px;
   margin: 0 0 0px;
-  transform: translateY(-600px);
+  transform: translate(-35px, 0px);
   background-position: bottom;
   background-size: cover;
   opacity: 0.6;
@@ -2413,9 +2413,9 @@ canvas {
   position: absolute;
   z-index: -1;
   border-radius: 10px;
-  width: 100%;
-  height: 400px;
-  transform: translateY(-350px);
+  width: calc(100vw - 30px);
+  height: 350px;
+  transform: translateX(-35px);
   background-position: bottom;
   background-size: cover;
   opacity: 0.4;
@@ -2452,9 +2452,9 @@ canvas {
   position: absolute;
   z-index: -1;
   border-radius: 10px;
-  width: 100%;
-  height: 400px;
-  transform: translateY(-200px);
+  width: calc(100vw - 30px);
+  height: 350px;
+  transform: translateX(-35px);
   background-position: top;
   background-size: cover;
   opacity: 0.4;
@@ -2491,9 +2491,9 @@ canvas {
   position: absolute;
   z-index: -1;
   border-radius: 10px;
-  width: 100%;
-  height: 400px;
-  transform: translateY(-50px);
+  width: calc(100vw - 30px);
+  height: 350px;
+  transform: translateX(-35px);
   background-position: bottom;
   background-size: cover;
   opacity: 0.3;
@@ -2534,9 +2534,9 @@ canvas {
   position: absolute;
   z-index: -1;
   border-radius: 10px;
-  width: 100%;
-  height: 400px;
-  transform: translateY(100px);
+  width: calc(100vw - 30px);
+  height: 350px;
+  transform: translateX(-35px);
   background-position: top;
   background-size: cover;
   opacity: 0.3;
@@ -2660,7 +2660,7 @@ canvas {
 }
 @media screen and (min-width: 768px) {
   .video-bg {
-    background-image: linear-gradient(to bottom, rgba(28, 0, 206, 0.8901960784) 1%, rgba(24, 3, 160, 0.8901960784) 20%, rgba(3, 13, 91, 0.8352941176) 85%);
+    background-image: linear-gradient(to bottom, rgba(0, 64, 153, 0.8980392157) 30%, rgba(25, 35, 82, 0.8470588235) 85%);
     max-width: 1600px;
     overflow: hidden;
     padding: 0;
