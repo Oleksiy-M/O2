@@ -408,7 +408,7 @@
    justify-content: center;
    position: absolute;
 
-   background-color: #00305d6b;
+   background-color: #01144156;
    height: 100%;
    width: 100%;
    padding: 0 15px;
@@ -432,7 +432,8 @@
    // opacity: 0;
    transition-duration: 1s;
    transform: translateX(-100vw);
-// animation-timing-function: cubic-bezier(.82, -0.83, .03, 1.6);
+
+   // animation-timing-function: cubic-bezier(.82, -0.83, .03, 1.6);
    .impact-box__end:hover &,
    .impact-box__end:focus & {
       transform: translateX(0vw);
@@ -476,7 +477,8 @@
 
 .title-end__left {
    transform: translateX(100vw);
-// animation-timing-function: cubic-bezier(1, -0.93, .03, 1.6);
+
+   // animation-timing-function: cubic-bezier(1, -0.93, .03, 1.6);
    .impact-box__end:hover &,
    .impact-box__end:focus & {
       transform: translateX(0vw);

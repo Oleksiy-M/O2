@@ -900,7 +900,7 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
-  background-color: rgba(0, 48, 93, 0.4196078431);
+  background-color: rgba(1, 20, 65, 0.337254902);
   height: 100%;
   width: 100%;
   padding: 0 15px;
@@ -2131,20 +2131,21 @@ body {
   border-top: 4px rgba(7, 66, 114, 0.8431372549) solid;
   border-bottom: 5px #010f1a solid;
   box-shadow: 1px 1px 1px #000000, -1px 0px 1px #000000;
-  background-image: linear-gradient(to bottom, rgba(10, 45, 75, 0.8039215686) 19%, rgba(6, 28, 48, 0.8039215686) 99%);
+  background-size: cover;
+  background-image: linear-gradient(to bottom, rgba(1, 55, 87, 0.431372549) 10%, rgba(0, 13, 50, 0.7960784314) 99%), url(../img/develo-eco/develo-mobil.png);
 }
 @media screen and (min-width: 768px) {
   .section-bg {
     display: flex;
     flex-wrap: wrap;
     padding: 0px 20px 100px;
+    background-image: linear-gradient(to bottom, rgba(1, 55, 87, 0.431372549) 10%, rgba(0, 13, 50, 0.7960784314) 99%), url(../img/develo-eco/develo-tablet.png);
   }
 }
 @media screen and (min-width: 1200px) {
   .section-bg {
-    display: flex;
-    flex-wrap: wrap;
     padding: 0px 40px 100px;
+    background-image: linear-gradient(to bottom, rgba(1, 55, 87, 0.431372549) 10%, rgba(0, 13, 50, 0.7960784314) 99%), url(../img/develo-eco/develo.png);
   }
 }
 
@@ -2367,34 +2368,6 @@ body {
   }
 }
 
-.visual-content {
-  position: absolute;
-  z-index: -1;
-  border-radius: 10px;
-  width: calc(100vw - 30px);
-  height: 350px;
-  margin: 0 0 0px;
-  transform: translate(-31px, 0px);
-  background-position: bottom;
-  background-size: cover;
-  opacity: 0.6;
-  background-image: url(../img/develo-eco/oil.png);
-}
-@media screen and (min-width: 768px) {
-  .visual-content {
-    transform: translate(-175px, -50px);
-    width: 400px;
-    height: 300px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .visual-content {
-    transform: translate(-175px, -40px);
-    width: 600px;
-    height: 300px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .ocean-content {
     margin-left: 43.5px;
@@ -2412,33 +2385,6 @@ body {
   }
 }
 
-.visual-content__ocean {
-  position: absolute;
-  z-index: -1;
-  border-radius: 10px;
-  width: calc(100vw - 30px);
-  height: 350px;
-  transform: translateX(-31px);
-  background-position: bottom;
-  background-size: cover;
-  opacity: 0.4;
-  background-image: url(../img/develo-eco/ocean.png);
-}
-@media screen and (min-width: 768px) {
-  .visual-content__ocean {
-    transform: translate(-175px, -50px);
-    width: 400px;
-    height: 300px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .visual-content__ocean {
-    transform: translate(-150px, -40px);
-    width: 600px;
-    height: 300px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .factory-content {
     margin-left: 8.5px;
@@ -2451,33 +2397,6 @@ body {
   }
 }
 
-.visual-content__factory {
-  position: absolute;
-  z-index: -1;
-  border-radius: 10px;
-  width: calc(100vw - 30px);
-  height: 350px;
-  transform: translateX(-31px);
-  background-position: top;
-  background-size: cover;
-  opacity: 0.4;
-  background-image: url(../img/develo-eco/factory.png);
-}
-@media screen and (min-width: 768px) {
-  .visual-content__factory {
-    transform: translate(-175px, -50px);
-    width: 400px;
-    height: 300px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .visual-content__factory {
-    transform: translate(-150px, -40px);
-    width: 600px;
-    height: 300px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .earth-content {
     margin-left: -25.5px;
@@ -2487,33 +2406,6 @@ body {
   .earth-content {
     margin-left: -145px;
     width: 520px;
-  }
-}
-
-.visual-content__earth {
-  position: absolute;
-  z-index: -1;
-  border-radius: 10px;
-  width: calc(100vw - 30px);
-  height: 350px;
-  transform: translateX(-31px);
-  background-position: bottom;
-  background-size: cover;
-  opacity: 0.3;
-  background-image: url(../img/develo-eco/earth.png);
-}
-@media screen and (min-width: 768px) {
-  .visual-content__earth {
-    transform: translate(-175px, -50px);
-    width: 400px;
-    height: 300px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .visual-content__earth {
-    transform: translate(-150px, -40px);
-    width: 600px;
-    height: 300px;
   }
 }
 
@@ -2530,33 +2422,6 @@ body {
     margin-left: -245px;
     width: 520px;
     margin-bottom: 0px;
-  }
-}
-
-.visual-content__men {
-  position: absolute;
-  z-index: -1;
-  border-radius: 10px;
-  width: calc(100vw - 30px);
-  height: 350px;
-  transform: translateX(-31px);
-  background-position: top;
-  background-size: cover;
-  opacity: 0.3;
-  background-image: url(../img/develo-eco/men.png);
-}
-@media screen and (min-width: 768px) {
-  .visual-content__men {
-    transform: translate(-175px, -50px);
-    width: 400px;
-    height: 300px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .visual-content__men {
-    transform: translate(-150px, -40px);
-    width: 600px;
-    height: 300px;
   }
 }
 
@@ -2662,7 +2527,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .video-bg {
-    background-image: linear-gradient(to bottom, rgba(31, 1, 61, 0.9294117647) 30%, rgba(7, 0, 14, 0.8901960784) 85%);
+    background-image: linear-gradient(to bottom, rgba(55, 0, 110, 0.9294117647) 30%, rgba(19, 1, 53, 0.8901960784) 85%);
     max-width: 1600px;
     overflow: hidden;
     padding: 0;

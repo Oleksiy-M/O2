@@ -12,21 +12,35 @@
       // background-color: $section-color__desktop;
       box-shadow: 1px 1px 1px #000000, -1px 0px 1px #000000;
       // background-position: center;
-      // background-size: cover;
-      background-image: linear-gradient(to bottom,
-          #0a2d4bcd 19%,
-          #061c30cd 99%);
+      background-size: cover;
+              background-image: linear-gradient(to bottom,
+          #0137576e 10%,
 
+          #000d32cb 99%),
+
+        url(../img/develo-eco/develo-mobil.png);
+
+      
       @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
         padding: 0px 20px 100px;
-      }
+              background-image: linear-gradient(to bottom,
+          #0137576e 10%,
 
+          #000d32cb 99%),
+
+        url(../img/develo-eco/develo-tablet.png);
+      }
+      
       @media screen and (min-width: 1200px) {
-        display: flex;
-        flex-wrap: wrap;
         padding: 0px 40px 100px;
+        background-image: linear-gradient(to bottom,
+            #0137576e 10%,
+  
+            #000d32cb 99%),
+  
+          url(../img/develo-eco/develo.png);
 
       }
     }
@@ -357,35 +371,35 @@
       }
     }
 
-    .visual-content {
-      position: absolute;
-      z-index: -1;
-      border-radius: 10px;
-      // width: 250px;
-      width: calc(100vw - 30px);
-      height: 350px;
-      margin: 0 0 0px;
-      // left: calc((100% - 250px)/2);
-      transform: translate(-31px, 0px);
+    // .visual-content {
+    //   position: absolute;
+    //   z-index: -1;
+    //   border-radius: 10px;
+    //   // width: 250px;
+    //   width: calc(100vw - 30px);
+    //   height: 350px;
+    //   margin: 0 0 0px;
+    //   // left: calc((100% - 250px)/2);
+    //   transform: translate(-31px, 0px);
 
-      background-position: bottom;
-      background-size: cover;
-      opacity: 0.6;
-      background-image: url(../img/develo-eco/oil.png);
+    //   background-position: bottom;
+    //   background-size: cover;
+    //   opacity: 0.6;
+    //   background-image: url(../img/develo-eco/oil.png);
 
-      @media screen and (min-width: 768px) {
-        transform: translate(-175px, -50px);
-        width: 400px;
-        height: 300px;
+    //   @media screen and (min-width: 768px) {
+    //     transform: translate(-175px, -50px);
+    //     width: 400px;
+    //     height: 300px;
 
-      }
+    //   }
 
-      @media screen and (min-width: 1200px) {
-        transform: translate(-175px, -40px);
-        width: 600px;
-        height: 300px;
-      }
-    }
+    //   @media screen and (min-width: 1200px) {
+    //     transform: translate(-175px, -40px);
+    //     width: 600px;
+    //     height: 300px;
+    //   }
+    // }
 
 
 
@@ -410,30 +424,30 @@
 
 
 
-    .visual-content__ocean {
-      position: absolute;
-      z-index: -1;
-      border-radius: 10px;
-      width: calc(100vw - 30px);
-      height: 350px;
-      transform: translateX(-31px);
-      background-position: bottom;
-      background-size: cover;
-      opacity: 0.4;
-      background-image: url(../img/develo-eco/ocean.png);
+    // .visual-content__ocean {
+    //   position: absolute;
+    //   z-index: -1;
+    //   border-radius: 10px;
+    //   width: calc(100vw - 30px);
+    //   height: 350px;
+    //   transform: translateX(-31px);
+    //   background-position: bottom;
+    //   background-size: cover;
+    //   opacity: 0.4;
+    //   background-image: url(../img/develo-eco/ocean.png);
 
-      @media screen and (min-width: 768px) {
-        transform: translate(-175px, -50px);
-        width: 400px;
-        height: 300px;
-      }
+    //   @media screen and (min-width: 768px) {
+    //     transform: translate(-175px, -50px);
+    //     width: 400px;
+    //     height: 300px;
+    //   }
 
-      @media screen and (min-width: 1200px) {
-        transform: translate(-150px, -40px);
-        width: 600px;
-        height: 300px;
-      }
-    }
+    //   @media screen and (min-width: 1200px) {
+    //     transform: translate(-150px, -40px);
+    //     width: 600px;
+    //     height: 300px;
+    //   }
+    // }
 
     .factory-content {
       @media screen and (min-width: 768px) {
@@ -446,30 +460,30 @@
       }
     }
 
-    .visual-content__factory {
-      position: absolute;
-      z-index: -1;
-      border-radius: 10px;
-      width: calc(100vw - 30px);
-      height: 350px;
-      transform: translateX(-31px);
-      background-position: top;
-      background-size: cover;
-      opacity: 0.4;
-      background-image: url(../img/develo-eco/factory.png);
+    // .visual-content__factory {
+    //   position: absolute;
+    //   z-index: -1;
+    //   border-radius: 10px;
+    //   width: calc(100vw - 30px);
+    //   height: 350px;
+    //   transform: translateX(-31px);
+    //   background-position: top;
+    //   background-size: cover;
+    //   opacity: 0.4;
+    //   background-image: url(../img/develo-eco/factory.png);
 
-      @media screen and (min-width: 768px) {
-        transform: translate(-175px, -50px);
-        width: 400px;
-        height: 300px;
-      }
+    //   @media screen and (min-width: 768px) {
+    //     transform: translate(-175px, -50px);
+    //     width: 400px;
+    //     height: 300px;
+    //   }
 
-      @media screen and (min-width: 1200px) {
-        transform: translate(-150px, -40px);
-        width: 600px;
-        height: 300px;
-      }
-    }
+    //   @media screen and (min-width: 1200px) {
+    //     transform: translate(-150px, -40px);
+    //     width: 600px;
+    //     height: 300px;
+    //   }
+    // }
 
     .earth-content {
       @media screen and (min-width: 768px) {
@@ -484,30 +498,30 @@
 
 
 
-    .visual-content__earth {
-      position: absolute;
-      z-index: -1;
-      border-radius: 10px;
-      width: calc(100vw - 30px);
-      height: 350px;
-      transform: translateX(-31px);
-      background-position: bottom;
-      background-size: cover;
-      opacity: 0.3;
-      background-image: url(../img/develo-eco/earth.png);
+    // .visual-content__earth {
+    //   position: absolute;
+    //   z-index: -1;
+    //   border-radius: 10px;
+    //   width: calc(100vw - 30px);
+    //   height: 350px;
+    //   transform: translateX(-31px);
+    //   background-position: bottom;
+    //   background-size: cover;
+    //   opacity: 0.3;
+    //   background-image: url(../img/develo-eco/earth.png);
 
-      @media screen and (min-width: 768px) {
-        transform: translate(-175px, -50px);
-        width: 400px;
-        height: 300px;
-      }
+    //   @media screen and (min-width: 768px) {
+    //     transform: translate(-175px, -50px);
+    //     width: 400px;
+    //     height: 300px;
+    //   }
 
-      @media screen and (min-width: 1200px) {
-        transform: translate(-150px, -40px);
-        width: 600px;
-        height: 300px;
-      }
-    }
+    //   @media screen and (min-width: 1200px) {
+    //     transform: translate(-150px, -40px);
+    //     width: 600px;
+    //     height: 300px;
+    //   }
+    // }
 
     .man-content {
       margin-bottom: 0px;
@@ -525,27 +539,27 @@
     }
 
 
-    .visual-content__men {
-      position: absolute;
-      z-index: -1;
-      border-radius: 10px;
-      width: calc(100vw - 30px);
-      height: 350px;
-      transform: translateX(-31px);
-      background-position: top;
-      background-size: cover;
-      opacity: 0.3;
-      background-image: url(../img/develo-eco/men.png);
+    // .visual-content__men {
+    //   position: absolute;
+    //   z-index: -1;
+    //   border-radius: 10px;
+    //   width: calc(100vw - 30px);
+    //   height: 350px;
+    //   transform: translateX(-31px);
+    //   background-position: top;
+    //   background-size: cover;
+    //   opacity: 0.3;
+    //   background-image: url(../img/develo-eco/men.png);
 
-      @media screen and (min-width: 768px) {
-        transform: translate(-175px, -50px);
-        width: 400px;
-        height: 300px;
-      }
+    //   @media screen and (min-width: 768px) {
+    //     transform: translate(-175px, -50px);
+    //     width: 400px;
+    //     height: 300px;
+    //   }
 
-      @media screen and (min-width: 1200px) {
-        transform: translate(-150px, -40px);
-        width: 600px;
-        height: 300px;
-      }
-    }
+    //   @media screen and (min-width: 1200px) {
+    //     transform: translate(-150px, -40px);
+    //     width: 600px;
+    //     height: 300px;
+    //   }
+    // }
