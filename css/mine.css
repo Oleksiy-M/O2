@@ -918,9 +918,9 @@ body {
   letter-spacing: 0.08em;
   word-spacing: 2px;
   color: #00b7ff;
+  text-shadow: 2px 2px 2px black, 0px 0px 2px #fff, -2px -2px 2px black;
   transition-duration: 1s;
   transform: translateX(-100vw);
-  text-shadow: 2px 2px 2px black, 0px 0px 2px #fff, -2px -2px 2px black;
 }
 .impact-box__end:hover .title-end, .impact-box__end:focus .title-end {
   transform: translateX(0vw);
@@ -2575,27 +2575,31 @@ body {
   display: flexbox;
   fill: #3fa9f5;
   margin: 0 0 10px 0;
-  transition-duration: 1s;
 }
 .develo-eco__content:hover .develo-eco__svg, .develo-eco__content:focus .develo-eco__svg {
+  transition-timing-function: cubic-bezier(1, 0.21, 0, 1.64);
+  transition-duration: 4s;
   fill: #33FF99;
 }
 
 .eco__svg {
   display: flexbox;
   fill: #3fa9f5;
-  transition-duration: 1s;
 }
 .develo-eco__content:hover .eco__svg, .develo-eco__content:focus .eco__svg {
+  transition-duration: 4s;
+  transition-timing-function: cubic-bezier(1, 0.21, 0, 1.64);
   fill: #85fbff;
 }
 
 .eco__svg-imp {
   margin-left: -120px;
-  transition-duration: 1s;
-  stroke-width: 0.4px;
+  stroke-width: 0;
 }
 .develo-eco__content:hover .eco__svg-imp, .develo-eco__content:focus .eco__svg-imp {
+  transition-duration: 4s;
+  stroke-width: 0.4px;
+  transition-timing-function: cubic-bezier(1, 0.21, 0, 1.64);
   stroke: aqua;
 }
 
@@ -2633,18 +2637,20 @@ body {
   letter-spacing: 0.02em;
   white-space: pre-wrap;
   color: #3fa9f5;
-  text-shadow: 1px 1.5px 1px black, 0px 0px 3px black, 0px 2.5px 4px black;
   transition-duration: 0.5s;
+  text-shadow: 1px 1.5px 1px black, 0px 0px 3px black, 2px 0.5px 4px black;
   font-style: italic;
 }
 .develo-eco__content:hover .develo-eco__art, .develo-eco__content:focus .develo-eco__art {
   color: #33FF99;
+  transition-duration: 4s;
+  transition-timing-function: cubic-bezier(1, 0.21, 0, 1.64);
 }
 @media screen and (min-width: 768px) {
   .develo-eco__art {
     text-align: left;
     font-size: 12px;
-    line-height: 1.5;
+    line-height: 1.6;
     letter-spacing: 0.02em;
   }
 }

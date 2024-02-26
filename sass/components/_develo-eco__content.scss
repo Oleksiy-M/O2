@@ -19,10 +19,11 @@
    fill: $Secondary-text-color;
    margin: 0 0 10px 0;
    // transition: transform $animation-card, opacity $animation-card;
-   transition-duration: $animation-head;
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
+      transition-timing-function: cubic-bezier(1, .21, 0, 1.64);
+      transition-duration: 4s;
       fill: $svg-color;
 
 
@@ -33,21 +34,25 @@
 .eco__svg {
    display: flexbox;
    fill: $Secondary-text-color;
-   transition-duration: $animation-head;
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
+      transition-duration: 4s;
+
+      transition-timing-function: cubic-bezier(1, .21, 0, 1.64);
       fill: #85fbff;
    }
 }
 
 .eco__svg-imp {
    margin-left: -120px;
-   transition-duration: $animation-head;
-   stroke-width: 0.4px;
+   stroke-width: 0;
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
+      transition-duration: 4s;
+      stroke-width: 0.4px;
+      transition-timing-function: cubic-bezier(1, .21, 0, 1.64);
       stroke: $primary-text-color;
    }
 }
@@ -112,22 +117,24 @@
    letter-spacing: 0.02em;
    white-space: pre-wrap;
    color: $Secondary-text-color;
-   text-shadow: 1px 1.5px 1px black, 0px 0px 3px black, 0px 2.5px 4px black;
    transition-duration: 0.5s;
 
+   text-shadow: 1px 1.5px 1px black,
+      0px 0px 3px black, 2px 0.5px 4px black;
    font-style: italic;
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       color: $svg-color;
-      // transform: translateY(0);
-      // transform: scale(1.01);
+      transition-duration: 4s;
+
+      transition-timing-function: cubic-bezier(1, .21, 0, 1.64);
    }
 
    @media screen and (min-width: 768px) {
       text-align: left;
       font-size: 12px;
-      line-height: 1.5;
+      line-height: 1.6;
       letter-spacing: 0.02em;
 
    }

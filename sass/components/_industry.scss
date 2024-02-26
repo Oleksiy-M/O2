@@ -426,13 +426,13 @@
    line-height: 1.9;
    letter-spacing: 0.08em;
    word-spacing: 2px;
-   // opacity: 0;
    color: #00b7ff;
-   transition-duration: 1s;
-   transform: translateX(-100vw);
    text-shadow: 2px 2px 2px black, 0px 0px 2px #fff,
       -2px -2px 2px black;
-
+   // opacity: 0;
+   transition-duration: 1s;
+   transform: translateX(-100vw);
+// animation-timing-function: cubic-bezier(.82, -0.83, .03, 1.6);
    .impact-box__end:hover &,
    .impact-box__end:focus & {
       transform: translateX(0vw);
@@ -476,7 +476,7 @@
 
 .title-end__left {
    transform: translateX(100vw);
-
+// animation-timing-function: cubic-bezier(1, -0.93, .03, 1.6);
    .impact-box__end:hover &,
    .impact-box__end:focus & {
       transform: translateX(0vw);
