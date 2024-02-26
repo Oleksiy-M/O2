@@ -3,11 +3,11 @@
    display: flex;
    justify-content: center;
    margin: 0 auto;
-   transition-duration: $animation-head;
 
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
+      transition-duration: 2s;
 
       transform: scale(1.2);
    }
@@ -67,7 +67,7 @@
 
    align-self: flex-end;
    overflow: hidden;
-  
+
    // box-shadow: 0px -1px 1px #0000002f;
    height: 0.01%;
    border-radius: 0 10px 0 0;
@@ -84,9 +84,10 @@
 
    // }
 
+   transition-duration: 0.5s;
+
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
-   transition-duration: 2s;
       // box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.12),
       //    0px 0px 4px rgba(0, 0, 0, 0.06), 1px -1px 6px rgba(0, 0, 0, 0.16);
       // transform: scale(1.01);
@@ -111,7 +112,7 @@
    text-align: center;
    user-select: none;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   font-size: 11px;
+   font-size: 12px;
    font-weight: 600;
    line-height: 1.5;
    letter-spacing: 0.02em;

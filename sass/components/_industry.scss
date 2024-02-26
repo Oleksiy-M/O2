@@ -51,14 +51,14 @@
       background-image: linear-gradient(to bottom,
 
             #7fd1fdf0 0.2%,
-            #55bdf5c1 1%,
-            #19a8f5b1 3%,
-            #0492dfa7 10%,
-            #0273b02f 39%,
-            #024062ad 79%,
-            #011e2ef1 99%,
-            #050113 0.1%,
-            #080113d7 0.1%),
+               #55bdf5c1 1%,
+               #0492dfc4 2%,
+               #0492df7c 10%,
+               #0273b02f 39%,
+               #024062ad 79%,
+               #01193ef1 99%,
+               #050113 0.1%,
+               #080113d7 0.1%),
          url("../img/head-i/head-indus-mobil@2x.png");
    }
 
@@ -73,14 +73,14 @@
       // background-position: bottom;
       background-image: linear-gradient(to bottom,
             #7fd1fdf0 0.2%,
-            #55bdf5c1 1%,
-            #0492dfc4 2%,
-            #0492df7c 10%,
-            #0273b02f 39%,
-            #024062ad 79%,
-            #011e2ef1 99%,
-            #050113 0.1%,
-            #080113d7 0.1%),
+               #55bdf5c1 1%,
+               #0492dfc4 2%,
+               #0492df7c 10%,
+               #0273b02f 39%,
+               #024062ad 79%,
+               #01193ef1 99%,
+               #050113 0.1%,
+               #080113d7 0.1%),
          url("../img/head-i/head-indus-tablet.png");
    }
 
@@ -89,15 +89,15 @@
    (min-resolution: 2dppx) and (min-width: 768px) {
 
       background-image: linear-gradient(to bottom,
-            #7fd1fdf0 0.2%,
-            #55bdf5c1 1%,
-            #0492dfc4 2%,
-            #0492df7c 10%,
-            #0273b02f 39%,
-            #024062ad 79%,
-            #011e2ef1 99%,
-            #050113 0.1%,
-            #080113d7 0.1%),
+               #7fd1fdf0 0.2%,
+                  #55bdf5c1 1%,
+                  #0492dfc4 2%,
+                  #0492df7c 10%,
+                  #0273b02f 39%,
+                  #024062ad 79%,
+                  #01193ef1 99%,
+                  #050113 0.1%,
+                  #080113d7 0.1%),
          url("../img/head-i/head-indus-tablet@2x.png");
 
    }
@@ -116,7 +116,7 @@
             #0492df7c 10%,
             #0273b02f 39%,
             #024062ad 79%,
-            #011e2ef1 99%,
+            #01193ef1 99%,
             #050113 0.1%,
             #080113d7 0.1%),
          url("../img/head-i/head-indus.png");
@@ -128,24 +128,18 @@
       // padding: 0px 0 0px;
       padding-bottom: 50px;
       background-image: linear-gradient(to bottom,
-            #7fd1fdf0 0.2%,
-            #55bdf5c1 1%,
-            #0492dfc4 2%,
-            #0492df7c 10%,
-            #0273b02f 39%,
-            #024062ad 79%,
-            #011e2ef1 99%,
-            #050113 0.1%,
-            #080113d7 0.1%),
+               #7fd1fdf0 0.2%,
+                  #55bdf5c1 1%,
+                  #0492dfc4 2%,
+                  #0492df7c 10%,
+                  #0273b02f 39%,
+                  #024062ad 79%,
+                  #01193ef1 99%,
+                  #050113 0.1%,
+                  #080113d7 0.1%),
          url("../img/head-i/head-indus@2x.png");
    }
 }
-
-/* ---- reset ---- */
-// body {
-//    margin: 0;
-//    font: normal 75% Arial, Helvetica, sans-serif;
-// }
 
 
 
@@ -386,10 +380,10 @@
    padding: 0;
    opacity: 0.8;
    position: absolute;
-   opacity: 0.5;
+   opacity: 0.6;
 
    @media screen and (min-width: 768px) {
-      opacity: 0.2;
+      opacity: 0.4;
 
       width: 100%;
    }
@@ -408,7 +402,7 @@
    justify-content: center;
    position: absolute;
 
-   background-color: #01144156;
+   background-color: #200156bd;
    height: 100%;
    width: 100%;
    padding: 0 15px;
@@ -422,7 +416,7 @@
    text-transform: uppercase;
    font-weight: 600;
    // font-size: 9px;
-   font-size: 11px;
+   font-size: 14px;
    line-height: 1.9;
    letter-spacing: 0.08em;
    word-spacing: 2px;
@@ -446,6 +440,7 @@
    @media screen and (min-width: 768px) {
       // opacity: 1;
       // width: 450px;
+      font-size: 16px;
       // .impact-box__end:hover &,
       // .impact-box__end:focus & {
       width: 550px;
