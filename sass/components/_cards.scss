@@ -59,12 +59,14 @@
    &:hover,
    &:focus {
       transform: translateY(5px);
+      // position: calc(100vw - 50px);
    }
 
    @media screen and (min-width: 1200px) {
 
       &:hover,
       &:focus {
+         // transform: translateY(10px);
          transform: translateY(10px);
       }
    }

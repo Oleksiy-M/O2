@@ -427,9 +427,11 @@
    letter-spacing: 0.08em;
    word-spacing: 2px;
    // opacity: 0;
-   color: #8fa5fd;
+   color: #00b7ff;
    transition-duration: 1s;
    transform: translateX(-100vw);
+   text-shadow: 2px 2px 2px black, 0px 0px 2px #fff,
+      -2px -2px 2px black;
 
    .impact-box__end:hover &,
    .impact-box__end:focus & {
@@ -437,8 +439,7 @@
       animation: moveTextRightToLeft 2s linear normal;
       animation-timing-function: cubic-bezier(0, 1.55, .02, .73);
       // color: $primary-text-color;
-      text-shadow: 2px 2px 2px black, 0px 0px 2px #fff,
-         -2px -2px 2px black;
+
    }
 
    @media screen and (min-width: 768px) {

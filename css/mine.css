@@ -457,14 +457,13 @@ body {
   margin: 0 0 450px;
   background-size: cover;
   position: relative;
-  background-position: center;
   border: 2px solid rgba(181, 248, 248, 0.8);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/family/family-mobil.jpg");
 }
 @media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
   .section-oxy {
-    height: 80vw;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/family/family-mobil@2x.jpg");
+    background-position: bottom;
+    height: 70vw;
+    background-image: url("../img/family/family-mobil@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
@@ -508,12 +507,12 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  transform: translateY(300px);
+  transform: translateY(250px);
   padding: 0;
 }
 @media screen and (min-width: 768px) {
   .hero-list {
-    transform: translateY(50px);
+    transform: translateY(30px);
   }
 }
 
@@ -611,7 +610,7 @@ body {
   max-width: 250px;
   min-width: 120px;
   border-radius: 15px;
-  top: 65px;
+  top: 75px;
 }
 @media screen and (min-width: 768px) {
   .oxy-container {
@@ -629,6 +628,7 @@ body {
   text-wrap: nowrap;
   top: 120px;
   position: absolute;
+  width: 250px;
 }
 @media screen and (min-width: 650px) {
   .hero__title {
@@ -638,7 +638,7 @@ body {
 @media screen and (min-width: 1200px) {
   .hero__title {
     text-align: right;
-    top: 100px;
+    top: 120px;
     left: 200px;
   }
 }
@@ -917,15 +917,15 @@ body {
   line-height: 1.9;
   letter-spacing: 0.08em;
   word-spacing: 2px;
-  color: #8fa5fd;
+  color: #00b7ff;
   transition-duration: 1s;
   transform: translateX(-100vw);
+  text-shadow: 2px 2px 2px black, 0px 0px 2px #fff, -2px -2px 2px black;
 }
 .impact-box__end:hover .title-end, .impact-box__end:focus .title-end {
   transform: translateX(0vw);
   animation: moveTextRightToLeft 2s linear normal;
   animation-timing-function: cubic-bezier(0, 1.55, 0.02, 0.73);
-  text-shadow: 2px 2px 2px black, 0px 0px 2px #fff, -2px -2px 2px black;
 }
 @media screen and (min-width: 768px) {
   .title-end {
@@ -2633,7 +2633,7 @@ body {
   letter-spacing: 0.02em;
   white-space: pre-wrap;
   color: #3fa9f5;
-  text-shadow: 1px 1.5px 1px black, 0px 1.5px 4px black;
+  text-shadow: 1px 1.5px 1px black, 0px 0px 3px black, 0px 2.5px 4px black;
   transition-duration: 0.5s;
   font-style: italic;
 }
@@ -2697,7 +2697,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .history-page {
-    padding: 50px 15px 50px;
+    padding: 50px 15px 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2825,7 +2825,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .container-end {
-    margin: 0 0px 0px;
+    margin: 0 0px 20px;
     max-width: 738px;
   }
 }
