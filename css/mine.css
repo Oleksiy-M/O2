@@ -2927,11 +2927,11 @@ body {
   align-items: center;
   transition-duration: 0.5s;
 }
-.cards__link:hover, .cards__link:focus {
+.cards__item:hover .cards__link, .cards__item:focus .cards__link {
   transform: translateY(5px);
 }
 @media screen and (min-width: 1200px) {
-  .cards__link:hover, .cards__link:focus {
+  .cards__item:hover .cards__link, .cards__item:focus .cards__link {
     transform: translateY(10px);
   }
 }
@@ -2941,8 +2941,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  overflow: hidden;
   transition-duration: 1s;
   border: 2px solid rgba(255, 255, 255, 0);
 }
@@ -2953,6 +2951,8 @@ body {
 
 .cards-photo {
   height: 160px;
+  transition-duration: 1s;
+  border-radius: 10px;
 }
 @media screen and (min-width: 768px) {
   .cards-photo {
@@ -2971,6 +2971,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  border-radius: 10px;
   transition-duration: 1s;
   overflow: hidden;
 }
@@ -2980,22 +2981,23 @@ body {
   display: flex;
   text-align: center;
   align-items: center;
-  background-color: rgba(141, 3, 254, 0.6);
   height: 100%;
-  font-weight: 400;
   padding: 10px 8px;
-  color: #fffdd1;
+  border-radius: 10px;
+  background-color: rgba(200, 1, 193, 0.7725490196);
   font-size: 7px;
-  line-height: 1.02;
+  color: #fffdd1;
+  font-weight: 200;
+  line-height: 1.15;
   letter-spacing: 0.02em;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-style: italic;
-  text-shadow: 1px 1.5px 4px #000000, 1px 2.5px 4px #000000;
+  text-shadow: 2px 1.5px 1px #000000, 0px 0px 2px #000000;
   transform: translatex(-105%);
   transition-duration: 1s;
   opacity: 0;
 }
-.cards__item:hover .cards__alert, .cards__item:focus .cards__alert {
+.history-cards__overlay:hover .cards__alert, .history-cards__overlay:focus .cards__alert {
   transform: translatex(0%);
   opacity: 1;
 }
@@ -3024,13 +3026,10 @@ body {
   height: 70%;
   margin: 0px 0;
   padding: 0px 0px;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.1019607843);
+  border-radius: 10px;
+  background: rgba(0, 45, 107, 0.7254901961);
   transition-duration: 1s;
   opacity: 1;
-}
-.section-card:hover .cards__content, .section-card:focus .cards__content {
-  background: rgba(0, 45, 107, 0.7254901961);
 }
 .cards__item:hover .cards__content, .cards__item:focus .cards__content {
   transition-duration: 0.5s;
@@ -3184,7 +3183,7 @@ body {
 
 .cadr-svg {
   position: absolute;
-  fill: #0a4169;
+  fill: #2a2a2a;
   width: 104%;
   height: 100%;
   transition-duration: 2s;

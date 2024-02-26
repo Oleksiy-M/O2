@@ -5,7 +5,7 @@
          padding: 80px 15px 50px;
 
          @media screen and (min-width: 768px) {
-            padding: 50px 15px 50px;
+            padding: 50px 15px 0px;
          }
 
          @media screen and (min-width: 1200px) {
@@ -185,7 +185,7 @@
          border-bottom: 4px solid #22011cd6;
 
          @media screen and (min-width: 768px) {
-            margin: 0 0px 0px;
+            margin: 0 0px 20px;
             max-width: 738px;
          }
 
