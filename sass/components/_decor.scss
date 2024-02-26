@@ -95,6 +95,7 @@
    border: 1px solid $line-color;
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
    z-index: 5;
+
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       border: 1px solid $primary-text-color;
@@ -286,8 +287,8 @@
 .develo-eco___decor8 {
    margin-left: 10px;
    width: 0.5px;
-   height: 1841px;
-   margin-top: -1841px;
+   height: 2000px;
+   margin-top: -2000px;
    border: 1px solid $line-color;
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
 
@@ -297,8 +298,8 @@
    }
 
    @media screen and (min-width: 360px) {
-      margin-top: -1656px;
-      height: 1656px;
+      margin-top: -1816px;
+      height: 1816px;
    }
 
    @media screen and (min-width: 768px) {
@@ -322,7 +323,7 @@
 
 .develo-eco___decor9 {
    margin-left: 10px;
-   margin-top: -1841px;
+   margin-top: -2000px;
    width: 25px;
    border: 1px solid $line-color;
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -333,7 +334,7 @@
    }
 
    @media screen and (min-width: 360px) {
-      margin-top: -1656px;
+      margin-top: -1816px;
    }
 
    @media screen and (min-width: 768px) {
@@ -392,8 +393,8 @@
 
 .develo-eco___decor11 {
    margin-left: 15px;
-   margin-top: -2344px;
-   height: 2344px;
+   margin-top: -2502.5px;
+   height: 2502.5px;
    width: 0.5px;
    border: 1px solid $line-color;
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -404,8 +405,8 @@
    }
 
    @media screen and (min-width: 360px) {
-      margin-top: -2094px;
-      height: 2094px;
+      margin-top: -2254px;
+      height: 2254px;
    }
 
    @media screen and (min-width: 768px) {
@@ -428,7 +429,7 @@
 
 .develo-eco___decor12 {
    margin-left: 15px;
-   margin-top: -2344px;
+   margin-top: -2502.5px;
    width: 20px;
    border: 1px solid $line-color;
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -439,7 +440,7 @@
    }
 
    @media screen and (min-width: 360px) {
-      margin-top: -2094px;
+      margin-top: -2254px;
    }
 
    @media screen and (min-width: 768px) {
@@ -495,8 +496,8 @@
 
 .develo-eco___decor15 {
    margin-left: 20px;
-   margin-top: -2847px;
-   height: 2847px;
+   margin-top: -3005px;
+   height: 3005px;
    width: 0.5px;
    border: 1px solid $line-color;
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -507,8 +508,8 @@
    }
 
    @media screen and (min-width: 360px) {
-      margin-top: -2532px;
-      height: 2532px;
+      margin-top: -2692px;
+      height: 2692px;
    }
 
    @media screen and (min-width: 768px) {
@@ -533,7 +534,7 @@
 
 .develo-eco___decor16 {
    margin-left: 20px;
-   margin-top: -2847px;
+   margin-top: -3005px;
    width: 15px;
    border: 1px solid $line-color;
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -544,7 +545,7 @@
    }
 
    @media screen and (min-width: 360px) {
-      margin-top: -2532px;
+      margin-top: -2692px;
    }
 
    @media screen and (min-width: 768px) {
@@ -650,8 +651,8 @@
 
 .develo-eco___decor20 {
    margin-left: 25px;
-   margin-top: -3350px;
-   height: 3350px;
+   margin-top: -3507px;
+   height: 3507px;
    width: 0.5px;
    border: 1px solid $line-color;
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -662,8 +663,8 @@
    }
 
    @media screen and (min-width: 360px) {
-      margin-top: -2970px;
-      height: 2970px;
+      margin-top: -3130px;
+      height: 3130px;
    }
 
    @media screen and (min-width: 768px) {
@@ -687,7 +688,7 @@
 
 .develo-eco___decor21 {
    margin-left: 25px;
-   margin-top: -3350px;
+   margin-top: -3507px;
    width: 10px;
    border: 1px solid $line-color;
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -698,7 +699,7 @@
    }
 
    @media screen and (min-width: 360px) {
-      margin-top: -2970px;
+      margin-top: -3130px;
    }
 
    @media screen and (min-width: 768px) {
@@ -800,8 +801,8 @@
 
    margin-left: 30px;
 
-   margin-top: -3853px;
-   height: 3853px;
+   margin-top: -4010px;
+   height: 4010px;
    width: 0.5px;
    border: 1px solid $line-color;
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -812,8 +813,8 @@
    }
 
    @media screen and (min-width: 360px) {
-      margin-top: -3408px;
-      height: 3408px;
+      margin-top: -3568px;
+      height: 3568px;
    }
 
    @media screen and (min-width: 768px) {
@@ -841,7 +842,7 @@
 
    margin-left: 30px;
 
-   margin-top: -3853px;
+   margin-top: -4010px;
    width: 5px;
    border: 1px solid $line-color;
    box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3);
@@ -852,7 +853,7 @@
    }
 
    @media screen and (min-width: 360px) {
-      margin-top: -3408px;
+      margin-top: -3568px;
    }
 
    @media screen and (min-width: 768px) {
