@@ -54,6 +54,7 @@
 
 
 .section-oxy {
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -288,30 +289,19 @@
 }
 
 .hero__title {
-	// flex-shrink: 0;
+	overflow: hidden;
 	text-align: center;
 	text-wrap: nowrap;
 	top: 120px;
 	position: absolute;
 	width: 250px;
+	// padding: 0 10px;
 	// width: 100vw;
-	transform: translateX(250%);
-	animation: linear;
-	animation-timing-function: ease-in-out;
-	transition-duration: 1s;
 
-	.section-oxy:hover &,
-	.section-oxy:focus & {
-		transform: translateX(0);
-
-		animation-timing-function: $anime-card-svg;
-
-
-		transform: scale(1.06);
-	}
 
 	@media screen and (min-width: 650px) {
 		margin-top: 0px;
+		width: 350px;
 	}
 
 	@media screen and (min-width: 1200px) {
@@ -335,10 +325,22 @@
 	text-shadow:
 		1px 2px 2px black,
 		0px 0px 3px black,
-		0px 0px 8px #ffffff,
-		1px 3px 8px #00f7ff;
+		0px 0px 5px #ffffff;
+
+	transform: translateX(100vw);
+	animation: linear;
+	animation-timing-function: ease-in-out;
+	transition-duration: 1s;
+
+	.section-oxy:hover &,
+	.section-oxy:focus & {
+		transform: translateX(0);
+
+		animation-timing-function: $anime-card-svg;
 
 
+		// transform: scale(1.06);
+	}
 
 	@media screen and (min-width: 1200px) {
 		font-weight: 600;

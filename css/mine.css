@@ -642,24 +642,17 @@ body {
 }
 
 .hero__title {
+  overflow: hidden;
   text-align: center;
   text-wrap: nowrap;
   top: 120px;
   position: absolute;
   width: 250px;
-  transform: translateX(250%);
-  animation: linear;
-  animation-timing-function: ease-in-out;
-  transition-duration: 1s;
-}
-.section-oxy:hover .hero__title, .section-oxy:focus .hero__title {
-  transform: translateX(0);
-  animation-timing-function: cubic-bezier(1, 0.21, 0, 1.64);
-  transform: scale(1.06);
 }
 @media screen and (min-width: 650px) {
   .hero__title {
     margin-top: 0px;
+    width: 350px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -676,7 +669,15 @@ body {
   font-size: 16px;
   letter-spacing: 0.25em;
   color: aqua;
-  text-shadow: 1px 2px 2px black, 0px 0px 3px black, 0px 0px 8px #ffffff, 1px 3px 8px #00f7ff;
+  text-shadow: 1px 2px 2px black, 0px 0px 3px black, 0px 0px 5px #ffffff;
+  transform: translateX(100vw);
+  animation: linear;
+  animation-timing-function: ease-in-out;
+  transition-duration: 1s;
+}
+.section-oxy:hover .title, .section-oxy:focus .title {
+  transform: translateX(0);
+  animation-timing-function: cubic-bezier(1, 0.21, 0, 1.64);
 }
 @media screen and (min-width: 1200px) {
   .title {
