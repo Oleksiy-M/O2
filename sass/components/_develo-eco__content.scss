@@ -3,12 +3,12 @@
    display: flex;
    justify-content: center;
    margin: 0 auto;
-
+   z-index: 1;
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       transition-duration: 2s;
-
+      transition-timing-function: $anime-card-svg;
       transform: scale(1.2);
    }
 }
@@ -22,8 +22,8 @@
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
-      transition-timing-function: cubic-bezier(1, .21, 0, 1.64);
-      transition-duration: 4s;
+      transition-timing-function: $anime-card-svg;
+      transition-duration: 2s;
       fill: $svg-color;
 
 
@@ -37,9 +37,9 @@
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
-      transition-duration: 4s;
+      transition-duration: 2s;
 
-      transition-timing-function: cubic-bezier(1, .21, 0, 1.64);
+      transition-timing-function: $anime-card-svg;
       fill: #85fbff;
    }
 }
@@ -50,9 +50,9 @@
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
-      transition-duration: 4s;
+      transition-duration: 2s;
       stroke-width: 0.4px;
-      transition-timing-function: cubic-bezier(1, .21, 0, 1.64);
+      transition-timing-function: $anime-card-svg;
       stroke: $primary-text-color;
    }
 }
@@ -89,19 +89,20 @@
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       // box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.12),
-      //    0px 0px 4px rgba(0, 0, 0, 0.06), 1px -1px 6px rgba(0, 0, 0, 0.16);
+      transition-duration: 1s;
+      transition-timing-function: $anime-card-industry;
       // transform: scale(1.01);
-      height: 70%;
+      height: 75%;
 
    }
 
    @media screen and (min-width: 768px) {
-      margin-left: 20px;
+      margin-left: 0px;
 
    }
 
    @media screen and (min-width: 1200px) {
-      margin-left: 20px;
+      margin-left: 10px;
    }
 }
 
@@ -119,17 +120,17 @@
    white-space: pre-wrap;
    color: $Secondary-text-color;
    transition-duration: 0.5s;
-
+   // background-color: rgb(0, 255, 255);
    text-shadow: 1px 1.5px 1px black,
-      0px 0px 3px black, 2px 0.5px 4px black;
+      2px 0.5px 2px black;
    font-style: italic;
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       color: $svg-color;
-      transition-duration: 4s;
-
-      transition-timing-function: cubic-bezier(1, .21, 0, 1.64);
+      transition-duration: 2s;
+      transform: scale(1.01);
+      transition-timing-function: $anime-card-svg;
    }
 
    @media screen and (min-width: 768px) {

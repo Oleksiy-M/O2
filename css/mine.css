@@ -1040,7 +1040,8 @@ body {
   transition-duration: 0.5s;
 }
 .develo-eco__content:hover .develo-eco___decor1, .develo-eco__content:focus .develo-eco___decor1 {
-  transition-duration: 2s;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
   border: 1px solid aqua;
   box-shadow: 0px 0px 3px 1px aqua;
   width: 100%;
@@ -1143,7 +1144,8 @@ body {
   transition-duration: 0.5s;
 }
 .develo-eco__content:hover .develo-eco___decor4, .develo-eco__content:focus .develo-eco___decor4 {
-  transition-duration: 2s;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
   border: 1px solid aqua;
   box-shadow: 0px 0px 3px 1px aqua;
   width: 99%;
@@ -1249,7 +1251,8 @@ body {
   transition-duration: 0.5s;
 }
 .develo-eco__content:hover .develo-eco___decor7, .develo-eco__content:focus .develo-eco___decor7 {
-  transition-duration: 2s;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
   border: 1px solid aqua;
   box-shadow: 0px 0px 3px 1px aqua;
   width: 98%;
@@ -1352,7 +1355,8 @@ body {
   transition-duration: 0.5s;
 }
 .develo-eco__content:hover .develo-eco___decor10, .develo-eco__content:focus .develo-eco___decor10 {
-  transition-duration: 2s;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
   border: 1px solid aqua;
   box-shadow: 0px 0px 3px 1px aqua;
   width: 97%;
@@ -1444,7 +1448,8 @@ body {
   transition-duration: 0.5s;
 }
 .develo-eco__content:hover .develo-eco___decor14, .develo-eco__content:focus .develo-eco___decor14 {
-  transition-duration: 2s;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
   border: 1px solid aqua;
   box-shadow: 0px 0px 3px 1px aqua;
   width: 96%;
@@ -1587,7 +1592,8 @@ body {
   transition-duration: 0.5s;
 }
 .develo-eco__content:hover .develo-eco___decor19, .develo-eco__content:focus .develo-eco___decor19 {
-  transition-duration: 2s;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
   border: 1px solid aqua;
   box-shadow: 0px 0px 3px 1px aqua;
   width: 95%;
@@ -1722,7 +1728,8 @@ body {
   transition-duration: 0.5s;
 }
 .develo-eco__content:hover .develo-eco___decor24, .develo-eco__content:focus .develo-eco___decor24 {
-  transition-duration: 2s;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
   border: 1px solid aqua;
   box-shadow: 0px 0px 3px 1px aqua;
   width: 94%;
@@ -2156,7 +2163,7 @@ body {
   .section-bg {
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 20px 250px;
+    padding: 0px 20px 150px;
     background-image: linear-gradient(to bottom, rgba(1, 69, 109, 0.5843137255) 10%, rgba(29, 1, 60, 0.6392156863) 99%), url(../img/develo-eco/develo-tablet.png);
   }
 }
@@ -2254,6 +2261,7 @@ body {
   position: relative;
   height: 380px;
   border-bottom: 1.8px solid rgba(0, 0, 255, 0.1450980392);
+  perspective: 2000px;
 }
 @media screen and (min-width: 350px) {
   .develo-eco__content {
@@ -2262,6 +2270,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .develo-eco__content {
+    perspective: 1000px;
     width: 300px;
     height: 390px;
     margin-bottom: 100px;
@@ -2287,29 +2296,35 @@ body {
   position: absolute;
   z-index: -1;
   border-radius: 10px;
-  width: calc(100vw - 30px);
-  height: 300px;
-  margin: 0 0 0px;
+  width: calc(100% + 41px);
+  height: 350px;
+  margin: 0 0 0 -33px;
   transform: translate(-31px, 0px);
   background-position: bottom;
   background-size: cover;
   opacity: 1;
   background-image: url(../img/develo-eco/home.png);
+  transition-duration: 0.5s;
+  transform: rotateX(0deg);
+  transform-style: preserve-3d;
 }
 .develo-eco__content:hover .visual-content__home, .develo-eco__content:focus .visual-content__home {
-  transition-duration: 0.5s;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
   opacity: 0.3;
+  transform: rotateX(90deg);
 }
 @media screen and (min-width: 768px) {
   .visual-content__home {
     transform: translate(0px, 0px);
     width: 300px;
-    height: 260px;
+    height: 360px;
   }
 }
 @media screen and (min-width: 1200px) {
   .visual-content__home {
     width: 450px;
+    height: 260px;
   }
 }
 
@@ -2423,34 +2438,49 @@ body {
 .visual-content {
   position: absolute;
   border-radius: 10px;
-  width: calc(100vw - 30px);
-  height: 300px;
-  margin: 0 0 0px;
-  transform: translate(-31px, 0px);
+  width: calc(100% + 41px);
+  height: 350px;
+  margin: 0 auto 0 -33px;
   background-position: bottom;
   background-size: cover;
   opacity: 1;
+  transform: rotateX(0deg);
+  transform-style: preserve-3d;
+  transition-duration: 0.5s;
 }
 .develo-eco__content:hover .visual-content, .develo-eco__content:focus .visual-content {
-  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
+  transition-duration: 1s;
   opacity: 0.2;
+  transform: rotateX(90deg);
 }
 @media screen and (min-width: 768px) {
   .visual-content {
-    transform: translate(0px, 0px);
+    margin: 0 0 0 20px;
     width: 300px;
-    height: 260px;
+    height: 360px;
+  }
+  .develo-eco__content:hover .visual-content, .develo-eco__content:focus .visual-content {
+    transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
+    transition-duration: 1s;
+    opacity: 0.2;
+    transform: rotateX(90deg);
   }
 }
 @media screen and (min-width: 1200px) {
   .visual-content {
     width: 500px;
+    height: 260px;
   }
 }
 
 .visual-content__oil {
-  transform: translate(-10px, 0px);
   background-image: url(../img/develo-eco/oil.png);
+}
+@media screen and (min-width: 768px) {
+  .visual-content__oil {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -2531,9 +2561,11 @@ body {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  z-index: 1;
 }
 .develo-eco__content:hover .svg-box, .develo-eco__content:focus .svg-box {
   transition-duration: 2s;
+  transition-timing-function: cubic-bezier(1, 0.21, 0, 1.64);
   transform: scale(1.2);
 }
 
@@ -2544,7 +2576,7 @@ body {
 }
 .develo-eco__content:hover .develo-eco__svg, .develo-eco__content:focus .develo-eco__svg {
   transition-timing-function: cubic-bezier(1, 0.21, 0, 1.64);
-  transition-duration: 4s;
+  transition-duration: 2s;
   fill: #33FF99;
 }
 
@@ -2553,7 +2585,7 @@ body {
   fill: #3fa9f5;
 }
 .develo-eco__content:hover .eco__svg, .develo-eco__content:focus .eco__svg {
-  transition-duration: 4s;
+  transition-duration: 2s;
   transition-timing-function: cubic-bezier(1, 0.21, 0, 1.64);
   fill: #85fbff;
 }
@@ -2563,7 +2595,7 @@ body {
   stroke-width: 0;
 }
 .develo-eco__content:hover .eco__svg-imp, .develo-eco__content:focus .eco__svg-imp {
-  transition-duration: 4s;
+  transition-duration: 2s;
   stroke-width: 0.4px;
   transition-timing-function: cubic-bezier(1, 0.21, 0, 1.64);
   stroke: aqua;
@@ -2579,16 +2611,18 @@ body {
   transition-duration: 0.5s;
 }
 .develo-eco__content:hover .cards__overlay, .develo-eco__content:focus .cards__overlay {
-  height: 70%;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
+  height: 75%;
 }
 @media screen and (min-width: 768px) {
   .cards__overlay {
-    margin-left: 20px;
+    margin-left: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .cards__overlay {
-    margin-left: 20px;
+    margin-left: 10px;
   }
 }
 
@@ -2604,12 +2638,13 @@ body {
   white-space: pre-wrap;
   color: #3fa9f5;
   transition-duration: 0.5s;
-  text-shadow: 1px 1.5px 1px black, 0px 0px 3px black, 2px 0.5px 4px black;
+  text-shadow: 1px 1.5px 1px black, 2px 0.5px 2px black;
   font-style: italic;
 }
 .develo-eco__content:hover .develo-eco__art, .develo-eco__content:focus .develo-eco__art {
   color: #33FF99;
-  transition-duration: 4s;
+  transition-duration: 2s;
+  transform: scale(1.01);
   transition-timing-function: cubic-bezier(1, 0.21, 0, 1.64);
 }
 @media screen and (min-width: 768px) {

@@ -24,7 +24,7 @@
       @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        padding: 0px 20px 250px;
+        padding: 0px 20px 150px;
         background-image: linear-gradient(to bottom,
             #01456d95 10%,
 
@@ -147,7 +147,6 @@
 
 
     .develo-eco__content {
-
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
@@ -156,12 +155,14 @@
       height: 380px;
       border-bottom: 1.8px solid #0000ff25;
       // box-shadow: 0px 0px 3px -3px rgb(225, 234, 60);
+      perspective: 2000px;
 
       @media screen and (min-width: 350px) {
         height: 315px;
       }
 
       @media screen and (min-width: 768px) {
+        perspective: 1000px;
         width: 300px;
         height: 390px;
         margin-bottom: 100px;
@@ -190,9 +191,9 @@
       position: absolute;
       z-index: -1;
       border-radius: 10px;
-      width: calc(100vw - 30px);
-      height: 300px;
-      margin: 0 0 0px;
+      width: calc(100% + 41px);
+      height: 350px;
+      margin: 0 0 0 -33px;
       // // left: calc((100% - 250px)/2);
       transform: translate(-31px, 0px);
 
@@ -201,21 +202,27 @@
       opacity: 1;
       background-image: url(../img/develo-eco/home.png);
 
+      transition-duration: 0.5s;
+      transform: rotateX(0deg);
+      transform-style: preserve-3d;
+
       .develo-eco__content:hover &,
       .develo-eco__content:focus & {
-        transition-duration: 0.5s;
-        // transition-timing-function: cubic-bezier(1, .21, 0, 1.64);
+        transition-duration: 1s;
+        transition-timing-function: $anime-card-industry;
         opacity: 0.3;
+        transform: rotateX(90deg);
       }
 
       @media screen and (min-width: 768px) {
         transform: translate(0px, 0px);
         width: 300px;
-        height: 260px;
+        height: 360px;
       }
 
       @media screen and (min-width: 1200px) {
         width: 450px;
+        height: 260px;
       }
 
 
@@ -366,40 +373,53 @@
       position: absolute;
       // z-index: -1;
       border-radius: 10px;
-      width: calc(100vw - 30px);
-      height: 300px;
-      margin: 0 0 0px;
+      width: calc(100% + 41px);
+      height: 350px;
+      margin: 0 auto 0 -33px;
       // // left: calc((100% - 250px)/2);
-      transform: translate(-31px, 0px);
+      // transform: translate(-31px, 0px);
 
       background-position: bottom;
       background-size: cover;
       opacity: 1;
+      transform: rotateX(0deg);
+      transform-style: preserve-3d;
+      transition-duration: 0.5s;
 
       .develo-eco__content:hover &,
       .develo-eco__content:focus & {
-        transition-duration: 0.5s;
-        // transition-timing-function: cubic-bezier(1, .21, 0, 1.64);
+        transition-timing-function: $anime-card-industry;
+        transition-duration: $animation-head;
         opacity: 0.2;
-
+        transform: rotateX(90deg);
       }
 
       @media screen and (min-width: 768px) {
-        transform: translate(0px, 0px);
+        margin: 0 0 0 20px;
         width: 300px;
-        height: 260px;
+        height: 360px;
+
+        .develo-eco__content:hover &,
+        .develo-eco__content:focus & {
+          transition-timing-function: $anime-card-industry;
+          transition-duration: $animation-head;
+          opacity: 0.2;
+          transform: rotateX(90deg);
+        }
       }
 
       @media screen and (min-width: 1200px) {
         width: 500px;
+        height: 260px;
       }
     }
 
     .visual-content__oil {
-      transform: translate(-10px, 0px);
       background-image: url(../img/develo-eco/oil.png);
+      @media screen and (min-width: 768px) {
+        margin: 0;
+      }
     }
-
 
 
     .ocean-content {
