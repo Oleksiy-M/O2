@@ -195,6 +195,24 @@ body {
   transform: scale(1.2);
 }
 
+.section-case {
+  display: block;
+}
+
+.case-list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: decimal;
+}
+
+.case-item {
+  margin: 0;
+}
+
+.case-title {
+  user-select: none;
+}
+
 /* =================SITE-NAV  ================= */
 .pg-header {
   display: block;
@@ -2939,14 +2957,14 @@ body {
   padding: 10px 8px;
   border-radius: 10px;
   background-color: rgba(190, 0, 204, 0.7725490196);
+  font-weight: 600;
   font-size: 8.5px;
-  color: #fffdd1;
-  font-weight: 200;
-  line-height: 1.15;
+  line-height: 1.16;
   letter-spacing: 0.02em;
+  color: #fffdd1;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-style: italic;
-  text-shadow: 1px 1px 1px #000000, 1px 2px 4px #000000, 0px 0px 5px #000000;
+  text-shadow: 1px 1px 1px #000000, 1px 2px 4px #000000, 0px 0px 1px #000000;
   transform: translatex(-105%);
   transition-duration: 1s;
   opacity: 0;
@@ -2959,12 +2977,12 @@ body {
   .cards__alert {
     padding: 10px 10px;
     font-size: 9px;
-    line-height: 1.16;
+    line-height: 1.18;
   }
 }
 @media screen and (min-width: 1200px) {
   .cards__alert {
-    font-size: 11px;
+    font-size: 12px;
     padding: 10px 20px;
   }
 }

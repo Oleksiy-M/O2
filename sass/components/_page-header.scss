@@ -201,3 +201,24 @@
       transform: scale(1.2);
    }
 }
+
+
+.section-case {
+   display: block;
+}
+
+.case-list {
+   display: flex;
+   justify-content: space-around;
+   list-style-type: decimal;
+
+}
+
+.case-item {
+   margin: 0;
+
+}
+
+.case-title {
+   user-select: none;
+}
