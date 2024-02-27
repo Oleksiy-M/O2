@@ -647,6 +647,15 @@ body {
   top: 120px;
   position: absolute;
   width: 250px;
+  transform: translateX(250%);
+  animation: linear;
+  animation-timing-function: ease-in-out;
+  transition-duration: 1s;
+}
+.section-oxy:hover .hero__title, .section-oxy:focus .hero__title {
+  transform: translateX(0);
+  animation-timing-function: cubic-bezier(1, 0.21, 0, 1.64);
+  transform: scale(1.06);
 }
 @media screen and (min-width: 650px) {
   .hero__title {
@@ -666,12 +675,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.25em;
-  transition-duration: 1s;
   color: aqua;
-  text-wrap: nowrap;
-}
-.section-oxy:hover .title, .section-oxy:focus .title {
-  transform: scale(1.06);
   text-shadow: 1px 2px 2px black, 0px 0px 3px black, 0px 0px 8px #ffffff, 1px 3px 8px #00f7ff;
 }
 @media screen and (min-width: 1200px) {
@@ -942,7 +946,7 @@ body {
 .impact-box__end:hover .title-end, .impact-box__end:focus .title-end {
   transform: translateX(0vw);
   animation: moveTextRightToLeft 2s linear normal;
-  animation-timing-function: cubic-bezier(0, 1.55, 0.02, 0.73);
+  animation-timing-function: cubic-bezier(0.36, 0.89, 0.56, 1.11);
 }
 @media screen and (min-width: 768px) {
   .title-end {
@@ -959,10 +963,10 @@ body {
 
 @keyframes moveTextRightToLeft {
   0% {
-    transform: translatex(50vw);
+    transform: translatex(100%);
   }
   100% {
-    transform: translatex(0vw);
+    transform: translatex(0%);
   }
 }
 .title-end__left {
@@ -971,15 +975,15 @@ body {
 .impact-box__end:hover .title-end__left, .impact-box__end:focus .title-end__left {
   transform: translateX(0vw);
   animation: moveTextLeftToRight 2s linear normal;
-  animation-timing-function: cubic-bezier(0, 1.55, 0.02, 0.73);
+  animation-timing-function: cubic-bezier(0.36, 0.89, 0.56, 1.11);
 }
 
 @keyframes moveTextLeftToRight {
   0% {
-    transform: translatex(-50vw);
+    transform: translatex(-100%);
   }
   100% {
-    transform: translatex(0vw);
+    transform: translatex(0%);
   }
 }
 .buton-down__up {
