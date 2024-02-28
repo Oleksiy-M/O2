@@ -2684,7 +2684,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .video-bg {
-    background-image: linear-gradient(to bottom, rgba(44, 0, 165, 0.9294117647) 30%, rgba(2, 6, 79, 0.8901960784) 85%);
+    background-image: linear-gradient(to bottom, rgba(6, 79, 187, 0.8274509804) 30%, rgba(2, 6, 79, 0.8901960784) 85%);
     max-width: 1600px;
     overflow: hidden;
     padding: 0;
