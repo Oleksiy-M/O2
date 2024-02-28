@@ -2321,15 +2321,15 @@ body {
 }
 @media screen and (min-width: 768px) {
   .visual-content__home {
-    transform: translate(0px, 0px);
+    margin: 0 0 0 0px;
     width: 300px;
     height: 360px;
   }
 }
 @media screen and (min-width: 1200px) {
   .visual-content__home {
-    width: 450px;
-    height: 260px;
+    width: 430px;
+    height: 240px;
   }
 }
 
@@ -2474,8 +2474,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .visual-content {
-    width: 500px;
-    height: 260px;
+    width: 490px;
+    height: 240px;
   }
 }
 
@@ -2567,10 +2567,10 @@ body {
   justify-content: center;
   margin: 0 auto;
   z-index: 1;
+  perspective: 500px;
+  transition-duration: 0.1s;
 }
 .develo-eco__content:hover .svg-box, .develo-eco__content:focus .svg-box {
-  transition-duration: 2s;
-  transition-timing-function: cubic-bezier(1, 0.21, 0, 1.64);
   transform: scale(1.2);
 }
 
@@ -2578,21 +2578,29 @@ body {
   display: flexbox;
   fill: #3fa9f5;
   margin: 0 0 10px 0;
+  transition-duration: 0.5s;
+  transform: rotateX(-50deg);
+  transform-style: preserve-3d;
 }
 .develo-eco__content:hover .develo-eco__svg, .develo-eco__content:focus .develo-eco__svg {
   transition-timing-function: cubic-bezier(1, 0.21, 0, 1.64);
-  transition-duration: 2s;
+  transition-duration: 1.8s;
   fill: #33FF99;
+  transform: rotateX(0deg);
 }
 
 .eco__svg {
   display: flexbox;
   fill: #3fa9f5;
+  transition-duration: 0.5s;
+  transform: rotateX(-50deg);
+  transform-style: preserve-3d;
 }
 .develo-eco__content:hover .eco__svg, .develo-eco__content:focus .eco__svg {
-  transition-duration: 2s;
+  transition-duration: 1.8s;
   transition-timing-function: cubic-bezier(1, 0.21, 0, 1.64);
   fill: #85fbff;
+  transform: rotateX(0deg);
 }
 
 .eco__svg-imp {
@@ -2600,7 +2608,7 @@ body {
   stroke-width: 0;
 }
 .develo-eco__content:hover .eco__svg-imp, .develo-eco__content:focus .eco__svg-imp {
-  transition-duration: 2s;
+  transition-duration: 1.8s;
   stroke-width: 0.4px;
   transition-timing-function: cubic-bezier(1, 0.21, 0, 1.64);
   stroke: aqua;
@@ -2648,7 +2656,7 @@ body {
 }
 .develo-eco__content:hover .develo-eco__art, .develo-eco__content:focus .develo-eco__art {
   color: #33FF99;
-  transition-duration: 2s;
+  transition-duration: 1.8s;
   transform: scale(1.01);
   transition-timing-function: cubic-bezier(1, 0.21, 0, 1.64);
 }
@@ -3035,30 +3043,30 @@ body {
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 70%;
+  height: 74.5%;
   margin: 0px 0;
   padding: 0px 0px;
   border-radius: 10px;
   background: rgba(0, 45, 107, 0.7254901961);
-  transition-duration: 1s;
+  transition-duration: 3s;
   opacity: 1;
 }
 .cards__item:hover .cards__content, .cards__item:focus .cards__content {
-  transition-duration: 0.5s;
+  transition-duration: 0.1s;
   background: rgba(174, 171, 171, 0);
 }
 
 .cards__title {
   text-wrap: wrap;
   user-select: none;
-  margin: 0px 0 0;
   font-weight: 500;
-  font-size: 10px;
+  font-size: 9px;
   line-height: 1.5;
   letter-spacing: 0.06em;
   color: #d5d095;
   transition-duration: 3s;
   z-index: 2;
+  margin: 0;
 }
 .section-card:hover .cards__title, .section-card:focus .cards__title {
   transition-duration: 0.5s;
@@ -3066,11 +3074,12 @@ body {
 }
 .cards__item:hover .cards__title, .cards__item:focus .cards__title {
   opacity: 0;
-  transition-duration: 0.5s;
+  transition-duration: 0.1s;
 }
 @media screen and (min-width: 768px) {
   .cards__title {
-    font-size: 11px;
+    margin: 1px 0 0;
+    font-size: 9px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -3081,12 +3090,12 @@ body {
 
 .cards__text {
   user-select: none;
-  font-size: 9px;
+  font-size: 8px;
   line-height: 1.87;
   color: #fffdd1;
   transition-duration: 3s;
   z-index: 2;
-  margin: 0 0 -2px;
+  margin: 0px 0 -2px;
 }
 .section-card:hover .cards__text, .section-card:focus .cards__text {
   transition-duration: 0.5s;
@@ -3094,16 +3103,15 @@ body {
 }
 .cards__item:hover .cards__text, .cards__item:focus .cards__text {
   opacity: 0;
-  transition-duration: 0.5s;
+  transition-duration: 0.1s;
 }
 @media screen and (min-width: 768px) {
   .cards__text {
-    font-size: 9px;
+    font-size: 8px;
   }
 }
 @media screen and (min-width: 1200px) {
   .cards__text {
-    margin: 0 0 -4px;
     font-size: 11px;
   }
 }
@@ -3112,7 +3120,7 @@ body {
   display: flex;
   overflow: hidden;
   padding: 0px 0;
-  margin: 0 0px 20px;
+  margin: 0 0px 40px;
   width: calc(100% + 30px);
   transform: translateX(-15px);
   transition-duration: 1s;
@@ -3120,14 +3128,12 @@ body {
 @media screen and (min-width: 768px) {
   .section-card {
     overflow: visible;
-    margin: 0 0 30px;
-    width: 1015px;
-    transform: translateX(-145px);
+    width: 1024px;
+    transform: translateX(-143px);
   }
 }
 @media screen and (min-width: 1200px) {
   .section-card {
-    margin: 0 0 20px;
     width: 1600px;
     transform: translateX(-215px);
     height: auto;
@@ -3136,18 +3142,18 @@ body {
 
 @keyframes moveRightToLeft {
   0% {
-    transform: translateX(73.75%);
+    transform: translateX(70.1%);
   }
   100% {
-    transform: translateX(-73.75%);
+    transform: translateX(-70.1%);
   }
 }
 @keyframes moveRightToLeftMobil {
   0% {
-    transform: translateX(748px);
+    transform: translateX(719px);
   }
   100% {
-    transform: translateX(-748px);
+    transform: translateX(-719px);
   }
 }
 .cards {
@@ -3158,8 +3164,8 @@ body {
   animation-timing-function: ease-out;
   animation: moveRightToLeftMobil 25s linear infinite;
 }
-.section-card:hover .cards, .section-card:focus .cards {
-  transition: all 2s ease-out;
+.cards:hover, .cards:focus {
+  transition: all 12s ease-in;
   animation-play-state: paused;
 }
 @media screen and (min-width: 768px) {
@@ -3176,25 +3182,31 @@ body {
   flex-shrink: 0;
   transition-duration: 1s;
   position: relative;
-  padding: 35px 5px 45px;
+  padding: 0;
+  height: 220px;
   z-index: -1;
+  transition-duration: 3s;
 }
 .cards__item:hover, .cards__item:focus {
+  transition-duration: 0.5s;
   z-index: 1;
 }
 @media screen and (min-width: 768px) {
   .cards__item {
-    padding: 35px 5px 45px;
+    padding: 0;
+    height: 220px;
   }
 }
 @media screen and (min-width: 1200px) {
   .cards__item {
-    padding: 50px 10px 70px;
+    padding: 0;
+    height: 340px;
   }
 }
 
 .cadr-svg {
   position: absolute;
+  pointer-events: none;
   fill: #2a2a2a;
   width: 104%;
   height: 100%;
@@ -3202,7 +3214,7 @@ body {
   z-index: 1;
 }
 .cards__item:hover .cadr-svg, .cards__item:focus .cadr-svg {
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   z-index: -1;
 }
 .section-card:hover .cadr-svg, .section-card:focus .cadr-svg {
@@ -3546,7 +3558,12 @@ body {
   }
 }
 .trans-gif {
-  transform: translateY(-152px);
+  transform: translateY(-156px);
+}
+@media screen and (min-width: 1200px) {
+  .trans-gif {
+    transform: translateY(-152px);
+  }
 }
 
 .box-gif {

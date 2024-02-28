@@ -100,7 +100,7 @@ sectionCard.addEventListener('mouseleave', () => {
 
 
 
-
+// section-cards 
 
 window.onload = function () {
    const cardsList = document.querySelector('.cards');
@@ -115,5 +115,21 @@ window.onload = function () {
 
 
 
+
+
+// const sectionCard = document.querySelector('.section-card');
+// const aqueduct = document.querySelector('.aqueduct');
+
+// const cardsLink = document.querySelector('.cards__link');
+// const cadrSvg = document.querySelector('.cadr-svg');
+
+
+// cardsLink.addEventListener('mouseenter', () => {
+//    cadrSvg.style.zIndex = '-1';
+// });
+
+// cardsLink.addEventListener('mouseleave', () => {
+//    cadrSvg.style.zIndex = '1';
+// });
 
 

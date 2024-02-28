@@ -4,28 +4,52 @@
    justify-content: center;
    margin: 0 auto;
    z-index: 1;
+   perspective: 500px;
+
+   // opacity: 0;
+
+   transition-duration: 0.1s;
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
-      transition-duration: 2s;
-      transition-timing-function: $anime-card-svg;
+      // transition-timing-function: $anime-card-svg;
       transform: scale(1.2);
+      // opacity: 1;
    }
-}
 
+
+}
 
 .develo-eco__svg {
    display: flexbox;
    fill: $Secondary-text-color;
    margin: 0 0 10px 0;
    // transition: transform $animation-card, opacity $animation-card;
+   // transform: translateY(70px);
+   // transition-duration: 0.1s;
+
+   // .develo-eco:hover &,
+   // .develo-eco:focus & {
+   //    transition-duration: 0.5s;
+   //    transform: translateY(0px);
+   // }
+
+   // .impact-section:hover &,
+   // .impact-section:focus & {
+   //    transition-duration: 0.5s;
+   //    transform: translateY(0px);
+
+   // }
+   transition-duration: 0.5s;
+   transform: rotateX(-50deg);
+   transform-style: preserve-3d;
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       transition-timing-function: $anime-card-svg;
-      transition-duration: 2s;
+      transition-duration: 1.8s;
       fill: $svg-color;
-
+      transform: rotateX(0deg);
 
    }
 
@@ -34,13 +58,32 @@
 .eco__svg {
    display: flexbox;
    fill: $Secondary-text-color;
+   // transform: translateY(70px);
+   // transition-duration: 0.1s;
+
+   // .develo-eco:hover &,
+   // .develo-eco:focus & {
+   //    transition-duration: 0.5s;
+   //    transform: translateY(0px);
+   // }
+
+   // .impact-section:hover &,
+   // .impact-section:focus & {
+   //    transition-duration: 0.5s;
+   //    transform: translateY(0px);
+
+   // }
+   transition-duration: 0.5s;
+   transform: rotateX(-50deg);
+   transform-style: preserve-3d;
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
-      transition-duration: 2s;
+      transition-duration: 1.8s;
 
       transition-timing-function: $anime-card-svg;
       fill: #85fbff;
+      transform: rotateX(0deg);
    }
 }
 
@@ -50,7 +93,7 @@
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
-      transition-duration: 2s;
+      transition-duration: 1.8s;
       stroke-width: 0.4px;
       transition-timing-function: $anime-card-svg;
       stroke: $primary-text-color;
@@ -128,7 +171,7 @@
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       color: $svg-color;
-      transition-duration: 2s;
+      transition-duration: 1.8s;
       transform: scale(1.01);
       transition-timing-function: $anime-card-svg;
    }
