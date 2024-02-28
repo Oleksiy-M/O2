@@ -2310,7 +2310,7 @@ body {
   background-position: bottom;
   background-size: cover;
   opacity: 1;
-  background-image: url(../img/develo-eco/leptop.png);
+  background-image: url(../img/develo-eco/home.png);
   transition-duration: 0.5s;
   transform: rotateX(0deg);
   transform-style: preserve-3d;
@@ -2345,7 +2345,7 @@ body {
 }
 
 .visual-content__leptop {
-  background-image: url(../img/develo-eco/home.png);
+  background-image: url(../img/develo-eco/leptop.png);
 }
 
 .impact-section {
