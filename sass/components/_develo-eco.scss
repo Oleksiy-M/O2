@@ -196,11 +196,11 @@
       margin: 0 0 0 -33px;
       // // left: calc((100% - 250px)/2);
       transform: translate(-31px, 0px);
-
       background-position: bottom;
       background-size: cover;
       opacity: 1;
-      background-image: url(../img/develo-eco/home.png);
+      background-image: url(../img/develo-eco/leptop.png);
+
 
       transition-duration: 0.5s;
       transform: rotateX(0deg);
@@ -241,7 +241,8 @@
     }
 
     .visual-content__leptop {
-      background-image: url(../img/develo-eco/leptop.png);
+      background-image: url(../img/develo-eco/home.png);
+
     }
 
 
@@ -371,6 +372,7 @@
 
     .visual-content {
       position: absolute;
+      pointer-events: none;
       // z-index: -1;
       border-radius: 10px;
       width: calc(100% + 41px);

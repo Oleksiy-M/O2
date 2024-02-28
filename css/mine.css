@@ -1904,9 +1904,11 @@ body {
 .page-footer__list {
   margin: 0 auto;
   padding: 15px 0 40px;
+  text-align: center;
 }
 @media screen and (min-width: 650px) {
   .page-footer__list {
+    text-align: right;
     padding: 15px 0 0 0px;
   }
 }
@@ -2308,7 +2310,7 @@ body {
   background-position: bottom;
   background-size: cover;
   opacity: 1;
-  background-image: url(../img/develo-eco/home.png);
+  background-image: url(../img/develo-eco/leptop.png);
   transition-duration: 0.5s;
   transform: rotateX(0deg);
   transform-style: preserve-3d;
@@ -2343,7 +2345,7 @@ body {
 }
 
 .visual-content__leptop {
-  background-image: url(../img/develo-eco/leptop.png);
+  background-image: url(../img/develo-eco/home.png);
 }
 
 .impact-section {
@@ -2442,6 +2444,7 @@ body {
 
 .visual-content {
   position: absolute;
+  pointer-events: none;
   border-radius: 10px;
   width: calc(100% + 41px);
   height: 350px;
@@ -2622,6 +2625,7 @@ body {
   height: 0.01%;
   border-radius: 0 10px 0 0;
   transition-duration: 0.5s;
+  perspective: 2000px;
 }
 .develo-eco__content:hover .cards__overlay, .develo-eco__content:focus .cards__overlay {
   transition-duration: 1s;
@@ -2630,6 +2634,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .cards__overlay {
+    perspective: 1000px;
     margin-left: 0px;
   }
 }
@@ -2650,14 +2655,17 @@ body {
   letter-spacing: 0.02em;
   white-space: pre-wrap;
   color: #3fa9f5;
-  transition-duration: 0.5s;
   text-shadow: 1px 1.5px 1px black, 2px 0.5px 2px black;
+  transition-duration: 0.5s;
   font-style: italic;
+  transform: rotateX(-50deg);
+  transform-style: preserve-3d;
 }
 .develo-eco__content:hover .develo-eco__art, .develo-eco__content:focus .develo-eco__art {
   color: #33FF99;
   transition-duration: 1.8s;
   transform: scale(1.01);
+  transform: rotateX(0deg);
   transition-timing-function: cubic-bezier(1, 0.21, 0, 1.64);
 }
 @media screen and (min-width: 768px) {
@@ -2731,7 +2739,7 @@ body {
 .history-section {
   display: block;
   padding: 100px 0 0;
-  margin: 0px 0 20px;
+  margin: 0px 0 15px;
   animation: changeBgColor 40s linear infinite normal;
   border-radius: 5px;
   border-top: 4px solid rgba(45, 1, 38, 0.5529411765);
@@ -3119,8 +3127,8 @@ body {
 .section-card {
   display: flex;
   overflow: hidden;
-  padding: 0px 0;
-  margin: 0 0px 40px;
+  padding: 5px 0 15px;
+  margin: 0 0px 25px;
   width: calc(100% + 30px);
   transform: translateX(-15px);
   transition-duration: 1s;
@@ -3128,6 +3136,8 @@ body {
 @media screen and (min-width: 768px) {
   .section-card {
     overflow: visible;
+    margin: 0 0 40px;
+    padding: 0;
     width: 1024px;
     transform: translateX(-143px);
   }
