@@ -2,7 +2,7 @@
 
       .history-page {
          display: block;
-         padding: 80px 15px 50px;
+         padding: 80px 15px 0px;
 
          @media screen and (min-width: 768px) {
             padding: 50px 15px 0px;
@@ -17,7 +17,13 @@
          }
       }
 
+      .history-page__end {
+         padding: 0px 15px 50px;
 
+         @media screen and (min-width: 768px) {
+            padding: 0px 15px 0px;
+         }
+      }
 
 
       .history-section {
@@ -98,7 +104,7 @@
 
 
 
-      .history-hero {
+      .history-hero__box {
          // display: flex;
          // flex-direction: column;
          // align-items: center;
@@ -133,19 +139,22 @@
          // height: 85px;
          user-select: none;
          // border-radius: 25px;
-         text-shadow: 1px 1px 3px black;
+         text-shadow: 1px -1px 3px black;
          text-transform: uppercase;
          text-align: center;
-         font-weight: 300;
-         font-size: 15px;
+         font-weight: 500;
+         font-size: 18px;
          line-height: 1.86;
-         letter-spacing: 0.26em;
+         letter-spacing: 0.22em;
          // border-bottom: 2px solid $histor-color-text;
 
          .history-section:hover &,
          .history-section:focus & {
 
-            text-shadow: 0px 0px 1px #ffffff, 2px 2px 2px #000000;
+            text-shadow: 0px 0px 1px #ffffff,
+               1px -1px 1px #000000,
+               0px 0px 3px #000000,
+               1px -1px 2px #000000;
          }
 
          @media screen and (min-width: 1200px) {
@@ -259,14 +268,17 @@
       .head-article {
          padding: 0 0 15px;
          color: $histor-color-text;
-         transition-duration: 1000ms;
+         transition-duration: 800ms;
          user-select: none;
-         letter-spacing: 0.05em;
+         letter-spacing: 0.1em;
 
          .box-article:hover &,
          .box-article:focus & {
             transform: scale(1.02);
-            text-shadow: #000000 2px 2px 6px, #000000 3px 3px 3px;
+            text-shadow:
+               #000000 0px 1px 2px,
+               #000000 2px 5px 7px,
+               #000000 1px 2px 1px;
          }
       }
 
@@ -281,7 +293,7 @@
          font-weight: 500;
          font-size: 15px;
          line-height: 1.5;
-         letter-spacing: 0.06em;
+         letter-spacing: 0.08em;
          color: $histor-color-text;
          transition-duration: 400ms;
 
@@ -289,7 +301,8 @@
          .article-item:focus & {
             transform: scale(1.02);
             color: $prim-histor-text;
-            text-shadow: rgb(0, 0, 0) 2px 2px 5px, rgb(0, 0, 0) 3px 3px 3px;
+            text-shadow: #000000 0px 2px 5px,
+               #000000 2px 2px 1px;
          }
       }
 
@@ -301,7 +314,7 @@
          font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
          font-size: 12px;
          line-height: 1.5;
-         letter-spacing: 0.02em;
+         letter-spacing: 0.04em;
 
          color: $histor-color-text;
          transition-duration: 100ms;
@@ -311,6 +324,7 @@
             color: $prim-histor-text;
             transform: scale(1.02);
 
-            text-shadow: rgb(0, 0, 0) 1px 1.5px 2px, rgb(0, 0, 0) 1px 2.5px 5px;
+            text-shadow: #000000 1px 2px 1px,
+               #000000 1px 1px 5px;
          }
       }

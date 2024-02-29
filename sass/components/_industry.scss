@@ -158,10 +158,6 @@
 }
 
 
-.js-count-particles {
-   font-size: 1.1em;
-}
-
 
 
 
@@ -175,7 +171,7 @@
    .section-hero:hover &,
    .section-hero:focus & {
       transform: scale(1.05);
-      color: $primary-text-color;
+      color: $White-color;
    }
 
    @media screen and (min-width: 768px) {
@@ -190,18 +186,21 @@
 
 .idustry-hero__heading {
    user-select: none;
-   text-shadow: 1px 1px 3px black;
+   text-shadow: 1px 1px 1px black;
    text-transform: uppercase;
    text-align: center;
-   font-weight: 300;
-   font-size: 15px;
+   font-weight: 500;
+   font-size: 18px;
    line-height: 1.86;
-   letter-spacing: 0.26em;
+   letter-spacing: 0.22em;
 
    // border-bottom: 2px solid $Secondary-text-color;
    .section-hero:hover &,
    .section-hero:focus & {
-      text-shadow: 0px 0px 1px #ffffff, 2px 2px 2px black;
+      text-shadow: 0px 0px 1px #ffffff,
+         1px 1px 1px #000000,
+         0px 0px 4px #000000,
+         1px 1px 2px #000000;
 
    }
 
@@ -225,8 +224,8 @@
    .section-hero:hover &,
    .section-hero:focus & {
       width: 100%;
-      border-bottom: 2px solid $primary-text-color;
-      box-shadow: 0px 2px 8px 2px $primary-text-color;
+      border-bottom: 2px solid $White-color;
+      box-shadow: 0px 2px 8px 2px $White-color;
    }
 }
 
@@ -470,6 +469,7 @@
       transform: translatex(0%);
    }
 }
+
 .title-end__left {
    transform: translateX(100vw);
 

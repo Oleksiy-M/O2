@@ -39,55 +39,28 @@
 
 
 .bg-color__head {
-   height: 935px;
 
-
-   @media (min-device-pixel-ratio: 2) and (max-width: 767px),
-   (min-resolution: 192dpi) and (max-width: 767px),
-   (min-resolution: 2dppx) and (max-width: 767px) {}
+   height: 150vw;
 
    @media screen and (min-width: 768px) {
-      height: 200vw;
       background-image: $bg-water;
    }
-
-   @media (min-device-pixel-ratio: 2) and (min-width: 768px),
-   (min-resolution: 192dpi) and (min-width: 768px),
-   (min-resolution: 2dppx) and (min-width: 768px) {
-
-      height: 200vw;
-   }
-
-   @media screen and (min-width: 1200px) {
-      height: 100vw;
-
-   }
-
-   @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
-   (min-resolution: 192dpi) and (min-width: 1200px),
-   (min-resolution: 2dppx) and (min-width: 1200px) {
-      height: 100vw;
-
-   }
 }
-
 
 
 
 .advantages-section {
    display: block;
-   // width: 1600px;
 }
 
 .advantages-list {
-   // display: block;
    list-style-type: decimal;
+   // display: block;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
+   margin: 0 0 80px;
 
-   // height: 600px;
-   // margin: 0 auto;
    @media screen and (min-width: 768px) {
       flex-wrap: nowrap;
       justify-content: space-between;
@@ -120,7 +93,7 @@
 
    &:hover,
    &:focus {
-      color: aqua;
+      color: #fff;
       text-shadow: 1px 1px 2px #050505,
          0px 0px 4px #050505, 0px 0px 10px #fefafa;
       font-size: 85px;
@@ -188,6 +161,9 @@
 }
 
 
+
+
+
 .advantages-svg {
    width: 200px;
    // position: absolute;
@@ -203,22 +179,158 @@
 }
 
 
+
+
+// < !-- t's our job -->
+
 .section-case {
    display: block;
+   margin: 0 0 200px;
 }
+
+
+.case__head__box {
+   margin: 0 45px 50px;
+   transition-duration: $animation-head;
+   color: $Secondary-text-color;
+   // border: 1px solid #d1d2a512;
+   background-color: transparent;
+
+   .section-case:hover &,
+   .section-case:focus & {
+      // border: 1px solid #eae68c33;
+      // background-color: #fbfae013;
+      transform: scale(1.05);
+      color: #fff;
+   }
+
+   @media screen and (min-width: 768px) {
+      margin: 0 200px 50px;
+      // margin: 0 auto 100px auto;
+   }
+
+   @media screen and (min-width: 1200px) {
+      margin: 0 350px 50px;
+      // margin: 0 auto 100px auto;
+   }
+}
+
+
+.case__head {
+   padding: 0px 0px;
+   user-select: none;
+   // border-radius: 25px;
+   text-shadow: 1px 1px 3px black;
+   text-transform: uppercase;
+   text-align: center;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 1.86;
+   letter-spacing: 0.22em;
+   // border-bottom: 2px solid $histor-color-text;
+
+   .section-case:hover &,
+   .section-case:focus & {
+
+      text-shadow: 0px 0px 1px #ffffff,
+         1px 2px 2px #000000;
+   }
+
+   @media screen and (min-width: 1200px) {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 1.86;
+      letter-spacing: 0.26em;
+   }
+}
+
+
+.case__head__border {
+   margin: -2px auto 0;
+   transition-duration: $animation-head;
+
+   height: 2px;
+   border: none;
+   width: 0.1%;
+
+   .section-case:hover &,
+   .section-case:focus & {
+      width: 100%;
+      border-bottom: 2px solid #fff;
+      box-shadow: 0px 2px 5px 2px #fff;
+      // transform: scale(1.08)
+   }
+}
+
+
 
 .case-list {
    display: flex;
+   flex-wrap: wrap;
    justify-content: space-around;
-   list-style-type: decimal;
+   // list-style-type: decimal;
+
 
 }
 
 .case-item {
-   margin: 0;
+   // height: 100px;
+   object-fit: cover;
+   border-radius: 10px;
+   position: relative;
+   width: 85%;
 
+   @media screen and (min-width: 768px) {
+      width: calc((100% - 80px) / 3);
+
+   }
+}
+
+.case-item:not(last-child) {
+   margin: 0 0 40px;
+}
+
+
+.case-titl__box {
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   background: #1f01406e;
+   width: 100%;
+   bottom: 10px;
+   text-align: center;
+
+   // left: 50%;
 }
 
 .case-title {
    user-select: none;
+   padding: 10px 0;
+   font-size: 16px;
+   letter-spacing: 0.2em;
+   text-transform: uppercase;
+   color: $Secondary-text-color;
+   text-shadow: 1px 1px 2px #000000,
+      1px 2px 1px #000000;
+
+   transition-duration: 0.5s;
+
+   .case-item:hover &,
+   .case-item:focus & {
+      color: #fff;
+      transform: scale(1.04);
+   }
+
+   @media screen and (min-width: 768px) {
+      font-size: 11px;
+      font-weight: 600;
+
+   }
+
+   @media screen and (min-width: 1200px) {
+      font-size: 15px;
+      font-weight: 800;
+
+   }
+
 }
