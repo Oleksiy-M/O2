@@ -1,6 +1,6 @@
 // < !-- Water -->
 
-.hero {
+.hero-head {
 	display: block;
 	justify-content: center;
 	margin: 0;
@@ -14,15 +14,23 @@
 }
 
 
-.hero_list {
+.hero-head__list {
 	padding: 0;
 }
 
-.hero__water {
+.hero-head__water {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 0px 35px 50px;
+	transition-duration: 1s;
+
+	.hero-head:hover &,
+	.hero-head:focus & {
+		transition-duration: 0.5s;
+		animation-timing-function: $anime-card-industry;
+		transform: scale(1.03);
+	}
 
 	@media screen and (min-width: 350px) {
 		margin: 30px 0 50px;
@@ -53,7 +61,7 @@
 
 
 
-.section-oxy {
+.section-hero__logo {
 
 	display: flex;
 	justify-content: center;
@@ -171,8 +179,8 @@
 
 	transform: scale(1.001);
 
-	.section-oxy:hover &,
-	.section-oxy:focus & {
+	.section-hero__logo:hover &,
+	.section-hero__logo:focus & {
 		transform: scale(1.031);
 	}
 
@@ -198,8 +206,9 @@
 	// stroke: #fcb902;
 	// box-shadow: inset 0 0 10px 6px #fcb902c9;
 
-	.section-oxy:hover &,
-	.section-oxy:focus & {
+	.section-hero__logo:hover &,
+	.section-hero__logo:focus & {
+		transition-duration: 1s;
 		box-shadow: inset 0 0 65px 10px #02f4fc61,
 			0 0 10px 5px #fc9402, 0 0 20px 5px #fc9802, 0 0 5px 2px #000305c5,
 			inset 0 0 6px 1px #000000c5;
@@ -238,9 +247,9 @@
 	// stroke: #ffffff32;
 	box-shadow: none;
 
-	.section-oxy:hover &,
-	.section-oxy:focus & {
-		// stroke: #ffffff;
+	.section-hero__logo:hover &,
+	.section-hero__logo:focus & {
+		// transition-duration: 1s;
 		box-shadow: inset 0 0 10px 25px #015b7b7a,
 			0 0 10px 5px #00496471;
 	}
@@ -254,8 +263,8 @@
 		width: 60px;
 		height: 60px;
 
-		.section-oxy:hover &,
-		.section-oxy:focus & {
+		.section-hero__logo:hover &,
+		.section-hero__logo:focus & {
 
 			stroke: #ffffff;
 			box-shadow: inset 0 0 10px 25px #015b7b7a,
@@ -338,8 +347,8 @@
 	animation-timing-function: ease-in-out;
 	transition-duration: 1s;
 
-	.section-oxy:hover &,
-	.section-oxy:focus & {
+	.section-hero__logo:hover &,
+	.section-hero__logo:focus & {
 		transform: translateX(0);
 
 		animation-timing-function: $anime-card-svg;

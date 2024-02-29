@@ -425,50 +425,56 @@ body {
   transform: scale(1.1);
 }
 
-.hero {
+.hero-head {
   display: block;
   justify-content: center;
   margin: 0;
   padding-top: 100px;
 }
 @media screen and (min-width: 650px) {
-  .hero {
+  .hero-head {
     padding: 0px;
   }
 }
 
-.hero_list {
+.hero-head__list {
   padding: 0;
 }
 
-.hero__water {
+.hero-head__water {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0px 35px 50px;
+  transition-duration: 1s;
+}
+.hero-head:hover .hero-head__water, .hero-head:focus .hero-head__water {
+  transition-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
+  transform: scale(1.03);
 }
 @media screen and (min-width: 350px) {
-  .hero__water {
+  .hero-head__water {
     margin: 30px 0 50px;
   }
 }
 @media screen and (min-width: 650px) {
-  .hero__water {
+  .hero-head__water {
     margin-top: 130px;
   }
 }
 @media screen and (min-width: 768px) {
-  .hero__water {
+  .hero-head__water {
     margin: 60px 0 60px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero__water {
+  .hero-head__water {
     margin: 70px 250px 30px;
   }
 }
 
-.section-oxy {
+.section-hero__logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -478,14 +484,14 @@ body {
   border: 2px solid rgba(181, 248, 248, 0.8);
 }
 @media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
-  .section-oxy {
+  .section-hero__logo {
     background-position: bottom;
     height: 70vw;
     background-image: url("../img/family/family-mobil@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
-  .section-oxy {
+  .section-hero__logo {
     margin: 0 auto 100px;
     height: 460px;
     background-position: bottom;
@@ -493,12 +499,12 @@ body {
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
-  .section-oxy {
+  .section-hero__logo {
     background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/family/family-tablet@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
-  .section-oxy {
+  .section-hero__logo {
     background-position: bottom;
     height: 400px;
     max-width: 1600px;
@@ -506,7 +512,7 @@ body {
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
-  .section-oxy {
+  .section-hero__logo {
     background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/family/family@2x.jpg");
   }
 }
@@ -548,7 +554,7 @@ body {
   transition-duration: 1s;
   transform: scale(1.001);
 }
-.section-oxy:hover .hero__link, .section-oxy:focus .hero__link {
+.section-hero__logo:hover .hero__link, .section-hero__logo:focus .hero__link {
   transform: scale(1.031);
 }
 @media screen and (min-width: 768px) {
@@ -566,7 +572,8 @@ body {
   transition-duration: 0.5s;
   stroke-width: 0.2px;
 }
-.section-oxy:hover .hero-logo, .section-oxy:focus .hero-logo {
+.section-hero__logo:hover .hero-logo, .section-hero__logo:focus .hero-logo {
+  transition-duration: 1s;
   box-shadow: inset 0 0 65px 10px rgba(2, 244, 252, 0.3803921569), 0 0 10px 5px #fc9402, 0 0 20px 5px #fc9802, 0 0 5px 2px rgba(0, 3, 5, 0.7725490196), inset 0 0 6px 1px rgba(0, 0, 0, 0.7725490196);
 }
 @media screen and (min-width: 650px) {
@@ -600,7 +607,7 @@ body {
   stroke-width: 0.3px;
   box-shadow: none;
 }
-.section-oxy:hover .hero-logo__o, .section-oxy:focus .hero-logo__o {
+.section-hero__logo:hover .hero-logo__o, .section-hero__logo:focus .hero-logo__o {
   box-shadow: inset 0 0 10px 25px rgba(1, 91, 123, 0.4784313725), 0 0 10px 5px rgba(0, 73, 100, 0.4431372549);
 }
 @media screen and (min-width: 650px) {
@@ -614,7 +621,7 @@ body {
     width: 60px;
     height: 60px;
   }
-  .section-oxy:hover .hero-logo__o, .section-oxy:focus .hero-logo__o {
+  .section-hero__logo:hover .hero-logo__o, .section-hero__logo:focus .hero-logo__o {
     stroke: #ffffff;
     box-shadow: inset 0 0 10px 25px rgba(1, 91, 123, 0.4784313725), 0 0 10px 5px rgba(0, 73, 100, 0.4431372549);
   }
@@ -678,7 +685,7 @@ body {
   animation-timing-function: ease-in-out;
   transition-duration: 1s;
 }
-.section-oxy:hover .title, .section-oxy:focus .title {
+.section-hero__logo:hover .title, .section-hero__logo:focus .title {
   transform: translateX(0);
   animation-timing-function: cubic-bezier(1, 0.21, 0, 1.64);
 }
