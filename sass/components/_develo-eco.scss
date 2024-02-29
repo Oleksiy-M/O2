@@ -189,6 +189,7 @@
 
     .visual-content__home {
       position: absolute;
+      pointer-events: none;
       z-index: -1;
       border-radius: 10px;
       width: calc(100% + 41px);
@@ -198,8 +199,8 @@
       transform: translate(-31px, 0px);
       background-position: bottom;
       background-size: cover;
-      opacity: 1;
-      background-image: url(../img/develo-eco/home.png);
+      opacity: 0.6;
+      background-image: url(../img/develo-eco/home.jpg);
 
 
       transition-duration: 0.5s;
@@ -222,7 +223,7 @@
 
       @media screen and (min-width: 1200px) {
         width: 430px;
-        height: 240px;
+        height: 270px;
       }
 
 
@@ -241,7 +242,7 @@
     }
 
     .visual-content__leptop {
-      background-image: url(../img/develo-eco/leptop.png);
+      background-image: url(../img/develo-eco/leptop.jpg);
 
     }
 
@@ -383,7 +384,7 @@
 
       background-position: bottom;
       background-size: cover;
-      opacity: 1;
+      opacity: 0.6;
       transform: rotateX(0deg);
       transform-style: preserve-3d;
       transition-duration: 0.5s;
@@ -401,23 +402,24 @@
         width: 300px;
         height: 360px;
 
-        .develo-eco__content:hover &,
-        .develo-eco__content:focus & {
-          transition-timing-function: $anime-card-industry;
-          transition-duration: $animation-head;
-          opacity: 0.2;
-          transform: rotateX(90deg);
-        }
+        // .develo-eco__content:hover &,
+        // .develo-eco__content:focus & {
+        //   transition-timing-function: $anime-card-industry;
+        //   transition-duration: $animation-head;
+        //   opacity: 0.2;
+        //   transform: rotateX(90deg);
+        // }
       }
 
       @media screen and (min-width: 1200px) {
         width: 490px;
-        height: 240px;
+        height: 270px;
       }
     }
 
     .visual-content__oil {
-      background-image: url(../img/develo-eco/oil.png);
+      // opacity: 0.4;
+      background-image: url(../img/develo-eco/oil.jpg);
 
       @media screen and (min-width: 768px) {
         margin: 0;
@@ -446,7 +448,7 @@
 
 
     .visual-content__ocean {
-      background-image: url(../img/develo-eco/ocean.png);
+      background-image: url(../img/develo-eco/ocean.jpg);
     }
 
     .factory-content {
@@ -461,7 +463,7 @@
     }
 
     .visual-content__factory {
-      background-image: url(../img/develo-eco/factory.png);
+      background-image: url(../img/develo-eco/factory.jpg);
     }
 
     .earth-content {
@@ -478,8 +480,8 @@
 
 
     .visual-content__earth {
-
-      background-image: url(../img/develo-eco/earth.png);
+      // opacity: 0.4;  
+      background-image: url(../img/develo-eco/erth.jpg);
     }
 
     .man-content {
@@ -499,6 +501,6 @@
 
 
     .visual-content__men {
-      background-image: url(../img/develo-eco/men.png);
+      background-image: url(../img/develo-eco/men.jpg);
 
     }
