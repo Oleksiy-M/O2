@@ -185,7 +185,7 @@
 
    .advantages-item:hover &,
    .advantages-item:focus & {
-         transition-timing-function: $anime-border;
+      transition-timing-function: $anime-hero;
       transform: scale(1.2);
    }
 }
@@ -196,25 +196,34 @@
 // < !-- t's our job -->
 
 .section-case {
-   display: block;
+   display: flex;
+   // justify-content: center;
+   flex-direction: column;
+   align-items: center;
    margin: 0 0 200px;
 }
 
 
 .case__head__box {
-   margin: 0 45px 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 
+   margin: 0 0px 50px;
+   width: 300px;
    color: $Secondary-text-color;
    // border: 1px solid #d1d2a512;
    background-color: transparent;
 
    @media screen and (min-width: 768px) {
-      margin: 0 200px 50px;
+      margin: 0 0px 50px;
+      width: 400px;
       // margin: 0 auto 100px auto;
    }
 
    @media screen and (min-width: 1200px) {
-      margin: 0 350px 50px;
+      margin: 0 0px 50px;
+      width: 500px;
       // margin: 0 auto 100px auto;
    }
 }
@@ -224,7 +233,7 @@
    padding: 0px 0px;
    user-select: none;
    // border-radius: 25px;
-   text-shadow: 1px 1px 3px black;
+   text-shadow: 1px 1px 2px black;
    text-transform: uppercase;
    text-align: center;
    font-weight: 900;
@@ -236,7 +245,7 @@
 
    .section-case:hover &,
    .section-case:focus & {
-      transition-timing-function: $anime-border;
+      transition-timing-function: $anime-text;
       transform: scale(1.05);
       color: #fff;
 
@@ -254,7 +263,7 @@
 
 
 .case__head__border {
-   margin: -2px auto 0;
+   margin: 0px auto 0;
    transition-duration: $animation-head;
 
    height: 2px;
@@ -265,7 +274,7 @@
    .section-case:hover &,
    .section-case:focus & {
       transition-timing-function: $anime-border;
-      width: 100%;
+      width: 90%;
       border-bottom: 2px solid #fff;
       box-shadow: 0px 2px 8px 2px $White-color;
       // transform: scale(1.08)
@@ -284,9 +293,20 @@
 }
 
 .case-item {
-   border-radius: 10px;
+   // border-radius: 10px;
    position: relative;
    width: 85%;
+   transition-duration: 0.5s;
+
+   &:hover,
+   &:focus {
+      transform: scale(1.04);
+      box-shadow: 0px 1px 1px #ffffff1f,
+         -1px 4px 4px #ffffff0f,
+         0px 4px 6px #ffffff0f,
+         1px 4px 6px #ffffff29,
+         1px 4px 16px $svg-color;
+   }
 
    @media screen and (min-width: 768px) {
       width: calc((100% - 110px) / 3);
@@ -314,13 +334,14 @@
 .case-title {
    user-select: none;
    padding: 10px 0;
-   font-size: 16px;
+   font-weight: 800;
+   font-size: 15px;
    letter-spacing: 0.2em;
    text-transform: uppercase;
-   color: $Secondary-text-color;
-   
+   color: $svg-color;
+
    transition-duration: 0.5s;
-   
+
    .case-item:hover &,
    .case-item:focus & {
       text-shadow: 1px 1px 2px #000000,
@@ -330,14 +351,14 @@
    }
 
    @media screen and (min-width: 768px) {
-      font-size: 11px;
-      font-weight: 600;
+      font-size: 10px;
+      font-weight: 800;
 
    }
 
    @media screen and (min-width: 1200px) {
-      font-size: 15px;
-      font-weight: 800;
+      font-size: 14px;
+      font-weight: 900;
 
    }
 

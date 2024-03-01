@@ -9,8 +9,13 @@ $histor-color-text: #d5d095;
 $prim-histor-text: #fffdd1;
 $prim-indusry-color: #ffffff;
 
+$Logo-color: #036db068;
 
-$anime-border: cubic-bezier(.57, -0.6, .97, 1.35);
+
+$anime-hero: cubic-bezier(.57, -0.6, .57, 1.37);
+// $anime-border: cubic-bezier(.57, -0.6, .97, 1.35);
+$anime-border: cubic-bezier(.57, -0.6, .06, 1.63);
+$anime-text: cubic-bezier(.36, .89, .56, 1.11);
 $anime-section: cubic-bezier(.05, 1.12, .001, -0.115);
 $anime-card-industry: cubic-bezier(0, .79, .27, .31);
 $anime-card-svg: cubic-bezier(1, .21, 0, 1.64);
@@ -24,7 +29,7 @@ $animation-head: 1s;
 $bg-color: #1f2f52;
 $bg-water-head: linear-gradient(to bottom,
 
-		#0438d4ba 30%,
+		#045ed4ba 30%,
 		#110132b7 85%);
 
 $bg-water-industry: linear-gradient(to bottom,

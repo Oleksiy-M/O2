@@ -51,16 +51,16 @@
       // padding: 100px 0 0px;
 
       background-image: linear-gradient(to bottom,
-
             #7fd1fdf0 0.2%,
-            #55bdf5c1 1%,
-            #0492dfc4 2%,
-            #0492df7c 10%,
-            #0273b02f 39%,
-            #024062ad 79%,
-            #01193ef1 99%,
-            #050113 0.1%,
-            #080113d7 0.1%),
+               #55bdf5c1 1%,
+               #0492dfef 2%,
+               #0492dfc3 10%,
+               #0273b01a 39%,
+               #0240621c 71%,
+               #01204faf 81%,
+               #01193ef1 99%,
+               #050113 0.1%,
+               #080113d7 0.1%),
          url("../img/head-i/head-indus-mobil@2x.png");
    }
 
@@ -75,14 +75,15 @@
       // background-position: bottom;
       background-image: linear-gradient(to bottom,
             #7fd1fdf0 0.2%,
-            #55bdf5c1 1%,
-            #0492dfc4 2%,
-            #0492df7c 10%,
-            #0273b02f 39%,
-            #024062ad 79%,
-            #01193ef1 99%,
-            #050113 0.1%,
-            #080113d7 0.1%),
+               #55bdf5c1 1%,
+               #0492dfef 2%,
+               #0492dfc3 10%,
+               #0273b01a 39%,
+               #0240621c 71%,
+               #01204faf 81%,
+               #01193ef1 99%,
+               #050113 0.1%,
+               #080113d7 0.1%),
          url("../img/head-i/head-indus-tablet.png");
    }
 
@@ -92,14 +93,15 @@
 
       background-image: linear-gradient(to bottom,
             #7fd1fdf0 0.2%,
-            #55bdf5c1 1%,
-            #0492dfc4 2%,
-            #0492df7c 10%,
-            #0273b02f 39%,
-            #024062ad 79%,
-            #01193ef1 99%,
-            #050113 0.1%,
-            #080113d7 0.1%),
+               #55bdf5c1 1%,
+               #0492dfef 2%,
+               #0492dfc3 10%,
+               #0273b01a 39%,
+               #0240621c 71%,
+               #01204faf 81%,
+               #01193ef1 99%,
+               #050113 0.1%,
+               #080113d7 0.1%),
          url("../img/head-i/head-indus-tablet@2x.png");
 
    }
@@ -110,10 +112,11 @@
       background-image: linear-gradient(to bottom,
             #7fd1fdf0 0.2%,
             #55bdf5c1 1%,
-            #0492dfc4 2%,
-            #0492df7c 10%,
-            #0273b02f 39%,
-            #024062ad 79%,
+            #0492dfef 2%,
+            #0492dfc3 10%,
+            #0273b01a 39%,
+            #0240621c 71%,
+            #01204faf 81%,
             #01193ef1 99%,
             #050113 0.1%,
             #080113d7 0.1%),
@@ -127,14 +130,15 @@
       padding-bottom: 50px;
       background-image: linear-gradient(to bottom,
             #7fd1fdf0 0.2%,
-            #55bdf5c1 1%,
-            #0492dfc4 2%,
-            #0492df7c 10%,
-            #0273b02f 39%,
-            #024062ad 79%,
-            #01193ef1 99%,
-            #050113 0.1%,
-            #080113d7 0.1%),
+               #55bdf5c1 1%,
+               #0492dfef 2%,
+               #0492dfc3 10%,
+               #0273b01a 39%,
+               #0240621c 71%,
+               #01204faf 81%,
+               #01193ef1 99%,
+               #050113 0.1%,
+               #080113d7 0.1%),
          url("../img/head-i/head-indus@2x.png");
    }
 }
@@ -162,22 +166,21 @@
 
 
 .idustry-hero__box {
-   margin: 0 22px 120px 22px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+
+   margin: 0 auto 120px;
    color: $Secondary-text-color;
+   // @media screen and (min-width: 768px) {
+   //    // margin: 0 0px 100px;
+   // }
 
-
-   @media screen and (min-width: 768px) {
-      margin: 0 60px 100px 60px;
-   }
-
-   @media screen and (min-width: 1200px) {
-
-      margin: 0 120px 100px;
-
-   }
+   // @media screen and (min-width: 1200px) {}
 }
 
 .idustry-hero__heading {
+   width: 80%;
    transition-duration: $animation-head;
    user-select: none;
    text-shadow: 1px 1px 1px black;
@@ -191,7 +194,7 @@
    // border-bottom: 2px solid $Secondary-text-color;
    .section-hero:hover &,
    .section-hero:focus & {
-      transition-timing-function: $anime-border;
+      transition-timing-function: $anime-text;
       transform: scale(1.05);
       color: $prim-indusry-color;
 
@@ -222,7 +225,7 @@
    .section-hero:hover &,
    .section-hero:focus & {
       transition-timing-function: $anime-border;
-      width: 100%;
+      width: 90%;
       // transform: scaleX(10000%);
       border-bottom: 2px solid $prim-indusry-color;
       box-shadow: 0px 2px 8px 2px $White-color;
@@ -432,7 +435,7 @@
    .impact-box__end:focus & {
       transform: translateX(0vw);
       animation: moveTextRightToLeft 2s linear normal;
-      animation-timing-function: cubic-bezier(.36, .89, .56, 1.11);
+      animation-timing-function: $anime-text;
       // color: $primary-text-color;
 
    }
@@ -478,7 +481,7 @@
    .impact-box__end:focus & {
       transform: translateX(0vw);
       animation: moveTextLeftToRight 2s linear normal;
-      animation-timing-function: cubic-bezier(.36, .89, .56, 1.11);
+      animation-timing-function: $anime-text;
    }
 }
 
