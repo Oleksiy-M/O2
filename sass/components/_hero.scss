@@ -181,7 +181,9 @@
 
 	.section-hero__logo:hover &,
 	.section-hero__logo:focus & {
+		transition-duration: 0.5s;
 		transform: scale(1.04);
+		transition-timing-function: $anime-border;
 	}
 
 	@media screen and (min-width: 768px) {
@@ -208,8 +210,10 @@
 
 	.section-hero__logo:hover &,
 	.section-hero__logo:focus & {
+		transition-timing-function: $anime-border;
 		box-shadow: inset 0 0 65px 10px #02f4fc61,
-			0 0 10px 5px #fc9402, 0 0 20px 5px #fc9802, 0 0 5px 2px #000305c5,
+			0 0 10px 5px #fc9402, 0 0 20px 5px #fc9802,
+			0 0 5px 2px #000305c5,
 			inset 0 0 6px 1px #000000c5;
 	}
 
@@ -247,6 +251,7 @@
 
 	.section-hero__logo:hover &,
 	.section-hero__logo:focus & {
+		transition-timing-function: $anime-border;
 		box-shadow: inset 0 0 10px 25px #015b7b7a,
 			0 0 10px 5px #00496471;
 	}

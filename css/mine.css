@@ -161,6 +161,7 @@ body {
   margin: 110px 0px 0 0;
 }
 .advantages-item:hover .advantages-svg, .advantages-item:focus .advantages-svg {
+  transition-timing-function: cubic-bezier(0.57, -0.6, 0.97, 1.35);
   transform: scale(1.2);
 }
 
@@ -191,7 +192,7 @@ body {
   text-shadow: 1px 1px 3px black;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 500;
+  font-weight: 900;
   font-size: 18px;
   line-height: 1.86;
   letter-spacing: 0.22em;
@@ -205,7 +206,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .case__head {
-    font-weight: 600;
+    font-weight: 900;
     font-size: 22px;
     line-height: 1.86;
     letter-spacing: 0.26em;
@@ -265,10 +266,10 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #3fa9f5;
-  text-shadow: 1px 1px 2px #000000, 1px 2px 1px #000000;
   transition-duration: 0.5s;
 }
 .case-item:hover .case-title, .case-item:focus .case-title {
+  text-shadow: 1px 1px 2px #000000, 1px 2px 1px #000000;
   color: #fff;
   transform: scale(1.04);
 }
@@ -622,7 +623,9 @@ body {
   transform: scale(1.001);
 }
 .section-hero__logo:hover .hero__link, .section-hero__logo:focus .hero__link {
+  transition-duration: 0.5s;
   transform: scale(1.04);
+  transition-timing-function: cubic-bezier(0.57, -0.6, 0.97, 1.35);
 }
 @media screen and (min-width: 768px) {
   .hero__link {
@@ -640,6 +643,7 @@ body {
   stroke-width: 0.2px;
 }
 .section-hero__logo:hover .hero-logo, .section-hero__logo:focus .hero-logo {
+  transition-timing-function: cubic-bezier(0.57, -0.6, 0.97, 1.35);
   box-shadow: inset 0 0 65px 10px rgba(2, 244, 252, 0.3803921569), 0 0 10px 5px #fc9402, 0 0 20px 5px #fc9802, 0 0 5px 2px rgba(0, 3, 5, 0.7725490196), inset 0 0 6px 1px rgba(0, 0, 0, 0.7725490196);
 }
 @media screen and (min-width: 650px) {
@@ -674,6 +678,7 @@ body {
   box-shadow: none;
 }
 .section-hero__logo:hover .hero-logo__o, .section-hero__logo:focus .hero-logo__o {
+  transition-timing-function: cubic-bezier(0.57, -0.6, 0.97, 1.35);
   box-shadow: inset 0 0 10px 25px rgba(1, 91, 123, 0.4784313725), 0 0 10px 5px rgba(0, 73, 100, 0.4431372549);
 }
 @media screen and (min-width: 650px) {
@@ -2289,10 +2294,11 @@ body {
   border-bottom: 1px solid #3fa9f5;
 }
 .develo-eco:hover .develo-eco__box, .develo-eco:focus .develo-eco__box {
+  transition-timing-function: cubic-bezier(0.57, -0.6, 0.97, 1.35);
   transform: scale(1.05);
   border-bottom: 1px solid #FFFFFF;
   box-shadow: 0px 1px 4px 0px #FFFFFF;
-  background-color: rgba(0, 60, 255, 0.0784313725);
+  background-color: rgba(35, 1, 48, 0.0784313725);
 }
 @media screen and (min-width: 768px) {
   .develo-eco__box {
@@ -2311,7 +2317,7 @@ body {
   user-select: none;
   color: #3fa9f5;
   transition-duration: 1s;
-  text-shadow: 1px 1px 1px black, 1px 2px 1px black;
+  text-shadow: 1px 1px 1px black;
   font-weight: 500;
   font-size: 10px;
   line-height: 1.46;
@@ -2319,6 +2325,7 @@ body {
   text-transform: uppercase;
 }
 .develo-eco:hover .develo-eco__title, .develo-eco:focus .develo-eco__title {
+  transition-timing-function: cubic-bezier(0.57, -0.6, 0.97, 1.35);
   text-shadow: 0px 1px 1px black, 0px 0px 1px #f4f1f1, 1px 1px 1px black;
   color: #33FF99;
 }
@@ -2464,9 +2471,10 @@ body {
 }
 .impact-section:hover .impact-title__box, .impact-section:focus .impact-title__box {
   transform: scale(1.05);
+  transition-timing-function: cubic-bezier(0.57, -0.6, 0.97, 1.35);
   border-bottom: 1px solid #FFFFFF;
   box-shadow: 0px 1px 4px 0px #FFFFFF;
-  background-color: rgba(0, 60, 255, 0.0784313725);
+  background-color: rgba(35, 1, 48, 0.0784313725);
 }
 @media screen and (min-width: 768px) {
   .impact-title__box {
@@ -2490,9 +2498,10 @@ body {
   line-height: 1.46;
   letter-spacing: 0.26em;
   transition-duration: 1s;
-  text-shadow: 1px 1px 1px black, 1px 2px 1px black;
+  text-shadow: 1px 1px 1px black;
 }
 .impact-section:hover .impact-title, .impact-section:focus .impact-title {
+  transition-timing-function: cubic-bezier(0.57, -0.6, 0.97, 1.35);
   text-shadow: 0px 1px 1px black, 0px 0px 1px #f4f1f1, 1px 1px 1px black;
   color: #33FF99;
 }

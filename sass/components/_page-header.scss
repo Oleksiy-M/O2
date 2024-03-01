@@ -185,6 +185,7 @@
 
    .advantages-item:hover &,
    .advantages-item:focus & {
+         transition-timing-function: $anime-border;
       transform: scale(1.2);
    }
 }
@@ -226,7 +227,7 @@
    text-shadow: 1px 1px 3px black;
    text-transform: uppercase;
    text-align: center;
-   font-weight: 500;
+   font-weight: 900;
    font-size: 18px;
    line-height: 1.86;
    letter-spacing: 0.22em;
@@ -244,7 +245,7 @@
    }
 
    @media screen and (min-width: 1200px) {
-      font-weight: 600;
+      font-weight: 900;
       font-size: 22px;
       line-height: 1.86;
       letter-spacing: 0.26em;
@@ -317,13 +318,13 @@
    letter-spacing: 0.2em;
    text-transform: uppercase;
    color: $Secondary-text-color;
-   text-shadow: 1px 1px 2px #000000,
-      1px 2px 1px #000000;
-
+   
    transition-duration: 0.5s;
-
+   
    .case-item:hover &,
    .case-item:focus & {
+      text-shadow: 1px 1px 2px #000000,
+         1px 2px 1px #000000;
       color: #fff;
       transform: scale(1.04);
    }
