@@ -2,17 +2,20 @@
 
       .history-page {
          display: block;
-         padding: 80px 15px 0px;
+         padding: 80px 0px 0px;
+
+         overflow: hidden;
 
          @media screen and (min-width: 768px) {
-            padding: 50px 15px 0px;
+            background-image: $bg-water-histore;
+            padding: 50px 0px 20px;
+            max-width: 1600px;
          }
 
          @media screen and (min-width: 1200px) {
 
-            display: flexbox;
+
             margin: 0 auto;
-            max-width: 1600px;
 
          }
       }
