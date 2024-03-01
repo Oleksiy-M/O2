@@ -119,19 +119,6 @@
    // box-shadow: 0px -1px 1px #0000002f;
    height: 0.01%;
    border-radius: 0 10px 0 0;
-   // animation-timing-function: cubic-bezier(.05, 1.12, .001, -0.115);
-   // transform: translateY(100%);
-   // .develo-eco:hover &,
-   // .develo-eco:focus & {
-   //    height: 70%;
-   // }
-
-   // .impact-section:hover &,
-   // .impact-section:focus & {
-   //    height: 70%;
-
-   // }
-
    transition-duration: 0.5s;
    perspective: 2000px;
 
@@ -164,7 +151,7 @@
    user-select: none;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    font-size: 12px;
-   font-weight: 600;
+   font-weight: 400;
    line-height: 1.5;
    letter-spacing: 0.02em;
    white-space: pre-wrap;
@@ -181,14 +168,17 @@
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       color: $svg-color;
-
+      text-shadow: 1px 1.5px 1px black,
+         2px 0.5px 2px black;
       transform: rotateX(0deg);
       transition-duration: 1s;
       transition-timing-function: $anime-card-industry;
    }
 
    @media screen and (min-width: 768px) {
+
       text-align: left;
+      font-weight: 600;
       font-size: 12px;
       line-height: 1.6;
       letter-spacing: 0.02em;

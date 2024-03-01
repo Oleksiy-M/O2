@@ -163,28 +163,24 @@
 
 
 
-.idustry-hero {
+.idustry-hero__box {
    margin: 0 22px 120px 22px;
-   transition-duration: $animation-head;
    color: $Secondary-text-color;
 
-   .section-hero:hover &,
-   .section-hero:focus & {
-      transform: scale(1.05);
-      color: $White-color;
-   }
 
    @media screen and (min-width: 768px) {
       margin: 0 60px 100px 60px;
    }
 
    @media screen and (min-width: 1200px) {
-      margin: 0 140px 100px 140px;
+
+      margin: 0 120px 100px;
 
    }
 }
 
 .idustry-hero__heading {
+   transition-duration: $animation-head;
    user-select: none;
    text-shadow: 1px 1px 1px black;
    text-transform: uppercase;
@@ -197,9 +193,13 @@
    // border-bottom: 2px solid $Secondary-text-color;
    .section-hero:hover &,
    .section-hero:focus & {
+      transition-timing-function: $anime-border;
+      transform: scale(1.05);
+      color: $prim-indusry-color;
+
       text-shadow: 0px 0px 1px #ffffff,
-         1px 1px 1px #000000,
-         0px 0px 4px #000000,
+         1px 2px 1px #000000,
+         0px 0px 1px #000000,
          1px 1px 2px #000000;
 
    }
@@ -213,18 +213,20 @@
 }
 
 .head-border {
-   margin: -2px auto 0;
+   margin: 0px auto 0;
    transition-duration: $animation-head;
-
    height: 2px;
    // border-bottom: 2px solid $Secondary-text-color;
-   border: none;
-   width: 0.1%;
+   // border: none;
+   border-bottom: 2px solid $prim-indusry-color;
+   width: 0.01%;
 
    .section-hero:hover &,
    .section-hero:focus & {
+      transition-timing-function: $anime-border;
       width: 100%;
-      border-bottom: 2px solid $White-color;
+      // transform: scaleX(10000%);
+      border-bottom: 2px solid $prim-indusry-color;
       box-shadow: 0px 2px 8px 2px $White-color;
    }
 }

@@ -25,12 +25,12 @@
 	margin: 0px 35px 50px;
 	transition-duration: 1s;
 
-	.hero-head:hover &,
-	.hero-head:focus & {
-		transition-duration: 0.5s;
-		animation-timing-function: $anime-card-industry;
-		transform: scale(1.03);
-	}
+	// .hero-head:hover &,
+	// .hero-head:focus & {
+	// 	transition-duration: 0.5s;
+	// 	animation-timing-function: $anime-card-industry;
+	// 	transform: scalex(1.03);
+	// }
 
 	@media screen and (min-width: 350px) {
 		margin: 30px 0 50px;
@@ -181,7 +181,7 @@
 
 	.section-hero__logo:hover &,
 	.section-hero__logo:focus & {
-		transform: scale(1.031);
+		transform: scale(1.04);
 	}
 
 	@media screen and (min-width: 768px) {
@@ -306,14 +306,13 @@
 	text-wrap: nowrap;
 	top: 120px;
 	position: absolute;
-	width: 250px;
-	// padding: 0 10px;
-	// width: 100vw;
-
+	width: 260px;
+	height: 40px;
+	perspective: 300px;
 
 	@media screen and (min-width: 650px) {
 		margin-top: 0px;
-		width: 350px;
+		width: 380px;
 	}
 
 	@media screen and (min-width: 1200px) {
@@ -324,41 +323,33 @@
 }
 
 .title {
-
 	user-select: none;
-
-	// text-shadow: 1px 2px 2px black;
-	font-weight: 700;
-	font-size: 16px;
+	font-weight: 900;
+	font-size: 18px;
 	// line-height: 1.86;
-	letter-spacing: 0.25em;
+	letter-spacing: 0.1em;
 	// text-transform: uppercase;
-	color: $primary-text-color;
+	color: aqua;
 	text-shadow:
-		1px 2px 2px black,
-		0px 0px 3px black,
-		0px 0px 5px #ffffff;
+		1px 1px 1px #12003c,
+		0px 0px 1px #180044,
+		1px 2px 1px #180044,
+	;
 
-	// transform: translateX(100vw);
-	animation: linear;
-	animation-timing-function: ease-in-out;
-	transition-duration: 1s;
+	transform: rotateX(30deg);
+	transition-duration: 0.5s;
 
-	.section-hero__logo:hover &,
-	.section-hero__logo:focus & {
-		// transform: translateX(0);
+	// .section-hero__logo:hover &,
+	// .section-hero__logo:focus & {
+	// 	transform: rotateX(0deg);
 
-		animation-timing-function: $anime-card-svg;
-
-
-		// transform: scale(1.06);
-	}
+	// }
 
 	@media screen and (min-width: 1200px) {
-		font-weight: 600;
-		font-size: 22px;
+		font-weight: 900;
+		font-size: 26px;
 		line-height: 1.86;
-		letter-spacing: 0.26em;
+		letter-spacing: 0.1em;
 		margin-top: 0px;
 
 	}
