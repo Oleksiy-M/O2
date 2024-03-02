@@ -84,7 +84,7 @@
 
 	@media screen and (min-width: 768px) {
 		// padding: 250px 0 20px;
-		margin: 0 auto 100px;
+		margin: 0 auto 120px;
 		height: 460px;
 		background-position: bottom;
 		background-image:
@@ -313,7 +313,7 @@
 	text-wrap: nowrap;
 	top: 120px;
 	position: absolute;
-	width: 260px;
+	width: 290px;
 	height: 40px;
 	perspective: 300px;
 
@@ -330,7 +330,7 @@
 
 	@media screen and (min-width: 650px) {
 		margin-top: 0px;
-		width: 390px;
+		width: 440px;
 	}
 
 	@media screen and (min-width: 1200px) {
@@ -343,29 +343,29 @@
 .title {
 	user-select: none;
 	font-weight: 900;
-	font-size: 18px;
-	// line-height: 1.86;
+	font-size: 16px;
+	line-height: 1.86;
 	letter-spacing: 0.1em;
-	// text-transform: uppercase;
-	color: rgb(141, 219, 255);
+	text-transform: uppercase;
+	color: rgb(251, 254, 255);
 
 	text-shadow:
-		1px 1px 1px #060015,
-		1px 0px 1px #05000d,
-		1px 3px 1px #04000b,
-		1px 3px 3px #180044,
-		0px 0px 1px #ffffff,
+		1px 1px 1px #070018,
+		0px 3px 1px #0f0028,
+		0px 3px 3px #0e0029,
+		0px 2px 12px #ffffff,
+		0px 2px 5px #ffffff,
 
 	;
-	transform: rotateX(30deg);
+	transform: rotateX(20deg);
 	transition-duration: 1s;
 
 
 
 	@media screen and (min-width: 1200px) {
 		font-weight: 1000;
-		font-size: 26px;
-		line-height: 1.86;
+		font-size: 24px;
+		line-height: 1;
 		letter-spacing: 0.12em;
 		margin-top: 0px;
 

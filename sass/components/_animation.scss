@@ -5,8 +5,8 @@
    display: flex;
    justify-content: right;
    position: absolute;
-   // left: 0;
-   top: 150px;
+  z-index: 4;
+   top: 200px;
    animation: moveLeftToRight 90s linear infinite normal;
    animation-timing-function: cubic-bezier(0, .4, 0, .26);
    // animation-delay: 5s;
@@ -55,8 +55,10 @@
    // width: 100vw;
    justify-content: center;
    position: relative;
-   height: 350px;
-   padding: 50px 0 0;
+   height: 400px;
+   padding: 60px 0 0px;
+   margin: 0;
+
    width: calc(100% + 30px);
    transform: translateX(-15px);
    align-items: top;
@@ -66,7 +68,7 @@
 
    @media screen and (min-width: 768px) {
       width: calc(100% + 290px);
-      height: 350px;
+      height: 400px;
       transform: translateX(-145px);
 
    }
@@ -74,7 +76,7 @@
    @media screen and (min-width: 1200px) {
       width: calc(100% + 440px);
       transform: translateX(-220px);
-      height: 400px;
+      height: 450px;
       // margin: 0 -200px;
 
    }
@@ -88,13 +90,13 @@
    display: flex;
    position: absolute;
    height: 300px;
-   width: 305px;
+   width: 400px;
    justify-content: space-evenly;
-   margin: 0px 0px;
+   padding: 60px 0 0px;
+   top: 0;
+   z-index: 2;
    animation: moveDaynight 40s linear infinite normal;
-
-   animation-timing-function:
-      $anime-section;
+   animation-timing-function: $anime-section;
 
    // animation-timing-function: cubic-bezier(.29, .73, 1, -0.18);
    @media screen and (min-width: 768px) {
@@ -127,7 +129,8 @@
 .svg-cloudy__anime {
    // position: absolute;
    margin: 0px 0 0;
-   width: 100px;
+   width: 125px;
+   z-index: 3;
 
    @media screen and (min-width: 1200px) {
       width: 200px;
@@ -142,7 +145,6 @@
    justify-content: center;
    align-items: center;
    position: relative;
-   margin: 0px 0 0;
    height: 150px;
    animation: spin 15s linear infinite;
 }
@@ -221,26 +223,30 @@
 }
 
 
+
+// < !-- anime-night -->
+
 .anime-night {
    display: flex;
    position: relative;
    justify-content: center;
    align-items: center;
    width: 305px;
-   height: 180px;
-   margin: 0px 0px;
+   height: 250px;
+   top: 0;
    transform: translateX(200vw);
    animation: moveDaynight 40s linear infinite normal;
    animation-timing-function:
       $anime-section;
    animation-delay: 20s;
+   z-index: 1;
 
    @media screen and (min-width: 768px) {
       width: 550px;
    }
 
    @media screen and (min-width: 1200px) {
-      margin: 0;
+
       width: 700px;
 
    }
@@ -248,18 +254,23 @@
 
 .svg-moon__anime {
    position: absolute;
-   margin: 0px 0 0;
+   top: 50px;
    border-radius: 40px;
    // width: 60px;
    // height: 80px;
-   width: 80px;
-   height: 80px;
+   width: 70px;
+   height: 70px;
    stroke-width: 0.1px;
    stroke: #ff5500;
 
    animation: changeMoonLight 40s linear infinite normal;
    animation-timing-function: cubic-bezier(.21, .53, 1, -0.42);
    animation-delay: 20s;
+
+   @media screen and (min-width: 768px) {
+      width: 80px;
+      height: 80px;
+   }
 }
 
 
@@ -302,11 +313,16 @@
 
 .svg-stars__anime {
    position: absolute;
-   margin: 0px 0 0;
-   width: 350px;
+   top: 20px;
+   width: 240px;
    // height: 80px;
    stroke-width: 0.5px;
    stroke: rgb(255, 238, 0);
+
+
+   @media screen and (min-width: 768px) {
+      width: 350px;
+   }
 
    @media screen and (min-width: 1200px) {
       width: 500px;

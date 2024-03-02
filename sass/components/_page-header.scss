@@ -27,37 +27,9 @@
    }
 }
 
-// .bubble-head {
-//    z-index: -2;
-//    min-width: 270px;
-//    margin: 0 auto;
-//    position: fixed;
-//    width: 100%;
-
-//    @media screen and (min-width: 1200px) {
-//       // position: absolute;
-//       //   background-image: $background-water;
-//       margin-top: -120px;
-
-//    }
-// }
 
 
-
-
-// .bg-color__head {
-
-//    // height: 150vw;
-//    width: 100%;
-//    height: 200vw;
-//    position: absolute;
-//    z-index: -1;
-
-//    @media screen and (min-width: 768px) {
-//       background-image: $bg-water;
-//    }
-// }
-
+// < !-- advantages-section -->
 
 
 .advantages-section {
@@ -70,7 +42,7 @@
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-   margin: 0 0 80px;
+   margin: 0 0 100px;
 
    @media screen and (min-width: 768px) {
       flex-wrap: nowrap;
@@ -93,7 +65,7 @@
    counter-increment: advantage-counter;
    transition-duration: 0.1s;
    text-shadow: 1px 1px 2px #050505, 0px 0px 4px #050505;
-   color: rgb(0, 119, 255);
+   color: #0077ff;
    font-size: 75px;
    font-weight: 100;
 
@@ -113,7 +85,7 @@
 
    @media screen and (min-width: 768px) {
       padding: 0 0px;
-      margin: 0 0px 50px;
+      margin: 0px;
       width: 200px;
    }
 
@@ -242,14 +214,16 @@
    letter-spacing: 0.22em;
    // border-bottom: 2px solid $histor-color-text;
    transition-duration: $animation-head;
+   color: $svg-color;
 
    .section-case:hover &,
    .section-case:focus & {
       transition-timing-function: $anime-text;
       transform: scale(1.05);
-      color: #fff;
+      color: $White-color;
+      // color: $svg-color;
 
-      text-shadow: 0px 0px 1px #ffffff,
+      text-shadow: 0px 0px 1px $White-color,
          1px 2px 2px #000000;
    }
 
@@ -268,14 +242,15 @@
 
    height: 2px;
    border: none;
-   border-bottom: 2px solid #fff;
-   width: 0.01%;
+   border-bottom: 2px solid $White-color;
+   width: 0.001%;
 
    .section-case:hover &,
    .section-case:focus & {
       transition-timing-function: $anime-border;
       width: 90%;
-      border-bottom: 2px solid #fff;
+      border-bottom: 2px solid $White-color;
+      ;
       box-shadow: 0px 2px 8px 2px $White-color;
       // transform: scale(1.08)
    }

@@ -50,7 +50,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .page-header {
-    background-image: linear-gradient(to bottom, rgba(4, 94, 212, 0.7294117647) 30%, rgba(17, 1, 50, 0.7176470588) 85%);
+    background-image: linear-gradient(to bottom, rgba(3, 71, 189, 0.7294117647) 30%, rgba(17, 1, 50, 0.7176470588) 85%);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -71,7 +71,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 0 80px;
+  margin: 0 0 100px;
 }
 @media screen and (min-width: 768px) {
   .advantages-list {
@@ -89,7 +89,7 @@ body {
   counter-increment: advantage-counter;
   transition-duration: 0.1s;
   text-shadow: 1px 1px 2px #050505, 0px 0px 4px #050505;
-  color: rgb(0, 119, 255);
+  color: #0077ff;
   font-size: 75px;
   font-weight: 100;
   width: 250px;
@@ -104,7 +104,7 @@ body {
 @media screen and (min-width: 768px) {
   .advantages-item {
     padding: 0 0px;
-    margin: 0 0px 50px;
+    margin: 0px;
     width: 200px;
   }
 }
@@ -205,12 +205,13 @@ body {
   line-height: 1.86;
   letter-spacing: 0.22em;
   transition-duration: 1s;
+  color: #33FF99;
 }
 .section-case:hover .case__head, .section-case:focus .case__head {
   transition-timing-function: cubic-bezier(0.36, 0.89, 0.56, 1.11);
   transform: scale(1.05);
-  color: #fff;
-  text-shadow: 0px 0px 1px #ffffff, 1px 2px 2px #000000;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 1px #FFFFFF, 1px 2px 2px #000000;
 }
 @media screen and (min-width: 1200px) {
   .case__head {
@@ -226,13 +227,13 @@ body {
   transition-duration: 1s;
   height: 2px;
   border: none;
-  border-bottom: 2px solid #fff;
-  width: 0.01%;
+  border-bottom: 2px solid #FFFFFF;
+  width: 0.001%;
 }
 .section-case:hover .case__head__border, .section-case:focus .case__head__border {
   transition-timing-function: cubic-bezier(0.57, -0.6, 0.06, 1.63);
   width: 90%;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #FFFFFF;
   box-shadow: 0px 2px 8px 2px #FFFFFF;
 }
 
@@ -573,7 +574,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .section-hero__logo {
-    margin: 0 auto 100px;
+    margin: 0 auto 120px;
     height: 460px;
     background-position: bottom;
     background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/family/family-tablet.jpg");
@@ -740,7 +741,7 @@ body {
   text-wrap: nowrap;
   top: 120px;
   position: absolute;
-  width: 260px;
+  width: 290px;
   height: 40px;
   perspective: 300px;
   transition-duration: 0.5s;
@@ -748,7 +749,7 @@ body {
 @media screen and (min-width: 650px) {
   .hero-title__box {
     margin-top: 0px;
-    width: 390px;
+    width: 440px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -762,18 +763,20 @@ body {
 .title {
   user-select: none;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 1.86;
   letter-spacing: 0.1em;
-  color: rgb(141, 219, 255);
-  text-shadow: 1px 1px 1px #060015, 1px 0px 1px #05000d, 1px 3px 1px #04000b, 1px 3px 3px #180044, 0px 0px 1px #ffffff;
-  transform: rotateX(30deg);
+  text-transform: uppercase;
+  color: rgb(251, 254, 255);
+  text-shadow: 1px 1px 1px #070018, 0px 3px 1px #0f0028, 0px 3px 3px #0e0029, 0px 2px 12px #ffffff, 0px 2px 5px #ffffff;
+  transform: rotateX(20deg);
   transition-duration: 1s;
 }
 @media screen and (min-width: 1200px) {
   .title {
     font-weight: 1000;
-    font-size: 26px;
-    line-height: 1.86;
+    font-size: 24px;
+    line-height: 1;
     letter-spacing: 0.12em;
     margin-top: 0px;
   }
@@ -788,7 +791,7 @@ body {
 @media screen and (min-width: 768px) {
   .idustry {
     margin: 0 0 0px 0;
-    background-image: linear-gradient(to bottom, rgba(6, 79, 187, 0.8274509804) 30%, rgba(2, 6, 79, 0.8901960784) 85%);
+    background-image: linear-gradient(to bottom, rgba(6, 79, 187, 0.8274509804) 30%, rgba(10, 1, 68, 0.8901960784) 85%);
     padding: 50px 0 20px;
   }
 }
@@ -894,7 +897,7 @@ body {
   transition-duration: 1s;
   height: 2px;
   border-bottom: 2px solid #ffffff;
-  width: 0.01%;
+  width: 0.001%;
 }
 .section-hero:hover .head-border, .section-hero:focus .head-border {
   transition-timing-function: cubic-bezier(0.57, -0.6, 0.06, 1.63);
@@ -2769,7 +2772,7 @@ body {
     font-weight: 600;
     font-size: 12px;
     line-height: 1.6;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -2799,11 +2802,6 @@ body {
     max-width: 1600px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .history-page {
-    margin: 0 auto;
-  }
-}
 
 .history-page__end {
   padding: 0px 15px 50px;
@@ -2816,7 +2814,7 @@ body {
 
 .history-section {
   display: block;
-  padding: 100px 0 0;
+  padding: 80px 0 0;
   margin: 0px 0 15px;
   animation: changeBgColor 40s linear infinite normal;
   border-radius: 5px;
@@ -2826,7 +2824,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .history-section {
-    padding: 60px 0 0px;
+    padding: 80px 0 0px;
     margin: 0px 0 20px;
     max-width: 1600px;
   }
@@ -2853,10 +2851,10 @@ body {
   53% {
     background-color: rgba(249, 63, 125, 0.6588235294);
   }
-  55% {
-    background-color: rgba(173, 0, 167, 0.6588235294);
+  57% {
+    background-color: rgba(215, 0, 208, 0.6588235294);
   }
-  56% {
+  57% {
     background-color: rgba(87, 0, 102, 0.7882352941);
   }
   96% {
@@ -2870,7 +2868,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 0 auto 120px;
+  margin: 0 auto 30px;
   color: #d5d095;
   background-color: transparent;
 }
@@ -2907,7 +2905,7 @@ body {
   transition-duration: 1s;
   height: 2px;
   border-bottom: 2px solid #fffdd1;
-  width: 0.01%;
+  width: 0.001%;
 }
 .history-section:hover .history-border, .history-section:focus .history-border {
   transition-timing-function: cubic-bezier(0.57, -0.6, 0.06, 1.63);
@@ -3243,7 +3241,7 @@ body {
   padding: 0px;
   margin: 0;
   animation-timing-function: ease-out;
-  animation: moveRightToLeftMobil 25s linear infinite;
+  animation: moveRightToLeftMobil 35s linear infinite;
 }
 .cards:hover, .cards:focus {
   transition: all 12s ease-in;
@@ -3251,7 +3249,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .cards {
-    animation: moveRightToLeft 25s linear infinite;
+    animation: moveRightToLeft 35s linear infinite;
     justify-content: center;
   }
 }
@@ -3310,7 +3308,8 @@ body {
   display: flex;
   justify-content: right;
   position: absolute;
-  top: 150px;
+  z-index: 4;
+  top: 200px;
   animation: moveLeftToRight 90s linear infinite normal;
   animation-timing-function: cubic-bezier(0, 0.4, 0, 0.26);
 }
@@ -3337,8 +3336,9 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
-  height: 350px;
-  padding: 50px 0 0;
+  height: 400px;
+  padding: 60px 0 0px;
+  margin: 0;
   width: calc(100% + 30px);
   transform: translateX(-15px);
   align-items: top;
@@ -3348,7 +3348,7 @@ body {
 @media screen and (min-width: 768px) {
   .container__anime {
     width: calc(100% + 290px);
-    height: 350px;
+    height: 400px;
     transform: translateX(-145px);
   }
 }
@@ -3356,7 +3356,7 @@ body {
   .container__anime {
     width: calc(100% + 440px);
     transform: translateX(-220px);
-    height: 400px;
+    height: 450px;
   }
 }
 
@@ -3364,9 +3364,11 @@ body {
   display: flex;
   position: absolute;
   height: 300px;
-  width: 305px;
+  width: 400px;
   justify-content: space-evenly;
-  margin: 0px 0px;
+  padding: 60px 0 0px;
+  top: 0;
+  z-index: 2;
   animation: moveDaynight 40s linear infinite normal;
   animation-timing-function: cubic-bezier(0.05, 1.12, 0.001, -0.115);
 }
@@ -3392,7 +3394,8 @@ body {
 }
 .svg-cloudy__anime {
   margin: 0px 0 0;
-  width: 100px;
+  width: 125px;
+  z-index: 3;
 }
 @media screen and (min-width: 1200px) {
   .svg-cloudy__anime {
@@ -3405,7 +3408,6 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  margin: 0px 0 0;
   height: 150px;
   animation: spin 15s linear infinite;
 }
@@ -3457,12 +3459,13 @@ body {
   justify-content: center;
   align-items: center;
   width: 305px;
-  height: 180px;
-  margin: 0px 0px;
+  height: 250px;
+  top: 0;
   transform: translateX(200vw);
   animation: moveDaynight 40s linear infinite normal;
   animation-timing-function: cubic-bezier(0.05, 1.12, 0.001, -0.115);
   animation-delay: 20s;
+  z-index: 1;
 }
 @media screen and (min-width: 768px) {
   .anime-night {
@@ -3471,22 +3474,27 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .anime-night {
-    margin: 0;
     width: 700px;
   }
 }
 
 .svg-moon__anime {
   position: absolute;
-  margin: 0px 0 0;
+  top: 50px;
   border-radius: 40px;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   stroke-width: 0.1px;
   stroke: #ff5500;
   animation: changeMoonLight 40s linear infinite normal;
   animation-timing-function: cubic-bezier(0.21, 0.53, 1, -0.42);
   animation-delay: 20s;
+}
+@media screen and (min-width: 768px) {
+  .svg-moon__anime {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 @keyframes changeMoonLight {
@@ -3505,10 +3513,15 @@ body {
 }
 .svg-stars__anime {
   position: absolute;
-  margin: 0px 0 0;
-  width: 350px;
+  top: 20px;
+  width: 240px;
   stroke-width: 0.5px;
   stroke: rgb(255, 238, 0);
+}
+@media screen and (min-width: 768px) {
+  .svg-stars__anime {
+    width: 350px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .svg-stars__anime {

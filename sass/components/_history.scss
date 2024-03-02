@@ -12,12 +12,9 @@
             max-width: 1600px;
          }
 
-         @media screen and (min-width: 1200px) {
-
-
-            margin: 0 auto;
-
-         }
+         // @media screen and (min-width: 1200px) {
+         //    margin: 0 auto;
+         // }
       }
 
       .history-page__end {
@@ -31,7 +28,7 @@
 
       .history-section {
          display: block;
-         padding: 100px 0 0;
+         padding: 80px 0 0;
          margin: 0px 0 15px;
 
          animation: changeBgColor 40s linear infinite normal;
@@ -43,14 +40,11 @@
 
                #40063b71 65.5%,
                #37093353 70%,
-
                #fff3a3da 105%,
                #ffeaa3d6);
-
-         // 5b5335bd cdb86d9a
+               
          @media screen and (min-width: 768px) {
-
-            padding: 60px 0 0px;
+            padding: 80px 0 0px;
             margin: 0px 0 20px;
             max-width: 1600px;
             // height: auto;
@@ -86,11 +80,11 @@
             background-color: #f93f7da8;
          }
 
-         55% {
-            background-color: #ad00a7a8;
+         57% {
+            background-color: #d700d0a8;
          }
 
-         56% {
+         57% {
             background-color: #570066c9;
          }
 
@@ -112,20 +106,10 @@
          align-items: center;
          flex-direction: column;
 
-         margin: 0 auto 120px;
+         margin: 0 auto 30px;
          color: $histor-color-text;
          // border: 1px solid #d1d2a512;
          background-color: transparent;
-
-         // @media screen and (min-width: 768px) {
-         //    margin: 0 200px 0px;
-         //    // margin: 0 auto 100px auto;
-         // }
-
-         // @media screen and (min-width: 1200px) {
-         //    margin: 0 300px 0px;
-         //    // margin: 0 auto 100px auto;
-         // }
       }
 
 
@@ -170,7 +154,7 @@
 
          height: 2px;
          border-bottom: 2px solid $prim-histor-text;
-         width: 0.01%;
+         width: 0.001%;
 
          .history-section:hover &,
          .history-section:focus & {
