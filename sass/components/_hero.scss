@@ -177,13 +177,13 @@
 	position: relative;
 	transition-duration: 1s;
 
-	// transform: scale(1.001);
+	transform: scale(1.001);
 	// transform: rotateX(40deg);
 
 	.section-hero__logo:hover &,
 	.section-hero__logo:focus & {
 		transition-duration: 1s;
-		transform: scale(1.1);
+		transform: scale(1.06);
 		// transform: rotateX(0deg);
 		transition-timing-function: $anime-text;
 	}

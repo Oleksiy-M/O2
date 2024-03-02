@@ -635,10 +635,11 @@ body {
   justify-content: center;
   position: relative;
   transition-duration: 1s;
+  transform: scale(1.001);
 }
 .section-hero__logo:hover .hero__link, .section-hero__logo:focus .hero__link {
   transition-duration: 1s;
-  transform: scale(1.1);
+  transform: scale(1.06);
   transition-timing-function: cubic-bezier(0.36, 0.89, 0.56, 1.11);
 }
 @media screen and (min-width: 768px) {
