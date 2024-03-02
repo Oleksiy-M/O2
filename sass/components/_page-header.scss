@@ -38,13 +38,13 @@
 
 .advantages-list {
    list-style-type: decimal;
-   // display: block;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
+   display: block;
    margin: 0 0 100px;
 
    @media screen and (min-width: 768px) {
+      display: flex;
+      // flex-wrap: wrap;
+      justify-content: center;
       flex-wrap: nowrap;
       justify-content: space-between;
    }
@@ -60,7 +60,7 @@
    position: relative;
 
    padding: 0 35px;
-   margin: 0 0 50px;
+   margin: 0 auto 50px;
 
    counter-increment: advantage-counter;
    transition-duration: 0.1s;
@@ -337,4 +337,32 @@
 
    }
 
+}
+
+
+
+.section-project {
+   display: block;
+   padding: 50px;
+
+}
+
+
+.project-head {
+   user-select: none;
+
+}
+
+
+.project-list {
+   display: block;
+
+   @media screen and (min-width: 1200px) {
+      display: flex;
+   }
+}
+
+
+.project-item {
+   display: block;
 }

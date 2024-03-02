@@ -313,48 +313,53 @@
 	text-wrap: nowrap;
 	top: 120px;
 	position: absolute;
-	width: 290px;
+	width: 260px;
 	height: 40px;
 	perspective: 300px;
 
 	transition-duration: 0.5s;
+	margin-left: -1300px;
 
-	// transform: rotateX(30deg);
-	// .section-hero__logo:hover &,
-	// .section-hero__logo:focus & {
-	// transition-duration: 0.8s;
-	// transition-timing-function: $anime-text;
-	// transform: scale(1.08);
+	.section-hero__logo:hover &,
+	.section-hero__logo:focus & {
+		transition-timing-function: $anime-text;
+		margin: 0;
+	}
 
-
-
-	@media screen and (min-width: 650px) {
-		margin-top: 0px;
-		width: 440px;
+	@media screen and (min-width: 768px) {
+		width: 270px;
 	}
 
 	@media screen and (min-width: 1200px) {
+		width: 355px;
 		text-align: center;
 		top: 120px;
-		left: 200px;
+		left: -1100px;
+		transition-duration: 1s;
+
+		.section-hero__logo:hover &,
+		.section-hero__logo:focus & {
+			transition-timing-function: $anime-text;
+			left: 200px;
+		}
+
 	}
 }
 
 .title {
 	user-select: none;
 	font-weight: 900;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 1.86;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
-	color: rgb(251, 254, 255);
+	color: rgb(6, 255, 255);
 
 	text-shadow:
-		1px 1px 1px #070018,
-		0px 3px 1px #0f0028,
-		0px 3px 3px #0e0029,
-		0px 2px 12px #ffffff,
-		0px 2px 5px #ffffff,
+		1px 1px 5px #0700187e,
+		0px 3px 4px #0f002854,
+		0px 3px 6px #0e002941,
+
 
 	;
 	transform: rotateX(20deg);
@@ -364,9 +369,9 @@
 
 	@media screen and (min-width: 1200px) {
 		font-weight: 1000;
-		font-size: 24px;
+		font-size: 20px;
 		line-height: 1;
-		letter-spacing: 0.12em;
+		letter-spacing: 0.1em;
 		margin-top: 0px;
 
 	}

@@ -68,13 +68,13 @@ body {
 
 .advantages-list {
   list-style-type: decimal;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: block;
   margin: 0 0 100px;
 }
 @media screen and (min-width: 768px) {
   .advantages-list {
+    display: flex;
+    justify-content: center;
     flex-wrap: nowrap;
     justify-content: space-between;
   }
@@ -85,7 +85,7 @@ body {
   justify-content: left;
   position: relative;
   padding: 0 35px;
-  margin: 0 0 50px;
+  margin: 0 auto 50px;
   counter-increment: advantage-counter;
   transition-duration: 0.1s;
   text-shadow: 1px 1px 2px #050505, 0px 0px 4px #050505;
@@ -298,6 +298,28 @@ body {
     font-size: 14px;
     font-weight: 900;
   }
+}
+
+.section-project {
+  display: block;
+  padding: 50px;
+}
+
+.project-head {
+  user-select: none;
+}
+
+.project-list {
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .project-list {
+    display: flex;
+  }
+}
+
+.project-item {
+  display: block;
 }
 
 /* =================SITE-NAV  ================= */
@@ -742,21 +764,31 @@ body {
   text-wrap: nowrap;
   top: 120px;
   position: absolute;
-  width: 290px;
+  width: 260px;
   height: 40px;
   perspective: 300px;
   transition-duration: 0.5s;
+  margin-left: -1300px;
 }
-@media screen and (min-width: 650px) {
+.section-hero__logo:hover .hero-title__box, .section-hero__logo:focus .hero-title__box {
+  transition-timing-function: cubic-bezier(0.36, 0.89, 0.56, 1.11);
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
   .hero-title__box {
-    margin-top: 0px;
-    width: 440px;
+    width: 270px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-title__box {
+    width: 355px;
     text-align: center;
     top: 120px;
+    left: -1100px;
+    transition-duration: 1s;
+  }
+  .section-hero__logo:hover .hero-title__box, .section-hero__logo:focus .hero-title__box {
+    transition-timing-function: cubic-bezier(0.36, 0.89, 0.56, 1.11);
     left: 200px;
   }
 }
@@ -764,21 +796,21 @@ body {
 .title {
   user-select: none;
   font-weight: 900;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgb(251, 254, 255);
-  text-shadow: 1px 1px 1px #070018, 0px 3px 1px #0f0028, 0px 3px 3px #0e0029, 0px 2px 12px #ffffff, 0px 2px 5px #ffffff;
+  color: rgb(6, 255, 255);
+  text-shadow: 1px 1px 5px rgba(7, 0, 24, 0.4941176471), 0px 3px 4px rgba(15, 0, 40, 0.3294117647), 0px 3px 6px rgba(14, 0, 41, 0.2549019608);
   transform: rotateX(20deg);
   transition-duration: 1s;
 }
 @media screen and (min-width: 1200px) {
   .title {
     font-weight: 1000;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.1em;
     margin-top: 0px;
   }
 }
