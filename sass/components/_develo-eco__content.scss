@@ -28,7 +28,7 @@
 .develo-eco__svg {
    display: flexbox;
    fill: $Secondary-text-color;
-   margin: 0 0 30px 0;
+   margin: 0 0 20px 0;
    // transition: transform $animation-card, opacity $animation-card;
    // transform: translateY(70px);
    // transition-duration: 0.1s;
@@ -110,7 +110,6 @@
 
 
 .cards__overlay {
-   margin: 0;
    display: flex;
 
    align-self: flex-end;
@@ -134,7 +133,6 @@
 
    @media screen and (min-width: 768px) {
       perspective: 1000px;
-      margin-left: 0px;
 
    }
 
