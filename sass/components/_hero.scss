@@ -79,7 +79,7 @@
 		background-position: bottom;
 		height: 70vw;
 		background-image:
-			url("../img/family/family-mobil@2x.jpg");
+			url("../img/family/family-mobil@2x.webp");
 	}
 
 	@media screen and (min-width: 768px) {
@@ -90,7 +90,7 @@
 		background-image:
 			linear-gradient(#2f303a47,
 				#2f303a66),
-			url("../img/family/family-tablet.jpg");
+			url("../img/family/family-tablet.webp");
 	}
 
 	@media (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -100,7 +100,7 @@
 		background-image:
 			linear-gradient(#2f303a47,
 				#2f303a66),
-			url("../img/family/family-tablet@2x.jpg");
+			url("../img/family/family-tablet@2x.webp");
 
 	}
 
@@ -111,7 +111,7 @@
 		background-image:
 			linear-gradient(#2f303a47,
 				#2f303a66),
-			url("../img/family/family.jpg");
+			url("../img/family/family.webp");
 	}
 
 	@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
@@ -122,7 +122,7 @@
 		background-image:
 			linear-gradient(#2f303a47,
 				#2f303a66),
-			url("../img/family/family@2x.jpg");
+			url("../img/family/family@2x.webp");
 	}
 }
 
@@ -161,6 +161,10 @@
 		transform: translateY(30px);
 	}
 }
+
+
+
+
 
 .logo__overlay {
 	display: flex;
@@ -308,22 +312,26 @@
 }
 
 .hero-title__box {
-	overflow: hidden;
+	// overflow: hidden;
 	text-align: center;
 	text-wrap: nowrap;
-	top: 120px;
+	top: 130px;
 	position: absolute;
 	width: 260px;
 	height: 40px;
 	perspective: 300px;
 
 	transition-duration: 0.5s;
-	margin-left: -1300px;
+	// margin-left: -1300px;
+	transform: translateX(-100vw);
 
 	.section-hero__logo:hover &,
 	.section-hero__logo:focus & {
 		transition-timing-function: $anime-text;
-		margin: 0;
+		transform: translateX(0vw);
+		// margin: 0;
+		// left: 0;
+
 	}
 
 	@media screen and (min-width: 768px) {
@@ -333,15 +341,15 @@
 	@media screen and (min-width: 1200px) {
 		width: 355px;
 		text-align: center;
-		top: 120px;
-		left: -1100px;
+		top: 140px;
+
 		transition-duration: 1s;
 
-		.section-hero__logo:hover &,
-		.section-hero__logo:focus & {
-			transition-timing-function: $anime-text;
-			left: 200px;
-		}
+		// .section-hero__logo:hover &,
+		// .section-hero__logo:focus & {
+		// 	transition-timing-function: $anime-text;
+		// 	left: 200px;
+		// }
 
 	}
 }
@@ -372,7 +380,6 @@
 		font-size: 20px;
 		line-height: 1;
 		letter-spacing: 0.1em;
-		margin-top: 0px;
 
 	}
 

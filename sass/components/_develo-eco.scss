@@ -18,7 +18,7 @@
 
           #1d013ca3 99%),
 
-        url(../img/develo-eco/develo-mobil.png);
+        url(../img/develo-eco/develo-mobil.webp);
 
 
       @media screen and (min-width: 768px) {
@@ -30,7 +30,7 @@
 
             #1d013ca3 99%),
 
-          url(../img/develo-eco/develo-tablet.png);
+          url(../img/develo-eco/develo-tablet.webp);
       }
 
       @media screen and (min-width: 1200px) {
@@ -40,7 +40,7 @@
 
             #1d013ca3 99%),
 
-          url(../img/develo-eco/develo.png);
+          url(../img/develo-eco/develo.webp);
 
       }
     }
@@ -200,7 +200,7 @@
       background-position: bottom;
       background-size: cover;
       opacity: 0.6;
-      background-image: url(../img/develo-eco/home.jpg);
+      background-image: url(../img/develo-eco/home.webp);
 
 
       transition-duration: 0.5s;
@@ -242,7 +242,7 @@
     }
 
     .visual-content__leptop {
-      background-image: url(../img/develo-eco/leptop.jpg);
+      background-image: url(../img/develo-eco/leptop.webp);
 
     }
 
@@ -424,7 +424,7 @@
 
     .visual-content__oil {
       // opacity: 0.4;
-      background-image: url(../img/develo-eco/oil.jpg);
+      background-image: url(../img/develo-eco/oil.webp);
 
       @media screen and (min-width: 768px) {
         margin: 0;
@@ -453,7 +453,7 @@
 
 
     .visual-content__ocean {
-      background-image: url(../img/develo-eco/ocean.jpg);
+      background-image: url(../img/develo-eco/ocean.webp);
     }
 
     .factory-content {
@@ -468,7 +468,7 @@
     }
 
     .visual-content__factory {
-      background-image: url(../img/develo-eco/factory.jpg);
+      background-image: url(../img/develo-eco/factory.webp);
     }
 
     .earth-content {
@@ -486,7 +486,7 @@
 
     .visual-content__earth {
       // opacity: 0.4;  
-      background-image: url(../img/develo-eco/erth.jpg);
+      background-image: url(../img/develo-eco/erth.webp);
     }
 
     .man-content {
@@ -506,6 +506,6 @@
 
 
     .visual-content__men {
-      background-image: url(../img/develo-eco/men.jpg);
+      background-image: url(../img/develo-eco/men.webp);
 
     }

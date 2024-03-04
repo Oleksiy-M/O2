@@ -592,7 +592,7 @@ body {
   .section-hero__logo {
     background-position: bottom;
     height: 70vw;
-    background-image: url("../img/family/family-mobil@2x.jpg");
+    background-image: url("../img/family/family-mobil@2x.webp");
   }
 }
 @media screen and (min-width: 768px) {
@@ -600,12 +600,12 @@ body {
     margin: 0 auto 120px;
     height: 460px;
     background-position: bottom;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/family/family-tablet.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/family/family-tablet.webp");
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
   .section-hero__logo {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/family/family-tablet@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/family/family-tablet@2x.webp");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -613,12 +613,12 @@ body {
     background-position: bottom;
     height: 400px;
     max-width: 1600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/family/family.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/family/family.webp");
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .section-hero__logo {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/family/family@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/family/family@2x.webp");
   }
 }
 
@@ -760,20 +760,19 @@ body {
 }
 
 .hero-title__box {
-  overflow: hidden;
   text-align: center;
   text-wrap: nowrap;
-  top: 120px;
+  top: 130px;
   position: absolute;
   width: 260px;
   height: 40px;
   perspective: 300px;
   transition-duration: 0.5s;
-  margin-left: -1300px;
+  transform: translateX(-100vw);
 }
 .section-hero__logo:hover .hero-title__box, .section-hero__logo:focus .hero-title__box {
   transition-timing-function: cubic-bezier(0.36, 0.89, 0.56, 1.11);
-  margin: 0;
+  transform: translateX(0vw);
 }
 @media screen and (min-width: 768px) {
   .hero-title__box {
@@ -784,13 +783,8 @@ body {
   .hero-title__box {
     width: 355px;
     text-align: center;
-    top: 120px;
-    left: -1100px;
+    top: 140px;
     transition-duration: 1s;
-  }
-  .section-hero__logo:hover .hero-title__box, .section-hero__logo:focus .hero-title__box {
-    transition-timing-function: cubic-bezier(0.36, 0.89, 0.56, 1.11);
-    left: 200px;
   }
 }
 
@@ -812,7 +806,6 @@ body {
     font-size: 20px;
     line-height: 1;
     letter-spacing: 0.1em;
-    margin-top: 0px;
   }
 }
 
@@ -848,7 +841,7 @@ body {
 }
 @media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
   .section-hero {
-    background-image: linear-gradient(to bottom, rgba(127, 209, 253, 0.9411764706) 0.2%, rgba(85, 189, 245, 0.7568627451) 1%, rgba(4, 146, 223, 0.937254902) 2%, rgba(4, 146, 223, 0.7647058824) 10%, rgba(2, 115, 176, 0.1019607843) 39%, rgba(2, 64, 98, 0.1098039216) 71%, rgba(1, 32, 79, 0.6862745098) 81%, rgba(1, 25, 62, 0.9450980392) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-mobil@2x.png");
+    background-image: linear-gradient(to bottom, rgba(127, 209, 253, 0.9411764706) 0.2%, rgba(85, 189, 245, 0.7568627451) 1%, rgba(4, 146, 223, 0.937254902) 2%, rgba(4, 146, 223, 0.7647058824) 10%, rgba(2, 115, 176, 0.1019607843) 39%, rgba(2, 64, 98, 0.1098039216) 71%, rgba(1, 32, 79, 0.6862745098) 81%, rgba(1, 25, 62, 0.9450980392) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-mobil@2x.webp");
   }
 }
 @media screen and (min-width: 768px) {
@@ -857,25 +850,25 @@ body {
     padding-bottom: 30px;
     background-position: top;
     background-size: cover;
-    background-image: linear-gradient(to bottom, rgba(127, 209, 253, 0.9411764706) 0.2%, rgba(85, 189, 245, 0.7568627451) 1%, rgba(4, 146, 223, 0.937254902) 2%, rgba(4, 146, 223, 0.7647058824) 10%, rgba(2, 115, 176, 0.1019607843) 39%, rgba(2, 64, 98, 0.1098039216) 71%, rgba(1, 32, 79, 0.6862745098) 81%, rgba(1, 25, 62, 0.9450980392) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-tablet.png");
+    background-image: linear-gradient(to bottom, rgba(127, 209, 253, 0.9411764706) 0.2%, rgba(85, 189, 245, 0.7568627451) 1%, rgba(4, 146, 223, 0.937254902) 2%, rgba(4, 146, 223, 0.7647058824) 10%, rgba(2, 115, 176, 0.1019607843) 39%, rgba(2, 64, 98, 0.1098039216) 71%, rgba(1, 32, 79, 0.6862745098) 81%, rgba(1, 25, 62, 0.9450980392) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-tablet.webp");
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
   .section-hero {
-    background-image: linear-gradient(to bottom, rgba(127, 209, 253, 0.9411764706) 0.2%, rgba(85, 189, 245, 0.7568627451) 1%, rgba(4, 146, 223, 0.937254902) 2%, rgba(4, 146, 223, 0.7647058824) 10%, rgba(2, 115, 176, 0.1019607843) 39%, rgba(2, 64, 98, 0.1098039216) 71%, rgba(1, 32, 79, 0.6862745098) 81%, rgba(1, 25, 62, 0.9450980392) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-tablet@2x.png");
+    background-image: linear-gradient(to bottom, rgba(127, 209, 253, 0.9411764706) 0.2%, rgba(85, 189, 245, 0.7568627451) 1%, rgba(4, 146, 223, 0.937254902) 2%, rgba(4, 146, 223, 0.7647058824) 10%, rgba(2, 115, 176, 0.1019607843) 39%, rgba(2, 64, 98, 0.1098039216) 71%, rgba(1, 32, 79, 0.6862745098) 81%, rgba(1, 25, 62, 0.9450980392) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus-tablet@2x.webp");
   }
 }
 @media screen and (min-width: 1200px) {
   .section-hero {
     background-position: top;
     padding-bottom: 50px;
-    background-image: linear-gradient(to bottom, rgba(127, 209, 253, 0.9411764706) 0.2%, rgba(85, 189, 245, 0.7568627451) 1%, rgba(4, 146, 223, 0.937254902) 2%, rgba(4, 146, 223, 0.7647058824) 10%, rgba(2, 115, 176, 0.1019607843) 39%, rgba(2, 64, 98, 0.1098039216) 71%, rgba(1, 32, 79, 0.6862745098) 81%, rgba(1, 25, 62, 0.9450980392) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus.png");
+    background-image: linear-gradient(to bottom, rgba(127, 209, 253, 0.9411764706) 0.2%, rgba(85, 189, 245, 0.7568627451) 1%, rgba(4, 146, 223, 0.937254902) 2%, rgba(4, 146, 223, 0.7647058824) 10%, rgba(2, 115, 176, 0.1019607843) 39%, rgba(2, 64, 98, 0.1098039216) 71%, rgba(1, 32, 79, 0.6862745098) 81%, rgba(1, 25, 62, 0.9450980392) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus.webp");
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .section-hero {
     padding-bottom: 50px;
-    background-image: linear-gradient(to bottom, rgba(127, 209, 253, 0.9411764706) 0.2%, rgba(85, 189, 245, 0.7568627451) 1%, rgba(4, 146, 223, 0.937254902) 2%, rgba(4, 146, 223, 0.7647058824) 10%, rgba(2, 115, 176, 0.1019607843) 39%, rgba(2, 64, 98, 0.1098039216) 71%, rgba(1, 32, 79, 0.6862745098) 81%, rgba(1, 25, 62, 0.9450980392) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus@2x.png");
+    background-image: linear-gradient(to bottom, rgba(127, 209, 253, 0.9411764706) 0.2%, rgba(85, 189, 245, 0.7568627451) 1%, rgba(4, 146, 223, 0.937254902) 2%, rgba(4, 146, 223, 0.7647058824) 10%, rgba(2, 115, 176, 0.1019607843) 39%, rgba(2, 64, 98, 0.1098039216) 71%, rgba(1, 32, 79, 0.6862745098) 81%, rgba(1, 25, 62, 0.9450980392) 99%, #050113 0.1%, rgba(8, 1, 19, 0.8431372549) 0.1%), url("../img/head-i/head-indus@2x.webp");
   }
 }
 
@@ -2286,20 +2279,20 @@ body {
   border-bottom: 5px #010f1a solid;
   box-shadow: 1px 1px 1px #000000, -1px 0px 1px #000000;
   background-size: cover;
-  background-image: linear-gradient(to bottom, rgba(1, 32, 79, 0.6862745098) 10%, rgba(29, 1, 60, 0.6392156863) 99%), url(../img/develo-eco/develo-mobil.png);
+  background-image: linear-gradient(to bottom, rgba(1, 32, 79, 0.6862745098) 10%, rgba(29, 1, 60, 0.6392156863) 99%), url(../img/develo-eco/develo-mobil.webp);
 }
 @media screen and (min-width: 768px) {
   .section-bg {
     display: flex;
     flex-wrap: wrap;
     padding: 0px 20px 150px;
-    background-image: linear-gradient(to bottom, rgba(1, 32, 79, 0.6862745098) 10%, rgba(29, 1, 60, 0.6392156863) 99%), url(../img/develo-eco/develo-tablet.png);
+    background-image: linear-gradient(to bottom, rgba(1, 32, 79, 0.6862745098) 10%, rgba(29, 1, 60, 0.6392156863) 99%), url(../img/develo-eco/develo-tablet.webp);
   }
 }
 @media screen and (min-width: 1200px) {
   .section-bg {
     padding: 0px 40px 100px;
-    background-image: linear-gradient(to bottom, rgba(1, 32, 79, 0.6862745098) 10%, rgba(29, 1, 60, 0.6392156863) 99%), url(../img/develo-eco/develo.png);
+    background-image: linear-gradient(to bottom, rgba(1, 32, 79, 0.6862745098) 10%, rgba(29, 1, 60, 0.6392156863) 99%), url(../img/develo-eco/develo.webp);
   }
 }
 
@@ -2442,7 +2435,7 @@ body {
   background-position: bottom;
   background-size: cover;
   opacity: 0.6;
-  background-image: url(../img/develo-eco/home.jpg);
+  background-image: url(../img/develo-eco/home.webp);
   transition-duration: 0.5s;
   transform: rotateX(0deg);
   transform-style: preserve-3d;
@@ -2477,7 +2470,7 @@ body {
 }
 
 .visual-content__leptop {
-  background-image: url(../img/develo-eco/leptop.jpg);
+  background-image: url(../img/develo-eco/leptop.webp);
 }
 
 .impact-section {
@@ -2613,7 +2606,7 @@ body {
 }
 
 .visual-content__oil {
-  background-image: url(../img/develo-eco/oil.jpg);
+  background-image: url(../img/develo-eco/oil.webp);
 }
 @media screen and (min-width: 768px) {
   .visual-content__oil {
@@ -2639,7 +2632,7 @@ body {
 }
 
 .visual-content__ocean {
-  background-image: url(../img/develo-eco/ocean.jpg);
+  background-image: url(../img/develo-eco/ocean.webp);
 }
 
 @media screen and (min-width: 768px) {
@@ -2655,7 +2648,7 @@ body {
 }
 
 .visual-content__factory {
-  background-image: url(../img/develo-eco/factory.jpg);
+  background-image: url(../img/develo-eco/factory.webp);
 }
 
 @media screen and (min-width: 768px) {
@@ -2671,7 +2664,7 @@ body {
 }
 
 .visual-content__earth {
-  background-image: url(../img/develo-eco/erth.jpg);
+  background-image: url(../img/develo-eco/erth.webp);
 }
 
 .man-content {
@@ -2691,7 +2684,7 @@ body {
 }
 
 .visual-content__men {
-  background-image: url(../img/develo-eco/men.jpg);
+  background-image: url(../img/develo-eco/men.webp);
 }
 
 .svg-box {
@@ -2993,7 +2986,7 @@ body {
 
 .box-end-grad {
   padding: 20px;
-  background-image: linear-gradient(rgba(205, 184, 109, 0.7294117647) 5%, rgba(72, 16, 67, 0.8196078431));
+  background-image: linear-gradient(rgba(205, 184, 109, 0.631372549) 5%, rgba(72, 16, 67, 0.8588235294));
 }
 
 .box-article {
