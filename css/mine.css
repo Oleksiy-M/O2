@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .list {
   margin: 0;
   padding: 0;
@@ -2618,7 +2619,7 @@ body {
   }
   .ocean-content:nth-child(2) .cards__overlay {
     border-radius: 0 10px 0 0;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2751,8 +2752,7 @@ body {
 .develo-eco__content:hover .cards__overlay, .develo-eco__content:focus .cards__overlay {
   transition-duration: 1s;
   transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
-  transform: scale(1.04);
-  height: 75%;
+  height: 70%;
 }
 @media screen and (min-width: 768px) {
   .cards__overlay {
@@ -2791,7 +2791,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .develo-eco__art {
-    padding: 10px 30px;
+    padding: 5px 30px;
     text-align: left;
     font-weight: 600;
     font-size: 12px;
@@ -2818,6 +2818,7 @@ body {
   display: block;
   padding: 80px 0px 0px;
   overflow: hidden;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .history-page {
@@ -2839,23 +2840,29 @@ body {
 .history-section {
   display: block;
   padding: 80px 0 0;
-  margin: 0px 0 15px;
+  margin: 0px auto 15px;
   animation: changeBgColor 40s linear infinite normal;
   border-radius: 5px;
   border-top: 4px solid rgba(45, 1, 38, 0.5529411765);
   border-bottom: 18px solid rgba(252, 238, 197, 0.9764705882);
-  background-image: linear-gradient(to bottom, rgba(64, 6, 59, 0.4431372549) 65.5%, rgba(55, 9, 51, 0.3254901961) 70%, rgba(255, 243, 163, 0.8549019608) 105%, rgba(255, 234, 163, 0.8392156863));
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  object-fit: cover;
+  background-image: linear-gradient(to bottom, rgba(64, 6, 59, 0.4431372549) 65.5%, rgba(55, 9, 51, 0.3254901961) 70%, rgba(255, 243, 163, 0.8549019608) 105%, rgba(255, 234, 163, 0.8392156863)), url("../img/gif/city.png");
 }
 @media screen and (min-width: 768px) {
   .history-section {
     padding: 80px 0 0px;
-    margin: 0px 0 20px;
+    margin: 0px auto 20px;
     max-width: 1600px;
+    width: 738px;
   }
 }
 @media screen and (min-width: 1200px) {
   .history-section {
-    margin: 0px 0 25px;
+    margin: 0px auto 25px;
+    width: 1170px;
   }
 }
 
@@ -3324,8 +3331,96 @@ body {
   fill: #2a2a2a;
 }
 
+.page-water {
+  display: block;
+  padding: 80px 0 50px 0;
+  position: relative;
+  margin: 0 0 300px 0;
+}
+@media screen and (min-width: 768px) {
+  .page-water {
+    margin: 0 0 0px 0;
+    background-image: linear-gradient(to bottom, rgba(6, 79, 187, 0.8274509804) 30%, rgba(10, 1, 68, 0.8901960784) 85%);
+    padding: 50px 0 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-water {
+    display: flexbox;
+    margin: 0 auto;
+    padding: 50px 0 20px 0;
+    max-width: 1600px;
+  }
+}
+
 .water-mountins {
+  position: relative;
   height: 100vw;
+}
+
+.cardww__overlay {
+  display: block;
+}
+
+.deco-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0 0 155px 0;
+  width: 430px;
+  height: 250px;
+}
+.deco-container:hover::before, .deco-container:focus::before {
+  background-color: #ff0000;
+  /* Зміна кольору горизонтальної лінії при ховері або фокусі */
+  width: 80%;
+  /* Зміна ширини горизонтальної лінії при ховері або фокусі */
+}
+.deco-container:hover::after, .deco-container:focus::after {
+  background-color: #00ff00;
+  /* Зміна кольору горизонтальної лінії при ховері або фокусі */
+  width: 60%;
+  /* Зміна ширини горизонтальної лінії при ховері або фокусі */
+}
+
+.deco-container::before,
+.deco-container::after {
+  content: "";
+  position: absolute;
+  background-color: #ff5100;
+}
+
+/* Горизонтальна лінія вгорі */
+.deco-container::before {
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  transition: background-color 0.3s, width 0.3s;
+  /* Додано анімацію для плавної зміни кольору та ширини */
+}
+
+/* Горизонтальна лінія внизу */
+.deco-container::after {
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  transition: background-color 0.3s, width 0.3s;
+  /* Додано анімацію для плавної зміни кольору та ширини */
+}
+
+/* Вертикальна лінія */
+.deco-container__vertical-line {
+  position: absolute;
+  background-color: #ddff00;
+  width: 2px;
+  height: 100%;
+  left: 50%;
+  /* Поміщаємо лінію в середину контейнера по горизонталі */
+  transform: translateX(-50%);
+  /* Це потрібно для коректного центрування по горизонталі */
 }
 
 .box-dirigible {

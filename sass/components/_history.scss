@@ -5,6 +5,7 @@
          padding: 80px 0px 0px;
 
          overflow: hidden;
+         margin: 0 auto;
 
          @media screen and (min-width: 768px) {
             background-image: $bg-water-histore;
@@ -29,29 +30,37 @@
       .history-section {
          display: block;
          padding: 80px 0 0;
-         margin: 0px 0 15px;
+         margin: 0px auto 15px;
 
          animation: changeBgColor 40s linear infinite normal;
 
          border-radius: 5px;
          border-top: 4px solid #2d01268d;
          border-bottom: 18px solid #fceec5f9;
+
+         background-repeat: no-repeat;
+         background-position: bottom;
+         background-size: contain;
+         object-fit: cover;
          background-image: linear-gradient(to bottom,
 
                #40063b71 65.5%,
                #37093353 70%,
                #fff3a3da 105%,
-               #ffeaa3d6);
+               #ffeaa3d6), url("../img/gif/city.png");
 
          @media screen and (min-width: 768px) {
             padding: 80px 0 0px;
-            margin: 0px 0 20px;
+            margin: 0px auto 20px;
             max-width: 1600px;
+            width: 738px;
             // height: auto;
          }
 
          @media screen and (min-width: 1200px) {
-            margin: 0px 0 25px;
+            margin: 0px auto 25px;
+            width: 1170px;
+
          }
       }
 
