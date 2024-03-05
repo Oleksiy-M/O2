@@ -819,7 +819,7 @@ body {
 @media screen and (min-width: 768px) {
   .idustry {
     margin: 0 0 0px 0;
-    background-image: linear-gradient(to bottom, rgba(6, 79, 187, 0.8274509804) 30%, rgba(10, 1, 68, 0.8901960784) 85%);
+    background-image: linear-gradient(to bottom, rgba(6, 78, 187, 0.6862745098) 30%, rgba(10, 1, 68, 0.8901960784) 85%);
     padding: 50px 0 20px;
   }
 }
@@ -3344,7 +3344,7 @@ body {
 @media screen and (min-width: 768px) {
   .page-water {
     margin: 0 0 0px 0;
-    background-image: linear-gradient(to bottom, rgba(6, 79, 187, 0.8274509804) 30%, rgba(10, 1, 68, 0.8901960784) 85%);
+    background-image: linear-gradient(to bottom, rgba(6, 78, 187, 0.6862745098) 30%, rgba(10, 1, 68, 0.8901960784) 85%);
     padding: 50px 0 20px;
   }
 }
