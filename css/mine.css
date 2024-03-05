@@ -2849,7 +2849,9 @@ body {
   background-position: bottom;
   background-size: contain;
   object-fit: cover;
-  background-image: linear-gradient(to bottom, rgba(64, 6, 59, 0.4431372549) 65.5%, rgba(55, 9, 51, 0.3254901961) 70%, rgba(255, 243, 163, 0.8549019608) 105%, rgba(255, 234, 163, 0.8392156863)), url("../img/gif/city.png");
+  width: calc(100% - 30px);
+  max-width: 450px;
+  background-image: linear-gradient(to bottom, rgba(64, 6, 59, 0.4431372549) 65.5%, rgba(55, 9, 51, 0.3254901961) 70%, rgba(255, 243, 163, 0.8549019608) 105%, rgba(255, 234, 163, 0.8392156863)), url("../img/gif/mount-bg-mobil.webp");
 }
 @media screen and (min-width: 768px) {
   .history-section {
@@ -2857,12 +2859,14 @@ body {
     margin: 0px auto 20px;
     max-width: 1600px;
     width: 738px;
+    background-image: linear-gradient(to bottom, rgba(64, 6, 59, 0.4431372549) 65.5%, rgba(55, 9, 51, 0.3254901961) 70%, rgba(255, 243, 163, 0.8549019608) 105%, rgba(255, 234, 163, 0.8392156863)), url("../img/gif/mount-bg-tablet.webp");
   }
 }
 @media screen and (min-width: 1200px) {
   .history-section {
     margin: 0px auto 25px;
     width: 1170px;
+    background-image: linear-gradient(to bottom, rgba(64, 6, 59, 0.4431372549) 65.5%, rgba(55, 9, 51, 0.3254901961) 70%, rgba(255, 243, 163, 0.8549019608) 105%, rgba(255, 234, 163, 0.8392156863)), url("../img/gif/mount-bg.webp");
   }
 }
 

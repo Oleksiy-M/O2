@@ -42,12 +42,14 @@
          background-position: bottom;
          background-size: contain;
          object-fit: cover;
+         width: calc(100% - 30px);
+         max-width: 450px;
          background-image: linear-gradient(to bottom,
 
                #40063b71 65.5%,
                #37093353 70%,
                #fff3a3da 105%,
-               #ffeaa3d6), url("../img/gif/city.png");
+               #ffeaa3d6), url("../img/gif/mount-bg-mobil.webp");
 
          @media screen and (min-width: 768px) {
             padding: 80px 0 0px;
@@ -55,11 +57,25 @@
             max-width: 1600px;
             width: 738px;
             // height: auto;
+            background-image: linear-gradient(to bottom,
+
+                  #40063b71 65.5%,
+                  #37093353 70%,
+                  #fff3a3da 105%,
+                  #ffeaa3d6), url("../img/gif/mount-bg-tablet.webp");
+
          }
 
          @media screen and (min-width: 1200px) {
             margin: 0px auto 25px;
             width: 1170px;
+
+            background-image: linear-gradient(to bottom,
+
+                  #40063b71 65.5%,
+                  #37093353 70%,
+                  #fff3a3da 105%,
+                  #ffeaa3d6), url("../img/gif/mount-bg.webp");
 
          }
       }
