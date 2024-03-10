@@ -437,13 +437,16 @@
 .project-video {
 
    margin: 0 auto;
-   width: 1130px;
+   width: auto;
    // height: 250px;
    overflow: hidden;
    border-radius: 20px;
-
-}
-
+   @media screen and (min-width:768px) {
+      width: 730px;
+   }
+   @media screen and (min-width:1200px) {
+      width: 1130px;
+}}
 
 .video-river {
    width: 100%;

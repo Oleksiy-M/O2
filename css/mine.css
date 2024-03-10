@@ -372,9 +372,19 @@ body {
 
 .project-video {
   margin: 0 auto;
-  width: 1130px;
+  width: auto;
   overflow: hidden;
   border-radius: 20px;
+}
+@media screen and (min-width: 768px) {
+  .project-video {
+    width: 730px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-video {
+    width: 1130px;
+  }
 }
 
 .video-river {
