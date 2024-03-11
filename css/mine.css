@@ -383,7 +383,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .project-video {
-    width: 1130px;
+    width: 1600px;
+    height: 500px;
   }
 }
 
