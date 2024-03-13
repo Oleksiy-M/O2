@@ -352,20 +352,17 @@
 
 .title {
 	user-select: none;
-	font-weight: 900;
+	font-weight: 1000;
 	font-size: 14px;
 	line-height: 1.86;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
-	color: rgb(6, 255, 255);
+	color: rgb(0, 255, 234);
 
 	text-shadow:
-		1px 1px 5px #0700187e,
-		0px 3px 4px #0f002854,
-		0px 3px 6px #0e002941,
-
-
-	;
+		1px 2px 2px #000000,
+		-1px 0px 1px #000000,
+		0px 0px 5px #ffffffec;
 	transform: rotateX(20deg);
 	transition-duration: 1s;
 
