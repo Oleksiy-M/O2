@@ -311,7 +311,7 @@
    padding: 10px 0;
    font-weight: 800;
    font-size: 15px;
-   letter-spacing: 0.2em;
+   letter-spacing: 0.1em;
    text-transform: uppercase;
    color: $svg-color;
 
@@ -347,7 +347,7 @@
 
 .section-project {
    display: flex;
-   padding: 150px 0;
+   margin: 150px 0;
    align-items: center;
    flex-direction: column;
    position: relative;
@@ -436,39 +436,91 @@
 }
 
 .project-hero {
-
-   margin: 0 auto;
-   width: auto;
-   // height: 250px;
-   overflow: hidden;
-   border-radius: 20px;
-
-   @media screen and (min-width:768px) {
-      width: 730px;
-   }
-
-   @media screen and (min-width:1200px) {
-      width: 1600px;
-      height: 500px;
-   }
-}
-
-.project-img {
+   // overflow: hidden;
    width: 100%;
+   // display: flex;
+   // justify-content: center;
+   // align-items: center;
+   // margin: 0 0 450px;
 
+   background-size: cover;
+   // position: relative;
+   // object-fit: cover;
+   // background-position: center;
+   border: 2px solid #b5f8f8cc;
+
+   @media (min-device-pixel-ratio: 2) and (max-width: 767px),
+   (min-resolution: 192dpi) and (max-width: 767px),
+   (min-resolution: 2dppx) and (max-width: 767px) {
+      background-position: bottom;
+      height: 370px;
+      background-image:
+         url("../img/project/tech-mobil@2x.webp");
+   }
+
+   @media screen and (min-width: 768px) {
+      // padding: 250px 0 20px;
+      margin: 0 auto 0px;
+      height: 360px;
+      background-position: bottom;
+      background-image:
+         linear-gradient(#2f303a47,
+            #2f303a66),
+         url("../img/project/tech-tablet.webp");
+   }
+
+   @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+   (min-resolution: 192dpi) and (min-width: 768px),
+   (min-resolution: 2dppx) and (min-width: 768px) {
+
+      background-image:
+         linear-gradient(#2f303a47,
+            #2f303a66),
+         url("../img/project/tech-tablet@2x.webp");
+
+   }
+
+   @media screen and (min-width: 1200px) {
+      background-position: bottom;
+      height: 370px;
+      max-width: 1600px;
+      background-image:
+         linear-gradient(#13153083,
+            #13153083),
+         url("../img/project/tech.webp");
+   }
+
+   @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+   (min-resolution: 192dpi) and (min-width: 1200px),
+   (min-resolution: 2dppx) and (min-width: 1200px) {
+      // padding: 0px 0 0px;
+
+      background-image:
+         linear-gradient(#2f303a47,
+            #2f303a66),
+         url("../img/project/tech@2x.webp");
+   }
 }
+
+// .project-img {
+//    width: 100%;
+
+// }
 
 
 
 
 .project-list {
-   display: block;
+   // display: block;
+   display: flex;
+   justify-content: space-around;
    position: absolute;
+   width: 450px;
    top: 50%;
+   padding: 0 20px;
 
    @media screen and (min-width:768px) {
-      display: flex;
-      justify-content: space-around;
+      width: 738px;
    }
 
    @media screen and (min-width:1200px) {
@@ -479,37 +531,47 @@
 
 
 .project-item {
-   width: 350px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 150px;
+   height: 100px;
+   padding: 15px 20px;
 
    user-select: none;
-   padding: 10px 0;
-   font-weight: 800;
-   font-size: 15px;
-   letter-spacing: 0.2em;
-   text-transform: uppercase;
    text-align: center;
+   // padding: 10px 0;
+   font-weight: 800;
+   font-size: 9px;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+
+   text-shadow: 1px 1px 2px #000000a2,
+      1px 1px 1px #000000aa;
 
    color: $svg-color;
-
+   border: 1.5px solid rgb(255, 255, 255);
+   border-radius: 25px;
    transition-duration: 0.5s;
+   background-color: #0077ffa3;
 
    &:hover,
    &:focus {
-      text-shadow: 1px 1px 2px #000000,
-         1px 2px 1px #000000;
+      background-color: #0077ff;
       color: #fff;
       transform: scale(1.04);
    }
 
    @media screen and (min-width: 768px) {
-      font-size: 10px;
+      font-size: 12px;
       font-weight: 800;
+      width: 200px;
 
    }
 
    @media screen and (min-width: 1200px) {
-      font-size: 19px;
+      font-size: 14px;
       font-weight: 900;
-
+      width: 250px;
    }
 }
