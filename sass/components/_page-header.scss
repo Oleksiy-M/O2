@@ -348,8 +348,9 @@
 .section-project {
    display: flex;
    padding: 150px 0;
-   justify-content: center;
-   flex-wrap: wrap;
+   align-items: center;
+   flex-direction: column;
+   position: relative;
 }
 
 
@@ -434,22 +435,25 @@
    }
 }
 
-.project-video {
+.project-hero {
 
    margin: 0 auto;
    width: auto;
    // height: 250px;
    overflow: hidden;
    border-radius: 20px;
+
    @media screen and (min-width:768px) {
       width: 730px;
    }
+
    @media screen and (min-width:1200px) {
       width: 1600px;
       height: 500px;
-}}
+   }
+}
 
-.video-river {
+.project-img {
    width: 100%;
 
 }
@@ -459,16 +463,53 @@
 
 .project-list {
    display: block;
+   position: absolute;
+   top: 50%;
 
    @media screen and (min-width:768px) {
       display: flex;
       justify-content: space-around;
    }
+
+   @media screen and (min-width:1200px) {
+      width: 1170px;
+
+   }
 }
 
 
 .project-item {
-   display: block;
-   width: 300px;
+   width: 350px;
 
+   user-select: none;
+   padding: 10px 0;
+   font-weight: 800;
+   font-size: 15px;
+   letter-spacing: 0.2em;
+   text-transform: uppercase;
+   text-align: center;
+
+   color: $svg-color;
+
+   transition-duration: 0.5s;
+
+   &:hover,
+   &:focus {
+      text-shadow: 1px 1px 2px #000000,
+         1px 2px 1px #000000;
+      color: #fff;
+      transform: scale(1.04);
+   }
+
+   @media screen and (min-width: 768px) {
+      font-size: 10px;
+      font-weight: 800;
+
+   }
+
+   @media screen and (min-width: 1200px) {
+      font-size: 19px;
+      font-weight: 900;
+
+   }
 }
