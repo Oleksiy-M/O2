@@ -105,14 +105,19 @@
    position: relative;
    width: 100px;
    height: 100px;
-   right: 15px;
    transition-duration: 1s;
 
    .page-footer:hover &,
    .page-footer:focus & {
       transform: scale(1.03);
    }
+
+   @media screen and (min-width: 768px) {
+      right: 15px;
+
+   }
 }
+
 
 .footer-logo {
    position: absolute;

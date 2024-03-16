@@ -2116,11 +2116,15 @@ body {
   position: relative;
   width: 100px;
   height: 100px;
-  right: 15px;
   transition-duration: 1s;
 }
 .page-footer:hover .footer-logo__box, .page-footer:focus .footer-logo__box {
   transform: scale(1.03);
+}
+@media screen and (min-width: 768px) {
+  .footer-logo__box {
+    right: 15px;
+  }
 }
 
 .footer-logo {
