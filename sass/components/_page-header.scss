@@ -273,14 +273,14 @@
 }
 
 .case-item {
-   border-radius: 5px;
-   border: 1px solid #ffffff;
+
    position: relative;
    width: 85%;
    transition-duration: 0.5s;
 
    &:hover,
    &:focus {
+      border-radius: 5px;
       transform: scale(1.04);
       box-shadow: 0px 1px 1px #ffffff1f,
          -1px 4px 4px #ffffff0f,
@@ -300,8 +300,9 @@
 }
 
 .case__img {
-   border: 1px solid;
    border-radius: 5px;
+   border: 2px solid #ffffff;
+   // z-index: -2;
 }
 
 .case-titl__box {
@@ -467,11 +468,11 @@
    // padding: 10px 0;
    font-weight: 800;
    font-size: 9px;
-   letter-spacing: 0.1em;
+   letter-spacing: 0.05em;
    text-transform: uppercase;
 
-   text-shadow: 1px 1px 2px #000000a2,
-      1px 1px 1px #000000aa;
+   text-shadow: 0px 1px 2px #000000a2,
+      0px 1px 1px #000000aa;
 
    color: $svg-color;
    border: 1.5px solid rgb(255, 255, 255);
