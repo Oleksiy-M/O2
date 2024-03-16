@@ -424,7 +424,6 @@ body {
   display: block;
   position: fixed;
   width: 100%;
-  padding: 15px 0 5px 0;
   z-index: 5;
   background-color: #1f2f52;
   border-bottom: 2px solid rgba(181, 248, 248, 0.8);
@@ -439,12 +438,14 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .pg-header {
-    height: 85px;
+    height: 100px;
   }
 }
 
 .bg-nav {
   display: flex;
+  height: 100%;
+  padding: 10px 0;
 }
 @media screen and (min-width: 768px) {
   .bg-nav {
@@ -462,17 +463,13 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 50px;
+    height: 100%;
     transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin: 0 0px 0 30px;
+    left: 35px;
+    bottom: 0px;
   }
   .bg-nav:hover .site-nav__logo, .bg-nav:focus .site-nav__logo {
     transform: scale(1.04);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .site-nav__logo {
-    height: 60px;
   }
 }
 
@@ -481,7 +478,6 @@ body {
     position: absolute;
     border-radius: 5px;
     fill: aqua;
-    margin: 0 0px 0 0px;
     transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 50px;
     height: 50px;
@@ -520,6 +516,7 @@ body {
 
 .site-nav {
   display: flex;
+  align-items: center;
   z-index: 2;
   font-weight: 400;
   font-size: 10px;
@@ -531,8 +528,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .site-nav {
-    align-items: center;
-    margin: 0 100px 0 0px;
+    align-items: end;
+    margin: 0 100px 0 50px;
     font-weight: 400;
     font-size: 10px;
     line-height: 1.94;
@@ -586,10 +583,6 @@ body {
 @media screen and (min-width: 768px) {
   .contact__list {
     display: flex;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contact__list {
     align-items: last baseline;
   }
 }
@@ -597,7 +590,6 @@ body {
 .page__item {
   display: flex;
   align-items: center;
-  padding: 0;
 }
 
 .page__contacts {
