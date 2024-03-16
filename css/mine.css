@@ -2116,7 +2116,7 @@ body {
   position: relative;
   width: 100px;
   height: 100px;
-  margin: 0 0px 0px 0px;
+  right: 15px;
   transition-duration: 1s;
 }
 .page-footer:hover .footer-logo__box, .page-footer:focus .footer-logo__box {
