@@ -457,6 +457,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
+
    width: 115px;
    height: 100px;
    padding: 15px 10px;
@@ -477,6 +478,10 @@
    border-radius: 25px;
    transition-duration: 0.5s;
    background-color: #0077ffa3;
+
+   &:not(:last-child) {
+      margin: 0 40px 0 0;
+   }
 
    &:hover,
    &:focus {

@@ -396,6 +396,9 @@ body {
   transition-duration: 0.5s;
   background-color: rgba(0, 119, 255, 0.6392156863);
 }
+.project-item:not(:last-child) {
+  margin: 0 40px 0 0;
+}
 .project-item:hover, .project-item:focus {
   background-color: #0077ff;
   color: #fff;
