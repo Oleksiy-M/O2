@@ -125,33 +125,11 @@
 
 
 
-
-      .history-hero__box {
-         display: flex;
-         align-items: center;
-         flex-direction: column;
-
-         margin: 0 auto 30px;
-         color: $histor-color-text;
-         // border: 1px solid #d1d2a512;
-         background-color: transparent;
-      }
-
-
       .history-hero__heading {
          width: 70%;
-         // height: 85px;
-         user-select: none;
-         // border-radius: 25px;
          text-shadow: 1px -1px 3px black;
-         text-transform: uppercase;
-         text-align: center;
-         font-weight: 500;
-         font-size: 18px;
-         line-height: 1.86;
-         letter-spacing: 0.22em;
-         // border-bottom: 2px solid $histor-color-text;
-         transition-duration: $animation-head;
+
+         color: $histor-color-text;
 
          .history-section:hover &,
          .history-section:focus & {
@@ -160,27 +138,13 @@
             color: $prim-histor-text;
 
             text-shadow: 0px 0px 1px #ffffff,
-               1px -2px 1px #000000,
+               0px -2px 1px #000000,
                0px 0px 1px #000000,
-               1px -1px 2px #000000;
-         }
-
-         @media screen and (min-width: 1200px) {
-            font-weight: 600;
-            font-size: 22px;
-            line-height: 1.86;
-            letter-spacing: 0.26em;
+               0px -1px 2px #000000;
          }
       }
 
       .history-border {
-         margin: -2px auto 0;
-         transition-duration: $animation-head;
-
-         height: 2px;
-         border-bottom: 2px solid $prim-histor-text;
-         width: 0.001%;
-
          .history-section:hover &,
          .history-section:focus & {
             transition-timing-function: $anime-border;

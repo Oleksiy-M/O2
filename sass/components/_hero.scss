@@ -106,7 +106,7 @@
 
 	@media screen and (min-width: 1200px) {
 		background-position: bottom;
-		height: 400px;
+		height: 430px;
 		max-width: 1600px;
 		background-image:
 			linear-gradient(#2f303a47,
@@ -308,35 +308,30 @@
 }
 
 .hero-title__box {
-	// overflow: hidden;
 	text-align: center;
 	text-wrap: nowrap;
 	top: 130px;
 	position: absolute;
-	width: 260px;
-	height: 40px;
+	width: 100vw;
 	perspective: 300px;
 
 	transition-duration: 0.5s;
-	// margin-left: -1300px;
 	transform: translateX(-100vw);
 
 	.section-hero__logo:hover &,
 	.section-hero__logo:focus & {
 		transition-timing-function: $anime-text;
 		transform: translateX(0vw);
-		// margin: 0;
-		// left: 0;
 
 	}
 
 	@media screen and (min-width: 768px) {
-		width: 270px;
+		width: 350px;
 	}
 
 	@media screen and (min-width: 1200px) {
-		width: 355px;
-		text-align: center;
+		width: 500px;
+		// text-align: center;
 		top: 140px;
 
 		transition-duration: 1s;
@@ -350,31 +345,13 @@
 	}
 }
 
-.title {
-	user-select: none;
-	font-weight: 1000;
-	font-size: 14px;
-	line-height: 1.86;
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
-	color: rgb(137, 249, 255);
-
-	text-shadow:
-		0px 2px 12px #000000,
-		0px 2px 2px #000000,
-		0px 0px 1px #000000,
-		0px 0px 5px #ffffffec;
+.title__logo {
+	width: 100%;
 	transform: rotateX(20deg);
 	transition-duration: 1s;
-
-
-
-	@media screen and (min-width: 1200px) {
-		font-weight: 1000;
-		font-size: 20px;
-		line-height: 1;
-		letter-spacing: 0.1em;
-
-	}
+	text-shadow:
+		1px 2px 2px #000000,
+		0px 0px 1px $White-color,
+		0px 0px 2px $White-color;
 
 }

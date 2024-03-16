@@ -169,50 +169,34 @@
 
 .section-case {
    display: flex;
-   // justify-content: center;
    flex-direction: column;
    align-items: center;
    margin: 0 0 0px;
 }
 
 
-.case__head__box {
+.head__box {
    display: flex;
    flex-direction: column;
    align-items: center;
-
    margin: 0 0px 50px;
-   width: 300px;
+
    color: $Secondary-text-color;
-   // border: 1px solid #d1d2a512;
    background-color: transparent;
-
-   @media screen and (min-width: 768px) {
-      margin: 0 0px 50px;
-      width: 400px;
-      // margin: 0 auto 100px auto;
-   }
-
-   @media screen and (min-width: 1200px) {
-      margin: 0 0px 50px;
-      width: 500px;
-      // margin: 0 auto 100px auto;
-   }
 }
 
 
-.case__head {
-   padding: 0px 0px;
+.title__head {
    user-select: none;
-   // border-radius: 25px;
+   width: 300px;
+
    text-shadow: 1px 1px 2px black;
    text-transform: uppercase;
    text-align: center;
-   font-weight: 900;
+   font-weight: 1000;
    font-size: 18px;
    line-height: 1.86;
-   letter-spacing: 0.22em;
-   // border-bottom: 2px solid $histor-color-text;
+   letter-spacing: 0.12em;
    transition-duration: $animation-head;
    color: $primary-text-color;
 
@@ -220,28 +204,40 @@
    .section-case:focus & {
       transition-timing-function: $anime-text;
       transform: scale(1.05);
-      // color: $White-color;
-      // color: $svg-color;
 
       text-shadow: 0px 0px 1px $White-color,
-         1px 2px 2px #000000;
+         0px 2px 2px #000000;
+   }
+
+   .section-project:hover &,
+   .section-project:focus & {
+      transition-timing-function: $anime-text;
+      transform: scale(1.05);
+
+      text-shadow: 0px 0px 1px $White-color,
+         0px 2px 2px #000000;
+   }
+
+   @media screen and (min-width: 768px) {
+
+      width: 400px;
    }
 
    @media screen and (min-width: 1200px) {
+      width: 500px;
       font-weight: 900;
-      font-size: 22px;
+      font-size: 26px;
       line-height: 1.86;
-      letter-spacing: 0.26em;
+      letter-spacing: 0.16em;
    }
 }
 
 
-.case__head__border {
+.head__border {
    margin: 0px auto 0;
    transition-duration: $animation-head;
 
    height: 2px;
-   border: none;
    border-bottom: 2px solid $White-color;
    width: 0.001%;
 
@@ -254,6 +250,15 @@
       box-shadow: 0px 2px 8px 2px $White-color;
       // transform: scale(1.08)
    }
+
+   .section-project:hover &,
+   .section-project:focus & {
+      transition-timing-function: $anime-border;
+      width: 90%;
+      box-shadow: 0px 2px 8px 2px $White-color;
+
+   }
+
 }
 
 
@@ -295,7 +300,7 @@
 }
 
 .case__img {
-
+   border: 1px solid;
    border-radius: 5px;
 }
 
@@ -353,7 +358,7 @@
 
 .section-project {
    display: flex;
-   margin: 150px 0;
+   margin: 150px auto;
    align-items: center;
    flex-direction: column;
    position: relative;
@@ -361,98 +366,10 @@
 
 
 
-.project-head__box {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-
-   margin: 0 0px 50px;
-   width: 300px;
-   color: $Secondary-text-color;
-   // border: 1px solid #d1d2a512;
-   background-color: transparent;
-
-   @media screen and (min-width: 768px) {
-      margin: 0 0px 50px;
-      width: 400px;
-      // margin: 0 auto 100px auto;
-   }
-
-   @media screen and (min-width: 1200px) {
-      margin: 0 0px 50px;
-      width: 500px;
-      // margin: 0 auto 100px auto;
-   }
-}
-
-
-.project-head {
-   padding: 0px 0px;
-   user-select: none;
-   // border-radius: 25px;
-   text-shadow: 1px 1px 2px black;
-   text-transform: uppercase;
-   text-align: center;
-   font-weight: 900;
-   font-size: 18px;
-   line-height: 1.86;
-   letter-spacing: 0.22em;
-   // border-bottom: 2px solid $histor-color-text;
-   transition-duration: $animation-head;
-   color: $primary-text-color;
-
-   .section-project:hover &,
-   .section-project:focus & {
-      transition-timing-function: $anime-text;
-      transform: scale(1.05);
-      // color: $White-color;
-      // color: $svg-color;
-
-      text-shadow: 0px 0px 1px $White-color,
-         1px 2px 2px #000000;
-   }
-
-   @media screen and (min-width: 1200px) {
-      font-weight: 900;
-      font-size: 22px;
-      line-height: 1.86;
-      letter-spacing: 0.26em;
-   }
-}
-
-
-.project__head__border {
-   margin: 0px auto 0;
-   transition-duration: $animation-head;
-
-   height: 2px;
-   border: none;
-   border-bottom: 2px solid $White-color;
-   width: 0.001%;
-
-   .section-project:hover &,
-   .section-project:focus & {
-      transition-timing-function: $anime-border;
-      width: 90%;
-      // border-bottom: 2px solid $White-color;
-      ;
-      box-shadow: 0px 2px 8px 2px $White-color;
-      // transform: scale(1.08)
-   }
-}
-
 .project-hero {
-   // overflow: hidden;
    width: 100%;
-   // display: flex;
-   // justify-content: center;
-   // align-items: center;
-   // margin: 0 0 450px;
-
    background-size: cover;
-   // position: relative;
-   // object-fit: cover;
-   // background-position: center;
+
    border: 2px solid #b5f8f8cc;
 
    @media (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -488,7 +405,7 @@
 
    @media screen and (min-width: 1200px) {
       background-position: center;
-      height: 400px;
+      height: 430px;
       max-width: 1600px;
       background-image:
          linear-gradient(#13153083,
@@ -521,7 +438,7 @@
    display: flex;
    justify-content: space-around;
    position: absolute;
-   width: 450px;
+   width: 100%;
    top: 50%;
    padding: 0 20px;
 
