@@ -244,6 +244,8 @@ body {
 }
 
 .case-item {
+  border-radius: 5px;
+  border: 1px solid #ffffff;
   position: relative;
   width: 85%;
   transition-duration: 0.5s;
@@ -262,12 +264,17 @@ body {
   margin: 0 0 40px;
 }
 
+.case__img {
+  border-radius: 5px;
+}
+
 .case-titl__box {
   display: flex;
   justify-content: center;
+  left: 1%;
   position: absolute;
   background: rgba(31, 1, 64, 0.431372549);
-  width: 100%;
+  width: 98%;
   bottom: 10px;
   text-align: center;
 }
@@ -378,16 +385,16 @@ body {
 }
 @media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
   .project-hero {
-    background-position: bottom;
-    height: 370px;
+    background-position: top;
+    height: 340px;
     background-image: url("../img/project/tech-mobil@2x.webp");
   }
 }
 @media screen and (min-width: 768px) {
   .project-hero {
     margin: 0 auto 0px;
-    height: 360px;
-    background-position: bottom;
+    height: 440px;
+    background-position: top;
     background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/project/tech-tablet.webp");
   }
 }
@@ -398,8 +405,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .project-hero {
-    background-position: bottom;
-    height: 370px;
+    background-position: center;
+    height: 400px;
     max-width: 1600px;
     background-image: linear-gradient(rgba(19, 21, 48, 0.5137254902), rgba(19, 21, 48, 0.5137254902)), url("../img/project/tech.webp");
   }
@@ -433,9 +440,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 150px;
+  width: 115px;
   height: 100px;
-  padding: 15px 20px;
+  padding: 15px 10px;
   user-select: none;
   text-align: center;
   font-weight: 800;
@@ -459,6 +466,7 @@ body {
     font-size: 12px;
     font-weight: 800;
     width: 200px;
+    padding: 15px 20px;
   }
 }
 @media screen and (min-width: 1200px) {
