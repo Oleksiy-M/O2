@@ -25,13 +25,14 @@
 
 .bg-nav {
 	display: flex;
+	align-items: center;
 	// justify-self: start;
-	// align-items: end;	
 	// width: 100%;
 	height: 100%;
 	padding: 10px 0;
 
 	@media screen and (min-width: 768px) {
+		align-items: flex-end;
 
 		justify-content: space-between;
 		max-width: 1600px;
@@ -42,8 +43,6 @@
 
 .site-nav__logo {
 	display: none;
-
-
 
 	@media screen and (min-width: 768px) {
 		display: flex;
@@ -126,7 +125,7 @@
 .site-nav {
 	display: flex;
 	align-items: center;
-	// height: 90px;
+	height: 30px;
 	z-index: 2;
 	// margin-right: 20%;
 	// justify-content: flex-start;
@@ -140,39 +139,50 @@
 
 
 	@media screen and (min-width: 768px) {
-		align-items: end;
+		// align-items: flex-end;
 		// margin-right: 20%;
-		margin: 0 100px 0 50px;
-		font-weight: 400;
-		font-size: 10px;
+		margin: 0 50px 0 50px;
+		font-weight: 900;
+		font-size: 12px;
 		line-height: 1.94;
 		letter-spacing: 0.03em;
 	}
 
 	@media screen and (min-width: 1200px) {
 		margin: 0 200px 0 0px;
-		align-items: end;
-		font-weight: 500;
+		font-weight: bold;
 		font-size: 16px;
 		line-height: 1.94;
 		letter-spacing: 0.03em;
+
+
 	}
 }
 
 
 .site-nav__item {
-	display: flex;
-	align-items: center;
+	// display: flex;
+	// align-items: center;
 	margin-right: 15px;
+
+	&:last-child {
+		margin-right: 0px;
+	}
 
 	@media screen and (min-width: 768px) {
 		margin-right: 20px;
 
+		&:last-child {
+			margin-right: 0px;
+		}
+
 	}
 
 	@media screen and (min-width: 1200px) {
-		&:not(:last-child) {
-			margin-right: 30px;
+		margin-right: 30px;
+
+		&:last-child {
+			margin-right: 0px;
 		}
 	}
 }
@@ -201,37 +211,41 @@
 
 	@media screen and (min-width: 768px) {
 		display: flex;
-		align-items: last baseline;
+		margin: 0 10px 0 0;
+	}
 
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		margin: 0 20px 0 0;
 	}
 
 
 }
 
 .page__item {
+	margin-right: 30px;
 	display: flex;
 	align-items: center;
+	height: 30px;
 
+	&:last-child {
+		margin-right: 0px;
+	}
 }
 
 .page__contacts {
-	margin-right: 9px;
+
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	font-style: normal;
 	font-size: 11px;
 	text-decoration: none;
 	color: $Secondary-text-color;
-	fill: $Secondary-text-color;
+	font-weight: 100;
 	transition-duration: 0.5s;
-
-	&:not(:last-child) {
-		margin-right: 9px;
-	}
 
 	&:hover,
 	&:focus {
 		color: $Accent;
-		fill: $Accent;
 		// transform: scale(1.05)
 	}
 
@@ -244,12 +258,15 @@
 }
 
 .contacts__icon {
-	margin-right: 10px;
+	margin: 0px 10px 0 0;
+	fill: $Secondary-text-color;
 
-	.page__contacts:hover &,
-	.page__contacts:focus & {
+	transition-duration: 0.5s;
 
-		transform: scale(1.1);
+	.page__item:hover &,
+	.page__item:focus & {
+		fill: $Accent;
+		// transform: scale(1.1);
 	}
 
 }
