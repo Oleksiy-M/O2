@@ -51,7 +51,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .page-header {
-    background-image: linear-gradient(to bottom, rgba(3, 28, 189, 0.7294117647) 30%, rgba(17, 1, 50, 0.7176470588) 85%);
+    background-image: linear-gradient(to bottom, rgba(1, 89, 204, 0.8823529412) 30%, rgba(0, 21, 116, 0.8470588235) 85%);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -905,7 +905,7 @@ body {
 @media screen and (min-width: 768px) {
   .idustry {
     margin: 0 0 0px 0;
-    background-image: linear-gradient(to bottom, rgba(0, 8, 255, 0.737254902) 30%, rgba(10, 1, 68, 0.8901960784) 85%);
+    background-image: linear-gradient(to bottom, rgba(1, 65, 149, 0.8823529412) 30%, rgba(17, 0, 45, 0.8784313725) 85%);
     padding: 50px 0 20px;
   }
 }
@@ -2894,7 +2894,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .history-page {
-    background-image: linear-gradient(to bottom, rgba(27, 190, 255, 0.8274509804) 30%, rgba(25, 35, 82, 0.8470588235) 85%);
+    background-image: linear-gradient(to bottom, rgba(27, 190, 255, 0.8274509804) 30%, rgba(0, 21, 116, 0.8470588235) 85%);
     padding: 50px 0px 20px;
     max-width: 1600px;
   }
@@ -3384,7 +3384,7 @@ body {
 @media screen and (min-width: 768px) {
   .page-water {
     margin: 0 0 0px 0;
-    background-image: linear-gradient(to bottom, rgba(0, 8, 255, 0.737254902) 30%, rgba(10, 1, 68, 0.8901960784) 85%);
+    background-image: linear-gradient(to bottom, rgba(1, 65, 149, 0.8823529412) 30%, rgba(17, 0, 45, 0.8784313725) 85%);
     padding: 50px 0 20px;
   }
 }
