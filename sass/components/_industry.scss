@@ -176,8 +176,8 @@
    width: 85%;
    user-select: none;
    text-shadow: 0px 0px 1px #ffffff,
-         0px 2px 1px #000000,
-         0px 1px 2px #000000;
+      0px 1px 1px #000000,
+      0px 1px 2px #000000;
    color: $Secondary-text-color;
 
    .section-hero:hover &,
@@ -194,6 +194,7 @@
 }
 
 .head-border {
+   width: 0.001%;
 
    .section-hero:hover &,
    .section-hero:focus & {

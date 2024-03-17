@@ -7,7 +7,7 @@
       padding: 90px 3px 100px 3px;
       margin-bottom: 40px;
 
-      border-top: 4px #074272d7 solid;
+      border-top: 4px #035496d7 solid;
       border-bottom: 5px #010f1a solid;
       // background-color: $section-color__desktop;
       box-shadow: 1px 1px 1px #000000, -1px 0px 1px #000000;
@@ -379,16 +379,13 @@
       border-radius: 10px;
       width: calc(100% + 0px);
       height: 420px;
-      // margin: 0 auto 0 -33px;
-      // // left: calc((100% - 250px)/2);
-      // transform: translate(-31px, 0px);
-
       background-position: bottom;
       background-size: cover;
       opacity: 0.6;
       transform: rotateX(0deg);
       transform-style: preserve-3d;
       transition-duration: 0.5s;
+
 
       .develo-eco__content:hover &,
       .develo-eco__content:focus & {
@@ -403,13 +400,6 @@
         width: 300px;
         height: 360px;
 
-        // .develo-eco__content:hover &,
-        // .develo-eco__content:focus & {
-        //   transition-timing-function: $anime-card-industry;
-        //   transition-duration: $animation-head;
-        //   opacity: 0.2;
-        //   transform: rotateX(90deg);
-        // }
       }
 
       @media screen and (min-width: 1200px) {
