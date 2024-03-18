@@ -126,32 +126,27 @@
 
 
       .history-hero__heading {
-         width: 70%;
-
-      text-shadow: 0px 0px 1px #ffffff,
-            0px -2px 1px #000000,
-            0px -1px 1px #000000;
-   
          color: $histor-color-text;
 
          .history-section:hover &,
          .history-section:focus & {
+         
             transition-timing-function: $anime-text;
             transform: scale(1.05);
             color: $prim-histor-text;
-   text-shadow: 0px 0px 1px #ffffff,
-         0px -2px 1px #000000,
-         0px -1px 1px #000000,
-         0px -1px 1px #000000;
+            text-shadow: 0px 0px 1px #ffffff,
+               0px -1px 1px #000000,
+               0px -1px 1px #000000,
+               0px -1px 1px #000000;
          }
       }
 
       .history-border {
-width: 0.001%;
+
          .history-section:hover &,
          .history-section:focus & {
             transition-timing-function: $anime-border;
-            width: 70%;
+            width: 90%;
             border-bottom: 2px solid $prim-histor-text;
             box-shadow: 0px 2px 8px 2px $prim-histor-text;
          }

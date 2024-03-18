@@ -173,36 +173,30 @@
 
 
 .idustry-hero__heading {
-   width: 85%;
-   user-select: none;
-   text-shadow: 0px 0px 1px #ffffff,
-      0px 2px 1px #000000,
-      0px 1px 2px #000000;
    color: $Secondary-text-color;
 
+   text-shadow: 0px 0px 1px #ffffff,
+         0px 1px 1px #000000,
+         0px 1px 1px #000000,
+         0px 1px 1px #000000;
+}
    .section-hero:hover &,
    .section-hero:focus & {
+      transition-duration: 1s;
       transition-timing-function: $anime-text;
       transform: scale(1.05);
-      color: $prim-indusry-color;
-      text-shadow: 0px 0px 1px #ffffff,
-         0px 2px 1px #000000,
-         0px 1px 2px #000000;
-
-   }
+      color: $primary-text-color;
 
 }
 
-.head-border {
-   width: 0.001%;
-
+.head-border__industry {
    .section-hero:hover &,
    .section-hero:focus & {
       transition-timing-function: $anime-border;
       width: 90%;
 
       border-bottom: 2px solid $prim-indusry-color;
-      box-shadow: 0px 2px 8px 2px $White-color;
+      box-shadow: 0px 2px 8px 2px $primary-text-color;
    }
 }
 
