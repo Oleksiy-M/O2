@@ -385,7 +385,7 @@ body {
   padding: 15px 10px;
   user-select: none;
   text-align: center;
-  font-weight: 800;
+  font-weight: bold;
   font-size: 9px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -401,13 +401,12 @@ body {
 }
 .project-item:hover, .project-item:focus {
   background-color: #0077ff;
-  color: #fff;
+  color: #ffffff;
   transform: scale(1.04);
 }
 @media screen and (min-width: 768px) {
   .project-item {
     font-size: 12px;
-    font-weight: 800;
     width: 200px;
     padding: 15px 20px;
   }
@@ -415,7 +414,6 @@ body {
 @media screen and (min-width: 1200px) {
   .project-item {
     font-size: 14px;
-    font-weight: 900;
     width: 250px;
   }
 }
@@ -3041,7 +3039,7 @@ body {
   user-select: none;
   text-wrap: wrap;
   user-select: none;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 17px;
   line-height: 1.5;
   letter-spacing: 0.08em;

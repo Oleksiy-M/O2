@@ -494,7 +494,7 @@
    user-select: none;
    text-align: center;
    // padding: 10px 0;
-   font-weight: 800;
+   font-weight: bold;
    font-size: 9px;
    letter-spacing: 0.05em;
    text-transform: uppercase;
@@ -515,13 +515,13 @@
    &:hover,
    &:focus {
       background-color: #0077ff;
-      color: #fff;
+      color: #ffffff;
       transform: scale(1.04);
    }
 
    @media screen and (min-width: 768px) {
       font-size: 12px;
-      font-weight: 800;
+
       width: 200px;
       padding: 15px 20px;
 
@@ -529,7 +529,7 @@
 
    @media screen and (min-width: 1200px) {
       font-size: 14px;
-      font-weight: 900;
+
       width: 250px;
    }
 }
