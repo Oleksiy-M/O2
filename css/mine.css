@@ -160,7 +160,7 @@ body {
   width: 200px;
   transition-duration: 1s;
   margin: 110px 0px 0 0;
-  fill: rgba(233, 233, 233, 0.9411764706);
+  fill: rgba(227, 227, 227, 0.9411764706);
 }
 .advantages-item:hover .advantages-svg, .advantages-item:focus .advantages-svg {
   fill: #FFFFFF;
@@ -896,7 +896,7 @@ body {
   width: 100%;
   transform: rotateX(15deg);
   transition-duration: 1s;
-  text-shadow: 0px 3px 1px #008a81, 0px 0px 1px #FFFFFF;
+  text-shadow: 0px 3px 1px #008a81, 0px 0px 2px #FFFFFF;
 }
 
 .idustry {
@@ -3051,7 +3051,7 @@ body {
 .article-item:hover .article-title, .article-item:focus .article-title {
   transform: scale(1.02);
   color: #fffdd1;
-  text-shadow: #000000 0px 2px 1px, #000000 0px 1px 3px, #000000 0px 2px 4px;
+  text-shadow: #000000 0px 2px 1px, #000000 0px 1px 3px, #000000 0px 1px 3px;
 }
 
 .article-aqueduct {
