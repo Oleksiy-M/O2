@@ -188,10 +188,10 @@
 
    .section-case:hover &,
    .section-case:focus &,
-      .section-project:hover &,
+   .section-project:hover &,
    .section-project:focus &,
    .section-hero__industry:hover &,
-      .section-hero__industry:focus & {
+   .section-hero__industry:focus & {
       transition-duration: 1s;
       transform: scale(1.05);
       text-shadow: 0px 0px 1px #ffffff,
@@ -221,7 +221,7 @@
    // height: 45px;
    text-transform: uppercase;
    text-align: center;
-   font-weight: 1000;
+   font-weight: bolder;
    font-size: 17px;
    line-height: 1.86;
    letter-spacing: 0.1em;
@@ -238,11 +238,12 @@
       color: $primary-text-color;
 
    }
-            .history-section:hover &,
-         .history-section:focus & {
-               transition-duration: 1s;
-            color: $prim-histor-text;
-}
+
+   .history-section:hover &,
+   .history-section:focus & {
+      transition-duration: 1s;
+      color: $prim-histor-text;
+   }
 
    @media screen and (min-width: 1200px) {
       // width: 500px;
@@ -268,8 +269,8 @@
    .section-project:focus &,
    .section-hero__industry:hover &,
    .section-hero__industry:focus &,
-      .history-section:hover &,
-         .history-section:focus & {
+   .history-section:hover &,
+   .history-section:focus & {
       transition-timing-function: $anime-border;
       width: 90%;
       border-bottom: 2px solid $primary-text-color;

@@ -144,30 +144,32 @@
 
 .develo-eco__art {
    // transform: translateY(100%);
+   user-select: none;
    padding: 10px 7px;
    text-align: center;
-   user-select: none;
+
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-style: italic;
    font-size: 12px;
    font-weight: 400;
    line-height: 1.5;
    letter-spacing: 0.02em;
-   white-space: pre-wrap;
+   text-indent: 20px;
+   // white-space: pre;
+
    color: $Secondary-text-color;
-   // background-color: rgb(0, 255, 255);
-   text-shadow: 1px 1.5px 1px black,
-      2px 0.5px 2px black;
+   text-shadow: 0px 1px 1px black,
+      1px 0.5px 2px black;
 
    transition-duration: 0.5s;
-   font-style: italic;
    transform: rotateX(-50deg);
    transform-style: preserve-3d;
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       color: $svg-color;
-      text-shadow: 1px 1.5px 1px black,
-         2px 0.5px 2px black;
+      // text-shadow: 1px 1.5px 1px black,
+      //    1px 0.5px 2px black;
       transform: rotateX(0deg);
       transition-duration: 1s;
       transition-timing-function: $anime-card-industry;
@@ -176,10 +178,19 @@
    @media screen and (min-width: 768px) {
       padding: 5px 30px;
       text-align: left;
-      font-weight: 600;
+      font-weight: bolder;
       font-size: 12px;
       line-height: 1.6;
       letter-spacing: 0.04em;
 
    }
+}
+
+.develo-eco__art::first-letter {
+   font-family: 'Tahoma', serif;
+   font-size: 16px;
+   color: #11ff60;
+   letter-spacing: 0.08em;
+   text-shadow: 0px 1px 1px black,
+      1px 0.5px 2px black;
 }

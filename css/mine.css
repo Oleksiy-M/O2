@@ -201,7 +201,7 @@ body {
   margin: 0 auto;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 1000;
+  font-weight: bolder;
   font-size: 17px;
   line-height: 1.86;
   letter-spacing: 0.1em;
@@ -894,9 +894,9 @@ body {
 
 .title__logo {
   width: 100%;
-  transform: rotateX(20deg);
+  transform: rotateX(15deg);
   transition-duration: 1s;
-  text-shadow: 0px 3px 1px #005f59, 0px 4px 10px #006948, 0px 0px 1px #FFFFFF;
+  text-shadow: 0px 3px 1px #008a81, 0px 0px 1px #FFFFFF;
 }
 
 .idustry {
@@ -1096,16 +1096,15 @@ body {
 .title-end {
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  white-space: pre-wrap;
   user-select: none;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: bolder;
   font-size: 14px;
   line-height: 1.9;
   letter-spacing: 0.08em;
   word-spacing: 2px;
   color: #00b7ff;
-  text-shadow: 2px 2px 2px black, 0px 0px 2px #fff, -2px -2px 2px black;
+  text-shadow: 1px 1px 2px black, 0px 0px 2px #fff, -1px -1px 2px black;
   transition-duration: 1s;
   transform: translateX(-100vw);
 }
@@ -2378,7 +2377,7 @@ body {
   }
 }
 
-.develo-eco__box {
+.develo-title__box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2390,21 +2389,26 @@ body {
   transition-duration: 1s;
   border-bottom: 1px solid #3fa9f5;
 }
-.develo-eco:hover .develo-eco__box, .develo-eco:focus .develo-eco__box {
+.develo-eco:hover .develo-title__box, .develo-eco:focus .develo-title__box {
   transition-timing-function: cubic-bezier(0.57, -0.6, 0.57, 1.37);
   transform: scale(1.05);
-  border-bottom: 1px solid #FFFFFF;
-  box-shadow: 0px 1px 4px 0px #FFFFFF;
+  box-shadow: 0px 1px 4px 0px aqua;
+  background-color: rgba(35, 1, 48, 0.0784313725);
+}
+.impact-section:hover .develo-title__box, .impact-section:focus .develo-title__box {
+  transform: scale(1.05);
+  transition-timing-function: cubic-bezier(0.57, -0.6, 0.57, 1.37);
+  box-shadow: 0px 1px 4px 0px aqua;
   background-color: rgba(35, 1, 48, 0.0784313725);
 }
 @media screen and (min-width: 768px) {
-  .develo-eco__box {
+  .develo-title__box {
     margin: -210px 0 190px 0;
     padding: 5px 10px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .develo-eco__box {
+  .develo-title__box {
     margin: -190px 0 245px 0px;
   }
 }
@@ -2422,6 +2426,11 @@ body {
   text-transform: uppercase;
 }
 .develo-eco:hover .develo-eco__title, .develo-eco:focus .develo-eco__title {
+  transition-timing-function: cubic-bezier(0.57, -0.6, 0.06, 1.63);
+  text-shadow: 0px 1px 1px black, 0px 0px 1px #f4f1f1, 1px 1px 1px black;
+  color: #33FF99;
+}
+.impact-section:hover .develo-eco__title, .impact-section:focus .develo-eco__title {
   transition-timing-function: cubic-bezier(0.57, -0.6, 0.06, 1.63);
   text-shadow: 0px 1px 1px black, 0px 0px 1px #f4f1f1, 1px 1px 1px black;
   color: #33FF99;
@@ -2553,25 +2562,6 @@ body {
   }
 }
 
-.impact-title__box {
-  margin: 0 10% 200px 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 5px 10px;
-  height: 35px;
-  border-radius: 5px;
-  transition-duration: 1s;
-  border-bottom: 1px solid #3fa9f5;
-}
-.impact-section:hover .impact-title__box, .impact-section:focus .impact-title__box {
-  transform: scale(1.05);
-  transition-timing-function: cubic-bezier(0.57, -0.6, 0.57, 1.37);
-  border-bottom: 1px solid #FFFFFF;
-  box-shadow: 0px 1px 4px 0px #FFFFFF;
-  background-color: rgba(35, 1, 48, 0.0784313725);
-}
 @media screen and (min-width: 768px) {
   .impact-title__box {
     margin: 0 0 70px 70px;
@@ -2581,32 +2571,6 @@ body {
 @media screen and (min-width: 1200px) {
   .impact-title__box {
     margin: 0 0 145px 140px;
-  }
-}
-
-.impact-title {
-  padding: 2px;
-  text-transform: uppercase;
-  user-select: none;
-  color: #3fa9f5;
-  font-weight: 300;
-  font-size: 10px;
-  line-height: 1.46;
-  letter-spacing: 0.26em;
-  transition-duration: 1s;
-  text-shadow: 1px 1px 1px black;
-}
-.impact-section:hover .impact-title, .impact-section:focus .impact-title {
-  transition-timing-function: cubic-bezier(0.57, -0.6, 0.06, 1.63);
-  text-shadow: 0px 1px 1px black, 0px 0px 1px #f4f1f1, 1px 1px 1px black;
-  color: #33FF99;
-}
-@media screen and (min-width: 1200px) {
-  .impact-title {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.86;
-    letter-spacing: 0.26em;
   }
 }
 
@@ -2825,25 +2789,24 @@ body {
 }
 
 .develo-eco__art {
+  user-select: none;
   padding: 10px 7px;
   text-align: center;
-  user-select: none;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  white-space: pre-wrap;
+  text-indent: 20px;
   color: #3fa9f5;
-  text-shadow: 1px 1.5px 1px black, 2px 0.5px 2px black;
+  text-shadow: 0px 1px 1px black, 1px 0.5px 2px black;
   transition-duration: 0.5s;
-  font-style: italic;
   transform: rotateX(-50deg);
   transform-style: preserve-3d;
 }
 .develo-eco__content:hover .develo-eco__art, .develo-eco__content:focus .develo-eco__art {
   color: #33FF99;
-  text-shadow: 1px 1.5px 1px black, 2px 0.5px 2px black;
   transform: rotateX(0deg);
   transition-duration: 1s;
   transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
@@ -2852,11 +2815,19 @@ body {
   .develo-eco__art {
     padding: 5px 30px;
     text-align: left;
-    font-weight: 600;
+    font-weight: bolder;
     font-size: 12px;
     line-height: 1.6;
     letter-spacing: 0.04em;
   }
+}
+
+.develo-eco__art::first-letter {
+  font-family: "Tahoma", serif;
+  font-size: 16px;
+  color: #11ff60;
+  letter-spacing: 0.08em;
+  text-shadow: 0px 1px 1px black, 1px 0.5px 2px black;
 }
 
 .bubble {
@@ -3011,13 +2982,40 @@ body {
 }
 
 .box-end-grad {
+  display: block;
+  width: 100%;
   padding: 20px;
   background-image: linear-gradient(rgba(205, 184, 109, 0.631372549) 5%, rgba(72, 16, 67, 0.8588235294));
+}
+@media screen and (min-width: 768px) {
+  .box-end-grad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .box-article {
   display: block;
   padding: 20px;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .box-article {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .box-article {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .box-article__head {
+    text-align: center;
+    width: 800px;
+  }
 }
 
 .article-item {
@@ -3026,24 +3024,25 @@ body {
 }
 
 .head-article {
-  padding: 0 0 15px;
+  padding: 0 0 20px;
   color: #d5d095;
   transition-duration: 800ms;
   user-select: none;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
+  font-weight: bold;
 }
 .box-article:hover .head-article, .box-article:focus .head-article {
   transform: scale(1.02);
-  text-shadow: #000000 0px 1px 2px, #000000 2px 5px 7px, #000000 1px 2px 1px;
+  text-shadow: #ffffff 0px 0px 1px, #000000 0px 1px 2px, #000000 0px 4px 4px, #000000 0px 4px 2px;
 }
 
 .article-title {
-  padding: 0 0 5px;
+  padding: 0 0 10px;
   user-select: none;
   text-wrap: wrap;
   user-select: none;
-  font-weight: 500;
-  font-size: 15px;
+  font-weight: bold;
+  font-size: 17px;
   line-height: 1.5;
   letter-spacing: 0.08em;
   color: #d5d095;
@@ -3052,14 +3051,12 @@ body {
 .article-item:hover .article-title, .article-item:focus .article-title {
   transform: scale(1.02);
   color: #fffdd1;
-  text-shadow: #000000 0px 2px 5px, #000000 2px 2px 1px;
+  text-shadow: #000000 0px 2px 1px, #000000 0px 1px 3px, #000000 0px 2px 4px;
 }
 
 .article-aqueduct {
-  padding: 0 0px;
   user-select: none;
-  text-align: left;
-  font-weight: 700;
+  font-weight: bold;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -3070,7 +3067,12 @@ body {
 .article-item:hover .article-aqueduct, .article-item:focus .article-aqueduct {
   color: #fffdd1;
   transform: scale(1.02);
-  text-shadow: #000000 1px 2px 1px, #000000 1px 1px 5px;
+  text-shadow: #ffffff 0px 0px 1px, #000000 1px 1.5px 2px, #000000 1px 1px 1px;
+}
+
+.article-aqueduct::first-letter {
+  font-family: "Tahoma", serif;
+  font-size: 16px;
 }
 
 .cards__link {
