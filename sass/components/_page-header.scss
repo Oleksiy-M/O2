@@ -273,8 +273,8 @@
    .history-section:focus & {
       transition-timing-function: $anime-border;
       width: 90%;
-      border-bottom: 2px solid $primary-text-color;
-      box-shadow: 0px 2px 8px 2px $primary-text-color;
+      // border-bottom: 2px solid $primary-text-color;
+      box-shadow: 0px 2px 8px 2px $White-color;
       // transform: scale(1.08)
    }
 
