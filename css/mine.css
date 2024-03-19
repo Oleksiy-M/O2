@@ -177,7 +177,8 @@ body {
 
 .head__box {
   display: block;
-  margin: 0 auto 50px;
+  margin: 0 auto 0px;
+  padding: 0 0 50px;
   width: 90%;
   max-width: 1000px;
   background-color: transparent;
@@ -1049,12 +1050,12 @@ body {
   width: 100%;
   border-radius: 10px;
   overflow: hidden;
-  border: 5px solid #4b3ff5;
+  border: 5px solid #0135af;
   border-left: none;
   border-right: none;
 }
 .impact-box__end:hover .box__end, .impact-box__end:focus .box__end {
-  border: 4px solid #1b3a82;
+  border: 5px solid #4b3ff5;
   border-left: none;
   border-right: none;
 }
@@ -1085,7 +1086,7 @@ body {
   height: 100%;
   width: 100%;
   padding: 0 15px;
-  background-color: rgba(32, 1, 86, 0.2784313725);
+  background-color: rgba(28, 1, 76, 0.6549019608);
 }
 .impact-box__end:hover .box-title-end, .impact-box__end:focus .box-title-end {
   background-color: rgba(32, 1, 86, 0.5764705882);
@@ -2336,14 +2337,14 @@ body {
   border-bottom: 5px #010f1a solid;
   box-shadow: 1px 1px 1px #000000, -1px 0px 1px #000000;
   background-size: cover;
-  background-image: linear-gradient(to bottom, rgba(1, 32, 79, 0.6862745098) 10%, rgba(29, 1, 60, 0.6392156863) 99%), url(../img/develo-eco/develo-mobil.webp);
+  background-image: linear-gradient(to bottom, rgba(1, 19, 107, 0.4470588235) 10%, rgba(10, 1, 60, 0.6392156863) 99%), url(../img/develo-eco/develo-mobil.webp);
 }
 @media screen and (min-width: 768px) {
   .section-bg {
     display: flex;
     flex-wrap: wrap;
     padding: 0px 20px 150px;
-    background-image: linear-gradient(to bottom, rgba(1, 32, 79, 0.6862745098) 10%, rgba(29, 1, 60, 0.6392156863) 99%), url(../img/develo-eco/develo-tablet.webp);
+    background-image: linear-gradient(to bottom, rgba(1, 19, 107, 0.4470588235) 10%, rgba(10, 1, 60, 0.6392156863) 99%), url(../img/develo-eco/develo-tablet.webp);
   }
 }
 @media screen and (min-width: 1200px) {
