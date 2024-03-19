@@ -322,7 +322,7 @@
 	.section-hero__logo:focus & {
 		transition-timing-function: $anime-text;
 		transform: translateX(0vw);
-
+		text-decoration-color: aqua;
 	}
 
 	@media screen and (min-width: 768px) {
@@ -347,11 +347,12 @@
 
 .title__logo {
 	width: 100%;
+	// color: aqua;
 	transform: rotateX(20deg);
 	transition-duration: 1s;
 	text-shadow:
-		0px 3px 1px #001c39,
-		0px 4px 10px #002c69,
+		0px 3px 1px #005f59,
+		0px 4px 10px #006948,
 		0px 0px 1px $White-color,
 
 

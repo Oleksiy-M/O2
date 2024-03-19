@@ -128,25 +128,13 @@
       .history-hero__heading {
          color: $histor-color-text;
 
-         .history-section:hover &,
-         .history-section:focus & {
-         
-            transition-timing-function: $anime-text;
-            transform: scale(1.05);
-            color: $prim-histor-text;
-            text-shadow: 0px 0px 1px #ffffff,
-               0px -1px 1px #000000,
-               0px -1px 1px #000000,
-               0px -1px 1px #000000;
-         }
+
       }
 
-      .history-border {
 
+      .history-border {
          .history-section:hover &,
          .history-section:focus & {
-            transition-timing-function: $anime-border;
-            width: 90%;
             border-bottom: 2px solid $prim-histor-text;
             box-shadow: 0px 2px 8px 2px $prim-histor-text;
          }
