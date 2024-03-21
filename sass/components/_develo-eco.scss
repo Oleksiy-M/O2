@@ -14,9 +14,9 @@
       // background-position: center;
       background-size: cover;
       background-image: linear-gradient(to bottom,
-            #01136b72 10%,
-            
-              #0a013ca3 99%),
+          #01136b72 10%,
+
+          #0a013ca3 99%),
 
         url(../img/develo-eco/develo-mobil.webp);
 
@@ -27,8 +27,8 @@
         padding: 0px 20px 150px;
         background-image: linear-gradient(to bottom,
             #01136b72 10%,
-            
-              #0a013ca3 99%),
+
+            #0a013ca3 99%),
 
           url(../img/develo-eco/develo-tablet.webp);
       }
@@ -227,9 +227,11 @@
       .develo-eco__content:focus & {
         transition-duration: 1s;
         transition-timing-function: $anime-card-industry;
-        opacity: 0.3;
+        opacity: 0.05;
         transform: rotateX(90deg) scale(0.9);
       }
+
+
 
       @media screen and (min-width: 768px) {
         margin: 0 0 0 0px;
@@ -359,7 +361,7 @@
       .develo-eco__content:focus & {
         transition-timing-function: $anime-card-industry;
         transition-duration: $animation-head;
-        opacity: 0.2;
+        opacity: 0.05;
         transform: rotateX(90deg) scale(0.9);
       }
 

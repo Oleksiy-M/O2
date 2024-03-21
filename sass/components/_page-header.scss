@@ -227,9 +227,13 @@
    letter-spacing: 0.1em;
    color: $primary-text-color;
 
-   // @media screen and (min-width: 768px) {
-   //    width: 400px;
-   // }
+   @media screen and (min-width: 768px) {
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 1.86;
+      letter-spacing: 0.11em;
+   }
+
    transition-duration: 2s;
 
    .section-hero__industry:hover &,
@@ -398,7 +402,7 @@
 .project-hero {
    width: 100%;
    background-size: cover;
-
+   object-fit: contain;
    border: 2px solid #b5f8f8cc;
 
    @media (min-device-pixel-ratio: 2) and (max-width: 767px),
