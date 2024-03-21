@@ -147,14 +147,15 @@
    user-select: none;
    padding: 10px 7px;
    text-align: center;
-
+   
+   text-indent: 20px;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    font-style: italic;
    font-size: 12px;
    font-weight: 400;
    line-height: 1.5;
    letter-spacing: 0.02em;
-   text-indent: 20px;
+
    // white-space: pre;
 
    color: $Secondary-text-color;
@@ -176,7 +177,7 @@
    }
 
    @media screen and (min-width: 768px) {
-      padding: 5px 30px;
+      padding: 5px 30px ;
       text-align: left;
       font-weight: bolder;
       font-size: 12px;
@@ -192,6 +193,5 @@
    font-size: 16px;
    color: #11ff60;
    letter-spacing: 0.08em;
-   text-shadow: 0px 1px 1px black,
-      1px 0.5px 2px black;
+
 }

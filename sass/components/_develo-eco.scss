@@ -2,16 +2,14 @@
 
     .section-bg {
       position: relative;
-      z-index: 2;
-      border-radius: 5px;
-      padding: 90px 3px 100px 3px;
-      margin-bottom: 40px;
 
-      border-top: 4px #035496d7 solid;
-      border-bottom: 5px #010f1a solid;
+      padding: 90px 3px 100px 3px;
+      margin: 0 auto 40px;
+      border-radius: 5px;
+      border-top: 5px #3869dc solid;
+      border-bottom: 6px #001729 solid;
       // background-color: $section-color__desktop;
-      box-shadow: 1px 1px 1px #000000, -1px 0px 1px #000000;
-      // background-position: center;
+      background-position: center;
       background-size: cover;
       background-image: linear-gradient(to bottom,
           #01136b72 10%,
@@ -199,6 +197,7 @@
 
         &:first-child .cards__overlay {
           margin-left: 0px;
+          margin-top: -10px;
         }
 
 
