@@ -2834,7 +2834,7 @@ body {
 
 .develo-eco__art::first-letter {
   font-family: "Tahoma", serif;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 16px;
   color: #11ff60;
   letter-spacing: 0.08em;
@@ -3031,9 +3031,11 @@ body {
 .article-item {
   padding: 0 0 30px;
   transition-duration: 100ms;
+  text-indent: 20px;
 }
 
 .head-article {
+  text-align: center;
   padding: 0 0 20px;
   color: #d5d095;
   transition-duration: 800ms;
@@ -3051,7 +3053,6 @@ body {
   user-select: none;
   text-wrap: wrap;
   user-select: none;
-  text-indent: 20px;
   font-weight: bolder;
   font-size: 17px;
   line-height: 1.5;
@@ -3067,7 +3068,6 @@ body {
 
 .article-aqueduct {
   user-select: none;
-  text-indent: 20px;
   font-weight: bold;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 12px;
@@ -3085,6 +3085,7 @@ body {
 .article-aqueduct::first-letter {
   font-family: "Tahoma", serif;
   font-size: 16px;
+  font-weight: bolder;
 }
 
 .cards__link {
@@ -3365,6 +3366,15 @@ body {
 }
 .section-card:hover .cadr-svg, .section-card:focus .cadr-svg {
   fill: #2a2a2a;
+}
+
+.water-hero {
+  margin: 100px 0;
+}
+
+.water-hero__o2 {
+  margin: 0 auto;
+  max-width: 350px;
 }
 
 .page-water {
