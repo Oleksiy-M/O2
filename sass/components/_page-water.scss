@@ -42,9 +42,12 @@
 
 .water-hero__o2 {
    margin: 0 auto;
-   max-width: 350px;
-}
+   max-width: 250px;
 
+   @media screen and (min-width: 768px) {
+      max-width: 350px;
+   }
+}
 
 .oxy-container__water {
    margin: 0 auto;
