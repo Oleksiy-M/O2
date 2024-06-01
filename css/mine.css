@@ -967,7 +967,7 @@ body {
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .section-hero__industry {
     padding-bottom: 50px;
-    background-image: linear-gradient(to bottom, rgba(88, 195, 252, 0.9411764706) 0.2%, rgba(14, 157, 253, 0.8705882353) 1%, rgba(0, 119, 255, 0.8901960784) 2%, rgba(0, 119, 255, 0.6666666667) 6%, rgba(0, 119, 255, 0.2431372549) 41%, rgba(0, 57, 170, 0.8) 71%, rgba(3, 39, 112, 0.9294117647) 88%, rgba(2, 25, 72, 0.9960784314) 98%, rgba(13, 1, 57, 0.9176470588) 99%), url("../img/head-i/head-indus.webp");
+    background-image: linear-gradient(to bottom, rgba(88, 195, 252, 0.9411764706) 0.2%, rgba(14, 157, 253, 0.8705882353) 1%, rgba(0, 119, 255, 0.8901960784) 2%, rgba(0, 119, 255, 0.5058823529) 6%, rgba(0, 149, 255, 0.4117647059) 41%, rgba(17, 110, 192, 0.6156862745) 71%, rgba(4, 62, 178, 0.6901960784) 88%, rgba(2, 25, 72, 0.9960784314) 98%, rgba(13, 1, 57, 0.9176470588) 99%), url("../img/head-i/head-indus.webp");
   }
 }
 
@@ -3395,22 +3395,129 @@ body {
   flex-direction: column;
 }
 
+.water-head__water {
+  margin: 100px auto;
+  transform: scale(1.2);
+  transition-duration: 1s;
+}
+.water-head__water:hover, .water-head__water:focus {
+  transform: scale(1.25);
+  transition-timing-function: cubic-bezier(0.36, 0.89, 0.56, 1.11);
+}
+
 .water-hero {
-  margin: 100px 0;
+  margin: 0px 0 150px;
 }
 
 .water-hero__o2 {
   margin: 0 auto;
   max-width: 250px;
+  transition-duration: 1s;
 }
 @media screen and (min-width: 768px) {
   .water-hero__o2 {
-    max-width: 350px;
+    max-width: 400px;
+  }
+}
+
+.water-logo__block {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+
+.water-hero__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition-duration: 1s;
+  transform: scale(1.5);
+}
+.water-logo__block:hover .water-hero__link, .water-logo__block:focus .water-hero__link {
+  transition-duration: 1s;
+  transform: scale(1.6);
+  transition-timing-function: cubic-bezier(0.36, 0.89, 0.56, 1.11);
+}
+@media screen and (min-width: 768px) {
+  .water-hero__link {
+    margin: 0px;
+  }
+}
+
+.hero-logo {
+  position: absolute;
+  border-radius: 5px;
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  transition-duration: 1s;
+  stroke-width: 0.2px;
+}
+.water-logo__block:hover .hero-logo, .water-logo__block:focus .hero-logo {
+  transition-timing-function: cubic-bezier(0.36, 0.89, 0.56, 1.11);
+  box-shadow: inset 0 0 65px 10px rgba(3, 109, 176, 0.4078431373), 0 0 10px 5px #fc9402, 0 0 20px 5px #fc9802, 0 0 5px 2px rgba(0, 3, 5, 0.7725490196), inset 0 0 6px 1px rgba(0, 0, 0, 0.7725490196);
+}
+@media screen and (min-width: 650px) {
+  .hero-logo {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-logo {
+    width: 110px;
+    height: 110px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-logo {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.hero-logo__o {
+  transition-duration: 1s;
+  fill: aqua;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  fill: aqua;
+  border-radius: 35px;
+  stroke-opacity: 0.5;
+  stroke-width: 0.3px;
+  box-shadow: none;
+}
+.water-logo__block:hover .hero-logo__o, .water-logo__block:focus .hero-logo__o {
+  transition-timing-function: cubic-bezier(0.36, 0.89, 0.56, 1.11);
+  box-shadow: inset 0 0 10px 25px rgba(1, 91, 123, 0.4784313725), 0 0 10px 5px rgba(0, 73, 100, 0.4431372549);
+}
+@media screen and (min-width: 650px) {
+  .hero-logo__o {
+    width: 38px;
+    height: 38px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-logo__o {
+    width: 60px;
+    height: 60px;
+  }
+  .section-hero__logo:hover .hero-logo__o, .section-hero__logo:focus .hero-logo__o {
+    box-shadow: inset 0 0 10px 25px rgba(3, 109, 176, 0.4078431373), 0 0 10px 5px rgba(3, 109, 176, 0.4078431373);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-logo__o {
+    width: 68px;
+    height: 68px;
   }
 }
 
 .oxy-container__water {
-  margin: 0 auto;
+  margin: 0 auto 300px;
+  transform: scale(2);
 }
 
 /* Вертикальна лінія */
