@@ -143,17 +143,17 @@
    height: 100%;
    padding: 10px 8px;
    border-radius: 10px;
-   background-color: #be00ccc5;
+   background-color: #be00cca9;
 
-   font-weight: 600;
+   font-weight: 500;
    font-size: 8.5px;
    line-height: 1.16;
    letter-spacing: 0.02em;
-   color: $prim-histor-text;
+   color: $White-color;
 
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    font-style: italic;
-   text-shadow: 1px 1px 1px #000000,
+   text-shadow: 2px 1px 1px #000000,
       0px 1px 4px #000000,
       0px 0px 1px #000000;
    transform: translatex(-105%);
@@ -167,6 +167,7 @@
    }
 
    @media screen and (min-width: 768px) {
+      font-weight: 400;
       padding: 10px 10px;
       font-size: 9px;
       line-height: 1.18;
