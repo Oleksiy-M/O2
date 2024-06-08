@@ -65,6 +65,13 @@ body {
 
 .advantages-section {
   display: block;
+  margin: 0 0 200px;
+  transform: translateY(80px);
+  transition-duration: 0.5s;
+}
+.anime-section2:hover .advantages-section, .anime-section2:focus .advantages-section {
+  transition-timing-function: cubic-bezier(0, 0.84, 0.79, 0.81);
+  transform: translateY(0px) scale(1.03);
 }
 
 .advantages-list {
@@ -172,7 +179,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 0 0px;
+  margin: 0 0 200px;
+  transform: translateY(80px);
+  transition-duration: 0.5s;
+}
+.anime-section3:hover .section-case, .anime-section3:focus .section-case {
+  transition-timing-function: cubic-bezier(0, 0.84, 0.79, 0.81);
+  transform: translateY(0px) scale(1.03);
 }
 
 .head__box {
@@ -228,7 +241,7 @@ body {
 @media screen and (min-width: 1200px) {
   .title__head {
     font-weight: 900;
-    font-size: 26px;
+    font-size: 28px;
     line-height: 1.86;
     letter-spacing: 0.11em;
   }
@@ -320,17 +333,24 @@ body {
 
 .section-project {
   display: flex;
-  margin: 150px auto 20px;
+  margin: 150px auto 80px;
   align-items: center;
   flex-direction: column;
   position: relative;
+  transform: translateY(80px);
+  transition-duration: 0.5s;
+}
+.anime-section4:hover .section-project, .anime-section4:focus .section-project {
+  transition-timing-function: cubic-bezier(0, 0.84, 0.79, 0.81);
+  transform: translateY(0px) scale(1.03);
 }
 
 .project-hero {
   width: 100%;
   background-size: cover;
   object-fit: contain;
-  border: 2px solid rgba(181, 248, 248, 0.8);
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 @media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
   .project-hero {
@@ -400,7 +420,7 @@ body {
   text-transform: uppercase;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6352941176), 0px 1px 1px rgba(0, 0, 0, 0.6666666667);
   color: #33FF99;
-  border: 1.5px solid rgb(255, 255, 255);
+  border: 1.5px solid #ffffff;
   border-radius: 25px;
   transition-duration: 0.5s;
   background-color: rgba(0, 119, 255, 0.6392156863);
@@ -409,6 +429,7 @@ body {
   margin: 0 40px 0 0;
 }
 .project-item:hover, .project-item:focus {
+  border: 4px solid #ffffff;
   background-color: #0077ff;
   color: #ffffff;
   transform: scale(1.04);
@@ -647,48 +668,48 @@ body {
   fill: #FF8230;
 }
 
-.hero-head {
-  display: block;
-  justify-content: center;
-  margin: 0;
-  padding-top: 100px;
-}
-@media screen and (min-width: 650px) {
-  .hero-head {
-    padding: 0px;
-  }
-}
-
-.hero-head__list {
-  padding: 0;
-}
-
 .hero-head__water {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0px 35px 50px;
+  padding: 100px 35px 50px;
   transition-duration: 1s;
 }
 @media screen and (min-width: 350px) {
   .hero-head__water {
-    margin: 30px 0 50px;
+    padding: 30px 0 50px;
   }
 }
 @media screen and (min-width: 650px) {
   .hero-head__water {
-    margin-top: 130px;
+    padding: 130px;
   }
 }
 @media screen and (min-width: 768px) {
   .hero-head__water {
-    margin: 60px 0 60px;
+    padding: 60px 0 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-head__water {
-    margin: 70px 250px 30px;
+    padding: 70px 250px 30px;
   }
+}
+
+.anime-section {
+  margin: 0;
+}
+
+.anime-section2 {
+  margin: 0;
+}
+
+.anime-section3 {
+  margin: 0;
+}
+
+.anime-section4 {
+  padding: 0 0 50px;
 }
 
 .section-hero__logo {
@@ -698,7 +719,10 @@ body {
   margin: 0 0 450px;
   background-size: cover;
   position: relative;
-  border: 2px solid rgba(181, 248, 248, 0.8);
+  border-top: 2px solid rgba(181, 248, 248, 0.8);
+  border-bottom: 2px solid rgba(181, 248, 248, 0.8);
+  transform: translateY(80px);
+  transition-duration: 0.5s;
 }
 @media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
   .section-hero__logo {
@@ -706,6 +730,14 @@ body {
     height: 70vw;
     background-image: url("../img/family/family-mobil@2x.webp");
   }
+}
+.section-hero__logo:hover, .section-hero__logo:focus {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+.anime-section:hover .section-hero__logo, .anime-section:focus .section-hero__logo {
+  transition-timing-function: cubic-bezier(0, 0.84, 0.79, 0.81);
+  transform: translateY(0px) scale(1.03);
 }
 @media screen and (min-width: 768px) {
   .section-hero__logo {
@@ -723,6 +755,7 @@ body {
 @media screen and (min-width: 1200px) {
   .section-hero__logo {
     background-position: bottom;
+    margin: 0 0 200px;
     height: 450px;
     max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/family/family.webp");
@@ -904,7 +937,7 @@ body {
   color: aqua;
   transform: rotateX(15deg);
   transition-duration: 1s;
-  text-shadow: 0px 3px 2px #017b73, 0px 0px 1px #FFFFFF;
+  text-shadow: 0px 3px 2px #00514b, 0px 3px 2px #000000, 0px 0px 1px #FFFFFF;
 }
 
 .idustry {
@@ -936,6 +969,7 @@ body {
   position: relative;
   background-size: cover;
   background-position: top;
+  transition-duration: 0.5s;
 }
 @media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
   .section-hero__industry {
@@ -990,6 +1024,7 @@ body {
 .develo-eco__hand {
   display: flex;
   margin: 0px 0 0px 25px;
+  z-index: 2;
 }
 @media screen and (min-width: 768px) {
   .develo-eco__hand {
@@ -999,7 +1034,7 @@ body {
 }
 
 .hand-hero {
-  z-index: 3;
+  z-index: 2;
 }
 @media screen and (min-width: 768px) {
   .hand-hero {
@@ -1205,10 +1240,11 @@ body {
 
 .develo-eco__line {
   margin-left: -40px;
+  z-index: -1;
 }
 @media screen and (min-width: 768px) {
   .develo-eco__line {
-    margin: 0px 0 0 0;
+    margin: 0;
   }
 }
 
@@ -1289,7 +1325,7 @@ body {
   width: 35px;
   border: 1px solid #0000FF;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3019607843);
-  z-index: 5;
+  z-index: -1;
 }
 .develo-eco__content:hover .develo-eco___decor3, .develo-eco__content:focus .develo-eco___decor3 {
   border: 1px solid aqua;
@@ -1395,6 +1431,7 @@ body {
   width: 30px;
   border: 1px solid #0000FF;
   box-shadow: 0px 0px 3px 3px rgba(89, 60, 234, 0.3019607843);
+  z-index: -1;
 }
 .develo-eco__content:hover .develo-eco___decor6, .develo-eco__content:focus .develo-eco___decor6 {
   border: 1px solid aqua;
@@ -2340,6 +2377,7 @@ body {
 
 .section-bg {
   position: relative;
+  z-index: 0;
   padding: 90px 3px 100px 3px;
   margin: 0 auto 40px;
   border-radius: 5px;
@@ -2348,6 +2386,7 @@ body {
   background-position: center;
   background-size: cover;
   background-image: linear-gradient(to bottom, rgba(1, 19, 107, 0.4470588235) 10%, rgba(10, 1, 60, 0.6392156863) 99%), url(../img/develo-eco/develo-mobil.webp);
+  transition-duration: 0.5s;
 }
 @media screen and (min-width: 768px) {
   .section-bg {
