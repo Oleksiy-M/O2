@@ -3552,7 +3552,12 @@ body {
 
 .oxy-container__water {
   margin: 0 auto 400px;
-  transform: scale(2);
+  transform: scale(1.5);
+}
+@media screen and (min-width: 1200px) {
+  .oxy-container__water {
+    transform: scale(2);
+  }
 }
 
 /* Вертикальна лінія */
