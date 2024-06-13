@@ -3443,6 +3443,15 @@ body {
   transform: scale(1.25);
   transition-timing-function: cubic-bezier(0.36, 0.89, 0.56, 1.11);
 }
+@media screen and (min-width: 768px) {
+  .water-head__water {
+    transform: scale(1.4);
+  }
+  .water-head__water:hover, .water-head__water:focus {
+    transform: scale(1.45);
+    transition-timing-function: cubic-bezier(0.36, 0.89, 0.56, 1.11);
+  }
+}
 
 .water-hero {
   margin: 0px 0 150px;
@@ -3554,7 +3563,7 @@ body {
   margin: 0 auto 400px;
   transform: scale(1.5);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .oxy-container__water {
     transform: scale(2);
   }

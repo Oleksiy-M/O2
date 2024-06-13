@@ -38,14 +38,22 @@
 .water-head__water{
    margin: 100px auto;
    transform: scale(1.2);
-      transition-duration: 1s;
    &:hover,
    &:focus {
 transform: scale(1.25);
 transition-timing-function: $anime-text;
    }
+      transition-duration: 1s;
+      @media screen and (min-width: 768px) {
+         
+         transform: scale(1.4);
+         &:hover,
+         &:focus {
+      transform: scale(1.45);
+      transition-timing-function: $anime-text;
+         }
 }
-
+}
 
 
 
@@ -198,7 +206,7 @@ transition-timing-function: $anime-text;
    margin: 0 auto 400px;
 transform: scale(1.5);
 
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 768px) {
    transform: scale(2);
 
 }
