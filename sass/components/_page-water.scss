@@ -204,25 +204,10 @@ transition-timing-function: $anime-text;
 
 .oxy-container__water {
    margin: 0 auto 400px;
-transform: scale(1.5);
-
-      @media screen and (min-width: 768px) {
-   transform: scale(2);
 
 }
-}
 
-/* Вертикальна лінія */
-// .deco-container__vertical-line {
-//    position: absolute;
-//    background-color: #ddff00;
-//    width: 2px;
-//    height: 100%;
-//    left: 50%;
-//    /* Поміщаємо лінію в середину контейнера по горизонталі */
-//    // transform: translateX(-50%);
-//    /* Це потрібно для коректного центрування по горизонталі */
-// }
+
 
 
 

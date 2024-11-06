@@ -218,9 +218,10 @@
 		// transform: rotateX(0deg);
 		transition-timing-function: $anime-text;
 	}
+	margin: 120px 0 60px;
 
 	@media screen and (min-width: 768px) {
-		margin: 0px;
+		margin-bottom: 60px;
 	}
 
 
@@ -322,18 +323,18 @@
 
 
 .oxy-container {
-	position: absolute;
-	max-width: 250px;
-	min-width: 150px;
-	border-radius: 15px;
-	top: 75px;
-
+	// position: absolute;
+	// max-width: 250px;
+	// min-width: 150px;
+	// border-radius: 15px;
+	// top: 380px;
+margin-top: 0px;
 	@media screen and (min-width: 768px) {
-		width: 170px;
+		width: 400px;
 	}
 
 	@media screen and (min-width: 1200px) {
-		width: 250px;
+		width: 450px;
 
 	}
 }
@@ -341,7 +342,7 @@
 .hero-title__box {
 	text-align: center;
 	text-wrap: nowrap;
-	top: 130px;
+	top: 270px;
 	position: absolute;
 	width: 100vw;
 	perspective: 300px;
@@ -358,13 +359,13 @@
 
 	@media screen and (min-width: 768px) {
 		width: 350px;
-		top: 160px;
+		top: 350px;
 	}
 
 	@media screen and (min-width: 1200px) {
 		width: 500px;
 		// text-align: center;
-		top: 180px;
+		top: 350px;
 
 		transition-duration: 1s;
 
