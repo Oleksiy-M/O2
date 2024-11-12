@@ -3133,7 +3133,7 @@ body {
   justify-content: center;
   align-items: center;
   transition-duration: 1s;
-  border: 6px solid #1f243e;
+  border: 6px solid #1e2650;
   margin: 1px 0 0;
 }
 .cards__item:hover .cards__thumb, .cards__item:focus .cards__thumb {
@@ -3400,7 +3400,7 @@ body {
 .cadr-svg {
   position: absolute;
   pointer-events: none;
-  fill: #1f243e;
+  fill: #1e2650;
   width: 102%;
   height: 100%;
   transition-duration: 2s;
