@@ -275,7 +275,7 @@ font-weight: 100;
 
    @media screen and (min-width: 1200px) {
       width: 1600px;
-      margin: 0 0 60px;
+      margin: 0 0 50px;
       // transform: translateX(-215px);
       // height: auto;
    }
@@ -307,12 +307,12 @@ font-weight: 100;
 @keyframes moveRightToLeft {
 
    0% {
-      transform: translateX(46vw);
+      transform: translateX(705px);
    }
 
    100% {
 
-      transform: translateX(calc(-52vw));
+      transform: translateX(calc(-800px));
    }
 }
 
