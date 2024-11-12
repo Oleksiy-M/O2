@@ -5,7 +5,7 @@
    display: flex;
    justify-content: right;
    position: absolute;
-   z-index: 4;
+   z-index: 2;
    top: 200px;
    animation: moveLeftToRight 90s linear infinite normal;
    animation-timing-function: cubic-bezier(0, .4, 0, .26);
@@ -25,11 +25,8 @@
 }
 
 .gif-dirigible {
-
    height: 50px;
    width: 150px;
-
-
 
    @media screen and (min-width: 1200px) {
       width: 200px;
@@ -41,18 +38,18 @@
 
 @keyframes moveLeftToRight {
    0% {
-      transform: translatex(70vw);
+      transform: translatex(65vw);
    }
 
    100% {
-      transform: translatex(-60vw);
+      transform: translatex(-45vw);
    }
 }
 
 
 .container__anime {
    display: flex;
-   // width: 100vw;
+  z-index: 0;
    justify-content: center;
    position: relative;
    height: 400px;
@@ -60,7 +57,7 @@
    margin: 0;
 
    width: calc(100% + 30px);
-   transform: translateX(-15px);
+   // transform: translateX(-15px);
    align-items: top;
    // flex-wrap: wrap;
    overflow: hidden;
@@ -69,13 +66,13 @@
    @media screen and (min-width: 768px) {
       width: calc(100% + 290px);
       height: 400px;
-      transform: translateX(-145px);
+      // transform: translateX(-145px);
 
    }
 
    @media screen and (min-width: 1200px) {
-      width: calc(100% + 440px);
-      transform: translateX(-220px);
+      width: calc(100% );
+      // transform: translateX(-220px);
       height: 450px;
       // margin: 0 -200px;
 
@@ -94,7 +91,7 @@
    justify-content: space-evenly;
    padding: 60px 0 0px;
    top: 0;
-   z-index: 2;
+   z-index: 1;
    animation: moveDaynight 40s linear infinite normal;
    animation-timing-function: $anime-section;
 
@@ -495,13 +492,13 @@
 
 .trans-gif {
    transform: translateY(-156px);
-
    @media screen and (min-width: 1200px) {
       transform: translateY(-152px);
    }
 }
 
 .box-gif {
+   z-index: 5;
    pointer-events: none;
    position: relative;
    display: flex;
@@ -550,7 +547,7 @@
    display: flex;
    justify-content: left;
    width: 150px;
-
+z-index: 5;
    // .section-card:hover &,
    // .section-card:focus & {
    //    display: none;
@@ -578,7 +575,7 @@
    display: none;
    justify-content: left;
    width: 150px;
-
+z-index: 5;
    // .section-card:hover &,
    // .section-card:focus & {
 

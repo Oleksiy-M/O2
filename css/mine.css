@@ -2870,6 +2870,7 @@ body {
   display: block;
   padding: 80px 0 0;
   margin: 0px auto 15px;
+  z-index: -2;
   animation: changeBgColor 40s linear infinite normal;
   border-radius: 5px;
   border-top: 4px solid rgba(45, 1, 38, 0.5529411765);
@@ -3219,7 +3220,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .cards__title {
-    margin: -5px 0 0;
+    margin: -9px 0 0;
     font-size: 11px;
   }
 }
@@ -3250,7 +3251,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .cards__text {
-    margin: 0px 0 -7px;
+    margin: 0px 0 -10px;
     font-size: 10px;
   }
 }
@@ -3295,10 +3296,10 @@ body {
 }
 @keyframes moveRightToLeft {
   0% {
-    transform: translateX(640px);
+    transform: translateX(46vw);
   }
   100% {
-    transform: translateX(-805px);
+    transform: translateX(-52vw);
   }
 }
 .cards {
@@ -3306,7 +3307,6 @@ body {
   justify-content: center;
   padding: 0px;
   margin: 0;
-  animation-timing-function: ease-out;
   animation: moveRightToLeftMobil 15s linear infinite;
 }
 .cards:hover, .cards:focus {
@@ -3349,7 +3349,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .cards__item {
-    padding: 0;
+    padding: 0 5px;
     height: 220px;
   }
 }
@@ -3514,7 +3514,7 @@ body {
   display: flex;
   justify-content: right;
   position: absolute;
-  z-index: 4;
+  z-index: 2;
   top: 200px;
   animation: moveLeftToRight 90s linear infinite normal;
   animation-timing-function: cubic-bezier(0, 0.4, 0, 0.26);
@@ -3532,21 +3532,21 @@ body {
 
 @keyframes moveLeftToRight {
   0% {
-    transform: translatex(70vw);
+    transform: translatex(65vw);
   }
   100% {
-    transform: translatex(-60vw);
+    transform: translatex(-45vw);
   }
 }
 .container__anime {
   display: flex;
+  z-index: 0;
   justify-content: center;
   position: relative;
   height: 400px;
   padding: 60px 0 0px;
   margin: 0;
   width: calc(100% + 30px);
-  transform: translateX(-15px);
   align-items: top;
   overflow: hidden;
   min-width: 260px;
@@ -3555,13 +3555,11 @@ body {
   .container__anime {
     width: calc(100% + 290px);
     height: 400px;
-    transform: translateX(-145px);
   }
 }
 @media screen and (min-width: 1200px) {
   .container__anime {
-    width: calc(100% + 440px);
-    transform: translateX(-220px);
+    width: 100%;
     height: 450px;
   }
 }
@@ -3574,7 +3572,7 @@ body {
   justify-content: space-evenly;
   padding: 60px 0 0px;
   top: 0;
-  z-index: 2;
+  z-index: 1;
   animation: moveDaynight 40s linear infinite normal;
   animation-timing-function: cubic-bezier(0.05, 1.12, 0.001, -0.115);
 }
@@ -3867,6 +3865,7 @@ body {
 }
 
 .box-gif {
+  z-index: 5;
   pointer-events: none;
   position: relative;
   display: flex;
@@ -3904,6 +3903,7 @@ body {
   display: flex;
   justify-content: left;
   width: 150px;
+  z-index: 5;
 }
 
 .section-card:hover + .aqueduct-bild .gif-container__move,
@@ -3921,4 +3921,5 @@ body {
   display: none;
   justify-content: left;
   width: 150px;
+  z-index: 5;
 }/*# sourceMappingURL=mine.css.map */
