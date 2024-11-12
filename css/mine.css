@@ -3737,12 +3737,7 @@ body {
   display: flex;
   position: absolute;
   overflow: hidden;
-  bottom: 42px;
-}
-@media screen and (min-width: 768px) {
-  .gif-box__water {
-    bottom: 32px;
-  }
+  bottom: 30px;
 }
 
 .gif-water {
@@ -3762,7 +3757,7 @@ body {
 .aqueduct-bild {
   display: flex;
   width: 100%;
-  bottom: 0;
+  bottom: -10px;
   overflow: hidden;
   position: absolute;
 }

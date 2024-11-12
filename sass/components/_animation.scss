@@ -412,10 +412,8 @@
    display: flex;
    position: absolute;
    overflow: hidden;
-   bottom: 42px;
-@media screen and (min-width: 768px) {
-      bottom: 32px;
-   }
+
+      bottom: 30px;
 
 }
 
@@ -437,12 +435,14 @@
 .aqueduct-bild {
    display: flex;
    width: 100%;
-   bottom: 0;
+   // height: 50px;
+   bottom: -10px;
    overflow: hidden;
    position: absolute;
 
    @media screen and (min-width: 768px) {
       width: 738px;
+      // height: 70px;
       bottom: 0;
    }
 
