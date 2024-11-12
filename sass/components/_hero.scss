@@ -1,37 +1,10 @@
-// < !-- Water -->
 
-// .hero-head {
-// 	display: block;
-// 	justify-content: center;
-// 	margin: 0;
-	
-// 	@media screen and (min-width: 650px) {
-// 		// display: flex;
-// 		padding: 0px;
-// 		}
-		
-// 		}
-		
-		
 		
 		.hero-head__water {
 			display: flex;
 			justify-content: center;
-			align-items: center;
 		
 	padding: 100px 35px 50px;
-	transition-duration: 1s;
-
-	// .page-header+.section-hero__logo:hover &,
-	// .page-header+.section-hero__logo :focus &{
-	// 		      transform: translateY(15px);
-	// 		   }
-	// .hero-head:hover &,
-	// .hero-head:focus & {
-	// 	transition-duration: 0.5s;
-	// 	animation-timing-function: $anime-card-industry;
-	// 	transform: scalex(1.03);
-	// }
 
 	@media screen and (min-width: 350px) {
 		padding: 130px 0 50px;
@@ -48,7 +21,7 @@
 
 	@media screen and (min-width: 1200px) {
 
-		padding: 70px 250px 30px;
+		padding: 70px 0 30px;
 
 	}
 }
@@ -57,7 +30,6 @@
 
 
 // < !-- Logo -->
-
 
 
 .anime-section{
@@ -330,11 +302,11 @@
 	// top: 380px;
 margin-top: 0px;
 	@media screen and (min-width: 768px) {
-		width: 400px;
+		width: 350px;
 	}
 
 	@media screen and (min-width: 1200px) {
-		width: 450px;
+		width: 400px;
 
 	}
 }

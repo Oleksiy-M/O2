@@ -254,7 +254,7 @@
          transition-duration: 800ms;
          user-select: none;
          letter-spacing: 0.05em;
-         font-weight: bold;
+         font-weight: 300;
 
          .box-article:hover &,
          .box-article:focus & {
@@ -276,7 +276,7 @@
          user-select: none;
 
         
-         font-weight: bolder;
+         font-weight: 300;
          font-size: 17px;
          line-height: 1.5;
          letter-spacing: 0.08em;
@@ -299,7 +299,7 @@
          user-select: none;
          // text-align: left;
   
-         font-weight: bold;
+         font-weight: 300;
          font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
          font-size: 12px;
          line-height: 1.5;
@@ -324,7 +324,7 @@
       .article-aqueduct::first-letter {
          font-family: 'Tahoma', serif;
          font-size: 16px;
-         font-weight: bolder;
+         font-weight: 300;
          // color: #ffe291;
          // letter-spacing: 0.18em;
       }
