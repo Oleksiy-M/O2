@@ -64,19 +64,12 @@ body {
 
 .advantages-section {
   display: block;
-  margin: 0 0 200px;
-  transform: translateY(80px);
-  transition-duration: 0.5s;
-}
-.anime-section2:hover .advantages-section, .anime-section2:focus .advantages-section {
-  transition-timing-function: cubic-bezier(0, 0.84, 0.79, 0.81);
-  transform: translateY(0px) scale(1.03);
 }
 
 .advantages-list {
   list-style-type: decimal;
   display: block;
-  margin: 0 0 100px;
+  margin: 0 0 200px;
 }
 @media screen and (min-width: 768px) {
   .advantages-list {
@@ -178,13 +171,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 0 200px;
-  transform: translateY(80px);
-  transition-duration: 0.5s;
-}
-.anime-section3:hover .section-case, .anime-section3:focus .section-case {
-  transition-timing-function: cubic-bezier(0, 0.84, 0.79, 0.81);
-  transform: translateY(0px) scale(1.03);
+  padding: 0 0 200px;
 }
 
 .head__box {
@@ -332,19 +319,15 @@ body {
 
 .section-project {
   display: flex;
-  margin: 150px auto 80px;
+  margin: 0px auto 80px;
   align-items: center;
   flex-direction: column;
   position: relative;
-  transform: translateY(80px);
-  transition-duration: 0.5s;
-}
-.anime-section4:hover .section-project, .anime-section4:focus .section-project {
-  transition-timing-function: cubic-bezier(0, 0.84, 0.79, 0.81);
-  transform: translateY(0px) scale(1.03);
 }
 
 .project-hero {
+  display: flex;
+  justify-content: center;
   width: 100%;
   background-size: cover;
   object-fit: contain;
@@ -670,17 +653,7 @@ body {
 .hero-head__water {
   display: flex;
   justify-content: center;
-  padding: 100px 35px 50px;
-}
-@media screen and (min-width: 350px) {
-  .hero-head__water {
-    padding: 130px 0 50px;
-  }
-}
-@media screen and (min-width: 650px) {
-  .hero-head__water {
-    padding: 130px;
-  }
+  padding: 130px 15px 50px;
 }
 @media screen and (min-width: 768px) {
   .hero-head__water {
@@ -689,24 +662,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero-head__water {
-    padding: 70px 0 30px;
+    padding: 300px 0 140px;
   }
-}
-
-.anime-section {
-  margin: 0;
-}
-
-.anime-section2 {
-  margin: 0;
-}
-
-.anime-section3 {
-  margin: 0;
-}
-
-.anime-section4 {
-  padding: 0 0 50px;
 }
 
 .section-hero__logo {
@@ -752,7 +709,7 @@ body {
 @media screen and (min-width: 1200px) {
   .section-hero__logo {
     background-position: bottom;
-    margin: 0 0 200px;
+    margin: 0 0 260px;
     height: 450px;
     max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/family/family.webp");
@@ -778,7 +735,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  transform: translateY(250px);
+  transform: translateY(350px);
   padding: 0;
 }
 @media screen and (min-width: 768px) {
@@ -3189,7 +3146,7 @@ body {
   color: #FFFFFF;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-style: italic;
-  text-shadow: 2px 1px 1px #000000, 0px 1px 4px #000000, 0px 0px 1px #000000;
+  text-shadow: 1px 1px 1px #000000, 0px 1px 1px #000000, 0px 0px 1px #000000;
   transform: translatex(-105%);
   transition-duration: 1s;
   opacity: 0;
@@ -3413,7 +3370,7 @@ body {
 
 .page-water {
   display: block;
-  padding: 80px 0 50px 0;
+  padding: 130px 0 50px 0;
   position: relative;
   margin: 0 0 300px 0;
 }
@@ -3427,7 +3384,7 @@ body {
 @media screen and (min-width: 1200px) {
   .page-water {
     margin: 0 auto;
-    padding: 0px 0 20px;
+    padding: 300px 0 120px;
     max-width: 1600px;
   }
 }
@@ -3440,7 +3397,7 @@ body {
 }
 
 .water-head__water {
-  margin: 70px auto 150px;
+  margin: 0px auto 240px;
 }
 
 .water-hero {

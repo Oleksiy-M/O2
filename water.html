@@ -11,6 +11,9 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
    <link rel="stylesheet" href="./css/mine.min.css">
    <link rel="icon" type="image/png" href="./favicon.png" sizes="16x16">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+
 
 </head>
 
@@ -70,7 +73,7 @@
 
          <section class=" container list">
             <ul class="water-list list">
-               <li class="water-head__water ">
+               <li data-aos="fade-up" data-aos-duration="2000"  class="water-head__water ">
                   <picture>
                      <source srcset="./img/water/water.webp 1x, ./img/water/water@2x.webp 2x"
                         media="(min-width: 1200px)" type="img/webp">
@@ -93,12 +96,12 @@
        
 
 
-         <li class="water-hero">
+         <li data-aos="fade-up" data-aos-duration="2000"  class="water-hero">
             <img class="water-hero__o2" src="./img/o2/o2.png" alt="">
          </li>
 
             <!-- Logo -->
-            <li class="water-logo__block">
+            <li data-aos="fade-up" data-aos-duration="2000"  class="water-logo__block">
                <a class="water-hero__link link" href="./index.html">
                   <svg class="water-hero-logo">
                      <use href="./img/sprite.svg#logo"></use>
@@ -111,7 +114,7 @@
 
          <!-- Oxy -->
 
-         <li class="oxy-container__water ">
+         <li data-aos="fade-up" data-aos-duration="2000"  class="oxy-container__water ">
 
             <picture>
                <source srcset="./img/oxy/oxygen.webp 1x, ./img/oxy/oxygen@2x.webp 2x" media="(min-width: 1200px)"
@@ -215,6 +218,8 @@
 
    </footer>
 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+      <script> AOS.init(); </script>
 
    <script src="./js/test.js"></script>
    <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>

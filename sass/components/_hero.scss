@@ -4,16 +4,16 @@
 			display: flex;
 			justify-content: center;
 		
-	padding: 100px 35px 50px;
+	// padding: 100px 35px 50px;
+	padding: 130px 15px 50px;
 
-	@media screen and (min-width: 350px) {
-		padding: 130px 0 50px;
-	}
+	// @media screen and (min-width: 350px) {
+	// }
 
-	@media screen and (min-width: 650px) {
-		padding: 130px;
+	// @media screen and (min-width: 650px) {
+	// 	padding: 0px 0 80px;
 
-	}
+	// }
 
 	@media screen and (min-width: 768px) {
 		padding: 60px 0 60px;
@@ -21,7 +21,7 @@
 
 	@media screen and (min-width: 1200px) {
 
-		padding: 70px 0 30px;
+		padding: 300px 0 140px;
 
 	}
 }
@@ -32,19 +32,19 @@
 // < !-- Logo -->
 
 
-.anime-section{
-	margin: 0;
-}
+// .anime-section{
+// 	margin: 0;
+// }
 
-.anime-section2{
-		margin: 0;
-}
-.anime-section3{
-		margin: 0;
-}
-.anime-section4{
-		padding: 0 0 50px;
-}
+// .anime-section2{
+// 		margin: 0;
+// }
+// .anime-section3{
+// 		margin: 0;
+// }
+// .anime-section4{
+// 		padding: 0 0 50px;
+// }
 
 .section-hero__logo {
 
@@ -68,9 +68,7 @@
 			url("../img/family/family-mobil@2x.webp");
 	}
 		transform: translateY(80px);
-
 		transition-duration: 0.5s;
-		
 		
 	   &:hover,
 	   &:focus {
@@ -109,7 +107,7 @@
 
 	@media screen and (min-width: 1200px) {
 		background-position: bottom;
-			margin: 0 0 200px;
+			margin: 0 0 260px;
 		height: 450px;
 		max-width: 1600px;
 		background-image:
@@ -149,7 +147,7 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	transform: translateY(250px);
+	transform: translateY(350px);
 
 	// max-width: 120px;
 	// max-height: 120px;
