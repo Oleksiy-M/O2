@@ -3132,9 +3132,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3px 0 0;
   transition-duration: 1s;
-  border: 5px solid #1f243e;
+  border: 6px solid #1f243e;
+  margin: 1px 0 0;
 }
 .cards__item:hover .cards__thumb, .cards__item:focus .cards__thumb {
   border-radius: 10px;
@@ -3244,7 +3244,7 @@ body {
   color: #d5d095;
   transition-duration: 3s;
   z-index: 2;
-  margin: 0;
+  margin: -3px 0 0px;
 }
 .section-card:hover .cards__title, .section-card:focus .cards__title {
   transition-duration: 0.5s;
@@ -3275,7 +3275,7 @@ body {
   color: #fffdd1;
   transition-duration: 3s;
   z-index: 2;
-  margin: 0px 0 -2px;
+  margin: 0px 0 -5px;
 }
 .section-card:hover .cards__text, .section-card:focus .cards__text {
   transition-duration: 0.5s;
@@ -3322,10 +3322,10 @@ body {
 
 @keyframes moveRightToLeftMobil {
   0% {
-    transform: translateX(545px);
+    transform: translateX(565px);
   }
   100% {
-    transform: translateX(-545px);
+    transform: translateX(-565px);
   }
 }
 @keyframes moveRightToLeftLeptop {
@@ -3341,7 +3341,7 @@ body {
     transform: translateX(640px);
   }
   100% {
-    transform: translateX(-810px);
+    transform: translateX(-805px);
   }
 }
 .cards {

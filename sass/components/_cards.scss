@@ -35,9 +35,9 @@
    align-items: center;
    // position: relative;
    // overflow: hidden;
-   margin: 3px 0 0;
    transition-duration: 1s;
-   border: 5px solid #1f243e;
+   border: 6px solid #1f243e;
+   margin: 1px 0 0;
    
    
    .cards__item:hover &,
@@ -49,7 +49,7 @@
    }
    @media screen and (min-width: 768px) {
       margin: 1px 0 0;
-           border: 3px solid #1f243e;
+       border: 3px solid #1f243e;
             .cards__item:hover &,
              .cards__item:focus & {
                transform: scale(1.9);
@@ -198,7 +198,7 @@
       transition-duration: 0.1s;
    }
 
-   margin: 0;
+   margin: -3px 0 0px;
 
    @media screen and (min-width: 768px) {
       margin: -3px 0 0px;
@@ -235,7 +235,7 @@ font-weight: 100;
    }
 
    // margin: 0px 0 0px;
-   margin: 0px 0 -2px;
+   margin: 0px 0 -5px;
    
    @media screen and (min-width: 768px) {
       font-size: 8px;
@@ -283,12 +283,12 @@ font-weight: 100;
 @keyframes moveRightToLeftMobil {
 
    0% {
-      transform: translateX(545px);
+      transform: translateX(565px);
    }
 
    100% {
 
-      transform: translateX(calc(-545px));
+      transform: translateX(calc(-565px));
    }
 }
 
@@ -312,7 +312,7 @@ font-weight: 100;
 
    100% {
 
-      transform: translateX(calc(-810px));
+      transform: translateX(calc(-805px));
    }
 }
 
@@ -342,6 +342,7 @@ font-weight: 100;
    }
    
    @media screen and (min-width: 1200px) {
+      // width: 1600px;
       animation: moveRightToLeft 20s linear infinite;
    }
 }
