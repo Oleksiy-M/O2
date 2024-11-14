@@ -44,7 +44,7 @@ body {
 .page-header {
   display: block;
   position: relative;
-  padding: 0 0 100px;
+  padding: 0px 0 100px;
   margin: 0 auto;
   justify-content: center;
 }
@@ -202,18 +202,18 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-weight: bolder;
-  font-size: 17px;
+  font-size: 26px;
   line-height: 1.86;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.02em;
   color: aqua;
   transition-duration: 2s;
 }
 @media screen and (min-width: 768px) {
   .title__head {
     font-weight: 900;
-    font-size: 20px;
+    font-size: 26px;
     line-height: 1.86;
-    letter-spacing: 0.11em;
+    letter-spacing: 0.04em;
   }
 }
 .section-hero__industry:hover .title__head, .section-hero__industry:focus .title__head {
@@ -227,9 +227,9 @@ body {
 @media screen and (min-width: 1200px) {
   .title__head {
     font-weight: 900;
-    font-size: 28px;
+    font-size: 30px;
     line-height: 1.86;
-    letter-spacing: 0.11em;
+    letter-spacing: 0.08em;
   }
 }
 
@@ -653,11 +653,11 @@ body {
 .hero-head__water {
   display: flex;
   justify-content: center;
-  padding: 130px 15px 50px;
+  padding: 230px 15px 100px;
 }
 @media screen and (min-width: 768px) {
   .hero-head__water {
-    padding: 60px 0 60px;
+    padding: 160px 0 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2869,7 +2869,7 @@ body {
 .history-section {
   display: block;
   padding: 80px 0 0;
-  margin: 0px auto 15px;
+  margin: 0px auto 0px;
   z-index: -2;
   animation: changeBgColor 40s linear infinite normal;
   border-radius: 5px;
@@ -3097,7 +3097,7 @@ body {
 .cards__item:hover .cards__thumb, .cards__item:focus .cards__thumb {
   border-radius: 10px;
   border: 2px solid #ffffff;
-  transform: scale(1.5);
+  transform: scale(1.7);
 }
 @media screen and (min-width: 768px) {
   .cards__thumb {
@@ -3140,7 +3140,7 @@ body {
   height: 100%;
   padding: 10px 8px;
   background-color: rgba(111, 4, 173, 0.662745098);
-  font-weight: 100;
+  font-weight: 300;
   font-size: 7px;
   line-height: 1.16;
   letter-spacing: 0.04em;
@@ -3159,7 +3159,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .cards__alert {
-    font-weight: 100;
+    font-weight: 200;
     padding: 10px 10px;
     font-size: 8px;
     line-height: 1.28;
@@ -3259,7 +3259,7 @@ body {
 .section-card {
   display: flex;
   overflow: hidden;
-  padding: 0px 0 15px;
+  padding: 15px 0 15px;
   margin: 0 0px 5px;
   width: calc(100% + 30px);
 }
@@ -3370,7 +3370,7 @@ body {
 
 .page-water {
   display: block;
-  padding: 130px 0 50px 0;
+  padding: 230px 0 0px 0;
   position: relative;
   margin: 0 0 300px 0;
 }
@@ -3378,7 +3378,7 @@ body {
   .page-water {
     margin: 0 0 0px 0;
     background-image: linear-gradient(to bottom, rgba(1, 89, 204, 0.8823529412) 30%, rgba(0, 21, 116, 0.8470588235) 85%);
-    padding: 50px 0 20px;
+    padding: 160px 0 20px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -3397,7 +3397,7 @@ body {
 }
 
 .water-head__water {
-  margin: 0px auto 240px;
+  margin: 0px auto 140px;
 }
 
 .water-hero {
@@ -3742,22 +3742,25 @@ body {
 
 .gif-water {
   width: calc(50vw - 15px);
+  height: 20px;
 }
 @media screen and (min-width: 768px) {
   .gif-water {
     width: 364px;
+    height: 35px;
   }
 }
 @media screen and (min-width: 1200px) {
   .gif-water {
     width: 585px;
+    height: 45px;
   }
 }
 
 .aqueduct-bild {
   display: flex;
   width: 100%;
-  bottom: -10px;
+  bottom: 0px;
   overflow: hidden;
   position: absolute;
 }
@@ -3770,7 +3773,6 @@ body {
 @media screen and (min-width: 1200px) {
   .aqueduct-bild {
     width: 1170px;
-    bottom: 0;
   }
 }
 

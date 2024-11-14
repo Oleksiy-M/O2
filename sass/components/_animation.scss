@@ -412,21 +412,28 @@
    display: flex;
    position: absolute;
    overflow: hidden;
-
-      bottom: 30px;
-
+   // align-items:last baseline;
+ 
+   bottom: 30px;
+   
+   
 }
 
 
 .gif-water {
    width: calc(50vw - 15px);
-
+   height: 20px;
+// margin: 0px 0 0;
+// bottom: ;
    @media screen and (min-width: 768px) {
       width: 364px;
+      height: 35px;
+      
    }
 
    @media screen and (min-width: 1200px) {
       width: 585px;
+      height: 45px;
    }
 }
 
@@ -436,7 +443,7 @@
    display: flex;
    width: 100%;
    // height: 50px;
-   bottom: -10px;
+   bottom: 0px;
    overflow: hidden;
    position: absolute;
 
@@ -448,7 +455,7 @@
 
    @media screen and (min-width: 1200px) {
       width: 1170px;
-      bottom: 0;
+      // bottom: 0;
    }
 }
 
