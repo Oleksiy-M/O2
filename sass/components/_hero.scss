@@ -5,23 +5,16 @@
 			justify-content: center;
 		
 	// padding: 100px 35px 50px;
-	padding: 230px 15px 100px;
+	padding: 400px 15px 300px;
 
-	// @media screen and (min-width: 350px) {
-	// }
-
-	// @media screen and (min-width: 650px) {
-	// 	padding: 0px 0 80px;
-
-	// }
 
 	@media screen and (min-width: 768px) {
-		padding: 160px 0 60px;
+		padding: 240px 0 210px;
 	}
 
 	@media screen and (min-width: 1200px) {
 
-		padding: 300px 0 140px;
+		padding: 300px 0 200px;
 
 	}
 }
@@ -31,20 +24,6 @@
 
 // < !-- Logo -->
 
-
-// .anime-section{
-// 	margin: 0;
-// }
-
-// .anime-section2{
-// 		margin: 0;
-// }
-// .anime-section3{
-// 		margin: 0;
-// }
-// .anime-section4{
-// 		padding: 0 0 50px;
-// }
 
 .section-hero__logo {
 
@@ -85,7 +64,7 @@
 
 	@media screen and (min-width: 768px) {
 		// padding: 250px 0 20px;
-		margin: 0 auto 120px;
+		margin: 0 auto 0px;
 		height: 460px;
 		background-position: bottom;
 		background-image:
@@ -107,7 +86,7 @@
 
 	@media screen and (min-width: 1200px) {
 		background-position: bottom;
-			margin: 0 0 260px;
+			margin: 0 0 100px;
 		height: 450px;
 		max-width: 1600px;
 		background-image:
@@ -177,7 +156,7 @@
 	justify-content: center;
 	position: relative;
 	transition-duration: 1s;
-
+user-select: none;
 	transform: scale(1.001);
 	// transform: rotateX(40deg);
 
@@ -297,7 +276,7 @@
 	// max-width: 250px;
 	// min-width: 150px;
 	// border-radius: 15px;
-	// top: 380px;
+user-select: none;
 margin-top: 0px;
 	@media screen and (min-width: 768px) {
 		width: 350px;
@@ -311,8 +290,8 @@ margin-top: 0px;
 
 .hero-title__box {
 	text-align: center;
-	text-wrap: nowrap;
-	top: 270px;
+	text-wrap: wrap;
+	top: 290px;
 	position: absolute;
 	width: 100vw;
 	perspective: 300px;
@@ -328,12 +307,12 @@ margin-top: 0px;
 	}
 
 	@media screen and (min-width: 768px) {
-		width: 350px;
+		width: 450px;
 		top: 350px;
 	}
 
 	@media screen and (min-width: 1200px) {
-		width: 500px;
+		width: 550px;
 		// text-align: center;
 		top: 350px;
 

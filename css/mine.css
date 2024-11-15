@@ -64,12 +64,16 @@ body {
 
 .advantages-section {
   display: block;
+  transition-duration: 1s;
+}
+.advantages-section:hover, .advantages-section:focus {
+  transform: scale(1.02);
 }
 
 .advantages-list {
   list-style-type: decimal;
   display: block;
-  margin: 0 0 200px;
+  padding: 200px 0 100px;
 }
 @media screen and (min-width: 768px) {
   .advantages-list {
@@ -171,7 +175,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 0 200px;
+  padding: 100px 0 200px;
+  transition-duration: 1s;
+}
+.section-case:hover, .section-case:focus {
+  transform: scale(1.02);
 }
 
 .head__box {
@@ -198,12 +206,12 @@ body {
 
 .title__head {
   user-select: none;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   text-transform: uppercase;
   text-align: center;
   font-weight: bolder;
   font-size: 26px;
-  line-height: 1.86;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: aqua;
   transition-duration: 2s;
@@ -212,7 +220,7 @@ body {
   .title__head {
     font-weight: 900;
     font-size: 26px;
-    line-height: 1.86;
+    line-height: 1.26;
     letter-spacing: 0.04em;
   }
 }
@@ -228,13 +236,13 @@ body {
   .title__head {
     font-weight: 900;
     font-size: 30px;
-    line-height: 1.86;
+    line-height: 1.16;
     letter-spacing: 0.08em;
   }
 }
 
 .head-border {
-  margin: 0px auto 0;
+  margin: 0px auto 30px;
   transition-duration: 1s;
   border-bottom: 2px solid #FFFFFF;
   width: 0.001%;
@@ -320,9 +328,14 @@ body {
 .section-project {
   display: flex;
   margin: 0px auto 80px;
+  padding: 0px 0 0;
   align-items: center;
   flex-direction: column;
   position: relative;
+  transition-duration: 1s;
+}
+.section-project:hover, .section-project:focus {
+  transform: scale(1.02);
 }
 
 .project-hero {
@@ -653,16 +666,16 @@ body {
 .hero-head__water {
   display: flex;
   justify-content: center;
-  padding: 230px 15px 100px;
+  padding: 400px 15px 300px;
 }
 @media screen and (min-width: 768px) {
   .hero-head__water {
-    padding: 160px 0 60px;
+    padding: 240px 0 210px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-head__water {
-    padding: 300px 0 140px;
+    padding: 300px 0 200px;
   }
 }
 
@@ -695,7 +708,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .section-hero__logo {
-    margin: 0 auto 120px;
+    margin: 0 auto 0px;
     height: 460px;
     background-position: bottom;
     background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/family/family-tablet.webp");
@@ -709,7 +722,7 @@ body {
 @media screen and (min-width: 1200px) {
   .section-hero__logo {
     background-position: bottom;
-    margin: 0 0 260px;
+    margin: 0 0 100px;
     height: 450px;
     max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/family/family.webp");
@@ -756,6 +769,7 @@ body {
   justify-content: center;
   position: relative;
   transition-duration: 1s;
+  user-select: none;
   transform: scale(1.001);
   margin: 120px 0 60px;
 }
@@ -841,6 +855,7 @@ body {
 }
 
 .oxy-container {
+  user-select: none;
   margin-top: 0px;
 }
 @media screen and (min-width: 768px) {
@@ -856,8 +871,8 @@ body {
 
 .hero-title__box {
   text-align: center;
-  text-wrap: nowrap;
-  top: 270px;
+  text-wrap: wrap;
+  top: 290px;
   position: absolute;
   width: 100vw;
   perspective: 300px;
@@ -871,13 +886,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero-title__box {
-    width: 350px;
+    width: 450px;
     top: 350px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-title__box {
-    width: 500px;
+    width: 550px;
     top: 350px;
     transition-duration: 1s;
   }
@@ -980,7 +995,7 @@ body {
 @media screen and (min-width: 768px) {
   .develo-eco__hand {
     flex-direction: row-reverse;
-    margin: 35px 0 0;
+    margin: 0px 0 0;
   }
 }
 
@@ -3370,21 +3385,21 @@ body {
 
 .page-water {
   display: block;
-  padding: 230px 0 0px 0;
+  padding: 400px 0 0px 0;
   position: relative;
-  margin: 0 0 300px 0;
+  margin: 0 0 0px 0;
 }
 @media screen and (min-width: 768px) {
   .page-water {
     margin: 0 0 0px 0;
     background-image: linear-gradient(to bottom, rgba(1, 89, 204, 0.8823529412) 30%, rgba(0, 21, 116, 0.8470588235) 85%);
-    padding: 160px 0 20px;
+    padding: 240px 0 210px;
   }
 }
 @media screen and (min-width: 1200px) {
   .page-water {
     margin: 0 auto;
-    padding: 300px 0 120px;
+    padding: 300px 0 200px;
     max-width: 1600px;
   }
 }
@@ -3397,7 +3412,7 @@ body {
 }
 
 .water-head__water {
-  margin: 0px auto 140px;
+  margin: 0px auto 300px;
 }
 
 .water-hero {

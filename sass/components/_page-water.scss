@@ -3,21 +3,21 @@
 
 .page-water {
    display: block;
-   padding: 230px 0 0px 0;
+   padding: 400px 0 0px 0;
    position: relative;
-   margin: 0 0 300px 0;
+   margin: 0 0 0px 0;
 
    @media screen and (min-width: 768px) {
 
       margin: 0 0 0px 0;
 background-image: $bg-water-head;
-      padding: 160px 0 20px;
+      padding: 240px 0 210px;
    }
 
    @media screen and (min-width: 1200px) {
 
       margin: 0 auto;
-      padding: 300px 0 120px;
+      padding: 300px 0 200px;
       max-width: 1600px;
 
    }
@@ -34,7 +34,7 @@ background-image: $bg-water-head;
 }
 
 .water-head__water{
-   margin: 0px auto 140px;
+   margin: 0px auto 300px;
 
 }
 
