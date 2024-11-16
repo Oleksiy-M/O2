@@ -38,13 +38,19 @@
 	border-top: 2px solid #b5f8f8cc;
 	border-bottom: 2px solid #b5f8f8cc;
 
+@media screen and (max-width: 767px) {
+	height: 100vw;
+	background-image:
+			url("../img/family/family-mobil.webp");
+	
+}
 	@media (min-device-pixel-ratio: 2) and (max-width: 767px),
 	(min-resolution: 192dpi) and (max-width: 767px),
 	(min-resolution: 2dppx) and (max-width: 767px) {
-		background-position: bottom;
-		height: 70vw;
+	// 	background-position: bottom;
+		height: 100vw;
 		background-image:
-			url("../img/family/family-mobil@2x.webp");
+			url("../img/family/family-mobil.webp");
 	}
 		transform: translateY(80px);
 		transition-duration: 0.5s;

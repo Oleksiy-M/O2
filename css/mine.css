@@ -691,11 +691,16 @@ body {
   transform: translateY(80px);
   transition-duration: 0.5s;
 }
+@media screen and (max-width: 767px) {
+  .section-hero__logo {
+    height: 100vw;
+    background-image: url("../img/family/family-mobil.webp");
+  }
+}
 @media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
   .section-hero__logo {
-    background-position: bottom;
-    height: 70vw;
-    background-image: url("../img/family/family-mobil@2x.webp");
+    height: 100vw;
+    background-image: url("../img/family/family-mobil.webp");
   }
 }
 .section-hero__logo:hover, .section-hero__logo:focus {
