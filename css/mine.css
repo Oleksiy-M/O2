@@ -65,6 +65,8 @@ body {
 .advantages-section {
   display: block;
   transition-duration: 1s;
+  padding: 200px 0 100px;
+  user-select: none;
 }
 .advantages-section:hover, .advantages-section:focus {
   transform: scale(1.02);
@@ -73,7 +75,6 @@ body {
 .advantages-list {
   list-style-type: decimal;
   display: block;
-  padding: 200px 0 100px;
 }
 @media screen and (min-width: 768px) {
   .advantages-list {
@@ -175,7 +176,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0 200px;
+  user-select: none;
+  padding: 200px 0 200px;
   transition-duration: 1s;
 }
 .section-case:hover, .section-case:focus {
@@ -184,8 +186,8 @@ body {
 
 .head__box {
   display: block;
-  margin: 0 auto 0px;
-  padding: 0 0 50px;
+  margin: 0 auto 50px;
+  padding: 0 0 0px;
   width: 90%;
   max-width: 1000px;
   background-color: transparent;
@@ -327,8 +329,8 @@ body {
 
 .section-project {
   display: flex;
-  margin: 0px auto 80px;
-  padding: 0px 0 0;
+  margin: 100px auto 80px;
+  padding: 50px 0 0;
   align-items: center;
   flex-direction: column;
   position: relative;
@@ -341,6 +343,7 @@ body {
 .project-hero {
   display: flex;
   justify-content: center;
+  margin: 50px 0 0;
   width: 100%;
   background-size: cover;
   object-fit: contain;
@@ -356,7 +359,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .project-hero {
-    margin: 0 auto 0px;
+    margin: 50px auto 0px;
     height: 440px;
     background-position: top;
     background-image: linear-gradient(rgba(47, 48, 58, 0.2784313725), rgba(47, 48, 58, 0.4)), url("../img/project/tech-tablet.webp");
@@ -370,6 +373,7 @@ body {
 @media screen and (min-width: 1200px) {
   .project-hero {
     background-position: center;
+    margin: 50px 0 0;
     height: 430px;
     max-width: 1600px;
     background-image: linear-gradient(rgba(19, 21, 48, 0.5137254902), rgba(19, 21, 48, 0.5137254902)), url("../img/project/tech.webp");
@@ -384,9 +388,10 @@ body {
 .project-list {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   position: absolute;
   width: 100%;
-  top: 50%;
+  top: 60%;
   padding: 0 20px;
 }
 @media screen and (min-width: 768px) {
@@ -666,6 +671,7 @@ body {
 .hero-head__water {
   display: flex;
   justify-content: center;
+  user-select: none;
   padding: 400px 15px 300px;
 }
 @media screen and (min-width: 768px) {
@@ -990,17 +996,20 @@ body {
 
 .idustry-hero__heading {
   color: #3fa9f5;
+  padding: 0 0 0px;
 }
 
 .develo-eco__hand {
   display: flex;
   margin: 0px 0 0px 25px;
   z-index: 2;
+  user-select: none;
 }
 @media screen and (min-width: 768px) {
   .develo-eco__hand {
     flex-direction: row-reverse;
     margin: 0px 0 0;
+    padding: 30px 0 0;
   }
 }
 
