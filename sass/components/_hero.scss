@@ -13,7 +13,7 @@
 	}
 
 	@media screen and (min-width: 1200px) {
-
+// width: 70vw;
 		padding: 300px 0 250px;
 
 	}
@@ -50,7 +50,7 @@
 	// 	background-position: bottom;
 		height: 100vw;
 		background-image:
-			url("../img/family/family-mobil.webp");
+			url("../img/family/family-mobil@2x.webp");
 	}
 		transform: translateY(80px);
 		transition-duration: 0.5s;
@@ -132,11 +132,14 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	transform: translateY(350px);
 
 	// max-width: 120px;
-	// max-height: 120px;
+	transform: translateY(390px);
 	padding: 0;
+	@media screen and (min-width: 540px) {
+		transform: translateY(500px);
+	}
+	// max-height: 120px;
 
 	@media screen and (min-width: 768px) {
 		// padding: 300px 0 0;
@@ -173,10 +176,10 @@ user-select: none;
 		// transform: rotateX(0deg);
 		transition-timing-function: $anime-text;
 	}
-	margin: 120px 0 60px;
+	margin: 120px 0 80px;
 
 	@media screen and (min-width: 768px) {
-		margin-bottom: 60px;
+		margin-bottom: 70px;
 	}
 
 
@@ -197,14 +200,15 @@ user-select: none;
 	// stroke: #fcb902;
 	// box-shadow: inset 0 0 10px 6px #fcb902c9;
 
-	.section-hero__logo:hover &,
-	.section-hero__logo:focus & {
-		transition-timing-function: $anime-text;
-		box-shadow: inset 0 0 65px 10px $Logo-color,
-			0 0 10px 5px #fc9402, 0 0 20px 5px #fc9802,
-			0 0 5px 2px #000305c5,
-			inset 0 0 6px 1px #000000c5;
-	}
+	// .section-hero__logo:hover &,
+	// .section-hero__logo:focus & {
+	    
+	// 	transition-timing-function: $anime-text;
+	// 	box-shadow: inset 0 0 65px 10px $Logo-color,
+	// 		0 0 10px 5px #fc9402, 0 0 20px 5px #fc9802,
+	// 		0 0 5px 2px #000305c5,
+	// 		inset 0 0 6px 1px #000000c5;
+	// }
 
 	@media screen and (min-width: 650px) {
 		width: 70px;
@@ -223,6 +227,16 @@ user-select: none;
 
 	}
 }
+
+ .hero-logo.active {
+		transition-timing-function: $anime-text;
+			box-shadow: inset 0 0 65px 10px $Logo-color,
+				0 0 10px 5px #fc9402, 0 0 20px 5px #fc9802,
+				0 0 5px 2px #000305c5,
+				inset 0 0 6px 1px #000000c5;
+		}
+
+
 
 .hero-logo__o {
 	transition-duration: 1s;
@@ -297,20 +311,23 @@ margin-top: 0px;
 .hero-title__box {
 	text-align: center;
 	text-wrap: wrap;
-	top: 290px;
+	top: 310px;
 	position: absolute;
-	width: 100vw;
+	width: 80vw;
 	perspective: 300px;
+opacity: 0;
+	text-decoration-color: aqua;
+transition-timing-function: $anime-text;
+transition-duration: 1.5s;
+	// transform: translateX(-50vw);
 
-	transition-duration: 0.5s;
-	transform: translateX(-100vw);
-
-	.section-hero__logo:hover &,
-	.section-hero__logo:focus & {
-		transition-timing-function: $anime-text;
-		transform: translateX(0vw);
-		text-decoration-color: aqua;
-	}
+	// .section-hero__logo:hover &,
+	// .section-hero__logo:focus & {
+	// 	transition-timing-function: $anime-text;
+	// // 	transform: translateX(0vw);
+	// // 	text-decoration-color: aqua;
+	// // 	opacity: 1;
+	// }
 
 	@media screen and (min-width: 768px) {
 		width: 450px;
@@ -319,19 +336,20 @@ margin-top: 0px;
 
 	@media screen and (min-width: 1200px) {
 		width: 550px;
-		// text-align: center;
 		top: 350px;
-
-		transition-duration: 1s;
-
+		// transition-duration: 1s;
 		// .section-hero__logo:hover &,
 		// .section-hero__logo:focus & {
 		// 	transition-timing-function: $anime-text;
 		// 	left: 200px;
 		// }
-
 	}
 }
+
+// .hero-title__box .active {
+// 	transform: translateX(0vw);
+// }
+
 
 .title__logo {
 	width: 100%;

@@ -1,44 +1,5 @@
 
 
-
-
-
-
-
-// change-Background-Image
-
-
-
-var images = document.querySelectorAll('.section-histore__end img');
-var currentIndex = 0;
-
-function changeImageOpacity() {
-   var currentImage = images[currentIndex];
-   var nextIndex = (currentIndex + 1) % images.length;
-   var nextImage = images[nextIndex];
-
-   // Зменшуємо прозорість поточного зображення
-   currentImage.style.opacity = 0;
-
-   // Збільшуємо прозорість наступного зображення через 1 секунду
-   setTimeout(function () {
-      nextImage.style.opacity = 1;
-   }, 1000);
-
-   // Оновлюємо поточний індекс
-   currentIndex = nextIndex;
-}
-
-// Встановлюємо інтервал для зміни зображень кожні 10 секунд
-setInterval(changeImageOpacity, 10000);
-
-// Початково встановлюємо прозорість першого зображення
-images[currentIndex].style.opacity = 1;
-
-
-
-
-
 // Animation - aqueduct
 
 const sectionCard = document.querySelector('.section-card');
@@ -114,22 +75,31 @@ window.onload = function () {
 
 
 
+// change-Background-Image
 
 
+var images = document.querySelectorAll('.section-histore__end img');
+var currentIndex = 0;
 
-// const sectionCard = document.querySelector('.section-card');
-// const aqueduct = document.querySelector('.aqueduct');
+function changeImageOpacity() {
+   var currentImage = images[currentIndex];
+   var nextIndex = (currentIndex + 1) % images.length;
+   var nextImage = images[nextIndex];
 
-// const cardsLink = document.querySelector('.cards__link');
-// const cadrSvg = document.querySelector('.cadr-svg');
+   // Зменшуємо прозорість поточного зображення
+   currentImage.style.opacity = 0;
 
+   // Збільшуємо прозорість наступного зображення через 1 секунду
+   setTimeout(function () {
+      nextImage.style.opacity = 1;
+   }, 1000);
 
-// cardsLink.addEventListener('mouseenter', () => {
-//    cadrSvg.style.zIndex = '-1';
-// });
+   // Оновлюємо поточний індекс
+   currentIndex = nextIndex;
+}
 
-// cardsLink.addEventListener('mouseleave', () => {
-//    cadrSvg.style.zIndex = '1';
-// });
+// Встановлюємо інтервал для зміни зображень кожні 10 секунд
+setInterval(changeImageOpacity, 10000);
 
-
+// Початково встановлюємо прозорість першого зображення
+images[currentIndex].style.opacity = 1;

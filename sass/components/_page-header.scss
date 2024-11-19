@@ -413,8 +413,8 @@ transform: scale(1.02);
 
 .section-project {
    display: flex;
-   margin: 100px auto 80px;
-   padding: 50px 0 0;
+   margin: 0px auto 80px;
+   padding: 150px 0 0;
    align-items: center;
    flex-direction: column;
    position: relative;
@@ -424,6 +424,9 @@ transform: scale(1.02);
          &:focus {
             transform: scale(1.02);
          }
+//  @media screen and (min-width: 768px) {
+// padding: 50px 0 0;
+//  }
 }
 
 
@@ -431,7 +434,7 @@ transform: scale(1.02);
 .project-hero {
    display: flex;
    justify-content: center;
-margin: 50px 0 0;
+margin: 0px 0 0;
    width: 100%;
    background-size: cover;
    object-fit: contain;
@@ -441,7 +444,7 @@ margin: 50px 0 0;
    @media (min-device-pixel-ratio: 2) and (max-width: 767px),
    (min-resolution: 192dpi) and (max-width: 767px),
    (min-resolution: 2dppx) and (max-width: 767px) {
-      background-position: top;
+      background-position:center;
       height: 340px;
       background-image:
          url("../img/project/tech-mobil@2x.webp");
@@ -449,7 +452,7 @@ margin: 50px 0 0;
 
    @media screen and (min-width: 768px) {
       // padding: 250px 0 20px;
-      margin: 50px auto 0px;
+      // margin: 50px auto 0px;
       height: 440px;
       background-position: top;
       background-image:
@@ -471,7 +474,7 @@ margin: 50px 0 0;
 
    @media screen and (min-width: 1200px) {
       background-position: center;
-      margin: 50px 0 0;
+      // margin: 50px 0 0;
       height: 430px;
       max-width: 1600px;
       background-image:
@@ -509,7 +512,7 @@ margin: 50px 0 0;
    position: absolute;
    width: 100%;
    top: 60%;
-   padding: 0 20px;
+   padding: 0 0px;
 
    @media screen and (min-width:768px) {
       width: 738px;
@@ -527,7 +530,7 @@ margin: 50px 0 0;
    align-items: center;
    justify-content: center;
 
-   width: 115px;
+   width: 105px;
    height: 100px;
    padding: 15px 10px;
 
