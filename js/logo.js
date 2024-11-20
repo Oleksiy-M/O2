@@ -1,7 +1,7 @@
 
 
 const heroLogo = document.querySelector('.hero-logo');
-const waterLogo = document.querySelector('.water-logo__block');
+// const waterLogo = document.querySelector('.water-logo__block');
 
 // Налаштовуємо Intersection Observer
 const observer = new IntersectionObserver(entries => {
@@ -9,7 +9,7 @@ const observer = new IntersectionObserver(entries => {
 		if (entry.isIntersecting) {
 			// Додаємо клас active при появі на екрані
 			heroLogo.classList.add('active');
-			waterLogo.classList.add('active');
+			// waterLogo.classList.add('active1');
 		} else {
 			// Видаляємо клас active, коли об'єкт виходить за межі екрану
 			heroLogo.classList.remove('active');
@@ -19,7 +19,7 @@ const observer = new IntersectionObserver(entries => {
 
 // Запускаємо спостереження за елементом
 observer.observe(heroLogo);
-observer.observe(waterLogo);
+// observer.observe(waterLogo);
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				} else {
 					// Приховуємо елемент, коли він йде з екрану
 					titleBox.style.transform = 'translateX(-50vw)';
-					// titleBox.style.opacity = '0';
+					titleBox.style.opacity = '0';
 				}
 			});
 		},

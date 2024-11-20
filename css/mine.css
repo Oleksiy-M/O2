@@ -891,7 +891,6 @@ body {
   position: absolute;
   width: 80vw;
   perspective: 300px;
-  opacity: 0;
   text-decoration-color: aqua;
   transition-timing-function: cubic-bezier(0.36, 0.89, 0.56, 1.11);
   transition-duration: 1.5s;
