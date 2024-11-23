@@ -418,7 +418,8 @@ body {
   text-align: center;
   font-weight: bold;
   font-size: 9px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
   text-transform: uppercase;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6352941176), 0px 1px 1px rgba(0, 0, 0, 0.6666666667);
   color: #33FF99;
@@ -438,14 +439,14 @@ body {
 }
 @media screen and (min-width: 768px) {
   .project-item {
-    font-size: 12px;
+    font-size: 11px;
     width: 200px;
     padding: 15px 20px;
   }
 }
 @media screen and (min-width: 1200px) {
   .project-item {
-    font-size: 14px;
+    font-size: 11px;
     width: 250px;
   }
 }
@@ -1000,6 +1001,20 @@ body {
 .idustry-hero__heading {
   color: #3fa9f5;
   padding: 0 0 0px;
+  font-family: "Audiowide", sans-serif;
+  font-weight: bolder;
+  letter-spacing: 0.003em;
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  .idustry-hero__heading {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .idustry-hero__heading {
+    font-size: 26px;
+  }
 }
 
 .develo-eco__hand {
@@ -1124,13 +1139,13 @@ body {
 
 .title-end {
   text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Audiowide", sans-serif;
   user-select: none;
   text-transform: uppercase;
   font-weight: bolder;
-  font-size: 14px;
-  line-height: 1.9;
-  letter-spacing: 0.08em;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
   word-spacing: 2px;
   color: #00b7ff;
   color: aqua;
@@ -1145,13 +1160,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .title-end {
-    font-size: 16px;
+    font-size: 15px;
     width: 550px;
   }
 }
 @media screen and (min-width: 1200px) {
   .title-end {
-    font-size: 18px;
+    font-size: 17px;
     width: 1000px;
   }
 }
@@ -2827,11 +2842,11 @@ body {
   padding: 10px 7px;
   text-align: center;
   text-indent: 20px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 12px;
+  font-family: "Audiowide", sans-serif;
+  font-size: 13px;
   font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  line-height: 1.1;
+  letter-spacing: 0.005em;
   color: #3fa9f5;
   text-shadow: 0px 1px 1px black, 1px 0.5px 2px black;
   transition-duration: 0.5s;
@@ -2848,19 +2863,11 @@ body {
   .develo-eco__art {
     padding: 5px 30px;
     text-align: left;
-    font-weight: bolder;
-    font-size: 12px;
-    line-height: 1.6;
-    letter-spacing: 0.04em;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.001em;
   }
-}
-
-.develo-eco__art::first-letter {
-  font-family: "Tahoma", serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #11ff60;
-  letter-spacing: 0.08em;
 }
 
 .bubble {
@@ -3227,14 +3234,15 @@ body {
 .cards__title {
   text-wrap: wrap;
   user-select: none;
-  font-weight: 100;
+  font-weight: 200;
   font-size: 9px;
-  line-height: 1.5;
-  letter-spacing: 0.06em;
+  line-height: 1;
+  letter-spacing: 0.03em;
   color: #d5d095;
+  font-family: "Wallpoet", sans-serif;
   transition-duration: 3s;
   z-index: 2;
-  margin: -3px 0 0px;
+  margin: -1px 0 0px;
 }
 .section-card:hover .cards__title, .section-card:focus .cards__title {
   transition-duration: 0.5s;
@@ -3246,26 +3254,28 @@ body {
 }
 @media screen and (min-width: 768px) {
   .cards__title {
-    margin: -3px 0 0px;
+    margin: -1px 0 0px;
     font-size: 9px;
   }
 }
 @media screen and (min-width: 1200px) {
   .cards__title {
-    margin: -9px 0 0;
-    font-size: 11px;
+    margin: -5px 0 0;
+    font-size: 10px;
   }
 }
 
 .cards__text {
   user-select: none;
   font-size: 8px;
-  line-height: 1.87;
-  font-weight: 100;
+  line-height: 1;
+  letter-spacing: 0, 3em;
+  font-weight: 200;
   color: #fffdd1;
+  font-family: "Wallpoet", sans-serif;
   transition-duration: 3s;
   z-index: 2;
-  margin: 0px 0 -5px;
+  margin: 0px 0 0px;
 }
 .section-card:hover .cards__text, .section-card:focus .cards__text {
   transition-duration: 0.5s;
@@ -3278,13 +3288,13 @@ body {
 @media screen and (min-width: 768px) {
   .cards__text {
     font-size: 8px;
-    margin: 0px 0 -7px;
+    margin: 0px 0 -2px;
   }
 }
 @media screen and (min-width: 1200px) {
   .cards__text {
-    margin: 0px 0 -10px;
-    font-size: 10px;
+    margin: 0px 0 -4px;
+    font-size: 8px;
   }
 }
 
