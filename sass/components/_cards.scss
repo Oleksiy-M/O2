@@ -101,19 +101,24 @@
 
    height: 100%;
    padding: 10px 8px;
-   background-color: #dbbcedda;
+   background-color: #5486fada;
    
    font-weight: 300;
    font-size: 7px;
    line-height: 1.16;
-   letter-spacing: 0.04em;
+   letter-spacing: 0.01em;
    color: $White-color;
    
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   font-style: italic;
-   text-shadow: 1px 1px 1px #000000,
-   0px 1px 1px #000000,
-      0px 0px 1px #000000;
+   // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+      // font-family: "Fredoka", sans-serif;
+      // // font-optical-sizing: auto;
+      // // font-weight: <weight>;
+      // font-style: normal;
+      // // font-variation-settings:"wdth" 100;
+   
+   text-shadow: 1px 1px 0px #000000,
+   0px 1px 0px #000000;
       transform: translatex(-105%);
       transition-duration: 1s;
       opacity: 0;
@@ -126,7 +131,7 @@
    }
 
    @media screen and (min-width: 768px) {
-      font-weight: 200;
+      font-weight: 600;
       padding: 10px 10px;
       font-size: 8px;
       line-height: 1.28;
@@ -138,6 +143,8 @@
    }
 
 }
+
+
 
 .cards__content {
    display: flex;
@@ -181,7 +188,7 @@
    line-height: 1.5;
    letter-spacing: 0.06em;
    color: $histor-color-text;
-
+// font-family: "Teko", sans-serif;
    // text-shadow: 2px 2px 10px #000000, 3px 3px 3px #000000;
    transition-duration: 3s;
    z-index: 2;

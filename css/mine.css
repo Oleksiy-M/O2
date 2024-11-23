@@ -40,6 +40,83 @@ body {
   margin: 0;
 }
 
+.fredoka {
+  font-family: "Fredoka One", sans-serif;
+}
+
+.head__box {
+  display: block;
+  margin: 0 auto 50px;
+  padding: 0 0 0px;
+  width: 90%;
+  max-width: 1000px;
+  background-color: transparent;
+  transition-duration: 2s;
+}
+.section-case:hover .head__box, .section-case:focus .head__box, .section-project:hover .head__box, .section-project:focus .head__box, .section-hero__industry:hover .head__box, .section-hero__industry:focus .head__box {
+  transition-duration: 1s;
+  transform: scale(1.05);
+  text-shadow: 0px 0px 1px #ffffff, 0px 1px 1px #000000;
+}
+.history-section:hover .head__box, .history-section:focus .head__box {
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.36, 0.89, 0.56, 1.11);
+  transform: scale(1.05);
+  color: #fffdd1;
+  text-shadow: 0px 0px 1px #ffffff, 0px -1px 1px #000000, 0px -1px 1px #000000, 0px -1px 1px #000000;
+}
+
+.title__head {
+  user-select: none;
+  margin: 0 auto 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 26px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: aqua;
+  transition-duration: 2s;
+}
+@media screen and (min-width: 768px) {
+  .title__head {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.26;
+    letter-spacing: 0.04em;
+  }
+}
+.section-hero__industry:hover .title__head, .section-hero__industry:focus .title__head {
+  transition-duration: 1s;
+  color: aqua;
+}
+.history-section:hover .title__head, .history-section:focus .title__head {
+  transition-duration: 1s;
+  color: #fffdd1;
+}
+@media screen and (min-width: 1200px) {
+  .title__head {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+  }
+}
+
+.head-border {
+  margin: 0px auto 30px;
+  transition-duration: 1s;
+  border-bottom: 2px solid #FFFFFF;
+  width: 0.001%;
+  height: 2px;
+  border-radius: 5px;
+}
+.section-case:hover .head-border, .section-case:focus .head-border, .section-project:hover .head-border, .section-project:focus .head-border, .section-hero__industry:hover .head-border, .section-hero__industry:focus .head-border, .history-section:hover .head-border, .history-section:focus .head-border {
+  transition-timing-function: cubic-bezier(0.57, -0.6, 0.06, 1.63);
+  width: 90%;
+  box-shadow: 0px 2px 8px 2px #FFFFFF;
+}
+
 /*================== PAGE-HEADER ====================== */
 .page-header {
   display: block;
@@ -182,79 +259,6 @@ body {
 }
 .section-case:hover, .section-case:focus {
   transform: scale(1.02);
-}
-
-.head__box {
-  display: block;
-  margin: 0 auto 50px;
-  padding: 0 0 0px;
-  width: 90%;
-  max-width: 1000px;
-  background-color: transparent;
-  transition-duration: 2s;
-}
-.section-case:hover .head__box, .section-case:focus .head__box, .section-project:hover .head__box, .section-project:focus .head__box, .section-hero__industry:hover .head__box, .section-hero__industry:focus .head__box {
-  transition-duration: 1s;
-  transform: scale(1.05);
-  text-shadow: 0px 0px 1px #ffffff, 0px 1px 1px #000000;
-}
-.history-section:hover .head__box, .history-section:focus .head__box {
-  transition-duration: 1s;
-  transition-timing-function: cubic-bezier(0.36, 0.89, 0.56, 1.11);
-  transform: scale(1.05);
-  color: #fffdd1;
-  text-shadow: 0px 0px 1px #ffffff, 0px -1px 1px #000000, 0px -1px 1px #000000, 0px -1px 1px #000000;
-}
-
-.title__head {
-  user-select: none;
-  margin: 0 auto 20px;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bolder;
-  font-size: 26px;
-  line-height: 1.16;
-  letter-spacing: 0.02em;
-  color: aqua;
-  transition-duration: 2s;
-}
-@media screen and (min-width: 768px) {
-  .title__head {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.26;
-    letter-spacing: 0.04em;
-  }
-}
-.section-hero__industry:hover .title__head, .section-hero__industry:focus .title__head {
-  transition-duration: 1s;
-  color: aqua;
-}
-.history-section:hover .title__head, .history-section:focus .title__head {
-  transition-duration: 1s;
-  color: #fffdd1;
-}
-@media screen and (min-width: 1200px) {
-  .title__head {
-    font-weight: 900;
-    font-size: 30px;
-    line-height: 1.16;
-    letter-spacing: 0.08em;
-  }
-}
-
-.head-border {
-  margin: 0px auto 30px;
-  transition-duration: 1s;
-  border-bottom: 2px solid #FFFFFF;
-  width: 0.001%;
-  height: 2px;
-  border-radius: 5px;
-}
-.section-case:hover .head-border, .section-case:focus .head-border, .section-project:hover .head-border, .section-project:focus .head-border, .section-hero__industry:hover .head-border, .section-hero__industry:focus .head-border, .history-section:hover .head-border, .history-section:focus .head-border {
-  transition-timing-function: cubic-bezier(0.57, -0.6, 0.06, 1.63);
-  width: 90%;
-  box-shadow: 0px 2px 8px 2px #FFFFFF;
 }
 
 .case-list {
@@ -1014,6 +1018,8 @@ body {
 
 .hand-hero {
   z-index: 2;
+  opacity: 0.8;
+  transition-duration: 1s;
 }
 @media screen and (min-width: 768px) {
   .hand-hero {
@@ -3059,11 +3065,11 @@ body {
   transition-duration: 800ms;
   user-select: none;
   letter-spacing: 0.05em;
-  font-weight: 300;
+  font-weight: 800;
 }
 .box-article:hover .head-article, .box-article:focus .head-article {
   transform: scale(1.02);
-  text-shadow: #ffffff 0px 0px 1px, #000000 0px 1px 2px, #000000 0px 4px 4px, #000000 0px 4px 2px;
+  text-shadow: #ffffff 0px 0px 1px, #000000 1px 1px 2px, #000000 1px 4px 4px, #000000 0px 2px 2px;
 }
 
 .article-title {
@@ -3071,7 +3077,7 @@ body {
   user-select: none;
   text-wrap: wrap;
   user-select: none;
-  font-weight: 300;
+  font-weight: 100;
   font-size: 17px;
   line-height: 1.5;
   letter-spacing: 0.08em;
@@ -3167,15 +3173,13 @@ body {
   align-items: center;
   height: 100%;
   padding: 10px 8px;
-  background-color: rgba(219, 188, 237, 0.8549019608);
+  background-color: rgba(84, 134, 250, 0.8549019608);
   font-weight: 300;
   font-size: 7px;
   line-height: 1.16;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.01em;
   color: #FFFFFF;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-style: italic;
-  text-shadow: 1px 1px 1px #000000, 0px 1px 1px #000000, 0px 0px 1px #000000;
+  text-shadow: 1px 1px 0px #000000, 0px 1px 0px #000000;
   transform: translatex(-105%);
   transition-duration: 1s;
   opacity: 0;
@@ -3187,7 +3191,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .cards__alert {
-    font-weight: 200;
+    font-weight: 600;
     padding: 10px 10px;
     font-size: 8px;
     line-height: 1.28;

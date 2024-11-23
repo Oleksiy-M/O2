@@ -254,16 +254,16 @@ z-index: -2;
          transition-duration: 800ms;
          user-select: none;
          letter-spacing: 0.05em;
-         font-weight: 300;
+         font-weight: 800;
 
          .box-article:hover &,
          .box-article:focus & {
             transform: scale(1.02);
             text-shadow:
                #ffffff 0px 0px 1px,
-               #000000 0px 1px 2px,
-               #000000 0px 4px 4px,
-               #000000 0px 4px 2px;
+               #000000 1px 1px 2px,
+               #000000 1px 4px 4px,
+               #000000 0px 2px 2px;
          }
       }
 
@@ -276,7 +276,7 @@ z-index: -2;
          user-select: none;
 
         
-         font-weight: 300;
+         font-weight: 100;
          font-size: 17px;
          line-height: 1.5;
          letter-spacing: 0.08em;
