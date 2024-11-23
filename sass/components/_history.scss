@@ -253,9 +253,10 @@ z-index: -2;
          color: $histor-color-text;
          transition-duration: 800ms;
          user-select: none;
-         letter-spacing: 0.05em;
+               font-family: "Nova Oval", system-ui;
+         letter-spacing: 0.03em;
          font-weight: 800;
-
+font-size: 34px;
          .box-article:hover &,
          .box-article:focus & {
             transform: scale(1.02);
@@ -278,8 +279,8 @@ z-index: -2;
         
          font-weight: 100;
          font-size: 17px;
-         line-height: 1.5;
-         letter-spacing: 0.08em;
+         line-height: 1.1;
+         letter-spacing: 0.03em;
          color: $histor-color-text;
          transition-duration: 400ms;
 
@@ -299,11 +300,11 @@ z-index: -2;
          user-select: none;
          // text-align: left;
   
-         font-weight: 300;
-         font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-         font-size: 12px;
-         line-height: 1.5;
-         letter-spacing: 0.04em;
+         font-weight: 100;
+         font-family: "Nova Oval", system-ui;
+         font-size: 13px;
+         line-height: 1.28;
+         letter-spacing: 0.02em;
 
          color: $histor-color-text;
          transition-duration: 100ms;

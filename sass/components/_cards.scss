@@ -105,18 +105,13 @@
    
    font-weight: 300;
    font-size: 7px;
-   line-height: 1.16;
-   letter-spacing: 0.01em;
-   color: $White-color;
-   
-   // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   line-height: 1.1;
+   letter-spacing: 0.009em;
+   word-spacing: 0.1px;
 
-      // font-family: "Fredoka", sans-serif;
-      // // font-optical-sizing: auto;
-      // // font-weight: <weight>;
-      // font-style: normal;
-      // // font-variation-settings:"wdth" 100;
-   
+   color: $White-color;
+font-family: "Edu VIC WA NT Beginner", cursive;
+
    text-shadow: 1px 1px 0px #000000,
    0px 1px 0px #000000;
       transform: translatex(-105%);
@@ -131,14 +126,14 @@
    }
 
    @media screen and (min-width: 768px) {
-      font-weight: 600;
+      font-weight: 100;
       padding: 10px 10px;
-      font-size: 8px;
-      line-height: 1.28;
+      font-size: 9px;
+      line-height: 1;
    }
 
    @media screen and (min-width: 1200px) {
-      font-size: 8px;
+      font-size: 10.5px;
       padding: 10px 20px;
    }
 

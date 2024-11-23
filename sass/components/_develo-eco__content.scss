@@ -149,15 +149,14 @@
    text-align: center;
    
    text-indent: 20px;
-   font-family: "Audiowide", sans-serif;
+font-family: "Anta", sans-serif;
    // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    // font-style: italic;
-   font-size: 13px;
+   font-size: 14px;
    font-weight: 400;
-   line-height: 1.1;
+   line-height: 1.2;
    letter-spacing: 0.005em;
-
-   // white-space: pre;
+word-spacing: 4px;
 
    color: $Secondary-text-color;
    text-shadow: 0px 1px 1px black,
@@ -170,8 +169,6 @@
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       color: $svg-color;
-      // text-shadow: 1px 1.5px 1px black,
-      //    1px 0.5px 2px black;
       transform: rotateX(0deg);
       transition-duration: 1s;
       transition-timing-function: $anime-card-industry;
@@ -181,7 +178,7 @@
       padding: 5px 30px ;
       text-align: left;
       font-weight: 100;
-      font-size: 14px;
+      font-size: 15px;
       line-height: 1.1;
       letter-spacing: 0.001em;
 
