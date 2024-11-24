@@ -3182,7 +3182,7 @@ body {
   letter-spacing: 0.004em;
   word-spacing: 0.1px;
   color: #FFFFFF;
-  font-family: "Metal", serif;
+  font-family: "Sail", system-ui;
   text-shadow: 1px 0px 1px #000000, 0px 1px 0px #000000;
   transform: translatex(-105%);
   transition-duration: 1s;
