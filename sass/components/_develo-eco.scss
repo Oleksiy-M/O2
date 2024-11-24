@@ -125,12 +125,12 @@ transition-duration: 0.5s;
       transition-duration: $animation-head;
 
       text-shadow: 1px 1px 1px black;
-      font-weight: 500;
+      font-weight: bold;
       font-size: 10px;
-      line-height: 1.46;
-      letter-spacing: 0.26em;
+      line-height: 1.06;
+      letter-spacing: 0.02em;
       text-transform: uppercase;
-
+font-family: "Wallpoet", serif;
       .develo-eco:hover &,
       .develo-eco:focus & {
         transition-timing-function: $anime-border;
@@ -149,15 +149,12 @@ transition-duration: 0.5s;
         color: $svg-color;
       }
 
-      @media screen and (min-width: 768px) {
-        font-weight: 600;
-      }
+      // @media screen and (min-width: 768px) {
+ 
+      // }
 
       @media screen and (min-width: 1200px) {
-        font-weight: 700;
         font-size: 14px;
-        line-height: 1.86;
-        letter-spacing: 0.26em;
       }
     }
 

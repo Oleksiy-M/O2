@@ -103,16 +103,16 @@
    padding: 10px 8px;
    background-color: #5486fada;
    
-   font-weight: 300;
-   font-size: 7px;
+   font-weight: 400;
+   font-size: 8px;
    line-height: 1.1;
-   letter-spacing: 0.009em;
+   letter-spacing: 0.004em;
    word-spacing: 0.1px;
 
    color: $White-color;
-font-family: "Edu VIC WA NT Beginner", cursive;
-
-   text-shadow: 1px 1px 0px #000000,
+font-family: "Metal", serif;
+// font-style: italic;
+   text-shadow: 1px 0px 1px #000000,
    0px 1px 0px #000000;
       transform: translatex(-105%);
       transition-duration: 1s;
@@ -126,14 +126,14 @@ font-family: "Edu VIC WA NT Beginner", cursive;
    }
 
    @media screen and (min-width: 768px) {
-      font-weight: 100;
+ 
       padding: 10px 10px;
-      font-size: 9px;
-      line-height: 1;
+      font-size: 9.5px;
+
    }
 
    @media screen and (min-width: 1200px) {
-      font-size: 10.5px;
+      font-size: 10px;
       padding: 10px 20px;
    }
 
@@ -183,7 +183,8 @@ font-family: "Edu VIC WA NT Beginner", cursive;
    line-height: 1;
    letter-spacing: 0.03em;
    color: $histor-color-text;
-   font-family: "Wallpoet", sans-serif;
+font-family: "Silkscreen", sans-serif;
+   // font-family: "Wallpoet", sans-serif;
 // font-family: "Teko", sans-serif;
    // text-shadow: 2px 2px 10px #000000, 3px 3px 3px #000000;
    transition-duration: 3s;
@@ -222,7 +223,8 @@ font-family: "Edu VIC WA NT Beginner", cursive;
    letter-spacing: 0,03em;
 font-weight: 200;
    color: $prim-histor-text;
-   font-family: "Wallpoet", sans-serif;
+   font-family: "Silkscreen", sans-serif;
+   // font-family: "Wallpoet", sans-serif;
    // text-shadow: 2px 2px 10px #000000, 3px 3px 3px #000000;
    transition-duration: 3s;
    z-index: 2;

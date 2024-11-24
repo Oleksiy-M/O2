@@ -129,15 +129,14 @@
 	z-index: 2;
 	// margin-right: 20%;
 	// justify-content: flex-start;
-	font-weight: 400;
+	font-weight: bold;
 	font-size: 10px;
-	line-height: 1.94;
+	line-height: 1.44;
 	letter-spacing: 0.03em;
 	text-shadow: 1px 1px 1px black;
 	transition-duration: 0.5s;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-
+font-family: "Saira Stencil One", sans-serif;
+text-transform: uppercase;
 	@media screen and (min-width: 768px) {
 		// align-items: flex-end;
 		// margin-right: 20%;
