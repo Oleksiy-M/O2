@@ -414,7 +414,7 @@ body {
   font-family: "Saira Stencil One", sans-serif;
   font-weight: 100;
   font-size: 8px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   line-height: 1.3;
   text-transform: uppercase;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6352941176), 1px 1px 1px rgba(0, 0, 0, 0.6666666667);
@@ -428,7 +428,7 @@ body {
   margin: 0 40px 0 0;
 }
 .project-item:hover, .project-item:focus {
-  border: 4px solid #ffffff;
+  border: 3px solid #ffffff;
   background-color: #0077ff;
   color: #ffffff;
   transform: scale(1.04);
@@ -2464,21 +2464,21 @@ body {
   color: #3fa9f5;
   transition-duration: 1s;
   text-shadow: 1px 1px 1px black;
-  font-weight: bold;
+  font-weight: 100;
   font-size: 10px;
   line-height: 1.06;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  font-family: "Wallpoet", serif;
+  font-family: "Saira Stencil One", sans-serif;
 }
 .develo-eco:hover .develo-eco__title, .develo-eco:focus .develo-eco__title {
   transition-timing-function: cubic-bezier(0.57, -0.6, 0.06, 1.63);
-  text-shadow: 0px 1px 1px black, 0px 0px 1px #f4f1f1, 1px 1px 1px black;
+  text-shadow: 0px 1px 1px black, 1px 1px 1px black;
   color: #33FF99;
 }
 .impact-section:hover .develo-eco__title, .impact-section:focus .develo-eco__title {
   transition-timing-function: cubic-bezier(0.57, -0.6, 0.06, 1.63);
-  text-shadow: 0px 1px 1px black, 0px 0px 1px #f4f1f1, 1px 1px 1px black;
+  text-shadow: 0px 1px 1px black, 1px 1px 1px black;
   color: #33FF99;
 }
 @media screen and (min-width: 1200px) {
