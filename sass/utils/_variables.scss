@@ -147,7 +147,7 @@ body {
 	line-height: 1.16;
 	letter-spacing: 0.1em;
 	word-spacing: 4px;
-	color: $primary-text-color;
+	color: $White-color;
 	
 // font-family: "Wallpoet", serif;
 font-family: "Saira Stencil One", sans-serif;
@@ -162,6 +162,7 @@ font-family: "Saira Stencil One", sans-serif;
 	.section-hero__industry:focus & {
 		transition-duration: 1s;
 		color: $primary-text-color;
+		color: $White-color;
 
 	}
 
