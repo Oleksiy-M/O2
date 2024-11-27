@@ -16,6 +16,16 @@
    }
 }
 
+.svg-box.active {
+      @media screen and (max-width: 767px) {
+      
+            transition-timing-function: $anime-card-svg;
+            transform: scale(1.2);
+         }
+
+ }
+
+
 .develo-eco__svg {
    display: flexbox;
    fill: $Secondary-text-color;
@@ -37,6 +47,17 @@
 
 }
 
+.develo-eco__svg.active{
+         @media screen and (max-width: 767px) {
+      transition-timing-function: $anime-card-svg;
+         transition-duration: 1.8s;
+         fill: $svg-color;
+         transform: rotateX(0deg);
+
+}
+}
+
+
 .eco__svg {
    display: flexbox;
    fill: $Secondary-text-color;
@@ -56,6 +77,20 @@
    }
 }
 
+.eco__svg.active {
+   @media screen and (max-width: 767px) {
+   transition-duration: 1.8s;
+   
+      transition-timing-function: $anime-card-svg;
+      fill: #ffffff;
+      transform: rotateX(0deg);
+
+   }
+}
+
+
+
+
 .eco__svg-imp {
    margin-left: -120px;
    stroke-width: 0;
@@ -70,7 +105,15 @@
    }
 }
 
+.eco__svg-imp.active {
+   @media screen and (max-width: 767px) {
+      transition-duration: 1.8s;
+         stroke-width: 0.4px;
+         transition-timing-function: $anime-card-svg;
+         stroke: $White-color;
 
+   }
+}
 
 
 
@@ -108,6 +151,17 @@
 }
 
 
+.cards__overlay.active {
+   @media screen and (max-width: 767px) {
+      transition-duration: 1s;
+         transition-timing-function: $anime-card-industry;
+         // transform: scale(1.04);
+         height: 70%;
+
+   }
+}
+
+
 .develo-eco__art {
    // transform: translateY(100%);
    user-select: none;
@@ -116,8 +170,6 @@
    
    text-indent: 20px;
 font-family: "Anta", sans-serif;
-   // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   // font-style: italic;
    font-size: 14px;
    font-weight: 400;
    line-height: 1.2;
@@ -150,4 +202,15 @@ word-spacing: 4px;
       letter-spacing: 0.001em;
 
    }
+}
+
+
+
+.develo-eco__art.active {
+   @media screen and (max-width: 767px) {
+      color: $svg-color;
+         transform: rotateX(0deg);
+         transition-duration: 1s;
+         transition-timing-function: $anime-card-industry;
+      }
 }
