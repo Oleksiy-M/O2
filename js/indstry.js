@@ -8,10 +8,10 @@ const observer = new IntersectionObserver(entries => {
 		if (entry.isIntersecting) {
 			svgBox.classList.add('active');
 		} 
-		// else {
-		// 	// Видаляємо клас active, коли об'єкт виходить за межі екрану
-		// 	svgBox.classList.remove('active');
-		// }
+		else {
+			// Видаляємо клас active, коли об'єкт виходить за межі екрану
+			svgBox.classList.remove('active');
+		}
 	});
 });
 
@@ -29,10 +29,10 @@ const observerSvg = new IntersectionObserver(entries => {
 		if (entry.isIntersecting) {
 			develoEcosvg.classList.add('active');
 		} 
-		// else {
-		// 	// Видаляємо клас active, коли об'єкт виходить за межі екрану
-		// 	develoEcosvg.classList.remove('active');
-		// }
+		else {
+			// Видаляємо клас active, коли об'єкт виходить за межі екрану
+			develoEcosvg.classList.remove('active');
+		}
 	});
 });
 
@@ -52,10 +52,10 @@ const observerEcoSvg = new IntersectionObserver(entries => {
 		if (entry.isIntersecting) {
 			ecoSvg.classList.add('active');
 		} 
-		// else {
-		// 	// Видаляємо клас active, коли об'єкт виходить за межі екрану
-		// 	ecoSvg.classList.remove('active');
-		// }
+		else {
+			// Видаляємо клас active, коли об'єкт виходить за межі екрану
+			ecoSvg.classList.remove('active');
+		}
 	});
 });
 
@@ -73,10 +73,10 @@ const observerSvgImp = new IntersectionObserver(entries => {
 		if (entry.isIntersecting) {
 			observerSvgImp.classList.add('active');
 		} 
-		// else {
-		// 	// Видаляємо клас active, коли об'єкт виходить за межі екрану
-		// 	observerSvgImp.classList.remove('active');
-		// }
+		else {
+			// Видаляємо клас active, коли об'єкт виходить за межі екрану
+			ecoSvgImp.classList.remove('active');
+		}
 	});
 });
 
@@ -93,10 +93,10 @@ const observerCards = new IntersectionObserver(entries => {
 		if (entry.isIntersecting) {
 			cardsOverlay.classList.add('active');
 		} 
-		// else {
-		// 	// Видаляємо клас active, коли об'єкт виходить за межі екрану
-		// 	cardsOverlay.classList.remove('active');
-		// }
+		else {
+			// Видаляємо клас active, коли об'єкт виходить за межі екрану
+			cardsOverlay.classList.remove('active');
+		}
 	});
 });
 
@@ -114,10 +114,10 @@ const observerArt = new IntersectionObserver(entries => {
 		if (entry.isIntersecting) {
 			develoEcoArt.classList.add('active');
 		} 
-		// else {
-		// 	// Видаляємо клас active, коли об'єкт виходить за межі екрану
-		// 	develoEcoArt.classList.remove('active');
-		// }
+		else {
+			// Видаляємо клас active, коли об'єкт виходить за межі екрану
+			develoEcoArt.classList.remove('active');
+		}
 	});
 });
 
