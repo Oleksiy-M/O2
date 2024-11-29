@@ -2748,9 +2748,9 @@ body {
 }
 
 .svg-box {
-  width: 120px;
   display: flex;
   justify-content: center;
+  width: 120px;
   margin: 0 auto 0px;
   z-index: 1;
   perspective: 500px;
@@ -2855,7 +2855,7 @@ body {
     text-align: left;
     font-weight: 100;
     font-size: 15px;
-    line-height: 1.1;
+    line-height: 1.05;
     letter-spacing: 0.001em;
   }
 }
@@ -3174,7 +3174,7 @@ body {
   align-items: center;
   height: 100%;
   padding: 10px 8px;
-  background-color: rgba(84, 134, 250, 0.8549019608);
+  background-color: rgba(152, 42, 224, 0.7058823529);
   font-weight: 400;
   font-size: 8px;
   line-height: 1.1;

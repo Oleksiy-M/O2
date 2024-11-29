@@ -9,21 +9,20 @@
    transition-duration: 0.2s;
 
    .develo-eco__content:hover &,
-   .develo-eco__content:focus &,
-   .develo-eco__content:active & {
+   .develo-eco__content:focus &{
       transition-timing-function: $anime-card-svg;
       transform: scale(1.2);
    }
 }
 
-.svg-box.active {
-      @media screen and (max-width: 767px) {
+// .svg-box.active {
+//       @media screen and (max-width: 767px) {
       
-            transition-timing-function: $anime-card-svg;
-            transform: scale(1.2);
-         }
+//             transition-timing-function: $anime-card-svg;
+//             transform: scale(1.2);
+//          }
 
- }
+//  }
 
 
 .develo-eco__svg {
@@ -35,7 +34,7 @@
    transform: rotateX(-50deg);
    transform-style: preserve-3d;
 
-     .develo-eco__content:active &,
+
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       transition-timing-function: $anime-card-svg;
@@ -47,15 +46,15 @@
 
 }
 
-.develo-eco__svg.active{
-         @media screen and (max-width: 767px) {
-      transition-timing-function: $anime-card-svg;
-         transition-duration: 1.8s;
-         fill: $svg-color;
-         transform: rotateX(0deg);
+// .develo-eco__svg.active{
+//          @media screen and (max-width: 767px) {
+//       transition-timing-function: $anime-card-svg;
+//          transition-duration: 1.8s;
+//          fill: $svg-color;
+//          transform: rotateX(0deg);
 
-}
-}
+// }
+// }
 
 
 .eco__svg {
@@ -66,7 +65,7 @@
    transform: rotateX(-50deg);
    transform-style: preserve-3d;
 
-   .develo-eco__content:active &,
+   // .develo-eco__content:active &,
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       transition-duration: 1.8s;
@@ -77,16 +76,16 @@
    }
 }
 
-.eco__svg.active {
-   @media screen and (max-width: 767px) {
-   transition-duration: 1.8s;
+// .eco__svg.active {
+//    @media screen and (max-width: 767px) {
+//    transition-duration: 1.8s;
    
-      transition-timing-function: $anime-card-svg;
-      fill: #ffffff;
-      transform: rotateX(0deg);
+//       transition-timing-function: $anime-card-svg;
+//       fill: #ffffff;
+//       transform: rotateX(0deg);
 
-   }
-}
+//    }
+// }
 
 
 
@@ -95,7 +94,7 @@
    margin-left: -120px;
    stroke-width: 0;
 
-   .develo-eco__content:active &,
+
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       transition-duration: 1.8s;
@@ -105,15 +104,15 @@
    }
 }
 
-.eco__svg-imp.active {
-   @media screen and (max-width: 767px) {
-      transition-duration: 1.8s;
-         stroke-width: 0.4px;
-         transition-timing-function: $anime-card-svg;
-         stroke: $White-color;
+// .eco__svg-imp.active {
+//    @media screen and (max-width: 767px) {
+//       transition-duration: 1.8s;
+//          stroke-width: 0.4px;
+//          transition-timing-function: $anime-card-svg;
+//          stroke: $White-color;
 
-   }
-}
+//    }
+// }
 
 
 
@@ -129,7 +128,7 @@
    transition-duration: 0.5s;
    perspective: 2000px;
 
-   .develo-eco__content:active &,
+
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       // box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.12),
@@ -151,15 +150,15 @@
 }
 
 
-.cards__overlay.active {
-   @media screen and (max-width: 767px) {
-      transition-duration: 1s;
-         transition-timing-function: $anime-card-industry;
-         // transform: scale(1.04);
-         height: 70%;
+// .cards__overlay.active {
+//    @media screen and (max-width: 767px) {
+//       transition-duration: 1s;
+//          transition-timing-function: $anime-card-industry;
+//          // transform: scale(1.04);
+//          height: 70%;
 
-   }
-}
+//    }
+// }
 
 
 .develo-eco__art {
@@ -184,7 +183,7 @@ word-spacing: 4px;
    transform: rotateX(-50deg);
    transform-style: preserve-3d;
 
-   .develo-eco__content:active &,
+
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       color: $svg-color;
@@ -206,11 +205,11 @@ word-spacing: 4px;
 
 
 
-.develo-eco__art.active {
-   @media screen and (max-width: 767px) {
-      color: $svg-color;
-         transform: rotateX(0deg);
-         transition-duration: 1s;
-         transition-timing-function: $anime-card-industry;
-      }
-}
+// .develo-eco__art.active {
+//    @media screen and (max-width: 767px) {
+//       color: $svg-color;
+//          transform: rotateX(0deg);
+//          transition-duration: 1s;
+//          transition-timing-function: $anime-card-industry;
+//       }
+// }

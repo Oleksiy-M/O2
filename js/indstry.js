@@ -1,125 +1,124 @@
 
 
-const svgBox = document.querySelector('.svg-box');
+const elements = document.querySelectorAll('.develo-eco__content');
 
 // Налаштовуємо Intersection Observer
-const observer = new IntersectionObserver(entries => {
-	entries.forEach(entry => {
-		if (entry.isIntersecting) {
-			svgBox.classList.add('active');
-		} 
-		else {
-			// Видаляємо клас active, коли об'єкт виходить за межі екрану
-			svgBox.classList.remove('active');
-		}
-	});
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const target = entry.target.querySelector('.visual-content__home');
+            if (target) {
+                target.classList.add('visible');
+            }
+        }
+    });
 });
 
-observer.observe(svgBox);
+elements.forEach(el => observer.observe(el));
 
 
 
 
 
-const develoEcosvg = document.querySelector('.develo-eco__svg');
+// const develoEcosvg = document.querySelector('.develo-eco__svg');
 
-// Налаштовуємо Intersection Observer
-const observerSvg = new IntersectionObserver(entries => {
-	entries.forEach(entry => {
-		if (entry.isIntersecting) {
-			develoEcosvg.classList.add('active');
-		} 
-		else {
-			// Видаляємо клас active, коли об'єкт виходить за межі екрану
-			develoEcosvg.classList.remove('active');
-		}
-	});
-});
+// // Налаштовуємо Intersection Observer
+// const observerSvg = new IntersectionObserver(entries => {
+// 	entries.forEach(entry => {
+// 		if (entry.isIntersecting) {
+// 			develoEcosvg.classList.add('active');
+// 		} 
+// 		else {
+// 			// Видаляємо клас active, коли об'єкт виходить за межі екрану
+// 			develoEcosvg.classList.remove('active');
+// 		}
+// 	});
+// });
 
-// Запускаємо спостереження за елементом
-observerSvg.observe(develoEcosvg);
-
-
+// // Запускаємо спостереження за елементом
+// observerSvg.observe(develoEcosvg);
 
 
 
 
-const ecoSvg = document.querySelector('.eco__svg');
-
-// Налаштовуємо Intersection Observer
-const observerEcoSvg = new IntersectionObserver(entries => {
-	entries.forEach(entry => {
-		if (entry.isIntersecting) {
-			ecoSvg.classList.add('active');
-		} 
-		else {
-			// Видаляємо клас active, коли об'єкт виходить за межі екрану
-			ecoSvg.classList.remove('active');
-		}
-	});
-});
-
-// Запускаємо спостереження за елементом
-observerEcoSvg.observe(ecoSvg);
 
 
+// const ecoSvg = document.querySelector('.eco__svg');
 
+// // Налаштовуємо Intersection Observer
+// const observerEcoSvg = new IntersectionObserver(entries => {
+// 	entries.forEach(entry => {
+// 		if (entry.isIntersecting) {
+// 			ecoSvg.classList.add('active');
+// 		} 
+// 		else {
+// 			// Видаляємо клас active, коли об'єкт виходить за межі екрану
+// 			ecoSvg.classList.remove('active');
+// 		}
+// 	});
+// });
 
-const ecoSvgImp = document.querySelector('.eco__svg-imp');
-
-// Налаштовуємо Intersection Observer
-const observerSvgImp = new IntersectionObserver(entries => {
-	entries.forEach(entry => {
-		if (entry.isIntersecting) {
-			observerSvgImp.classList.add('active');
-		} 
-		else {
-			// Видаляємо клас active, коли об'єкт виходить за межі екрану
-			ecoSvgImp.classList.remove('active');
-		}
-	});
-});
-
-// Запускаємо спостереження за елементом
-observerSvgImp.observe(ecoSvgImp);
-
-
-
-const cardsOverlay = document.querySelector('.cards__overlay');
-
-// Налаштовуємо Intersection Observer
-const observerCards = new IntersectionObserver(entries => {
-	entries.forEach(entry => {
-		if (entry.isIntersecting) {
-			cardsOverlay.classList.add('active');
-		} 
-		else {
-			// Видаляємо клас active, коли об'єкт виходить за межі екрану
-			cardsOverlay.classList.remove('active');
-		}
-	});
-});
-
-// Запускаємо спостереження за елементом
-observerCards.observe(cardsOverlay);
+// // Запускаємо спостереження за елементом
+// observerEcoSvg.observe(ecoSvg);
 
 
 
 
-const develoEcoArt  = document.querySelector('.develo-eco__art');
+// const ecoSvgImp = document.querySelector('.eco__svg-imp');
 
-// Налаштовуємо Intersection Observer
-const observerArt = new IntersectionObserver(entries => {
-	entries.forEach(entry => {
-		if (entry.isIntersecting) {
-			develoEcoArt.classList.add('active');
-		} 
-		else {
-			// Видаляємо клас active, коли об'єкт виходить за межі екрану
-			develoEcoArt.classList.remove('active');
-		}
-	});
-});
+// // Налаштовуємо Intersection Observer
+// const observerSvgImp = new IntersectionObserver(entries => {
+// 	entries.forEach(entry => {
+// 		if (entry.isIntersecting) {
+// 			observerSvgImp.classList.add('active');
+// 		} 
+// 		else {
+// 			// Видаляємо клас active, коли об'єкт виходить за межі екрану
+// 			ecoSvgImp.classList.remove('active');
+// 		}
+// 	});
+// });
 
-// Запускаємо спостереження за елементом
-observerArt.observe(develoEcoArt);
+// // Запускаємо спостереження за елементом
+// observerSvgImp.observe(ecoSvgImp);
+
+
+
+// const cardsOverlay = document.querySelector('.cards__overlay');
+
+// // Налаштовуємо Intersection Observer
+// const observerCards = new IntersectionObserver(entries => {
+// 	entries.forEach(entry => {
+// 		if (entry.isIntersecting) {
+// 			cardsOverlay.classList.add('active');
+// 		} 
+// 		else {
+// 			// Видаляємо клас active, коли об'єкт виходить за межі екрану
+// 			cardsOverlay.classList.remove('active');
+// 		}
+// 	});
+// });
+
+// // Запускаємо спостереження за елементом
+// observerCards.observe(cardsOverlay);
+
+
+
+
+// const develoEcoArt  = document.querySelector('.develo-eco__art');
+
+// // Налаштовуємо Intersection Observer
+// const observerArt = new IntersectionObserver(entries => {
+// 	entries.forEach(entry => {
+// 		if (entry.isIntersecting) {
+// 			develoEcoArt.classList.add('active');
+// 		} 
+// 		else {
+// 			// Видаляємо клас active, коли об'єкт виходить за межі екрану
+// 			develoEcoArt.classList.remove('active');
+// 		}
+// 	});
+// });
+
+// // Запускаємо спостереження за елементом
+// observerArt.observe(develoEcoArt);
