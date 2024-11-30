@@ -49,17 +49,22 @@ body {
   background-color: transparent;
   transition-duration: 2s;
 }
-.section-case:hover .head__box, .section-case:focus .head__box, .section-project:hover .head__box, .section-project:focus .head__box, .section-hero__industry:hover .head__box, .section-hero__industry:focus .head__box {
-  transition-duration: 1s;
+.section-case:hover .head__box, .section-case:focus .head__box, .section-project:hover .head__box, .section-project:focus .head__box {
+  transition-duration: 0.1s;
   transform: scale(1.05);
-  text-shadow: 0px 0px 1px #ffffff, 0px 1px 1px #000000;
+  text-shadow: 0px 4px 1px #00514b, 0px 5px 2px #000000;
+}
+.section-hero__industry:hover .head__box, .section-hero__industry:focus .head__box {
+  transition-duration: 0.5s;
+  transform: scale(1.05);
+  text-shadow: 0px 2px 12px #002051, 0px 3px 2px #000723, 0px 0px 2px #ffffff;
 }
 .history-section:hover .head__box, .history-section:focus .head__box {
   transition-duration: 1s;
   transition-timing-function: cubic-bezier(0.36, 0.89, 0.56, 1.11);
   transform: scale(1.05);
   color: #fffdd1;
-  text-shadow: 0px 0px 1px #ffffff, 0px -1px 1px #000000, 0px -1px 1px #000000, 0px -1px 1px #000000;
+  text-shadow: 0px 2px 8px #3e0051, 0px 3px 1px rgba(49, 28, 44, 0.9960784314);
 }
 
 .title__head {
@@ -70,8 +75,8 @@ body {
   font-weight: bolder;
   font-size: 26px;
   line-height: 1.16;
-  letter-spacing: 0.1em;
-  word-spacing: 4px;
+  letter-spacing: 0.05em;
+  word-spacing: 2px;
   color: #e7e7e7;
   font-family: "Saira Stencil One", sans-serif;
   transition-duration: 2s;
@@ -914,7 +919,7 @@ body {
   width: 100%;
   transform: rotateX(15deg);
   transition-duration: 1s;
-  text-shadow: 0px 3px 2px #00514b, 0px 3px 2px #000000, 0px 0px 1px #FFFFFF;
+  text-shadow: 0px 4px 1px #00514b, 0px 5px 3px #000000, 0px 0px 1px #FFFFFF;
 }
 
 .idustry {
