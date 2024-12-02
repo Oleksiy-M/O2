@@ -305,26 +305,31 @@ font-family: "Saira Stencil One", sans-serif;
    position: relative;
       transition-duration: 1s;
       
+      
+      //  @media screen and (min-width: 768px) {
+         // padding: 50px 0 0;
+         //  }
+      }
+      
+      
+      
+      .project-hero {
+         display: flex;
+         justify-content: center;
+margin: 0px 0 0;
+width: 100%;
+
+background-size: cover;
+object-fit: contain;
+border-top: 2px solid #fff;
+border-bottom: 2px solid #fff;
+
+transition-duration: 1s;
+transform: scale(1.04);
          &:hover,
          &:focus {
-            transform: scale(1.02);
-         }
-//  @media screen and (min-width: 768px) {
-// padding: 50px 0 0;
-//  }
-}
-
-
-
-.project-hero {
-   display: flex;
-   justify-content: center;
-margin: 0px 0 0;
-   width: 100%;
-   background-size: cover;
-   object-fit: contain;
-   border-top: 2px solid #fff;
-   border-bottom: 2px solid #fff;
+               transform: scale(1);
+            }
 
    @media (min-device-pixel-ratio: 2) and (max-width: 767px),
    (min-resolution: 192dpi) and (max-width: 767px),
@@ -393,12 +398,18 @@ margin: 0px 0 0;
    // display: block;
    display: flex;
    justify-content: space-around;
-   align-items: center;
+   // align-items: center;
    position: absolute;
    width: 100%;
-   top: 60%;
+   top: 40%;
    padding: 0 0px;
-
+transition-duration: 1s;
+   transform: scale(1);
+   
+   .project-hero:hover &,
+   .project-hero:focus & {
+         transform: scale(1.06);
+      }
    @media screen and (min-width:768px) {
       width: 738px;
    }
@@ -417,7 +428,7 @@ margin: 0px 0 0;
 
    width: 105px;
    height: 100px;
-   padding: 15px 9px;
+   padding: 15px 7px;
 
    user-select: none;
    text-align: center;
@@ -430,7 +441,7 @@ font-family: "Saira Stencil One", sans-serif;
    text-transform: uppercase;
 
    text-shadow: 0px 1px 2px #000000a2,
-      1px 1px 1px #000000aa;
+      1px 1px 0px #000;
 
    color: $svg-color;
    border: 1.5px solid #ffffff;

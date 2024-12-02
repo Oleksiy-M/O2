@@ -9,7 +9,7 @@ $histor-color-text: #d5d095;
 $prim-histor-text: #fffdd1;
 $prim-indusry-color: aqua;
 
-$Logo-color: #036db068;
+$Logo-color: #3964ffb0;
 
 
 $anime-elements: cubic-bezier(0, .84, .79, .81);
@@ -103,41 +103,9 @@ body {
 	width: 90%;
 	max-width: 1000px;
 	background-color: transparent;
-	transition-duration: 2s;
-
-	.section-case:hover &,
-	.section-case:focus &,
-	.section-project:hover &,
-	.section-project:focus & {
-		transition-duration: 0.1s;
-		transform: scale(1.05);
-		text-shadow: 
-				0px 4px 1px #00514b,
-					0px 5px 2px #000000;
-
-	}
+	// transition-duration: 2s;
 
 
-	.section-hero__industry:hover &,
-	.section-hero__industry:focus & {
-		transition-duration: 0.5s;
-		transform: scale(1.05);
-		text-shadow: 
-					0px 2px 12px #002051,
-						0px 3px 2px #000723,
-0px 0px 2px #ffffff;
-	}
-
-	.history-section:hover &,
-	.history-section:focus & {
-		transition-duration: 1s;
-		transition-timing-function: $anime-text;
-		transform: scale(1.05);
-		color: $prim-histor-text;
-		text-shadow:
-						0px 2px 8px #3e0051,
-							0px 3px 1px #311c2cfe;
-	}
 }
 
 
@@ -151,14 +119,46 @@ body {
 	text-align: center;
 
 	font-weight: bolder;
-	font-size: 26px;
+	font-size: 36px;
 	line-height: 1.16;
 	letter-spacing: 0.05em;
 	word-spacing: 2px;
 	color: #e7e7e7;
-	
-// font-family: "Wallpoet", serif;
+	transition-duration: 1s;
 font-family: "Saira Stencil One", sans-serif;
+
+
+	.section-case:hover &,
+		.section-case:focus &,
+		.section-project:hover &,
+		.section-project:focus & {
+			transition-duration: 0.5s;
+			transform: scale(1.05);
+			text-shadow:
+		0px 4px 0px #0023646b,
+		
+		0px 2px 2px #0000003f;
+	
+		}
+	
+	
+
+	
+		.history-section:hover &,
+		.history-section:focus & {
+			transition-duration: 1s;
+			transition-timing-function: $anime-text;
+			transform: scale(1.05);
+		
+		color: $prim-histor-text;
+			text-shadow:
+				0px 2px 8px #690289,
+				0px 3px 4px #311c2c7e;
+		}
+
+
+// font-family: "Wallpoet", serif;
+
 	@media screen and (min-width: 768px) {
 		// font-weight: 900;
 		font-size: 32px;
@@ -172,12 +172,6 @@ font-family: "Saira Stencil One", sans-serif;
 		// color: $primary-text-color;
 		// color: $White-color;
 	color: #e7e7e7;
-	}
-
-	.history-section:hover &,
-	.history-section:focus & {
-		transition-duration: 1s;
-		color: $prim-histor-text;
 	}
 
 	@media screen and (min-width: 1200px) {

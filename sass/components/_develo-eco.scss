@@ -149,12 +149,13 @@ font-family: "Saira Stencil One", sans-serif;
         color: $svg-color;
       }
 
-      // @media screen and (min-width: 768px) {
+      @media screen and (min-width: 768px) {
+        font-size: 14px;
  
-      // }
+      }
 
       @media screen and (min-width: 1200px) {
-        font-size: 14px;
+        font-size: 16px;
       }
     }
 
