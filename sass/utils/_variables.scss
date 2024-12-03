@@ -9,7 +9,8 @@ $histor-color-text: #d5d095;
 $prim-histor-text: #fffdd1;
 $prim-indusry-color: aqua;
 
-$Logo-color: #3964ffb0;
+$Logo-color-orang: #ffbf00;
+$Logo-color-blue: #086fff45;
 
 
 $anime-elements: cubic-bezier(0, .84, .79, .81);
@@ -135,14 +136,11 @@ font-family: "Saira Stencil One", sans-serif;
 			transition-duration: 0.5s;
 			transform: scale(1.05);
 			text-shadow:
-		0px 4px 0px #0023646b,
+		0px 3px 0px #4e8af96b,
 		
-		0px 2px 2px #0000003f;
+		0px 1px 2px #0000003f;
 	
 		}
-	
-	
-
 	
 		.history-section:hover &,
 		.history-section:focus & {

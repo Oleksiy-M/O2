@@ -25,12 +25,26 @@
 // < !-- Logo -->
 
 
+.container-hero{
+	margin:0px 0 350px;
+	
+	
+	// &:hover,
+	// &:focus {
+	// 		transform: scale(1);
+	// 	}
+@media screen and (min-width: 768px) {
+	margin: 0 auto 0;
+}
+}
+
+
 .section-hero__logo {
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 0 0 450px;
+	margin: 0 0 6px;
 	background-size: cover;
 	position: relative;
 	// object-fit: cover;
@@ -38,13 +52,13 @@
 	border-top: 2px solid #b5f8f8cc;
 	border-bottom: 2px solid #b5f8f8cc;
 
-			transition-duration: 0.5s;
-			transform:scale(1.03);
- &:hover,
+		transition-duration: 0.5s;
+		transform: scale(1.03);
+&:hover,
 &:focus {
 	border-top: 2px solid #fff;
 	border-bottom: 2px solid #fff;	
-	transform:scale(1);
+	transform: scale(1);
 			}
 
 
@@ -68,7 +82,7 @@
 
 	@media screen and (min-width: 768px) {
 		// padding: 250px 0 20px;
-		margin: 0 auto 0px;
+		// margin: 0 auto 0px;
 		height: 460px;
 		background-position: bottom;
 		background-image:
@@ -90,7 +104,7 @@
 
 	@media screen and (min-width: 1200px) {
 		background-position: bottom;
-			margin: 0 0 100px;
+			// margin: 0 0 10px;
 			// padding: 0 0 500px;
 		height: 450px;
 		max-width: 1600px;
@@ -131,25 +145,20 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-
-	// max-width: 120px;
-	transform: translateY(490px);
+position: absolute;
 	padding: 0;
-	transition-duration: 1s;
-	@media screen and (min-width: 540px) {
-		transform: translateY(500px);
-	}
-	// max-height: 120px;
+// margin: 1200px 0 0;
+bottom: -550px;
+@media screen and (min-width: 540px) {
+	
+	// margin: 1300px 0 0;
+	bottom: -550px;
+}
 
-	@media screen and (min-width: 768px) {
-		// padding: 300px 0 0;
-// 		.section-hero__logo:hover &,
-// 		.section-hero__logo:focus & {
-// 		transform: translateY(70px) scale(1.1);
-// 			// transition-timing-function:$anime-elements;
-// }
-
-		transform: translateY(70px);
+@media screen and (min-width: 768px) {
+	
+	bottom: 15px;
+// margin: 140px 0 0;
 	}
 }
 
@@ -171,9 +180,10 @@
 	position: relative;
 	transition-duration: 1s;
 user-select: none;
-	transform: scale(1.001);
+	transform: scale(1);
 	// transform: rotateX(40deg);
-
+	margin: 120px 0 80px;
+	
 	.section-hero__logo:hover &,
 	.section-hero__logo:focus & {
 		transition-duration: 1s;
@@ -182,10 +192,9 @@ user-select: none;
 		transition-timing-function: $anime-text;
 
 	}
-	margin: 120px 0 80px;
 
 	@media screen and (min-width: 768px) {
-		margin-bottom: 80px;
+		margin-bottom: 90px;
 	}
 
 
@@ -197,25 +206,19 @@ user-select: none;
 	border-radius: 5px;
 	width: 90px;
 	height: 90px;
-	// margin-top: -230px;
 	margin: 0 auto;
 
 	transition-duration: 1s;
 	stroke-width: 0.2px;
-	// stroke: #fcb90269;
-	// stroke: #fcb902;
-	// box-shadow: inset 0 0 6px 35px #0463e87a;
 
 	.section-hero__logo:hover &,
 	.section-hero__logo:focus & {
 	    
-		transition-timing-function: $anime-text;
-			box-shadow: inset 0 0 65px 10px $Logo-color,
-				0 0 10px 5px #fc9402, 0 0 20px 5px #fc9802,
-				0 0 25px 15px #fc9802,
-				0 0 5px 2px #000305c5,
-				inset 0 0 6px 35px $Logo-color;
-		}
+			box-shadow:
+					0px 0px 30px 0px #ffffff ,
+					20px 20px 0px 0px $Logo-color-orang,
+					-20px -20px 0px 0px $Logo-color-orang;
+	}
 
 	@media screen and (min-width: 650px) {
 		width: 70px;
@@ -235,44 +238,38 @@ user-select: none;
 	}
 }
 
- .hero-logo.active {
-		@media screen and (max-width: 767px) {
-				width: 110px;
-				height: 110px;
-				// margin-top: -190px;
-			
-		transition-timing-function: $anime-text;
-			box-shadow: inset 0 0 65px 10px $Logo-color,
-				0 0 10px 5px #fc9402, 0 0 20px 5px #fc9802,
-				0 0 25px 15px #fc9802,
-				0 0 5px 2px #000305c5,
-				inset 0 0 6px 35px $Logo-color;
-		}}
-//  inset 0 0 10px 5px #fc9402,
-//  0 0 10px 1px #fc9402,
-//  0 0 70px 15px #fcbd02,
-//  inset 0 0 16px 20px #0197fb71;
+//  .hero-logo.active {
+// 		// @media screen and (max-width: 767px) {
+// 				width: 110px;
+// 				height: 110px;
+// 			box-shadow:
+
+	
+// 			0px 0px 40px 10px #ffc800,
+// 			20px 20px 0px 0px $Logo-color-orang,
+// 			-20px -20px 0px 0px $Logo-color-orang;
+	// }
 
 
 .hero-logo__o {
-	transition-duration: 1s;
-	fill: $primary-text-color;
+	position: absolute;
 	width: 50px;
 	height: 50px;
-	margin: 0 auto;
-
-	fill: $primary-text-color;
+	margin: 0 auto ;
+	
+	fill: #06ffea;
 	border-radius: 35px;
 	stroke-opacity: 0.5;
 	stroke-width: 0.3px;
+	transition-duration: 1s;
 	// stroke: #ffffff32;
-	box-shadow: inset 0 0 6px 35px $Logo-color;
-
+	
 	.section-hero__logo:hover &,
 	.section-hero__logo:focus & {
-		transition-timing-function: $anime-text;
-	box-shadow: inset 0 0 10px 35px $Logo-color,
-						0 0 10px 5px $Logo-color;
+		box-shadow: 
+		inset 0 0 6px 35px $Logo-color-blue,
+		 0 0 20px 20px $Logo-color-blue;
+
 	}
 
 	@media screen and (min-width: 650px) {
@@ -290,7 +287,6 @@ user-select: none;
 		// .section-hero__logo:hover &,
 		// .section-hero__logo:focus & {
 
-		// 	// stroke: #ffffff;
 		// 		box-shadow: inset 0 0 10px 35px #0463e8b4,
 		// 			0 0 10px 5px #0463e8b4;
 		// }
@@ -301,13 +297,7 @@ user-select: none;
 		height: 68px;
 
 	}
-
-
 }
-
-
-
-
 
 
 .oxy-container {
@@ -315,7 +305,7 @@ user-select: none;
 	// max-width: 250px;
 	// min-width: 150px;
 	// border-radius: 15px;
-	// transform: scale(0.8);
+	// transform: scale(0.9);
 user-select: none;
 margin-top: 0px;
 	@media screen and (min-width: 768px) {
@@ -323,7 +313,7 @@ margin-top: 0px;
 	}
 
 	@media screen and (min-width: 1200px) {
-		width: 350px;
+		width: 320px;
 
 	}
 }
@@ -331,13 +321,13 @@ margin-top: 0px;
 .hero-title__box {
 	display: flex;
 	align-items: center;
+margin: 0 auto 0px;
+	height: 300px;
+
 	text-align: center;
 	word-wrap: wrap;
 	white-space: pre-wrap;
-	top: -163px;
-	position: absolute;
 	// width: 80vw;
-	height: 230px;
 	perspective: 300px;
 	// border: #fff 1px solid;
 	overflow: hidden;
@@ -356,12 +346,12 @@ margin-top: 0px;
 
 	@media screen and (min-width: 768px) {
 		width: 450px;
-		top: 305px;
+		margin: 0 auto;
 	}
 
 	@media screen and (min-width: 1200px) {
 		width: 600px;
-		top: 302px;
+
 		// transition-duration: 1s;
 		// .section-hero__logo:hover &,
 		// .section-hero__logo:focus & {
@@ -377,7 +367,7 @@ margin-top: 0px;
 	opacity: 1;
 
 	transform: rotateX(15deg) translateY(150px);
-	transition-duration: 10s;
+	transition-duration: 15s;
 	
 	text-shadow:
 		0px 4px 0px #00379c,
