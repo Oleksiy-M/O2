@@ -326,18 +326,16 @@
 }
 
 .button--submit {
-   @media screen and (max-width: 1199px) {
-      margin-top: 20px;
-   }
+
 
    display: flex;
    justify-content: center;
    align-items: center;
-   align-self: center;
+   // align-self: center;
 
    height: 50px;
    background-color: $Accent;
-   box-shadow: 0px 4px 4px 0px #ffffff26;
+   // box-shadow: 0px 4px 4px 0px #ffffff26;
    min-width: 230px;
 
    user-select: none;
@@ -347,6 +345,8 @@
    letter-spacing: 0.06em;
    color: $White-color;
    border-radius: 4px;
+   border: 0px ;
+
    transition-duration: 0.5s;
 
    &:hover,
@@ -355,7 +355,9 @@
       // background-color: #7181f914;
       border: 1px solid #ffffffcf;
    }
-
+      @media screen and (max-width: 1199px) {
+         margin: 20px 0 0;
+      }
    // animation-name: background-color;
 }
 
