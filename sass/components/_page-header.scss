@@ -248,7 +248,7 @@ line-height: 1.2;
    justify-content: center;
    left: 1%;
    position: absolute;
-   background: #1f01406e;
+   background: #6cb2f76e;
    width: 98%;
    bottom: 10px;
    text-align: center;
@@ -269,10 +269,10 @@ font-family: "Saira Stencil One", sans-serif;
 
    .case-item:hover &,
    .case-item:focus & {
-      text-shadow: 1px 1px 2px #000000,
-         1px 2px 1px #000000;
+      text-shadow: -1px 0px 2px #3c3c3c,
+         1px 1px 5px #3d3d3d;
       color: #fff;
-      transform: scale(1.18);
+      transform: scale(1.12);
    }
 
    @media screen and (min-width: 768px) {
@@ -295,32 +295,36 @@ font-family: "Saira Stencil One", sans-serif;
 
 
 .section-project {
-   display: flex;
+   display: block;
    margin: 0px auto 80px;
    padding: 150px 0 0;
-   align-items: center;
-   flex-direction: column;
+
    position: relative;
-      transition-duration: 1s;
-      
-      
+      overflow: hidden;
+   border-bottom: 2px #fff solid;
       //  @media screen and (min-width: 768px) {
          // padding: 50px 0 0;
          //  }
       }
       
       
+.container-project{
+   width: 100vw;
+
+}
+
+
       
       .project-hero {
-         display: flex;
-         justify-content: center;
+   display: flex;
+  justify-content: center;
 margin: 0px 0 0;
 width: 100%;
-
+// position: absolute;
 background-size: cover;
 object-fit: contain;
-border-top: 2px solid #fff;
-border-bottom: 2px solid #fff;
+
+border-top: 2px #fff solid;
 
 transition-duration: 1s;
 transform: scale(1.04);
@@ -396,10 +400,10 @@ transform: scale(1.04);
    // display: block;
    display: flex;
    justify-content: space-around;
-   // align-items: center;
-   position: absolute;
-   width: 100%;
-   top: 40%;
+   align-items: center;
+   // position: absolute;  
+   width: calc(100vw - 30px);
+   // top: 40%;
    padding: 0 0px;
 transition-duration: 1s;
    transform: scale(1);
@@ -424,7 +428,7 @@ transition-duration: 1s;
    align-items: center;
    justify-content: center;
 
-   width: 105px;
+   width: calc(100vw / 3 - 30px);
    height: 100px;
    padding: 15px 12px;
 
@@ -440,8 +444,8 @@ transition-duration: 1s;
    text-transform: uppercase;
 
    text-shadow: 
-   1px 1px 2px #000000db,
-   -1px 1px 2px #000000da;
+   1px 1px 2px #3b3b3bdb,
+   -1px 1px 2px #454444da;
 
    color: $svg-color;
    border: 1.5px solid #ffffff;
@@ -449,9 +453,7 @@ transition-duration: 1s;
    transition-duration: 0.5s;
    background-color: #0077ffa3;
 
-   &:not(:last-child) {
-      margin: 0 40px 0 0;
-   }
+ 
 
    &:hover,
    &:focus {
@@ -471,7 +473,7 @@ transition-duration: 1s;
       padding: 15px 15px;
     &:hover,
    &:focus {
-      color: #dedede;
+
       font-size: 10.4px;
       // font-weight: 900;
    }
@@ -479,12 +481,19 @@ transition-duration: 1s;
    
    @media screen and (min-width: 1200px) {
       font-size: 11px;
-      padding: 15px 21px;
+      padding: 15px 32px;
    &:hover,
    &:focus {
-      color: #dedede;
+
       font-size: 11.4px;
    } 
       width: 250px;
    }
 }
+
+
+// .project-item {
+//     &:not(:last-child) {
+//        margin: 0 40px 0 0;
+//     }
+//  }

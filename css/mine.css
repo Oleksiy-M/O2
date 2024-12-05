@@ -325,7 +325,7 @@ body {
   justify-content: center;
   left: 1%;
   position: absolute;
-  background: rgba(31, 1, 64, 0.431372549);
+  background: rgba(108, 178, 247, 0.431372549);
   width: 98%;
   bottom: 10px;
   text-align: center;
@@ -343,9 +343,9 @@ body {
   transition-duration: 0.5s;
 }
 .case-item:hover .case-title, .case-item:focus .case-title {
-  text-shadow: 1px 1px 2px #000000, 1px 2px 1px #000000;
+  text-shadow: -1px 0px 2px #3c3c3c, 1px 1px 5px #3d3d3d;
   color: #fff;
-  transform: scale(1.18);
+  transform: scale(1.12);
 }
 @media screen and (min-width: 768px) {
   .case-title {
@@ -360,13 +360,16 @@ body {
 }
 
 .section-project {
-  display: flex;
+  display: block;
   margin: 0px auto 80px;
   padding: 150px 0 0;
-  align-items: center;
-  flex-direction: column;
   position: relative;
-  transition-duration: 1s;
+  overflow: hidden;
+  border-bottom: 2px #fff solid;
+}
+
+.container-project {
+  width: 100vw;
 }
 
 .project-hero {
@@ -376,8 +379,7 @@ body {
   width: 100%;
   background-size: cover;
   object-fit: contain;
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
+  border-top: 2px #fff solid;
   transition-duration: 1s;
   transform: scale(1.04);
 }
@@ -420,9 +422,8 @@ body {
 .project-list {
   display: flex;
   justify-content: space-around;
-  position: absolute;
-  width: 100%;
-  top: 40%;
+  align-items: center;
+  width: calc(100vw - 30px);
   padding: 0 0px;
   transition-duration: 1s;
   transform: scale(1);
@@ -445,7 +446,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 105px;
+  width: calc(33.3333333333vw - 30px);
   height: 100px;
   padding: 15px 12px;
   text-align: center;
@@ -456,15 +457,12 @@ body {
   letter-spacing: 0.08em;
   line-height: 1.3;
   text-transform: uppercase;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8588235294), -1px 1px 2px rgba(0, 0, 0, 0.8549019608);
+  text-shadow: 1px 1px 2px rgba(59, 59, 59, 0.8588235294), -1px 1px 2px rgba(69, 68, 68, 0.8549019608);
   color: #33FF99;
   border: 1.5px solid #ffffff;
   border-radius: 25px;
   transition-duration: 0.5s;
   background-color: rgba(0, 119, 255, 0.6392156863);
-}
-.project-item:not(:last-child) {
-  margin: 0 40px 0 0;
 }
 .project-item:hover, .project-item:focus {
   border: 3px solid #ffffff;
@@ -480,18 +478,16 @@ body {
     padding: 15px 15px;
   }
   .project-item:hover, .project-item:focus {
-    color: #dedede;
     font-size: 10.4px;
   }
 }
 @media screen and (min-width: 1200px) {
   .project-item {
     font-size: 11px;
-    padding: 15px 21px;
+    padding: 15px 32px;
     width: 250px;
   }
   .project-item:hover, .project-item:focus {
-    color: #dedede;
     font-size: 11.4px;
   }
 }
@@ -504,7 +500,6 @@ body {
   z-index: 5;
   background-color: #1f2f52;
   border-bottom: 2px solid rgba(181, 248, 248, 0.8);
-  max-width: 1600px;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
@@ -735,11 +730,14 @@ body {
 }
 
 .container-hero {
-  margin: 0px 0 350px;
+  padding: 0px 0 350px;
+  overflow: hidden;
+  border-top: 2px #fff solid;
 }
 @media screen and (min-width: 768px) {
   .container-hero {
     margin: 0 auto 0;
+    padding: 0;
   }
 }
 
@@ -748,16 +746,14 @@ body {
   justify-content: center;
   margin: 0 0 8px;
   background-size: cover;
-  position: relative;
-  border-top: 2px solid rgba(181, 248, 248, 0.8);
-  border-bottom: 2px solid rgba(181, 248, 248, 0.8);
+  border-bottom: 2px solid #ffffff;
+  will-change: transform;
   transition-duration: 0.5s;
   transform: scale(1.03);
+  transform-origin: center;
 }
 .section-hero__logo:hover, .section-hero__logo:focus {
   margin: 0 0 0px;
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
   transform: scale(1);
 }
 @media screen and (max-width: 767px) {
@@ -916,9 +912,11 @@ body {
 .hero-title__box {
   display: flex;
   align-items: center;
-  margin: 0 auto 0px;
-  padding: 0 0 50px;
+  justify-content: center;
+  margin: 0 0 0px;
+  padding: 0 20px 50px;
   height: 300px;
+  width: calc(100vw - 10px);
   text-align: center;
   word-wrap: wrap;
   white-space: pre-wrap;
@@ -1101,7 +1099,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 600px;
+  height: 500px;
   border-radius: 10px;
   border-top: none;
   border-bottom: none;
@@ -2500,7 +2498,7 @@ body {
   user-select: none;
   color: #3fa9f5;
   transition-duration: 1s;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 1px rgb(59, 59, 59);
   font-weight: 100;
   font-size: 13px;
   line-height: 1.06;
@@ -2510,12 +2508,12 @@ body {
 }
 .develo-eco:hover .develo-eco__title, .develo-eco:focus .develo-eco__title {
   transition-timing-function: cubic-bezier(0.57, -0.6, 0.06, 1.63);
-  text-shadow: 0px 1px 1px black, 1px 1px 1px black;
+  text-shadow: 0px 1px 1px #3c3b3b, 1px 1px 1px #3f3f3f;
   color: #33FF99;
 }
 .impact-section:hover .develo-eco__title, .impact-section:focus .develo-eco__title {
   transition-timing-function: cubic-bezier(0.57, -0.6, 0.06, 1.63);
-  text-shadow: 0px 1px 1px black, 1px 1px 1px black;
+  text-shadow: 0px 1px 1px rgb(63, 63, 63), 1px 1px 1px rgb(60, 59, 59);
   color: #33FF99;
 }
 @media screen and (min-width: 768px) {
@@ -2881,7 +2879,7 @@ body {
   letter-spacing: 0.005em;
   word-spacing: 4px;
   color: #3fa9f5;
-  text-shadow: 0px 1px 1px black, 1px 0.5px 2px black;
+  text-shadow: 0px 1px 1px #272626, 1px 0.5px 2px #282828;
   transition-duration: 0.5s;
   transform: rotateX(-50deg);
   transform-style: preserve-3d;

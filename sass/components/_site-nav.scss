@@ -9,7 +9,7 @@
 	z-index: 5;
 	background-color: $bg-color;
 	border-bottom: 2px solid #b5f8f8cc;
-	max-width: 1600px;
+	// max-width: 1600px;
 	margin: 0 auto;
 
 	@media screen and (min-width: 768px) {
@@ -137,6 +137,7 @@
 	transition-duration: 0.5s;
 font-family: "Saira Stencil One", sans-serif;
 text-transform: uppercase;
+
 	@media screen and (min-width: 768px) {
 		// align-items: flex-end;
 		// margin-right: 20%;
