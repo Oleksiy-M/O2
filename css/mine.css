@@ -3110,7 +3110,7 @@ body {
 }
 .box-article:hover .head-article, .box-article:focus .head-article {
   transform: scale(1.02);
-  text-shadow: #ffffff 0px 0px 1px, #000000 1px 1px 2px, #000000 1px 4px 4px, #000000 0px 2px 2px;
+  text-shadow: #ffffff 0px 0px 1px, #2a2a2a 1px 1px 2px, #272727 1px 4px 4px, #2c2c2c 0px 2px 2px;
 }
 
 .article-title {
@@ -3129,7 +3129,7 @@ body {
 .article-item:hover .article-title, .article-item:focus .article-title {
   transform: scale(1.02);
   color: #fffdd1;
-  text-shadow: #000000 0px 2px 1px, #000000 0px 1px 3px, #000000 0px 1px 3px;
+  text-shadow: #3a3a3a 0px 2px 1px, #393939 0px 1px 3px, #3e3e3e 0px 1px 3px;
 }
 
 .article-aqueduct {
@@ -3145,7 +3145,7 @@ body {
 .article-item:hover .article-aqueduct, .article-item:focus .article-aqueduct {
   color: #fffdd1;
   transform: scale(1.02);
-  text-shadow: #ffffff 0px 0px 1px, #000000 1px 1.5px 2px, #000000 1px 1px 1px;
+  text-shadow: #ffffff 0px 0px 1px, #343434 1px 1.5px 2px, #3a3a3a 1px 1px 1px;
 }
 
 .article-aqueduct::first-letter {
