@@ -315,7 +315,7 @@ font-family: "Saira Stencil One", sans-serif;
 
 
       
-      .project-hero {
+.project-hero {
    display: flex;
   justify-content: center;
 margin: 100px 0 0;
@@ -388,11 +388,6 @@ transform: scale(1.04);
    }
 }
 
-// .project-img {
-//    width: 100%;
-
-// }
-
 
 
 
@@ -404,7 +399,8 @@ transform: scale(1.04);
    // position: absolute;  
    width: calc(100vw - 30px);
    // top: 40%;
-   padding: 0 0px;
+   padding: 0px;
+   margin: 0;
 transition-duration: 1s;
    transform: scale(1);
    
@@ -417,7 +413,7 @@ transition-duration: 1s;
    }
 
    @media screen and (min-width:1200px) {
-      width: 1170px;
+      width: 1000px;
 
    }
 }
@@ -431,17 +427,21 @@ transition-duration: 1s;
    width: calc(100vw / 3 - 30px);
    height: 100px;
    padding: 15px 12px;
+   // padding: 0;
+margin: 0;
+   
 
-   text-align: center;
-   // padding: 10px 0;
-   // font-family: "Saira Stencil One", sans-serif;
    user-select: none;
+
+   
+   text-align: center;
    font-weight: 900;
    font-family: "Anta", sans-serif;
    font-size: 8px;
-   letter-spacing: 0.08em;
+   letter-spacing: 0.04em;
    line-height: 1.3;
    text-transform: uppercase;
+word-spacing: 1px;
 
    text-shadow: 
    1px 1px 2px #3b3b3bdb,
@@ -450,50 +450,46 @@ transition-duration: 1s;
    color: $svg-color;
    border: 1.5px solid #ffffff;
    border-radius: 25px;
-   transition-duration: 0.5s;
    background-color: #0077ffa3;
 
- 
+   transition-duration: 0.5s;
+animation-timing-function: $anime-elements;
 
    &:hover,
    &:focus {
       border: 3px solid #ffffff;
       background-color: #0077ff;
       color: #dedede;
-
       font-size: 8.4px;
       transform: scale(1.04);
-      // font-weight: 900;
+    
    }
 
    @media screen and (min-width: 768px) {
       font-size: 10px;
-
       width: 200px;
-      padding: 15px 15px;
-    &:hover,
+      // padding: 15px 18px;
+      white-space: pre;
+   &:hover,
    &:focus {
-
       font-size: 10.4px;
-      // font-weight: 900;
    }
    }
    
    @media screen and (min-width: 1200px) {
       font-size: 11px;
-      padding: 15px 32px;
+      // padding: 15px 35px;
+      width: 230px;
    &:hover,
    &:focus {
 
       font-size: 11.4px;
    } 
-      width: 250px;
    }
 }
 
-
-// .project-item {
-//     &:not(:last-child) {
-//        margin: 0 40px 0 0;
-//     }
-//  }
+.project-title{
+   padding: 0;
+   margin: 0;
+   text-decoration: none;
+}

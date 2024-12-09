@@ -424,7 +424,8 @@ body {
   justify-content: space-around;
   align-items: center;
   width: calc(100vw - 30px);
-  padding: 0 0px;
+  padding: 0px;
+  margin: 0;
   transition-duration: 1s;
   transform: scale(1);
 }
@@ -438,7 +439,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .project-list {
-    width: 1170px;
+    width: 1000px;
   }
 }
 
@@ -449,20 +450,23 @@ body {
   width: calc(33.3333333333vw - 30px);
   height: 100px;
   padding: 15px 12px;
-  text-align: center;
+  margin: 0;
   user-select: none;
+  text-align: center;
   font-weight: 900;
   font-family: "Anta", sans-serif;
   font-size: 8px;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   line-height: 1.3;
   text-transform: uppercase;
+  word-spacing: 1px;
   text-shadow: 1px 1px 2px rgba(59, 59, 59, 0.8588235294), -1px 1px 2px rgba(69, 68, 68, 0.8549019608);
   color: #33FF99;
   border: 1.5px solid #ffffff;
   border-radius: 25px;
-  transition-duration: 0.5s;
   background-color: rgba(0, 119, 255, 0.6392156863);
+  transition-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0, 0.84, 0.79, 0.81);
 }
 .project-item:hover, .project-item:focus {
   border: 3px solid #ffffff;
@@ -475,7 +479,7 @@ body {
   .project-item {
     font-size: 10px;
     width: 200px;
-    padding: 15px 15px;
+    white-space: pre;
   }
   .project-item:hover, .project-item:focus {
     font-size: 10.4px;
@@ -484,12 +488,17 @@ body {
 @media screen and (min-width: 1200px) {
   .project-item {
     font-size: 11px;
-    padding: 15px 32px;
-    width: 250px;
+    width: 230px;
   }
   .project-item:hover, .project-item:focus {
     font-size: 11.4px;
   }
+}
+
+.project-title {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
 }
 
 /* =================SITE-NAV  ================= */
@@ -977,7 +986,6 @@ body {
   position: relative;
   background-size: cover;
   background-position: top;
-  transition-duration: 0.5s;
 }
 @media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
   .section-hero__industry {
@@ -1067,7 +1075,6 @@ body {
 .hand-hero {
   z-index: 2;
   opacity: 0.8;
-  transition-duration: 1s;
 }
 @media screen and (min-width: 768px) {
   .hand-hero {
@@ -2418,7 +2425,6 @@ body {
   background-position: center;
   background-size: cover;
   background-image: linear-gradient(to bottom, rgba(1, 19, 107, 0.4470588235) 10%, rgba(10, 1, 60, 0.6392156863) 99%), url(../img/develo-eco/develo-mobil.webp);
-  transition-duration: 0.5s;
 }
 @media screen and (min-width: 768px) {
   .section-bg {
@@ -2470,14 +2476,14 @@ body {
   border-bottom: 1px solid #3fa9f5;
 }
 .develo-eco:hover .develo-title__box, .develo-eco:focus .develo-title__box {
-  transition-timing-function: cubic-bezier(0.57, -0.6, 0.57, 1.37);
+  transition-timing-function: cubic-bezier(0, 0.84, 0.79, 0.81);
   transform: scale(1.05);
   box-shadow: 0px 1px 4px 0px aqua;
   background-color: rgba(35, 1, 48, 0.0784313725);
 }
 .impact-section:hover .develo-title__box, .impact-section:focus .develo-title__box {
   transform: scale(1.05);
-  transition-timing-function: cubic-bezier(0.57, -0.6, 0.57, 1.37);
+  transition-timing-function: cubic-bezier(0, 0.84, 0.79, 0.81);
   box-shadow: 0px 1px 4px 0px aqua;
   background-color: rgba(35, 1, 48, 0.0784313725);
 }
@@ -2497,7 +2503,6 @@ body {
   padding: 2px;
   user-select: none;
   color: #3fa9f5;
-  transition-duration: 1s;
   text-shadow: 1px 1px 1px rgb(59, 59, 59);
   font-weight: 100;
   font-size: 13px;
@@ -2505,6 +2510,7 @@ body {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   font-family: "Saira Stencil One", sans-serif;
+  transition-duration: cubic-bezier(0, 0.84, 0.79, 0.81);
 }
 .develo-eco:hover .develo-eco__title, .develo-eco:focus .develo-eco__title {
   transition-timing-function: cubic-bezier(0.57, -0.6, 0.06, 1.63);
@@ -2643,8 +2649,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .impact-title__box {
-    margin: 0 0 70px 70px;
-    padding: 5px 20px;
+    margin: 0 0 70px 90px;
+    padding: 5px 18px;
   }
 }
 @media screen and (min-width: 1200px) {
