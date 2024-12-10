@@ -177,7 +177,7 @@ z-index: 0;
 
       @media screen and (min-width: 768px) {
         perspective: 1000px;
-        width: 300px;
+        width: 299px;
         height: 390px;
         margin-bottom: 100px;
         border-bottom: 3.5px solid #0000ff25;
@@ -197,8 +197,6 @@ z-index: 0;
           margin-left: 0px;
           margin-top: -10px;
         }
-
-
       }
     }
 
@@ -208,11 +206,12 @@ z-index: 0;
       z-index: -1;
       border-radius: 10px;
       width: calc(100% - 1px);
+
       height: 420px;
       left: 1px;
       background-position: bottom;
       background-size: cover;
-      opacity: 0.6;
+      opacity: 1;
       background-image: url(../img/develo-eco/home.webp);
 
 
@@ -244,17 +243,6 @@ z-index: 0;
     }
 
 
-// .visual-content__home.visible{
-//   @media screen and (max-width: 767px) {
-
-//   transition-duration: 1s;
-//   transition-timing-function: $anime-card-industry;
-//   opacity: 0.05;
-//   transform: rotateX(90deg) scale(0.9);
-// }
-// }
-
-
     .laptop-content {
       margin-bottom: 0;
 
@@ -284,7 +272,7 @@ z-index: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 auto 0px auto;
+        margin: 0 auto 0px;
         padding: 70px 0px 0px 0px;
         // width: 50%;
       }
@@ -358,7 +346,7 @@ z-index: 0;
       height: 420px;
       background-position: bottom;
       background-size: cover;
-      opacity: 0.6;
+      opacity: 1;
       transform: rotateX(0deg);
       transform-style: preserve-3d;
       transition-duration: 0.5s;

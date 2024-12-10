@@ -2555,7 +2555,7 @@ body {
 @media screen and (min-width: 768px) {
   .develo-eco__content {
     perspective: 1000px;
-    width: 300px;
+    width: 299px;
     height: 390px;
     margin-bottom: 100px;
     border-bottom: 3.5px solid rgba(0, 0, 255, 0.1450980392);
@@ -2587,7 +2587,7 @@ body {
   left: 1px;
   background-position: bottom;
   background-size: cover;
-  opacity: 0.6;
+  opacity: 1;
   background-image: url(../img/develo-eco/home.webp);
   transition-duration: 0.5s;
   transform: rotateX(0deg);
@@ -2636,7 +2636,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto 0px auto;
+    margin: 0 auto 0px;
     padding: 70px 0px 0px 0px;
   }
 }
@@ -2687,7 +2687,7 @@ body {
   height: 420px;
   background-position: bottom;
   background-size: cover;
-  opacity: 0.6;
+  opacity: 1;
   transform: rotateX(0deg);
   transform-style: preserve-3d;
   transition-duration: 0.5s;
@@ -2851,6 +2851,7 @@ body {
 .cards__overlay {
   display: flex;
   align-self: flex-end;
+  justify-content: center;
   overflow: hidden;
   height: 0.01%;
   border-radius: 0 10px 0 0;
