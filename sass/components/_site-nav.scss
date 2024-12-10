@@ -1,44 +1,37 @@
 /* =================SITE-NAV  ================= */
 
 
-.pg-header {
+.header-pg {
+
+	@media screen and (min-width: 768px) {
+		background-color: $bg-color;
+		}	
+	}
+	
+	.nav {
 	display: block;
-	position: fixed;
-	width: 100%;
-
-	z-index: 5;
+		position: fixed;
+		width: 100%;
+		height: 50px;
+	padding: 12px 0 8px;
+	// bottom: -20px;
 	background-color: $bg-color;
-	border-bottom: 2px solid #b5f8f8cc;
-	// max-width: 1600px;
-	margin: 0 auto;
+	z-index: 5;
 
 	@media screen and (min-width: 768px) {
-		height: 70px;
-		position: static;
-	}
-
-	@media screen and (min-width: 1200px) {
-		height: 100px;
-
-	}
-}
-
-.bg-nav {
-	display: flex;
-	align-items: center;
-	// justify-self: start;
-	// width: 100%;
-	height: 100%;
-	padding: 10px 0;
-
-	@media screen and (min-width: 768px) {
+		display: flex;
 		align-items: flex-end;
-
 		justify-content: space-between;
-		max-width: 1600px;
+		position: static;
+		height: 70px;
+		padding: 10px 0px;
+		
+background-color: transparent;
+}
+		@media screen and (min-width: 1200px) {
+			height: 90px;
+		}
 
-
-	}
 }
 
 .site-nav__logo {
@@ -54,16 +47,18 @@
 		transition: $animation-card;
 		left: 35px;
 		bottom: 0px;
-
-		.bg-nav:hover &,
-		.bg-nav:focus & {
+		
+		
+		.nav:hover &,
+		.nav:focus & {
 			transform: scale(1.04);
 		}
 	}
-
-	// @media screen and (min-width: 1200px) {
-	// 	height: 60px;
-	// }
+	
+	@media screen and (min-width: 1200px) {
+		bottom: 5px;
+		height: 60px;
+	}
 }
 
 .nav-logo {
@@ -78,8 +73,8 @@
 		height: 50px;
 		transition-duration: 0.5s;
 
-		.bg-nav:hover &,
-		.bg-nav:focus & {
+		.nav:hover &,
+		.nav:focus & {
 			box-shadow: inset 0 0 65px 1px #02f4fc61,
 				0 0 10px 5px #fc9402,
 				0 0 5px 2px #000305c5,
@@ -104,8 +99,8 @@
 		height: 27px;
 		stroke-width: 0.3px;
 
-		.bg-nav:hover &,
-		.bg-nav:focus & {
+		.nav:hover &,
+		.nav:focus & {
 
 			stroke: #ffffff;
 			box-shadow: inset 0 0 10px 15px #009ed8,
@@ -125,6 +120,7 @@
 .site-nav {
 	display: flex;
 	align-items: center;
+
 	height: 30px;
 	z-index: 2;
 	// margin-right: 20%;
@@ -134,7 +130,7 @@
 	line-height: 1.44;
 	letter-spacing: 0.04em;
 	text-shadow: 1px 1px 1px black;
-	transition-duration: 0.5s;
+	// transition-duration: 0.5s;
 font-family: "Saira Stencil One", sans-serif;
 text-transform: uppercase;
 
