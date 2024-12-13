@@ -104,7 +104,7 @@ z-index: 0;
 
       @media screen and (min-width: 768px) {
         margin: -210px 0 190px 0;
-        padding: 5px 10px;
+        padding: 5px 5px;
       }
 
       @media screen and (min-width: 1200px) {
@@ -115,18 +115,20 @@ z-index: 0;
     }
 
     .develo-eco__title {
-      padding: 2px;
+      // padding: 2px;
       user-select: none;
       color: $Secondary-text-color;
       
-      text-shadow: 1px 1px 1px rgb(59, 59, 59);
       font-weight: 100;
       font-size: 13px;
       line-height: 1.06;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.01em;
+      word-spacing: 0.01px;
+      
       text-transform: uppercase;
       font-family: "Saira Stencil One", sans-serif;
       
+      text-shadow: 1px 1px 1px rgb(59, 59, 59);
       transition-duration: $anime-elements;
       .develo-eco:hover &,
       .develo-eco:focus & {
@@ -277,7 +279,7 @@ z-index: 0;
         margin: 0 auto 0px;
         padding: 70px 0px 0px 0px;
 
-        width: 45%;
+        width: 47%;
       }
 
       @media screen and (min-width: 1200px) {

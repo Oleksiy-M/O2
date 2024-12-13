@@ -324,7 +324,7 @@ margin: 0px auto;
 margin: 0 0 0px;
 padding: 0 20px 50px;
 	height: 300px;
-	width: calc(100vw - 10px);
+	// width: calc(100vw - 10px);
 
 	text-align: center;
 	word-wrap: wrap;
@@ -333,18 +333,7 @@ padding: 0 20px 50px;
 	perspective: 300px;
 	// border: #fff 1px solid;
 	overflow: hidden;
-// opacity: 0;
-	// text-decoration-color: aqua;
-// transition-timing-function: $anime-text;
-// transition-duration: 5.5s;
-	// transform: translateX(-50vw);
-	// .section-hero__logo:hover &,
-	// .section-hero__logo:focus & {
-	// 	transition-timing-function: $anime-text;
-	// // 	transform: translateX(0vw);
-	// // 	text-decoration-color: aqua;
-	// // 	opacity: 1;
-	// }
+
 
 	@media screen and (min-width: 768px) {
 		width: 450px;

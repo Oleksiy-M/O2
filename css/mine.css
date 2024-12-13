@@ -927,7 +927,6 @@ body {
   margin: 0 0 0px;
   padding: 0 20px 50px;
   height: 300px;
-  width: calc(100vw - 10px);
   text-align: center;
   word-wrap: wrap;
   white-space: pre-wrap;
@@ -1312,7 +1311,7 @@ body {
   .develo-eco__content:hover .develo-eco___decor1, .develo-eco__content:focus .develo-eco___decor1 {
     border: 2px solid aqua;
     margin-left: 0;
-    width: 101.5%;
+    width: 102.5%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2492,7 +2491,7 @@ body {
 @media screen and (min-width: 768px) {
   .develo-title__box {
     margin: -210px 0 190px 0;
-    padding: 5px 10px;
+    padding: 5px 5px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2502,16 +2501,16 @@ body {
 }
 
 .develo-eco__title {
-  padding: 2px;
   user-select: none;
   color: #3fa9f5;
-  text-shadow: 1px 1px 1px rgb(59, 59, 59);
   font-weight: 100;
   font-size: 13px;
   line-height: 1.06;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.01em;
+  word-spacing: 0.01px;
   text-transform: uppercase;
   font-family: "Saira Stencil One", sans-serif;
+  text-shadow: 1px 1px 1px rgb(59, 59, 59);
   transition-duration: cubic-bezier(0, 0.84, 0.79, 0.81);
 }
 .develo-eco:hover .develo-eco__title, .develo-eco:focus .develo-eco__title {
@@ -2640,7 +2639,7 @@ body {
     align-items: center;
     margin: 0 auto 0px;
     padding: 70px 0px 0px 0px;
-    width: 45%;
+    width: 47%;
   }
 }
 @media screen and (min-width: 1200px) {
