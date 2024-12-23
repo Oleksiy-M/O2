@@ -61,9 +61,8 @@ body {
   letter-spacing: 0.05em;
   word-spacing: 2px;
   color: #e7e7e7;
-  transition-duration: 1s;
-  font-family: "Saira Stencil One", sans-serif;
   transition-duration: 2s;
+  font-family: "Saira Stencil One", sans-serif;
 }
 .section-case:hover .title__head, .section-case:focus .title__head, .section-project:hover .title__head, .section-project:focus .title__head {
   transition-duration: 0.5s;
@@ -168,7 +167,7 @@ body {
 .advantages-section {
   display: block;
   transition-duration: 1s;
-  padding: 100px 0 100px;
+  padding: 50px 0 100px;
   user-select: none;
 }
 .advantages-section:hover, .advantages-section:focus {
@@ -925,13 +924,12 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 0 0px;
-  padding: 0 20px 50px;
+  padding: 0 20px 100px;
   height: 300px;
   text-align: center;
   word-wrap: wrap;
   white-space: pre-wrap;
   perspective: 300px;
-  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .hero-title__box {
@@ -946,16 +944,26 @@ body {
 }
 
 .title__logo {
-  opacity: 1;
-  transform: rotateX(15deg) translateY(150px);
-  transition-duration: 15s;
-  transition-timing-function: cubic-bezier(0.57, -0.6, 0.57, 1.37);
-  text-shadow: 0px 4px 0px #00379c, 0px 2px 2px #000000, 0px 0px 1px #FFFFFF;
+  transform-style: preserve-3d;
+  text-shadow: 0px 4px 0px #00379c, 0px 2px 2px #000000, 0px 0px 1px #fff;
+  transform: rotateX(20deg) translateY(205px);
+  /* Початкова позиція, анімація ще не активована */
 }
 
-.title__logo.active2 {
-  opacity: 1;
-  transform: rotateX(15deg) translateY(-245px);
+@keyframes moveToAndFro {
+  0% {
+    transform: rotateX(20deg) translateY(205px);
+  }
+  50% {
+    transform: rotateX(20deg) translateY(0px);
+  }
+  100% {
+    transform: rotateX(20deg) translateY(205px);
+  }
+}
+.title__logo.animate {
+  animation: moveToAndFro 15s linear infinite;
+  /* Додаємо анімацію */
 }
 
 .idustry {

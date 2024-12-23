@@ -1,6 +1,7 @@
 /*================== PAGE-HEADER ====================== */
 
 .page-header {
+   
    display: block;
    position: relative;
    padding: 0px 0 100px;
@@ -37,9 +38,10 @@
 
 
 .advantages-section {
+   // z-index: 1;
    display: block;
    transition-duration: 1s;
-   padding: 100px 0 100px;
+   padding: 50px 0 100px;
    user-select: none;
 &:hover,
  &:focus {

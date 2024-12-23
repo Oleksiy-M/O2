@@ -322,7 +322,7 @@ margin: 0px auto;
 	align-items: center;
 	justify-content: center;
 margin: 0 0 0px;
-padding: 0 20px 50px;
+padding: 0 20px 100px;
 	height: 300px;
 	// width: calc(100vw - 10px);
 
@@ -332,8 +332,7 @@ padding: 0 20px 50px;
 	// width: 80vw;
 	perspective: 300px;
 	// border: #fff 1px solid;
-	overflow: hidden;
-
+	// overflow:visible;
 
 	@media screen and (min-width: 768px) {
 		width: 450px;
@@ -353,23 +352,31 @@ padding: 0 20px 50px;
 }
 
 
-
 .title__logo {
-	opacity: 1;
-// width: calc(100vw - 40px);
-	transform: rotateX(15deg) translateY(150px);
-	transition-duration: 15s;
-	transition-timing-function: $anime-hero;
+	transform-style: preserve-3d;
 	text-shadow:
 		0px 4px 0px #00379c,
 		0px 2px 2px #000000,
-		0px 0px 1px $White-color;
-
+		0px 0px 1px #fff;
+		// animation-timing-function: cubic-bezier(.6, -0.6, .3, 1.48);
+	// transform: rotateX(20deg) translateY(205px);
+	/* Початкова позиція, анімація ще не активована */
 }
 
-.title__logo.active2 {
-		opacity: 1;
+@keyframes moveToAndFro {
+	0% {
+		transform: rotateX(20deg) translateY(205px);
+	}
 
-		transform: rotateX(15deg) translateY(-245px);
+	50% {
+		transform: rotateX(20deg) translateY(0px);
+	}
 
+	100% {
+		transform: rotateX(20deg) translateY(205px);
+	}
+}
+
+.title__logo.animate {
+	animation: moveToAndFro 15s cubic-bezier(.6, -0.6, .3, 1.48) infinite;
 }

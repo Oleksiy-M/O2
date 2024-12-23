@@ -24,17 +24,29 @@
 // dddddd
 
 
-const titleLogo = document.querySelector('.title__logo');
+// const titleLogo = document.querySelector('.title__logo');
 
-// Налаштовуємо Intersection Observer
-const observer = new IntersectionObserver(entries => {
-	entries.forEach(entry => {
-		if (entry.isIntersecting) {
-			// Додаємо клас active при появі на екрані
-			titleLogo.classList.add('active2');
-		} 
-	});
+// // Налаштовуємо Intersection Observer
+// const observer = new IntersectionObserver(entries => {
+// 	entries.forEach(entry => {
+// 		if (entry.isIntersecting) {
+// 			// Додаємо клас active при появі на екрані
+// 			titleLogo.classList.add('active2');
+// 		}
+// 		 else {
+// 					// Видаляємо клас active, коли об'єкт виходить за межі екрану
+// 			titleLogo.classList.remove('active2');
+// 				}
+// 	});
+// });
+
+// // Запускаємо спостереження за елементом
+// observer.observe(titleLogo);
+
+
+document.addEventListener("DOMContentLoaded", function () {
+	const titleLogo = document.querySelector('.title__logo');
+
+	// Додаємо клас animate після завантаження сторінки
+	titleLogo.classList.add('animate');
 });
-
-// Запускаємо спостереження за елементом
-observer.observe(titleLogo);
