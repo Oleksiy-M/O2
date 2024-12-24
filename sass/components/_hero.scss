@@ -327,8 +327,8 @@ padding: 0 20px 100px;
 	// width: calc(100vw - 10px);
 
 	text-align: center;
-	word-wrap: wrap;
-	white-space: pre-wrap;
+	// word-wrap: wrap;
+	// white-space: pre-wrap;
 	// width: 80vw;
 	perspective: 300px;
 	// border: #fff 1px solid;
@@ -355,7 +355,7 @@ padding: 0 20px 100px;
 .title__logo {
 	transform-style: preserve-3d;
 	text-shadow:
-		0px 4px 0px #00379c,
+		0px 6px 0px #00379c,
 		0px 2px 2px #000000,
 		0px 0px 1px #fff;
 		// animation-timing-function: cubic-bezier(.6, -0.6, .3, 1.48);
