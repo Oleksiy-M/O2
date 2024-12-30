@@ -3936,16 +3936,6 @@ body {
     transform: translatex(0vw);
   }
 }
-.fon {
-  position: absolute;
-  border-radius: 25px;
-  background-color: #fff;
-  width: 25px;
-  height: 35px;
-  margin: 25px 0 0 51px;
-  z-index: -1;
-}
-
 .gif-container__move {
   position: absolute;
   display: flex;
