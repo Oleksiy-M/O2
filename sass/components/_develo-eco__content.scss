@@ -30,7 +30,7 @@
    fill: $Secondary-text-color;
    margin: 0 0 20px 0;
    
-   transition-duration: 0.5s;
+   transition-duration: $animation-head;
    transform: rotateX(-50deg);
    transform-style: preserve-3d;
 
@@ -61,7 +61,7 @@
    display: flexbox;
    fill: $Secondary-text-color;
 
-   transition-duration: 0.5s;
+   transition-duration: $animation-head;
    transform: rotateX(-50deg);
    transform-style: preserve-3d;
 
@@ -126,14 +126,14 @@
    // box-shadow: 0px -1px 1px #0000002f;
    height: 0.01%;
    border-radius: 0 10px 0 0;
-   transition-duration: 0.5s;
+   transition-duration: $animation-head;
    perspective: 2000px;
 
 
    .develo-eco__content:hover &,
    .develo-eco__content:focus & {
       // box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.12),
-      transition-duration: 1s;
+      transition-duration: $animation-visual;
       transition-timing-function: $anime-card-industry;
       // transform: scale(1.04);
       height: 70%;
@@ -181,7 +181,7 @@ word-spacing: 4px;
    text-shadow: 0px 1px 1px #272626,
       1px 0.5px 2px #282828;
 
-   transition-duration: 0.5s;
+   transition-duration: $animation-head;
    transform: rotateX(-50deg);
    transform-style: preserve-3d;
 
@@ -190,7 +190,7 @@ word-spacing: 4px;
    .develo-eco__content:focus & {
       color: $svg-color;
       transform: rotateX(0deg);
-      transition-duration: 1s;
+      transition-duration: $animation-visual;
       transition-timing-function: $anime-card-industry;
    }
 

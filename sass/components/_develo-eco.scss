@@ -219,14 +219,14 @@ z-index: 0;
       background-image: url(../img/develo-eco/home.webp);
 
 
-      transition-duration: 0.5s;
+      transition-duration: $animation-head;
       transform: rotateX(0deg);
       transform-style: preserve-3d;
       
       .develo-eco__content:hover &,
       .develo-eco__content:focus & {
         transition-duration: 1s;
-        transition-timing-function: $anime-card-industry;
+        transition-timing-function:  $anime-card-industry;
         opacity: 0.05;
         transform: rotateX(90deg) scale(0.9);
       }
@@ -354,13 +354,13 @@ z-index: 0;
       opacity: 0.8;
       transform: rotateX(0deg);
       transform-style: preserve-3d;
-      transition-duration: 0.5s;
+      transition-duration: $animation-head;
 
 
       .develo-eco__content:hover &,
       .develo-eco__content:focus & {
         transition-timing-function: $anime-card-industry;
-        transition-duration: $animation-head;
+        transition-duration: $animation-visual;
         opacity: 0.05;
         transform: rotateX(90deg) scale(0.9);
       }

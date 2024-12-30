@@ -163,6 +163,7 @@ body {
 .up-svg:hover, .up-svg:focus {
   transition-duration: 50ms;
   fill: aqua;
+  transform: scale(1.01);
 }
 
 /*================== PAGE-HEADER ====================== */
@@ -1200,10 +1201,10 @@ body {
   height: 100%;
   width: 100%;
   padding: 0 15px;
-  background-color: rgba(13, 0, 70, 0.7725490196);
+  background-color: rgba(17, 1, 96, 0.7921568627);
 }
 .impact-box__end:hover .box-title-end, .impact-box__end:focus .box-title-end {
-  background-color: rgba(17, 1, 96, 0.7921568627);
+  background-color: rgba(13, 0, 70, 0.7725490196);
 }
 
 .title-end {
@@ -1219,12 +1220,12 @@ body {
   color: #00b7ff;
   color: aqua;
   text-shadow: 1px 1px 2px black, 0px 0px 2px #fff, -1px -1px 2px black;
-  transition-duration: 1s;
+  transition-duration: 100ms;
   transform: translateX(-100vw);
 }
 .impact-box__end:hover .title-end, .impact-box__end:focus .title-end {
   transform: translateX(0vw);
-  animation: moveTextRightToLeft 2s linear normal;
+  animation: moveTextRightToLeft 900ms linear normal;
   animation-timing-function: cubic-bezier(0.36, 0.89, 0.56, 1.11);
 }
 @media screen and (min-width: 768px) {
@@ -1253,7 +1254,7 @@ body {
 }
 .impact-box__end:hover .title-end__left, .impact-box__end:focus .title-end__left {
   transform: translateX(0vw);
-  animation: moveTextLeftToRight 2s linear normal;
+  animation: moveTextLeftToRight 900ms linear normal;
   animation-timing-function: cubic-bezier(0.36, 0.89, 0.56, 1.11);
 }
 
@@ -2600,7 +2601,7 @@ body {
   background-size: cover;
   opacity: 0.8;
   background-image: url(../img/develo-eco/home.webp);
-  transition-duration: 0.5s;
+  transition-duration: 500ms;
   transform: rotateX(0deg);
   transform-style: preserve-3d;
 }
@@ -2702,11 +2703,11 @@ body {
   opacity: 0.8;
   transform: rotateX(0deg);
   transform-style: preserve-3d;
-  transition-duration: 0.5s;
+  transition-duration: 500ms;
 }
 .develo-eco__content:hover .visual-content, .develo-eco__content:focus .visual-content {
   transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
-  transition-duration: 500ms;
+  transition-duration: 1s;
   opacity: 0.05;
   transform: rotateX(90deg) scale(0.9);
 }
@@ -2824,7 +2825,7 @@ body {
   display: flexbox;
   fill: #3fa9f5;
   margin: 0 0 20px 0;
-  transition-duration: 0.5s;
+  transition-duration: 500ms;
   transform: rotateX(-50deg);
   transform-style: preserve-3d;
 }
@@ -2838,7 +2839,7 @@ body {
 .eco__svg {
   display: flexbox;
   fill: #3fa9f5;
-  transition-duration: 0.5s;
+  transition-duration: 500ms;
   transform: rotateX(-50deg);
   transform-style: preserve-3d;
 }
@@ -2867,7 +2868,7 @@ body {
   overflow: hidden;
   height: 0.01%;
   border-radius: 0 10px 0 0;
-  transition-duration: 0.5s;
+  transition-duration: 500ms;
   perspective: 2000px;
 }
 .develo-eco__content:hover .cards__overlay, .develo-eco__content:focus .cards__overlay {
@@ -2899,7 +2900,7 @@ body {
   word-spacing: 4px;
   color: #3fa9f5;
   text-shadow: 0px 1px 1px #272626, 1px 0.5px 2px #282828;
-  transition-duration: 0.5s;
+  transition-duration: 500ms;
   transform: rotateX(-50deg);
   transform-style: preserve-3d;
 }

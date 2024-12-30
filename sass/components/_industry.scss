@@ -359,11 +359,11 @@ opacity: 0.8;
    width: 100%;
    padding: 0 15px;
 
-   background-color: #0d0046c5;
-
+   background-color: #110160ca;
+   
    .impact-box__end:hover &,
    .impact-box__end:focus & {
-      background-color: #110160ca;
+      background-color: #0d0046c5;
    }
 }
 
@@ -371,11 +371,10 @@ opacity: 0.8;
    text-align: center;
 
 font-family: "Audiowide", sans-serif;
-   // white-space: pre-wrap;
+
    user-select: none;
    text-transform: uppercase;
    font-weight: bolder;
-   // font-size: 9px;
    font-size: 12px;
    line-height: 1.4;
    letter-spacing: 0.02em;
@@ -385,40 +384,29 @@ word-spacing: 4px;
    color: $primary-text-color;
    text-shadow: 1px 1px 2px black, 0px 0px 2px #fff,
       -1px -1px 2px black;
-   // opacity: 0;
-   transition-duration: 1s;
+
+   transition-duration: 100ms;
    transform: translateX(-100vw);
 
-   // animation-timing-function: cubic-bezier(.82, -0.83, .03, 1.6);
    .impact-box__end:hover &,
    .impact-box__end:focus & {
       transform: translateX(0vw);
-      animation: moveTextRightToLeft 2s linear normal;
+      animation: moveTextRightToLeft $animation-end linear normal;
       animation-timing-function: $anime-text;
-      // color: $primary-text-color;
 
    }
 
    @media screen and (min-width: 768px) {
-      // opacity: 1;
-      // width: 450px;
       font-size: 15px;
-      // .impact-box__end:hover &,
-      // .impact-box__end:focus & {
       width: 550px;
    }
 
-   // }
-   @media screen and (min-width: 1200px) {
-      // width: 660px;
-      // font-size: 13px;
-      // .impact-box__end:hover &,
-      // .impact-box__end:focus & {
+      @media screen and (min-width: 1200px) {
       font-size: 17px;
       width: 1000px;
    }
 
-   // }
+
 
 }
 
@@ -435,11 +423,11 @@ word-spacing: 4px;
 .title-end__left {
    transform: translateX(100vw);
 
-   // animation-timing-function: cubic-bezier(1, -0.93, .03, 1.6);
+
    .impact-box__end:hover &,
    .impact-box__end:focus & {
       transform: translateX(0vw);
-      animation: moveTextLeftToRight 2s linear normal;
+      animation: moveTextLeftToRight $animation-end linear normal;
       animation-timing-function: $anime-text;
    }
 }
