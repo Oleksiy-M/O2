@@ -93,7 +93,7 @@ body {
 
 .head-border {
   margin: 0px auto 30px;
-  transition-duration: 1s;
+  transition-duration: 500ms;
   border-bottom: 2px solid #FFFFFF;
   width: 0.001%;
   height: 2px;
@@ -142,6 +142,29 @@ body {
     transform: rotate(360deg);
   }
 }
+/* buton-down__up */
+.buton-down__up {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .buton-down__up {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    padding: 100px 0px;
+  }
+}
+
+.up-svg {
+  fill: rgba(81, 78, 248, 0);
+  transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
+  transition-duration: 1s;
+}
+.up-svg:hover, .up-svg:focus {
+  transition-duration: 50ms;
+  fill: aqua;
+}
+
 /*================== PAGE-HEADER ====================== */
 .page-header {
   display: block;
@@ -533,26 +556,27 @@ body {
   }
 }
 
-.site-nav__logo {
+.nav-logo__box {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .site-nav__logo {
+  .nav-logo__box {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     height: 100%;
-    transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
     left: 35px;
     bottom: 0px;
+    transition-duration: 50ms;
+    transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
   }
-  .nav:hover .site-nav__logo, .nav:focus .site-nav__logo {
+  .header-pg:hover .nav-logo__box, .header-pg:focus .nav-logo__box {
     transform: scale(1.04);
   }
 }
 @media screen and (min-width: 1200px) {
-  .site-nav__logo {
+  .nav-logo__box {
     bottom: 5px;
     height: 60px;
   }
@@ -563,12 +587,10 @@ body {
     position: absolute;
     border-radius: 5px;
     fill: aqua;
-    transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 50px;
     height: 50px;
-    transition-duration: 0.5s;
   }
-  .nav:hover .nav-logo, .nav:focus .nav-logo {
+  .header-pg:hover .nav-logo, .header-pg:focus .nav-logo {
     box-shadow: inset 0 0 65px 1px rgba(2, 244, 252, 0.3803921569), 0 0 10px 5px #fc9402, 0 0 5px 2px rgba(0, 3, 5, 0.7725490196), inset 0 0 6px 1px rgba(0, 0, 0, 0.7725490196);
   }
 }
@@ -582,12 +604,14 @@ body {
 
 @media screen and (min-width: 768px) {
   .nav-logo__o {
+    fill: aqua;
+    position: absolute;
     border-radius: 15px;
     width: 27px;
     height: 27px;
     stroke-width: 0.3px;
   }
-  .nav:hover .nav-logo__o, .nav:focus .nav-logo__o {
+  .header-pg:hover .nav-logo__o, .header-pg:focus .nav-logo__o {
     stroke: #ffffff;
     box-shadow: inset 0 0 10px 15px #009ed8, 0 0 15px 5px #009ed8;
   }
@@ -658,7 +682,8 @@ body {
   user-select: none;
   text-decoration: none;
   color: #FFFFFF;
-  transition-duration: 0.5s;
+  transition-duration: 50ms;
+  transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
 }
 .site-nav__link:hover, .site-nav__link:focus {
   color: #FF8230;
@@ -701,7 +726,8 @@ body {
   text-decoration: none;
   color: #3fa9f5;
   font-weight: 100;
-  transition-duration: 0.5s;
+  transition-duration: 50ms;
+  transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
 }
 .page__contacts:hover, .page__contacts:focus {
   color: #FF8230;
@@ -716,7 +742,7 @@ body {
 .contacts__icon {
   margin: 0px 10px 0 0;
   fill: #3fa9f5;
-  transition-duration: 0.5s;
+  transition-duration: 0.1s;
 }
 .page__item:hover .contacts__icon, .page__item:focus .contacts__icon {
   fill: #FF8230;
@@ -759,6 +785,7 @@ body {
   border-bottom: 2px solid #ffffff;
   will-change: transform;
   transition-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.05, 1.12, 0.001, -0.115);
   transform: scale(1.03);
   transform-origin: center;
 }
@@ -827,78 +854,75 @@ body {
   }
 }
 
-.logo__overlay {
+.logo-box__hero {
   display: block;
   margin: 0px 0 80px;
   position: relative;
 }
 @media screen and (min-width: 768px) {
-  .logo__overlay {
+  .logo-box__hero {
     margin: 0 0 90px;
   }
 }
 
-.hero__link {
+.logo-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: scale(1);
-  transition-duration: 1s;
   user-select: none;
+  transition-duration: 500ms;
 }
-.section-hero__logo:hover .hero__link, .section-hero__logo:focus .hero__link {
-  transition-duration: 1s;
+.section-hero__logo:hover .logo-link, .section-hero__logo:focus .logo-link {
+  transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
   transform: scale(1.15);
-  transition-timing-function: cubic-bezier(0.36, 0.89, 0.56, 1.11);
 }
 
-.hero-logo {
+.logo-hero {
   position: absolute;
   border-radius: 5px;
   width: 90px;
   height: 90px;
   margin: 0 auto;
-  transition-duration: 1s;
-  stroke-width: 0.2px;
+  transition-duration: 500ms;
 }
-.section-hero__logo:hover .hero-logo, .section-hero__logo:focus .hero-logo {
+.section-hero__logo:hover .logo-hero, .section-hero__logo:focus .logo-hero {
+  transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
   box-shadow: 0px 0px 30px 0px #ffffff, 20px 20px 0px 0px #ffbf00, -20px -20px 0px 0px #ffbf00;
 }
 @media screen and (min-width: 768px) {
-  .hero-logo {
+  .logo-hero {
     width: 90px;
     height: 90px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero-logo {
+  .logo-hero {
     width: 100px;
     height: 100px;
   }
 }
 
-.hero-logo__o {
+.logo-hero__o {
   position: absolute;
   width: 50px;
   height: 50px;
   margin: 0 auto;
   fill: #06ffea;
   border-radius: 35px;
-  stroke-opacity: 0.5;
-  stroke-width: 0.3px;
-  transition-duration: 1s;
+  transition-duration: 500ms;
 }
-.section-hero__logo:hover .hero-logo__o, .section-hero__logo:focus .hero-logo__o {
+.section-hero__logo:hover .logo-hero__o, .section-hero__logo:focus .logo-hero__o {
+  transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
   box-shadow: inset 0 0 6px 35px rgba(8, 111, 255, 0.2705882353), 0 0 20px 20px rgba(8, 111, 255, 0.2705882353);
 }
 @media screen and (min-width: 768px) {
-  .hero-logo__o {
+  .logo-hero__o {
     width: 55px;
     height: 55px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero-logo__o {
+  .logo-hero__o {
     width: 60px;
     height: 60px;
   }
@@ -924,11 +948,9 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 0 0px;
-  padding: 0 20px 100px;
+  padding: 20px 20px 230px;
   height: 300px;
   text-align: center;
-  word-wrap: wrap;
-  white-space: pre-wrap;
   perspective: 300px;
 }
 @media screen and (min-width: 768px) {
@@ -945,25 +967,23 @@ body {
 
 .title__logo {
   transform-style: preserve-3d;
-  text-shadow: 0px 4px 0px #00379c, 0px 2px 2px #000000, 0px 0px 1px #fff;
-  transform: rotateX(20deg) translateY(205px);
+  text-shadow: 0px 6px 1px #00308a, 0px 2px 2px #000000, 0px 0px 1px #fff;
   /* Початкова позиція, анімація ще не активована */
 }
 
 @keyframes moveToAndFro {
   0% {
-    transform: rotateX(20deg) translateY(205px);
+    transform: rotateX(20deg) translateY(200px);
   }
   50% {
     transform: rotateX(20deg) translateY(0px);
   }
   100% {
-    transform: rotateX(20deg) translateY(205px);
+    transform: rotateX(20deg) translateY(200px);
   }
 }
 .title__logo.animate {
-  animation: moveToAndFro 15s linear infinite;
-  /* Додаємо анімацію */
+  animation: moveToAndFro 25s cubic-bezier(0.59, 0.6, 0.45, 0.99) infinite;
 }
 
 .idustry {
@@ -1119,7 +1139,7 @@ body {
   border-radius: 10px;
   border-top: none;
   border-bottom: none;
-  transition-duration: 1s;
+  transition-duration: 500ms;
   margin: 0 0px;
 }
 @media screen and (min-width: 768px) {
@@ -1245,26 +1265,6 @@ body {
     transform: translatex(0%);
   }
 }
-.buton-down__up {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .buton-down__up {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    padding: 100px 0px;
-  }
-}
-
-.up-svg {
-  fill: rgba(81, 78, 248, 0);
-  transition-duration: 1s;
-}
-.up-svg:hover, .up-svg:focus {
-  fill: aqua;
-}
-
 /* ===================== CONTAINER ==================== */
 .container {
   padding-left: 15px;
@@ -2189,7 +2189,8 @@ body {
   font-size: 12px;
   text-decoration: none;
   color: #3fa9f5;
-  transition: color 0.1ms;
+  transition: color 50ms;
+  transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
 }
 .page-footer__contacts:hover, .page-footer__contacts:focus {
   color: #FF8230;
@@ -2213,7 +2214,8 @@ body {
   position: relative;
   width: 100px;
   height: 100px;
-  transition-duration: 1s;
+  transition-duration: 50ms;
+  transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
 }
 .page-footer:hover .footer-logo__box, .page-footer:focus .footer-logo__box {
   transform: scale(1.03);
@@ -2233,7 +2235,7 @@ body {
   position: absolute;
   margin: 0px;
   border-radius: 10px;
-  transition-duration: 1s;
+  transition-duration: 50ms;
   fill: aqua;
   width: 100px;
   height: 100px;
@@ -2248,7 +2250,8 @@ body {
   height: 52px;
   stroke-width: 0.3px;
   stroke: rgba(255, 255, 255, 0.2901960784);
-  transition-duration: 1s;
+  transition-duration: 50ms;
+  transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
 }
 .page-footer:hover .footer-logo__o, .page-footer:focus .footer-logo__o {
   stroke: #ffffff;
@@ -2302,21 +2305,18 @@ body {
   height: 44px;
   background: rgba(141, 186, 245, 0.1);
   border-radius: 50%;
-  transition-duration: 0.5s;
+  transition-duration: 50ms;
+  transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
 }
 .join__link:hover, .join__link:focus {
   background: #FF8230;
-  transform: scale(1.15);
+  transform: scale(1.2);
 }
 
 .join__icon {
   width: 20px;
   height: 20px;
   fill: #FFFFFF;
-  transition-duration: 0.5s;
-}
-.join__icon:hover, .join__icon:focus {
-  transform: scale(1.01);
 }
 
 /*============ AUTH ============= */
@@ -2371,7 +2371,8 @@ body {
   color: #FFFFFF;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3019607843);
-  transition-duration: 0.5s;
+  transition-duration: 50ms;
+  transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
 }
 .auth__input:hover, .auth__input:focus {
   transform: scale(1.02);
@@ -2407,7 +2408,8 @@ body {
   color: #FFFFFF;
   border-radius: 4px;
   border: 0px;
-  transition-duration: 0.5s;
+  transition-duration: 50ms;
+  transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
 }
 .button--submit:hover, .button--submit:focus {
   transform: scale(1.02);
@@ -2481,7 +2483,7 @@ body {
   margin: 0 10% 200px 10%;
   padding: 5px 10px;
   border-radius: 5px;
-  transition-duration: 1s;
+  transition-duration: 500ms;
   border-bottom: 1px solid #3fa9f5;
 }
 .develo-eco:hover .develo-title__box, .develo-eco:focus .develo-title__box {
@@ -2704,7 +2706,7 @@ body {
 }
 .develo-eco__content:hover .visual-content, .develo-eco__content:focus .visual-content {
   transition-timing-function: cubic-bezier(0, 0.79, 0.27, 0.31);
-  transition-duration: 1s;
+  transition-duration: 500ms;
   opacity: 0.05;
   transform: rotateX(90deg) scale(0.9);
 }

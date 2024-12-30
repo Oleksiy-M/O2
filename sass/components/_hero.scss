@@ -55,6 +55,7 @@
 
 	will-change: transform;
 		transition-duration: 0.5s;
+		animation-timing-function: $anime-section;
 		transform: scale(1.03);
 		transform-origin: center;
 &:hover,
@@ -160,7 +161,7 @@ position: absolute;
 
 
 
-.logo__overlay {
+.logo-box__hero {
 	display: block;
 	// justify-content: center;
 	// align-items: center;
@@ -172,24 +173,23 @@ position: absolute;
 }
 
 
-.hero__link {
+.logo-link {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
 	// position: absolute;
 
-	transform: scale(1);
-	transition-duration: 1s;
 	user-select: none;
 	// transform: rotateX(40deg);
 	
+	transition-duration: $animation-head;
 	.section-hero__logo:hover &,
 	.section-hero__logo:focus & {
-		transition-duration: 1s;
+			transition-timing-function: $anime-card-industry;
+		// transition-duration: 1s;
 		transform: scale(1.15);
-		// transform: rotateX(0deg);
-		transition-timing-function: $anime-text;
+	
 		
 	}
 	
@@ -200,29 +200,25 @@ position: absolute;
 }
 
 
-.hero-logo {
+.logo-hero {
 	position: absolute;
 	border-radius: 5px;
 	width: 90px;
 	height: 90px;
 	margin: 0 auto;
 
-	transition-duration: 1s;
-	stroke-width: 0.2px;
-
+	
+	transition-duration: $animation-head;
 	.section-hero__logo:hover &,
 	.section-hero__logo:focus & {
-	    
+		
+	transition-timing-function: $anime-card-industry;
 			box-shadow:
 					0px 0px 30px 0px #ffffff ,
 					20px 20px 0px 0px $Logo-color-orang,
 					-20px -20px 0px 0px $Logo-color-orang;
 	}
 
-	// @media screen and (min-width: 650px) {
-	// 	width: 70px;
-	// 	height: 70px;
-	// }
 
 	@media screen and (min-width: 768px) {
 		width: 90px;
@@ -237,20 +233,9 @@ position: absolute;
 	}
 }
 
-//  .hero-logo.active {
-// 		// @media screen and (max-width: 767px) {
-// 				width: 110px;
-// 				height: 110px;
-// 			box-shadow:
-
-	
-// 			0px 0px 40px 10px #ffc800,
-// 			20px 20px 0px 0px $Logo-color-orang,
-// 			-20px -20px 0px 0px $Logo-color-orang;
-	// }
 
 
-.hero-logo__o {
+.logo-hero__o {
 	position: absolute;
 	width: 50px;
 	height: 50px;
@@ -258,25 +243,20 @@ position: absolute;
 	
 	fill: #06ffea;
 	border-radius: 35px;
-	stroke-opacity: 0.5;
-	stroke-width: 0.3px;
-	transition-duration: 1s;
+	// stroke-opacity: 0.5;
+	// stroke-width: 0.3px;
 	// stroke: #ffffff32;
+
 	
+	transition-duration: $animation-head;
 	.section-hero__logo:hover &,
 	.section-hero__logo:focus & {
+		transition-timing-function: $anime-card-industry;
 		box-shadow: 
 		inset 0 0 6px 35px $Logo-color-blue,
 		 0 0 20px 20px $Logo-color-blue;
 
 	}
-
-	// @media screen and (min-width: 650px) {
-	// box-shadow: none;
-		
-	// 	width: 38px;
-	// 	height: 38px;
-	// }
 
 	@media screen and (min-width: 768px) {
 
@@ -322,7 +302,7 @@ margin: 0px auto;
 	align-items: center;
 	justify-content: center;
 margin: 0 0 0px;
-padding: 0 20px 100px;
+padding: 20px 20px 230px;
 	height: 300px;
 	// width: calc(100vw - 10px);
 
@@ -341,13 +321,6 @@ padding: 0 20px 100px;
 
 	@media screen and (min-width: 1200px) {
 		width: 600px;
-
-		// transition-duration: 1s;
-		// .section-hero__logo:hover &,
-		// .section-hero__logo:focus & {
-		// 	transition-timing-function: $anime-text;
-		// 	left: 200px;
-		// }
 	}
 }
 
@@ -355,7 +328,7 @@ padding: 0 20px 100px;
 .title__logo {
 	transform-style: preserve-3d;
 	text-shadow:
-		0px 6px 0px #00379c,
+		0px 6px 1px #00308a,
 		0px 2px 2px #000000,
 		0px 0px 1px #fff;
 		// animation-timing-function: cubic-bezier(.6, -0.6, .3, 1.48);
@@ -365,7 +338,7 @@ padding: 0 20px 100px;
 
 @keyframes moveToAndFro {
 	0% {
-		transform: rotateX(20deg) translateY(205px);
+		transform: rotateX(20deg) translateY(200px);
 	}
 
 	50% {
@@ -373,10 +346,10 @@ padding: 0 20px 100px;
 	}
 
 	100% {
-		transform: rotateX(20deg) translateY(205px);
+		transform: rotateX(20deg) translateY(200px);
 	}
 }
 
 .title__logo.animate {
-	animation: moveToAndFro 15s cubic-bezier(.6, -0.6, .3, 1.48) infinite;
+	animation: moveToAndFro 25s cubic-bezier(.59, .6, .45, .99) infinite;
 }

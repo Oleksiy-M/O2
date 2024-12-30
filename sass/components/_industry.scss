@@ -456,28 +456,3 @@ word-spacing: 4px;
 }
 
 
-.buton-down__up {
-   display: none;
-
-   @media screen and (min-width: 768px) {
-      display: flex;
-      flex-direction: row-reverse;
-      width: 100%;
-      padding: 100px 0px;
-      // justify-content: right; 
-   }
-
-}
-
-
-.up-svg {
-
-
-   fill: #514ef800;
-   transition-duration: 1s;
-
-   &:hover,
-   &:focus {
-      fill: $primary-text-color;
-   }
-}

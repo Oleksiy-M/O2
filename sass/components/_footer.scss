@@ -75,7 +75,7 @@
    text-decoration: none;
    color: $Secondary-text-color;
    transition: color $animation;
-
+transition-timing-function: $anime-card-industry;
    &:hover,
    &:focus {
       color: $Accent;
@@ -105,8 +105,8 @@
    position: relative;
    width: 100px;
    height: 100px;
-   transition-duration: 1s;
-
+   transition-duration: $animation;
+transition-timing-function: $anime-card-industry;
    .page-footer:hover &,
    .page-footer:focus & {
       transform: scale(1.03);
@@ -128,7 +128,7 @@
    position: absolute;
    margin: 0px;
    border-radius: 10px;
-   transition-duration: 1s;
+   transition-duration: $animation;
    fill: $primary-text-color;
    width: 100px;
    height: 100px;
@@ -150,8 +150,8 @@
    stroke-width: 0.3px;
    stroke: #ffffff4a;
 
-   transition-duration: 1s;
-
+   transition-duration: $animation;
+transition-timing-function: $anime-card-industry;
    .page-footer:hover &,
    .page-footer:focus & {
 
@@ -215,12 +215,13 @@
    height: 44px;
    background: rgba(141, 186, 245, 0.1);
    border-radius: 50%;
-   transition-duration: 0.5s;
+   transition-duration: $animation;
+   transition-timing-function: $anime-card-industry;
 
    &:hover,
    &:focus {
       background: $Accent;
-      transform: scale(1.15);
+      transform: scale(1.2);
    }
 }
 
@@ -228,13 +229,8 @@
    width: 20px;
    height: 20px;
    fill: $White-color;
-   transition-duration: 0.5s;
 
-   &:hover,
-   &:focus {
 
-      transform: scale(1.01);
-   }
 }
 
 
@@ -303,7 +299,9 @@
    background-color: transparent;
    // box-shadow: 0px 4px 4px 0px #e8e5e526;
    border: 1px solid #ffffff4d;
-   transition-duration: 0.5s;
+
+      transition-duration: $animation;
+      transition-timing-function: $anime-card-industry;
 
    &:hover,
    &:focus {
@@ -347,7 +345,8 @@
    border-radius: 4px;
    border: 0px ;
 
-   transition-duration: 0.5s;
+   transition-duration: $animation;
+      transition-timing-function: $anime-card-industry;
 
    &:hover,
    &:focus {
