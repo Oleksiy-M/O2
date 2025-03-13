@@ -908,7 +908,6 @@ body {
 }
 
 .logo-box__hero {
-  margin: 0px auto 80px;
   position: relative;
 }
 @media screen and (min-width: 768px) {
@@ -998,10 +997,11 @@ body {
 
 .oxy-container {
   user-select: none;
-  margin: 0px auto;
+  margin: 100px auto;
 }
 @media screen and (min-width: 768px) {
   .oxy-container {
+    margin: 0px auto;
     width: 350px;
   }
 }

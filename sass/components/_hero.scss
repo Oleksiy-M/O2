@@ -195,7 +195,7 @@ position: absolute;
 .logo-box__hero {
 	// justify-content: center;
 	// align-items: center;
-	margin: 0px auto 80px;
+	// margin: 0px auto 80px;
 	position: relative;
 	
 	@media screen and (min-width: 768px) {
@@ -338,8 +338,9 @@ overflow: hidden;
 	// transform: scale(0.9);
 	// overflow: hidden;
 user-select: none;
-margin: 0px auto;
-	@media screen and (min-width: 768px) {
+margin: 100px auto;
+@media screen and (min-width: 768px) {
+		margin: 0px auto;
 		width: 350px;
 	}
 
