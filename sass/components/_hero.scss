@@ -26,43 +26,50 @@
 
 
 .container-hero{
-	padding:0px 0 350px;
-			overflow: hidden;
-	border-top: 2px #fff solid;
-	
-	// &:hover,
-	// &:focus {
-	// 		transform: scale(1);
-	// 	}
-@media screen and (min-width: 768px) {
-	margin: 0 auto 0;
-	padding: 0;
+	padding:0px 0 50px;
+position: relative;
+overflow: hidden;
+margin: 0 auto;
+		border-top: 2px #fff solid;
+				border-bottom: 2px solid #ffffff;
+
+				@media screen and (max-width: 767px) {
+					height: 100vw;
+				}
+
+				@media screen and (min-width: 768px) {
+					margin: 0 auto 0;
+					padding: 0;
+					height: 460px;
+				}
+
+				@media screen and (min-width: 1200px) {
+					background-position: bottom;
+					height: 450px;
+				}
+
+
 }
-}
+
+
+
 
 
 .section-hero__logo {
-
+// overflow: hidden;
 	display: flex;
 	justify-content: center;
+	position: relative;
 	margin: 0 0 8px;
 	background-size: cover;
-
-	// object-fit: cover;
-	// background-position: center;
-
-	border-bottom: 2px solid #ffffff;
-
 	will-change: transform;
 		transition-duration: 0.5s;
 		animation-timing-function: $anime-section;
 		transform: scale(1.03);
 		transform-origin: center;
-&:hover,
-&:focus {
+	&:hover,
+	&:focus {
 	margin: 0 0 0px;
-	// border-top: 2px solid #fff;
-
 	transform: scale(1);
 			}
 
@@ -144,31 +151,56 @@
 }
 
 .hero-list {
+	display: none;
+	// margin: 0 auto;
+	// overflow: hidden;
+	// width: 250px;
+	// height: 300px;
+	// padding: 0;
+
+	// bottom: 50px;
+	// top: 0;
+	
+	@media screen and (min-width: 768px) {
 	display: flex;
 flex-direction: column;
-// align-items: center;
-
+align-items: center;
+// justify-content:flex-end;
 position: absolute;
-	padding: 0;
-	bottom: -550px;
-
-@media screen and (min-width: 768px) {
-	bottom: 5px;
+	bottom: 20px;
+	// width: auto;
+	// height: auto;
 	}
+}
+
+.hero-list_mobile {
+
+		display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content:center;
+			margin: 100px 0		;
+			// position: absolute;
+			// bottom: 20px;
+			// width: ;
+			// height: auto;
+@media screen and (min-width: 768px) {
+	display: none;
+}
 }
 
 
 
 
-
 .logo-box__hero {
-	display: block;
 	// justify-content: center;
 	// align-items: center;
-	margin: 0px 0 80px;
+	margin: 0px auto 80px;
 	position: relative;
-		@media screen and (min-width: 768px) {
-		margin: 0 0 90px ;
+	
+	@media screen and (min-width: 768px) {
+			display: block;
+		margin: 0 0 50px ;
 	}
 }
 
@@ -177,38 +209,51 @@ position: absolute;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
+align-items: center;
+	// overflow: hidden;
+	transform-origin: center;
 	// position: absolute;
-
+	// width: 100px;
+margin: 0 auto;
 	user-select: none;
-	// transform: rotateX(40deg);
-	
 	transition-duration: $animation-head;
+
+	.hero-list_mobile:hover &,
+	.hero-list_mobile:focus &  {
+			transition-timing-function: $anime-card-industry;
+		
+			transform: scale(1.15);
+		}
 	.section-hero__logo:hover &,
 	.section-hero__logo:focus & {
 			transition-timing-function: $anime-card-industry;
-		// transition-duration: 1s;
+
 		transform: scale(1.15);
-	
 		
 	}
 	
-	// @media screen and (min-width: 768px) {
-	// 	bottom: 0px;
-	
-	// }
 }
 
 
 .logo-hero {
-	position: absolute;
+	// position: absolute;
 	border-radius: 5px;
 	width: 90px;
 	height: 90px;
 	margin: 0 auto;
-
+overflow: hidden;
 	
 	transition-duration: $animation-head;
+
+	.hero-list_mobile:hover &,
+	.hero-list_mobile:focus & {
+	transition-timing-function: $anime-card-industry;
+		box-shadow:
+			0px 0px 30px 0px #ffffff,
+			20px 20px 0px 0px $Logo-color-orang,
+			-20px -20px 0px 0px $Logo-color-orang;
+	}
+	
 	.section-hero__logo:hover &,
 	.section-hero__logo:focus & {
 		
@@ -246,8 +291,14 @@ position: absolute;
 	// stroke-opacity: 0.5;
 	// stroke-width: 0.3px;
 	// stroke: #ffffff32;
-
-	
+	.hero-list_mobile:hover &,
+	.hero-list_mobile:focus & {
+			transition-timing-function: $anime-card-industry;
+				box-shadow:
+					inset 0 0 6px 35px $Logo-color-blue,
+					0 0 20px 20px $Logo-color-blue;
+			
+			}
 	transition-duration: $animation-head;
 	.section-hero__logo:hover &,
 	.section-hero__logo:focus & {
@@ -285,6 +336,7 @@ position: absolute;
 	// min-width: 150px;
 	// border-radius: 15px;
 	// transform: scale(0.9);
+	// overflow: hidden;
 user-select: none;
 margin: 0px auto;
 	@media screen and (min-width: 768px) {
@@ -301,11 +353,12 @@ margin: 0px auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-margin: 0 0 0px;
-padding: 20px 20px 230px;
-	height: 300px;
+	// overflow: hidden;
+margin: 0 auto 0px;	
+padding: 80px 10px 300px;
+	height: 200px;
 	// width: calc(100vw - 10px);
-
+width: 250px;
 	text-align: center;
 	// word-wrap: wrap;
 	// white-space: pre-wrap;
@@ -351,5 +404,5 @@ padding: 20px 20px 230px;
 }
 
 .title__logo.animate {
-	animation: moveToAndFro 25s cubic-bezier(.59, .6, .45, .99) infinite;
+	animation: moveToAndFro 35s cubic-bezier(.59, .6, .45, .99) infinite;
 }

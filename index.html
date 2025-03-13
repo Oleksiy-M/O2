@@ -125,12 +125,15 @@
 		<!-- </section> -->
 
 <section  class="container-hero" data-aos="fade-up" data-aos-duration="2000">
+	
+	
+	<div class="section-hero__logo">
+		<!-- <div class="hero-border"> -->
+	<div  class="particles-js2" id="particles-js2"></div>
 
 
-		<div  class="section-hero__logo"  >
-			<div  class="particles-js2" id="particles-js2"></div>
-
-			<ul class="hero-list list">
+		
+		<ul class="hero-list list">
 
 				<!-- Logo -->
 				<li  class="logo-box__hero ">
@@ -143,6 +146,9 @@
 						</svg>
 					</a>
 				</li>
+
+
+			
 
 
 				<!-- Oxy -->
@@ -167,7 +173,50 @@
 
 				</li>
 	</ul>
-	</div>
+	<!-- </div> -->
+</div>
+</section>
+
+
+<!-- section-mobile -->
+
+<ul class="hero-list_mobile list">
+
+
+	<!-- Logo-mobile-->
+	<li class="logo-box__mobile">
+		<a class="logo-link link" href="./index.html">
+			<svg class="logo-hero">
+				<use href="./img/sprite.svg#logo"></use>
+			</svg>
+			<svg class="logo-hero__o">
+				<use href="./img/sprite.svg#logo_o"></use>
+			</svg>
+		</a>
+	</li>
+
+<!-- Oxy -->
+
+<li class="oxy-container">
+
+	<picture>
+		<source srcset="./img/oxy/oxygen.webp 1x, ./img/oxy/oxygen@2x.webp 2x" media="(min-width: 1200px)"
+			type="images/webp">
+		<source srcset="./img/oxy/oxygen.png 1x, ./img/oxy/oxygen@2x.png 2x" media="(min-width: 1200px)">
+
+		<source srcset="./img/oxy/oxy-tablet.webp 1x, ./img/oxy/oxy-tablet@2x.webp 2x" media="(min-width: 768px)"
+			type="images/webp">
+		<source srcset="./img/oxy/oxy-tablet.png 1x, ./img/oxy/oxy-tablet@2x.png 2x" media="(min-width: 768px)">
+
+		<source srcset="./img/oxy/oxy-mobil.webp 1x, ./img/oxy/oxy-mobil@2x.webp 2x" media="(max-width: 767px)"
+			type="images/webp">
+		<source srcset="./img/oxy/oxy-mobil.png 1x, ./img/oxy/oxy-mobil@2x.png 2x" media="(max-width: 767px)">
+		<img src="./img/oxy/oxygen.png" alt="word oxygen" class="">
+	</picture>
+
+</li>
+
+</ul>
 
 	<li class=" hero-title__box" >
 					
@@ -177,7 +226,7 @@
 			</h2>
 	</li>
 		
-</section>
+
 
 
 		<!-- advantages-section -->
@@ -309,6 +358,79 @@ of drinking water</h3>
 			</svg></a></div>
 
 		<!-- </div> -->
+
+			<footer class="page-footer container">
+				<!-- <div class=""> -->
+				<!-- AUTH  -->
+			
+			
+				<div class="page-footer__address ">
+					<a href="./index.html" class="footer-logo__box">
+			
+			
+			
+						<svg class="footer-logo">
+							<use href="./img/sprite.svg#logo"></use>
+						</svg>
+						<svg class="footer-logo footer-logo__o">
+							<use href="./img/sprite.svg#logo_o"></use>
+						</svg>
+					</a>
+					<address>
+			
+						<ul class="page-footer__list list">
+							<li class="page-footer__item"><a class="page-footer__contacts page-footer__contacts--city"
+									href="https://maps.app.goo.gl/AxT5RmRPUHJdjEPT9" target="_blank" rel="noopener noreferrer">Montreal,
+									Sherbrooke St.E,1</a>
+							</li>
+							<li class="page-footer__item"><a href="o.maryan@ukr.net" class="page-footer__contacts">o.maryan@ukr.net</a>
+							</li>
+							<li class="page-footer__item"><a href="tel:+380739909983" class="page-footer__contacts">+38 073 990
+									9983</a>
+							</li>
+						</ul>
+					</address>
+				</div>
+			
+				<!-- JOIN TO US -->
+				<div class="join">
+					<h3 class="join__title">JOIN TO US</h3>
+					<ul class="join__list list">
+						<li class="join__item"><a class="join__link link"
+								href="https://www.instagram.com/water_0xygen?igsh=Z24ydzFpNDM2MGNj"><svg class="join__icon">
+									<use href=./img/sprite.svg#instagram></use>
+								</svg></a></li>
+						<li class="join__item"><a class="join__link link" href=""><svg class="join__icon">
+									<use href=./img/sprite.svg#twitter></use>
+								</svg></a></li>
+						<li class="join__item"><a class="join__link link" href=""><svg class="join__icon">
+									<use href=./img/sprite.svg#facebook></use>
+								</svg></a></li>
+						<li class="join__item"><a class="join__link link" href=""><svg class="join__icon">
+									<use href=./img/sprite.svg#linkedin></use>
+								</svg></a></li>
+					</ul>
+				</div>
+			
+			
+				<!-- form  -->
+				<div class="auth">
+					<form class="auth__form">
+						<h3 class="auth__title">Subscribe to newsletter</h3>
+						<div class="auth__wrapper">
+							<label><input class="auth__input" type="email" name="email" placeholder="E-mail"></label>
+			
+							<button type="submit" class="button button--submit">Subscribe
+								<svg width="24" height="24" class="button__icon">
+									<use href="./img/sprite.svg#send"></use>
+								</svg>
+							</button>
+						</div>
+					</form>
+				</div>
+			
+			
+			</footer>
 	</main>
 	
 	<script src="./js/load.js"></script>
