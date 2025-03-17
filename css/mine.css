@@ -47,6 +47,7 @@ body {
   padding: 0 0 0px;
   width: 90%;
   max-width: 1000px;
+  height: 100px;
   background-color: transparent;
 }
 
@@ -151,7 +152,7 @@ body {
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
-    padding: 100px 0px;
+    padding: 150px 0 200px;
   }
 }
 
@@ -191,7 +192,7 @@ body {
 .advantages-section {
   display: block;
   transition-duration: 1s;
-  padding: 50px 0 100px;
+  padding: 50px 0 250px;
   user-select: none;
 }
 .advantages-section:hover, .advantages-section:focus {
@@ -305,7 +306,7 @@ body {
   flex-direction: column;
   align-items: center;
   user-select: none;
-  padding: 100px 0 100px;
+  padding: 0px 0 250px;
   transition-duration: 1s;
 }
 .section-case:hover, .section-case:focus {
@@ -1018,8 +1019,8 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 auto 0px;
-  padding: 80px 10px 300px;
-  height: 200px;
+  padding: 100px 10px 350px;
+  height: 150px;
   width: 250px;
   text-align: center;
   perspective: 300px;
@@ -1044,17 +1045,17 @@ body {
 
 @keyframes moveToAndFro {
   0% {
-    transform: rotateX(20deg) translateY(200px);
+    transform: rotateX(15deg) translateY(200px);
   }
   50% {
-    transform: rotateX(20deg) translateY(0px);
+    transform: rotateX(20deg) translateY(50px);
   }
   100% {
-    transform: rotateX(20deg) translateY(200px);
+    transform: rotateX(15deg) translateY(200px);
   }
 }
 .title__logo.animate {
-  animation: moveToAndFro 35s cubic-bezier(0.59, 0.6, 0.45, 0.99) infinite;
+  animation: moveToAndFro 25s cubic-bezier(0.59, 0.6, 0.45, 0.99) infinite;
 }
 
 .idustry {

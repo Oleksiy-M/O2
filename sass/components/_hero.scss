@@ -357,8 +357,8 @@ margin: 100px auto;
 	justify-content: center;
 	// overflow: hidden;
 margin: 0 auto 0px;	
-padding: 80px 10px 300px;
-	height: 200px;
+padding: 100px 10px 350px;
+	height: 150px;
 	// width: calc(100vw - 10px);
 width: 250px;
 	text-align: center;
@@ -393,18 +393,18 @@ width: 250px;
 
 @keyframes moveToAndFro {
 	0% {
-		transform: rotateX(20deg) translateY(200px);
+		transform: rotateX(15deg) translateY(200px);
 	}
 
 	50% {
-		transform: rotateX(20deg) translateY(0px);
+		transform: rotateX(20deg) translateY(50px);
 	}
 
 	100% {
-		transform: rotateX(20deg) translateY(200px);
+		transform: rotateX(15deg) translateY(200px);
 	}
 }
 
 .title__logo.animate {
-	animation: moveToAndFro 35s cubic-bezier(.59, .6, .45, .99) infinite;
+	animation: moveToAndFro 25s cubic-bezier(.59, .6, .45, .99) infinite;
 }
