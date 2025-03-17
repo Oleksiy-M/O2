@@ -166,30 +166,26 @@ font-weight: bold;
 letter-spacing: 0.003em;
 font-size: 20px;
    text-shadow:
-         0px 0px 15px #0066ff,
-         0px 3px 4px #001361,
-        -1px 0px 2px #e7e7e7,
-        1px 1px 1px #e7e7e7;
+      0px 0px 15px #0066ff,
+      0px 3px 4px #001361,
+      -1px 0px 2px #e7e7e7,
+      1px 1px 1px #e7e7e7;
 
-      .section-hero__industry:hover &,
-         .section-hero__industry:focus & {
-            transition-duration: 0.5s;
-            transform: scale(1.05);
-        color: #b4dfff;
-         }
-
+   .section-hero__industry:hover &,
+   .section-hero__industry:focus & {
+      transition-duration: 0.5s;
+      transform: scale(1.05);
+      color: #b4dfff;
+   }
 
 @media screen and (min-width: 768px) {
    
    font-size: 22px;
-
-
 }
+
 @media screen and (min-width: 1200px) {
    
    font-size: 26px;
-
-
 }
 }
 
@@ -210,21 +206,24 @@ font-size: 20px;
 .develo-eco__hand {
    display: flex;
    margin: 0px 0 0px 25px;
+   // position: absolute;
+   // right: 0;
+   // top: 100px;
    z-index: 2;
    user-select: none;
    @media screen and (min-width: 768px) {
-      // width: 100%;
       flex-direction: row-reverse;
       margin: 0px 0 0;
-      padding: 35px 0 0;
-      }
-      }
-      
-      
-      
- .hand-hero {
- z-index: 2;
-opacity: 0.8;
+      padding: 0px 0 0;
+   }
+}
+
+
+
+.hand-hero {
+   z-index: 2;
+   opacity: 0.8;
+   // width: 400p;
 
    @media screen and (min-width: 768px) {
       width: 360px;

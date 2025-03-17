@@ -47,7 +47,7 @@ body {
   padding: 0 0 0px;
   width: 90%;
   max-width: 1000px;
-  height: 100px;
+  height: 86px;
   background-color: transparent;
 }
 
@@ -1169,7 +1169,7 @@ body {
   .develo-eco__hand {
     flex-direction: row-reverse;
     margin: 0px 0 0;
-    padding: 35px 0 0;
+    padding: 0px 0 0;
   }
 }
 
