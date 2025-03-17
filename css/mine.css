@@ -427,10 +427,11 @@ body {
   width: 100%;
   background-size: cover;
   object-fit: contain;
-  transition-duration: 1s;
   transform: scale(1.04);
+  transition-duration: 2s;
 }
 .project-hero:hover, .project-hero:focus {
+  transition-duration: 0.5s;
   transform: scale(1);
 }
 @media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
@@ -824,13 +825,14 @@ body {
   margin: 0 0 8px;
   background-size: cover;
   will-change: transform;
-  transition-duration: 0.5s;
+  transition-duration: 2s;
   animation-timing-function: cubic-bezier(0.05, 1.12, 0.001, -0.115);
   transform: scale(1.03);
   transform-origin: center;
 }
 .section-hero__logo:hover, .section-hero__logo:focus {
-  margin: 0 0 0px;
+  margin: 0px;
+  transition-duration: 0.5s;
   transform: scale(1);
 }
 @media screen and (max-width: 767px) {
