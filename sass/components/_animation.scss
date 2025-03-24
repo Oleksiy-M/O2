@@ -594,7 +594,6 @@ color: #0000003f;
 }
 
 .waves {
-   // position: absolute;
 
    // left: 5%;
    width: 100%;
@@ -602,11 +601,23 @@ height: 100%;
 }
 
 canvas {
-position: absolute;
-   bottom: 110px;
-// left: 5%;
+   position: absolute;
+   bottom: 85px;
+   // left: 5%;
    // top: 0px;
    // left: 0;
    width: 100%;
    height: 100%;
+   
+   
+   @media screen and (min-width: 768px) {
+      
+      bottom: 100px;
+      
+         }
+
+            @media screen and (min-width: 1200px) {
+               bottom: 110px;
+      
+            }
 }
