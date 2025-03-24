@@ -105,6 +105,9 @@
          <ul class="container__anime  list">
 
 
+
+
+
             <!-- <li class="anime-mountins">
                <svg class="mountins" width="500" height="400">
                   <use href=./img/sprite.svg#mountins></use>
@@ -131,6 +134,11 @@
                </svg>
             </li>
 
+
+
+
+
+       
             <!-- anime-night  -->
 
             <li class="anime-night">
@@ -147,12 +155,16 @@
             </li>
 
 
-            <li class="gif-box__water">
+            <!-- <li class="gif-box__water">
                <div><img class="gif-water" src="./img/gif/water.webp"> </div>
                <div><img class="gif-water" src="./img/gif/water.webp"> </div>
 
-            </li>
-
+            </li> -->
+<div class="waves-bloc">
+   <div class="waves">
+      <canvas id="myCanvas"></canvas>
+   </div>
+</div>
             <li class="aqueduct-bild">
                <div class="aqueduct">
                   <picture>
@@ -529,9 +541,13 @@
 
 
       <!-- section-end -->
-      <div class=" history-page__end container">
-         <section class="container-end ">
-            <div class="section-histore__end">
+      <section class=" container">
+         <div class="container-end  ">
+
+            
+            <ul class="list">
+
+            <li class="section-histore__end ">
                <picture>
                   <source srcset="./img/histaqua/aqveduct0/aqua.webp 1x, ./img/histaqua/aqveduct0/aqua@2x.webp  2x"
                      media="(min-width: 1200px)" type="img/webp">
@@ -553,8 +569,9 @@
                      media="(max-width: 767px)">
                   <img src="./img/histaqua/aqveduct0/aqua.jpg" alt="Сотрудники компании" class="cards-photo">
                </picture>
-            </div>
-            <div class="section-histore__end">
+            </li>
+
+            <li class="section-histore__end">
                <picture>
                   <source srcset="./img/histaqua/aqveduct1/aqua1.webp 1x, ./img/histaqua/aqveduct1/aqua1@2x.webp 2x"
                      media="(min-width: 1200px)" type="img/webp">
@@ -576,8 +593,8 @@
                      media="(max-width: 767px)">
                   <img src="./img/histaqua/aqveduct1/aqua1.jpg" alt="Сотрудники компании" class="cards-photo">
                </picture>
-            </div>
-            <div class="section-histore__end">
+            </li>
+            <li class="section-histore__end">
                <picture>
                   <source srcset="./img/histaqua/aqveduct2/aqua2.webp 1x, ./img/histaqua/aqveduct2/aqua2@2x.webp 2x"
                      media="(min-width: 1200px)" type="img/webp">
@@ -599,8 +616,8 @@
                      media="(max-width: 767px)">
                   <img src="./img/histaqua/aqveduct2/aqua2.jpg" alt="Сотрудники компании" class="cards-photo">
                </picture>
-            </div>
-            <div class="section-histore__end">
+            </li>
+            <li class="section-histore__end">
                <picture>
                   <source srcset="./img/histaqua/aqveduct3/aqua3.webp 1x, ./img/histaqua/aqveduct3/aqua3@2x.webp 2x"
                      media="(min-width: 1200px)" type="img/webp">
@@ -622,13 +639,13 @@
                      media="(max-width: 767px)">
                   <img src="./img/histaqua/aqveduct3/aqua3.jpg" alt="Сотрудники компании" class="cards-photo">
                </picture>
-            </div>
+            </li>
+         </ul>
+         
 
-            <div class="box-end-grad">
+            <ul class="box-end-grad list">
 
-
-
-               <ul   class=" box-article list box-article__head">
+               <div   class=" box-article list box-article__head">
 
                  <div data-aos="fade-up" data-aos-duration="2000" >
                   <h2 class="head-article ">Harnessing Nature's Bounty </h2>
@@ -650,10 +667,10 @@
                         sustainability, and societal development.
                      </article>
                   </li>
-               </ul>
+               </div>
 
 
-               <ul class="box-article  list">
+               <div class="box-article  list">
                  <div data-aos="fade-up" data-aos-duration="2500">
                   <h2  class="head-article ">Ancient Persia:</h2>
                  </div>
@@ -698,8 +715,12 @@
                      </article>
                   </li>
 
-               </ul>
-               <ul class="box-article  list">
+               </div>
+
+
+
+               
+               <div class="box-article  list">
                   <div data-aos="fade-up" data-aos-duration="2000">
                      <h2  class="head-article ">The Roman Empire:</h2>
                   </div>
@@ -742,9 +763,12 @@
                         infrastructure.
                      </article>
                   </li>
+                </div>
+              
 
-               </ul>
-               <ul class="box-article  box-article__head list">
+
+
+               <div class="box-article  box-article__head list">
                   <li data-aos="fade-up" data-aos-duration="1800" class="article-item ">
                      <h3 class="article-title fredoka">Conclusion:</h3>
                      <article class="article-aqueduct ">
@@ -760,15 +784,16 @@
                      </article>
                   </li>
 
-               </ul>
-
-
-         </section>
+               </div>
+            </ul>
+               
+         </div>
+         
          <div class="buton-down__up"><a href="#up" class="down__up"><svg width="60" height="50" class="up-svg ">
-                  <use href="./img/sprite.svg#arrow">
-                     <use>
-               </svg></a></div>
-
+            <use href="./img/sprite.svg#arrow"> <use>
+            </svg></a></div>
+       </section>
+            
 
    </main>
 
@@ -848,8 +873,12 @@
 
    </footer>
 
-   <script src="./js/load.js"></script>
+
    
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+   <script src="./js/main.js"></script>
+
+<script src="./js/load.js"></script>
    <script src="./js/card.js"></script>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>

@@ -7,6 +7,8 @@
          overflow: hidden;
          margin: 0 auto;
 
+
+
          @media screen and (min-width: 768px) {
             background-image: $bg-water-histore;
             padding: 50px 0px 20px;
@@ -18,20 +20,21 @@
          // }
       }
 
-      .history-page__end {
-         padding: 0px 15px 50px;
+      // .history-page__end {
+      //    padding: 0px 15px 50px;
 
-         @media screen and (min-width: 768px) {
-            padding: 0px 15px 0px;
-         }
-      }
+      //    @media screen and (min-width: 768px) {
+      //       padding: 0px 15px 0px;
+      //    }
+      // }
 
 
       .history-section {
          display: block;
+         position: relative;
          padding: 80px 0 0;
          margin: 0px auto 0px;
-z-index: -2;
+z-index: 0;
          animation: changeBgColor 40s linear infinite normal;
 
          border-radius: 5px;
@@ -69,6 +72,7 @@ z-index: -2;
          @media screen and (min-width: 1200px) {
             margin: 0px auto 25px;
             width: 1170px;
+          
 
             background-image: linear-gradient(to bottom,
 
@@ -168,22 +172,20 @@ font-family: "Chango", sans-serif;
       }
 
 
-
-
-      .section-histore__end {
-         display: block;
-         position: absolute;
-         z-index: -1;
-         height: 100%;
-         width: 100%;
-         background-position: center;
-         object-fit: cover;
-         background-size: cover;
-         overflow: hidden;
-      }
+      // .section-histore__end {
+       
+      // }
 
       .section-histore__end img {
-         position: absolute;
+         display: block;
+            position: absolute;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            object-fit: cover;
+            background-size: cover;
+            overflow: hidden;
          top: 0;
          left: 0;
          width: 100%;
@@ -197,7 +199,7 @@ font-family: "Chango", sans-serif;
       .box-end-grad {
          display: block;
          width: 100%;
-         padding: 20px;
+         padding: 20px 0;
          background-image: linear-gradient(#cdb86da1 5%,
                #481043db);
          // text-align: center;
