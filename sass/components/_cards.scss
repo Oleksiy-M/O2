@@ -73,21 +73,24 @@
 
    height: 100%;
    padding: 10px 8px;
-   background-color: #ffffffc3;
+   background-color: #eae8e8c3;
    // background-color: #5524d1a8;
    
-   font-weight: 700;
+   font-weight: 300;
    font-size: 7.5px;
-   line-height: 1.12;
-   letter-spacing: 0.004em;
+   line-height: 1.17;
+   letter-spacing: 0.01em;
    word-spacing: 0.1px;
 
-   color: #00213c;
+   color: #37475f;
 // font-family: "Metal", serif;
 font-family: "Sail", system-ui;
 // font-style: italic;
-   // text-shadow:
-   // 0px 1px 4px #4d4c4c;
+   text-shadow:
+   // 1px 2px 2px #054864fa,
+   // 1px 1px 1px #060606,
+   0px 0px 0px #03121dfa
+   ;
       transform: translatex(-105%);
       transition-duration: 1s;
       opacity: 0;
