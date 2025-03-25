@@ -3882,26 +3882,27 @@ body {
 
 .gif-box__water {
   display: flex;
+  justify-content: center;
   position: absolute;
   overflow: hidden;
-  bottom: 30px;
-}
-
-.gif-water {
-  width: calc(50vw - 15px);
+  width: 100%;
   height: 20px;
+  bottom: 35px;
 }
 @media screen and (min-width: 768px) {
-  .gif-water {
-    width: 384px;
-    height: 35px;
+  .gif-box__water {
+    bottom: 50px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .gif-water {
-    width: 585px;
-    height: 45px;
+  .gif-box__water {
+    bottom: 55px;
   }
+}
+
+.gif-water {
+  width: 100vw;
+  height: 100%;
 }
 
 .aqueduct-bild {
@@ -4010,33 +4011,4 @@ body {
   justify-content: left;
   width: 150px;
   z-index: 5;
-}
-
-.waves-bloc {
-  position: absolute;
-  bottom: 5px;
-  width: 100%;
-  height: 80px;
-  color: #005eff;
-}
-@media screen and (min-width: 768px) {
-  .waves-bloc {
-    bottom: 20px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .waves-bloc {
-    bottom: 25px;
-  }
-}
-
-.waves {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-#myCanvas {
-  position: absolute;
-  bottom: 0px;
 }/*# sourceMappingURL=mine.css.map */

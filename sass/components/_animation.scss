@@ -410,31 +410,28 @@
 
 .gif-box__water {
    display: flex;
+   justify-content: center;
    position: absolute;
    overflow: hidden;
-   // align-items:last baseline;
- 
-   bottom: 30px;
-   
+
+width: 100%;
+height: 20px;
+      bottom: 35px;
+   @media screen and (min-width: 768px) {
+         bottom: 50px;
+       }
+         
+     @media screen and (min-width: 1200px) {
+         bottom: 55px;
+        }
    
 }
 
 
 .gif-water {
-   width: calc(50vw - 15px);
-   height: 20px;
-// margin: 0px 0 0;
-// bottom: ;
-   @media screen and (min-width: 768px) {
-      width: 384px;
-      height: 35px;
-      
-   }
-
-   @media screen and (min-width: 1200px) {
-      width: 585px;
-      height: 45px;
-   }
+   width: 100vw;
+   height: 100%;
+ 
 }
 
 
@@ -581,44 +578,5 @@ z-index: 5;
 // element.style {}
 
 
-.waves-bloc {
-position: absolute;
-   bottom: 5px;
-   // top: 0;
-// z-index: 5;
-   width: 100%;
-height: 80px;
-color: #005eff;
-// top: 10%;
-   // left: 10%;
-      @media screen and (min-width: 768px) {
-      
-            bottom: 20px;
-      
-         }
-      
-         @media screen and (min-width: 1200px) {
-            bottom: 25px;
-      
-         }
-}
-
-.waves {
-   position: absolute;
-   // left: 5%;
-   width: 100%;
-height: 100%;
-}
-
-#myCanvas {
-   position: absolute;
-
-   bottom: 0px;
-   // left: 5%;
-   // top: 0px;
-   // left: 0;
-   // width: 100%;
 
 
-
-}
