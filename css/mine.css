@@ -388,7 +388,6 @@ body {
   margin: 0px auto 200px;
   padding: 150px 0 0;
   position: relative;
-  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .section-project {
