@@ -1161,6 +1161,7 @@ body {
 .develo-eco__hand {
   display: flex;
   margin: 0px 0 0px 25px;
+  position: relative;
   z-index: 2;
   user-select: none;
 }
@@ -1172,8 +1173,33 @@ body {
   }
 }
 
+.electric {
+  z-index: 1;
+  position: absolute;
+  width: 50px;
+  height: 10px;
+  bottom: 90px;
+  right: 165px;
+}
+@media screen and (min-width: 768px) {
+  .electric {
+    width: 40px;
+    height: 10px;
+    bottom: 87px;
+    right: 160px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .electric {
+    width: 60px;
+    height: 10px;
+    bottom: 105px;
+    right: 220px;
+  }
+}
+
 .hand-hero {
-  z-index: 2;
+  z-index: 3;
   opacity: 0.8;
 }
 @media screen and (min-width: 768px) {
@@ -1336,6 +1362,7 @@ body {
     transform: translatex(0%);
   }
 }
+/* Стилі для контейнера .electric */
 /* ===================== CONTAINER ==================== */
 .container {
   padding-left: 15px;

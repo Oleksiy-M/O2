@@ -206,7 +206,7 @@ font-size: 20px;
 .develo-eco__hand {
    display: flex;
    margin: 0px 0 0px 25px;
-   // position: absolute;
+   position: relative;
    // right: 0;
    // top: 100px;
    z-index: 2;
@@ -218,10 +218,35 @@ font-size: 20px;
    }
 }
 
+.electric {
+   z-index: 1;
+   position: absolute;
+   width: 50px;
+   height: 10px;
 
+   bottom: 90px;
+   right: 165px;
+
+@media screen and (min-width: 768px) {
+      width: 40px;
+         height: 10px;
+      
+         bottom: 87px;
+         right: 160px;
+   }
+
+  @media screen and (min-width: 1200px) {
+   width: 60px;
+      height: 10px;
+   
+      bottom: 105px;
+      right: 220px;
+
+  }
+}
 
 .hand-hero {
-   z-index: 2;
+   z-index: 3;
    opacity: 0.8;
    // width: 400p;
 
@@ -433,3 +458,32 @@ word-spacing: 4px;
 }
 
 
+// .test {
+//    margin: 0 auto;
+//    display: flex;
+//    justify-content: center;
+//    /* Центруємо по горизонталі */
+//    align-items: center;
+//    /* Центруємо по вертикалі */
+//    position: relative;
+//    height: 500px;
+//    /* Повна висота екрану */
+//    width: 1170px;
+//    /* Повна ширина */
+//    background: #4e4d4d;
+//    /* Колір фону */
+// }
+
+/* Стилі для контейнера .electric */
+
+// /* Стилі для канвасу, щоб він не виходив за межі контейнера */
+// canvas {
+//    position: absolute;
+//    /* Абсолютне позиціонування */
+// bottom: 50%;
+//    left: 0;
+//    width: 100%;
+//    /* Ширина 100% від контейнера */
+//    height: 100%;
+//    /* Висота 100% від контейнера */
+// }

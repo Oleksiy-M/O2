@@ -1,92 +1,115 @@
-// Ініціалізація сцени, камери та рендерера
 var scene = new THREE.Scene();
-var camera = new THREE.OrthographicCamera(-215, 215, 65, -65, 1, 1000); // Орторографічна камера для 2D-ефектів
+var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
-// Рендерер
 var renderer = new THREE.WebGLRenderer({ alpha: true });
-var container = document.querySelector('.waves');  // Знаходимо контейнер .waves
-container.appendChild(renderer.domElement);  // Додаємо канвас в DOM контейнера .waves
+var container = document.querySelector('.electric'); // Ваш селектор .electric
+container.appendChild(renderer.domElement);
 
-// Функція для налаштування розміру рендерера
+// Функція для зміни розміру
 function resizeRenderer() {
-	var width = container.clientWidth;  // Ширина контейнера .waves
-	var height = container.clientHeight;  // Висота контейнера .waves
-	renderer.setSize(width, height);  // Встановлюємо розміри рендерера
-	camera.aspect = width / height;  // Оновлюємо аспект камери
-	camera.updateProjectionMatrix();  // Оновлюємо матрицю проекції
+	var width = container.clientWidth;
+	var height = container.clientHeight;
+	renderer.setSize(width, height);
+	camera.aspect = width / height;
+	camera.updateProjectionMatrix();
 }
 
-resizeRenderer();  // Спочатку налаштуємо розміри
-window.addEventListener('resize', resizeRenderer);  // Оновлюємо при зміні розміру вікна
+resizeRenderer();
+window.addEventListener('resize', resizeRenderer);
 
-// Параметри синусоїди
-var amplitude = 8;  // Висота хвилі
-var frequency = 0.52; // Частота хвилі
-var pointsCount = 1000;  // Кількість точок на лінії
-var lineSpacing = 4;  // Відстань між лініями
-var numLines = 10;  // Кількість ліній
+// Налаштування
+var maxPoints = 5; // Кількість точок лінії
+var lineLength = 70; // Довжина лінії
+var growing = true; // Лінія спочатку буде рости
+var pointIndex = 1; // Індекс поточної точки (початкова точка)
+var timeFactor = 0.01; // Швидкість анімації
+var animationTime = 0; // Таймер для зміни швидкості
 
-// Масив для зберігання ліній
+// Відстань між лініями
+var lineSpacing = 0.000001; // Відстань між лініями по осі Y
+
+// Кількість ліній, які будемо анімувати
+var numLines = 5; // Тепер п’ять ліній
 var lines = [];
 
-// Створення ліній
-for (var j = 0; j < numLines; j++) {
+// Массив кольорів для ліній
+var lineColors = [0xFFFFFF, 0x00FFFF]; // Біла та синя лінія
+
+// Функція для генерації випадкових значень Y
+function generateRandomY() {
+	return (Math.random() - 0.5) * 6; // Випадкове значення від -3 до +3
+}
+
+for (let i = 0; i < numLines; i++) {
 	var geometry = new THREE.BufferGeometry();
-	var vertices = new Float32Array(pointsCount * 3);  // Масив для зберігання координат точок (X, Y, Z)
+	var points = [];
 
-	// Створюємо синусоїдальну лінію для кожної лінії
-	for (var i = 0; i < pointsCount; i++) {
-		var x = (i - pointsCount / 2) * 0.5;  // Відстань між точками по осі X
-		var y = amplitude * Math.sin(x * frequency);  // Синусоїдальна функція для Y
-		vertices[i * 3] = x;      // Встановлюємо X координату
-		vertices[i * 3 + 1] = y + j * lineSpacing;  // Встановлюємо Y координату з зсувом для кожної лінії
-		vertices[i * 3 + 2] = 0;  // Z координата (залишимо 0 для 2D ефекту)
-	}
+	// Створюємо початкову точку для кожної лінії
+	points.push(new THREE.Vector3(-lineLength / 2, generateRandomY(), 0));
 
-	geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
-
-	// Визначаємо колір лінії: синя для парних індексів, біла для непарних
-	var lineColor = (j % 2 === 0) ? 0x0025f4 : 0x02eaff;
-
-	var material = new THREE.LineBasicMaterial({ color: lineColor });  // Колір лінії
-	var line = new THREE.Line(geometry, material);
-	scene.add(line);
-
-	lines.push(line);  // Додаємо лінію до масиву ліній
-}
-
-
-// Камера
-camera.position.z = 5;  // Розташування камери, щоб побачити лінії
-camera.position.y = 70;  // Розташування камери, щоб побачити лінії
-
-// Час для хвилі
-var time = 0;
-
-// Рендеринг сцени
-function animate() {
-	updateWave();  // Оновлюємо хвилі
-	renderer.render(scene, camera);
-	requestAnimationFrame(animate);  // Підключаємо рекурсивний рендеринг
-}
-
-animate();  // Запуск рендерингу
-
-// Функція для оновлення хвиль
-function updateWave() {
-	// Оновлюємо Y координати для кожної лінії
-	lines.forEach(function (line, index) {
-		var positions = line.geometry.attributes.position.array;
-
-		for (var i = 0; i < pointsCount; i++) {
-			var x = positions[i * 3];  // Отримуємо поточне значення X
-			// Оновлюємо Y координату для кожної лінії, додаємо зсув по Y
-			positions[i * 3 + 1] = amplitude * Math.sin(x * frequency + time) + index * lineSpacing;  // Зміщуємо лінію на певну висоту
-		}
-
-		// Повідомляємо Three.js, що дані змінились
-		line.geometry.attributes.position.needsUpdate = true;
+	// Чергування кольорів між білим і синім для кожної лінії
+	var lineMaterial = new THREE.LineBasicMaterial({
+		color: lineColors[i % 2] // Кожній лінії буде чергуватися білий (0xFFFFFF) і синій (0x00FFFF)
 	});
 
-	time += 0.15;  // Оновлюємо час для хвилі
+	// Додаємо лінію до сцени
+	var line = new THREE.Line(geometry, lineMaterial);
+
+	// Задаємо різні позиції для кожної лінії по осі Y
+	line.position.y = i * lineSpacing; // Перша лінія на y = 0, друга на y = lineSpacing
+
+	scene.add(line);
+
+	// Зберігаємо інформацію про кожну лінію
+	lines.push({ geometry: geometry, points: points, growing: true, pointIndex: 1, line: line });
 }
+
+// Встановлюємо позицію камери
+camera.position.z = 50;
+
+// Функція для анімації
+function animate() {
+	// Збільшуємо час
+	animationTime += timeFactor;
+
+	// Оновлюємо кожну лінію
+	lines.forEach(lineData => {
+		if (lineData.growing) {
+			// Якщо лінія росте
+			if (lineData.pointIndex < maxPoints) {
+				// Додаємо точку зі зміщенням по осі Y (випадкове значення)
+				lineData.points.push(new THREE.Vector3(
+					-lineLength / 2 + (lineData.pointIndex * (lineLength / (maxPoints - 1))),
+					generateRandomY(), // Випадкове значення для Y
+					0
+				));
+				lineData.pointIndex++;
+			} else {
+				lineData.growing = false; // Коли всі точки додано, починаємо зменшення
+			}
+		} else {
+			// Якщо лінія зменшується
+			if (lineData.pointIndex > 1) {
+				// Видаляємо точку зліва (окрім правої точки)
+				lineData.points.shift();
+				lineData.pointIndex--;
+			} else {
+				// Коли лінія повністю зникла, починаємо рости знову
+				lineData.points = []; // Очищаємо точок
+				lineData.points.push(new THREE.Vector3(-lineLength / 2, generateRandomY(), 0)); // Відновлюємо початкову точку
+				lineData.pointIndex = 1; // Починаємо знову додавати точки
+				lineData.growing = true; // Знову починаємо ріст
+			}
+		}
+
+		// Оновлюємо геометрію лінії
+		lineData.geometry.setFromPoints(lineData.points);
+	});
+
+	// Рендеринг сцени
+	renderer.render(scene, camera);
+	requestAnimationFrame(animate); // Запускаємо наступний кадр анімації
+}
+
+// Запуск анімації
+animate();
