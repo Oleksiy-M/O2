@@ -65,6 +65,7 @@
       padding-bottom: 30px;
       background-position: center;
       background-size: cover;
+      height: 380px;
 
       // padding: 250px 0 20px;
       // height: 520px;
@@ -159,6 +160,7 @@
 
 
 .idustry-hero__heading {
+
    color: $Secondary-text-color;
 padding: 0 0 0px;
 font-family: "Audiowide", serif;
@@ -204,18 +206,24 @@ font-size: 20px;
 
 
 .develo-eco__hand {
-   display: flex;
+   // display: flex;
    margin: 0px 0 0px 25px;
-   position: relative;
-   // right: 0;
+   // position: absolute;
+ height: 135px;
    // top: 100px;
-   z-index: 2;
+   // z-index: 1;
    user-select: none;
+   
    @media screen and (min-width: 768px) {
-      flex-direction: row-reverse;
-      margin: 0px 0 0;
-      padding: 0px 0 0;
+      // flex-direction: row-reverse;
+bottom: 30px;
+      right: 0;
+      margin: 0;
    }
+
+@media screen and (min-width: 1200px) {
+   bottom: 50px;
+}
 }
 
 .electric {
@@ -224,14 +232,14 @@ font-size: 20px;
    width: 50px;
    height: 10px;
 
-   bottom: 90px;
+   bottom: 115px;
    right: 165px;
 
 @media screen and (min-width: 768px) {
       width: 40px;
          height: 10px;
       
-         bottom: 87px;
+         bottom: 118px;
          right: 160px;
    }
 
@@ -239,7 +247,7 @@ font-size: 20px;
    width: 60px;
       height: 10px;
    
-      bottom: 105px;
+      bottom: 150px;
       right: 220px;
 
   }
@@ -247,15 +255,18 @@ font-size: 20px;
 
 .hand-hero {
    z-index: 3;
+   position: absolute;
    opacity: 0.8;
    // width: 400p;
 
    @media screen and (min-width: 768px) {
+
       width: 360px;
+      right: 0;
    }
    @media screen and (min-width: 1200px) {
       width: 500px;
-
+right: 0;
    }
 }
 
