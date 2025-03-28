@@ -1180,14 +1180,14 @@ body {
 .electric {
   z-index: 1;
   position: absolute;
-  width: 50px;
-  height: 10px;
-  bottom: 115px;
-  right: 165px;
+  width: 40px;
+  height: 20px;
+  bottom: 28%;
+  right: 40%;
 }
 @media screen and (min-width: 768px) {
   .electric {
-    width: 40px;
+    width: 35px;
     height: 10px;
     bottom: 118px;
     right: 160px;
