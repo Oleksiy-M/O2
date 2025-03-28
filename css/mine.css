@@ -1166,6 +1166,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .develo-eco__hand {
+    display: block;
     bottom: 30px;
     right: 0;
     margin: 0;
@@ -1180,9 +1181,9 @@ body {
 .electric {
   z-index: 1;
   position: absolute;
-  width: 40px;
-  height: 20px;
-  bottom: 28%;
+  width: 10%;
+  height: 10%;
+  bottom: 19.5vw;
   right: 40%;
 }
 @media screen and (min-width: 768px) {
@@ -1206,11 +1207,13 @@ body {
   z-index: 3;
   position: absolute;
   opacity: 0.8;
+  bottom: 22px;
 }
 @media screen and (min-width: 768px) {
   .hand-hero {
     width: 360px;
     right: 0;
+    bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
