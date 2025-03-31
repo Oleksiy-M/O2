@@ -398,13 +398,13 @@ body {
 
 .container-project {
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
+  margin: 0 auto;
   border-top: 2px #fff solid;
   border-bottom: 2px #fff solid;
 }
 @media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
   .container-project {
-    background-position: center;
     height: 340px;
   }
 }
@@ -415,7 +415,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .container-project {
-    background-position: center;
     height: 430px;
   }
 }
@@ -423,8 +422,10 @@ body {
 .project-hero {
   display: flex;
   justify-content: center;
-  margin: 0px 0 0;
+  margin: 0px auto;
   width: 100%;
+  background-position: center;
+  transform-origin: center;
   background-size: cover;
   object-fit: contain;
   transform: scale(1.04);
@@ -3031,6 +3032,8 @@ body {
 
 .bubble {
   z-index: -2;
+  padding: 0;
+  margin: 0;
   min-width: 270px;
   top: 50px;
   position: fixed;

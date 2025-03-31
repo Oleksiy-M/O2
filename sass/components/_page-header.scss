@@ -311,14 +311,15 @@ font-family: "Saira Stencil One", sans-serif;
       
       .container-project{
          overflow: hidden;
-         width: 100vw;
+         width: 100%;
+ margin: 0 auto;
          border-top: 2px #fff solid;
       border-bottom: 2px #fff solid;
 
       @media (min-device-pixel-ratio: 2) and (max-width: 767px),
          (min-resolution: 192dpi) and (max-width: 767px),
          (min-resolution: 2dppx) and (max-width: 767px) {
-            background-position: center;
+            // background-position: center;
             height: 340px;
          }
       
@@ -328,7 +329,7 @@ font-family: "Saira Stencil One", sans-serif;
                  height: 440px;
               }
          @media screen and (min-width: 1200px) {
-            background-position: center;
+            // background-position: center;
             // margin: 50px 0 0;
             height: 430px;
          }
@@ -341,9 +342,10 @@ font-family: "Saira Stencil One", sans-serif;
 .project-hero {
    display: flex;
   justify-content: center;
-margin: 0px 0 0;
+margin: 0px auto;
 width: 100%;
-// position: absolute;
+background-position: center;
+      transform-origin: center;
 background-size: cover;
 object-fit: contain;
 
