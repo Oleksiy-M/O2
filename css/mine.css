@@ -152,7 +152,7 @@ body {
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
-    padding: 150px 0 200px;
+    padding: 150px 0 50px;
   }
 }
 
@@ -1955,7 +1955,7 @@ body {
 @media screen and (min-width: 1200px) {
   .develo-eco___decor18 {
     margin-left: 90px;
-    margin-top: -986px;
+    margin-top: -986.5px;
     width: 165px;
   }
 }
@@ -2091,7 +2091,7 @@ body {
 @media screen and (min-width: 1200px) {
   .develo-eco___decor23 {
     margin-left: 180px;
-    margin-top: -952px;
+    margin-top: -952.5px;
     width: 180px;
   }
 }
@@ -2229,7 +2229,7 @@ body {
 @media screen and (min-width: 1200px) {
   .develo-eco___decor28 {
     margin-left: 270px;
-    margin-top: -918px;
+    margin-top: -918.5px;
     width: 185px;
   }
 }
