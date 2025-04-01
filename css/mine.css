@@ -1067,7 +1067,7 @@ body {
 @media screen and (min-width: 768px) {
   .idustry {
     margin: 0 0 0px 0;
-    background-image: linear-gradient(to bottom, rgba(16, 123, 230, 0.4) 10%, rgba(0, 21, 116, 0.8470588235) 80%);
+    background-image: linear-gradient(to bottom, rgba(1, 89, 204, 0.8823529412) 30%, rgba(0, 21, 116, 0.8470588235) 85%);
     padding: 50px 0 20px;
   }
 }
@@ -3055,7 +3055,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .history-page {
-    background-image: linear-gradient(to bottom, rgba(27, 190, 255, 0.8274509804) 30%, rgba(0, 21, 116, 0.8470588235) 85%);
+    background-image: linear-gradient(to bottom, rgba(1, 89, 204, 0.8823529412) 30%, rgba(0, 21, 116, 0.8470588235) 85%);
     padding: 50px 0px 20px;
     max-width: 1600px;
   }
