@@ -6,12 +6,12 @@
 
          overflow: hidden;
          margin: 0 auto;
+         background: $bg-water-head;
 
 
 
          @media screen and (min-width: 768px) {
-            background-image: $bg-water-head;
-            padding: 50px 0px 20px;
+            padding: 50px 0px 0px;
             max-width: 1600px;
          }
 
@@ -154,14 +154,14 @@ font-family: "Chango", sans-serif;
          position: relative;
          border-radius: 5px;
 
-         margin: 0 0px 300px;
+         margin: 0 0px 200px;
          max-width: 450px;
          z-index: 1;
          border-top: 4px solid #ebdaa5dc;
          border-bottom: 4px solid #22011cd6;
 
          @media screen and (min-width: 768px) {
-            margin: 0 0px 20px;
+            margin: 0 0px  0px;
             max-width: 738px;
          }
 

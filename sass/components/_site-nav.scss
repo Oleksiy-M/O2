@@ -3,6 +3,11 @@
 
 .header-pg {
 
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	// padding: 0 -15px;
+	// background-color: $bg-color;
 	@media screen and (min-width: 768px) {
 		background-color: $bg-color;
 		}	
@@ -14,6 +19,8 @@
 		width: 100%;
 		height: 50px;
 	padding: 12px 0 8px;
+	// right: 13%;
+		// margin: 0 auto;
 	// bottom: -20px;
 	background-color: $bg-color;
 	z-index: 5;
@@ -122,9 +129,9 @@ transition-duration: $animation;
 
 .site-nav {
 	display: flex;
-	align-items: center;
-
-	height: 30px;
+	align-items: flex-end;
+height: 100%;
+	// height: 30px;
 	z-index: 2;
 	// margin-right: 20%;
 	// justify-content: flex-start;
@@ -209,9 +216,10 @@ transition-timing-function: $anime-card-industry;
 
 .contact__list {
 	display: none;
-
+	height: 100%;
 	@media screen and (min-width: 768px) {
 		display: flex;
+		align-items: flex-end;
 		margin: 0 10px 0 0;
 	}
 
@@ -227,7 +235,7 @@ transition-timing-function: $anime-card-industry;
 	margin-right: 30px;
 	display: flex;
 	align-items: center;
-	height: 30px;
+
 
 	&:last-child {
 		margin-right: 0px;

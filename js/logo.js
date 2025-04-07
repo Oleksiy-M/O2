@@ -44,9 +44,29 @@
 // observer.observe(titleLogo);
 
 
-document.addEventListener("DOMContentLoaded", function () {
-	const titleLogo = document.querySelector('.title__logo');
+// document.addEventListener("DOMContentLoaded", function () {
+// 	const titleLogo = document.querySelector('.develo-eco__list');
 
-	// Додаємо клас animate після завантаження сторінки
-	titleLogo.classList.add('animate');
+// 	// Додаємо клас animate після завантаження сторінки
+// 	titleLogo.classList.add('animate');
+// });
+
+const develoEcoContents = document.querySelectorAll('.develo-eco__content');
+const electric = document.querySelector('.electric');  // Єдиний елемент .electric
+
+// Додаємо події для кожного елемента з класом .develo-eco__line
+develoEcoContents.forEach(develoEcoContent => {
+	develoEcoContent.addEventListener('mouseenter', () => {
+		// Додаємо клас 'animate' до єдиного елемента .electric
+		electric.classList.add('animate');
+	});
+
+	develoEcoContent.addEventListener('mouseleave', () => {
+		// Видаляємо клас 'animate' з єдиного елемента .electric
+		electric.classList.remove('animate');
+	});
 });
+
+
+
+

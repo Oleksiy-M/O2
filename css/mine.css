@@ -174,11 +174,7 @@ body {
   padding: 0px 0 0px;
   margin: 0 auto;
   justify-content: center;
-}
-@media screen and (min-width: 768px) {
-  .page-header {
-    background-image: linear-gradient(to bottom, rgba(1, 89, 204, 0.8823529412) 30%, rgba(0, 21, 116, 0.8470588235) 85%);
-  }
+  background: linear-gradient(to bottom, rgba(1, 89, 204, 0.8823529412) 30%, rgba(0, 21, 116, 0.8470588235) 85%);
 }
 @media screen and (min-width: 1200px) {
   .page-header {
@@ -551,6 +547,11 @@ body {
 }
 
 /* =================SITE-NAV  ================= */
+.header-pg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 @media screen and (min-width: 768px) {
   .header-pg {
     background-color: #1f2f52;
@@ -652,8 +653,8 @@ body {
 
 .site-nav {
   display: flex;
-  align-items: center;
-  height: 30px;
+  align-items: flex-end;
+  height: 100%;
   z-index: 2;
   font-weight: 100;
   font-size: 10px;
@@ -722,10 +723,12 @@ body {
 
 .contact__list {
   display: none;
+  height: 100%;
 }
 @media screen and (min-width: 768px) {
   .contact__list {
     display: flex;
+    align-items: flex-end;
     margin: 0 10px 0 0;
   }
 }
@@ -740,7 +743,6 @@ body {
   margin-right: 30px;
   display: flex;
   align-items: center;
-  height: 30px;
 }
 .page__item:last-child {
   margin-right: 0px;
@@ -1040,6 +1042,7 @@ body {
 .title__logo {
   transform-style: preserve-3d;
   text-shadow: 0px 6px 1px #00308a, 0px 2px 2px #000000, 0px 0px 1px #fff;
+  animation: moveToAndFro 25s cubic-bezier(0.59, 0.6, 0.45, 0.99) infinite;
   /* Початкова позиція, анімація ще не активована */
 }
 
@@ -1054,28 +1057,24 @@ body {
     transform: rotateX(15deg) translateY(200px);
   }
 }
-.title__logo.animate {
-  animation: moveToAndFro 25s cubic-bezier(0.59, 0.6, 0.45, 0.99) infinite;
-}
-
 .idustry {
   display: block;
-  padding: 80px 0 50px 0;
+  padding: 80px 0 0px 0;
   position: relative;
-  margin: 0 0 300px 0;
+  background-image: linear-gradient(to bottom, rgba(1, 89, 204, 0.8823529412) 30%, rgba(0, 21, 116, 0.8470588235) 85%);
+  margin: 0 0 0px 0;
 }
 @media screen and (min-width: 768px) {
   .idustry {
     margin: 0 0 0px 0;
-    background-image: linear-gradient(to bottom, rgba(1, 89, 204, 0.8823529412) 30%, rgba(0, 21, 116, 0.8470588235) 85%);
-    padding: 50px 0 20px;
+    padding: 50px 0 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .idustry {
     display: flexbox;
     margin: 0 auto;
-    padding: 50px 0 20px 0;
+    padding: 50px 0 0px 0;
     max-width: 1600px;
   }
 }
@@ -1182,6 +1181,7 @@ body {
 }
 
 .electric {
+  display: none;
   z-index: 1;
   position: absolute;
   width: 10%;
@@ -1204,6 +1204,10 @@ body {
     bottom: 150px;
     right: 220px;
   }
+}
+
+.animate {
+  display: block;
 }
 
 .hand-hero {
@@ -1232,7 +1236,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0px 0px;
-  margin: 0 0 20px;
+  margin: 0 0 200px;
   border-radius: 10px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1240,6 +1244,7 @@ body {
 @media screen and (min-width: 768px) {
   .section-end {
     padding: 0px 0px 0px;
+    margin: 0;
   }
 }
 
@@ -2239,7 +2244,7 @@ body {
 .page-footer {
   display: block;
   width: 100%;
-  margin-bottom: 110px;
+  padding-bottom: 110px;
 }
 @media screen and (min-width: 768px) {
   .page-footer {
@@ -2247,6 +2252,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
     margin: 0 auto;
     max-width: 1600px;
     height: 250px;
@@ -3052,11 +3058,11 @@ body {
   padding: 80px 0px 0px;
   overflow: hidden;
   margin: 0 auto;
+  background: linear-gradient(to bottom, rgba(1, 89, 204, 0.8823529412) 30%, rgba(0, 21, 116, 0.8470588235) 85%);
 }
 @media screen and (min-width: 768px) {
   .history-page {
-    background-image: linear-gradient(to bottom, rgba(1, 89, 204, 0.8823529412) 30%, rgba(0, 21, 116, 0.8470588235) 85%);
-    padding: 50px 0px 20px;
+    padding: 50px 0px 0px;
     max-width: 1600px;
   }
 }
@@ -3138,7 +3144,7 @@ body {
 .container-end {
   position: relative;
   border-radius: 5px;
-  margin: 0 0px 300px;
+  margin: 0 0px 200px;
   max-width: 450px;
   z-index: 1;
   border-top: 4px solid rgba(235, 218, 165, 0.862745098);
@@ -3146,7 +3152,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .container-end {
-    margin: 0 0px 20px;
+    margin: 0 0px 0px;
     max-width: 738px;
   }
 }
@@ -3561,11 +3567,11 @@ body {
   padding: 400px 0 0px 0;
   position: relative;
   margin: 0 0 0px 0;
+  background-image: linear-gradient(to bottom, rgba(1, 89, 204, 0.8823529412) 30%, rgba(0, 21, 116, 0.8470588235) 85%);
 }
 @media screen and (min-width: 768px) {
   .page-water {
     margin: 0 0 0px 0;
-    background-image: linear-gradient(to bottom, rgba(1, 89, 204, 0.8823529412) 30%, rgba(0, 21, 116, 0.8470588235) 85%);
     padding: 240px 0 210px;
   }
 }

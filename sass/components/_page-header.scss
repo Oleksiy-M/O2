@@ -8,14 +8,14 @@
    margin: 0 auto;
    // overflow: hidden;
    justify-content: center;
-
+      // height: 100%;  
+   background: $bg-water-head;
 //   .section-hero__logo:hover &,
 //   .section-hero__logo:focus &{
 //          transform: translateY(0px);
 //       }
    @media screen and (min-width: 768px) {
 
-      background-image: $bg-water-head;
    }
 
    @media screen and (min-width: 1200px) {

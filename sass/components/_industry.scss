@@ -2,8 +2,9 @@
 
 .idustry {
    display: block;
-   padding: 80px 0 50px 0;
+   padding: 80px 0 0px 0;
    position: relative;
+   background-image: $bg-water-head;
    // z-index: 2;
    // background-position: center;
    // background-attachment: scroll;
@@ -13,18 +14,17 @@
    //          rgba(4, 3, 38, 0.777));
 
    // url("../img/bg-discl/bg-mobil.webp")
-   margin: 0 0 300px 0;
+   margin: 0 0 0px 0;
 
    @media screen and (min-width: 768px) {
       margin: 0 0 0px 0;
-      background-image: $bg-water-head;
-      padding: 50px 0 20px;
+      padding: 50px 0 0px;
    }
 
    @media screen and (min-width: 1200px) {
       display: flexbox;
       margin: 0 auto;
-      padding: 50px 0 20px 0;
+      padding: 50px 0 0px 0;
       max-width: 1600px;
 
    }
@@ -224,9 +224,10 @@ bottom: 30px;
 }
 
 .electric {
+   display: none;
    z-index: 1;
  
-   position: absolute;
+   position: absolute;  
    width: 10%;
    
    height: 10%;
@@ -251,6 +252,18 @@ bottom: 30px;
 
   }
 }
+
+
+.animate{
+      display: block;
+   //    .develo-eco__list:hover &,
+   // .develo-eco__list:focus & {
+   //       display: block;
+   //    }
+}
+
+
+
 
 .hand-hero {
    z-index: 3;
@@ -278,7 +291,7 @@ right: 0;
    // align-items: center;
    flex-direction: column;
    padding: 0px 0px;
-   margin: 0 0 20px;
+   margin: 0 0 200px;
    border-radius: 10px;
    background-repeat: no-repeat;
    // object-fit: cover;
@@ -294,7 +307,7 @@ right: 0;
 
    @media screen and (min-width: 768px) {
       padding: 0px 0px 0px;
-
+margin: 0;
    }
 }
 
