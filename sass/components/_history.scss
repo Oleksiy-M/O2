@@ -6,11 +6,11 @@
 
          overflow: hidden;
          margin: 0 auto;
-         background: $bg-water-head;
-
-
-
+         background: $bg-water-mobile;
+         
+         
          @media screen and (min-width: 768px) {
+            background: $bg-water-head;
             padding: 50px 0px 0px;
             max-width: 1600px;
          }

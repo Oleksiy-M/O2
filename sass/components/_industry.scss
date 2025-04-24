@@ -4,7 +4,7 @@
    display: block;
    padding: 80px 0 0px 0;
    position: relative;
-   background-image: $bg-water-head;
+   background: $bg-water-mobile;
    // z-index: 2;
    // background-position: center;
    // background-attachment: scroll;
@@ -12,13 +12,14 @@
    // background-image:
    //       linear-gradient(rgba(6, 1, 55, 0.718),
    //          rgba(4, 3, 38, 0.777));
-
+   
    // url("../img/bg-discl/bg-mobil.webp")
    margin: 0 0 0px 0;
-
+   
    @media screen and (min-width: 768px) {
       margin: 0 0 0px 0;
       padding: 50px 0 0px;
+      background: $bg-water-head;
    }
 
    @media screen and (min-width: 1200px) {
